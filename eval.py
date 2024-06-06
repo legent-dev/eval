@@ -146,7 +146,7 @@ def task_done(task, action: Action, obs, task_setting):
         raise NotImplementedError
 
 
-# Download from eval_folder_example.zip from https://cloud.tsinghua.edu.cn/library/54035cd6-9e2e-456b-8515-7ddb9594f549/LEGENT-temp/ and extract it
+# Download from eval_folder_example.zip from https://cloud.tsinghua.edu.cn/d/502178ebdc6647138ce2/ and extract it
 eval_folder = "F:/Downloads/eval_folder_example"
 save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
 
