@@ -1,18 +1,10 @@
 import os
-from legent import load_json, Action
-from legent.dataset.controller import MAX_MOVE_DISTANCE, MAX_ROTATE_DEGREE
 import requests
-
-from legent import Environment, Observation, store_json, ResetInfo, load_json, save_image, unpack_scenes
-import os
-from legent.utils.config import EVAL_FOLDER
-from legent import get_latest_folder_with_suffix, time_string, task_done, AgentClient, ActionFinish, Action, GPT4VAgentClient
-
+from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, load_json, save_image, unpack_scenes, time_string
 from legent.utils.math import vec_xz, distance
-from legent.action.action import Action
+from legent.dataset.controller import MAX_MOVE_DISTANCE, MAX_ROTATE_DEGREE
 from PIL import Image
 import io
-from legent.action.action import parse_float, parse_string
 
 PROMPT_SHARED = f"""You are a vision language assistant agent with high intelligence.
 You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to write codes to complete the task.
@@ -114,9 +106,7 @@ class AgentGemini(AgentBase):
         payload = {"message": message, "model": "pro"}  # model: flash or pro
         files = []
         for i, image_array in enumerate(images):
-            # Convert NumPy array to PIL Image
             img = Image.fromarray(image_array)
-            # Save the image to a buffer
             buf = io.BytesIO()
             img.save(buf, format="PNG")
             buf.seek(0)
@@ -156,7 +146,8 @@ def task_done(task, action: Action, obs, task_setting):
         raise NotImplementedError
 
 
-eval_folder = "F:/Downloads/eval_folder_example (1)"
+# Download from eval_folder_example.zip from https://cloud.tsinghua.edu.cn/library/54035cd6-9e2e-456b-8515-7ddb9594f549/LEGENT-temp/ and extract it
+eval_folder = "F:/Downloads/eval_folder_example"
 save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
 
 scenes = unpack_scenes(f"{eval_folder}/scenes")
