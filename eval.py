@@ -2,7 +2,6 @@ import os
 import requests
 from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, load_json, save_image, unpack_scenes, time_string, find_files_by_extension
 from legent.utils.math import vec_xz, distance
-from legent.dataset.controller import MAX_MOVE_DISTANCE, MAX_ROTATE_DEGREE
 from PIL import Image
 import io
 import base64
@@ -11,6 +10,9 @@ from openai import OpenAI
 from functools import partial
 from legent.utils.math import distance, vec_xz
 import re
+from legent.action.action import Action, ActionFinish
+import queue
+import threading
 
 PROMPT_PREFIX = """You are a vision language assistant agent with high intelligence.
 You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to choose an action at each step to complete the task. If you need more information, you should explore the environment.
@@ -31,16 +33,34 @@ If the last action in Action history failed, do not choose it again.
     # Do not turn right and the turn left back.
     # Please use move forward more frequently. 
 
-
-
 class AgentBase:
-    def __init__(self, model_name: str) -> None:
+    def __init__(self, model_name: str, sync: bool = False, env=None) -> None:
         # init the api or model
         self.model_name = model_name
         self.images = []
         self.actions = [] # (action feedback)
         self.max_history = 3
         self.task = ""
+        self.sync = sync
+        if not sync:
+            self.env = env
+            self.request_queue = queue.Queue()  # Queue for storing requests
+            self.response_queue = queue.Queue()  # Queue for storing responses
+
+            worker_thread = threading.Thread(target=self._process_request)
+            worker_thread.daemon = True  # Set as a daemon thread so it will automatically quit if the main program exits
+            worker_thread.start()
+            self.is_waiting_response = False
+    
+    def _process_request(self):
+        while True:
+            try:
+                (image, feedback, options, extra_hint) = self.request_queue.get(timeout=1)  # Avoid endless polling of an empty queue, saving CPU resources, and ensures timely responses to new requests.
+                
+                action = self.act_sync(image, feedback, options, extra_hint)
+                self.response_queue.put(action)
+            except queue.Empty:
+                continue
 
     def start(self, instruction):
         self.instruction = instruction
@@ -85,8 +105,25 @@ class AgentBase:
         self.print_message()
         
         return self.send_message()
-        
+    
     def act(self, image, feedback, options, extra_hint=""):
+        if self.sync:
+            return self.act_sync(image, feedback, options, extra_hint)
+        else:
+            self.request_queue.put((image, feedback, options, extra_hint))
+            while True:
+                env.step()
+                try:
+                    action = self.response_queue.get_nowait()
+                    break
+                except queue.Empty:
+                    pass
+
+            return action
+            
+            
+        
+    def act_sync(self, image, feedback, options, extra_hint=""):
         if feedback:
             self.update_feedback(feedback)
         response = self._act(self.actions, self.images, image, options, extra_hint).strip()
@@ -110,8 +147,8 @@ class AgentBase:
             self.actions[-1][1] = feedback
 
 class AgentGPT4V(AgentBase):
-    def __init__(self) -> None:
-        super().__init__("gpt4v")
+    def __init__(self, env=None) -> None:
+        super().__init__("gpt4v", env==None, env)
         self.api_key = "sk-qmu3GtIMZtNYCTMm743199219bD44791BfBcDbFd9d1b3404"
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
     
@@ -157,8 +194,8 @@ class AgentGPT4V(AgentBase):
 
 
 class AgentGemini(AgentBase):
-    def __init__(self) -> None:
-        super().__init__("gemini-pro")
+    def __init__(self, env=None) -> None:
+        super().__init__("gemini-pro", env==None, env)
 
     def init_message(self):
         self.messages = []
@@ -513,8 +550,8 @@ failed_cases = []
 env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": 50051}, use_animation=False)
 
 #agent = AgentHuman(env)
-agent = AgentGemini()
-#agent = AgentGPT4V()
+agent = AgentGemini(env)
+#agent = AgentGPT4V(env)
 success_count = 0
 
 save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
