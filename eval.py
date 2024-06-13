@@ -26,6 +26,8 @@ Your current task is:
 """
 
 # TODO: 加入CoT，允许思考，但是要按指定格式输出然后parse
+# TODO: 怎样很好地避免这种情况：一直连续选择同一个动作，比如一直grab grab，一直失败，提示已经说了也不起作用
+#
 PROMPT_SUFFIX = (
     """Your current options are as follows:
 {}
@@ -509,6 +511,7 @@ eval_folder = "eval_folder_20240614_0251"
 eval_folder = "F:\codes\github-LEGENT\eval\eval_folder_20240614_0251"
 eval_folder = os.path.abspath(eval_folder)
 
+
 def get_task_settings_0612():
     scenes_zip = [file for file in os.listdir(eval_folder) if file.endswith(".zip")]
     if len(scenes_zip) == 0:
@@ -534,10 +537,8 @@ def get_task_settings_0612():
         return copy.deepcopy(scene_path_to_scene[path])
 
     task_settings = []
-    #
-    files = find_files_by_extension(eval_folder, ".json", recursive=False)
-    # 宇鸽、佩琪和其他所有人
-    # files = [f"{eval_folder}/{file}" for file in ["two_room.json", "bedroom.json", "four_room.json","livingroom.json", "three_room.json"]]
+    # files = find_files_by_extension(eval_folder, ".json", recursive=False)
+    files = [f"{eval_folder}/{file}" for file in ["livingroom.json", "bedroom.json", "two_room.json", "three_room.json", "four_room.json"]]
 
     for file in files:
         # print(file)
