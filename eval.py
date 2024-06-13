@@ -14,8 +14,10 @@ from legent.action.action import Action, ActionFinish
 import queue
 import threading
 
+MAX_STEPS = 25
+
 PROMPT_PREFIX = """You are a vision language assistant agent with high intelligence.
-You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to choose an action at each step to complete the task. If you need more information, you should explore the environment.
+You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to choose an action at each step to complete the task.
 
 Your current task is:
 {}
@@ -23,10 +25,13 @@ Your current task is:
 
 PROMPT_SUFFIX = """Your current options are as follows:
 {}
-You must choose one of them and directly output the number of the option. Try use move forward the best choice.
+You must choose one of them and directly output the number of the option.
 If the object is in your view and near you, you can choose to grab it.
 If the last action in Action history failed, do not choose it again.
+If you need more information beyond the current view, you can possibly explore the environment by "Move forward", "Turn left" and .
+Attention: you only have a limited number of steps ("""+f"{MAX_STEPS}"+""" steps) to finish the task, so do not turn around in circles at one position.
 """
+
 # ATTENTION:
 # Do not call grab action twice.
 # Do not turn left and then turn right back.
@@ -80,7 +85,7 @@ class AgentBase:
     def print_message(self):
         raise NotImplementedError
 
-    def send_message(self):
+    def generate(self):
         raise NotImplementedError
 
     def _act(self, actions, images, image, options, extra_hint):
@@ -105,7 +110,7 @@ class AgentBase:
 
         self.print_message()
 
-        return self.send_message()
+        return self.generate()
 
     def act(self, image, feedback, options, extra_hint=""):
         if self.sync:
@@ -177,7 +182,7 @@ class AgentGPT4V(AgentBase):
         message = " ".join([m["text"] if m["type"] == "text" else "<image>" for m in self.payload["messages"][0]["content"]])
         print("=" * 20 + "\n" + message + "=" * 20 + "\n")
 
-    def send_message(self):
+    def generate(self):
         def send_request(payload):
             headers = {"Content-Type": "application/json", "Authorization": f"Bearer {self.api_key}"}
 
@@ -215,7 +220,7 @@ class AgentGemini(AgentBase):
         message = "".join(self.messages)
         print("=" * 20 + "\n" + message + "=" * 20 + "\n")
 
-    def send_message(self):
+    def generate(self):
         message = "".join(self.messages)
         payload = {"message": message, "model": "pro"}  # model: flash or pro
         return requests.post("http://146.190.166.36:8901/", files=self.files, data=payload).text
@@ -259,7 +264,7 @@ class YourAgent(AgentBase):
         # 打印一些信息，可以不用实现
         pass
 
-    def send_message(self):
+    def generate(self):
         # 这里放模型/API的推理代码
         # return model.generate_text(...)
         pass
@@ -468,18 +473,22 @@ def get_feedback(action: str, prev_obs, obs):
 # Download from eval_folder_xxx.zip from https://huggingface.co/LEGENT/temp_share/tree/main and extract it
 # TODO: change the path to your eval_folder
 eval_folder = "F:/Downloads/eval_folder_20240611_2357"
-
+eval_folder = "F:/Downloads/task_0613_0157"
 
 def get_task_settings_0612():
-
-    scenes_zip = ["packed_20_scenes_20240607-124204-783646", "packed_77_scenes_20240607-124050-071183", "packed_15_scenes_20240611-033932-398380"]
+    scenes_zip = [file for file in os.listdir(eval_folder) if file.endswith(".zip")]
     scene_path_to_scene = {}
     for scene_zip in scenes_zip:
-        scenes = unpack_scenes(f"{eval_folder}/{scene_zip}.zip")
-        for scene in scenes:
+        unpack_scenes(f"{eval_folder}/{scene_zip}")
+        scene_dir_relative = scene_zip.rsplit(".", maxsplit=1)[0]
+        scene_dir = f"{eval_folder}/{scene_dir_relative}"
+        
+        scene_files = [file for file in os.listdir(scene_dir) if file.endswith(".json") and not file.endswith("_relative.json")]
+        for scene_file in scene_files:
+            scene = load_json(f"{scene_dir}/{scene_file}")
             scene["player"]["prefab"] = "null"
-        for i, scene in enumerate(scenes):
-            scene_path_to_scene[f"{scene_zip}/scene_{i}.json"] = scene
+            scene_path_to_scene[f"{scene_dir_relative}/{scene_file}"] = scene
+            # print(f"{scene_dir}/{scene_file}")
 
     def get_scene_by_path(path):
         import copy
@@ -508,7 +517,7 @@ def get_task_settings_0612():
             for object_id in sample["object_id"]:
                 scene["instances"][object_id]["of_interest"] = True
             # add options
-            # TODO: 这个任务需要加一个抬头动作
+            # NOTE: 这个任务需要加一个抬头动作
             if sample["task"] == "Please help me move my laptops off the tall dark brown chest of drawers with black drawer pulls.":
                 sample["options"].append("look upward")
                 sample["options"].append("look downward")
@@ -519,7 +528,7 @@ def get_task_settings_0612():
                     assert ":" not in option
                     options.append({"description": f'answer "{option}"', "object_ids": []})
                 else:
-                    # TODO：有一个标的不统一，暂时改成grab
+                    # NOTE：有一个标的不统一，暂时改成grab
                     if option.startswith("pick up"):
                         option = option.replace("pick up", "grab")
                         print(option)
@@ -542,7 +551,7 @@ def get_task_settings_0612():
                 scene["predicates"] = [{"predicate": "choose", "content": answer, "object_ids": []}]
             else:
 
-                # TODO: 这个任务 ['noton 33'] 要改一下
+                # NOTE: 这个任务 ['noton 33'] 要改一下
                 if sample["task"] == "Clear the folding chair of all objects.":
                     sample["predicates"][0] = "noton 34 37 38 33"
                 if sample["task"] == "Clear the bedside table of all things.":
@@ -557,7 +566,7 @@ def get_task_settings_0612():
 
                 assert len(sample["predicates"]) == 1, sample["predicates"]
                 predicate = sample["predicates"][0]
-                # TODO: 这个标错了
+                # NOTE: 这个标错了
                 if predicate.startswith("not on"):
                     predicate = predicate.replace("not on", "noton")
                 predicates = [predicate]
@@ -575,7 +584,6 @@ task_settings = get_task_settings_0612()
 store_json(task_settings, f"task_settings.json")
 
 
-MAX_STEPS = 25
 failed_cases = []
 
 env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": 50051}, use_animation=False)
