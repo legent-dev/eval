@@ -1,0 +1,1431 @@
+{
+    "prompt": "",
+    "floors": [
+        {
+            "position": [
+                2.2039595879861027,
+                0,
+                2.119711758838647
+            ],
+            "size": [
+                4.407919175972205,
+                0.05,
+                4.239423517677294
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "assets/TexturesCom_WoodFine0050_1_seamless_S_white.png",
+            "bbox": [
+                0,
+                0,
+                4.407919175972205,
+                4.239423517677294
+            ],
+            "room_type": "Bedroom"
+        },
+        {
+            "position": [
+                2.2039595879861027,
+                3,
+                2.119711758838647
+            ],
+            "size": [
+                4.407919175972205,
+                0.05,
+                4.239423517677294
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "assets/BrushedIron_None_MetallicSmoothness.png"
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                2.2039595879861027,
+                1.5,
+                0.0
+            ],
+            "size": [
+                4.407919175972205,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "assets/BrushedIron_None_MetallicSmoothness.png"
+        },
+        {
+            "position": [
+                4.407919175972205,
+                1.5,
+                2.119711758838647
+            ],
+            "size": [
+                4.239423517677294,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                270,
+                0
+            ],
+            "material": "assets/BrushedIron_None_MetallicSmoothness.png",
+            "holes": [
+                {
+                    "position_xy": [
+                        1.5127812410590562,
+                        -0.3700000047683717
+                    ],
+                    "size_xy": [
+                        1.1100001335144043,
+                        2.259999990463257
+                    ]
+                }
+            ]
+        },
+        {
+            "position": [
+                2.2039595879861027,
+                1.5,
+                4.239423517677294
+            ],
+            "size": [
+                4.407919175972205,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                180,
+                0
+            ],
+            "material": "assets/BrushedIron_None_MetallicSmoothness.png"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                2.119711758838647
+            ],
+            "size": [
+                4.239423517677294,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "material": "assets/BrushedIron_None_MetallicSmoothness.png",
+            "holes": [
+                {
+                    "position_xy": [
+                        -0.49637111203472395,
+                        0.06184364654131286
+                    ],
+                    "size_xy": [
+                        1.8,
+                        1.3208834431006455
+                    ]
+                }
+            ]
+        }
+    ],
+    "instances": [
+        {
+            "prefab": "assets/c13bbde79cdc4255a6e48aa9e47635e6.glb",
+            "category": "painting",
+            "position": [
+                1.6057437193798547,
+                2.136831891662321,
+                0.030250344029821526
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.4259023904085963,
+                0.4259023904085963,
+                0.4259023904085963
+            ],
+            "type": "kinematic",
+            "size": [
+                1.5241503715515137,
+                1.0507389900565212,
+                0.01050068805964337
+            ],
+            "description": "Painting of people and flags in brown frame.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 0
+        },
+        {
+            "prefab": "assets/b11f8ba6d34a4e46beffa281d8eaf539.glb",
+            "category": "painting",
+            "position": [
+                3.5990140726311592,
+                2.237625658448616,
+                0.041046295255437154
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.05336467789203325,
+                0.05336467789203325,
+                0.05336467789203325
+            ],
+            "type": "kinematic",
+            "size": [
+                0.7745611667633057,
+                0.774312022418384,
+                0.03209259051087463
+            ],
+            "description": "A painting of a black shape filled with gold and silver.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.3868664935713397,
+                    "x_min": -0.38674693660273246,
+                    "z_min": -0.015512648476516898,
+                    "x_max": 0.38674693660273246,
+                    "z_max": 0.015512648476516898
+                }
+            ],
+            "index": 1
+        },
+        {
+            "prefab": "LowPolyInterior2_Door2_C3",
+            "category": "door",
+            "position": [
+                4.407919175972205,
+                1.1299999952316284,
+                3.6324929998977034
+            ],
+            "rotation": [
+                0,
+                270,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "type": "kinematic",
+            "size": [
+                1.1100001335144043,
+                2.259999990463257,
+                0.18118548393249512
+            ],
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 1.1299999952316284,
+                    "x_min": -0.5540000200271606,
+                    "z_min": -0.08959273993968964,
+                    "x_max": 0.5540001392364502,
+                    "z_max": 0.08959273993968964
+                }
+            ],
+            "index": 2
+        },
+        {
+            "prefab": "assets/2de962994f1e4ea582f484095187aafe.glb",
+            "category": "picture",
+            "position": [
+                4.371683342710543,
+                2.2333190846755495,
+                1.1987147576702748
+            ],
+            "rotation": [
+                0,
+                180,
+                0
+            ],
+            "scale": [
+                0.00839259400907975,
+                0.00839259400907975,
+                0.00839259400907975
+            ],
+            "type": "kinematic",
+            "size": [
+                0.9064003366690415,
+                0.9064003366690416,
+                0.022471666523326564
+            ],
+            "description": "A picture in a picture frame with some boats.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.45320002067685966,
+                    "x_min": -0.011151907321572485,
+                    "z_min": -0.45311624239443,
+                    "x_max": 0.011151907321572485,
+                    "z_max": 0.4531162423944299
+                }
+            ],
+            "index": 3
+        },
+        {
+            "prefab": "assets/241c0b04a3364a1fac1d4fe656a3956b.glb",
+            "category": "painting",
+            "position": [
+                4.361013376571459,
+                2.247879529563594,
+                2.293237552908229
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.37618713456556857,
+                0.37618713456556857,
+                0.37618713456556857
+            ],
+            "type": "kinematic",
+            "size": [
+                0.796434572352475,
+                0.6674444069356485,
+                0.04381159880149272
+            ],
+            "description": "a framed painting of a tree in a gold frame.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 4
+        },
+        {
+            "prefab": "assets/cf0657fbc825415e91e15fa8f4c253ce.glb",
+            "category": "picture",
+            "position": [
+                2.535081313186032,
+                2.3399874873916584,
+                4.1564751111897085
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                3.230749139819942,
+                3.230749139819942,
+                3.230749139819942
+            ],
+            "type": "kinematic",
+            "size": [
+                0.823836850973137,
+                1.6581697463989258,
+                0.11589681297517294
+            ],
+            "description": "A painting of an angel with red wings over a person on the ground.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 5
+        },
+        {
+            "prefab": "assets/7f5d9e1912d34f8eb02e64ac4b8322da.glb",
+            "category": "painting",
+            "position": [
+                1.3375811675292866,
+                2.088896186917806,
+                4.1820985941604265
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.00165768838548041,
+                0.00165768838548041,
+                0.00165768838548041
+            ],
+            "type": "kinematic",
+            "size": [
+                0.8769171559191369,
+                1.0211360454559326,
+                0.06464984703373623
+            ],
+            "description": "A blue painting in a black frame.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.5105680227279663,
+                    "x_min": -0.4384420010757137,
+                    "z_min": -0.03230834663301319,
+                    "x_max": 0.4384420010757137,
+                    "z_max": 0.03230834663301319
+                }
+            ],
+            "index": 6
+        },
+        {
+            "prefab": "assets/6a38f611510349829751a1f59e70b415.glb",
+            "category": "window",
+            "position": [
+                -2.6607133487905895e-17,
+                1.5618436465413128,
+                2.616082870873371
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.06115319311681322,
+                0.06115319311681322,
+                0.06115319311681322
+            ],
+            "type": "kinematic",
+            "size": [
+                1.8,
+                1.3208834431006455,
+                0.17912552606467144
+            ],
+            "description": "window",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 7
+        },
+        {
+            "prefab": "assets/8760aa7a09084d4f92392715fea093b2.glb",
+            "category": "bed",
+            "position": [
+                1.3211350833496693,
+                0.6111691330788193,
+                3.2141531525092146
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.02157263428973515,
+                0.02157263428973515,
+                0.02157263428973515
+            ],
+            "type": "kinematic",
+            "size": [
+                2.021410903469983,
+                1.1723382661576385,
+                1.8005407303361605
+            ],
+            "description": "A large bed with a checkered sheet.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.08973546853562463,
+                    "x_min": -0.9041223858771371,
+                    "z_min": -0.7105694517040917,
+                    "x_max": 0.9041223858771369,
+                    "z_max": 0.8053120452646372
+                }
+            ],
+            "index": 8
+        },
+        {
+            "prefab": "assets/2ef84b073b224aefa682b55dab151ec6.glb",
+            "category": "laptop computer",
+            "position": [
+                0.9875504806136799,
+                0.7728630288683958,
+                3.4172134994422407
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.0018450878783064575,
+                0.0018450878783064575,
+                0.0018450878783064575
+            ],
+            "type": "interactable",
+            "size": [
+                0.2214105453967749,
+                0.14391685450790373,
+                0.15498738177774243
+            ],
+            "description": "A white laptop with stickers on it and a white keyboard.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": -0.06457807574072602,
+                    "x_min": -0.11068682181960439,
+                    "z_min": -0.07747524001008815,
+                    "x_max": 0.11068682181960436,
+                    "z_max": 0.07747524001008815
+                }
+            ],
+            "index": 9
+        },
+        {
+            "prefab": "assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "category": "magazine",
+            "position": [
+                1.6740143412356467,
+                0.796227016982112,
+                2.5889143699514596
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.6354827242269993,
+                0.6354827242269993,
+                0.6354827242269993
+            ],
+            "type": "interactable",
+            "size": [
+                0.13738500723253527,
+                0.19064483073533622,
+                0.19690050942139317
+            ],
+            "description": "An issue of picture business magazine.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 10
+        },
+        {
+            "prefab": "assets/aea71df6fed3440a92c9486dedd7ec73.glb",
+            "category": "book",
+            "position": [
+                0.7293026699175347,
+                0.7357145076312064,
+                2.9426902171432823
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.016952636981689712,
+                0.016952636981689712,
+                0.016952636981689712
+            ],
+            "type": "interactable",
+            "size": [
+                0.20403821115802168,
+                0.0696198120335251,
+                0.2697808982804418
+            ],
+            "description": "A leather book with a gold clasp.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 11
+        },
+        {
+            "prefab": "assets/9ebe03b486334d2696b974f9e58afd40.glb",
+            "category": "books",
+            "position": [
+                2.0025074825722653,
+                0.737566085940138,
+                3.2227591985549795
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.98584194376986,
+                0.98584194376986,
+                0.98584194376986
+            ],
+            "type": "interactable",
+            "size": [
+                0.21319700276549808,
+                0.07332296865138815,
+                0.2645284826097702
+            ],
+            "description": "Two books are tied together with a red and blue ribbon.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 12
+        },
+        {
+            "prefab": "assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "category": "magazine",
+            "position": [
+                0.6749151546881959,
+                0.796227016982112,
+                3.205510682684387
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.6354827242269993,
+                0.6354827242269993,
+                0.6354827242269993
+            ],
+            "type": "interactable",
+            "size": [
+                0.13738500723253527,
+                0.19064483073533622,
+                0.19690050942139317
+            ],
+            "description": "An issue of picture business magazine.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 13
+        },
+        {
+            "prefab": "LowPolyInterior2_BedTable1_C2",
+            "category": "bed_table",
+            "position": [
+                3.4295894126270983,
+                0.2750000596046448,
+                0.3250000327825546
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "type": "kinematic",
+            "size": [
+                0.44999998807907104,
+                0.5000001192092896,
+                0.40000006556510925
+            ],
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.2500000596046448,
+                    "x_min": -0.2239999920129776,
+                    "z_min": -0.1990000307559967,
+                    "x_max": 0.2239999920129776,
+                    "z_max": 0.1990000307559967
+                }
+            ],
+            "index": 14
+        },
+        {
+            "prefab": "assets/2490aa1120cf4db5aeff0ea21bab77ed.glb",
+            "category": "notebook",
+            "position": [
+                3.3650423425301756,
+                0.536692024975816,
+                0.27964845241587827
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.027624882271940918,
+                0.027624882271940918,
+                0.027624882271940918
+            ],
+            "type": "interactable",
+            "size": [
+                0.2175187597063153,
+                0.023383811533052974,
+                0.17483137388357387
+            ],
+            "description": "A spiral notebook with a brown, wooden-like cover and white pages.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 15
+        },
+        {
+            "prefab": "assets/de5b0e270d314e32888b4f719d638ada.glb",
+            "category": "flashlight",
+            "position": [
+                3.5652486042046743,
+                0.5498818337163105,
+                0.3476866349677147
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.001978696090290319,
+                0.001978696090290319,
+                0.001978696090290319
+            ],
+            "type": "interactable",
+            "size": [
+                0.04976342150052348,
+                0.049763429014042,
+                0.19786881967487502
+            ],
+            "description": "A semi translucent cylindrical white-gray flashlight.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 16
+        },
+        {
+            "prefab": "assets/2a37a4b61b8c4aad9e4eb78a689913a4.glb",
+            "category": "notebook",
+            "position": [
+                3.4319157431671328,
+                0.6128260905914491,
+                0.41135870063323665
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.0012857507460780479,
+                0.0012857507460780479,
+                0.0012857507460780479
+            ],
+            "type": "interactable",
+            "size": [
+                0.1161440743849449,
+                0.17565194276431892,
+                0.017722204209160396
+            ],
+            "description": "A pink spiral notebook with a green leaf on it.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 17
+        },
+        {
+            "prefab": "assets/7327207e086545a891198dd96f315ace.glb",
+            "category": "chair",
+            "position": [
+                4.021001800488804,
+                0.42134190095930274,
+                2.2197514875526663
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.3963418905506508,
+                0.3963418905506508,
+                0.3963418905506508
+            ],
+            "type": "kinematic",
+            "size": [
+                0.46680276138846927,
+                0.7926838019186054,
+                0.5238347509668038
+            ],
+            "description": "A black chair with thin legs.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 18
+        },
+        {
+            "prefab": "assets/40b28d1cbfbd4e9f9acf653b748324ee.glb",
+            "category": "envelope",
+            "position": [
+                4.079072800809696,
+                0.9026543790495336,
+                2.193889649368471
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                1.262865527296862,
+                1.262865527296862,
+                1.262865527296862
+            ],
+            "type": "interactable",
+            "size": [
+                0.2532640364434984,
+                0.16994115426185646,
+                0.06786556850521355
+            ],
+            "description": "Pack of envelopes with garfield on them.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 19
+        },
+        {
+            "prefab": "assets/c10e207b60ec451fabde91c17d4cb2ac.glb",
+            "category": "control",
+            "position": [
+                4.050300410358649,
+                0.8677435365209116,
+                2.310007660286021
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.019465200470633295,
+                0.019465200470633295,
+                0.019465200470633295
+            ],
+            "type": "interactable",
+            "size": [
+                0.1671097677733217,
+                0.10011946920461247,
+                0.057582698140025215
+            ],
+            "description": "A video game control for playstation.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 20
+        },
+        {
+            "prefab": "assets/49f40f6f098c41d6b004cad29ab1fa06.glb",
+            "category": "calendar",
+            "position": [
+                3.9568374777427637,
+                0.8271861042162083,
+                2.0888221956759683
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                2.2109031063691527,
+                2.2109031063691527,
+                2.2109031063691527
+            ],
+            "type": "interactable",
+            "size": [
+                0.14655536479420134,
+                0.019004604595205542,
+                0.09754254828611865
+            ],
+            "description": "A tear off calender with a wooden base and a metal spring binder.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 21
+        },
+        {
+            "prefab": "assets/25290cec69eb4154b7c831f76a5c022e.glb",
+            "category": "keycard",
+            "position": [
+                4.087878637851294,
+                0.8435343608906125,
+                2.3463005445141603
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.0022000475720857096,
+                0.0022000475720857096,
+                0.0022000475720857096
+            ],
+            "type": "interactable",
+            "size": [
+                0.15180328247391398,
+                0.05170111794401418,
+                0.01320028543251427
+            ],
+            "description": "printed blue key.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 22
+        },
+        {
+            "prefab": "assets/21fd130cb8154bd5b6ee327ab575e5b0.glb",
+            "category": "cellphone",
+            "position": [
+                3.8626771339803208,
+                0.8816993825894395,
+                2.1862946768909715
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.004454454921854852,
+                0.004454454921854852,
+                0.004454454921854852
+            ],
+            "type": "interactable",
+            "size": [
+                0.06333227868723125,
+                0.12803116134166787,
+                0.03218126464401656
+            ],
+            "description": "A blue cellphone with a black screen.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 23
+        },
+        {
+            "prefab": "assets/108b618d0fc345a2951ac0e0b7e19f57.glb",
+            "category": "desk",
+            "position": [
+                0.587958271533473,
+                0.3520373694029265,
+                1.2042600149109495
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.6896489656456287,
+                0.6896489656456287,
+                0.6896489656456287
+            ],
+            "type": "kinematic",
+            "size": [
+                1.1692870606044923,
+                0.654074738805853,
+                0.9259165430669462
+            ],
+            "description": "A brown wooden desk with an open space for the chair to the right and two drawers on the right, one half pulled out.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.3270372533577968,
+                    "x_min": -0.5777470406457899,
+                    "z_min": -0.4560617818770168,
+                    "x_max": 0.5777470406457899,
+                    "z_max": 0.21602926509963952
+                }
+            ],
+            "index": 24
+        },
+        {
+            "prefab": "assets/b90b37839bb949bba7c5a6ff2f49d1c8.glb",
+            "category": "calculator",
+            "position": [
+                0.5708945483190004,
+                0.7694681722129487,
+                1.6685800414478011
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.0030613281081377504,
+                0.0030613281081377504,
+                0.0030613281081377504
+            ],
+            "type": "interactable",
+            "size": [
+                0.12052472958637127,
+                0.18078709890445074,
+                0.04111122574637207
+            ],
+            "description": "A black calculator with a green screen.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.08972661930128611,
+                    "x_min": -0.05389156714240907,
+                    "z_min": -0.02052499959210466,
+                    "x_max": 0.05389156714240907,
+                    "z_max": 0.014043420773545291
+                }
+            ],
+            "index": 25
+        },
+        {
+            "prefab": "assets/10900aae38674ff78c73e7097c249c39.glb",
+            "category": "control",
+            "position": [
+                0.8717404362711749,
+                0.7042807861859833,
+                1.2821675014392175
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.00037372806590588387,
+                0.00037372806590588387,
+                0.00037372806590588387
+            ],
+            "type": "interactable",
+            "size": [
+                0.05041232685052,
+                0.05041232685052,
+                0.014949122636235363
+            ],
+            "description": "green circular button",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 26
+        },
+        {
+            "prefab": "assets/a81f36c615204fb4bbfacc7d3d25bd25.glb",
+            "category": "camera lens",
+            "position": [
+                0.6703815576391995,
+                0.7313268192812903,
+                0.864792184859339
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.007682441980886268,
+                0.007682441980886268,
+                0.007682441980886268
+            ],
+            "type": "interactable",
+            "size": [
+                0.09054057413046727,
+                0.10450439304113389,
+                0.08919388141529287
+            ],
+            "description": "A desktop camera for recording.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 27
+        },
+        {
+            "prefab": "assets/214a3ba8e9a54fa3aeb562421af84494.glb",
+            "category": "chessboard",
+            "position": [
+                0.7748307733992705,
+                0.7151003593648502,
+                1.6808726403083325
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.0074565930043215736,
+                0.0074565930043215736,
+                0.0074565930043215736
+            ],
+            "type": "interactable",
+            "size": [
+                0.11947166207875451,
+                0.07205147320825377,
+                0.033554679186188936
+            ],
+            "description": "White chess pieces model",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 28
+        },
+        {
+            "prefab": "assets/2648841cdff54caa9a378e5733fb3336.glb",
+            "category": "remote control",
+            "position": [
+                0.8992196809338056,
+                0.7227697656241003,
+                0.9415900932500754
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.17068417266125677,
+                0.17068417266125677,
+                0.17068417266125677
+            ],
+            "type": "interactable",
+            "size": [
+                0.1406847085389826,
+                0.08739028572675414,
+                0.07828276227374464
+            ],
+            "description": "A black xbox controller.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 29
+        },
+        {
+            "prefab": "assets/58823caf1d9f4235a0872ae3e886fd20.glb",
+            "category": "lamp",
+            "position": [
+                3.8357172905222625,
+                0.5797685487238423,
+                0.5615700811371676
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.13233326564767464,
+                0.13233326564767464,
+                0.13233326564767464
+            ],
+            "type": "kinematic",
+            "size": [
+                0.35453459320492986,
+                1.1095370974476846,
+                0.8731401622743351
+            ],
+            "description": "A standing lamp that has a swingable arm.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 30
+        },
+        {
+            "prefab": "assets/a5efba9331264a68a2ab5bac61527abb.glb",
+            "category": "wardrobe",
+            "position": [
+                1.8699479655570335,
+                1.0917607347161948,
+                0.45359207381793354
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.0008693918336405981,
+                0.0008693918336405981,
+                0.0008693918336405981
+            ],
+            "type": "kinematic",
+            "size": [
+                1.016508387290472,
+                2.13352146943239,
+                0.657184147635867
+            ],
+            "description": "A wood wardrobe with two doors.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 31
+        },
+        {
+            "prefab": "assets/89783e744f7249ffa9eedcee69c760ee.glb",
+            "category": "boot",
+            "position": [
+                2.131485579445681,
+                2.28998978778192,
+                0.571918705396138
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                1.4539979908901235,
+                1.4539979908901235,
+                1.4539979908901235
+            ],
+            "type": "interactable",
+            "size": [
+                0.28202271002013474,
+                0.2629366366990598,
+                0.209015192207436
+            ],
+            "description": "A purple shoe with a black and white base.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 32
+        },
+        {
+            "prefab": "assets/07850a3af3514bccaa48c8ea450a5df5.glb",
+            "category": "hat",
+            "position": [
+                1.7362775720312216,
+                2.2178744499310055,
+                0.3215755332059784
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                1.0492087007761834,
+                1.0492087007761834,
+                1.0492087007761834
+            ],
+            "type": "interactable",
+            "size": [
+                0.16429719344940197,
+                0.11870596099723103,
+                0.2855316122181282
+            ],
+            "description": "a blue baseball cap with white panel and trim.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 33
+        },
+        {
+            "prefab": "assets/919dc2f2784b472a904117326f6dcf52.glb",
+            "category": "glasses",
+            "position": [
+                2.184598768685107,
+                2.1809734145267208,
+                0.2321758722430892
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.0016185629304644154,
+                0.0016185629304644154,
+                0.0016185629304644154
+            ],
+            "type": "interactable",
+            "size": [
+                0.12418808497623675,
+                0.04490389018866214,
+                0.08946478733383288
+            ],
+            "description": "The glasses are round with a large nose piece.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 34
+        },
+        {
+            "prefab": "assets/c0efb2b1b8234205939acc40369cc464.glb",
+            "category": "hairpin",
+            "position": [
+                1.736162931893756,
+                2.1617539236771517,
+                0.5407862545738278
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.00029903579114405816,
+                0.00029903579114405816,
+                0.00029903579114405816
+            ],
+            "type": "interactable",
+            "size": [
+                0.028679562386695487,
+                0.006464908489523571,
+                0.06846082163974643
+            ],
+            "description": "Brown hairpin with curved center and pointed ends.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 35
+        },
+        {
+            "prefab": "assets/bb6fd213034b419e9bd65d914b098a5a.glb",
+            "category": "beanie",
+            "position": [
+                1.9679082026909198,
+                2.2658300813323913,
+                0.338352712356103
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.9709755495563559,
+                0.9709755495563559,
+                0.9709755495563559
+            ],
+            "type": "interactable",
+            "size": [
+                0.22451826243802847,
+                0.21461722380000317,
+                0.2272968385368586
+            ],
+            "description": "A grey knit beanie.",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [],
+            "index": 36
+        },
+        {
+            "prefab": "LowPolyInterior2_Carpet1_C1",
+            "category": "carpet",
+            "position": [
+                2.5672141169549523,
+                0.030000047851353885,
+                1.6146662609846565
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "type": "kinematic",
+            "size": [
+                0.8999999761581421,
+                0.010000095702707767,
+                0.6000000238418579
+            ],
+            "material": "/data41/private/legent/3D_assets/used_assets/ClothPattern215Tiled.png",
+            "room_type": "Bedroom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.005000040400773287,
+                    "x_min": -0.4490000009536743,
+                    "z_min": -0.2446363866329193,
+                    "x_max": 0.4490000009536743,
+                    "z_max": 0.2446364015340805
+                },
+                {
+                    "y": 0.005000047851353884,
+                    "x_min": -0.3928750157356262,
+                    "z_min": -0.2990000247955322,
+                    "x_max": 0.3928750157356262,
+                    "z_max": 0.2990000247955322
+                }
+            ],
+            "index": 37
+        },
+        {
+            "prefab": "assets/da68b79124324bc29b263f06416b0fef.glb",
+            "category": "light",
+            "position": [
+                2.2039595879861027,
+                2.7497258959441906,
+                2.119711758838647
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.00455007139443393,
+                0.00455007139443393,
+                0.00455007139443393
+            ],
+            "type": "kinematic",
+            "size": [
+                0.5462547090039942,
+                0.45054820811161866,
+                0.5462547957897187
+            ],
+            "description": "A round circle lamp that is hanging from the roof.",
+            "placeable_surfaces": [],
+            "index": 39
+        }
+    ],
+    "player": {
+        "prefab": "",
+        "position": [
+            100,
+            0.1,
+            100
+        ],
+        "rotation": [
+            0,
+            61,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "parent": -1,
+        "type": ""
+    },
+    "agent": {
+        "prefab": "agent",
+        "position": [
+            2.6022937330711233,
+            1.025,
+            2.9191298697926733
+        ],
+        "rotation": [
+            0,
+            270,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "type": "kinematic"
+    },
+    "center": [
+        2.2039595879861027,
+        8,
+        2.119711758838647
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                35.3234264149277,
+                90.0,
+                0.0
+            ],
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 3,
+            "range": 15,
+            "shadowType": "Soft"
+        }
+    ]
+}

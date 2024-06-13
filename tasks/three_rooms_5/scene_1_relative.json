@@ -1,0 +1,2859 @@
+{
+    "prompt": "1",
+    "instances": [
+        {
+            "prefab": "assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                0.9204493165016174,
+                1.6414315700531006,
+                -3.501002311706543
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/2f1b1cbd276a44828d2b2b059c9efa15.glb",
+            "position": [
+                3.1728515625,
+                2.2137181758880615,
+                -0.7856298685073853
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.08134878426790237,
+                0.08134878426790237,
+                0.08134878426790237
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/Doorframe_10.fbx",
+            "position": [
+                2.3552143573760986,
+                1.051064133644104,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.9992000460624695,
+                0.9992000460624695,
+                0.9992000460624695
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "doorway_10",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/LightWoodCounters.4.jpg",
+                            "base_color": "#C3844CFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6159999966621399,
+                            "normal_map": "assets/HammeredMetal_Normal.43.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/181a6cf54eb54aaaa13027bfffe7233d.glb",
+            "position": [
+                1.3746280670166016,
+                1.2645299434661865,
+                -0.051887884736061096
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.0008621254819445312,
+                0.0008621254819445312,
+                0.0008621254819445312
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                -5.030847551869429e-18,
+                1.6414315700531006,
+                -1.526909589767456
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/ba594695a3ef4032980a75d21174600c.glb",
+            "position": [
+                -0.8257665038108826,
+                2.3697311878204346,
+                0.04174008592963219
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0871679782867432,
+                1.0871679782867432,
+                1.0871679782867432
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/Doorway_8.fbx",
+            "position": [
+                0.0,
+                1.0496987104415894,
+                1.0373106002807617
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0003637075424194,
+                1.0003637075424194,
+                1.0003637075424194
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "doorway_door_8",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/TexturesCom_WoodWhite.6.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5630000233650208,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#0A0A0AFF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_handle_8",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#634029FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.8539999723434448,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6840000152587891,
+                            "normal_map": "assets/HammeredMetal_Normal.22.png",
+                            "normal_map_scale": 2.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_8",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5630000233650208,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/280f03acf3c447d184f8ff8116c0ccd1.glb",
+            "position": [
+                -0.03824301064014435,
+                1.6089316606521606,
+                2.235274314880371
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.20345698297023773,
+                0.20345698297023773,
+                0.20345698297023773
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                -1.6488016843795776,
+                1.4982032775878906,
+                2.573173761367798
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                -2.828472137451172,
+                1.4982032775878906,
+                1.1670690774917603
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/bebb1ac96bd54e129c9bbc1a20744a52.glb",
+            "position": [
+                3.42028546333313,
+                1.8654248714447021,
+                0.05054556205868721
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.016630111262202263,
+                0.016630111262202263,
+                0.016630111262202263
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/cf0657fbc825415e91e15fa8f4c253ce.glb",
+            "position": [
+                4.004243850708008,
+                1.8799464702606201,
+                0.08294840902090073
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                3.2307491302490234,
+                3.2307491302490234,
+                3.2307491302490234
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/93f289a0e7de49839b40b4584993e0c3.glb",
+            "position": [
+                4.773539066314697,
+                1.4682714939117432,
+                0.9980926513671875
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.009333333000540733,
+                0.009333333000540733,
+                0.009333333000540733
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/d85b88316ebd40159847b262b05d285b.glb",
+            "position": [
+                4.721093654632568,
+                1.2663700580596924,
+                2.0526628494262695
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.016487207263708115,
+                0.016487207263708115,
+                0.016487207263708115
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/93f289a0e7de49839b40b4584993e0c3.glb",
+            "position": [
+                3.7199442386627197,
+                1.4682714939117432,
+                4.493052959442139
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.009333333000540733,
+                0.009333333000540733,
+                0.009333333000540733
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/2f1b1cbd276a44828d2b2b059c9efa15.glb",
+            "position": [
+                2.552184581756592,
+                2.472961902618408,
+                4.429675102233887
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.08134878426790237,
+                0.08134878426790237,
+                0.08134878426790237
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/a6e8bcdb300c4a40b75e2e3788914269.glb",
+            "position": [
+                0.04171276092529297,
+                1.451625108718872,
+                3.6927003860473633
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.6712664365768433,
+                1.6712664365768433,
+                1.6712664365768433
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/2f1b1cbd276a44828d2b2b059c9efa15.glb",
+            "position": [
+                0.06337779760360718,
+                1.8820737600326538,
+                2.865032434463501
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.08134878426790237,
+                0.08134878426790237,
+                0.08134878426790237
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/4bf11b5ec0e7472c855cee73ba67f9e8.glb",
+            "position": [
+                0.574785590171814,
+                0.3510529100894928,
+                -1.543409824371338
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.0024810859467834234,
+                0.0024810859467834234,
+                0.0024810859467834234
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/4aa98dc0215b43aa83dbd8591d4bb21d.glb",
+            "position": [
+                0.27178364992141724,
+                0.6796539425849915,
+                -2.43788743019104
+            ],
+            "rotation": [
+                89.5318603515625,
+                271.76300048828125,
+                6.169316291809082
+            ],
+            "scale": [
+                0.019853003323078156,
+                0.019853003323078156,
+                0.019853003323078156
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/3535fb4ac14e42da8ac71ee05a594167.glb",
+            "position": [
+                0.8062341213226318,
+                0.6910864114761353,
+                -2.0124869346618652
+            ],
+            "rotation": [
+                -5.4952021599774525e-08,
+                270.0,
+                4.272561398011021e-07
+            ],
+            "scale": [
+                0.04398118332028389,
+                0.04398118332028389,
+                0.04398118332028389
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/178cd95b399a4be496e17c395e222e89.glb",
+            "position": [
+                0.5527943968772888,
+                -786875.5625,
+                -1.621722936630249
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.08089576661586761,
+                0.08089576661586761,
+                0.08089576661586761
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/0d54a7e3cebf4e838f6eef9d02ce2c73.glb",
+            "position": [
+                0.43967103958129883,
+                0.7005089521408081,
+                -2.1872317790985107
+            ],
+            "rotation": [
+                -7.17703460395569e-06,
+                270.0003356933594,
+                0.8229025602340698
+            ],
+            "scale": [
+                4.1416544914245605,
+                4.1416544914245605,
+                4.1416544914245605
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/16281e056c3a493d9a829688808dd79e.glb",
+            "position": [
+                0.8444522619247437,
+                0.8056502938270569,
+                -2.4449992179870605
+            ],
+            "rotation": [
+                0.29099002480506897,
+                269.9990234375,
+                359.70782470703125
+            ],
+            "scale": [
+                1.020339846611023,
+                1.020339846611023,
+                1.020339846611023
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/Dining_Table_216_1.fbx",
+            "position": [
+                2.586484909057617,
+                0.5566771030426025,
+                -2.52616810798645
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0023283958435059,
+                1.0023283958435059,
+                1.0023283958435059
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "dining_table_216",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/WoodGrains1.11.jpg",
+                            "base_color": "#3C2114FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "dining_table_tablecloth_216",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/TableCloth_DefaultMaterial_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/TableCloth_DefaultMaterial_MetallicSmoothness.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "assets/TableCloth_DefaultMaterial_Normal.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/73bded78b3f64a4891721002c8653424.glb",
+            "position": [
+                2.490905284881592,
+                1.115344762802124,
+                -2.47621750831604
+            ],
+            "rotation": [
+                2.1590871810913086,
+                89.56324768066406,
+                358.51043701171875
+            ],
+            "scale": [
+                0.01422519888728857,
+                0.01422519888728857,
+                0.01422519888728857
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/43327a074274479ab5e908f7ab610e6f.glb",
+            "position": [
+                2.7281789779663086,
+                1.096747636795044,
+                -2.2391347885131836
+            ],
+            "rotation": [
+                359.9574890136719,
+                90.00053405761719,
+                359.93499755859375
+            ],
+            "scale": [
+                0.18535123765468597,
+                0.18535123765468597,
+                0.18535123765468597
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/3a80e07ff6364b4bbe5252d9b532a87a.glb",
+            "position": [
+                2.2638840675354004,
+                1.2024683952331543,
+                -2.2411158084869385
+            ],
+            "rotation": [
+                359.21527099609375,
+                89.97945404052734,
+                0.5356953144073486
+            ],
+            "scale": [
+                0.06110679730772972,
+                0.06110679730772972,
+                0.06110679730772972
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/73ad279aa1744086a90399c9e9f4d643.glb",
+            "position": [
+                2.299067974090576,
+                1.1065531969070435,
+                -2.9084577560424805
+            ],
+            "rotation": [
+                15.292719841003418,
+                51.639556884765625,
+                347.5856628417969
+            ],
+            "scale": [
+                0.024969084188342094,
+                0.024969084188342094,
+                0.024969084188342094
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/0c4d34321d594375849f82ba7e64df88.glb",
+            "position": [
+                2.382039785385132,
+                1.09385085105896,
+                -2.5594253540039062
+            ],
+            "rotation": [
+                1.6405060291290283,
+                84.9832992553711,
+                272.9750671386719
+            ],
+            "scale": [
+                0.16804780066013336,
+                0.16804780066013336,
+                0.16804780066013336
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/63cdb278c4984c72bc7c65431e6130ba.glb",
+            "position": [
+                0.7009024620056152,
+                0.46442121267318726,
+                -3.100398063659668
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                371.8443603515625,
+                371.8443603515625,
+                371.8443603515625
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/Pot_10.fbx",
+            "position": [
+                0.7213265895843506,
+                0.8390188217163086,
+                -3.046929121017456
+            ],
+            "rotation": [
+                1.6478664875030518,
+                0.01973946951329708,
+                0.09013132750988007
+            ],
+            "scale": [
+                0.9934599995613098,
+                0.9934599995613098,
+                0.9934599995613098
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "pot_10",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/Copper_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/Copper_MetallicSmoothness.1.png",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6840000152587891,
+                            "normal_map": "assets/HammeredMetal_Normal.73.png",
+                            "normal_map_scale": 2.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/BrushedIron_AlbedoTransparency.17.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/Copper_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5899999737739563,
+                            "normal_map": "assets/Copper_Normal.9.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/BrushedIron_AlbedoTransparency.17.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/BrushedAluminum_MetallicSmoothness.7.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "fade",
+                            "base_map": "",
+                            "base_color": "#C9C9C96F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.5860000252723694,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9169999957084656,
+                            "normal_map": "assets/HammeredMetal_Normal.73.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 2.0,
+                            "tiling_y": 2.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/9566a7ad9cd144f9b8f294b7bf879e50.glb",
+            "position": [
+                1.6512868404388428,
+                0.744038999080658,
+                -2.998492479324341
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.947299599647522,
+                0.947299599647522,
+                0.947299599647522
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/791bff1f2c72441dad8db59677f2e036.glb",
+            "position": [
+                1.8026599884033203,
+                1.5695407390594482,
+                -2.714695930480957
+            ],
+            "rotation": [
+                3.607193139032461e-05,
+                180.00001525878906,
+                1.0999010555678979e-05
+            ],
+            "scale": [
+                0.16316746175289154,
+                0.16316746175289154,
+                0.16316746175289154
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/6f2ef02ceb334990a867c1437f4a65cd.glb",
+            "position": [
+                1.5218286514282227,
+                1.470476508140564,
+                -3.2320988178253174
+            ],
+            "rotation": [
+                1.7821811437606812,
+                179.99533081054688,
+                0.48404237627983093
+            ],
+            "scale": [
+                0.013764135539531708,
+                0.013764135539531708,
+                0.013764135539531708
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/2c14092509974e08a96245598e86ab27.glb",
+            "position": [
+                1.7898423671722412,
+                1.488241195678711,
+                -3.1386022567749023
+            ],
+            "rotation": [
+                0.2636030614376068,
+                179.9998779296875,
+                -0.00012001256254734471
+            ],
+            "scale": [
+                0.5062136650085449,
+                0.5062136650085449,
+                0.5062136650085449
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/73bded78b3f64a4891721002c8653424.glb",
+            "position": [
+                1.7965750694274902,
+                1.4911185503005981,
+                -2.8464300632476807
+            ],
+            "rotation": [
+                0.818941056728363,
+                172.9617462158203,
+                0.46589943766593933
+            ],
+            "scale": [
+                0.01422519888728857,
+                0.01422519888728857,
+                0.01422519888728857
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/Tomato_18.fbx",
+            "position": [
+                1.9157845973968506,
+                1.4949010610580444,
+                -3.0328316688537598
+            ],
+            "rotation": [
+                316.0528564453125,
+                356.517333984375,
+                3.5703482627868652
+            ],
+            "scale": [
+                1.012432336807251,
+                1.012432336807251,
+                1.012432336807251
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "tomato_b8_mesh",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/Tomato2_AlbedoTransparency.1.png",
+                            "base_color": "#FFD7CCFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/Tomato2_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.75,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "assets/Tomato2_Normal.1.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/1b5f52a5181942ccb5415f1a4ff4ea3c.glb",
+            "position": [
+                0.3115169107913971,
+                0.4517418444156647,
+                -0.23618793487548828
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.4267418384552002,
+                0.4267418384552002,
+                0.4267418384552002
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/c5b70ef620f14c159dc14e3e47c43662.glb",
+            "position": [
+                1.5192573070526123,
+                0.2573505938053131,
+                -0.4049820601940155
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                1.1617529392242432,
+                1.1617529392242432,
+                1.1617529392242432
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "LowPolyInterior2_Toilet2_C1_01",
+            "position": [
+                -2.146533489227295,
+                0.45169559121131897,
+                2.1713943481445312
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "LowPolyInterior2_Bathroom_C1_02",
+            "position": [
+                -2.465923547744751,
+                0.45408254861831665,
+                1.041364073753357
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/92c5bcde49404b3099b7ca0ffdec19ad.glb",
+            "position": [
+                -2.457136392593384,
+                0.7867794632911682,
+                1.131757140159607
+            ],
+            "rotation": [
+                -7.74625877966173e-05,
+                269.93707275390625,
+                3.523451596265659e-05
+            ],
+            "scale": [
+                0.004268009215593338,
+                0.004268009215593338,
+                0.004268009215593338
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/b64f71419439447e98ddade0a43cd4aa.glb",
+            "position": [
+                -2.4510273933410645,
+                0.7719077467918396,
+                1.2110604047775269
+            ],
+            "rotation": [
+                3.846772960969247e-05,
+                270.000244140625,
+                -6.886049231979996e-05
+            ],
+            "scale": [
+                0.011851881630718708,
+                0.011851881630718708,
+                0.011851881630718708
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/109c4312840843a092d17f03db1eff44.glb",
+            "position": [
+                -2.391631603240967,
+                0.7356228232383728,
+                1.0436848402023315
+            ],
+            "rotation": [
+                283.9150695800781,
+                125.24334716796875,
+                125.78730773925781
+            ],
+            "scale": [
+                0.8563087582588196,
+                0.8563087582588196,
+                0.8563087582588196
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/cbf17929cf4e4703a8e5cb8819066415.glb",
+            "position": [
+                -2.5695600509643555,
+                0.33313798904418945,
+                0.2840140759944916
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                2.0181891918182373,
+                2.0181891918182373,
+                2.0181891918182373
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/fac7068c1bcc48848a7a95e431e6eb27.glb",
+            "position": [
+                2.183723211288452,
+                0.5341699123382568,
+                3.4763667583465576
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.8499106764793396,
+                0.8499106764793396,
+                0.8499106764793396
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/Laptop_27.fbx",
+            "position": [
+                2.6411471366882324,
+                0.678724467754364,
+                3.4482176303863525
+            ],
+            "rotation": [
+                358.85174560546875,
+                179.904296875,
+                0.4248097836971283
+            ],
+            "scale": [
+                1.0031789541244507,
+                1.0031789541244507,
+                1.0031789541244507
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "laptop_27",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#5E5E5EFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/HammeredMetal_MetallicSmoothness.11.png",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.7620000243186951,
+                            "normal_map": "assets/HammeredMetal_Normal.44.png",
+                            "normal_map_scale": 0.5,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 3.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#2D2D2DFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/HammeredMetal_MetallicSmoothness.11.png",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 0.296999990940094,
+                            "smoothness_factor": 0.7620000243186951,
+                            "normal_map": "assets/HammeredMetal_Normal.44.png",
+                            "normal_map_scale": 0.5,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 3.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/BrushedAluminum_AlbedoTransparency.17.png",
+                            "base_color": "#90969CFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.7379999756813049,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#010101FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 1.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "assets/Laptop_Detail_AlbedoTransparency.2.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "laptop_lid_27",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#5E5E5EFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/HammeredMetal_MetallicSmoothness.11.png",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.7620000243186951,
+                            "normal_map": "assets/HammeredMetal_Normal.44.png",
+                            "normal_map_scale": 0.5,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 3.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#2D2D2DFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/HammeredMetal_MetallicSmoothness.11.png",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 0.296999990940094,
+                            "smoothness_factor": 0.7620000243186951,
+                            "normal_map": "assets/HammeredMetal_Normal.44.png",
+                            "normal_map_scale": 0.5,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 3.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/BrushedAluminum_AlbedoTransparency.17.png",
+                            "base_color": "#90969CFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.7379999756813049,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#010101FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 1.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "assets/Laptop_Detail_AlbedoTransparency.2.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/22b81a6a5332465fb3279baac9ba4311.glb",
+            "position": [
+                1.632598638534546,
+                0.7035479545593262,
+                3.2143490314483643
+            ],
+            "rotation": [
+                0.33334752917289734,
+                359.93890380859375,
+                358.44970703125
+            ],
+            "scale": [
+                0.010513496585190296,
+                0.010513496585190296,
+                0.010513496585190296
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/9ebe03b486334d2696b974f9e58afd40.glb",
+            "position": [
+                2.666243076324463,
+                0.7606882452964783,
+                3.836615562438965
+            ],
+            "rotation": [
+                6.017553806304932,
+                0.05208874121308327,
+                3.4562957286834717
+            ],
+            "scale": [
+                0.9858419299125671,
+                0.9858419299125671,
+                0.9858419299125671
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/f7c11039b0554125a8ce79bb64385072.glb",
+            "position": [
+                2.7596397399902344,
+                0.7192660570144653,
+                2.9272549152374268
+            ],
+            "rotation": [
+                357.0198059082031,
+                0.35579004883766174,
+                354.2965393066406
+            ],
+            "scale": [
+                0.007650566753000021,
+                0.007650566753000021,
+                0.007650566753000021
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/bd724a4241b0490bbbf4881d6e0b5959.glb",
+            "position": [
+                2.1804614067077637,
+                0.7971394062042236,
+                3.5823564529418945
+            ],
+            "rotation": [
+                340.67742919921875,
+                353.70135498046875,
+                0.06467726826667786
+            ],
+            "scale": [
+                0.002062227576971054,
+                0.002062227576971054,
+                0.002062227576971054
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "LowPolyInterior2_BedTable3_C2",
+            "position": [
+                0.3032262921333313,
+                0.2750000059604645,
+                2.8073110580444336
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/3b5c830c77c7442a8c87b3c297c45c8c.glb",
+            "position": [
+                0.26545947790145874,
+                0.631718099117279,
+                2.7367472648620605
+            ],
+            "rotation": [
+                359.9638671875,
+                278.3251037597656,
+                0.07181750237941742
+            ],
+            "scale": [
+                0.017546609044075012,
+                0.017546609044075012,
+                0.017546609044075012
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/de9e6b79c7524697a090763db4faf526.glb",
+            "position": [
+                0.4416363537311554,
+                0.5346313714981079,
+                2.824812889099121
+            ],
+            "rotation": [
+                270.0,
+                270.27569580078125,
+                0.0
+            ],
+            "scale": [
+                0.8472117185592651,
+                0.8472117185592651,
+                0.8472117185592651
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/512f63eacd9d4068816d0c6280ae48d9.glb",
+            "position": [
+                0.31141987442970276,
+                0.6303820610046387,
+                2.916445732116699
+            ],
+            "rotation": [
+                2.2013749912730418e-05,
+                270.0,
+                -1.0022556125477422e-05
+            ],
+            "scale": [
+                0.007671527564525604,
+                0.007671527564525604,
+                0.007671527564525604
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/5ae8204da75b4620acb4dac71bf4e830.glb",
+            "position": [
+                4.464756011962891,
+                0.5691936016082764,
+                3.733161211013794
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.0922841876745224,
+                0.0922841876745224,
+                0.0922841876745224
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "LowPolyInterior2_BedTable2_C2",
+            "position": [
+                4.438278675079346,
+                0.2850000560283661,
+                0.413879930973053
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/9ebe03b486334d2696b974f9e58afd40.glb",
+            "position": [
+                4.403457164764404,
+                0.5816023945808411,
+                0.37676161527633667
+            ],
+            "rotation": [
+                1.3792113350064028e-05,
+                89.99999237060547,
+                0.03679556027054787
+            ],
+            "scale": [
+                0.9858419299125671,
+                0.9858419299125671,
+                0.9858419299125671
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/74fb69dbcd9e49ee875bc4a8004b8485.glb",
+            "position": [
+                0.36656785011291504,
+                0.531223714351654,
+                3.7954235076904297
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.015469059348106384,
+                0.015469059348106384,
+                0.015469059348106384
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/13dbe30b0e45408c8bfaddfe6a4e8786.glb",
+            "position": [
+                0.39971134066581726,
+                0.5039634704589844,
+                4.144186496734619
+            ],
+            "rotation": [
+                9.618616104125977,
+                359.3319091796875,
+                5.862876892089844
+            ],
+            "scale": [
+                0.5991435050964355,
+                0.5991435050964355,
+                0.5991435050964355
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/2d72f06a3ce64fdab40b858b5107f843.glb",
+            "position": [
+                0.318888396024704,
+                0.5152958035469055,
+                4.12855863571167
+            ],
+            "rotation": [
+                56.270118713378906,
+                17.45440101623535,
+                15.464424133300781
+            ],
+            "scale": [
+                0.012372702360153198,
+                0.012372702360153198,
+                0.012372702360153198
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/d25c1a74a30a4c95a63857074560806f.glb",
+            "position": [
+                0.48844441771507263,
+                0.49857428669929504,
+                4.185943603515625
+            ],
+            "rotation": [
+                356.6082763671875,
+                0.5688625574111938,
+                349.3995666503906
+            ],
+            "scale": [
+                0.00902334414422512,
+                0.00902334414422512,
+                0.00902334414422512
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/12304e30fc9d4c1288f6634dd80a2bb8.glb",
+            "position": [
+                0.532078742980957,
+                0.708366870880127,
+                0.2062303125858307
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.027800196781754494,
+                0.027800196781754494,
+                0.027800196781754494
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/44905db989ab40aa9c76b74795a30356.glb",
+            "position": [
+                3.960024118423462,
+                0.4052969217300415,
+                4.170495986938477
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.987784206867218,
+                0.987784206867218,
+                0.987784206867218
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "position": [
+                4.45057487487793,
+                0.8809165954589844,
+                4.207036018371582
+            ],
+            "rotation": [
+                -1.2357926607364789e-05,
+                -0.00022024859208613634,
+                5.924557990510948e-05
+            ],
+            "scale": [
+                0.6354827284812927,
+                0.6354827284812927,
+                0.6354827284812927
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/b185a4c6ab3f4c3eb87f042cad633cf3.glb",
+            "position": [
+                3.947803497314453,
+                0.8723611235618591,
+                4.17418098449707
+            ],
+            "rotation": [
+                359.7173156738281,
+                0.26598191261291504,
+                0.16502678394317627
+            ],
+            "scale": [
+                0.6678348183631897,
+                0.6678348183631897,
+                0.6678348183631897
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/712e1b9155e84173806bdae1868aa7a0.glb",
+            "position": [
+                4.183897018432617,
+                0.973540186882019,
+                4.197417259216309
+            ],
+            "rotation": [
+                0.004396831151098013,
+                -3.368355828570202e-05,
+                0.012746090069413185
+            ],
+            "scale": [
+                0.04030223935842514,
+                0.04030223935842514,
+                0.04030223935842514
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/dac219b711f84ee6b9cf6666885e6bf8.glb",
+            "position": [
+                4.3495988845825195,
+                0.4882471561431885,
+                1.174810767173767
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.009774649515748024,
+                0.009774649515748024,
+                0.009774649515748024
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/8c5f6079a7be48819f8d1dfca271bae3.glb",
+            "position": [
+                4.455023765563965,
+                0.43366488814353943,
+                1.3506923913955688
+            ],
+            "rotation": [
+                86.03874206542969,
+                82.0276870727539,
+                352.4417419433594
+            ],
+            "scale": [
+                0.019751202315092087,
+                0.019751202315092087,
+                0.019751202315092087
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/13dbe30b0e45408c8bfaddfe6a4e8786.glb",
+            "position": [
+                4.665250778198242,
+                0.032123252749443054,
+                1.4616384506225586
+            ],
+            "rotation": [
+                359.3235168457031,
+                94.34688568115234,
+                90.36158752441406
+            ],
+            "scale": [
+                0.5991435050964355,
+                0.5991435050964355,
+                0.5991435050964355
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/5bca4779ad2146c78fd2d988b055509e.glb",
+            "position": [
+                4.446356296539307,
+                0.517360508441925,
+                1.1637226343154907
+            ],
+            "rotation": [
+                356.7120666503906,
+                79.37603759765625,
+                103.48226928710938
+            ],
+            "scale": [
+                1.3700006008148193,
+                1.3700006008148193,
+                1.3700006008148193
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/Pen_2.fbx",
+            "position": [
+                4.323672294616699,
+                0.4301716685295105,
+                1.1412672996520996
+            ],
+            "rotation": [
+                275.0342712402344,
+                3.8634603023529053,
+                0.718414843082428
+            ],
+            "scale": [
+                0.4190281629562378,
+                0.4190281629562378,
+                0.4190281629562378
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "Cylinder.231",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "assets/PensPencils_DefaultMaterial_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "assets/PensPencils_DefaultMaterial_MetallicSmoothness.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "assets/25290cec69eb4154b7c831f76a5c022e.glb",
+            "position": [
+                4.317857265472412,
+                0.4290655255317688,
+                1.0739043951034546
+            ],
+            "rotation": [
+                90.0,
+                66.64888763427734,
+                0.0
+            ],
+            "scale": [
+                0.0022000474855303764,
+                0.0022000474855303764,
+                0.0022000474855303764
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/c3e0f4c52e564c7fa8520c4286b34b14.glb",
+            "position": [
+                4.444502353668213,
+                0.4086727499961853,
+                2.5469985008239746
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.8061984181404114,
+                0.8061984181404114,
+                0.8061984181404114
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/ad3456d46571438f86c9466deb816b13.glb",
+            "position": [
+                4.447696685791016,
+                0.8457186222076416,
+                2.379324436187744
+            ],
+            "rotation": [
+                -0.0025139707140624523,
+                89.74029541015625,
+                0.026918064802885056
+            ],
+            "scale": [
+                0.023208921775221825,
+                0.023208921775221825,
+                0.023208921775221825
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/6bd5334b7f934b648515a4467181f536.glb",
+            "position": [
+                4.3514814376831055,
+                0.8033667802810669,
+                3.178380012512207
+            ],
+            "rotation": [
+                272.7840270996094,
+                82.57422637939453,
+                7.6787943840026855
+            ],
+            "scale": [
+                0.027918266132473946,
+                0.027918266132473946,
+                0.027918266132473946
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/c1019263a7f94fa3b6b8fa31b57dc89d.glb",
+            "position": [
+                4.436252117156982,
+                0.8062067031860352,
+                2.637723684310913
+            ],
+            "rotation": [
+                -1.6890885490283836e-07,
+                90.0,
+                -5.084951908429503e-07
+            ],
+            "scale": [
+                0.01455247774720192,
+                0.01455247774720192,
+                0.01455247774720192
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "assets/78b6089b8d8248f5bc04f77d69510d79.glb",
+            "position": [
+                4.43751335144043,
+                0.9121856689453125,
+                2.160222291946411
+            ],
+            "rotation": [
+                0.006376621779054403,
+                90.17657470703125,
+                359.76361083984375
+            ],
+            "scale": [
+                1.1687129735946655,
+                1.1687129735946655,
+                1.1687129735946655
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "LowPolyInterior2_Carpet4_C3",
+            "position": [
+                2.144028902053833,
+                0.030000047758221626,
+                2.109867811203003
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.3043935298919678,
+                1.0,
+                1.3043935298919678
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "material": "assets/RUG2.png"
+        },
+        {
+            "prefab": "assets/92aa31b6796e4ca3b3ee58a95d578c40.glb",
+            "position": [
+                1.618114709854126,
+                2.6608006954193115,
+                -1.7505011558532715
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.002317975042387843,
+                0.002317975042387843,
+                0.002317975042387843
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/1d1adaa8c8194e7193c3a997b3a10277.glb",
+            "position": [
+                -1.414236068725586,
+                2.5171401500701904,
+                1.286586880683899
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.0013294537784531713,
+                0.0013294537784531713,
+                0.0013294537784531713
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "assets/18f1e10f15bc4930856286a40714bc71.glb",
+            "position": [
+                2.3867695331573486,
+                2.2577269077301025,
+                2.2465264797210693
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.04186572879552841,
+                0.04186572879552841,
+                0.04186572879552841
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                1.618114709854126,
+                1.5,
+                -3.501002311706543
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.236229419708252,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -0.6976653933525085,
+                        0.14143161475658417
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                3.236229419708252,
+                1.5,
+                -1.7505011558532715
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                3.501002311706543,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                1.618114709854126,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                3.236229419708252,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -0.7370996475219727,
+                        -0.448935866355896
+                    ],
+                    "size_xy": [
+                        1.0406969785690308,
+                        2.102128267288208
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                -1.7505011558532715
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                3.501002311706543,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -0.22359159588813782,
+                        0.14143161475658417
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                -1.414236068725586,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                2.828472137451172,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                1.286586880683899
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                2.573173761367798,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -0.24927623569965363,
+                        -0.45030128955841064
+                    ],
+                    "size_xy": [
+                        1.0522693395614624,
+                        2.0993974208831787
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                -1.414236068725586,
+                1.5,
+                2.573173761367798
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                2.828472137451172,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.23456555604934692,
+                        -0.0017966794548556209
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                -2.828472137451172,
+                1.5,
+                1.286586880683899
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                2.573173761367798,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.11951778829097748,
+                        -0.0017966794548556209
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                4.004884243011475,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                1.5373095273971558,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                4.773539066314697,
+                1.5,
+                2.2465264797210693
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                4.493052959442139,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -1.2484339475631714,
+                        -0.03172845020890236
+                    ],
+                    "size_xy": [
+                        1.399999976158142,
+                        1.399999976158142
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                2.3867695331573486,
+                1.5,
+                4.493052959442139
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                4.773539066314697,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        -1.3331748247146606,
+                        -0.03172845020890236
+                    ],
+                    "size_xy": [
+                        1.399999976158142,
+                        1.399999976158142
+                    ]
+                }
+            ],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                3.533113479614258
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                1.9198793172836304,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        }
+    ],
+    "floors": [
+        {
+            "position": [
+                1.618114709854126,
+                0.0,
+                -1.7505011558532715
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.236229419708252,
+                0.05000000074505806,
+                3.501002311706543
+            ],
+            "holes": [],
+            "material": "assets/IrregularGlassTiles1.png"
+        },
+        {
+            "position": [
+                -1.414236068725586,
+                0.0,
+                1.286586880683899
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                2.828472137451172,
+                0.05000000074505806,
+                2.573173761367798
+            ],
+            "holes": [],
+            "material": "assets/SubwayTilesDISP.png"
+        },
+        {
+            "position": [
+                2.3867695331573486,
+                0.0,
+                2.2465264797210693
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.773539066314697,
+                0.05000000074505806,
+                4.493052959442139
+            ],
+            "holes": [],
+            "material": "assets/WornWood.png"
+        },
+        {
+            "position": [
+                1.618114709854126,
+                3.0,
+                -1.7505011558532715
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.236229419708252,
+                0.05000000074505806,
+                3.501002311706543
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                -1.414236068725586,
+                3.0,
+                1.286586880683899
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                2.828472137451172,
+                0.05000000074505806,
+                2.573173761367798
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        },
+        {
+            "position": [
+                2.3867695331573486,
+                3.0,
+                2.2465264797210693
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.773539066314697,
+                0.05000000074505806,
+                4.493052959442139
+            ],
+            "holes": [],
+            "material": "assets/TexturesCom_CardboardPlain0008_1_seamless_albedo_S.png"
+        }
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                31.5986270904541,
+                -90.0,
+                0.0
+            ],
+            "spotAngle": 0.0,
+            "useColorTemperature": false,
+            "colorTemperature": 0.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 0.0,
+            "range": 15.0,
+            "shadowType": "Soft"
+        }
+    ],
+    "light_probes": [],
+    "skybox": {
+        "map": "assets/sunroof_city_6k.jpg",
+        "color": "#FFFFFF",
+        "exposure": 0.6,
+        "rotation": 0
+    },
+    "points": [],
+    "rooms": [],
+    "player": {
+        "prefab": "",
+        "meshes": [],
+        "position": [
+            100.0,
+            -1198910.625,
+            100.0
+        ],
+        "rotation": [
+            0.0,
+            324.0374755859375,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": -1,
+        "type": "",
+        "properties": [],
+        "material": "",
+        "mesh_materials": []
+    },
+    "agent": {
+        "prefab": "agent",
+        "meshes": [],
+        "position": [
+            3.415597438812256,
+            0.05499976873397827,
+            2.0568721294403076
+        ],
+        "rotation": [
+            0.0,
+            90.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": 0,
+        "type": "kinematic",
+        "properties": [],
+        "material": "",
+        "mesh_materials": []
+    },
+    "center": [
+        0.8635493516921997,
+        11.991083145141602,
+        0.5942040681838989
+    ],
+    "center_rotation": []
+}

@@ -1,0 +1,1467 @@
+{
+    "prompt": "",
+    "instances": [
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Window_Slider_60x36.fbx",
+            "position": [
+                2.2869622707366943,
+                1.7668030261993408,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.00358247756958,
+                1.0030348300933838,
+                1.0273363590240479
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "window_slider_60x36",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/TexturesCom_WoodFine0050_1_seamless_S.png",
+                            "base_color": "#874E4EFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.20900000631809235,
+                            "gloss_map_scale": 0.7699999809265137,
+                            "smoothness_factor": 0.8299999833106995,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/HammeredMetal_Normal.2.png",
+                            "normal_map_scale": 0.46000000834465027,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "transparent",
+                            "base_map": "",
+                            "base_color": "#FFFFFF1F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9300000071525574,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.11299999803304672,
+                            "smoothness_factor": 0.7269999980926514,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "window",
+            "description": "Window",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/2de962994f1e4ea582f484095187aafe.glb",
+            "position": [
+                4.170276165008545,
+                1.4552721977233887,
+                0.596063494682312
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.008392593823373318,
+                0.008392593823373318,
+                0.008392593823373318
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "picture",
+            "description": "A picture in a picture frame with some boats.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/280f03acf3c447d184f8ff8116c0ccd1.glb",
+            "position": [
+                4.16826868057251,
+                2.575477123260498,
+                3.9738998413085938
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.20345698297023773,
+                0.20345698297023773,
+                0.20345698297023773
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "wall clock",
+            "description": "A round clock with base of green and black lined marble and gray and gold numbers.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Doorway_9.fbx",
+            "position": [
+                1.17642343044281,
+                1.0371885299682617,
+                4.8299689292907715
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.999619722366333,
+                1.0002135038375854,
+                1.0064736604690552
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "doorway_door_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/WoodGrains1.4.jpg",
+                            "base_color": "#3F2B1DFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_None_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.9309999942779541,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_Normal.1.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/NoisyNormal.tga",
+                            "detail_normal_map_scale": 0.019999999552965164,
+                            "detail_tiling_x": 0.10000000149011612,
+                            "detail_tiling_y": 0.10000000149011612
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_handle_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_None_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.9309999942779541,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/BrushedIron_Normal.1.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/NoisyNormal.tga",
+                            "detail_normal_map_scale": 0.019999999552965164,
+                            "detail_tiling_x": 0.10000000149011612,
+                            "detail_tiling_y": 0.10000000149011612
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/WoodGrains1.4.jpg",
+                            "base_color": "#1F1717FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/HammeredMetal_Normal.1.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/TexturesCom_WoodWhite.1.png",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "door",
+            "description": "Door",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/758275bbe10a424d90382a863171a101.glb",
+            "position": [
+                3.502237319946289,
+                2.0549964904785156,
+                4.790719032287598
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.02682359330356121,
+                0.02682359330356121,
+                0.02682359330356121
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "picture",
+            "description": "A black framed picture of a branch with flowers.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/05a15bb97cc944acbe2c7bac65606b54.glb",
+            "position": [
+                2.3269355297088623,
+                1.764223337173462,
+                4.783183574676514
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.04144611582159996,
+                0.04144611582159996,
+                0.04144611582159996
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "picture",
+            "description": "A painting of a tree on a hillside next to a home.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/16e01e5eb3d64510a978af91e3b6c033.glb",
+            "position": [
+                0.07512443512678146,
+                1.657419204711914,
+                0.7240760922431946
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.1712236851453781,
+                0.1712236851453781,
+                0.1712236851453781
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "wall clock",
+            "description": "A wooden wall clock with roman letters.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Wall_Decor_Photo_1V.fbx",
+            "position": [
+                0.04087042808532715,
+                2.1389758586883545,
+                3.7778279781341553
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.3956625461578369,
+                0.26265376806259155,
+                0.8277249336242676
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "robothor_wall_decor_4_3",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Wall_Decor_Photo_1V_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#262626FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.722000002861023,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#FFF9F9FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.503000020980835,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/HammeredMetal_Normal.3.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "painting",
+            "description": "Painting",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/169f3cb1d4374ff5b11275e49f2e378f.glb",
+            "position": [
+                3.095487356185913,
+                0.5534222722053528,
+                1.6544655561447144
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.010273474268615246,
+                0.010273474268615246,
+                0.010273474268615246
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "bed",
+            "description": "A large king bed based on behind headboard a seam and has triple white sheets pulled back and folded and two pillows.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/43397d56a1274995a98012c7b69366d9.glb",
+            "position": [
+                2.50447940826416,
+                0.5139296054840088,
+                1.379223108291626
+            ],
+            "rotation": [
+                5.427299038274214e-05,
+                90.00000762939453,
+                0.036789461970329285
+            ],
+            "scale": [
+                0.9479959607124329,
+                0.9479959607124329,
+                0.9479959607124329
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "hardback book",
+            "description": "Two hardback books bound with a strap covered in different numbers in grids.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/2a37a4b61b8c4aad9e4eb78a689913a4.glb",
+            "position": [
+                2.939861297607422,
+                0.502153217792511,
+                1.6114070415496826
+            ],
+            "rotation": [
+                88.63972473144531,
+                227.57981872558594,
+                128.4289093017578
+            ],
+            "scale": [
+                0.001285750768147409,
+                0.001285750768147409,
+                0.001285750768147409
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "notebook",
+            "description": "A pink spiral notebook with a green leaf on it.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/131d31213181479eb194e3d34324b082.glb",
+            "position": [
+                3.614722728729248,
+                0.4847433269023895,
+                1.0748399496078491
+            ],
+            "rotation": [
+                349.3571472167969,
+                89.70653533935547,
+                2.5820376873016357
+            ],
+            "scale": [
+                1.437196969985962,
+                1.437196969985962,
+                1.437196969985962
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "flashlight",
+            "description": "black and white flashlight model with tube, pipe, pen, and screw elements.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/a820c3cc463a4ee49b87e1e9a4029abc.glb",
+            "position": [
+                2.9188804626464844,
+                0.5151565074920654,
+                1.163830280303955
+            ],
+            "rotation": [
+                5.3859028816223145,
+                90.08209228515625,
+                357.6367492675781
+            ],
+            "scale": [
+                0.6024225950241089,
+                0.6024225950241089,
+                0.6024225950241089
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "notebook",
+            "description": "A light pink notebook with two rings binder.",
+            "of_interest": false
+        },
+        {
+            "prefab": "LowPolyInterior2_BedTable3_C1",
+            "position": [
+                0.3032262921333313,
+                0.2750000059604645,
+                1.0595723390579224
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "bed_table",
+            "description": "",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/119d5abe285545559f2a8b25760f7354.glb",
+            "position": [
+                0.3066394031047821,
+                0.5361176133155823,
+                1.0169217586517334
+            ],
+            "rotation": [
+                0.024251068010926247,
+                269.98846435546875,
+                358.4804382324219
+            ],
+            "scale": [
+                0.0045488798059523106,
+                0.0045488798059523106,
+                0.0045488798059523106
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "notebook",
+            "description": "a red spiral-bound notebook with drawings on it.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/848e8db6ec734f06ac3920b58905b176.glb",
+            "position": [
+                0.3661190867424011,
+                0.6000185012817383,
+                1.173061728477478
+            ],
+            "rotation": [
+                359.9244079589844,
+                267.34869384765625,
+                359.696533203125
+            ],
+            "scale": [
+                0.043554939329624176,
+                0.043554939329624176,
+                0.043554939329624176
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "cup",
+            "description": "A white cup with a brown grip on the center and a black lid.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/5a88798f1d3744cea9c873be4e23a182.glb",
+            "position": [
+                2.016221284866333,
+                0.9268928170204163,
+                0.3193207085132599
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                3.438869316596538e-05,
+                3.438869316596538e-05,
+                3.438869316596538e-05
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "lamp",
+            "description": "A floor lamp with a white shade with gold swirly designs.",
+            "of_interest": false
+        },
+        {
+            "prefab": "LowPolyInterior2_BedTable2_C1",
+            "position": [
+                0.8605725765228271,
+                0.2850000560283661,
+                0.3352605104446411
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "bed_table",
+            "description": "",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "position": [
+                0.7877420783042908,
+                0.6403224468231201,
+                0.3395210802555084
+            ],
+            "rotation": [
+                -9.871762358670821e-07,
+                180.0,
+                -1.3950530046713538e-05
+            ],
+            "scale": [
+                0.6354827284812927,
+                0.6354827284812927,
+                0.6354827284812927
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "magazine",
+            "description": "An issue of picture business magazine.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/2518b88ad3474495b4dc5a3e5846a362.glb",
+            "position": [
+                0.8419822454452515,
+                0.5688554644584656,
+                0.20349881052970886
+            ],
+            "rotation": [
+                0.016020886600017548,
+                180.00038146972656,
+                0.9564211368560791
+            ],
+            "scale": [
+                0.05822569131851196,
+                0.05822569131851196,
+                0.05822569131851196
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "flashlight",
+            "description": "A black cylindrical flashlight with small gray button and an uneven pattern around the light portion.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/6542db5456ec4489ae1c5ef40f079a57.glb",
+            "position": [
+                0.934990644454956,
+                0.626069188117981,
+                0.33447906374931335
+            ],
+            "rotation": [
+                3.740727663040161,
+                179.9746856689453,
+                359.75433349609375
+            ],
+            "scale": [
+                4.889475894742645e-05,
+                4.889475894742645e-05,
+                4.889475894742645e-05
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "book",
+            "description": "A yellow book with a computer on the front with black font on the spine and front.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/9595183dc3f54ac89e86b491f21561ee.glb",
+            "position": [
+                0.26741787791252136,
+                0.3874959945678711,
+                0.3846070170402527
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.0011085488367825747,
+                0.0011085488367825747,
+                0.0011085488367825747
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "folding chair",
+            "description": "A black folding chair with a sharply angled back that has a black band across it which does not touch the top of the back's curve.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/3841ac0446dc4b71a494fe97b9ca8329.glb",
+            "position": [
+                0.19028636813163757,
+                0.47290730476379395,
+                0.4488556385040283
+            ],
+            "rotation": [
+                1.888974293251522e-05,
+                180.0,
+                2.0810730347875506e-05
+            ],
+            "scale": [
+                0.026893727481365204,
+                0.026893727481365204,
+                0.026893727481365204
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "yogurt",
+            "description": "A white container of strawberry yogurt.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/003ebdf86df345d39dc166563229fb85.glb",
+            "position": [
+                0.23723973333835602,
+                0.503183126449585,
+                0.3020751476287842
+            ],
+            "rotation": [
+                355.8055419921875,
+                171.1800079345703,
+                2.2594428062438965
+            ],
+            "scale": [
+                0.040144409984350204,
+                0.040144409984350204,
+                0.040144409984350204
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "beer can",
+            "description": "a James beer can with a green label.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/6261b5907b194312976168ad4ba9495e.glb",
+            "position": [
+                0.34591490030288696,
+                0.5156427621841431,
+                0.4441708028316498
+            ],
+            "rotation": [
+                -5.720232002204284e-05,
+                180.0135498046875,
+                -4.38235156252631e-06
+            ],
+            "scale": [
+                1.4621154069900513,
+                1.4621154069900513,
+                1.4621154069900513
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "cantaloup",
+            "description": "A ripe cantaloupe with a dark green top and some brown areas on the sides.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/0dafeb795f644ed38f95ea4a48caba57.glb",
+            "position": [
+                0.34386879205703735,
+                0.4427845776081085,
+                4.034430027008057
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.929067075252533,
+                0.929067075252533,
+                0.929067075252533
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "furniture",
+            "description": "A brownish black or black dresser or side table with four drawers and metal ring handles.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/125c81972ef94d8da063cf9d7c7ff245.glb",
+            "position": [
+                0.22791911661624908,
+                0.8748031258583069,
+                4.057610988616943
+            ],
+            "rotation": [
+                89.40455627441406,
+                186.85865783691406,
+                272.24560546875
+            ],
+            "scale": [
+                0.17358343303203583,
+                0.17358343303203583,
+                0.17358343303203583
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "charger",
+            "description": "black metal battery charger with a yellow and orange logo.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/125c81972ef94d8da063cf9d7c7ff245.glb",
+            "position": [
+                0.3702292740345001,
+                0.9174005389213562,
+                4.135631084442139
+            ],
+            "rotation": [
+                0.16541427373886108,
+                270.0608825683594,
+                359.6012268066406
+            ],
+            "scale": [
+                0.17358343303203583,
+                0.17358343303203583,
+                0.17358343303203583
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "charger",
+            "description": "black metal battery charger with a yellow and orange logo.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/a5cce410728140c492855a109f219ac1.glb",
+            "position": [
+                0.33146584033966064,
+                0.8921281099319458,
+                3.9464008808135986
+            ],
+            "rotation": [
+                359.981689453125,
+                269.99102783203125,
+                0.08167833089828491
+            ],
+            "scale": [
+                0.008498151786625385,
+                0.008498151786625385,
+                0.008498151786625385
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "hardback book",
+            "description": "A blue book and a brown book held together by a black band.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Newspaper_2.fbx",
+            "position": [
+                0.3157677948474884,
+                0.8700703382492065,
+                4.323701858520508
+            ],
+            "rotation": [
+                0.19426515698432922,
+                89.99993133544922,
+                359.99017333984375
+            ],
+            "scale": [
+                0.02826785109937191,
+                0.029455432668328285,
+                0.02873743511736393
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "Cylinder.039",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/Paper3.png",
+                            "base_color": "#CAA985FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "newspaper",
+            "description": "Newspaper",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/32a4f80a37104b8480f5679f08816d59.glb",
+            "position": [
+                0.15022802352905273,
+                0.8976178169250488,
+                4.483329772949219
+            ],
+            "rotation": [
+                78.93856048583984,
+                272.1557312011719,
+                359.78240966796875
+            ],
+            "scale": [
+                0.0018146670190617442,
+                0.0018146670190617442,
+                0.0018146670190617442
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "notepad",
+            "description": "A red notepad decorated with a slug in the lower corner.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/c3ed81981705487f984ad27b8bf4c52c.glb",
+            "position": [
+                2.8214404582977295,
+                0.458347350358963,
+                4.446943283081055
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.10442590713500977,
+                0.10442590713500977,
+                0.10442590713500977
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "chair",
+            "description": "A wooden chair with a black backrest and seat that is curved.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/1379cfdc210c46cf91afcaf4f91fa002.glb",
+            "position": [
+                2.916762351989746,
+                0.5430846810340881,
+                4.241295337677002
+            ],
+            "rotation": [
+                305.41070556640625,
+                341.16998291015625,
+                13.358037948608398
+            ],
+            "scale": [
+                0.04468559846282005,
+                0.04468559846282005,
+                0.04468559846282005
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "usb",
+            "description": "a blue USB flash drive",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/d962eb9af89d4823af2a32c81ccef3e6.glb",
+            "position": [
+                2.921372652053833,
+                0.040885407477617264,
+                4.6276774406433105
+            ],
+            "rotation": [
+                -1.2780653833033284e-06,
+                306.69891357421875,
+                -3.2853608900040854e-07
+            ],
+            "scale": [
+                0.1375061571598053,
+                0.1375061571598053,
+                0.1375061571598053
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "remote control",
+            "description": "A rectangular gray game remote control with a d pad and two red buttons.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/fc90c018647c4fd1a3a9f62559bf67f0.glb",
+            "position": [
+                2.788191795349121,
+                0.6377868056297302,
+                4.462849140167236
+            ],
+            "rotation": [
+                1.5356558561325073,
+                0.1543426513671875,
+                353.46942138671875
+            ],
+            "scale": [
+                0.6463557481765747,
+                0.6463557481765747,
+                0.6463557481765747
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "router",
+            "description": "A black router with green lights.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/c8d14f7f4a0845b49287debdc97e236a.glb",
+            "position": [
+                2.6619129180908203,
+                0.6216897368431091,
+                4.380259990692139
+            ],
+            "rotation": [
+                358.909912109375,
+                357.490234375,
+                325.1025390625
+            ],
+            "scale": [
+                0.403175413608551,
+                0.403175413608551,
+                0.403175413608551
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "musical instrument",
+            "description": "A harmonica style musical instrument that's gray metal with black along the edges.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/25290cec69eb4154b7c831f76a5c022e.glb",
+            "position": [
+                2.6040472984313965,
+                0.031600143760442734,
+                3.9890193939208984
+            ],
+            "rotation": [
+                90.0,
+                350.488525390625,
+                0.0
+            ],
+            "scale": [
+                0.0022000474855303764,
+                0.0022000474855303764,
+                0.0022000474855303764
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "keycard",
+            "description": "printed blue key.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/d2d7c05e2c844fc2bc0d7519de935be9.glb",
+            "position": [
+                3.784024477005005,
+                0.34308287501335144,
+                4.516472339630127
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.38501620292663574,
+                0.38501620292663574,
+                0.38501620292663574
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "duffel bag",
+            "description": "Black duffel bag with white letters and two handles.",
+            "of_interest": false
+        },
+        {
+            "prefab": "LowPolyInterior_Catpet_04",
+            "position": [
+                1.0142525434494019,
+                0.028977056965231895,
+                2.2795870304107666
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "material": "#222222",
+            "category": "carpet",
+            "description": "",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/0d9a4be455a3454786ed92c63d5d4085.glb",
+            "position": [
+                2.1032559871673584,
+                2.731966495513916,
+                2.4149844646453857
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.0063232192769646645,
+                0.0063232192769646645,
+                0.0063232192769646645
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "light",
+            "description": "Three purple and white pendant lights.",
+            "of_interest": false
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                2.1032559871673584,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.206511974334717,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.1837066262960434,
+                        0.26680299639701843
+                    ],
+                    "size_xy": [
+                        1.529459834098816,
+                        0.9171751141548157
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                4.206511974334717,
+                1.5,
+                2.4149844646453857
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                4.8299689292907715,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                2.1032559871673584,
+                1.5,
+                4.8299689292907715
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                4.206511974334717,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.9268325567245483,
+                        -0.4628114700317383
+                    ],
+                    "size_xy": [
+                        0.9980238676071167,
+                        2.0743770599365234
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                2.4149844646453857
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                4.8299689292907715,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "floors": [
+        {
+            "position": [
+                2.1032559871673584,
+                0.0,
+                2.4149844646453857
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.206511974334717,
+                0.05000000074505806,
+                4.8299689292907715
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                2.1032559871673584,
+                3.0,
+                2.4149844646453857
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.206511974334717,
+                0.05000000074505806,
+                4.8299689292907715
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                36.189205169677734,
+                0.0,
+                0.0
+            ],
+            "spotAngle": 0.0,
+            "useColorTemperature": false,
+            "colorTemperature": 0.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 15.0,
+            "range": 15.0,
+            "shadowType": "Soft"
+        }
+    ],
+    "light_probes": [],
+    "skybox": {
+        "map": "F:\\Downloads\\task_0613_0157\\bedroom_18/assets/sunroof_city_6k.jpg",
+        "color": "#FFFFFF",
+        "exposure": 0.6,
+        "rotation": 0
+    },
+    "points": [],
+    "rooms": [],
+    "player": {
+        "prefab": "",
+        "meshes": [],
+        "position": [
+            100.0,
+            -193614.640625,
+            100.0
+        ],
+        "rotation": [
+            0.0,
+            1.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": -1,
+        "type": "",
+        "properties": [],
+        "material": "",
+        "mesh_materials": [],
+        "category": "",
+        "description": "",
+        "of_interest": false
+    },
+    "agent": {
+        "prefab": "agent",
+        "meshes": [],
+        "position": [
+            2.7694594860076904,
+            0.05499982833862305,
+            2.9660637378692627
+        ],
+        "rotation": [
+            0.0,
+            90.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": 0,
+        "type": "kinematic",
+        "properties": [],
+        "material": "",
+        "mesh_materials": [],
+        "category": "",
+        "description": "",
+        "of_interest": false
+    },
+    "center": [
+        2.1032559871673584,
+        8.0,
+        2.4149844646453857
+    ],
+    "center_rotation": [],
+    "task": "",
+    "options": [],
+    "predicates": []
+}

@@ -1,0 +1,1743 @@
+{
+    "prompt": "",
+    "floors": [
+        {
+            "position": [
+                2.6837167776742366,
+                0,
+                2.578063833075122
+            ],
+            "size": [
+                5.367433555348473,
+                0.05,
+                5.156127666150244
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "#222222",
+            "bbox": [
+                0,
+                0,
+                5.367433555348473,
+                5.156127666150244
+            ],
+            "room_type": "LivingRoom"
+        },
+        {
+            "position": [
+                2.6837167776742366,
+                3,
+                2.578063833075122
+            ],
+            "size": [
+                5.367433555348473,
+                0.05,
+                5.156127666150244
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "#222222"
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                2.6837167776742366,
+                1.5,
+                0.0
+            ],
+            "size": [
+                5.367433555348473,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                5.367433555348473,
+                1.5,
+                2.578063833075122
+            ],
+            "size": [
+                5.156127666150244,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                270,
+                0
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                2.6837167776742366,
+                1.5,
+                5.156127666150244
+            ],
+            "size": [
+                5.367433555348473,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                180,
+                0
+            ],
+            "material": "#222222",
+            "holes": [
+                {
+                    "position_xy": [
+                        2.0585660281104916,
+                        -0.48050761222839367
+                    ],
+                    "size_xy": [
+                        0.9150815606117249,
+                        2.038984775543213
+                    ]
+                },
+                {
+                    "position_xy": [
+                        -1.2737247607761946,
+                        0.6856450248178243
+                    ],
+                    "size_xy": [
+                        1.8,
+                        1.3208834431006455
+                    ]
+                },
+                {
+                    "position_xy": [
+                        0.6413390671378272,
+                        0.6856450248178243
+                    ],
+                    "size_xy": [
+                        1.8,
+                        1.3208834431006455
+                    ]
+                }
+            ]
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                2.578063833075122
+            ],
+            "size": [
+                5.156127666150244,
+                3,
+                0.05
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "material": "#222222"
+        }
+    ],
+    "instances": [
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d85b88316ebd40159847b262b05d285b.glb",
+            "category": "wall clock",
+            "position": [
+                4.485562477521011,
+                1.5955343314238808,
+                0.0524450676908936
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.01648720776282321,
+                0.01648720776282321,
+                0.01648720776282321
+            ],
+            "type": "kinematic",
+            "size": [
+                0.1398514832318946,
+                0.07228744892204911,
+                0.0548901353817874
+            ],
+            "description": "Yellow alarm clock with white face and button on top.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 0
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/1d9e518d625e47fe97ba4cfd406131d6.glb",
+            "category": "picture",
+            "position": [
+                4.986205232055234,
+                2.2257964006732425,
+                0.03625210909443299
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.24200303866916215,
+                0.24200303866916215,
+                0.24200303866916215
+            ],
+            "type": "kinematic",
+            "size": [
+                0.5928526009229895,
+                0.7261820379602009,
+                0.022504218188866276
+            ],
+            "description": "Four pictures of cosplay in black frames.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 1
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/446bd8c2f1ed44f385e93942d478cb50.glb",
+            "category": "painting",
+            "position": [
+                5.321586628284951,
+                2.0859271842967355,
+                4.5073561658820545
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.012158478527669044,
+                0.012158478527669044,
+                0.012158478527669044
+            ],
+            "type": "kinematic",
+            "size": [
+                0.7045697401565065,
+                1.0948761304219565,
+                0.041693854127044114
+            ],
+            "description": "A painting of some green bushes and pink flowers.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 2
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/280f03acf3c447d184f8ff8116c0ccd1.glb",
+            "category": "wall clock",
+            "position": [
+                5.32919055626916,
+                1.9052617428159995,
+                2.3188389718012865
+            ],
+            "rotation": [
+                0,
+                180,
+                0
+            ],
+            "scale": [
+                0.20345698886751226,
+                0.20345698886751226,
+                0.20345698886751226
+            ],
+            "type": "kinematic",
+            "size": [
+                0.406913977861401,
+                0.40691397786140443,
+                0.026485998158626598
+            ],
+            "description": "A round clock with base of green and black lined marble and gray and gold numbers.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 3
+        },
+        {
+            "prefab": "LowPolyInterior_Door_05",
+            "category": "door",
+            "position": [
+                0.625150749563745,
+                1.0194923877716064,
+                5.156127666150244
+            ],
+            "rotation": [
+                0,
+                180,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "type": "kinematic",
+            "size": [
+                0.9150815606117249,
+                2.038984775543213,
+                0.31295710802078247
+            ],
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 4
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6a38f611510349829751a1f59e70b415.glb",
+            "category": "window",
+            "position": [
+                3.957441538450431,
+                2.1856450248178243,
+                5.156127666150244
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.06115319311681322,
+                0.06115319311681322,
+                0.06115319311681322
+            ],
+            "type": "kinematic",
+            "size": [
+                1.8,
+                1.3208834431006455,
+                0.17912552606467144
+            ],
+            "description": "window",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 5
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6a38f611510349829751a1f59e70b415.glb",
+            "category": "window",
+            "position": [
+                2.0423777105364094,
+                2.1856450248178243,
+                5.156127666150244
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.06115319311681322,
+                0.06115319311681322,
+                0.06115319311681322
+            ],
+            "type": "kinematic",
+            "size": [
+                1.8,
+                1.3208834431006455,
+                0.17912552606467144
+            ],
+            "description": "window",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 6
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/16e01e5eb3d64510a978af91e3b6c033.glb",
+            "category": "wall clock",
+            "position": [
+                0.07512443639992929,
+                2.3404141469618054,
+                2.821148494747776
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.17122368015002615,
+                0.17122368015002615,
+                0.17122368015002615
+            ],
+            "type": "kinematic",
+            "size": [
+                0.49571404402878116,
+                0.49666258467345686,
+                0.10024887279985892
+            ],
+            "description": "A wooden wall clock with roman letters.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 7
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/05a15bb97cc944acbe2c7bac65606b54.glb",
+            "category": "picture",
+            "position": [
+                0.0467853452678535,
+                2.0091691774187828,
+                1.743280696002846
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.04144611717743927,
+                0.04144611717743927,
+                0.04144611717743927
+            ],
+            "type": "kinematic",
+            "size": [
+                0.9947068122585425,
+                0.9608399823747688,
+                0.04357069053570719
+            ],
+            "description": "A painting of a tree on a hillside next to a home.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.34850211520481617,
+                    "x_min": -0.0213708840960792,
+                    "z_min": -0.49693894495749685,
+                    "x_max": 0.019121317349123496,
+                    "z_max": 0.49693894495749685
+                }
+            ],
+            "index": 8
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/98faf765d2324f1f9407f747bf06dbdc.glb",
+            "category": "sofa",
+            "position": [
+                2.132630284933895,
+                0.4990394934997134,
+                0.5485788113537811
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                1.0001719745925364,
+                1.0001719745925364,
+                1.0001719745925364
+            ],
+            "type": "kinematic",
+            "size": [
+                2.0003439491850727,
+                0.9480789869994267,
+                0.8471576227075622
+            ],
+            "description": "A sleek black sofa with wooden arms.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": -0.09859642101536506,
+                    "x_min": -0.990170254846611,
+                    "z_min": 0.1378590305359519,
+                    "x_max": 0.9901702548466108,
+                    "z_max": 0.3032898671790943
+                },
+                {
+                    "y": -0.09591158085760047,
+                    "x_min": -0.8859418069680203,
+                    "z_min": -0.1930026427503327,
+                    "x_max": 0.8859418069680203,
+                    "z_max": 0.08271541832157113
+                }
+            ],
+            "index": 9
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/2490aa1120cf4db5aeff0ea21bab77ed.glb",
+            "category": "notebook",
+            "position": [
+                1.4892017186262456,
+                0.4148198184086394,
+                0.4932768786633082
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.027624882271940918,
+                0.027624882271940918,
+                0.027624882271940918
+            ],
+            "type": "interactable",
+            "size": [
+                0.2175187597063153,
+                0.023383811533052974,
+                0.17483137388357387
+            ],
+            "description": "A spiral notebook with a brown, wooden-like cover and white pages.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 10
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/4b4bd3bb86f748a6b72bffffd31a398b.glb",
+            "category": "lamp",
+            "position": [
+                0.2771016658944938,
+                0.7603328668359096,
+                3.000883161237193
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.007924040399946012,
+                0.007924040399946012,
+                0.007924040399946012
+            ],
+            "type": "kinematic",
+            "size": [
+                0.3042033317889873,
+                1.4706657336718192,
+                0.3042033317889873
+            ],
+            "description": "A lamp with a thin black support on round base holding an off white shade.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 11
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/def55636d5af44c38502ff892232178d.glb",
+            "category": "tv stand",
+            "position": [
+                5.0555304401310845,
+                0.41618273117570925,
+                3.89498442250862
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.8953032777167752,
+                0.8953032777167752,
+                0.8953032777167752
+            ],
+            "type": "kinematic",
+            "size": [
+                2.242827553331754,
+                0.7823654623514185,
+                0.3738062304347762
+            ],
+            "description": "A long brown tv stand with slanted sides.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.3911827258291808,
+                    "x_min": -1.112460743888709,
+                    "z_min": -0.17795008244022031,
+                    "x_max": 1.1124607438887093,
+                    "z_max": 0.17795008244022031
+                }
+            ],
+            "index": 12
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/eedda733d0454100a51b869d708a8365.glb",
+            "category": "video game console",
+            "position": [
+                5.052107118261353,
+                0.8641178549780875,
+                4.3450704191978815
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.007744871396888011,
+                0.007744871396888011,
+                0.007744871396888011
+            ],
+            "type": "interactable",
+            "size": [
+                0.15477966185600037,
+                0.11350479594639497,
+                0.031614004623311515
+            ],
+            "description": "A white play station console.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 13
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/bdfa0462c88d434abc90d717c375d42a.glb",
+            "category": "flash drive",
+            "position": [
+                5.113703854904056,
+                0.8111288343743925,
+                4.51547275948332
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.08181254886732686,
+                0.08181254886732686,
+                0.08181254886732686
+            ],
+            "type": "interactable",
+            "size": [
+                0.014891192907040949,
+                0.007526754739004926,
+                0.08136069847186668
+            ],
+            "description": "A flash drive that says ledger on it.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 14
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d4d07bcca6d241c888849e04d6f98cea.glb",
+            "category": "headset",
+            "position": [
+                5.027246131947465,
+                0.9306285500613922,
+                4.212447526523583
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.7352206020122011,
+                0.7352206020122011,
+                0.7352206020122011
+            ],
+            "type": "interactable",
+            "size": [
+                0.1655789847965318,
+                0.2465261861130043,
+                0.11538585277267115
+            ],
+            "description": "A usb wireless headset.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 15
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/360d1229658c4f0daf6d148fc90c32c4.glb",
+            "category": "video game console",
+            "position": [
+                5.0867449769944875,
+                0.8458989866289004,
+                4.8561160189902886
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.045367945670479796,
+                0.045367945670479796,
+                0.045367945670479796
+            ],
+            "type": "interactable",
+            "size": [
+                0.1366428397417945,
+                0.07706705924802063,
+                0.027849329286358162
+            ],
+            "description": "A purple handheld game console.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.037834994086264055,
+                    "x_min": -0.053579795063836144,
+                    "z_min": -0.008572445118665454,
+                    "x_max": 0.05357979506383613,
+                    "z_max": 0.01102171515256987
+                }
+            ],
+            "index": 16
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/67e718a0fc904487a9f735892d9834d3.glb",
+            "category": "bookcase",
+            "position": [
+                3.81183320971696,
+                0.905214847190239,
+                0.3232324846849792
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.8633693313229166,
+                0.8633693313229166,
+                0.8633693313229166
+            ],
+            "type": "kinematic",
+            "size": [
+                0.7929293884506655,
+                1.760429694380478,
+                0.39646496936995823
+            ],
+            "description": "A bookcase with four shelves.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.8802147842450233,
+                    "x_min": -0.38783100091210354,
+                    "z_min": -0.18959879137174993,
+                    "x_max": 0.38783100091210354,
+                    "z_max": 0.18959879137174993
+                }
+            ],
+            "index": 17
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/db198f2786524d4a9d4273726afd44e8.glb",
+            "category": "drink",
+            "position": [
+                3.734559742947544,
+                1.9071877560443655,
+                0.2685979758412985
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                1.129597564933508,
+                1.129597564933508,
+                1.129597564933508
+            ],
+            "type": "interactable",
+            "size": [
+                0.06683564638886587,
+                0.24351624921820628,
+                0.0708243250440192
+            ],
+            "description": "Pink drink with straw and anime characters on it.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 18
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/ca39d6f0333348e59e66cbe4258a028a.glb",
+            "category": "water bottle",
+            "position": [
+                4.055718653229221,
+                1.9133149823969433,
+                0.3906295396781639
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.12109075370964788,
+                0.12109075370964788,
+                0.12109075370964788
+            ],
+            "type": "interactable",
+            "size": [
+                0.07490355564274773,
+                0.25577070192336177,
+                0.07490329223236283
+            ],
+            "description": "A plastic water bottle with a green cap.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 19
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/2423bbb44bd14f01a78be6cd8a83d01b.glb",
+            "category": "sculpture",
+            "position": [
+                3.5462868445949325,
+                1.869298649310425,
+                0.35255568441179597
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.3578930680833966,
+                0.3578930680833966,
+                0.3578930680833966
+            ],
+            "type": "interactable",
+            "size": [
+                0.13365121311536968,
+                0.1677380357503256,
+                0.1483817513255928
+            ],
+            "description": "A white polygonal apple-shaped object with a handle.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 20
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6eefeb5c1bee4d4d9134b62cd9fc99d8.glb",
+            "category": "wristwatch",
+            "position": [
+                3.5591447038831454,
+                1.787154577638165,
+                0.269350333870721
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.032263270682758756,
+                0.032263270682758756,
+                0.032263270682758756
+            ],
+            "type": "interactable",
+            "size": [
+                0.06452654136551751,
+                0.003449892405805087,
+                0.009537667949165782
+            ],
+            "description": "A wristwatch with a round face and black straps.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 21
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/cb3942f9a22a430392071578d0bb9a50.glb",
+            "category": "headset",
+            "position": [
+                4.036000173894204,
+                1.904459537551876,
+                0.29199893942119626
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.018633865709772577,
+                0.018633865709772577,
+                0.018633865709772577
+            ],
+            "type": "interactable",
+            "size": [
+                0.18992447886119154,
+                0.23805981223322764,
+                0.114645363394796
+            ],
+            "description": "A pair of earphones and microphone that are black and green.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 22
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/15464cc080e74eddb1beaae2a32fc714.glb",
+            "category": "sofa",
+            "position": [
+                4.747625178411441,
+                0.5356491863752159,
+                1.6318232273657922
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.09583509478409304,
+                0.09583509478409304,
+                0.09583509478409304
+            ],
+            "type": "kinematic",
+            "size": [
+                1.8231357847988963,
+                1.0212983727504317,
+                0.9896167538740644
+            ],
+            "description": "A sofa with two cup holders in between.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 23
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/9735f27518fa4a5491a6c59fc5cfa72b.glb",
+            "category": "charger",
+            "position": [
+                5.053696439408445,
+                1.0516261440878412,
+                0.9551289848694171
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.003689125497949451,
+                0.003689125497949451,
+                0.003689125497949451
+            ],
+            "type": "interactable",
+            "size": [
+                0.10337743579395234,
+                0.010655542674818911,
+                0.0878132143845083
+            ],
+            "description": "A white charger with a rectangular block that is used for a cell phone.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 24
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/e0b9cdf4c9a546c58fe073fbdc5b2f72.glb",
+            "category": "newspaper",
+            "position": [
+                4.524988917603328,
+                1.0641094094875032,
+                2.4441568367927147
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.1220000904467371,
+                0.1220000904467371,
+                0.1220000904467371
+            ],
+            "type": "interactable",
+            "size": [
+                0.2440001808934742,
+                0.03562207347414277,
+                0.03300932223169507
+            ],
+            "description": "A long newspaper with some bands around it.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 25
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "category": "magazine",
+            "position": [
+                4.803220987280683,
+                1.1416207881180997,
+                1.9822997491262222
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.6354827242269993,
+                0.6354827242269993,
+                0.6354827242269993
+            ],
+            "type": "interactable",
+            "size": [
+                0.13738500723253527,
+                0.19064483073533622,
+                0.19690050942139317
+            ],
+            "description": "An issue of picture business magazine.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 26
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/e0b9cdf4c9a546c58fe073fbdc5b2f72.glb",
+            "category": "newspaper",
+            "position": [
+                4.571502674449683,
+                1.0641094094875032,
+                2.292383807685238
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.1220000904467371,
+                0.1220000904467371,
+                0.1220000904467371
+            ],
+            "type": "interactable",
+            "size": [
+                0.2440001808934742,
+                0.03562207347414277,
+                0.03300932223169507
+            ],
+            "description": "A long newspaper with some bands around it.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 27
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/2a37a4b61b8c4aad9e4eb78a689913a4.glb",
+            "category": "notebook",
+            "position": [
+                4.58127168325729,
+                1.1341243441325912,
+                2.092703324684047
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.0012857507460780479,
+                0.0012857507460780479,
+                0.0012857507460780479
+            ],
+            "type": "interactable",
+            "size": [
+                0.1161440743849449,
+                0.17565194276431892,
+                0.017722204209160396
+            ],
+            "description": "A pink spiral notebook with a green leaf on it.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 28
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/c2540fdbfc264dc8bb1f6c971b18366b.glb",
+            "category": "rocking chair",
+            "position": [
+                0.5167084722801003,
+                0.6335428918592835,
+                1.735130721761466
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.14930943902037996,
+                0.14930943902037996,
+                0.14930943902037996
+            ],
+            "type": "kinematic",
+            "size": [
+                0.5989879183378634,
+                1.217085783718567,
+                0.783416944560201
+            ],
+            "description": "A brown wooden rocking chair has a very high back made of slats.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 29
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/aa2270a25a0247ecac6dae252a153d30.glb",
+            "category": "candy",
+            "position": [
+                0.48300572573780687,
+                1.3440231652692365,
+                1.7965831056694772
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.13292133685613933,
+                0.13292133685613933,
+                0.13292133685613933
+            ],
+            "type": "interactable",
+            "size": [
+                0.04373245033709833,
+                0.20387476310133937,
+                0.1261430301579396
+            ],
+            "description": "A bag of candy with a chocolate covered monkey on the front.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 30
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/41589a39a0234cec8fc171e734d8359d.glb",
+            "category": "milk",
+            "position": [
+                0.7528389259240538,
+                1.383620687604909,
+                1.8164715760539591
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.31807923675837474,
+                0.31807923675837474,
+                0.31807923675837474
+            ],
+            "type": "interactable",
+            "size": [
+                0.08738503854334234,
+                0.28306980777268453,
+                0.08738503854334234
+            ],
+            "description": "A blue carton of milk.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 31
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/bf4f2c6afa0e434fb105586a3f360728.glb",
+            "category": "broccoli",
+            "position": [
+                0.6846487562701443,
+                1.299901842393798,
+                1.5589620837680749
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.8295241954947304,
+                0.8295241954947304,
+                0.8295241954947304
+            ],
+            "type": "interactable",
+            "size": [
+                0.1429756556191278,
+                0.11563211735046221,
+                0.1318253811213153
+            ],
+            "description": "A green stalk of broccoli.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 32
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/22353ccdad8a43ec99698f89b1d7bea7.glb",
+            "category": "beer mug",
+            "position": [
+                0.6234738117778631,
+                1.3098745625092758,
+                1.7918185998821305
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                2.805473523116043,
+                2.805473523116043,
+                2.805473523116043
+            ],
+            "type": "interactable",
+            "size": [
+                0.12538425704577463,
+                0.13557755758141785,
+                0.15433140064933998
+            ],
+            "description": "a wooden beer mug with a handle and a copper variant, along with a wooden barrel containing blue liquid.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 33
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "category": "magazine",
+            "position": [
+                0.4704743378755351,
+                1.337408199086235,
+                1.5868643398440594
+            ],
+            "rotation": [
+                0,
+                -90,
+                0
+            ],
+            "scale": [
+                0.6354827242269993,
+                0.6354827242269993,
+                0.6354827242269993
+            ],
+            "type": "interactable",
+            "size": [
+                0.13738500723253527,
+                0.19064483073533622,
+                0.19690050942139317
+            ],
+            "description": "An issue of picture business magazine.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 34
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/c27906dc8ce74fcb80d08aea94b40373.glb",
+            "category": "flowerpot",
+            "position": [
+                4.041080455057734,
+                0.2980223034223005,
+                4.831991428203739
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                1.2421171460397051,
+                1.2421171460397051,
+                1.2421171460397051
+            ],
+            "type": "kinematic",
+            "size": [
+                0.44026927669980787,
+                0.546044606844601,
+                0.3982724758930119
+            ],
+            "description": "A round flowerpot with flat bottom that's blue green red and yellow with differently colored roses.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 35
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/74fb69dbcd9e49ee875bc4a8004b8485.glb",
+            "category": "office chair",
+            "position": [
+                3.057185978440485,
+                0.5312237162335848,
+                4.45849844124227
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.015469059711012131,
+                0.015469059711012131,
+                0.015469059711012131
+            ],
+            "type": "kinematic",
+            "size": [
+                0.6831356261159832,
+                1.0124474324671695,
+                1.1452584498159497
+            ],
+            "description": "An orange office chair that has a tall backrest and an ottoman.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": -0.05745680222788,
+                    "x_min": -0.23359845221007675,
+                    "z_min": -0.5122140570149841,
+                    "x_max": 0.2335984522100768,
+                    "z_max": -0.09039071594382074
+                }
+            ],
+            "index": 36
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/450ca4f2f15c42bcba213e38f4a6ef12.glb",
+            "category": "cellular telephone",
+            "position": [
+                2.9698957678727833,
+                0.48191720230070556,
+                4.8295620883557815
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.16300572703642205,
+                0.16300572703642205,
+                0.16300572703642205
+            ],
+            "type": "interactable",
+            "size": [
+                0.16300576590001586,
+                0.016300576590001586,
+                0.09780345954000952
+            ],
+            "description": "It is the white and blue cover for a cell phone.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.008150288295000793,
+                    "x_min": -0.0714651598186286,
+                    "z_min": -0.03867682295425135,
+                    "x_max": 0.0714651598186286,
+                    "z_max": 0.038676822954251344
+                }
+            ],
+            "index": 37
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/59d651b172844b2cab3003b24a984513.glb",
+            "category": "hard drive",
+            "position": [
+                2.9713125753606073,
+                0.5099435031553817,
+                4.683730157767123
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.005743031483912443,
+                0.005743031483912443,
+                0.005743031483912443
+            ],
+            "type": "interactable",
+            "size": [
+                0.11531283118909572,
+                0.07235317829935387,
+                0.12616581532792398
+            ],
+            "description": "A grey hard drive with a black front.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 38
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/e68e0e6f476d454a8442741479efa755.glb",
+            "category": "marker",
+            "position": [
+                3.13190689466547,
+                0.5293841361572161,
+                4.847969755155473
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.0556172218457488,
+                0.0556172218457488,
+                0.0556172218457488
+            ],
+            "type": "interactable",
+            "size": [
+                0.015963143839765218,
+                0.11123444430302279,
+                0.019518864402114623
+            ],
+            "description": "A black whiteboard marker.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 39
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/c8d14f7f4a0845b49287debdc97e236a.glb",
+            "category": "musical instrument",
+            "position": [
+                3.1446057908376717,
+                0.48169255367101965,
+                4.712651602285555
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.4031754202339789,
+                0.4031754202339789,
+                0.4031754202339789
+            ],
+            "type": "interactable",
+            "size": [
+                0.1067056831130392,
+                0.015851279330629735,
+                0.030377100935223514
+            ],
+            "description": "A harmonica style musical instrument that's gray metal with black along the edges.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 40
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/1b1d108aa999474794315030795b1f5a.glb",
+            "category": "bucket",
+            "position": [
+                1.6909781389005034,
+                0.30197928782264516,
+                4.853208499117899
+            ],
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.006919407671164344,
+                0.006919407671164344,
+                0.006919407671164344
+            ],
+            "type": "kinematic",
+            "size": [
+                0.37037051816773725,
+                0.5539585756452903,
+                0.35583833406468923
+            ],
+            "description": "Plant in a metal bucket.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 41
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/c0e28f69f49842dabe410e8c78977993.glb",
+            "category": "flowerpot",
+            "position": [
+                4.981332561405858,
+                0.4490903041929877,
+                0.2969805315635319
+            ],
+            "rotation": [
+                0,
+                90,
+                0
+            ],
+            "scale": [
+                0.00373117388240934,
+                0.00373117388240934,
+                0.00373117388240934
+            ],
+            "type": "kinematic",
+            "size": [
+                0.503367452971785,
+                0.8481806083859753,
+                0.5222019878852321
+            ],
+            "description": "A brown flower pot with long leafed plant protruding on a concrete pedestal.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 42
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/cb36480d7e85409aa9e7159fff057496.glb",
+            "category": "coffee table",
+            "position": [
+                2.375070493114732,
+                0.22742999932836966,
+                2.4984573747496457
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                1.2268484225058243,
+                1.2268484225058243,
+                1.2268484225058243
+            ],
+            "type": "kinematic",
+            "size": [
+                1.2293021777395534,
+                0.40485999865673933,
+                0.5361327860999849
+            ],
+            "description": "A light beige wooden coffee table with one half open as a shelf.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [
+                {
+                    "y": 0.20242999932836966,
+                    "x_min": -0.6023826046447185,
+                    "z_min": -0.2557979088249342,
+                    "x_max": 0.6023826046447186,
+                    "z_max": 0.2557979088249342
+                }
+            ],
+            "index": 43
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/c2f9b76e6b184138a23dfda89829fa8b.glb",
+            "category": "bagel",
+            "position": [
+                2.7731225651856244,
+                0.44631959305219976,
+                2.557858070242843
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.8088849344335234,
+                0.8088849344335234,
+                0.8088849344335234
+            ],
+            "type": "interactable",
+            "size": [
+                0.10561772558487889,
+                0.032919188790920845,
+                0.10008252243911557
+            ],
+            "description": "A bagel that is coated with many different spices and seeds, potentially an everything bagel.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 44
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/818e088dc59f4a89bfea14cb46a4beca.glb",
+            "category": "watermelon",
+            "position": [
+                2.1387076302787995,
+                0.48210273342404986,
+                2.504320247060295
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.0032815273239233033,
+                0.0032815273239233033,
+                0.0032815273239233033
+            ],
+            "type": "interactable",
+            "size": [
+                0.02885381641806311,
+                0.10448546953462104,
+                0.15045179507309844
+            ],
+            "description": "A slice of watermelon with seeds.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 45
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/cad1f142f68c43a4b8c4713dce62eccf.glb",
+            "category": "candy bar",
+            "position": [
+                2.5704755891809894,
+                0.5134967322177568,
+                2.6465588346579545
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.0008366708910817263,
+                0.0008366708910817263,
+                0.0008366708910817263
+            ],
+            "type": "interactable",
+            "size": [
+                0.09871657845732953,
+                0.167273467122035,
+                0.017231183964647963
+            ],
+            "description": "Chocolate candy bar in red packaging.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 46
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/22353ccdad8a43ec99698f89b1d7bea7.glb",
+            "category": "beer mug",
+            "position": [
+                1.890850280552856,
+                0.49764877744744823,
+                2.427810191899952
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                2.805473523116043,
+                2.805473523116043,
+                2.805473523116043
+            ],
+            "type": "interactable",
+            "size": [
+                0.12538425704577463,
+                0.13557755758141785,
+                0.15433140064933998
+            ],
+            "description": "a wooden beer mug with a handle and a copper variant, along with a wooden barrel containing blue liquid.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 47
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/7e5ad154d91d45039205b219587bc29e.glb",
+            "category": "egg",
+            "position": [
+                2.409117350648372,
+                0.44177505131639144,
+                2.4983755597043915
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.011504400716430595,
+                0.011504400716430595,
+                0.011504400716430595
+            ],
+            "type": "interactable",
+            "size": [
+                0.09526299578802927,
+                0.023830105319304226,
+                0.09237710907419353
+            ],
+            "description": "An egg sunny side up with white and a yellow yolk.",
+            "room_type": "LivingRoom",
+            "placeable_surfaces": [],
+            "index": 48
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/5a693ef1dcfb4942945fc48ed436f22a.glb",
+            "category": "light",
+            "position": [
+                2.6837167776742366,
+                2.8242130342256684,
+                2.578063833075122
+            ],
+            "rotation": [
+                0,
+                -180,
+                0
+            ],
+            "scale": [
+                0.003045585121729306,
+                0.003045585121729306,
+                0.003045585121729306
+            ],
+            "type": "kinematic",
+            "size": [
+                0.3656349692561497,
+                0.30157393154866236,
+                0.36563502734607584
+            ],
+            "description": "The light has a ceiling mount and is a white circle.",
+            "placeable_surfaces": [],
+            "index": 50
+        }
+    ],
+    "player": {
+        "prefab": "",
+        "position": [
+            100,
+            0.1,
+            100
+        ],
+        "rotation": [
+            0,
+            271,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "parent": -1,
+        "type": ""
+    },
+    "agent": {
+        "prefab": "agent",
+        "position": [
+            3.695790569109545,
+            1.025,
+            1.0051479419004943
+        ],
+        "rotation": [
+            0,
+            180,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ],
+        "type": "kinematic"
+    },
+    "center": [
+        2.6837167776742366,
+        8.05115033302271,
+        2.578063833075122
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                -139.709206655121,
+                180.0,
+                179.99999999999997
+            ],
+            "color": [
+                1,
+                1,
+                1
+            ],
+            "intensity": 3,
+            "range": 15,
+            "shadowType": "Soft"
+        }
+    ]
+}

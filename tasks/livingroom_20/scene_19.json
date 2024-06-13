@@ -1,0 +1,1612 @@
+{
+    "prompt": "",
+    "instances": [
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/44c3798efa5344818fe247e39d23e66b.glb",
+            "position": [
+                4.790622234344482,
+                1.5364266633987427,
+                0.042128100991249084
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.023916693404316902,
+                0.023916693404316902,
+                0.023916693404316902
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "wall clock",
+            "description": "This is a clock.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/5546d16a53714cdcba6ec380f46a01e7.glb",
+            "position": [
+                1.2319822311401367,
+                1.4427741765975952,
+                0.09570089727640152
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.037527475506067276,
+                0.037527475506067276,
+                0.037527475506067276
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "picture",
+            "description": "A frame with a flower in it.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/280f03acf3c447d184f8ff8116c0ccd1.glb",
+            "position": [
+                5.601114749908447,
+                1.4701155424118042,
+                2.791079044342041
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.20345698297023773,
+                0.20345698297023773,
+                0.20345698297023773
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "wall clock",
+            "description": "A round clock with base of green and black lined marble and gray and gold numbers.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/b84dfc98d44d470ebff1ff6fbe36f57a.glb",
+            "position": [
+                5.583609580993652,
+                2.2789247035980225,
+                2.167475700378418
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.02730751410126686,
+                0.02730751410126686,
+                0.02730751410126686
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "picture",
+            "description": "A painting of fruits on a table with pastel colors and a grey framing.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/Doorframe_9.fbx",
+            "position": [
+                2.246338129043579,
+                1.0371885299682617,
+                5.830688953399658
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                1.0002135038375854,
+                1.0002135038375854,
+                1.0002135038375854
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "doorway_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/WoodGrains1.1.jpg",
+                            "base_color": "#1F1717FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/HammeredMetal_Normal.16.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/TexturesCom_WoodWhite.4.png",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "door",
+            "description": "Door",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/Window_Fixed_96x72.fbx",
+            "position": [
+                3.9986774921417236,
+                1.3579412698745728,
+                5.830688953399658
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                1.001571774482727,
+                1.001571774482727,
+                1.001571774482727
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "window_fixed_96x72",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5630000233650208,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "transparent",
+                            "base_map": "",
+                            "base_color": "#FFFFFF1F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9300000071525574,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "window",
+            "description": "Window",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d85b88316ebd40159847b262b05d285b.glb",
+            "position": [
+                0.05244506895542145,
+                2.758847713470459,
+                1.28938627243042
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.016487207263708115,
+                0.016487207263708115,
+                0.016487207263708115
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "wall clock",
+            "description": "Yellow alarm clock with white face and button on top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/a6e8bcdb300c4a40b75e2e3788914269.glb",
+            "position": [
+                0.04171276092529297,
+                2.002948045730591,
+                1.381523609161377
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.6712664365768433,
+                1.6712664365768433,
+                1.6712664365768433
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "painting",
+            "description": "Painting of mountain and lake on canvas.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/193aa7b27477485c95553218780e9629.glb",
+            "position": [
+                0.9651573896408081,
+                0.44621434807777405,
+                1.6469396352767944
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.1190639734268188,
+                1.1190639734268188,
+                1.1190639734268188
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "sofa",
+            "description": "A grey wicker sofa with white cushions.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "position": [
+                1.2692861557006836,
+                0.12032248824834824,
+                1.944954514503479
+            ],
+            "rotation": [
+                -6.414408630917023e-07,
+                270.0,
+                -2.018652594415471e-06
+            ],
+            "scale": [
+                0.6354827284812927,
+                0.6354827284812927,
+                0.6354827284812927
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "magazine",
+            "description": "An issue of picture business magazine.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/43397d56a1274995a98012c7b69366d9.glb",
+            "position": [
+                1.575319766998291,
+                0.527371883392334,
+                0.7267999649047852
+            ],
+            "rotation": [
+                2.417675733566284,
+                269.95428466796875,
+                357.94366455078125
+            ],
+            "scale": [
+                0.9479959607124329,
+                0.9479959607124329,
+                0.9479959607124329
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "hardback book",
+            "description": "Two hardback books bound with a strap covered in different numbers in grids.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/658cc8d88a314ac188e42df7a6f68731.glb",
+            "position": [
+                0.9531543850898743,
+                0.49945974349975586,
+                2.1691741943359375
+            ],
+            "rotation": [
+                0.8878040313720703,
+                269.9707946777344,
+                1.5799530744552612
+            ],
+            "scale": [
+                0.007994894869625568,
+                0.007994894869625568,
+                0.007994894869625568
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "books",
+            "description": "The two books are connected by a ribbon.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/9735f27518fa4a5491a6c59fc5cfa72b.glb",
+            "position": [
+                0.46254202723503113,
+                0.8012993335723877,
+                0.7573100328445435
+            ],
+            "rotation": [
+                349.79827880859375,
+                268.6213684082031,
+                4.822597026824951
+            ],
+            "scale": [
+                0.0036891254130750895,
+                0.0036891254130750895,
+                0.0036891254130750895
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "charger",
+            "description": "A white charger with a rectangular block that is used for a cell phone.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/68717a7905914b56a718945435c0fb22.glb",
+            "position": [
+                1.0586531162261963,
+                0.5356638431549072,
+                1.5903338193893433
+            ],
+            "rotation": [
+                353.3946838378906,
+                270.0544738769531,
+                358.7789611816406
+            ],
+            "scale": [
+                0.011489259079098701,
+                0.011489259079098701,
+                0.011489259079098701
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "laptop computer",
+            "description": "An open black laptop with a red dot on the keys.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d29b237e5b9c41c6be293378dacabef5.glb",
+            "position": [
+                5.022190570831299,
+                0.844872772693634,
+                0.313417911529541
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                1.0184884071350098,
+                1.0184884071350098,
+                1.0184884071350098
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "lamp",
+            "description": "A floor lamp on a square wooden base, with a white shade.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/TV_Stand_204_1.fbx",
+            "position": [
+                5.06594705581665,
+                0.36967310309410095,
+                1.1891026496887207
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0021651983261108,
+                1.0021651983261108,
+                1.0021651983261108
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "tv_stand_204",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/WoodGrains1.8.jpg",
+                            "base_color": "#1F1717FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/HammeredMetal_Normal.7.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/TexturesCom_WoodWhite.png",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "transparent",
+                            "base_map": "",
+                            "base_color": "#000000D2",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/Glass2MetallicSmoothness.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ],
+            "category": "tv stand",
+            "description": "TVStand",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/11c329b74f8c4b1a95e44d8c475dd452.glb",
+            "position": [
+                4.919839859008789,
+                0.7211491465568542,
+                1.5148401260375977
+            ],
+            "rotation": [
+                -0.0005317408940754831,
+                89.67583465576172,
+                358.4111633300781
+            ],
+            "scale": [
+                1.5489376783370972,
+                1.5489376783370972,
+                1.5489376783370972
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "cassette",
+            "description": "A black cassette tape with a white, orange, and yellow label.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/9f403656944348e48cf05a636fdc02e5.glb",
+            "position": [
+                5.242298126220703,
+                0.7650017142295837,
+                1.2596970796585083
+            ],
+            "rotation": [
+                -1.8401506167720072e-05,
+                90.0,
+                -2.897758974995668e-07
+            ],
+            "scale": [
+                0.5291857123374939,
+                0.5291857123374939,
+                0.5291857123374939
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "clock",
+            "description": "Clock on wide silver base with black wire.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/ea9725ad867c42a684bc58d21039e8bd.glb",
+            "position": [
+                4.808162212371826,
+                0.7372217178344727,
+                1.0097014904022217
+            ],
+            "rotation": [
+                4.999692440032959,
+                89.9610366821289,
+                359.9900207519531
+            ],
+            "scale": [
+                0.07404658198356628,
+                0.07404658198356628,
+                0.07404658198356628
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "spectacles",
+            "description": "Round lenses spectacles with a tint to them.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/360d1229658c4f0daf6d148fc90c32c4.glb",
+            "position": [
+                5.073003768920898,
+                0.7292689681053162,
+                1.2636938095092773
+            ],
+            "rotation": [
+                89.87027740478516,
+                274.2939453125,
+                184.3891143798828
+            ],
+            "scale": [
+                0.04536794498562813,
+                0.04536794498562813,
+                0.04536794498562813
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "video game console",
+            "description": "A purple handheld game console.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/1b1d108aa999474794315030795b1f5a.glb",
+            "position": [
+                3.793318510055542,
+                0.30197927355766296,
+                0.3029191792011261
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.0069194077514112,
+                0.0069194077514112,
+                0.0069194077514112
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "bucket",
+            "description": "Plant in a metal bucket.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6880d4fc16ff43f192dea13c79782dd2.glb",
+            "position": [
+                0.6040933132171631,
+                0.9001439213752747,
+                5.349135398864746
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.02129303850233555,
+                0.02129303850233555,
+                0.02129303850233555
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "drawer",
+            "description": "A set of drawers in a closet.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d85b88316ebd40159847b262b05d285b.glb",
+            "position": [
+                0.8548607230186462,
+                0.7046233415603638,
+                5.428565502166748
+            ],
+            "rotation": [
+                355.7431640625,
+                357.8895263671875,
+                288.017578125
+            ],
+            "scale": [
+                0.016487207263708115,
+                0.016487207263708115,
+                0.016487207263708115
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "wall clock",
+            "description": "Yellow alarm clock with white face and button on top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6d04402357e84ba3be05607b38dba1e3.glb",
+            "position": [
+                0.6523526906967163,
+                -131437.75,
+                5.150513648986816
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                0.36897724866867065,
+                0.36897724866867065,
+                0.36897724866867065
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "table lamp",
+            "description": "A table lamp with blue teeth on its front.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/23b2d0e81d414836877c555e5b5fc18d.glb",
+            "position": [
+                0.9518041610717773,
+                0.5830652117729187,
+                5.533926963806152
+            ],
+            "rotation": [
+                310.6529846191406,
+                269.8478698730469,
+                0.05219283327460289
+            ],
+            "scale": [
+                0.12469907850027084,
+                0.12469907850027084,
+                0.12469907850027084
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "clock radio",
+            "description": "Radio with a built in alarm.  you can set the alarm and when it goes off the music will play so you know it is time to get up.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/d85b88316ebd40159847b262b05d285b.glb",
+            "position": [
+                0.46307384967803955,
+                1.8114317655563354,
+                5.545928001403809
+            ],
+            "rotation": [
+                -1.0506688568057143e-06,
+                -8.39885885284275e-08,
+                -3.895276677212678e-06
+            ],
+            "scale": [
+                0.016487207263708115,
+                0.016487207263708115,
+                0.016487207263708115
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "wall clock",
+            "description": "Yellow alarm clock with white face and button on top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/23b2d0e81d414836877c555e5b5fc18d.glb",
+            "position": [
+                0.3035362660884857,
+                1.8214261531829834,
+                5.192071914672852
+            ],
+            "rotation": [
+                -0.004968494642525911,
+                270.0,
+                0.015208221971988678
+            ],
+            "scale": [
+                0.12469907850027084,
+                0.12469907850027084,
+                0.12469907850027084
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "clock radio",
+            "description": "Radio with a built in alarm.  you can set the alarm and when it goes off the music will play so you know it is time to get up.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/Footstool_2_1.fbx",
+            "position": [
+                0.3993126153945923,
+                0.32708802819252014,
+                4.588616371154785
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0006340742111206,
+                1.0006340742111206,
+                1.0006340742111206
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "footstool_2",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/WoodGrains1.9.jpg",
+                            "base_color": "#1F1717FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/HammeredMetal_Normal.11.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/TexturesCom_WoodWhite.3.png",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#DDDDDDFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.05000000074505806,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/ClothNRM.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.30000001192092896,
+                            "tiling_y": 0.30000001192092896,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/CrumpledNRM.png",
+                            "detail_normal_map_scale": 0.15000000596046448,
+                            "detail_tiling_x": 2.0,
+                            "detail_tiling_y": 2.0
+                        }
+                    ]
+                }
+            ],
+            "category": "footstool",
+            "description": "Footstool",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/0225f110acb0463dbd81acbab1981560.glb",
+            "position": [
+                5.231338977813721,
+                0.31182920932769775,
+                5.474884986877441
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.9975550770759583,
+                0.9975550770759583,
+                0.9975550770759583
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "stool",
+            "description": "A four-legged green metal stool.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/51b1103e375b46a8bb4c862e49e62478.glb",
+            "position": [
+                4.285977840423584,
+                0.5387458801269531,
+                5.337726593017578
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.01161987241357565,
+                0.01161987241357565,
+                0.01161987241357565
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "table",
+            "description": "A dark brown table with a shelf below.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/bfc8948a81b94a03afe00b4873f9235f.glb",
+            "position": [
+                4.466189384460449,
+                1.0930099487304688,
+                5.396468162536621
+            ],
+            "rotation": [
+                0.08105896413326263,
+                6.905509508214891e-05,
+                0.06096035987138748
+            ],
+            "scale": [
+                0.004629355855286121,
+                0.004629355855286121,
+                0.004629355855286121
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "hamburger",
+            "description": "A hamburger with cheese and bacon on it.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/243d550e37264a7d87d437c4df11adea.glb",
+            "position": [
+                4.363974094390869,
+                1.058347225189209,
+                5.3875226974487305
+            ],
+            "rotation": [
+                359.78717041015625,
+                0.00011375456233508885,
+                5.184929250390269e-06
+            ],
+            "scale": [
+                0.0006454227259382606,
+                0.0006454227259382606,
+                0.0006454227259382606
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "chocolate bar",
+            "description": "Two pieces of a chocolate kit kat bar.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/4561f4875b7e479ea957aa6d7cb776ce.glb",
+            "position": [
+                4.367589950561523,
+                1.0733354091644287,
+                5.517191410064697
+            ],
+            "rotation": [
+                0.8917844891548157,
+                0.01172278169542551,
+                1.7075376510620117
+            ],
+            "scale": [
+                0.013900693506002426,
+                0.013900693506002426,
+                0.013900693506002426
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "pastry",
+            "description": "A pastry made of golden dough and folded in a heart.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/92ed1dee5a3149cc92a862795b87ead4.glb",
+            "position": [
+                4.050023555755615,
+                1.0832148790359497,
+                5.6062703132629395
+            ],
+            "rotation": [
+                338.9898986816406,
+                313.2486572265625,
+                75.63959503173828
+            ],
+            "scale": [
+                0.023868277668952942,
+                0.023868277668952942,
+                0.023868277668952942
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "lemon",
+            "description": "A yellow lemon with a long pointy end at the stem.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/f7a1da7dcc954cecb132d9963f2edefe.glb",
+            "position": [
+                4.459975242614746,
+                1.1365724802017212,
+                5.209049224853516
+            ],
+            "rotation": [
+                -4.829606154999055e-07,
+                -5.971478866939606e-11,
+                7.263120096467901e-07
+            ],
+            "scale": [
+                0.03492571413516998,
+                0.03492571413516998,
+                0.03492571413516998
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "alcohol",
+            "description": "A green bottle of rum with a skull and crossbones on the label.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/b01d81c8f6d341c389b3f4dba84aa3f0.glb",
+            "position": [
+                4.96652889251709,
+                0.5811692476272583,
+                2.534503936767578
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0806642770767212,
+                1.0806642770767212,
+                1.0806642770767212
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "rocking chair",
+            "description": "A rocking chair with orange wood supports and leather seat and back cushions.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/2965de09e84845a286d8a2986d3d3c8f.glb",
+            "position": [
+                -6769.658203125,
+                -122975.6953125,
+                112.47188568115234
+            ],
+            "rotation": [
+                30.199398040771484,
+                358.4595947265625,
+                6.827786445617676
+            ],
+            "scale": [
+                3.462372303009033,
+                3.462372303009033,
+                3.462372303009033
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "grape",
+            "description": "Royalty-free a bunch of purple grapes - Preview No. 1",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/08a13e5310b742d4bf4d7a82d155ed8a.glb",
+            "position": [
+                4.797211647033691,
+                0.5292848348617554,
+                2.5460379123687744
+            ],
+            "rotation": [
+                22.920459747314453,
+                90.87853240966797,
+                0.4430219829082489
+            ],
+            "scale": [
+                0.7597642540931702,
+                0.7597642540931702,
+                0.7597642540931702
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "bread",
+            "description": "Round loaf of bread with cracks in top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/883118b3ac2147249895a78d99417cea.glb",
+            "position": [
+                5.039215564727783,
+                0.45909661054611206,
+                2.781277656555176
+            ],
+            "rotation": [
+                294.8693542480469,
+                105.55452728271484,
+                343.5348205566406
+            ],
+            "scale": [
+                0.00040311869815923274,
+                0.00040311869815923274,
+                0.00040311869815923274
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "toast (food)",
+            "description": "A piece of white toasted bread with a pad of butter melting on the top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/953ec99e510542b489d4cce969a83d43.glb",
+            "position": [
+                4.9866943359375,
+                0.448383092880249,
+                2.5665197372436523
+            ],
+            "rotation": [
+                349.4515380859375,
+                271.1434020996094,
+                185.75218200683594
+            ],
+            "scale": [
+                0.0015141429612413049,
+                0.0015141429612413049,
+                0.0015141429612413049
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "hamburger",
+            "description": "Raw hamburger patties with cheese and onions on a toasted sesame seed bun.",
+            "of_interest": false
+        },
+        {
+            "prefab": "LowPolyInterior2_Kitchen1_C2_01L",
+            "position": [
+                5.214358329772949,
+                0.46750006079673767,
+                3.8375401496887207
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "cabinet",
+            "description": "",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/7e12ac07201647debdada98877db130a.glb",
+            "position": [
+                5.307290077209473,
+                1.0152654647827148,
+                3.7009572982788086
+            ],
+            "rotation": [
+                0.7148191928863525,
+                89.9637451171875,
+                359.3407897949219
+            ],
+            "scale": [
+                0.06765612214803696,
+                0.06765612214803696,
+                0.06765612214803696
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "radio receiver",
+            "description": "A radio receiver with a long antenna.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/acf4a50e122c4fe38d50c8b002689aa7.glb",
+            "position": [
+                5.312988758087158,
+                1.0424375534057617,
+                3.8839669227600098
+            ],
+            "rotation": [
+                359.8368835449219,
+                91.49351501464844,
+                0.8212043046951294
+            ],
+            "scale": [
+                0.24834252893924713,
+                0.24834252893924713,
+                0.24834252893924713
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "fan",
+            "description": "A small, red desk fan.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/5b0fe8a743d54360bd4109d3c35e65cd.glb",
+            "position": [
+                5.073604583740234,
+                0.9169825911521912,
+                3.9921820163726807
+            ],
+            "rotation": [
+                5.232031617197208e-05,
+                89.99868774414062,
+                359.16680908203125
+            ],
+            "scale": [
+                0.009013654664158821,
+                0.009013654664158821,
+                0.009013654664158821
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "usb",
+            "description": "A green and white usb drive.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/59fd460ae871494da849604fd7abf309.glb",
+            "position": [
+                5.098509788513184,
+                0.9237551093101501,
+                3.7833971977233887
+            ],
+            "rotation": [
+                0.20699432492256165,
+                90.05638885498047,
+                359.5698547363281
+            ],
+            "scale": [
+                6.095940989325754e-06,
+                6.095940989325754e-06,
+                6.095940989325754e-06
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "watch",
+            "description": "A black wristwatch with a blue face covered by a geometric pattern.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/aa5b9a41c90245e8992ba93de6dde8c8.glb",
+            "position": [
+                2.6583337783813477,
+                0.2228768765926361,
+                3.5202748775482178
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.7845579981803894,
+                0.7845579981803894,
+                0.7845579981803894
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "coffee table",
+            "description": "A brown coffee table with paneled glass top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/389e61e3fd1e4eacad0000f2e7c31f83.glb",
+            "position": [
+                2.5613467693328857,
+                0.43765079975128174,
+                4.125637054443359
+            ],
+            "rotation": [
+                15.775073051452637,
+                180.000244140625,
+                1.6281079053878784
+            ],
+            "scale": [
+                1.2690902948379517,
+                1.2690902948379517,
+                1.2690902948379517
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "cucumber",
+            "description": "A green english cucumber not peeled and whole.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/9a96cb9e351c460b9ecb10088be7d0cc.glb",
+            "position": [
+                2.844867467880249,
+                0.4372822642326355,
+                2.921304941177368
+            ],
+            "rotation": [
+                0.3071955740451813,
+                180.02633666992188,
+                357.5089111328125
+            ],
+            "scale": [
+                0.0009039391297847033,
+                0.0009039391297847033,
+                0.0009039391297847033
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "cherry",
+            "description": "A pair of two cherries.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/8785ad95cc7e486c9017c5cf6731bf26.glb",
+            "position": [
+                2.4738166332244873,
+                0.42878276109695435,
+                4.077713966369629
+            ],
+            "rotation": [
+                0.08143511414527893,
+                179.9999237060547,
+                0.04285392165184021
+            ],
+            "scale": [
+                0.05878829210996628,
+                0.05878829210996628,
+                0.05878829210996628
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "chocolate bar",
+            "description": "Two chocolate bars with some sundae drops on top.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/6e4473e82c6940bf9d980f51cfe42938.glb",
+            "position": [
+                2.474303722381592,
+                0.4552975594997406,
+                3.939119815826416
+            ],
+            "rotation": [
+                300.3686828613281,
+                303.98809814453125,
+                216.77911376953125
+            ],
+            "scale": [
+                7.75847292970866e-05,
+                7.75847292970866e-05,
+                7.75847292970866e-05
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "category": "fish",
+            "description": "Light blue and brown fish is flat, and has a small back tail.",
+            "of_interest": false
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/2d504cc2482147a294e5683138280d18.glb",
+            "position": [
+                2.819679021835327,
+                2.6030635833740234,
+                2.915344476699829
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.005134010687470436,
+                0.005134010687470436,
+                0.005134010687470436
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "category": "light",
+            "description": "A white round lamp suspended from a wire.",
+            "of_interest": false
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                2.819679021835327,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                5.639358043670654,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                5.639358043670654,
+                1.5,
+                2.915344476699829
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                5.830688953399658,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                2.819679021835327,
+                1.5,
+                5.830688953399658
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                5.639358043670654,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.5733408331871033,
+                        -0.4628114700317383
+                    ],
+                    "size_xy": [
+                        0.9980238676071167,
+                        2.0743770599365234
+                    ]
+                },
+                {
+                    "position_xy": [
+                        -1.1789984703063965,
+                        -0.14205868542194366
+                    ],
+                    "size_xy": [
+                        2.442232608795166,
+                        1.8288002014160156
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                2.915344476699829
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                5.830688953399658,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "floors": [
+        {
+            "position": [
+                2.819679021835327,
+                0.0,
+                2.915344476699829
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                5.639358043670654,
+                0.05000000074505806,
+                5.830688953399658
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                2.819679021835327,
+                3.0,
+                2.915344476699829
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                5.639358043670654,
+                0.05000000074505806,
+                5.830688953399658
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                -155.02432250976562,
+                180.0,
+                180.0
+            ],
+            "spotAngle": 0.0,
+            "useColorTemperature": false,
+            "colorTemperature": 0.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 3.0,
+            "range": 15.0,
+            "shadowType": "Soft"
+        }
+    ],
+    "light_probes": [],
+    "skybox": {
+        "map": "F:\\Downloads\\task_0613_0157\\livingroom_20/assets/sunroof_city_6k.jpg",
+        "color": "#FFFFFF",
+        "exposure": 0.6,
+        "rotation": 0
+    },
+    "points": [],
+    "rooms": [],
+    "player": {
+        "prefab": "",
+        "meshes": [],
+        "position": [
+            100.0,
+            -200292.46875,
+            100.0
+        ],
+        "rotation": [
+            0.0,
+            215.53750610351562,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": -1,
+        "type": "",
+        "properties": [],
+        "material": "",
+        "mesh_materials": [],
+        "category": "",
+        "description": "",
+        "of_interest": false
+    },
+    "agent": {
+        "prefab": "agent",
+        "meshes": [],
+        "position": [
+            3.8327581882476807,
+            0.05499982833862305,
+            1.0217081308364868
+        ],
+        "rotation": [
+            0.0,
+            270.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": 0,
+        "type": "kinematic",
+        "properties": [],
+        "material": "",
+        "mesh_materials": [],
+        "category": "",
+        "description": "",
+        "of_interest": false
+    },
+    "center": [
+        2.819679021835327,
+        8.746033668518066,
+        2.915344476699829
+    ],
+    "center_rotation": [],
+    "task": "",
+    "options": [],
+    "predicates": []
+}

@@ -1,0 +1,2087 @@
+{
+    "prompt": "",
+    "instances": [
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/ba594695a3ef4032980a75d21174600c.glb",
+            "position": [
+                3.453974962234497,
+                1.945425271987915,
+                0.04174008592963219
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.0871679782867432,
+                1.0871679782867432,
+                1.0871679782867432
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Window_Slider_48x48.fbx",
+            "position": [
+                3.838975429534912,
+                1.7397761344909668,
+                1.8847193717956543
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                1.001766324043274,
+                1.001766324043274,
+                1.001766324043274
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "window_slider_48x48",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/WoodGrains1.4.jpg",
+                            "base_color": "#E9B77AFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5059999823570251,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "transparent",
+                            "base_map": "",
+                            "base_color": "#FFFFFF1F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9300000071525574,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.11299999803304672,
+                            "smoothness_factor": 0.7269999980926514,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/ba594695a3ef4032980a75d21174600c.glb",
+            "position": [
+                1.9175665378570557,
+                1.2984590530395508,
+                2.7205803394317627
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0871679782867432,
+                1.0871679782867432,
+                1.0871679782867432
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Doorway_9.fbx",
+            "position": [
+                0.0,
+                1.0371885299682617,
+                1.348976969718933
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0002135038375854,
+                1.0002135038375854,
+                1.0002135038375854
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "doorway_door_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/WoodGrains1.24.jpg",
+                            "base_color": "#3F2B1DFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_AlbedoTransparency.31.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_None_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.9309999942779541,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_Normal.6.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/NoisyNormal.tga",
+                            "detail_normal_map_scale": 0.019999999552965164,
+                            "detail_tiling_x": 0.10000000149011612,
+                            "detail_tiling_y": 0.10000000149011612
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_handle_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_AlbedoTransparency.31.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_None_MetallicSmoothness.1.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.9309999942779541,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_Normal.6.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/NoisyNormal.tga",
+                            "detail_normal_map_scale": 0.019999999552965164,
+                            "detail_tiling_x": 0.10000000149011612,
+                            "detail_tiling_y": 0.10000000149011612
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "doorway_9",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/WoodGrains1.24.jpg",
+                            "base_color": "#1F1717FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6380000114440918,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.67.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/TexturesCom_WoodWhite.5.png",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 0.5,
+                            "tiling_y": 0.5,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/16e01e5eb3d64510a978af91e3b6c033.glb",
+            "position": [
+                0.07512443512678146,
+                1.3922975063323975,
+                2.160733461380005
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.1712236851453781,
+                0.1712236851453781,
+                0.1712236851453781
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                -2.154906988143921,
+                1.5350115299224854,
+                2.143839975910328e-18
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/44c3798efa5344818fe247e39d23e66b.glb",
+            "position": [
+                -0.042128100991249084,
+                2.3489131927490234,
+                4.424539566040039
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.023916693404316902,
+                0.023916693404316902,
+                0.023916693404316902
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/6a38f611510349829751a1f59e70b415.glb",
+            "position": [
+                -2.6143510341644287,
+                1.5350115299224854,
+                4.726536273956299
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.061153192073106766,
+                0.061153192073106766,
+                0.061153192073106766
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/44c3798efa5344818fe247e39d23e66b.glb",
+            "position": [
+                -4.519899368286133,
+                1.5271430015563965,
+                2.350727081298828
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                0.023916693404316902,
+                0.023916693404316902,
+                0.023916693404316902
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "LowPolyInterior2_Toilet2_C2_01",
+            "position": [
+                0.4017792344093323,
+                0.45169559121131897,
+                2.0912070274353027
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "LowPolyInterior2_Bathroom_C2_02",
+            "position": [
+                3.071042060852051,
+                0.45408254861831665,
+                0.36254873871803284
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/33dedbfe99e24379a422db4d5c809752.glb",
+            "position": [
+                3.1412174701690674,
+                0.8383833169937134,
+                0.3879084587097168
+            ],
+            "rotation": [
+                0.0784558653831482,
+                180.00003051757812,
+                359.820556640625
+            ],
+            "scale": [
+                0.01786324940621853,
+                0.01786324940621853,
+                0.01786324940621853
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/f9fcc1295bb24189b1ad6e8fe864d5a5.glb",
+            "position": [
+                2.9654700756073,
+                0.8173790574073792,
+                0.40066850185394287
+            ],
+            "rotation": [
+                -2.5416438802494667e-05,
+                180.0,
+                8.090011760941707e-06
+            ],
+            "scale": [
+                0.0056180935353040695,
+                0.0056180935353040695,
+                0.0056180935353040695
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/db198f2786524d4a9d4273726afd44e8.glb",
+            "position": [
+                3.231642723083496,
+                0.8487833142280579,
+                0.3999505639076233
+            ],
+            "rotation": [
+                359.6689147949219,
+                180.00070190429688,
+                359.7990417480469
+            ],
+            "scale": [
+                1.129597544670105,
+                1.129597544670105,
+                1.129597544670105
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/d94767ddd97840f6b5d2d0d7088e701a.glb",
+            "position": [
+                2.2523248195648193,
+                0.07003634423017502,
+                0.2782457768917084
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "scale": [
+                3.86973237991333,
+                3.86973237991333,
+                3.86973237991333
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/d62583f82dfe46f0a8a8255d35a6de62.glb",
+            "position": [
+                2.235686779022217,
+                0.16430388391017914,
+                0.24303798377513885
+            ],
+            "rotation": [
+                -0.00016050944395828992,
+                179.99998474121094,
+                -5.520177001017146e-05
+            ],
+            "scale": [
+                0.7310099005699158,
+                0.7310099005699158,
+                0.7310099005699158
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/791d510eb22a421b9de3cec89817df52.glb",
+            "position": [
+                2.298588752746582,
+                0.10546159744262695,
+                0.3286546766757965
+            ],
+            "rotation": [
+                2.4271762371063232,
+                180.35446166992188,
+                357.1470031738281
+            ],
+            "scale": [
+                0.0013088274281471968,
+                0.0013088274281471968,
+                0.0013088274281471968
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet_2.fbx",
+            "position": [
+                3.2947511672973633,
+                0.49775949120521545,
+                2.2503793239593506
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.9999999403953552,
+                0.9999999403953552,
+                0.9999999403953552
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "FP403:Base8",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_MetallicSmoothness.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_Normal.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                },
+                {
+                    "mesh_name": "FP403:Lid",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_AlbedoTransparency.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_MetallicSmoothness.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Toilet2_DefaultMaterial_Normal.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/63d085ac43ef4b97be0202e1e7836104.glb",
+            "position": [
+                0.7161442041397095,
+                0.43039795756340027,
+                0.433658629655838
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.000953877461142838,
+                0.000953877461142838,
+                0.000953877461142838
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/063a281fd08c4132bbf0ed35e914d017.glb",
+            "position": [
+                0.6919673681259155,
+                0.9980517029762268,
+                0.37956833839416504
+            ],
+            "rotation": [
+                3.833977098111063e-05,
+                180.00001525878906,
+                -4.295543021726189e-06
+            ],
+            "scale": [
+                0.0012337262742221355,
+                0.0012337262742221355,
+                0.0012337262742221355
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/6db831285d1d447997b9b9bc06a0f503.glb",
+            "position": [
+                0.8223782777786255,
+                0.8551288843154907,
+                0.605206310749054
+            ],
+            "rotation": [
+                4.7808685302734375,
+                179.98866271972656,
+                -0.0032993671484291553
+            ],
+            "scale": [
+                0.011088555678725243,
+                0.011088555678725243,
+                0.011088555678725243
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/f616cc651f4c481383db40e1925e0d92.glb",
+            "position": [
+                0.5506160259246826,
+                0.8756168484687805,
+                0.597328245639801
+            ],
+            "rotation": [
+                -8.758678632148076e-06,
+                180.00006103515625,
+                -9.221909749612678e-06
+            ],
+            "scale": [
+                0.0002552662044763565,
+                0.0002552662044763565,
+                0.0002552662044763565
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/752cb6f1870d4325b3bebff9a86805f6.glb",
+            "position": [
+                0.62972092628479,
+                0.9333277940750122,
+                0.5497749447822571
+            ],
+            "rotation": [
+                0.197700634598732,
+                180.00161743164062,
+                359.4474792480469
+            ],
+            "scale": [
+                0.050685249269008636,
+                0.050685249269008636,
+                0.050685249269008636
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/bd2b6e104e9149a6929fe239e6332bdc.glb",
+            "position": [
+                -2.1668012142181396,
+                0.4432313144207001,
+                4.135931015014648
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.1640137434005737,
+                1.1640137434005737,
+                1.1640137434005737
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/bfbf68d4750f4a1c91eee39b0a4cdbac.glb",
+            "position": [
+                -1.9606215953826904,
+                1.144418716430664,
+                4.165950775146484
+            ],
+            "rotation": [
+                -1.8126012946595438e-05,
+                -1.3701947864319663e-05,
+                -4.0770805753709283e-07
+            ],
+            "scale": [
+                0.35967251658439636,
+                0.35967251658439636,
+                0.35967251658439636
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/f56152e7c8654e52b55e032907c50684.glb",
+            "position": [
+                -2.6226437091827393,
+                0.9288579225540161,
+                4.1158223152160645
+            ],
+            "rotation": [
+                359.63116455078125,
+                347.92706298828125,
+                357.0811462402344
+            ],
+            "scale": [
+                0.002375898417085409,
+                0.002375898417085409,
+                0.002375898417085409
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/0a597869a5fe4d07b20034a440384fc3.glb",
+            "position": [
+                -2.473284959793091,
+                1.0084999799728394,
+                4.093639850616455
+            ],
+            "rotation": [
+                1.1589256525039673,
+                0.003932272549718618,
+                0.8058672547340393
+            ],
+            "scale": [
+                0.051858656108379364,
+                0.051858656108379364,
+                0.051858656108379364
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/23817994f69c40faa8b97ff64f968238.glb",
+            "position": [
+                -2.0577292442321777,
+                0.927320122718811,
+                4.55998420715332
+            ],
+            "rotation": [
+                85.85810852050781,
+                203.927734375,
+                214.81858825683594
+            ],
+            "scale": [
+                0.007425154559314251,
+                0.007425154559314251,
+                0.007425154559314251
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/0d54a7e3cebf4e838f6eef9d02ce2c73.glb",
+            "position": [
+                -2.807004928588867,
+                0.8848665356636047,
+                4.188732624053955
+            ],
+            "rotation": [
+                1.305969817622099e-06,
+                -0.0026470553129911423,
+                0.8228843808174133
+            ],
+            "scale": [
+                4.1416544914245605,
+                4.1416544914245605,
+                4.1416544914245605
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/RoboTHOR_dining_table_antas.fbx",
+            "position": [
+                -4.059579372406006,
+                0.395936518907547,
+                1.2403476238250732
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.0042853355407715,
+                1.0042853355407715,
+                1.0042853355407715
+            ],
+            "parent": 0,
+            "type": "kinematic",
+            "mesh_materials": [
+                {
+                    "mesh_name": "robothor_dining_table_antas",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/WoodGrains1.13.jpg",
+                            "base_color": "#BE8B4DFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.3580000102519989,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/TexturesCom_WoodFine0031_1_seamless_normal_S.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/WoodGrains2.1.jpg",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 3.0,
+                            "detail_tiling_y": 3.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_AlbedoTransparency.5.png",
+                            "base_color": "#444444FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_MetallicSmoothness.9.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.8569999933242798,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.14.png",
+                            "normal_map_scale": 2.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/b28d5c1b19cb4fb7aae556bf2ae7fae5.glb",
+            "position": [
+                -3.8738086223602295,
+                0.8198968172073364,
+                1.7733018398284912
+            ],
+            "rotation": [
+                0.767231822013855,
+                269.88726806640625,
+                356.2430725097656
+            ],
+            "scale": [
+                0.07908344268798828,
+                0.07908344268798828,
+                0.07908344268798828
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/3a80e07ff6364b4bbe5252d9b532a87a.glb",
+            "position": [
+                -3.828289031982422,
+                0.8809480667114258,
+                1.099094271659851
+            ],
+            "rotation": [
+                0.02836044691503048,
+                269.9999084472656,
+                0.01674463599920273
+            ],
+            "scale": [
+                0.06110679730772972,
+                0.06110679730772972,
+                0.06110679730772972
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/69162d0f819a4cb4bc884e339cd8760c.glb",
+            "position": [
+                -4.093459129333496,
+                0.8206459879875183,
+                0.8739532232284546
+            ],
+            "rotation": [
+                0.028432991355657578,
+                269.99981689453125,
+                0.016779543831944466
+            ],
+            "scale": [
+                0.03516896441578865,
+                0.03516896441578865,
+                0.03516896441578865
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/0af9185b24f142fc9453d2cc42b1cb4b.glb",
+            "position": [
+                -4.260342121124268,
+                0.8708311319351196,
+                1.4075785875320435
+            ],
+            "rotation": [
+                0.028201110661029816,
+                269.9999694824219,
+                0.01670270971953869
+            ],
+            "scale": [
+                0.019266588613390923,
+                0.019266588613390923,
+                0.019266588613390923
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/fe3a3694377443bfbe55d29ef8a2006e.glb",
+            "position": [
+                -4.175419807434082,
+                0.7900729179382324,
+                1.1638211011886597
+            ],
+            "rotation": [
+                0.0315425805747509,
+                270.0,
+                0.017153356224298477
+            ],
+            "scale": [
+                0.8623126745223999,
+                0.8623126745223999,
+                0.8623126745223999
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/e9d8ae0a9ef94fa082a5a63e092fd402.glb",
+            "position": [
+                -0.4095872938632965,
+                0.7782333493232727,
+                2.42366886138916
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.009558252990245819,
+                0.009558252990245819,
+                0.009558252990245819
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Pot_14.fbx",
+            "position": [
+                -0.3697028160095215,
+                1.4382380247116089,
+                2.448084831237793
+            ],
+            "rotation": [
+                1.3138712644577026,
+                270.82940673828125,
+                32.87334060668945
+            ],
+            "scale": [
+                1.0037975311279297,
+                1.0037975311279297,
+                1.0037975311279297
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "pot_14",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedAluminum_AlbedoTransparency.21.png",
+                            "base_color": "#5A5A5AFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedAluminum_MetallicSmoothness.4.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.46299999952316284,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#747F8BFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/FloorKitchen1Texturetest_DefaultMaterial_MetallicSmoothness.13.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5899999737739563,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.18.png",
+                            "normal_map_scale": 0.699999988079071,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_AlbedoTransparency.9.png",
+                            "base_color": "#FFFFFFFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedAluminum_MetallicSmoothness.4.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "fade",
+                            "base_map": "",
+                            "base_color": "#C9C9C96F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.5860000252723694,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9169999957084656,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.18.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 2.0,
+                            "tiling_y": 2.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/1134dd0aa10b4826b6e57629b56482bd.glb",
+            "position": [
+                -0.32434046268463135,
+                1.4321800470352173,
+                2.442326068878174
+            ],
+            "rotation": [
+                -1.5044963220134377e-05,
+                89.99996948242188,
+                4.006706876680255e-05
+            ],
+            "scale": [
+                0.004243212752044201,
+                0.004243212752044201,
+                0.004243212752044201
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/3b130f0ba4304966a101c82be2429cc7.glb",
+            "position": [
+                -2.4130430221557617,
+                0.6363506317138672,
+                0.4776337742805481
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.15123030543327332,
+                0.15123030543327332,
+                0.15123030543327332
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/9af26f6b260247edb1a47b6ebb94eaf2.glb",
+            "position": [
+                -2.2564711570739746,
+                1.3140203952789307,
+                0.4083176553249359
+            ],
+            "rotation": [
+                0.21249382197856903,
+                179.78309631347656,
+                0.245854452252388
+            ],
+            "scale": [
+                0.11337196081876755,
+                0.11337196081876755,
+                0.11337196081876755
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/8f62fc32a10f481d9bd52f918786b8dc.glb",
+            "position": [
+                -2.2192459106445312,
+                1.2404577732086182,
+                0.23658353090286255
+            ],
+            "rotation": [
+                86.409423828125,
+                322.33880615234375,
+                139.09938049316406
+            ],
+            "scale": [
+                0.006257059518247843,
+                0.006257059518247843,
+                0.006257059518247843
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/f616cc651f4c481383db40e1925e0d92.glb",
+            "position": [
+                -2.407785177230835,
+                1.286826491355896,
+                0.5100436210632324
+            ],
+            "rotation": [
+                358.9414978027344,
+                168.64419555664062,
+                0.39189866185188293
+            ],
+            "scale": [
+                0.0002552662044763565,
+                0.0002552662044763565,
+                0.0002552662044763565
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Plate_20.fbx",
+            "position": [
+                -2.549431085586548,
+                1.2382808923721313,
+                0.5104700326919556
+            ],
+            "rotation": [
+                350.4694519042969,
+                1.0168777704238892,
+                1.5910289287567139
+            ],
+            "scale": [
+                0.9771705269813538,
+                0.9771705269813538,
+                0.9771705269813538
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "plate_20",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Plate_AlbedoTransparency_1.png",
+                            "base_color": "#5A5A5AFF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.20100000500679016,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Copper_Normal.24.png",
+                            "normal_map_scale": 0.5,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/a02c55b1aa1b4a1ba56be20a9f1b6a7e.glb",
+            "position": [
+                -4.13804292678833,
+                0.3567831516265869,
+                3.6408064365386963
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                1.3591347932815552,
+                1.3591347932815552,
+                1.3591347932815552
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/Pan_7.fbx",
+            "position": [
+                -4.062600135803223,
+                0.7518155574798584,
+                3.545309066772461
+            ],
+            "rotation": [
+                353.75286865234375,
+                90.0068359375,
+                0.7834786176681519
+            ],
+            "scale": [
+                1.0043742656707764,
+                1.0043742656707764,
+                1.0043742656707764
+            ],
+            "parent": 0,
+            "type": "interactable",
+            "mesh_materials": [
+                {
+                    "mesh_name": "pan_7",
+                    "materials": [
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#634029FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 1.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.6840000152587891,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.40.png",
+                            "normal_map_scale": 2.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "",
+                            "base_color": "#525252FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/FloorKitchen1Texturetest_DefaultMaterial_MetallicSmoothness.10.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.7250000238418579,
+                            "smoothness_factor": 0.5899999737739563,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.40.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "opaque",
+                            "base_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedIron_AlbedoTransparency.23.png",
+                            "base_color": "#585858FF",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/BrushedAluminum_MetallicSmoothness.16.png",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 0.9959999918937683,
+                            "smoothness_factor": 0.5,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "fade",
+                            "base_map": "",
+                            "base_color": "#C9C9C96F",
+                            "alpha_clipping": 0.5,
+                            "metallic_map": "",
+                            "metallic_factor": 0.5860000252723694,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.9169999957084656,
+                            "normal_map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/HammeredMetal_Normal.40.png",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "#000000FF",
+                            "tiling_x": 2.0,
+                            "tiling_y": 2.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        },
+                        {
+                            "surface_type": "cutout",
+                            "base_map": "",
+                            "base_color": "#FFFFFF00",
+                            "alpha_clipping": 1.0,
+                            "metallic_map": "",
+                            "metallic_factor": 0.0,
+                            "gloss_map_scale": 1.0,
+                            "smoothness_factor": 0.0,
+                            "normal_map": "",
+                            "normal_map_scale": 1.0,
+                            "height_map": "",
+                            "occulusion_map": "",
+                            "emission_map": "",
+                            "emission_color": "",
+                            "tiling_x": 1.0,
+                            "tiling_y": 1.0,
+                            "detail_mask_map": "",
+                            "detail_base_map": "",
+                            "detail_normal_map": "",
+                            "detail_normal_map_scale": 1.0,
+                            "detail_tiling_x": 1.0,
+                            "detail_tiling_y": 1.0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/c7da540534134560af463fdd29ed209f.glb",
+            "position": [
+                -4.1260085105896,
+                0.9752695560455322,
+                3.9007647037506104
+            ],
+            "rotation": [
+                0.5034468173980713,
+                264.6494140625,
+                359.0433044433594
+            ],
+            "scale": [
+                0.0013171357568353415,
+                0.0013171357568353415,
+                0.0013171357568353415
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/141202eed32747b7b1259a3efeba9c96.glb",
+            "position": [
+                -4.197622299194336,
+                0.7582023739814758,
+                3.2648777961730957
+            ],
+            "rotation": [
+                356.6481018066406,
+                297.5971984863281,
+                282.83135986328125
+            ],
+            "scale": [
+                0.04413875564932823,
+                0.04413875564932823,
+                0.04413875564932823
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/2c3ea93d77c549c2b86072f65dc479c0.glb",
+            "position": [
+                -0.42320284247398376,
+                0.44473618268966675,
+                0.4398021399974823
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.013116755522787571,
+                0.013116755522787571,
+                0.013116755522787571
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/c5ec8ed4471e40ffb194c9e2e146f269.glb",
+            "position": [
+                -0.3441665768623352,
+                0.5749303698539734,
+                4.493401050567627
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "scale": [
+                0.009864223189651966,
+                0.009864223189651966,
+                0.009864223189651966
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/b64f71419439447e98ddade0a43cd4aa.glb",
+            "position": [
+                -0.34379056096076965,
+                0.8799375295639038,
+                4.614679336547852
+            ],
+            "rotation": [
+                2.285292863845825,
+                89.90428924560547,
+                2.9841151237487793
+            ],
+            "scale": [
+                0.011851881630718708,
+                0.011851881630718708,
+                0.011851881630718708
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/c5dcef2397ef468a90d9c624769078b3.glb",
+            "position": [
+                -0.41158056259155273,
+                0.90179443359375,
+                4.53554630279541
+            ],
+            "rotation": [
+                317.12396240234375,
+                82.37725067138672,
+                51.61132049560547
+            ],
+            "scale": [
+                0.8859912753105164,
+                0.8859912753105164,
+                0.8859912753105164
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/3fd154299f2b4ca68cd826195c7ade20.glb",
+            "position": [
+                -0.8092791438102722,
+                0.05214034765958786,
+                4.554972171783447
+            ],
+            "rotation": [
+                81.00020599365234,
+                172.52557373046875,
+                90.00025939941406
+            ],
+            "scale": [
+                0.01018275786191225,
+                0.01018275786191225,
+                0.01018275786191225
+            ],
+            "parent": 0,
+            "type": "interactable"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/589755ed5981492399d18b05d4bc1bb6.glb",
+            "position": [
+                -3.550610303878784,
+                0.4650382995605469,
+                3.997673988342285
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.2852470874786377,
+                0.2852470874786377,
+                0.2852470874786377
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/a0465299981c48b4a086bf7baba45914.glb",
+            "position": [
+                1.919487714767456,
+                2.814871072769165,
+                1.3811602592468262
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.004950203932821751,
+                0.004950203932821751,
+                0.004950203932821751
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        },
+        {
+            "prefab": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/92aa31b6796e4ca3b3ee58a95d578c40.glb",
+            "position": [
+                -2.2810137271881104,
+                2.6608006954193115,
+                2.3632681369781494
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "scale": [
+                0.002317975042387843,
+                0.002317975042387843,
+                0.002317975042387843
+            ],
+            "parent": 0,
+            "type": "kinematic"
+        }
+    ],
+    "walls": [
+        {
+            "position": [
+                1.919487714767456,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.838975429534912,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                3.838975429534912,
+                1.5,
+                1.3811602592468262
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                2.7623205184936523,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.5035591721534729,
+                        0.23977608978748322
+                    ],
+                    "size_xy": [
+                        1.22135329246521,
+                        1.2213537693023682
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                1.919487714767456,
+                1.5,
+                2.7623205184936523
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                3.838975429534912,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                1.3811602592468262
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                2.7623205184936523,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.032183293253183365,
+                        -0.4628114700317383
+                    ],
+                    "size_xy": [
+                        0.9986166954040527,
+                        2.0743770599365234
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                -2.2810137271881104,
+                1.5,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.562027454376221,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.1261066347360611,
+                        0.03501156345009804
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                0.0,
+                1.5,
+                3.7444283962249756
+            ],
+            "rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "size": [
+                1.9642157554626465,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                -2.2810137271881104,
+                1.5,
+                4.726536273956299
+            ],
+            "rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "size": [
+                4.562027454376221,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [
+                {
+                    "position_xy": [
+                        0.3333372473716736,
+                        0.03501156345009804
+                    ],
+                    "size_xy": [
+                        1.7999999523162842,
+                        1.3208833932876587
+                    ]
+                }
+            ],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                -4.562027454376221,
+                1.5,
+                2.3632681369781494
+            ],
+            "rotation": [
+                0.0,
+                90.0,
+                0.0
+            ],
+            "size": [
+                4.726536273956299,
+                3.0,
+                0.05000000074505806
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "floors": [
+        {
+            "position": [
+                1.919487714767456,
+                0.0,
+                1.3811602592468262
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.838975429534912,
+                0.05000000074505806,
+                2.7623205184936523
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                -2.2810137271881104,
+                0.0,
+                2.3632681369781494
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.562027454376221,
+                0.05000000074505806,
+                4.726536273956299
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                1.919487714767456,
+                3.0,
+                1.3811602592468262
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                3.838975429534912,
+                0.05000000074505806,
+                2.7623205184936523
+            ],
+            "holes": [],
+            "material": "#222222"
+        },
+        {
+            "position": [
+                -2.2810137271881104,
+                3.0,
+                2.3632681369781494
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "size": [
+                4.562027454376221,
+                0.05000000074505806,
+                4.726536273956299
+            ],
+            "holes": [],
+            "material": "#222222"
+        }
+    ],
+    "lights": [
+        {
+            "name": "",
+            "lightType": "Directional",
+            "position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                33.00489807128906,
+                0.0,
+                0.0
+            ],
+            "spotAngle": 0.0,
+            "useColorTemperature": false,
+            "colorTemperature": 0.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 0.0,
+            "range": 15.0,
+            "shadowType": "Soft"
+        }
+    ],
+    "light_probes": [],
+    "skybox": {
+        "map": "F:\\Downloads\\task_0613_0157\\two_rooms_10/assets/sunroof_city_6k.jpg",
+        "color": "#FFFFFF",
+        "exposure": 0.6,
+        "rotation": 0
+    },
+    "points": [],
+    "rooms": [],
+    "player": {
+        "prefab": "",
+        "meshes": [],
+        "position": [
+            100.0,
+            -777727.125,
+            100.0
+        ],
+        "rotation": [
+            0.0,
+            150.02500915527344,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": -1,
+        "type": "",
+        "properties": [],
+        "material": "",
+        "mesh_materials": []
+    },
+    "agent": {
+        "prefab": "agent",
+        "meshes": [],
+        "position": [
+            -2.389040946960449,
+            0.05499982833862305,
+            2.131726026535034
+        ],
+        "rotation": [
+            0.0,
+            270.0,
+            0.0
+        ],
+        "scale": [
+            1.0,
+            1.0,
+            1.0
+        ],
+        "parent": 0,
+        "type": "kinematic",
+        "properties": [],
+        "material": "",
+        "mesh_materials": []
+    },
+    "center": [
+        -0.18076300621032715,
+        12.6015043258667,
+        1.8722141981124878
+    ],
+    "center_rotation": []
+}
