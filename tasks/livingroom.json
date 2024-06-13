@@ -39,7 +39,7 @@
             "id": 4,
             "scene": "scene/livingroom_20/scene_3.json",
             "template": "Put {object1} on the {object2}.",
-            "task": "Find the laptop computer which is on the brown recliner and put it on the light brown wooden coffee table with broccoli on it.",
+            "task": "Find the laptop computer which is on the orange recliner and put it on the light brown wooden coffee table with broccoli on it.",
             "object_id": [47,61],
             "predicates": ["on 47 61"],
             "options":[
@@ -136,7 +136,7 @@
             "id": 12,
             "scene": "scene/livingroom_20/scene_17.json",
             "template": "Clear the {position} of all objects.",
-            "task": "Clear the cabinet next to the coffee table of all objects.",
+            "task": "Clear the small table against the wall of all objects.",
             "object_id": [16,17,18,15],
             "predicates": ["noton 16 17 18 15"],
             "options":[
