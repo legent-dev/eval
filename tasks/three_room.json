@@ -1,0 +1,124 @@
+{
+    "ACTION":[
+        {
+            "id": 1,
+            "scene": "scene/three_rooms_5/scene_0.json",
+            "template": "Move {object} to another room.",
+            "task": "Move the newspaper which is on the bed in the bedroom on the round stool in the kitchen.",
+            "object_id": [62,41],
+            "predicates": ["on 62 41"],
+            "options":[
+                "grab the newspaper:62",
+                "put on the stool:41"
+            ]
+        },
+        {
+            "id": 2,
+            "scene": "scene/three_rooms_5/scene_1.json",
+            "template": "Clear the {position} of all objects.",
+            "task": "Take out everything from the bathroom sink.",
+            "object_id": [42,43,44,41],
+            "predicates": ["noton 42 43 44 41"],
+            "options":[
+                "grab the toothpaste:44",
+                "grab the tin:42",
+                "grab the pill bottle:43",
+                "put on the toilet:40",
+                "put on the sink:41"
+            ]
+        },
+        {
+            "id": 3,
+            "scene": "scene/three_rooms_5/scene_4.json",
+            "template": "Move {object} to another room.",
+            "task": "Place the water jug which is on the coffee table in the living room onto the washing machine in the bathroom.",
+            "object_id": [88,56],
+            "predicates": ["on 88 56"],
+            "options":[
+                "grab the water jug:88",
+                "put on the washing machine:56"
+            ]
+        },
+        {
+            "id": 4,
+            "scene": "scene/three_rooms_5/scene_5.json",
+            "template": "Go to {object}.",
+            "task": "Go to the flashlight on the wooden cabinet in the bedroom.",
+            "object_id": [95],
+            "predicates": ["near 95"],
+            "options":[]
+        },
+        {
+            "id": 5,
+            "scene": "scene/three_rooms_5/scene_13.json",
+            "template": "Clear the {position} of all objects.",
+            "task": "Clear the round wooden table of all objects.",
+            "object_id": [36,35],
+            "predicates": ["noton 36 35"],
+            "options":[
+                "grab the icecream:36",
+                "put on the table:35,37",
+                "put on the chair:64"
+            ]
+        }
+    ],
+    "QA":[
+        {
+            "id": 1,
+            "scene": "scene/three_rooms_5/scene_0.json",
+            "template": "Identify all the {color} objects in the room.",
+            "task": "Identify all the blue objects in the bathroom.",
+            "options": ["the garbage can, the water jug",
+                        "the facial cleanser",
+                        "the garbage can",
+                        "the facial cleanser, the garbage can"],
+            "answer": [4],
+            "object_id": [45,56] 
+        },
+        {
+            "id": 2,
+            "scene": "scene/three_rooms_5/scene_1.json",
+            "template": "What color is {object}?",
+            "task": "What color is the tablecloth on the white round table in the kitchen?",
+            "options": ["white",
+                        "blue",
+                        "grey",
+                        "yellow"],
+            "answer": [1],
+            "object_id": [24] 
+        },
+        {
+            "id": 3,
+            "scene": "scene/three_rooms_5/scene_4.json",
+            "template": "Compare the sizes of {object1} and {object2}.",
+            "task": "Compare the sizes of the coffee table and the sofa in the livingroom, which one is bigger?",
+            "options": ["the coffee table",
+                        "the sofa"],
+            "answer": [2],
+            "object_id": [84,63] 
+        },
+        {
+            "id": 4,
+            "scene": "scene/three_rooms_5/scene_5.json",
+            "template": "Count the number of {object}.",
+            "task": "How many clocks are there in the kitchen?",
+            "options": ["1",
+                        "2",
+                        "3",
+                        "4"],
+            "answer": [3],
+            "object_id": [1,3] 
+        },
+        {
+            "id": 5,
+            "scene": "scene/three_rooms_5/scene_13.json",
+            "template": "Where is {object}?",
+            "task": "Where is the big black garbage can?",
+            "options": ["in the kitchen",
+                        "in the bedroom",
+                        "in the bathroom"],
+            "answer": [3],
+            "object_id": [28] 
+        }
+    ]
+}

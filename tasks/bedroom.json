@@ -1,0 +1,366 @@
+{
+    "ACTION":[
+        {
+            "id": 1,
+            "scene": "scene/bedroom_18/scene_0.json",
+            "template": "Swap the positions of {object1} and {object2}.",
+            "task": "Swap the position of the flashlight on the bed and the candle on the white highchair.",
+            "object_id": [11,38],
+            "predicates": ["swap 11 38"],
+            "options":[
+                "grab the flashlight:11",
+                "grab the candle:38",
+                "put on the bed:9",
+                "put on the highchair:34"
+            ]
+        },
+        {
+            "id": 2,
+            "scene": "scene/bedroom_18/scene_1.json",
+            "template": "Collect {object1, object2, ...} into {object0}.",
+            "task": "Put the hardback book at the end of the bed into the purple clothes hamper.",
+            "object_id": [11,23],
+            "predicates": ["in 11 23"],
+            "options":[
+                "grab the book:11,13",
+                "put in the clothes hamper:23"
+            ]
+        },
+        {
+            "id": 3,
+            "scene": "scene/bedroom_18/scene_2.json",
+            "template": "Go to {object}.",
+            "task": "Walk to the blue suitcase",
+            "object_id": [39],
+            "predicates": ["near 39"],
+            "options":[]
+        },
+        {
+            "id": 4,
+            "scene": "scene/bedroom_18/scene_3.json",
+            "template": "Move {object1} closer to {object2}.",
+            "task": "Move the calendar on the black chair closer to the desktop camera on the brown wooden desk.",
+            "object_id": [21,27],
+            "predicates": ["closer 21 27"],
+            "options":[
+                "grab the calendar:21",
+                "put on the bed:8",
+                "put on the wooden desk:24",
+                "put on the chair:18"
+            ]
+        },
+        {
+            "id": 5,
+            "scene": "scene/bedroom_18/scene_4.json",
+            "template": "Move {object1} further away from {object2}.",
+            "task": "Move the ipad on the bed further away from the lamp at the head of the bed.",
+            "object_id": [11,29],
+            "predicates": ["further 11 29"],
+            "options":[
+                "grab the ipad:11",
+                "put on the bed:9",
+                "put on the armoire:41",
+                "put on the desk:23",
+                "put on the chair:18"
+            ]
+        },
+        {
+            "id": 6,
+            "scene": "scene/bedroom_18/scene_5.json",
+            "template": "Put {object1} on the {object2}.",
+            "task": "Look at the laptop computer on the black chair, put it on the desk with the red headphones on it.",
+            "object_id": [20,24],
+            "predicates": ["on 20 24"],
+            "options":[
+                "grab the laptop computer:20",
+                "put on the desk:24"
+            ]
+        },
+        {
+            "id": 7,
+            "scene": "scene/bedroom_18/scene_6.json",
+            "template": "Pick up {object}.",
+            "task": "Go and pick up the broccoli on the highchair.",
+            "object_id": [28],
+            "predicates": ["grab 28"],
+            "options":[
+                "grab the broccoli:28"
+            ]
+        },
+        {
+            "id": 8,
+            "scene": "scene/bedroom_18/scene_7.json",
+            "template": "Swap the positions of {object1} and {object2}.",
+            "task": "Swap the positions of the red high heeled shoes on the wooden cabinet next to the bed and the switch on the wooden desk.",
+            "object_id": [30,19],
+            "predicates": ["swap 30 19"],
+            "options":[
+                "grab the shoes:30",
+                "grab the switch:19",
+                "put on the desk:15,34",
+                "put on the cabinet:28"
+            ]
+        },
+        {
+            "id": 9,
+            "scene": "scene/bedroom_18/scene_8.json",
+            "template": "Remove {object1, object2, ...} from {object0}.",
+            "task": "Remove the white letter envelope from the white desk with two drawers.",
+            "object_id": [18,15],
+            "predicates": ["noton 18 15"],
+            "options":[
+                "grab the letter envelope:18",
+                "put on the white desk:15",
+                "put on the bed:9",
+                "put on the dresser:28"
+            ]
+        },
+        {
+            "id": 10,
+            "scene": "scene/bedroom_18/scene_9.json",
+            "template": "Collect {object1, object2, ...} into {object0}.",
+            "task": "Move the teacups from the black nightstand into the clothes hamper.",
+            "object_id": [17,38],
+            "predicates": ["in 17 38"],
+            "options":[
+                "grab the teacups:17",
+                "put in the clothes hamper:38"
+            ]
+        },
+        {
+            "id": 11,
+            "scene": "scene/bedroom_18/scene_10.json",
+            "template": "Remove {object1, object2, ...} from {object0}.",
+            "task": "Move the teacup and book off the shorter brown cabinet.",
+            "object_id": [16,17,15],
+            "predicates": ["noton 16 17 15"],
+            "options":[
+                "grab the book:16",
+                "grab the teacup:17",
+                "put on the cabinet:15",
+                "put on the bed:9"
+            ]
+        },
+        {
+            "id": 12,
+            "scene": "scene/bedroom_18/scene_11.json",
+            "template": "Go to {object}.",
+            "task": "Go to the folding chair in the corner.",
+            "object_id": [21],
+            "predicates": ["near 21"],
+            "options":[]
+        },
+        {
+            "id": 13,
+            "scene": "scene/bedroom_18/scene_12.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the flashlight on the black bedside table.",
+            "object_id": [17],
+            "predicates": ["grab 17"],
+            "options":[
+                "grab the flashlight:17,22,23"
+            ]
+        },
+        {
+            "id": 14,
+            "scene": "scene/bedroom_18/scene_13.json",
+            "template": "Clear the {position} of all objects.",
+            "task": "Clear the bedside table of all things.",
+            "object_id": [16,15],
+            "predicates": ["noton 16 15"],
+            "options":[
+                "grab the flashlight:16",
+                "put on the bedside table:15",
+                "put on the bed:9",
+                "put on the cabinet:19",
+                "put on the rocking chair:25"
+            ]
+        },
+        {
+            "id": 15,
+            "scene": "scene/bedroom_18/scene_14.json",
+            "template": "Put {object1} on the {object2}.",
+            "task": "Go to the notebook on the bedside table, and put it on the white chaise longue.",
+            "object_id": [16,32],
+            "predicates": ["on 16 32"],
+            "options":[
+                "grab the notebook:16,37",
+                "put on the bedside table:15",
+                "put on the chaise longue:32"
+            ]
+        }
+    ],
+    "QA":[
+        {
+            "id": 1,
+            "scene": "scene/bedroom_18/scene_0.json",
+            "template": "Is there a {object} in the scene?",
+            "task": "Is there a candle in the scene?",
+            "options": ["Yes",
+                        "No"],
+            "answer": [1],
+            "object_id": [16,38,41] 
+        },
+        {
+            "id": 2,
+            "scene": "scene/bedroom_18/scene_1.json",
+            "template": "What is the name of the object {position}?",
+            "task": "What's at the end of the bed?",
+            "options": ["hardback book",
+                        "laptop computer",
+                        "lamp",
+                        "flashlight"],
+            "answer": [1],
+            "object_id": [11]
+        },
+        {
+            "id": 3,
+            "scene": "scene/bedroom_18/scene_2.json",
+            "template": "What is the object next to the {object}?",
+            "task": "What is the name of the object next to the red notepad and white wine glass on the white bed table?",
+            "options": ["gaming console",
+                        "ipod",
+                        "laptop",
+                        "beer mug"],
+            "answer": [4],
+            "object_id": [16] 
+        },
+        {
+            "id": 4,
+            "scene": "scene/bedroom_18/scene_3.json",
+            "template": "What color is {object}?",
+            "task": "What color is the notebook standing upright on the black bedside table?",
+            "options": ["white",
+                        "green",
+                        "red",
+                        "brown"],
+            "answer": [3],
+            "object_id": [17] 
+        },
+        {
+            "id": 5,
+            "scene": "scene/bedroom_18/scene_4.json",
+            "template": "What is the shape of {object}?",
+            "task": "Describe the shape of the blue cap on the dark brown wood armoire with two glass doors.",
+            "options": ["round cap",
+                        "peaked cap",
+                        "visor cap",
+                        "curved brim cap"],
+            "answer": [1],
+            "object_id": [42]
+        },
+        {
+            "id": 6,
+            "scene": "scene/bedroom_18/scene_5.json",
+            "template": "Where is {object}?",
+            "task": "Where is the pink spiral notebook with a green leaf on it?",
+            "options": ["On the dark wooden desk.",
+                        "Under the wooden bed.",
+                        "Next to the wooden bed.",
+                        "On the wooden bed."],
+            "answer": [4],
+            "object_id": [13]
+        },
+        {
+            "id": 7,
+            "scene": "scene/bedroom_18/scene_6.json",
+            "template": "Count the number of {object}.",
+            "task": "How many burgers are there on the coffee table next to the bed?",
+            "options": ["2",
+                        "1",
+                        "4",
+                        "3"],
+            "answer": [2],
+            "object_id": [23]
+        },
+        {
+            "id": 8,
+            "scene": "scene/bedroom_18/scene_7.json",
+            "template": "Which room/object has the most {object}?",
+            "task": "Which desk has more objects on it? The white one or the wooden one?",
+            "options": ["The wooden desk.",
+                        "The white desk.",
+                        "They are the same."],
+            "answer": [2],
+            "object_id": [34,15]
+        },
+        {
+            "id": 9,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_8.json",
+            "template": "special",
+            "task": "How many pairs of shoes are there on the light wooden cabinet? (Unpaired ones are not counted)",
+            "options": ["2",
+                        "3",
+                        "4",
+                        "6"],
+            "answer": [1],
+            "object_id": [29,31]
+        },
+        {
+            "id": 10,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_9.json",
+            "template": "Count the number of {object}.",
+            "task": "How many people are there in the painting hanging on the wall next to the bed?",
+            "options": ["0",
+                        "1",
+                        "2",
+                        "3"],
+            "answer": [3],
+            "object_id": [9]
+        },
+        {
+            "id": 11,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_10.json",
+            "template": "Is there a {object} in the scene?",
+            "task": "Is there a lamp in the room?",
+            "options": ["Yes",
+                        "No"],
+            "answer": [1],
+            "object_id": [18]
+        },
+        {
+            "id": 12,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_11.json",
+            "template": "Is there a {object} in the scene?",
+            "task": "Is there a WiFi router in the room?",
+            "options": ["yes",
+                        "no"],
+            "answer": [1],
+            "object_id": [34]
+        },
+        {
+            "id": 13,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_12.json",
+            "template": "special",
+            "task": "How many drawers are there in the brown cabinet in the corner near the bed?",
+            "options": ["3",
+                        "4",
+                        "5",
+                        "6"],
+            "answer": [2],
+            "object_id": [21]
+        },
+        {
+            "id": 14,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_13.json",
+            "template": "What is the object next to the {object}?",
+            "task": "What is that thing on the left side of the laptop on the white cabinet?",
+            "options": ["the coffee cup",
+                        "the ring",
+                        "the eyeglasses",
+                        "the book"],
+            "answer": [1],
+            "object_id": [23]
+        },
+        {
+            "id": 15,
+            "scene": "/Users/frank/Code/scene/bedroom_18/scene_14.json",
+            "template": "special",
+            "task": "Is the flashlight on the bedside table standing upright or lying sideways?",
+            "options": ["lying sideways",
+                        "standing up."],
+            "answer": [2],
+            "object_id": [17]
+        }
+    ]
+}

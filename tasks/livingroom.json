@@ -1,0 +1,367 @@
+{
+    "ACTION":[
+        {
+            "id": 1,
+            "scene": "scene/livingroom_20/scene_0.json",
+            "template": "Go to {object}.",
+            "task": "Go to the brown wooden bookcase without a back.",
+            "object_id": [22],
+            "predicates": ["near 22"],
+            "options":[]
+        },
+        {
+            "id": 2,
+            "scene": "scene/livingroom_20/scene_15.json",
+            "template": "Move {object1} closer to {object2}.",
+            "task": "Help me put the red cola can on the round table closer to the black trash can.",
+            "object_id": [36,32],
+            "predicates": ["closer 36 32"],
+            "options":[
+                "grab the cola can:36",
+                "put on the sofa:8",
+                "put in the trash can:32"
+            ]
+        },
+        {
+            "id": 3,
+            "scene": "scene/livingroom_20/scene_2.json",
+            "template": "Move {object1} further away from {object2}.",
+            "task": "Reposition the headset on the TV stand to increase the distance from the TV stand.",
+            "object_id": [18,16],
+            "predicates": ["further 18 16"],
+            "options":[
+                "grab the headset:18",
+                "put on the table:41",
+                "put on the sofa:25,9"
+            ]
+        },
+        {
+            "id": 4,
+            "scene": "scene/livingroom_20/scene_3.json",
+            "template": "Put {object1} on the {object2}.",
+            "task": "Find the laptop computer which is on the brown recliner and put it on the light brown wooden coffee table with broccoli on it.",
+            "object_id": [47,61],
+            "predicates": ["on 47 61"],
+            "options":[
+                "grab the computer:47",
+                "put on the coffe table:61,32"
+            ]
+        },
+        {
+            "id": 5,
+            "scene": "scene/livingroom_20/scene_4.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the vinyl record on the black cabinet.",
+            "object_id": [18],
+            "predicates": ["grab 18"],
+            "options":[
+                "grab the vinyl record:18"
+            ]
+        },
+        {
+            "id": 6,
+            "scene": "scene/livingroom_20/scene_5.json",
+            "template": "Swap the positions of {object1} and {object2}.",
+            "task": "Swap the positions of the icecream on the folding chair and the sandwich on the coffee table.",
+            "object_id": [36,45],
+            "predicates": ["swap 36 45"],
+            "options":[
+                "grab the icecream:36",
+                "put on the chair:32",
+                "grab the sandwich:45",
+                "put on the coffee table:44"
+            ]
+        },
+        {
+            "id": 7,
+            "scene": "scene/livingroom_20/scene_6.json",
+            "template": "Collect {object1, object2, ...} into {object0}.",
+            "task": "Collect all the cups on the simple wood chair into the large black and green trash can.",
+            "object_id": [36,37,32],
+            "predicates": ["in 36 37 32"],
+            "options":[
+                "grab the cup:36,37",
+                "put in the trash can:32"
+            ]
+        },
+        {
+            "id": 8,
+            "scene": "scene/livingroom_20/scene_7.json",
+            "template": "Remove {object1, object2, ...} from {object0}.",
+            "task": "Remove the laptop computer from the sofa.",
+            "object_id": [11,9],
+            "predicates": ["noton 11 9"],
+            "options":[
+                "grab the laptop computer:11",
+                "put on the coffee table:38",
+                "put on the drawer:32",
+                "put on the deck chair:24"
+            ]
+        },
+        {
+            "id": 9,
+            "scene": "scene/livingroom_20/scene_8.json",
+            "template": "Put {object1} on the {object2}.",
+            "task": "Look at the wine glass on the coffee table, put it on the white kitchen table.",
+            "object_id": [56,24],
+            "predicates": ["on 56 24"],
+            "options":[
+                "grab the wine glass:56",
+                "put on the table:36,30,24"
+            ]
+        },
+        {
+            "id": 10,
+            "scene": "scene/livingroom_20/scene_9.json",
+            "template": "Remove {object1, object2, ...} from {object0}.",
+            "task": "Please help me move my laptop off the the cabinet next to the lounge chair.",
+            "object_id": [69,67],
+            "predicates": ["noton 69 67"],
+            "options":[
+                "grab the laptop:69,47",
+                "put on the coffe table:73",
+                "put on the lounge chair:61"
+            ]
+        },
+        {
+            "id": 11,
+            "scene": "scene/livingroom_20/scene_16.json",
+            "template": "Go to {object}.",
+            "task": "Please go to the laptop computer on the sofa.",
+            "object_id": [13],
+            "predicates": ["near 13"],
+            "options":[]
+        },
+        {
+            "id": 12,
+            "scene": "scene/livingroom_20/scene_17.json",
+            "template": "Clear the {position} of all objects.",
+            "task": "Clear the cabinet next to the coffee table of all objects.",
+            "object_id": [16,17,18,15],
+            "predicates": ["noton 16 17 18 15"],
+            "options":[
+                "grab the glasses:16",
+                "grab the vinyl record:17",
+                "grab the game console:18",
+                "put on the coffee table:41",
+                "put on the sofa:19"
+            ]
+        },
+        {
+            "id": 13,
+            "scene": "scene/livingroom_20/scene_12.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the banana on the black chair.",
+            "object_id": [36],
+            "predicates": ["grab 36"],
+            "options":[
+                "grab the banana:36"
+            ]
+        },
+        {
+            "id": 14,
+            "scene": "scene/livingroom_20/scene_13.json",
+            "template": "Move {object1} further away from {object2}.",
+            "task": "Move the watermelon on the coffee table further away from the black sofa.",
+            "object_id": [45,9],
+            "predicates": ["further 45 9"],
+            "options":[
+                "grab the watermelon:45",
+                "put on the sofa:9,23",
+                "put on the brown chair:36",
+                "put on the TV stand:12"
+            ]
+        },
+        {
+            "id": 15,
+            "scene": "scene/livingroom_20/scene_18.json",
+            "template": "Move {object1} closer to {object2}.",
+            "task": "Move the red notebook on the sofa closer to the lamp next to the garbage can.",
+            "object_id": [11,15],
+            "predicates": ["closer 11 15"],
+            "options":[
+                "grab the notebook:11",
+                "put on the coffee table:26"
+            ]
+        }
+    ],
+    "QA":[
+        {
+            "id": 1,
+            "scene": "scene/livingroom_20/scene_0.json",
+            "template": "Is there a {object} in the scene?",
+            "task": "Can you verify whether there is any computer in the scene?",
+            "options": ["yes",
+                        "no"],
+            "answer": [1],
+            "object_id": [10,23]
+        },
+        {
+            "id": 2,
+            "scene": "scene/livingroom_20/scene_15.json",
+            "template": "Which room/object has the most {object}?",
+            "task": "Which object has the most headphones on it?",
+            "options": ["the sofa",
+                        "the blue and black cushion",
+                        "the wooden cabinet on the left side of the door",
+                        "the wooden frame next to the sofa"],
+            "answer": [3],
+            "object_id": [15]
+        },
+        {
+            "id": 3,
+            "scene": "scene/livingroom_20/scene_2.json",
+            "template": "What is the object next to the {object}?",
+            "task": "Tell me the name of the object next to headset on the TV stand.",
+            "options": ["game console",
+                        "clock",
+                        "flashlight",
+                        "ladder"],
+            "answer": [1],
+            "object_id": [17]
+        },
+        {
+            "id": 4,
+            "scene": "scene/livingroom_20/scene_3.json",
+            "template": "What color is {object}?",
+            "task": "What color is the candy bar on the floor near the black and white armchairs?",
+            "options": ["green",
+                        "brown",
+                        "blue",
+                        "red"],
+            "answer": [4],
+            "object_id": [56]
+        },
+        {
+            "id": 5,
+            "scene": "scene/livingroom_20/scene_4.json",
+            "template": "What is the shape of {object}?",
+            "task": "What is the shape of the brown pillow on the long blue sofa?",
+            "options": ["rectangle",
+                        "triangle",
+                        "round",
+                        "oval"],
+            "answer": [1],
+            "object_id": [9]
+        },
+        {
+            "id": 6,
+            "scene": "scene/livingroom_20/scene_5.json",
+            "template": "Where is {object}?",
+            "task": "Where is the clay-colored planter which holds a plant with large green leaves?",
+            "options": ["on the coffee table",
+                        "next to the bookcase",
+                        "on the TV stand",
+                        "near the painting"],
+            "answer": [2],
+            "object_id": [43]
+        },
+        {
+            "id": 7,
+            "scene": "scene/livingroom_20/scene_6.json",
+            "template": "Count the number of {object}.",
+            "task": "How many kinds of food are there on the round side table made of wood?",
+            "options": ["0",
+                        "1",
+                        "2",
+                        "3"],
+            "answer": [4],
+            "object_id": [46,49,50]
+        },
+        {
+            "id": 8,
+            "scene": "scene/livingroom_20/scene_7.json",
+            "template": "Compare the sizes of {object1} and {object2}.",
+            "task": "Which painting on the wall is the biggest?",
+            "options": ["The painting next to the TV",
+                        "The painting near the sofa and the lamp",
+                        "The painting above the wooden deck chair",
+                        "All paintings are the same size"],
+            "answer": [1],
+            "object_id": [6]
+        },
+        {
+            "id": 9,
+            "scene": "scene/livingroom_20/scene_8.json",
+            "template": "Compare the sizes of {object1} and {object2}.",
+            "task": "Compare the sizes of the cake and the white box of elevit medication on the square dark brown wooden coffee table with gray legs.",
+            "options": ["The cake is bigger",
+                        "The white box is bigger",
+                        "They are the same size"],
+            "answer": [2],
+            "object_id": [31,34]
+        },
+        {
+            "id": 10,
+            "scene": "scene/livingroom_20/scene_9.json",
+            "template": "special",
+            "task": "How many layers does the bookcase have?",
+            "options": ["4",
+                        "5",
+                        "6",
+                        "7"],
+            "answer": [3],
+            "object_id": [16]
+        },
+        {
+            "id": 11,
+            "scene": "scene/livingroom_20/scene_16.json",
+            "template": "What is the name of the object {postion}?",
+            "task": "What is the food on the coffee table next to the lamp?",
+            "options": ["pancake",
+                        "sandwich",
+                        "donuts",
+                        "biscuit"],
+            "answer": [1],
+            "object_id": [31]
+        },
+        {
+            "id": 12,
+            "scene": "scene/livingroom_20/scene_17.json",
+            "template": "What color is {object}?",
+            "task": "Tell me the color of the big sofa next to the lamp.",
+            "options": ["brown",
+                        "white",
+                        "blue",
+                        "black"],
+            "answer": [4],
+            "object_id": [19]
+        },
+        {
+            "id": 13,
+            "scene": "scene/livingroom_20/scene_12.json",
+            "template": "What is the shape of {object}?",
+            "task": "What is the shape of the cake on the coffee table?",
+            "options": ["round",
+                        "triangle",
+                        "square",
+                        "cylindrical"],
+            "answer": [2],
+            "object_id": [44]
+        },
+        {
+            "id": 14,
+            "scene": "scene/livingroom_20/scene_13.json",
+            "template": "Where is {object}?",
+            "task": "Where is the bagel?",
+            "options": ["on the office chair",
+                        "on the sofa",
+                        "on the TV stand next to the wall",
+                        "on the wooden coffee table"],
+            "answer": [4],
+            "object_id": [44]
+        },
+        {
+            "id": 15,
+            "scene": "scene/livingroom_20/scene_18.json",
+            "template": "special",
+            "task": "What kind of scenery does the painting next to the TV depict?",
+            "options": ["Mountains, forests, lakes.",
+                        "Desert, Gobi.",
+                        "City night view.",
+                        "The coastline."],
+            "answer": [1],
+            "object_id": [5]
+        }
+    ]
+}

@@ -1,0 +1,240 @@
+{
+    "ACTION":[
+        {
+            "id": 1,
+            "scene": "scene/two_rooms_10/scene_0.json",
+            "template": "Go to {object}.",
+            "task": "Go to the sink in the bathroom.",
+            "object_id": [13],
+            "predicates": ["near 13"],
+            "options":[]
+        },
+        {
+            "id": 2,
+            "scene": "scene/two_rooms_10/scene_1.json",
+            "template": "Move {object} to another room.",
+            "task": "Move the teapot from the oven in the kitchen to the toilet in the bathroom.",
+            "object_id": [36,8],
+            "predicates": ["on 36 8"],
+            "options":[
+                "grab the teapot:36",
+                "put on the toilet:8"
+            ]
+        },
+        {
+            "id": 3,
+            "scene": "scene/two_rooms_10/scene_2.json",
+            "template": "Move {object1} closer to {object2}.",
+            "task": "Place the scissors on the kitchen table closer to the oven.",
+            "object_id": [18,23],
+            "predicates": ["closer 18 23"],
+            "options":[
+                "grab the scissors:18",
+                "put on the table:17",
+                "put on the stool:36",
+                "put on the oven:23"
+            ]
+        },
+        {
+            "id": 4,
+            "scene": "scene/two_rooms_10/scene_3.json",
+            "template": "Put {object1} on the {object2}.",
+            "task": "Place the wine glasses which is on the coffee table in the living room onto the larger sofa.",
+            "object_id": [86,53],
+            "predicates": ["on 86 53"],
+            "options":[
+                "grab the wine glasses:86",
+                "put on the sofa:75,53"
+            ]
+        },
+        {
+            "id": 5,
+            "scene": "scene/two_rooms_10/scene_4.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the brush on the washing machine in the bathroom.",
+            "object_id": [20],
+            "predicates": ["grab 20"],
+            "options":[
+                "grab the brush:20"
+            ]
+        },
+        {
+            "id": 6,
+            "scene": "scene/two_rooms_10/scene_5.json",
+            "template": "Move {object1} further away from {object2}.",
+            "task": "Move the book on the sofa furtehr away from the TV.",
+            "object_id": [33,40],
+            "predicates": ["further 33 40"],
+            "options":[
+                "grab the book:33",
+                "put on the sofa:30",
+                "put on the coffee table:49",
+                "put on the folding chair:43"
+            ]
+        },
+        {
+            "id": 7,
+            "scene": "scene/two_rooms_10/scene_6.json",
+            "template": "Swap the positions of {object1} and {object2}.",
+            "task": "Swap the positions of coconut on the kitchen table and the shoulder bag on the cabinet against the wall in the kitchen.",
+            "object_id": [24,40],
+            "predicates": ["swap 24 40"],
+            "options":[
+                "grab the coconut:24",
+                "grab the shoulder bag:40",
+                "put on the table:22",
+                "put on the cabinet:38"
+            ]
+        },
+        {
+            "id": 8,
+            "scene": "scene/two_rooms_10/scene_7.json",
+            "template": "Remove {object1, object2, ...} from {object0}.",
+            "task": "Take the ginger off the round kitchen table.",
+            "object_id": [25,24],
+            "predicates": ["noton 25 24"],
+            "options":[
+                "grab the ginger:25",
+                "put on the table:24,27",
+                "put on the chair:49"
+            ]
+        },
+        {
+            "id": 9,
+            "scene": "scene/two_rooms_10/scene_8.json",
+            "template": "Go to {object}.",
+            "task": "Walk towards the bedside table in the bedroom.",
+            "object_id": [23],
+            "predicates": ["near 23"],
+            "options":[]
+        },
+        {
+            "id": 10,
+            "scene": "scene/two_rooms_10/scene_9.json",
+            "template": "Move {object} to another room.",
+            "task": "Place the hand sanitizer on the sink on the left side of the toilet on the round dining table on the right side of the kitchen entrance.",
+            "object_id": [15,27],
+            "predicates": ["on 15 27"],
+            "options":[
+                "grab the hand sanitizer:15",
+                "put on the table:30,27"
+            ]
+        }
+    ],
+    "QA":[
+        {
+            "id": 1,
+            "scene": "scene/two_rooms_10/scene_0.json",
+            "template": "Count the number of {object}.",
+            "task": "How many white bedside tables are there in the bedroom?",
+            "options": ["1",
+                        "2",
+                        "3",
+                        "4"],
+            "answer": [2],
+            "object_id": [26,29] 
+        },
+        {
+            "id": 2,
+            "scene": "scene/two_rooms_10/scene_1.json",
+            "template": "What color is {object}?",
+            "task": "Tell me the color of the oven in the kitchen.",
+            "options": ["black",
+                        "white",
+                        "red",
+                        "grey"],
+            "answer": [1],
+            "object_id": [35] 
+        },
+        {
+            "id": 3,
+            "scene": "scene/two_rooms_10/scene_2.json",
+            "template": "What is the shape of {object}?",
+            "task": "What shape are the yellow sticky notes on the kitchen refrigerator?",
+            "options": ["circle",
+                        "triangle",
+                        "star",
+                        "square"],
+            "answer": [4],
+            "object_id": [27] 
+        },
+        {
+            "id": 4,
+            "scene": "scene/two_rooms_10/scene_3.json",
+            "template": "Which room/object has the most {object}?",
+            "task": "Which room has more chairs or stools?",
+            "options": ["kitchen",
+                        "livingroom"],
+            "answer": [1],
+            "object_id": [46,52] 
+        },
+        {
+            "id": 5,
+            "scene": "scene/two_rooms_10/scene_4.json",
+            "template": "What is the name of the object {postion}?",
+            "task": "What kind of fruit is on the table by the window in the kitchen?",
+            "options": ["orange",
+                        "pear",
+                        "apple",
+                        "watermelon"],
+            "answer": [2],
+            "object_id": [25] 
+        },
+        {
+            "id": 6,
+            "scene": "scene/two_rooms_10/scene_5.json",
+            "template": "special",
+            "task": "Is there a Van Gogh painting in the living room?",
+            "options": ["Yes",
+                        "No"],
+            "answer": [1],
+            "object_id": [11] 
+        },
+        {
+            "id": 7,
+            "scene": "scene/two_rooms_10/scene_6.json",
+            "template": "Compare the sizes of {object1} and {object2}.",
+            "task": "Compare the sizes of the refrigerator and the oven in the kitchen.",
+            "options": ["the refrigerator is larger",
+                        "the oven is larger"],
+            "answer": [1],
+            "object_id": [32,28] 
+        },
+        {
+            "id": 8,
+            "scene": "scene/two_rooms_10/scene_7.json",
+            "template": "What is the object next to the {object}?",
+            "task": "What's that thing between the two juicers on the kitchen cabinet?",
+            "options": ["cup",
+                        "can",
+                        "teapot",
+                        "sculpture"],
+            "answer": [3],
+            "object_id": [41] 
+        },
+        {
+            "id": 9,
+            "scene": "scene/two_rooms_10/scene_8.json",
+            "template": "Identify all the {color} objects in the room.",
+            "task": "In the bedroom, which of the following objects are all white?",
+            "options": ["the cabinet in the corner, the candles on the  wooden cabinet",
+                        "the cabinet in the corner, the office chair in the corner",
+                        "the office chair in the corner, the candles on the wooden cabinet",
+                        "the candles on the wooden cabinet, the carpet on the floor"],
+            "answer": [1],
+            "object_id": [37,35] 
+        },
+        {
+            "id": 10,
+            "scene": "scene/two_rooms_10/scene_9.json",
+            "template": "Where is {object}?",
+            "task": "Where is the clock in the toilet?",
+            "options": ["on the wall next to the window on the left hand side of the door",
+                        "on the wall above the toilet",
+                        "on the wall next to the window on the right hand side of the door",
+                        "on the wall above the green plants"],
+            "answer": [2],
+            "object_id": [1] 
+        }
+    ]
+}

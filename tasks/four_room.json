@@ -1,0 +1,119 @@
+{
+    "ACTION":[
+        {
+            "id": 1,
+            "scene": "scene/four_rooms_5/scene_0.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the gloves on the cabinet in the bedroom.",
+            "object_id": [38],
+            "predicates": ["grab 38"],
+            "options":[
+                "grab the gloves:38"
+            ]
+        },
+        {
+            "id": 2,
+            "scene": "scene/four_rooms_5/scene_1.json",
+            "template": "Go to {object}.",
+            "task": "Go to the refrigerator in the kitchen.",
+            "object_id": [53],
+            "predicates": ["near 53"],
+            "options":[]
+        },
+        {
+            "id": 3,
+            "scene": "scene/four_rooms_5/scene_2.json",
+            "template": "Move {object} to another room.",
+            "task": "Place the newspaper which is on the bed in the bedroom onto the white cabinet in the living room.",
+            "object_id": [63,84],
+            "predicates": ["on 63 84"],
+            "options":[
+                "grab the newspaper:63",
+                "put on the cabinet:84"
+            ]
+        },
+        {
+            "id": 4,
+            "scene": "scene/four_rooms_5/scene_3.json",
+            "template": "Move {object} to another room.",
+            "task": "Place the black notebook which is on the black sofa onto the bed in the bedroom.",
+            "object_id": [42,92],
+            "predicates": ["on 42 92"],
+            "options":[
+                "grab the notebook:42",
+                "put on the bed:92"
+            ]
+        },
+        {
+            "id": 5,
+            "scene": "scene/four_rooms_5/scene_4.json",
+            "template": "Pick up {object}.",
+            "task": "Pick up the cup on the bedside table in bedroom.",
+            "object_id": [47],
+            "predicates": ["grab 47"],
+            "options":[
+                "grab the cup:47,55"
+            ]
+        }
+    ],
+    "QA":[
+        {
+            "id": 1,
+            "scene": "scene/four_rooms_5/scene_0.json",
+            "template": "Count the number of {object}.",
+            "task": "How many hats are there on the cabinet in the bedroom?",
+            "options": ["1",
+                        "2",
+                        "3",
+                        "4"],
+            "answer": [2],
+            "object_id": [36,39] 
+        },
+        {
+            "id": 2,
+            "scene": "scene/four_rooms_5/scene_1.json",
+            "template": "What is the shape of {object}?",
+            "task": "What shape is the table covered with a tablecloth in the kitchen?",
+            "options": ["circle",
+                        "square",
+                        "rectangle",
+                        "triangle"],
+            "answer": [1],
+            "object_id": [45] 
+        },
+        {
+            "id": 3,
+            "scene": "scene/four_rooms_5/scene_2.json",
+            "template": "What color is {object}?",
+            "task": "What color is the refrigerator?",
+            "options": ["khaki",
+                        "blue",
+                        "black",
+                        "white"],
+            "answer": [3],
+            "object_id": [36] 
+        },
+        {
+            "id": 4,
+            "scene": "scene/four_rooms_5/scene_3.json",
+            "template": "What is the name of the object {postion}?",
+            "task": "What kind of fruit is on the black table in the bedroom?",
+            "options": ["orange",
+                        "pear",
+                        "apple",
+                        "watermelon"],
+            "answer": [4],
+            "object_id": [106] 
+        },
+        {
+            "id": 5,
+            "scene": "scene/four_rooms_5/scene_4.json",
+            "template": "Is there a {object} in the scene?",
+            "task": "Is there any food on the coffee table in the livingroom?",
+            "options": ["yes",
+                        "no"],
+            "answer": [1],
+            "object_id": [125] 
+        }
+    ]
+}
