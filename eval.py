@@ -1,4 +1,5 @@
 import os
+from typing import List, Tuple
 import requests
 from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, load_json, save_image, unpack_scenes, time_string, find_files_by_extension
 from legent.utils.math import vec_xz, distance
@@ -7,12 +8,13 @@ import io
 import base64
 import requests
 from openai import OpenAI
-from functools import partial
 from legent.utils.math import distance, vec_xz
 import re
 from legent.action.action import Action, ActionFinish
+from legent.utils.io import log_green
 import queue
 import threading
+import numpy as np
 
 MAX_STEPS = 25
 
@@ -23,14 +25,21 @@ Your current task is:
 {}
 """
 
-PROMPT_SUFFIX = """Your current options are as follows:
+# TODO: 加入CoT，允许思考，但是要按指定格式输出然后parse
+PROMPT_SUFFIX = (
+    """Your current options are as follows:
 {}
 You must choose one of them and directly output the number of the option.
 If the object is in your view and near you, you can choose to grab it.
 If the last action in Action history failed, do not choose it again.
-If you need more information beyond the current view, you can possibly explore the environment by "Move forward", "Turn left" and .
-Attention: you only have a limited number of steps ("""+f"{MAX_STEPS}"+""" steps) to finish the task, so do not turn around in circles at one position.
+If you need more information beyond the current view, you can possibly explore the environment by "move forward", "turn left/right", "loo up/down". Among them, if you can move forward, prioritize "moving forward".
+If you can 
+You can only hold one object at a time, so if you need to hold another object, you need to put down the current object first.
+Attention: you only have a limited number of steps ("""
+    + f"{MAX_STEPS}"
+    + """ steps) to finish the task, so do not turn around in circles at one position. If you are about to reach the maximum step count, please choose to answer the question immediately.
 """
+)
 
 # ATTENTION:
 # Do not call grab action twice.
@@ -61,9 +70,9 @@ class AgentBase:
     def _process_request(self):
         while True:
             try:
-                (image, feedback, options, extra_hint) = self.request_queue.get(timeout=1)  # Avoid endless polling of an empty queue, saving CPU resources, and ensures timely responses to new requests.
+                (image, feedback, options) = self.request_queue.get(timeout=1)  # Avoid endless polling of an empty queue, saving CPU resources, and ensures timely responses to new requests.
 
-                action = self.act_sync(image, feedback, options, extra_hint)
+                action = self.act_sync(image, feedback, options)
                 self.response_queue.put(action)
             except queue.Empty:
                 continue
@@ -88,7 +97,7 @@ class AgentBase:
     def generate(self):
         raise NotImplementedError
 
-    def _act(self, actions, images, image, options, extra_hint):
+    def _act(self, actions, images, image, options):
         # 输入行动历史、图片历史、当前图片和候选项，输入行动选项
         self.init_message()
         self.append_text(f"{PROMPT_PREFIX.format(self.instruction)}\n")
@@ -106,17 +115,17 @@ class AgentBase:
         self.append_text(f"\nThe current image you see: \n")
         self.append_image(image)
         options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options)])
-        self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string)}\n{extra_hint}")  # Your History
+        self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string)}")  # Your History
 
         self.print_message()
 
         return self.generate()
 
-    def act(self, image, feedback, options, extra_hint=""):
+    def act(self, image, feedback, options):
         if self.sync:
-            return self.act_sync(image, feedback, options, extra_hint)
+            return self.act_sync(image, feedback, options)
         else:
-            self.request_queue.put((image, feedback, options, extra_hint))
+            self.request_queue.put((image, feedback, options))
             while True:
                 env.step()
                 try:
@@ -127,15 +136,17 @@ class AgentBase:
 
             return action
 
-    def act_sync(self, image, feedback, options, extra_hint=""):
+    def act_sync(self, image, feedback, options):
         if feedback:
             self.update_feedback(feedback)
-        response = self._act(self.actions, self.images, image, options, extra_hint).strip()
+        response = self._act(self.actions, self.images, image, options).strip()
 
         print("response:", response)
         action = Action()
-        action.action_choice = int(re.search(r"\d", response).group(0))
-
+        try:
+            action.action_choice = int(re.search(r"\d", response).group(0))
+        except:
+            action.action_choice = -1
         self.update_history(image, options[action.action_choice])
         return action
 
@@ -217,8 +228,9 @@ class AgentGemini(AgentBase):
         self.files.append(("files", (f"image{i}.png", buf.read(), "image/png")))
 
     def print_message(self):
-        message = "".join(self.messages)
-        print("=" * 20 + "\n" + message + "=" * 20 + "\n")
+        pass
+        # message = "".join(self.messages)
+        # print("-" * 40 + "\n" + message + "-" * 40 + "\n")
 
     def generate(self):
         message = "".join(self.messages)
@@ -231,7 +243,7 @@ class AgentHuman(AgentBase):
         super().__init__("human")
         self.env = env
 
-    def act(self, image, options, extra_hint="") -> int:
+    def act(self, image, options) -> int:
         action = Action()
         while True:
             obs = env.step()
@@ -240,7 +252,6 @@ class AgentHuman(AgentBase):
                 return action
 
 
-# TODO: write your own agent
 class YourAgent(AgentBase):
     # 用于评测你的模型/API
     def __init__(self, env=None) -> None:
@@ -268,6 +279,29 @@ class YourAgent(AgentBase):
         # 这里放模型/API的推理代码
         # return model.generate_text(...)
         pass
+
+
+# TODO: write your own agent
+class YourAgentSimple(AgentBase):
+    # 用于评测你的模型/API
+    def __init__(self, env=None) -> None:
+        super().__init__("your_model_name", env == None, env)
+        # 这里放模型/API的初始化代码
+        # self.model = ...
+
+    def _act(self, actions: List[Tuple[str, str]], images: List[np.array], image: np.array, options: List[str]) -> str:
+        # 这里放模型/API的推理代码
+        pass
+
+        # TODO：将prompt和下列图文信息整理成模型的输入
+        # self.instruction: 任务
+        # actions: 行动历史 [("action content", "success_or_failed"), ("", ""), ...]
+        # images: 图片历史
+        # image: 当前图片
+        # options: 当前可选项
+
+        # TODO：进行模型推理
+        # return model.generate_text(...)
 
 
 class Predicate:
@@ -407,7 +441,7 @@ class PredicateNotOn(Predicate):
         instances = obs.game_states["instances"]
         for object_id in self.objects:
             d = distance(vec_xz(instances[object_id]["position"]), vec_xz(instances[self.on_object]["position"]))
-            if d < 2:
+            if d < 1:
                 return 0, {}
 
         return 1, {}
@@ -446,7 +480,7 @@ def build_predicate(predicates, obs) -> Predicate:
         return PredicateSwap(int(splits[1]), int(splits[2]), obs)
     elif predicate.startswith("in"):
         splits = predicate.split(" ")
-        assert len(splits) == 4
+        assert len(splits) == 3 or len(splits) == 4
         return PredicateIn([int(_id) for _id in splits[1:-1]], int(splits[-1]))
     elif predicate.startswith("noton"):
         splits = predicate.split(" ")
@@ -470,24 +504,27 @@ def get_feedback(action: str, prev_obs, obs):
         return "success"
 
 
-# Download from eval_folder_xxx.zip from https://huggingface.co/LEGENT/temp_share/tree/main and extract it
 # TODO: change the path to your eval_folder
-eval_folder = "F:/Downloads/eval_folder_20240611_2357"
-eval_folder = "F:/Downloads/task_0613_0157"
+eval_folder = "eval_folder_20240614_0251"
+eval_folder = "F:\codes\github-LEGENT\eval\eval_folder_20240614_0251"
+eval_folder = os.path.abspath(eval_folder)
 
 def get_task_settings_0612():
     scenes_zip = [file for file in os.listdir(eval_folder) if file.endswith(".zip")]
+    if len(scenes_zip) == 0:
+        scenes_zip = [file for file in os.listdir(eval_folder) if os.path.isdir(f"{eval_folder}/{file}") and file != "results"]
     scene_path_to_scene = {}
     for scene_zip in scenes_zip:
         unpack_scenes(f"{eval_folder}/{scene_zip}")
         scene_dir_relative = scene_zip.rsplit(".", maxsplit=1)[0]
         scene_dir = f"{eval_folder}/{scene_dir_relative}"
-        
+
         scene_files = [file for file in os.listdir(scene_dir) if file.endswith(".json") and not file.endswith("_relative.json")]
         for scene_file in scene_files:
             scene = load_json(f"{scene_dir}/{scene_file}")
             scene["player"]["prefab"] = "null"
             scene_path_to_scene[f"{scene_dir_relative}/{scene_file}"] = scene
+            # print(f"{scene_dir_relative}/{scene_file}")
             # print(f"{scene_dir}/{scene_file}")
 
     def get_scene_by_path(path):
@@ -497,7 +534,11 @@ def get_task_settings_0612():
         return copy.deepcopy(scene_path_to_scene[path])
 
     task_settings = []
+    #
     files = find_files_by_extension(eval_folder, ".json", recursive=False)
+    # 宇鸽、佩琪和其他所有人
+    # files = [f"{eval_folder}/{file}" for file in ["two_room.json", "bedroom.json", "four_room.json","livingroom.json", "three_room.json"]]
+
     for file in files:
         # print(file)
         tasks = load_json(file)
@@ -574,13 +615,18 @@ def get_task_settings_0612():
                 splits = predicate.split(" ")
                 scene["predicates"] = [{"predicate": splits[0], "content": "", "object_ids": [int(_id) for _id in splits[1:]]}]
 
-            task_setting = {"scene": scene, "task": task_description, "predicates": predicates, "type": sample["type"]}
+            task_setting = {"scene": scene, "task": task_description, "predicates": predicates, "type": sample["type"], "scene_file": sample["scene"], "rendering_options": {"use_default_light": 1, "style": 0}}
             task_settings.append(task_setting)
 
     return task_settings
 
 
 task_settings = get_task_settings_0612()
+k = 0
+# print(task_settings[k]["scene_file"])
+# print(task_settings[k]["task"])
+
+print(len(task_settings), "tasks")
 store_json(task_settings, f"task_settings.json")
 
 
@@ -593,6 +639,7 @@ env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, c
 agent = AgentGemini(env)
 # agent = AgentGPT4V(env)
 # agent = YourAgent(env)
+# agent = YourAgentSimple(env)
 success_count = 0
 
 save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
@@ -632,16 +679,23 @@ try:
         #   67 on 88 56
         #   68 near 95 navigation点很怪
         #   69 noton 35
-        if i < 17:
+
+        # 53莫名奇妙报错了。。。，再跑又不报错了；77也报错了(无法复现)；
+        # 81报错了，可以复现。31号物体飞太远了
+        if i < k:  # 70
             continue
-        if task_settings[i]["type"] == "QA":
-            continue
-        print("\n" + "==" * 4 + f"Start episode {i}" + "==" * 4)
+        # if task_settings[i]["type"] == "QA":
+        #    continue
+
+        print("\n" + "==" * 8 + f"Start episode {i}" + "==" * 8)
+        print(i, task_settings[i]["scene_file"])
         task_setting = task_settings[i]
         print(task_setting["task"])
         print("Predicates:", task_setting["predicates"])
         agent.start(task_setting["task"])
+        # task_setting["predicates"] = []
         obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"]))
+        # continue
 
         predicate = build_predicate(task_setting["predicates"], obs)
 
@@ -655,9 +709,9 @@ try:
         step = 0
         done = 0
         while step < MAX_STEPS:
+            # break
             if step == MAX_STEPS - 1:
-                extra_hint = "You have reached the maximum steps. You must choose the correct answer now."
-                action: Action = agent.act(obs.image, feedback, options, extra_hint=extra_hint)
+                action: Action = agent.act(obs.image, feedback, options)
             else:
                 action: Action = agent.act(obs.image, feedback, options)
             obs = env.step(action)
@@ -687,6 +741,7 @@ try:
         if done != 1:
             failed_cases.append(i)
             print("Task failed.")
+        log_green(f"success rate: {success_count}/{i+1} of {len(task_settings)}")
 except Exception as e:
     raise e
 finally:
