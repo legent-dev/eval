@@ -15,8 +15,28 @@ from legent.utils.io import log_green
 import queue
 import threading
 import numpy as np
+import time
+import argparse
 
-MAX_STEPS = 25
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--agent", type=str, default="")  # "gpt-4o" "gemini-pro"
+parser.add_argument("--test_case_start", type=int, default=0)  # 0-99
+parser.add_argument("--max_steps", type=int, default=25)
+parser.add_argument("--max_images", type=int, default=4)
+parser.add_argument("--port", type=int, default=50054)
+args = parser.parse_args()
+
+agent = args.agent
+test_case_start = args.test_case_start
+MAX_STEPS = args.max_steps
+MAX_IMAGE_HISTORY = args.max_images - 1
+
+# TODO: change the path to your eval_folder
+eval_folder = "./eval_folder_20240614_0251"
+eval_folder = os.path.abspath(eval_folder)
+port = args.port
+verbose = False  # 输出详细信息
 
 PROMPT_PREFIX = """You are a vision language assistant agent with high intelligence.
 You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to choose an action at each step to complete the task.
@@ -25,9 +45,10 @@ Your current task is:
 {}
 """
 
-# TODO: 加入CoT，允许思考，但是要按指定格式输出然后parse
-# TODO: 怎样很好地避免这种情况：一直连续选择同一个动作，比如一直grab grab，一直失败，提示已经说了也不起作用
-#
+
+# TO DO: 加入CoT，允许思考，但是要按指定格式输出然后parse
+# TO DO: 怎样很好地避免这种情况：一直连续选择同一个动作，比如一直grab grab，一直失败，提示已经说了也不起作用。这种情况很容易发生！
+# TO DO: 把last action单独拿出来？可以重点关注last action是否成功，如果不成功，不要再选择这个动作。
 PROMPT_SUFFIX = (
     """Your current options are as follows:
 {}
@@ -35,13 +56,14 @@ You must choose one of them and directly output the number of the option.
 If the object is in your view and near you, you can choose to grab it.
 If the last action in Action history failed, do not choose it again.
 If you need more information beyond the current view, you can possibly explore the environment by "move forward", "turn left/right", "loo up/down". Among them, if you can move forward, prioritize "moving forward".
-If you can 
 You can only hold one object at a time, so if you need to hold another object, you need to put down the current object first.
 Attention: you only have a limited number of steps ("""
     + f"{MAX_STEPS}"
     + """ steps) to finish the task, so do not turn around in circles at one position. If you are about to reach the maximum step count, please choose to answer the question immediately.
 """
 )
+# If you last action is grab and failed, DO NOT choose grab now.
+# If you last action is put and failed, DO NOT choose put now.
 
 # ATTENTION:
 # Do not call grab action twice.
@@ -56,7 +78,7 @@ class AgentBase:
         self.model_name = model_name
         self.images = []
         self.actions = []  # (action feedback)
-        self.max_history = 3
+        self.max_history = MAX_IMAGE_HISTORY
         self.task = ""
         self.sync = sync
         if not sync:
@@ -149,6 +171,8 @@ class AgentBase:
             action.action_choice = int(re.search(r"\d", response).group(0))
         except:
             action.action_choice = -1
+            log_green(f"error occurred when evaluating {task_i}")
+            raise  # 还是暂停评测，可能是模型输出错误，也有可能是server error不能误伤
         self.update_history(image, options[action.action_choice])
         return action
 
@@ -166,7 +190,7 @@ class AgentBase:
 
 class AgentGPT4V(AgentBase):
     def __init__(self, env=None) -> None:
-        super().__init__("gpt4v", env == None, env)
+        super().__init__("gpt-4o", env == None, env)
         self.api_key = "sk-qmu3GtIMZtNYCTMm743199219bD44791BfBcDbFd9d1b3404"
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
 
@@ -192,8 +216,9 @@ class AgentGPT4V(AgentBase):
         self.payload["messages"][0]["content"].append(image)
 
     def print_message(self):
-        message = " ".join([m["text"] if m["type"] == "text" else "<image>" for m in self.payload["messages"][0]["content"]])
-        print("=" * 20 + "\n" + message + "=" * 20 + "\n")
+        if verbose:
+            message = " ".join([m["text"] if m["type"] == "text" else "<image>" for m in self.payload["messages"][0]["content"]])
+            print("=" * 20 + "\n" + message + "=" * 20 + "\n")
 
     def generate(self):
         def send_request(payload):
@@ -207,7 +232,16 @@ class AgentGPT4V(AgentBase):
             answer = response.json()["choices"][0]["message"]["content"]
             return answer
 
-        return send_request(self.payload)
+        for i in range(10):
+            try:
+                answer = send_request(self.payload)
+                break
+            except:
+                time.sleep(5)
+        else:
+            raise Exception("Failed to get response from the model.")
+
+        return answer
 
 
 class AgentGemini(AgentBase):
@@ -227,17 +261,25 @@ class AgentGemini(AgentBase):
         buf = io.BytesIO()
         img.save(buf, format="PNG")
         buf.seek(0)
-        self.files.append(("files", (f"image{i}.png", buf.read(), "image/png")))
+        self.files.append(("files", (f"image{len(self.files)}.png", buf.read(), "image/png")))
 
     def print_message(self):
-        pass
-        # message = "".join(self.messages)
-        # print("-" * 40 + "\n" + message + "-" * 40 + "\n")
+        if verbose:
+            message = "".join(self.messages)
+            print("-" * 40 + "\n" + message + "-" * 40 + "\n")
 
     def generate(self):
-        message = "".join(self.messages)
-        payload = {"message": message, "model": "pro"}  # model: flash or pro
-        return requests.post("http://146.190.166.36:8901/", files=self.files, data=payload).text
+        for i in range(10):
+            try:
+                message = "".join(self.messages)
+                payload = {"message": message, "model": "pro"}  # model: flash or pro
+                answer = requests.post("http://146.190.166.36:8901/", files=self.files, data=payload).text
+                break
+            except:
+                time.sleep(5)
+        else:
+            raise Exception("Failed to get response from the model.")
+        return answer
 
 
 class AgentHuman(AgentBase):
@@ -506,12 +548,6 @@ def get_feedback(action: str, prev_obs, obs):
         return "success"
 
 
-# TODO: change the path to your eval_folder
-eval_folder = "eval_folder_20240614_0251"
-eval_folder = "F:\codes\github-LEGENT\eval\eval_folder_20240614_0251"
-eval_folder = os.path.abspath(eval_folder)
-
-
 def get_task_settings_0612():
     scenes_zip = [file for file in os.listdir(eval_folder) if file.endswith(".zip")]
     if len(scenes_zip) == 0:
@@ -623,9 +659,8 @@ def get_task_settings_0612():
 
 
 task_settings = get_task_settings_0612()
-k = 0
-# print(task_settings[k]["scene_file"])
-# print(task_settings[k]["task"])
+# print(task_settings[test_case_start]["scene_file"])
+# print(task_settings[test_case_start]["task"])
 
 print(len(task_settings), "tasks")
 store_json(task_settings, f"task_settings.json")
@@ -633,19 +668,24 @@ store_json(task_settings, f"task_settings.json")
 
 failed_cases = []
 
-env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": 50051}, use_animation=False)
+env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False)
+
+
+if agent == "human":
+    agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
+if agent == "gemini-pro":
+    agent = AgentGemini()  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+elif agent == "gpt-4o":
+    agent = AgentGPT4V()
 
 # TODO: Change the agent to your agent
-# agent = AgentHuman(env) # 如果想要手动操作，"评测人类的性能"，可以使用这个
-agent = AgentGemini(env)
-# agent = AgentGPT4V(env)
 # agent = YourAgent(env)
 # agent = YourAgentSimple(env)
 success_count = 0
 
 save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
 try:
-    for i in range(len(task_settings)):
+    for task_i in range(len(task_settings)):
         # 16 closer 这个例子很好
         # 17 further
         # 18 on
@@ -683,14 +723,14 @@ try:
 
         # 53莫名奇妙报错了。。。，再跑又不报错了；77也报错了(无法复现)；
         # 81报错了，可以复现。31号物体飞太远了
-        if i < k:  # 70
+        if task_i < test_case_start:  # 70
             continue
         # if task_settings[i]["type"] == "QA":
         #    continue
 
-        print("\n" + "==" * 8 + f"Start episode {i}" + "==" * 8)
-        print(i, task_settings[i]["scene_file"])
-        task_setting = task_settings[i]
+        print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
+        print(task_i, task_settings[task_i]["scene_file"])
+        task_setting = task_settings[task_i]
         print(task_setting["task"])
         print("Predicates:", task_setting["predicates"])
         agent.start(task_setting["task"])
@@ -705,7 +745,7 @@ try:
         prev_obs = obs
         print(options)
 
-        traj_save_dir = f"{save_path}/traj{i:04d}"
+        traj_save_dir = f"{save_path}/traj{task_i:04d}"
         os.makedirs(traj_save_dir)
         step = 0
         done = 0
@@ -740,13 +780,19 @@ try:
                 save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
                 break
         if done != 1:
-            failed_cases.append(i)
+            failed_cases.append(task_i)
             print("Task failed.")
-        log_green(f"success rate: {success_count}/{i+1} of {len(task_settings)}")
+        log_green(f"success rate: {success_count}/{task_i-test_case_start+1} of {len(task_settings)}")
+        result = {"Success Rate": f"{success_count}/{task_i-test_case_start+1}", "test cases range": f"[{test_case_start} - {task_i+1})", "failed cases": failed_cases}
+        print(result)
+        store_json(result, f"{save_path}/result_temp.json")
 except Exception as e:
+    result = {"Success Rate": f"{success_count}/{task_i-test_case_start}", "test cases range": f"[{test_case_start}, {task_i})", "failed cases": failed_cases}
+    print(result)
+    store_json(failed_cases, f"{save_path}/partial_results.json")
     raise e
 finally:
     env.close()
-result = {"Success Rate": f"{success_count}/{len(task_settings)}", "failed cases": failed_cases}
+result = {"Success Rate": f"{success_count}/{task_i-test_case_start+1}", "test cases range": f"[{test_case_start} - {task_i+1})", "failed cases": failed_cases}
 print(result)
 store_json(result, f"{save_path}/result.json")

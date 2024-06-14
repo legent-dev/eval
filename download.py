@@ -1,2 +1,2 @@
 from legent.environment.env_utils import download_file
-download_file("https://cloud.tsinghua.edu.cn/d/502178ebdc6647138ce2/files/?p=eval_folder_20240613_1028.zip&dl=1", "/data41/private/legent/eval_folder_20240614_0251.zip")
+download_file("https://cloud.tsinghua.edu.cn/d/502178ebdc6647138ce2/files/?p=eval_folder_20240613_1028.zip&dl=1", "./eval_folder_20240614_0251.zip")
