@@ -1,17 +1,13 @@
 import os
 from typing import List, Tuple
 import requests
-from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, load_json, save_image, unpack_scenes, time_string, find_files_by_extension
-from legent.utils.math import vec_xz, distance
+from legent import Environment, Action
 from PIL import Image
 import io
 import base64
 import requests
 from openai import OpenAI
-from legent.utils.math import distance, vec_xz
 import re
-from legent.action.action import Action, ActionFinish
-from legent.utils.io import log_green
 import queue
 import threading
 import numpy as np
@@ -19,36 +15,34 @@ import time
 
 
 verbose = False  # 是否输出每步详细信息
-PROMPT_PREFIX = """You are a vision language assistant agent with high intelligence.
-You are placed inside a virtual environment and you are given a goal that needs to be finished, you need to choose an action at each step to complete the task.
+
+PROMPT_PREFIX = """You are an intelligent vision-language assistant agent situated in a virtual environment.
+Your goal is to complete a specific task provided to you.
+You will be given a series of images and action history.
+The input images represent your ego-centric view of the environment. 
+Each image corresponds to a step in your action history, and the additional one image represents your latest view after the last action.
+Based on these views, you need to choose an action at each step to accomplish your task.
+After each action, the environment will respond, indicating whether the action was successful and providing a new view.
 
 Your current task is:
 {}
 """
 
 
-# TO DO: 加入CoT，允许思考，但是要按指定格式输出然后parse
-# TO DO: 怎样很好地避免这种情况：一直连续选择同一个动作，比如一直grab grab，一直失败，提示已经说了也不起作用。这种情况很容易发生！
-# TO DO: 把last action单独拿出来？可以重点关注last action是否成功，如果不成功，不要再选择这个动作。
 PROMPT_SUFFIX = (
-    """Your current options are as follows:
+    """Your current options are presented in the format "[Option Number]. Content", as follows::
 {}
-You must choose one of them and directly output the number of the option.
-If the object is in your view and near you, you can choose to grab it.
-If the last action in Action history failed, do not choose it again.
-If you need more information beyond the current view, you can possibly explore the environment by "move forward", "turn left/right", "loo up/down". Among them, if you can move forward, prioritize "moving forward".
-You can only hold one object at a time, so if you need to hold another object, you need to put down the current object first.
-Attention: you only have a limited number of steps ({} steps) to finish the task, so do not turn around in circles at one position. If you are about to reach the maximum step count, please choose to answer the question immediately.
+Considering your visual input and action history, select the next action.
+Please include the option number in your answer with "Choice: [Option Number]", for example, "Choice: [1]".
+If an object is within your view and close to you, you can choose to grab it.
+Avoid repeating actions that have previously failed.
+If you need additional information beyond the current view, consider exploring the environment using "move forward", "turn left/right", or "look up/down". 
+If possible, prioritize "move forward."
+Note that you can only hold one object at a time, so put down the current object before picking up another.
+Remember: You have a limited number of {} steps to complete the task. Avoid unnecessary circling in one place.
+If you are approaching the maximum step count, make your final decision promptly.
 """
 )
-# If you last action is grab and failed, DO NOT choose grab now.
-# If you last action is put and failed, DO NOT choose put now.
-
-# ATTENTION:
-# Do not call grab action twice.
-# Do not turn left and then turn right back.
-# Do not turn right and the turn left back.
-# Please use move forward more frequently.
 
 
 class AgentBase:
@@ -108,7 +102,7 @@ class AgentBase:
         # for o, a in zip(images, actions):
         #     append_image(o)
         #     append_text(a)
-        self.append_text(f"Action history (action -> result):\n")
+        self.append_text(f"Action history (action -> feedback):\n")
         for a in actions:
             self.append_text(f"\t{a[0]} -> {a[1]}\n")
         self.append_text(f"\nThe history of images you have seen:\n")
@@ -147,7 +141,7 @@ class AgentBase:
         print("response:", response)
         action = Action()
         try:
-            action.action_choice = int(re.search(r"\d", response).group(0))
+            action.action_choice = int(re.search(r"\[(\d+)\]", response).group(1))
         except:
             action.action_choice = -1
         self.update_history(image, options[action.action_choice])

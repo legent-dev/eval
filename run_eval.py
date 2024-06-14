@@ -8,17 +8,15 @@ from task import get_task_settings
 from agent import *
 
 
-def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port, save_path):
+def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port, eval_folder, save_path, task_settings):
 
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
 
-    # TODO: change the path to your eval_folder
-    eval_folder = "./eval_folder_20240614_0251"
     eval_folder = os.path.abspath(eval_folder)
-    verbose = False  # 输出详细信息
 
-    task_settings = get_task_settings(eval_folder)
+    if not task_settings:
+        task_settings = get_task_settings(eval_folder)
 
     print(len(task_settings), "tasks")
     store_json(task_settings, f"task_settings.json")
@@ -64,6 +62,8 @@ def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port,
 
             traj_save_dir = f"{save_path}/traj{task_i:04d}"
             os.makedirs(traj_save_dir)
+            store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
+            store_json(task_setting, f"{traj_save_dir}/task.json")
             step = 0
             done = 0
             while step < MAX_STEPS:
@@ -73,9 +73,10 @@ def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port,
                 else:
                     action: Action = agent.act(obs.image, feedback, options)
 
-                if action.action_choice == -1:
+                if action.action_choice < 0:
                     log_green(f"error occurred when evaluating {task_i}")
-                    raise  # 还是暂停评测，可能是模型输出错误，也有可能是server error不能误伤
+                    if agent.model_name == "gemini-pro": # server error等问题，不是模型的问题，停止评测
+                        raise
                 obs = env.step(action)
 
                 # 获取选项和反馈信息
@@ -128,7 +129,7 @@ if __name__ == "__main__":
     parser.add_argument("--max_steps", type=int, default=25)
     parser.add_argument("--max_images", type=int, default=4)
     parser.add_argument("--port", type=int, default=50054)
+    parser.add_argument("--eval_folder", type=str, default="./eval_folder_20240614_0251")
     parser.add_argument("--save_path", type=str, default=None)
     args = parser.parse_args()
-
-    run_eval(args.agent, args.test_case_start, args.test_case_end, args.max_steps, args.max_images, args.port, args.save_path)
+    run_eval(args.agent, args.test_case_start, args.test_case_end, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None)
