@@ -140,6 +140,7 @@ class AgentBase:
 
         print("response:", response)
         action = Action()
+        action.text = response
         try:
             action.action_choice = int(re.search(r"\[(\d+)\]", response).group(1))
         except:

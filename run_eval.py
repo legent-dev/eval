@@ -8,7 +8,7 @@ from task import get_task_settings
 from agent import *
 
 
-def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync):
 
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
@@ -29,11 +29,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
-        agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
+        agent = AgentHuman(None if sync else env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
     if agent == "gemini-pro":
-        agent = AgentGemini(env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+        agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
-        agent = AgentGPT4V(env)
+        agent = AgentGPT4V(None if sync else env)
 
     # TODO: Change the agent to your agent
     # agent = YourAgent(env)
@@ -82,6 +82,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     log_green(f"error occurred when evaluating {task_i}")
                     if agent.model_name == "gemini-pro": # server error等问题，不是模型的问题，停止评测
                         raise
+                response = action.text
+                action.text = ""
                 obs = env.step(action)
 
                 # 获取选项和反馈信息
@@ -94,7 +96,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}\n")
                 done, info = predicate.task_done(action, obs, options, task_setting)
 
-                store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "done_after_action": done, "info_after_action": info}, f"{traj_save_dir}/{step:04d}a.json")
+                store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "done_after_action": done, "info_after_action": info}, f"{traj_save_dir}/{step:04d}a.json")
 
                 options = new_options
                 print(options)
@@ -139,8 +141,9 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=50054)
     parser.add_argument("--eval_folder", type=str, default="./eval_folder_20240614_0251")
     parser.add_argument("--save_path", type=str, default=None)
+    parser.add_argument("--sync", action="store_true")
     args = parser.parse_args()
     task_ids = None
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
-    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids)
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync)
