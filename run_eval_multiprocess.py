@@ -36,7 +36,7 @@ if __name__ == "__main__":
     save_path_prefix = f"{eval_folder}/results/{time_string()}-{agent}"
     os.makedirs(save_path_prefix)
 
-    num_process = 20
+    num_process = 10
     
     data = list(range(len(task_settings)))
     # random.shuffle(data) # 乱序，防止某个进程一直在做难的任务
@@ -51,7 +51,7 @@ if __name__ == "__main__":
         # test_case_end = test_case_start + 1
         port = 52000 + i * 2
         save_path = f"{save_path_prefix}/{i}"
-        p = multiprocessing.Process(target=run_eval, args=(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids))
+        p = multiprocessing.Process(target=run_eval, args=(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, False))
         processes.append(p)
         p.start()
 
