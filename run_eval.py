@@ -133,7 +133,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 
 if __name__ == "__main__":
-    # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054
+    # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99

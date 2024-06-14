@@ -51,7 +51,7 @@ if __name__ == "__main__":
         # test_case_end = test_case_start + 1
         port = 52000 + i * 2
         save_path = f"{save_path_prefix}/{i}"
-        p = multiprocessing.Process(target=run_eval, args=(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, False))
+        p = multiprocessing.Process(target=run_eval, args=(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, True))
         processes.append(p)
         p.start()
 
