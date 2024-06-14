@@ -8,7 +8,7 @@ from task import get_task_settings
 from agent import *
 
 
-def run_eval(agent, test_case_start, max_steps, max_images, port, save_path):
+def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port, save_path):
 
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
@@ -45,9 +45,7 @@ def run_eval(agent, test_case_start, max_steps, max_images, port, save_path):
     if not save_path:
         save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
     try:
-        for task_i in range(len(task_settings)):
-            if task_i < test_case_start:
-                continue
+        for task_i in range(test_case_start, test_case_end):
 
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
             print(task_i, task_settings[task_i]["scene_file"])
@@ -126,10 +124,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=0)  # 0-99
+    parser.add_argument("--test_case_end", type=int, default=100)
     parser.add_argument("--max_steps", type=int, default=25)
     parser.add_argument("--max_images", type=int, default=4)
     parser.add_argument("--port", type=int, default=50054)
     parser.add_argument("--save_path", type=str, default=None)
     args = parser.parse_args()
 
-    run_eval(args.agent, args.test_case_start, args.max_steps, args.max_images, args.port, args.save_path)
+    run_eval(args.agent, args.test_case_start, args.test_case_end, args.max_steps, args.max_images, args.port, args.save_path)
