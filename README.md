@@ -18,8 +18,16 @@ git clone git@github.com:legent-dev/eval.git
 
 #### 评测
 
-`python download.py` 下载 `eval_folder_xxx.zip` 并解压，目前最新版是eval_folder_20240614_0251。
+`python download.py` 下载 `eval_folder_xxx.zip` 并解压，目前最新版是eval_folder_20240614_0251，`eval.py`的`eval_folder`路径改为对应路径.
 
-**查看eval.py里的TODO** `eval.py`的`eval_folder`路径改为对应路径；实现`YourAgentSimple`里的两个方法，并将`AgentGemini`改成你的Agent。
+`python run_eval.py --agent gpt-4o`，查看是否运行成功，运行结果保存在eval_folder_xxx/results下.
 
-`python eval.py`，运行结果保存在eval_folder_xxx/results下。
+#### 并行评测
+
+```python run_eval_multiprocess.py```
+
+#### 评测其他模型
+
+`agent.py` 里继承 `AgentBase` 实现你的Agent.
+
+`run_eval.py`改成你的Agent.

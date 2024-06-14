@@ -25,20 +25,21 @@ def run_eval(agent, test_case_start, max_steps, max_images, port, save_path):
 
     failed_cases = []
 
-    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False)
+    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
     if agent == "gemini-pro":
-        agent = AgentGemini(env, MAX_IMAGE_HISTORY)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+        agent = AgentGemini(env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
-        agent = AgentGPT4V(env, MAX_IMAGE_HISTORY)
+        agent = AgentGPT4V(env)
 
     # TODO: Change the agent to your agent
     # agent = YourAgent(env)
     # agent = YourAgentSimple(env)
 
     agent.max_steps = MAX_STEPS
+    agent.max_image_history = MAX_IMAGE_HISTORY
     success_count = 0
 
     if not save_path:
@@ -121,6 +122,7 @@ def run_eval(agent, test_case_start, max_steps, max_images, port, save_path):
 
 
 if __name__ == "__main__":
+    # python run_eval.py --agent gpt-4o --test_case_start 0 --max_steps 25 --max_images 4 --port 50054
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=0)  # 0-99

@@ -52,12 +52,11 @@ Attention: you only have a limited number of steps ({} steps) to finish the task
 
 
 class AgentBase:
-    def __init__(self, model_name: str, max_image_history: int, sync: bool, env) -> None:
+    def __init__(self, model_name: str, sync: bool, env) -> None:
         # init the api or model
         self.model_name = model_name
         self.images = []
         self.actions = []  # (action feedback)
-        self.max_history = max_image_history
         self.task = ""
         self.sync = sync
         if not sync:
@@ -69,7 +68,7 @@ class AgentBase:
             worker_thread.daemon = True  # Set as a daemon thread so it will automatically quit if the main program exits
             worker_thread.start()
             self.is_waiting_response = False
-        self.max_steps = 25
+        self.env = env
 
     def _process_request(self):
         while True:
@@ -104,7 +103,7 @@ class AgentBase:
     def _act(self, actions, images, image, options):
         # 输入行动历史、图片历史、当前图片和候选项，输入行动选项
         self.init_message()
-        self.append_text(f"{PROMPT_PREFIX.format(self.instruction)} {self.max_steps}\n")
+        self.append_text(f"{PROMPT_PREFIX.format(self.instruction)}\n")
         # append_text(f"the history of the images you have seen and the history of your actions are as follows:\n")
         # for o, a in zip(images, actions):
         #     append_image(o)
@@ -119,7 +118,7 @@ class AgentBase:
         self.append_text(f"\nThe current image you see: \n")
         self.append_image(image)
         options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options)])
-        self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string)}")  # Your History
+        self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string, self.max_steps)}")  # Your History
 
         self.print_message()
 
@@ -157,8 +156,8 @@ class AgentBase:
     def update_history(self, image, action):
         self.images.append(image)
         self.actions.append([action, ""])
-        if len(self.images) > self.max_history:
-            self.images = self.images[-self.max_history :]
+        if len(self.images) > self.max_image_history:
+            self.images = self.images[-self.max_image_history :]
         # NOTE: do not truncate action_history
 
     def update_feedback(self, feedback):
@@ -167,10 +166,11 @@ class AgentBase:
 
 
 class AgentGPT4V(AgentBase):
-    def __init__(self, max_image_history, env) -> None:
-        super().__init__("gpt-4o", max_image_history, env == None, env)
+    def __init__(self, env) -> None:
+        super().__init__("gpt-4o", env == None, env)
         self.api_key = "sk-qmu3GtIMZtNYCTMm743199219bD44791BfBcDbFd9d1b3404"
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
+        print("env", env)
 
     def init_message(self):
         self.payload = {"model": "gpt-4o", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}
@@ -223,8 +223,8 @@ class AgentGPT4V(AgentBase):
 
 
 class AgentGemini(AgentBase):
-    def __init__(self, env, max_image_history) -> None:
-        super().__init__("gemini-pro", max_image_history, env == None, env)
+    def __init__(self, env) -> None:
+        super().__init__("gemini-pro", env == None, env)
 
     def init_message(self):
         self.messages = []
@@ -276,8 +276,8 @@ class AgentHuman(AgentBase):
 
 class YourAgent(AgentBase):
     # 用于评测你的模型/API
-    def __init__(self, env, max_image_history) -> None:
-        super().__init__("your_model_name", max_image_history, env == None, env)
+    def __init__(self, env) -> None:
+        super().__init__("your_model_name", env == None, env)
         # 这里放模型/API的初始化代码
         # self.model = ...
 
@@ -306,8 +306,8 @@ class YourAgent(AgentBase):
 # TODO: write your own agent
 class YourAgentSimple(AgentBase):
     # 用于评测你的模型/API
-    def __init__(self, env, max_image_history) -> None:
-        super().__init__("your_model_name", max_image_history, env == None, env)
+    def __init__(self, env) -> None:
+        super().__init__("your_model_name", env == None, env)
         # 这里放模型/API的初始化代码
         # self.model = ...
 

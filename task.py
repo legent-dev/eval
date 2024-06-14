@@ -106,7 +106,7 @@ def get_task_settings(eval_folder):
                 splits = predicate.split(" ")
                 scene["predicates"] = [{"predicate": splits[0], "content": "", "object_ids": [int(_id) for _id in splits[1:]]}]
 
-            task_setting = {"scene": scene, "task": task_description, "predicates": predicates, "type": sample["type"], "scene_file": sample["scene"], "rendering_options": {"use_default_light": 1, "style": 0}}
+            task_setting = {"scene": scene, "task": task_description, "predicates": predicates, "type": sample["type"], "scene_file": sample["scene"], "task_raw": sample}
             task_settings.append(task_setting)
 
     return task_settings
