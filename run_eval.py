@@ -8,7 +8,7 @@ from task import get_task_settings
 from agent import *
 
 
-def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port, eval_folder, save_path, task_settings):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids):
 
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
@@ -17,11 +17,14 @@ def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port,
 
     if not task_settings:
         task_settings = get_task_settings(eval_folder)
+    if not task_ids:
+        task_ids = list(range(len(task_settings)))
 
     print(len(task_settings), "tasks")
     store_json(task_settings, f"task_settings.json")
 
     failed_cases = []
+    success_cases = []
 
     env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False, rendering_options={"use_default_light": 1, "style": 0})
 
@@ -42,8 +45,10 @@ def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port,
 
     if not save_path:
         save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
+    os.makedirs(save_path)
+    store_json(task_ids, f"{save_path}/task_ids.json")
     try:
-        for task_i in range(test_case_start, test_case_end):
+        for task_i in task_ids:
 
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
             print(task_i, task_settings[task_i]["scene_file"])
@@ -104,18 +109,21 @@ def run_eval(agent, test_case_start, test_case_end, max_steps, max_images, port,
             if done != 1:
                 failed_cases.append(task_i)
                 print("Task failed.")
-            log_green(f"success rate: {success_count}/{task_i-test_case_start+1} of {len(task_settings)}")
-            result = {"Success Rate": f"{success_count}/{task_i-test_case_start+1}", "test cases range": f"[{test_case_start} - {task_i+1})", "failed cases": failed_cases}
+            else:
+                success_cases.append(task_i)
+                
+            log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
+            result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
             print(result)
             store_json(result, f"{save_path}/result_temp.json")
     except Exception as e:
-        result = {"Success Rate": f"{success_count}/{task_i-test_case_start}", "test cases range": f"[{test_case_start}, {task_i})", "failed cases": failed_cases}
+        result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
         print(result)
         store_json(failed_cases, f"{save_path}/partial_results.json")
         raise e
     finally:
         env.close()
-    result = {"Success Rate": f"{success_count}/{task_i-test_case_start+1}", "test cases range": f"[{test_case_start} - {task_i+1})", "failed cases": failed_cases}
+    result = {"Success Rate": f"{success_count}/{len(task_ids)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
     print(result)
     store_json(result, f"{save_path}/result.json")
 
@@ -124,12 +132,15 @@ if __name__ == "__main__":
     # python run_eval.py --agent gpt-4o --test_case_start 0 --max_steps 25 --max_images 4 --port 50054
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="")  # "gpt-4o" "gemini-pro"
-    parser.add_argument("--test_case_start", type=int, default=0)  # 0-99
-    parser.add_argument("--test_case_end", type=int, default=100)
+    parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
+    parser.add_argument("--test_case_end", type=int, default=-1)
     parser.add_argument("--max_steps", type=int, default=25)
     parser.add_argument("--max_images", type=int, default=4)
     parser.add_argument("--port", type=int, default=50054)
     parser.add_argument("--eval_folder", type=str, default="./eval_folder_20240614_0251")
     parser.add_argument("--save_path", type=str, default=None)
     args = parser.parse_args()
-    run_eval(args.agent, args.test_case_start, args.test_case_end, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None)
+    task_ids = None
+    if args.test_case_start != -1 and args.test_case_end != -1:
+        task_ids = list(range(args.test_case_start, args.test_case_end))
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids)

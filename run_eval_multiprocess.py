@@ -4,7 +4,7 @@ import os
 from legent.utils.io import time_string, store_json, load_json
 from run_eval import run_eval
 from task import get_task_settings
-
+import random
 
 def sumup(result_folder):
     result_folder = os.path.abspath(result_folder)
@@ -35,17 +35,23 @@ if __name__ == "__main__":
     max_images = 1
     save_path_prefix = f"{eval_folder}/results/{time_string()}-{agent}"
     os.makedirs(save_path_prefix)
+
+    num_process = 20
+    
+    data = list(range(len(task_settings)))
+    # random.shuffle(data) # 乱序，防止某个进程一直在做难的任务
+    groups = [data[i::num_process] for i in range(num_process)]
+    print("task partition", groups)
+    
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     store_json(run_args, f"{save_path_prefix}/run_args.json")
-
-    for i in range(10):
-        test_case_start = 10 * i
-        test_case_end = test_case_start + 10
+    for i in range(num_process):
+        task_ids = groups[i]
         # test_case_start = 50 + i
         # test_case_end = test_case_start + 1
         port = 52000 + i * 2
         save_path = f"{save_path_prefix}/{i}"
-        p = multiprocessing.Process(target=run_eval, args=(agent, test_case_start, test_case_end, max_steps, max_images, port, eval_folder, save_path, task_settings))
+        p = multiprocessing.Process(target=run_eval, args=(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids))
         processes.append(p)
         p.start()
 
