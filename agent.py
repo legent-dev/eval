@@ -165,7 +165,6 @@ class AgentGPT4V(AgentBase):
         super().__init__("gpt-4o", env == None, env)
         self.api_key = "sk-qmu3GtIMZtNYCTMm743199219bD44791BfBcDbFd9d1b3404"
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
-        print("env", env)
 
     def init_message(self):
         self.payload = {"model": "gpt-4o", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}

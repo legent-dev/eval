@@ -9,7 +9,8 @@ from agent import *
 
 
 def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync):
-
+    
+    run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
 
@@ -44,9 +45,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     success_count = 0
 
     if not save_path:
-        save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}"
+        save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}-{max_images}"
     os.makedirs(save_path)
     store_json(task_ids, f"{save_path}/task_ids.json")
+    store_json(run_args, f"{save_path}/run_args.json")
     try:
         for task_i in task_ids:
 
@@ -131,9 +133,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 
 if __name__ == "__main__":
-    # python run_eval.py --agent gpt-4o --test_case_start 0 --max_steps 25 --max_images 4 --port 50054
+    # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054
     parser = argparse.ArgumentParser()
-    parser.add_argument("--agent", type=str, default="")  # "gpt-4o" "gemini-pro"
+    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
     parser.add_argument("--test_case_end", type=int, default=-1)
     parser.add_argument("--max_steps", type=int, default=25)

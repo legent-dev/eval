@@ -32,11 +32,11 @@ if __name__ == "__main__":
     task_settings = get_task_settings(eval_folder)
     agent = "gpt-4o"
     max_steps = 25
-    max_images = 1
-    save_path_prefix = f"{eval_folder}/results/{time_string()}-{agent}"
+    max_images = 25
+    save_path_prefix = f"{eval_folder}/results/{time_string()}-{agent}-{max_images}"
     os.makedirs(save_path_prefix)
 
-    num_process = 10
+    num_process = 1
     
     data = list(range(len(task_settings)))
     # random.shuffle(data) # 乱序，防止某个进程一直在做难的任务
