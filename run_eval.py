@@ -1,5 +1,6 @@
 import os
 from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, save_image, time_string
+from legent.utils.math import distance, vec_xz
 from legent.action.action import Action, ActionFinish
 from legent.utils.io import log_green
 import argparse
@@ -30,7 +31,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
-        agent = AgentHuman(None if sync else env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
+        agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
     if agent == "gemini-pro":
         agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
@@ -55,6 +56,16 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
             print(task_i, task_settings[task_i]["scene_file"])
             task_setting = task_settings[task_i]
+            # for wall in task_setting["scene"]["walls"]:
+            #     wall['material'] = "F:/Downloads/SourceTextures/SourceTextures/RoboTHOR_Wall_Panel_Fabric_Mat.png"
+            # # MediumWoodCounters.jpg SmallTiles.png
+            # # for wall in task_setting["scene"]["floors"]:
+            # task_setting["scene"]["floors"][0]['material'] = "F:/Downloads/SourceTextures/SourceTextures/SmallTiles.png"
+            # task_setting["scene"]["floors"][1]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_WoodFine0038_1_seamless_albedo_S.png"
+            # task_setting["scene"]["floors"][1]['material'] = "F:/Downloads/SourceTextures/SourceTextures/WallDrywallWhite.png"
+            
+            
+                
             print(task_setting["task"])
             print("Predicates:", task_setting["predicates"])
             agent.start(task_setting["task"])
@@ -73,6 +84,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             store_json(task_setting, f"{traj_save_dir}/task.json")
             step = 0
             done = 0
+            
+            stuck_count = 0
+            MAX_STAY_COUNT = 10
+            stuck_pos = obs.game_states["agent"]["position"]
+            
             while step < MAX_STEPS:
                 # break
                 if step == MAX_STEPS - 1:
@@ -87,6 +103,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 response = action.text
                 action.text = ""
                 obs = env.step(action)
+                
 
                 # 获取选项和反馈信息
                 new_options = obs.game_states["option_mode_info"]["options"]
@@ -98,6 +115,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}\n")
                 done, info = predicate.task_done(action, obs, options, task_setting)
 
+                if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"]))< 0.01:
+                    stuck_count += 1
+                else:
+                    stuck_count = 0
+                stuck_pos = obs.game_states["agent"]["position"]
+                if stuck_count > MAX_STAY_COUNT:
+                    done = -1
+                    
                 store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "done_after_action": done, "info_after_action": info}, f"{traj_save_dir}/{step:04d}a.json")
 
                 options = new_options

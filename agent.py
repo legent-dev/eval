@@ -167,7 +167,7 @@ class AgentGPT4V(AgentBase):
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
 
     def init_message(self):
-        self.payload = {"model": "gpt-4o", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}
+        self.payload = {"model": "gpt-4v", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}
 
     def append_text(self, text):
         self.payload["messages"][0]["content"].append({"type": "text", "text": text})
@@ -256,10 +256,10 @@ class AgentGemini(AgentBase):
 
 class AgentHuman(AgentBase):
     def __init__(self, env) -> None:
-        super().__init__("human", 1, env == None, env)
+        super().__init__("human", env == None, env)
         self.env = env
 
-    def act(self, image, options) -> int:
+    def act(self, image, feedback, options) -> int:
         action = Action()
         while True:
             obs = self.env.step()
