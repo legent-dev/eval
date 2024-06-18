@@ -10,7 +10,7 @@ from agent import *
 
 
 def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync):
-    
+
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
@@ -34,6 +34,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
     if agent == "gemini-pro":
         agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+    if agent == "gemini-flash":
+        agent = AgentGemini(None if sync else env, True)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
         agent = AgentGPT4V(None if sync else env)
 
@@ -58,14 +60,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             task_setting = task_settings[task_i]
             # for wall in task_setting["scene"]["walls"]:
             #     wall['material'] = "F:/Downloads/SourceTextures/SourceTextures/RoboTHOR_Wall_Panel_Fabric_Mat.png"
-            # # MediumWoodCounters.jpg SmallTiles.png
-            # # for wall in task_setting["scene"]["floors"]:
-            # task_setting["scene"]["floors"][0]['material'] = "F:/Downloads/SourceTextures/SourceTextures/SmallTiles.png"
+            # task_setting["scene"]["floors"][0]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_MarbleNoisy0062_1_seamless_S.png"
             # task_setting["scene"]["floors"][1]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_WoodFine0038_1_seamless_albedo_S.png"
-            # task_setting["scene"]["floors"][1]['material'] = "F:/Downloads/SourceTextures/SourceTextures/WallDrywallWhite.png"
-            
-            
-                
+
             print(task_setting["task"])
             print("Predicates:", task_setting["predicates"])
             agent.start(task_setting["task"])
@@ -84,11 +81,12 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             store_json(task_setting, f"{traj_save_dir}/task.json")
             step = 0
             done = 0
-            
+            save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
+
             stuck_count = 0
             MAX_STAY_COUNT = 10
             stuck_pos = obs.game_states["agent"]["position"]
-            
+
             while step < MAX_STEPS:
                 # break
                 if step == MAX_STEPS - 1:
@@ -98,12 +96,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
                 if action.action_choice < 0:
                     log_green(f"error occurred when evaluating {task_i}")
-                    if agent.model_name == "gemini-pro": # server error等问题，不是模型的问题，停止评测
+                    if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
                         raise
                 response = action.text
                 action.text = ""
                 obs = env.step(action)
-                
 
                 # 获取选项和反馈信息
                 new_options = obs.game_states["option_mode_info"]["options"]
@@ -111,18 +108,18 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 feedback = get_feedback(options[action.action_choice], prev_obs, obs)
                 prev_obs = obs
 
-                save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
+                save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
                 print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}\n")
                 done, info = predicate.task_done(action, obs, options, task_setting)
 
-                if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"]))< 0.01:
+                if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"])) < 0.01:
                     stuck_count += 1
                 else:
                     stuck_count = 0
                 stuck_pos = obs.game_states["agent"]["position"]
                 if stuck_count > MAX_STAY_COUNT:
                     done = -1
-                    
+
                 store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "done_after_action": done, "info_after_action": info}, f"{traj_save_dir}/{step:04d}a.json")
 
                 options = new_options
@@ -140,7 +137,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 print("Task failed.")
             else:
                 success_cases.append(task_i)
-                
+
             log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
             result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
             print(result)
@@ -159,6 +156,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 if __name__ == "__main__":
     # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
+    # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99

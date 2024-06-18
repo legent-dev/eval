@@ -29,11 +29,10 @@ Your current task is:
 """
 
 
-PROMPT_SUFFIX = (
-    """Your current options are presented in the format "[Option Number]. Content", as follows::
+PROMPT_SUFFIX = """Your current options are presented in the format "[Option Number]. Content", as follows::
 {}
 Considering your visual input and action history, select the next action.
-Please include the option number in your answer with "Choice: [Option Number]", for example, "Choice: [1]".
+Please include the option number in your answer with "Choice: [Option Number]", for example, "Choice: [1]". Output your thoughts before making the choice.
 If an object is within your view and close to you, you can choose to grab it.
 Avoid repeating actions that have previously failed.
 If you need additional information beyond the current view, consider exploring the environment using "move forward", "turn left/right", or "look up/down". 
@@ -42,7 +41,6 @@ Note that you can only hold one object at a time, so put down the current object
 Remember: You have a limited number of {} steps to complete the task. Avoid unnecessary circling in one place.
 If you are approaching the maximum step count, make your final decision promptly.
 """
-)
 
 
 class AgentBase:
@@ -144,7 +142,10 @@ class AgentBase:
         try:
             action.action_choice = int(re.search(r"\[(\d+)\]", response).group(1))
         except:
-            action.action_choice = -1
+            try:
+                action.action_choice = int(re.search(r"(\d+)", response).group(1))
+            except:
+                action.action_choice = -1
         self.update_history(image, options[action.action_choice])
         return action
 
@@ -217,8 +218,12 @@ class AgentGPT4V(AgentBase):
 
 
 class AgentGemini(AgentBase):
-    def __init__(self, env) -> None:
-        super().__init__("gemini-pro", env == None, env)
+    def __init__(self, env, use_flash=False) -> None:
+        self.use_flash = use_flash
+        if use_flash:
+            super().__init__("gemini-flash", env == None, env)
+        else:
+            super().__init__("gemini-pro", env == None, env)
 
     def init_message(self):
         self.messages = []
@@ -244,10 +249,14 @@ class AgentGemini(AgentBase):
         for i in range(10):
             try:
                 message = "".join(self.messages)
-                payload = {"message": message, "model": "pro"}  # model: flash or pro
+                if self.use_flash:
+                    payload = {"message": message, "model": "flash"}  # model: flash or pro
+                else:
+                    payload = {"message": message, "model": "pro"}
                 answer = requests.post("http://146.190.166.36:8901/", files=self.files, data=payload).text
                 break
             except:
+                print("retry")
                 time.sleep(5)
         else:
             raise Exception("Failed to get response from the model.")
@@ -318,5 +327,5 @@ class YourAgentSimple(AgentBase):
 
         # TODO：进行模型推理
         # return model.generate_text(...)
-        
+
         # TODO: parse推理结果为选项数字
