@@ -277,6 +277,29 @@ class AgentHuman(AgentBase):
                 return action
 
 
+class AgentRotate(AgentBase):
+    def __init__(self, env) -> None:
+        super().__init__("rotate", env == None, env)
+        self.env = env
+
+    def act(self, image, feedback, options) -> int:
+        print(options)
+        action = Action()
+        action.action_choice = 0
+        return action
+
+
+class AgentRandom(AgentBase):
+    def __init__(self, env) -> None:
+        super().__init__("random", env == None, env)
+        self.env = env
+
+    def act(self, image, feedback, options) -> int:
+        action = Action()
+        action.action_choice = np.random.randint(len(options))
+        return action
+
+
 class YourAgent(AgentBase):
     # 用于评测你的模型/API
     def __init__(self, env) -> None:

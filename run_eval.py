@@ -2,12 +2,14 @@ import os
 from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, save_image, time_string
 from legent.utils.math import distance, vec_xz
 from legent.action.action import Action, ActionFinish
-from legent.utils.io import log_green
+from legent.utils.io import log_green, create_video
+from legent.action.api import SetVideoRecordingPath
 import argparse
 from predicate import build_predicate, get_feedback
 from task import get_task_settings
 from agent import *
 
+use_video = False
 
 def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync):
 
@@ -28,7 +30,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     failed_cases = []
     success_cases = []
 
-    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=False, rendering_options={"use_default_light": 1, "style": 0})
+    path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
+    env = Environment(env_path=path, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
@@ -38,6 +41,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         agent = AgentGemini(None if sync else env, True)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
         agent = AgentGPT4V(None if sync else env)
+    elif agent == "rotate":
+        agent = AgentRotate(env)
+    elif agent == "random":
+        agent = AgentRandom(env)
 
     # TODO: Change the agent to your agent
     # agent = YourAgent(env)
@@ -66,7 +73,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             print(task_setting["task"])
             print("Predicates:", task_setting["predicates"])
             agent.start(task_setting["task"])
-            obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"]))
+            obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=[SetVideoRecordingPath("eval_video")]))
 
             predicate = build_predicate(task_setting["predicates"], obs)
 
@@ -86,7 +93,6 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             stuck_count = 0
             MAX_STAY_COUNT = 10
             stuck_pos = obs.game_states["agent"]["position"]
-
             while step < MAX_STEPS:
                 # break
                 if step == MAX_STEPS - 1:
@@ -100,7 +106,16 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         raise
                 response = action.text
                 action.text = ""
+                
+                if use_video:
+                    video_path = f"{traj_save_dir}/videos/{step+1:04d}"
+                    action.api_calls = [SetVideoRecordingPath(video_path)]
                 obs = env.step(action)
+                
+                if use_video:
+                    if not os.path.exists(f"{video_path}/0.bmp"):
+                        # create_video(f"{video_path}/{i:04d}", "bmp", f"{video_path}/video.mp4", 30, remove_images=True)
+                        create_video([f"{traj_save_dir}/videos/{i:04d}" for i in range(1, step+2)], "bmp", f"{traj_save_dir}/{step+1:04d}.mp4", 30, remove_images=False)
 
                 # 获取选项和反馈信息
                 new_options = obs.game_states["option_mode_info"]["options"]
@@ -155,8 +170,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 
 if __name__ == "__main__":
+    # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50058 --test_case_start=14 --test_case_end=100
     # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
     # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
+    # python run_eval.py --agent rotate --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
+    # python run_eval.py --agent random --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
