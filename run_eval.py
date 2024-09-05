@@ -3,7 +3,7 @@ from legent import Environment, Action, ActionFinish, Observation, store_json, R
 from legent.utils.math import distance, vec_xz
 from legent.action.action import Action, ActionFinish
 from legent.utils.io import log_green, create_video
-from legent.action.api import SetVideoRecordingPath
+from legent.action.api import SetVideoRecordingPath, SaveSceneToGltf
 import argparse
 from predicate import build_predicate, get_feedback
 from task import get_task_settings
@@ -31,7 +31,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     success_cases = []
 
     path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
-    env = Environment(env_path=path, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
+    path = "C:/users/cheng/desktop/ligent_dev/.legent/env/client/LEGENT-win-202408261101"
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20240827"
+    env = Environment(env_path=None, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
@@ -59,7 +61,92 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     os.makedirs(save_path)
     store_json(task_ids, f"{save_path}/task_ids.json")
     store_json(run_args, f"{save_path}/run_args.json")
+    def save_all_scenes_to_gltf():
+        used_scenes = set()
+        for task_i in task_ids:
+            task_setting = task_settings[task_i]
+            file = task_setting["scene_file"]
+            number = int(file.split("/")[-1].split(".")[0].split("_")[-1])
+            # if "bedroom" in file or "livingroom" in file or "two" in file or "three" in file:
+            #     continue
+            # if number<=3:
+            #     continue
+            # if not ("two" in file and number==1):
+            #     continue 
+            # if not ("two" in file):
+            #     continue 
+            if not ("four" in file and number==1):
+                continue 
+            if file in used_scenes:
+                continue
+            
+            instances = task_setting["scene"]["instances"]
+            new_instances = []
+            for instance in instances:
+                # two room 10
+                if "Window_Slider_48x24.fbx" in instance["prefab"]:
+                    continue
+                
+                if "Vacuum_Cleaner_1_1.fbx" in instance["prefab"]:
+                    continue
+                if "Toilet_2.fbx" in instance["prefab"]:
+                    continue
+                if "Doorframe_3.fbx" in instance["prefab"]:
+                    continue
+                if "Window_Slider_60x36.fbx" in instance["prefab"]:
+                    continue
+                if "Window_Slider_48x36.fbx" in instance["prefab"]:
+                    continue
+                if "Window_Slider_60x48.fbx" in instance["prefab"]:
+                    continue
+                if "Window_Slider_36x36.fbx" in instance["prefab"]:
+                    continue
+                if "Doorframe_6.fbx" in instance["prefab"]:
+                    continue
+                if "Doorway_8.fbx" in instance["prefab"] or "bin_30.fbx" in instance["prefab"]:
+                    continue
+                if "Pan_28.fbx" in instance["prefab"]:
+                    continue
+                if "Window_Slider_48x48.fbx" in instance["prefab"]:
+                    continue
+                if "Doorframe_7.fbx" in instance["prefab"]:
+                    continue
+                if "Doorway_5.fbx" in instance["prefab"]:
+                    continue
+                if "Stool_1_3.fbx" in instance["prefab"]:
+                    continue
+                if "Dining_Table_228_1.fbx" in instance["prefab"]:
+                    continue
+                if "Doorway_6.fbx" in instance["prefab"]:
+                    continue
+                if "Wall_Decor_Photo_2V.fbx" in instance["prefab"]:
+                    continue
+                new_instances.append(instance)
+                
+                # QuickHull coplanar!
+                if "09fad6a11f8b459d99d22f83dda714b7.glb" in instance["prefab"]:
+                    continue
+            # task_setting["scene"]["instances"] = new_instances
+            
+            
+            used_scenes.add(file)
+            
+            # use gltFast, gltFast需要旋转180度
+            for instance in task_setting["scene"]["instances"]:
+                if instance["prefab"].endswith(".glb"):
+                    instance["rotation"][1] +=180
+            
+            env.reset(ResetInfo(scene=task_setting["scene"]))
+            dir_and_file = '/'.join(file.split("/")[-2:]).split(".")[0]
+            os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes/"+dir_and_file.split("/")[0], exist_ok=True)
+            path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file}.glb"
+            # env.step(Action(api_calls=[SaveSceneToGltf(path)]))
+            while True:
+                env.step(Action())
+        raise
+    
     try:
+        save_all_scenes_to_gltf()
         for task_i in task_ids:
 
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
@@ -73,8 +160,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             print(task_setting["task"])
             print("Predicates:", task_setting["predicates"])
             agent.start(task_setting["task"])
-            obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=[SetVideoRecordingPath("eval_video")]))
-
+            # api_calls = [SetVideoRecordingPath("eval_video")] if use_video else []
+            # 初始化不需要录制视频
+            api_calls = []
+            obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
             predicate = build_predicate(task_setting["predicates"], obs)
 
             options = obs.game_states["option_mode_info"]["options"]
@@ -174,7 +263,7 @@ if __name__ == "__main__":
     # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
     # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
     # python run_eval.py --agent rotate --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
-    # python run_eval.py --agent random --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
+    # python run_eval.py --agent random --max_steps 3 --max_images 25 --port 50051 --sync --test_case_start=0 --test_case_end=100
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
