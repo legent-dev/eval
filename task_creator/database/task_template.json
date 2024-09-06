@@ -1,0 +1,260 @@
+{
+    "Commonsense Knowledge": [
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "There's juice on the floor. Can you find something to clean it up?",
+            "type": "action", 
+            "object_id": {"sandwich": [33]},
+            "predicates": ["grab 17"],
+            "options": [
+                "grab the mop:17",
+                "open the cabinet:5",
+                "put on the chair:21"
+            ]
+        },        
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "Grab me something that can turn on the home entertainment equipment that requires cable.",
+            "type": "action", 
+            "predicates": ["grab 12"],
+            "options": [
+                "grab the remote control:12",
+                "open the window:8",
+                "pick up the book:19"
+            ]
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "I'm feeling awfully hungry. Could you please find me something appropriate to eat?",
+            "type": "action", 
+            "predicates": ["grab 7"],
+            "options": [
+                "grab the sandwich:7",
+                "open the refrigerator:11",
+                "grab the juice:3",
+                "grab the apple:2"
+            ]
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "Find the red box on the coffee table, what does it do?",
+            "type": "qa", 
+            "answer": [0],
+            "options": [
+                "It is used to wrap wounds:3",
+                "It is a snack box:1",
+                "It is a remote control:2"
+            ]
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "Bring me some alcohol and fried foods.",
+            "type": "action", 
+            "predicates": ["grab 9", "grab 7"],
+            "options": [
+                "grab the beer:9",
+                "put on the table:14",
+                "grab the french fries:7",
+                "put on the plate:11",
+                "grab the juice:4",
+                "put on the counter:13"
+            ]
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "You've just welcomed visitors into your home. Where would you invite them to sit?",
+            "type": "action", 
+            "predicates": ["near 3"],
+            "options": []
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "Empty bottles and cans are on the kitchen counter near the trash can. How should you handle them?",
+            "type": "action", 
+            "predicates": ["in 3 6, in 5 6"],
+            "options": [
+                "grab the bottle:3",
+                "grab the can:5",
+                "put in the trash can:6",
+                "put in the recycling bin:8",
+                "put in the sink:4"
+            ]
+        },
+        {
+            "skill": "Commonsense Knowledge",
+            "task": "The refrigerator door is slightly open. How can you prevent food spoilage?",
+            "type": "action", 
+            "predicates": ["close 5"],
+            "options": [
+                "close the refrigerator door:5",
+                "open the cabinet door:18",
+                "open the refrigerator door:7"
+            ]
+        }
+    ],
+    "Object Recognition": [
+        {
+            "skill": "Object Recognition",
+            "task": "In the kitchen, find and grab the green item on the table.",
+            "type": "action", 
+            "predicates": ["grab 3"],
+            "options": [
+                "grab the apple:3",
+                "grab the plate:5",
+                "grab the cup:7",
+                "grab the napkin:9",
+                "put on the table:4",
+                "open the oven:14"
+            ]
+        },        
+        {
+            "skill": "Object Recognition",
+            "task": "Look at the rectangular object that is typically used for sitting.",
+            "type": "action", 
+            "predicates": ["look at 5"],
+            "options": [
+                "grab the chair:4",
+                "put on the cushion:6",
+                "look at the chair:5",
+                "open the drawer:8",
+                "close the door:7",
+                "put on the chair:6"
+            ]
+        },        
+        {
+            "skill": "Object Recognition",
+            "task": "Bring me the round object on the nightstand in the bedroom that tells time.",
+            "type": "action", 
+            "predicates": ["grab 4"],
+            "options": [
+                "grab the clock:4",
+                "grab the book:6",
+                "grab the lamp:8",
+                "put on the table:5",
+                "put in the drawer:7",
+                "open the drawer:9",
+                "close the door:10",
+                "look up"
+            ]
+        },
+        {
+            "skill": "Object Recognition",
+            "task": "Find the cooking item with a handle and lid in the kitchen.",
+            "type": "action", 
+            "predicates": ["grab 5"],
+            "options": [
+                "grab the pot:5",
+                "grab the frying pan:6",
+                "grab the kettle:8",
+                "put on the stove:4",
+                "put on the pot:7",
+                "open the cabinet:9",
+                "close the refrigerator:3"
+            ]
+        },
+        {
+            "skill": "Object Recognition",
+            "task": "Locate the glass object used for drinking water in the bedroom.",
+            "type": "action", 
+            "predicates": ["grab 4"],
+            "options": [
+                "grab the glass:4",
+                "grab the bottle:6",
+                "grab the vase:8",
+                "put on the nightstand:5",
+                "put in the drawer:7",
+                "open the window:9",
+                "close the door:3"
+            ]
+        }
+    ],
+    "Memory & Recall": [
+        {
+            "skill": "Memory & Recall",
+            "task": "Find my sunglasses in the bedroom for going outside, and then place the red shoes where the sunglasses were.",
+            "type": "action", 
+            "predicates": ["grab 4", "put on 7"],
+            "options": [
+                "grab the sunglasses:4",
+                "grab the red shoes:5",
+                "grab the hat:6",
+                "put on the table:7",
+                "put in the drawer:8",
+                "open the closet:9",
+                "close the window:3"
+            ]
+        }        
+    ],
+    "Task Planning": [
+        {
+            "skill": "Object Recognition",
+            "task": "Swap the positions of the coconut on the kitchen table and the shoulder bag on the cabinet against the wall in the kitchen.",
+            "type": "action", 
+            "predicates": ["grab 6", "put on 7"],
+            "options": [
+                "grab the coconut:6",
+                "grab the shoulder bag:7",
+                "grab the knife:5",
+                "put the coconut on the cabinet:8",
+                "put the shoulder bag on the table:9",
+                "open the cabinet:4",
+                "close the drawer:3"
+            ]
+        }
+    ],
+    "Environment Interaction": [
+        {
+            "skill": "Environment Interaction",
+            "task": "You need to retrieve a plate from the cabinet in the kitchen and place it on the dining table.",
+            "answer": [1, 2, 4],
+            "options": [
+                "grab the plate.",
+                "open the cabinet door",
+                "put on the floor",
+                "put on the table"
+            ]
+        }
+    ],
+    "Quantitative Reasoning": [
+        {
+            "skill": "Quantitative Reasoning",
+            "task": "How many white bedside tables are there in the bedroom?",
+            "type": "qa",
+            "answer": [1],
+            "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    ],
+    "Spatial Reasoning": [
+        {
+            "skill": "Spatial Reasoning",
+            "task": "What is the approximate space between the coffee table and the wall.",
+            "type": "qa",
+            "answer": ["around 50 cm"],
+            "options": [
+                "around 42 cm",
+                "around 60 cm",
+                "around 55 cm",
+                "around 45 cm",
+                "around 70 cm",
+                "around 48 cm"
+            ]
+        },
+        {
+            "skill": "Spatial Reasoning",
+            "task": "Is the black chair against the wall or facing it?",
+            "type": "qa",
+            "answer": ["against the wall", "facing the wall"],
+            "options": [
+                "against the wall",
+                "facing the wall",
+                "neither, it is in the center of the room",
+                "it is angled towards the wall"
+            ]
+        }
+    ]
+}

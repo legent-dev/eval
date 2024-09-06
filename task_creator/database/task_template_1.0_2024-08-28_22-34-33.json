@@ -1,0 +1,1601 @@
+[
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Find the red box on the coffee table, what does it do?",
+        "type": "QA",
+        "object_id": {
+            "firt-aid kit": 11
+        },
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "It is used to wrap wounds",
+            "It is a snack box",
+            "It stores small tools for home repairs",
+            "It is a decorative item"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Bring me the round object on the nightstand in the bedroom that tells time.",
+        "type": "action",
+        "object_id": {
+            "clock": 23,
+            "book": 46,
+            "lamp": 18,
+            "table": 25,
+            "drawer": 17,
+            "door": 30
+        },
+        "predicates": [
+            "grab 23"
+        ],
+        "answer": [],
+        "options": [
+            "grab the clock:23",
+            "grab the book:46",
+            "grab the lamp:18",
+            "put on the table:25",
+            "put in the drawer:17",
+            "open the drawer:17",
+            "close the door:30"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "How many white bedside tables are there in the bedroom?",
+        "type": "QA",
+        "object_id": {
+            "bedside table": [
+                16,
+                28
+            ]
+        },
+        "predicates": [],
+        "answer": [
+            1
+        ],
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "What is the approximate space between the coffee table and the wall.",
+        "type": "QA",
+        "object_id": {
+            "coffee table": 21
+        },
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "around 42 cm",
+            "around 60 cm",
+            "around 55 cm",
+            "around 45 cm",
+            "around 70 cm",
+            "around 48 cm"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Is the black chair against the wall or facing it?",
+        "type": "QA",
+        "object_id": {
+            "black chair": 19
+        },
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "against the wall",
+            "facing the wall",
+            "neither, it is in the center of the room",
+            "it is angled towards the wall"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "Clean up the juice on the floor.",
+        "type": "action",
+        "object_id": {
+            "cleaning agent": 23,
+            "mop": 17
+        },
+        "predicates": [
+            "grab 23",
+            "grab 17"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cleaning agent:23",
+            "grab the mop:17",
+            "open the cabinet:35",
+            "open the door:43",
+            "put on the chair:21"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Memory",
+        "task": "Bring me the sunglasses for going outside, and then place the red shoes where the sunglasses were.",
+        "type": "action",
+        "object_id": {
+            "sunglasses": 34,
+            "red shoes": 17,
+            "hat": 6,
+            "drawer": 23,
+            "table": 38,
+            "closet": 42
+        },
+        "predicates": [
+            "near_human 34",
+            "in 17 23"
+        ],
+        "answer": [],
+        "options": [
+            "grab the sunglasses:34",
+            "grab the red shoes:17",
+            "grab the hat:6",
+            "open the drawer:23",
+            "close the drawer:23",
+            "put on the table:38",
+            "put on the closet:42",
+            "put in the drawer:23",
+            "open the closet:42",
+            "close the closet:42"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Swap the positions of the coconut on the kitchen table and the shoulder bag on the cabinet against the wall in the kitchen.",
+        "type": "action",
+        "object_id": {
+            "coconut": 24,
+            "shoulder bag": 40,
+            "table": 22,
+            "cabinet": 38
+        },
+        "predicates": [
+            "swap 24 40"
+        ],
+        "answer": [],
+        "options": [
+            "grab the coconut:24",
+            "grab the shoulder bag:40",
+            "put on the table:22",
+            "put on the cabinet:38"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Activity",
+        "task": "Turn on the TV.",
+        "type": "action",
+        "object_id": {
+            "remote control": 32,
+            "window": 18,
+            "tv": 40,
+            "book": 19,
+            "door": 21
+        },
+        "predicates": [
+            "grab 32",
+            "look_at 40"
+        ],
+        "answer": [],
+        "options": [
+            "grab the remote control:32",
+            "open the window:18",
+            "look at the tv:40",
+            "pick up the book:19",
+            "close the door:21"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "service",
+        "task": "I'm starving; please find me the most filling hot food.",
+        "type": "action",
+        "object_id": {
+            "sandwich": 7,
+            "juice": 13,
+            "apple": 18,
+            "door": 24,
+            "refrigerator": 11,
+            "microwave": 32
+        },
+        "predicates": [
+            "grab 7",
+            "close 11",
+            "in 7 32",
+            "near_human 7"
+        ],
+        "answer": [],
+        "options": [
+            "grab the sandwich:7",
+            "grab the juice:13",
+            "grab the apple:18",
+            "open the door:24",
+            "close the door:24",
+            "open the refrigerator:11",
+            "close the refrigerator:11",
+            "put in the refrigerator:11",
+            "open the microwave:32",
+            "close the microwave:32",
+            "put in the microwave:32"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "Bring me some alcohol and fried foods.",
+        "type": "action",
+        "object_id": {
+            "beer": 9,
+            "table": 14,
+            "french fries": 7,
+            "plate": 11,
+            "juice": 4,
+            "counter": 13
+        },
+        "predicates": [
+            "near_human 9 ",
+            "near_human 7"
+        ],
+        "answer": [],
+        "options": [
+            "grab the beer:9",
+            "put on the table:14",
+            "grab the french fries:7",
+            "put on the plate:11",
+            "grab the juice:4",
+            "put on the counter:13"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Clear the kitchen counter.",
+        "type": "action",
+        "object_id": {
+            "bottle": 43,
+            "can": 15,
+            "notepad": 25,
+            "trash can": 36,
+            "sink": 34
+        },
+        "predicates": [
+            "in 43 36, in 15 36"
+        ],
+        "answer": [],
+        "options": [
+            "grab the bottle:43",
+            "grab the can:15",
+            "grab the notepad:25",
+            "put in the trash can:36",
+            "put in the sink:34"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "How can you prevent the sandwich from spoiling?",
+        "type": "action",
+        "object_id": {
+            "sandwich": 39,
+            "can": 5,
+            "book": 29,
+            "refrigerator": 27,
+            "cabinet": 18
+        },
+        "predicates": [
+            "in 39 27"
+        ],
+        "answer": [],
+        "options": [
+            "grab the sandwich:39",
+            "grab the can:5",
+            "grab the book:29",
+            "close the refrigerator:27",
+            "open the refrigerator:27",
+            "put in the refrigerator:27",
+            "open the cabinet:18",
+            "close the cabinet:18",
+            "put in the cabinet:18"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Existence",
+        "task": "Check if there is a cup on the kitchen counter.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Existence",
+        "task": "Verify if a chair is present near the dining table.",
+        "type": "action",
+        "predicates": [
+            "near 12 25"
+        ],
+        "answer": [],
+        "options": [
+            "grab the chair:12",
+            "move closer to the dining table:25"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Existence",
+        "task": "Is there a plant in the corner of the room?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Existence",
+        "task": "Confirm if there is a rug under the coffee table.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Existence",
+        "task": "Is there a vase on the shelf in the living room?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Yes",
+            "No",
+            "I don't know"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Retrieve the green item on the table.",
+        "type": "action",
+        "predicates": [
+            "near 15 14",
+            "grab 15"
+        ],
+        "answer": [],
+        "options": [
+            "grab the green bottle:15",
+            "put on the table:14",
+            "grab the cup:11"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Get the cooking item with a handle and lid.",
+        "type": "action",
+        "predicates": [
+            "near 15",
+            "not on 16",
+            "near 13"
+        ],
+        "answer": [],
+        "options": [
+            "grab the pot:15",
+            "grab the lid:16",
+            "put on the kitchen counter:13",
+            "grab the spatula:18"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Locate the glass object used for drinking water.",
+        "type": "QA",
+        "predicates": [
+            "near 12",
+            "grab 5",
+            "put on 14"
+        ],
+        "answer": [],
+        "options": [
+            "grab the glass:5",
+            "It is on the table:14",
+            "It is on the kitchen shelf:12",
+            "It is in the sink:8"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Attribute",
+        "task": "Look at the round object on the nightstand in the bedroom and tell me the current time.",
+        "type": "QA",
+        "predicates": [
+            "on 12 8"
+        ],
+        "answer": [
+            1
+        ],
+        "options": [
+            "It is 3:00 PM",
+            "It is 7:45 AM",
+            "It is 12:30 PM",
+            "It is 10:15 PM"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "Tell me the number of white nightstands you can spot in the bedroom.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "0",
+            "1",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "Tally up the total number of windows in the bedroom.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "From the couch, enumerate the cushions of each color.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "Calculate the total items inside the cabinet.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ]
+    },
+    {
+        "ability": "Grounding",
+        "sub_ability": "Counting",
+        "task": "Which desk drawer contains a greater number of items?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            1
+        ],
+        "options": [
+            "Drawer 1",
+            "Drawer 2",
+            "Equal items in both",
+            "Not sure"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Relation",
+        "task": "Which bowl in the kitchen holds the most?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "bowl1",
+            "bowl2",
+            "bowl3",
+            "bowl4"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Relation",
+        "task": "Find the largest furniture in the kitchen.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "table",
+            "chair",
+            "cabinet",
+            "stool"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Relation",
+        "task": "List the objects on the table from smallest to largest.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            1
+        ],
+        "options": [
+            "small cup, medium plate, large bowl, book",
+            "medium plate, small cup, large bowl, book",
+            "large bowl, book, medium plate, small cup",
+            "book, large bowl, medium plate, small cup"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Relation",
+        "task": "Which drawer contains the smallest utensils?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            1
+        ],
+        "options": [
+            "kitchen drawer",
+            "cutlery drawer",
+            "spice drawer"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Relation",
+        "task": "Determine which appliances are closest to the sink.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "refrigerator",
+            "microwave",
+            "toaster",
+            "blender"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Describe whether the sofa and TV are facing each other.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "They are facing each other",
+            "They are not facing each other",
+            "The sofa is behind the TV",
+            "They are side by side"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Is the black chair against the wall or facing it?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "It is against the wall",
+            "It is facing the wall",
+            "It is in the middle of the room",
+            "It is near the window"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Position yourself in the center of the room.",
+        "type": "action",
+        "predicates": [
+            "near 10"
+        ],
+        "answer": [],
+        "options": [
+            "move to the center:10",
+            "turn around",
+            "sit down",
+            "stand still"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Move the blue mug to the top shelf of the cabinet",
+        "type": "action",
+        "predicates": [
+            "grab 15",
+            "near 38",
+            "put on 38"
+        ],
+        "answer": [],
+        "options": [
+            "grab the blue mug:15",
+            "put on the cabinet:38"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Direction",
+        "task": "Transfer the book in the middle of the table to the counter.",
+        "type": "action",
+        "predicates": [
+            "grab 15",
+            "not on 22",
+            "put on 30"
+        ],
+        "answer": [],
+        "options": [
+            "grab the book:15",
+            "put on the table:22",
+            "put on the counter:30"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "Place the water bottle on the furniture that is closest to the center of the room.",
+        "type": "action",
+        "predicates": [
+            "grab 12",
+            "near 8",
+            "near 7",
+            "near 9",
+            "put on 8"
+        ],
+        "answer": [],
+        "options": [
+            "grab the water bottle:12",
+            "put on the table:8",
+            "grab the table:8",
+            "put on the sofa:7",
+            "put on the chair:9"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "Go to the chair that is neareast to the door.",
+        "type": "action",
+        "predicates": [
+            "near 12 45",
+            "grab 12"
+        ],
+        "answer": [],
+        "options": [
+            "go to the chair:12",
+            "go to the door:45",
+            "sit on the chair:12",
+            "open the door:45"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "Move to the chair that is farest from the door.",
+        "type": "action",
+        "predicates": [
+            "near 5",
+            "further 10 5"
+        ],
+        "answer": [],
+        "options": [
+            "move towards chair:10",
+            "move away from door:5",
+            "move towards table:8",
+            "return to the starting point"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "What is the approximate space between the coffee table and the wall?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            2
+        ],
+        "options": [
+            "less than 1 foot",
+            "about 2 feet",
+            "approximately 3 feet",
+            "more than 4 feet"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Distance",
+        "task": "Retrieve the book from the shelf that is farthest from the reading chair.",
+        "type": "action",
+        "predicates": [
+            "near 21",
+            "further 21 30",
+            "grab 12"
+        ],
+        "answer": [],
+        "options": [
+            "grab the book:12",
+            "move closer to the shelf:30",
+            "check other shelves:32",
+            "put the book on the table:25"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Navigation",
+        "task": "Find the route from the home office to the nursery that avoids all furniture with sharp edges.",
+        "type": "action",
+        "predicates": [
+            "near 10",
+            "not on 20",
+            "not on 25",
+            "not on 30"
+        ],
+        "answer": [],
+        "options": [
+            "move to nursery:15",
+            "go around desk:20",
+            "go around chair:25",
+            "go around shelf:30"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Navigation",
+        "task": "Direct me from the bedroom to the kitchen, ensuring I pass through every room in this house.",
+        "type": "action",
+        "predicates": [
+            "near 1",
+            "in 1 5",
+            "near 3",
+            "in 3 5",
+            "near 4",
+            "in 4 5",
+            "near 2",
+            "in 5 2"
+        ],
+        "answer": [],
+        "options": [
+            "walk to the hallway:5",
+            "walk to the living room:3",
+            "walk to the bathroom:4",
+            "walk to the kitchen:2"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Navigation",
+        "task": "Take a path from the garage to the living room, passing by the bookshelf but avoiding the coffee table.",
+        "type": "action",
+        "predicates": [
+            "near 15",
+            "near 25",
+            "not near 30",
+            "near 20"
+        ],
+        "answer": [],
+        "options": [
+            "move towards the bookshelf:25",
+            "move towards the living room:20",
+            "move from garage to living room:20",
+            "avoid the coffee table:30"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Navigation",
+        "task": "Is the route from the bedroom to the dining table free of obstacles?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Yes",
+            "No"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Navigation",
+        "task": "Navigate from the bedroom to the house entrance, making sure to stop by the kitchen to grab an apple on the way.",
+        "type": "action",
+        "predicates": [
+            "near 1",
+            "near 2",
+            "grab 4",
+            "near 3"
+        ],
+        "answer": [],
+        "options": [
+            "walk to the kitchen:2",
+            "grab the apple:4",
+            "walk to the house entrance:3"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Memory",
+        "task": "Head toward the bathroom and return to your starting position.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "near 15"
+        ],
+        "answer": [],
+        "options": [
+            "move to the bathroom door:12",
+            "return to the starting position:15",
+            "move to the living room:20",
+            "move to the hallway:25"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Memory",
+        "task": "Place the book in a certain spot in the room, then come back and lead me to it.",
+        "type": "action",
+        "predicates": [
+            "grab 19",
+            "put_on 19 22",
+            "near_human 24"
+        ],
+        "answer": [],
+        "options": [
+            "grab the book:19",
+            "put the book on the spot:22",
+            "lead the human:24",
+            "put the book on the table:30",
+            "put the book on the chair:31"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Memory",
+        "task": "Put the apple inside the fridge. Where was the apple before before you move it?",
+        "type": "action",
+        "predicates": [
+            "grab 10",
+            "not in 22",
+            "near 15"
+        ],
+        "answer": [],
+        "options": [
+            "grab the apple:10",
+            "put the apple in fridge:22",
+            "put the apple on table:15",
+            "put the apple on counter:18"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Memory",
+        "task": "Move the laptop over to the sofa and let me know if there's a mouse where the laptop was originally.",
+        "type": "action",
+        "predicates": [
+            "grab 15",
+            "not on 25",
+            "put on 20",
+            "near 15 30"
+        ],
+        "answer": [],
+        "options": [
+            "grab the laptop:15",
+            "move the sofa:20",
+            "check for a mouse:30",
+            "clean the table:25"
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "sub_ability": "Memory",
+        "task": "Open a cabinet door in the kitchen and then close it. Recall what items were inside the cabinet.",
+        "type": "action",
+        "predicates": [
+            "grab 10",
+            "open 10",
+            "close 10"
+        ],
+        "answer": [],
+        "options": [
+            "grab the kitchen cabinet:10",
+            "open the cabinet:10",
+            "close the cabinet:10",
+            "look at the plate:15",
+            "look at the cup:16"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "Wipe off the dining table.",
+        "type": "action",
+        "predicates": [
+            "grab 10",
+            "grab 11",
+            "near 12",
+            "not on 10 12"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cleaning cloth:10",
+            "grab the cleaning spray:11",
+            "move closer to the dining table:12",
+            "wipe the dining table:12"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "Scrub the toilet and make it fragrant.",
+        "type": "action",
+        "predicates": [
+            "grab 22",
+            "grab 15",
+            "grab 35",
+            "not on 15 22",
+            "put on 15 22"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cleaning agent:22",
+            "grab the toilet brush:15",
+            "grab the air freshener:35",
+            "open the cabinet:40",
+            "put the air freshener:35 on the shelf:30"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "Find all shirts in the house and clean them using the washing machine.",
+        "type": "action",
+        "predicates": [
+            "grab 12",
+            "grab 15",
+            "grab 19",
+            "grab 9",
+            "open 5",
+            "put in 5",
+            "close 5"
+        ],
+        "answer": [],
+        "options": [
+            "grab shirt:12",
+            "grab shirt:15",
+            "grab shirt:19",
+            "grab detergent:9",
+            "open washing machine:5",
+            "put in washing machine:5",
+            "close washing machine:5"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "I accidentally spilled some juice on the floor. Please mop up the floor.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "grab 23",
+            "grab 17",
+            "on 12 17"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cleaning agent:23",
+            "grab the mop:17",
+            "pour the cleaning agent on the floor:23 12",
+            "mop the floor:17 12"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Clean",
+        "task": "Collect the dirty laundry from the bedroom and put it in the hamper.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "grab 12",
+            "near 24",
+            "put in 24"
+        ],
+        "answer": [],
+        "options": [
+            "grab the dirty laundry:12",
+            "put in the hamper:24",
+            "open the hamper:35",
+            "close the bedroom door:38"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Inventory the items in the brown cabinets.",
+        "type": "action",
+        "predicates": [
+            "open 15",
+            "in 22 15",
+            "in 23 15",
+            "in 24 15"
+        ],
+        "answer": [],
+        "options": [
+            "open the brown cabinet:15",
+            "grab item 1:22",
+            "grab item 2:23",
+            "grab item 3:24"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "I have returned home. Please put my slippers into the cabinet.",
+        "type": "action",
+        "predicates": [
+            "near_human 1",
+            "not in 15 22"
+        ],
+        "answer": [],
+        "options": [
+            "grab the slippers:15",
+            "put in the cabinet:22"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Bring me some alcohol and fried foods.",
+        "type": "action",
+        "predicates": [
+            "near_human 9",
+            "near_human 7",
+            "on 14 9",
+            "on 14 7"
+        ],
+        "answer": [],
+        "options": [
+            "grab the beer:9",
+            "put on the table:14",
+            "grab the french fries:7",
+            "put on the plate:11",
+            "grab the juice:4",
+            "put on the counter:13"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Set the table for dinner.",
+        "type": "action",
+        "predicates": [
+            "near_human 11",
+            "near_human 12",
+            "near_human 13",
+            "near_human 14",
+            "near_human 15"
+        ],
+        "answer": [],
+        "options": [
+            "grab the plate:11",
+            "put on the table:14",
+            "grab the fork:12",
+            "put on the table:14",
+            "grab the knife:13",
+            "put on the table:14",
+            "grab the spoon:14",
+            "put on the table:14",
+            "grab the glass:15",
+            "put on the table:14"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Arrange",
+        "task": "Swap the positions of the coconut on the kitchen table and the shoulder bag on the cabinet against the wall in the kitchen.",
+        "type": "action",
+        "predicates": [
+            "near 5 12",
+            "near 18 20",
+            "on 12 5",
+            "on 20 18"
+        ],
+        "answer": [],
+        "options": [
+            "grab the coconut:5",
+            "put on the cabinet:20",
+            "grab the shoulder bag:18",
+            "put on the kitchen table:12"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Cook",
+        "task": "Prepare coffee.",
+        "type": "action",
+        "predicates": [
+            "grab 10",
+            "near 12",
+            "grab 16",
+            "near 14",
+            "put in 14",
+            "put in 18"
+        ],
+        "answer": [],
+        "options": [
+            "grab coffee beans:10",
+            "grab coffee grinder:12",
+            "grab water:16",
+            "grab cup:18"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Cook",
+        "task": "Please heat up the leftover pizza from last night for breakfast.",
+        "type": "action",
+        "predicates": [
+            "grab 12",
+            "open 15",
+            "put in 12 15",
+            "close 15",
+            "wait 30",
+            "open 15",
+            "grab 18",
+            "put on 18 12"
+        ],
+        "answer": [],
+        "options": [
+            "grab the pizza box:12",
+            "open the microwave:15",
+            "put the pizza in the microwave:12 15",
+            "close the microwave:15",
+            "wait for 30 seconds",
+            "open the microwave:15",
+            "grab a plate:18",
+            "put the pizza on the plate:18 12"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Cook",
+        "task": "Make a salad with three kinds of vegetables.",
+        "type": "action",
+        "predicates": [
+            "grab 1",
+            "grab 2",
+            "grab 3",
+            "grab 4",
+            "grab 5",
+            "grab 6",
+            "put_in 4 1",
+            "put_in 4 2",
+            "put_in 4 3"
+        ],
+        "answer": [],
+        "options": [
+            "grab the lettuce:1",
+            "grab the tomato:2",
+            "grab the cucumber:3",
+            "grab the bowl:4",
+            "grab the knife:5",
+            "grab the cutting board:6"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Cook",
+        "task": "Marinate the chicken with spices and herbs.",
+        "type": "action",
+        "predicates": [
+            "grab 1",
+            "grab 2",
+            "grab 3",
+            "grab 4",
+            "grab 5",
+            "put in 4",
+            "put on 1"
+        ],
+        "answer": [],
+        "options": [
+            "grab the chicken:1",
+            "grab the spices:2",
+            "grab the herbs:3",
+            "grab the bowl:4",
+            "grab the spoon:5"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Cook",
+        "task": "Bake cookies for dessert.",
+        "type": "action",
+        "predicates": [
+            "grab 15",
+            "grab 22",
+            "put in 35",
+            "close 35",
+            "grab 40",
+            "remove 22"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cookie dough:15",
+            "grab the baking tray:22",
+            "put cookie dough on the baking tray:22",
+            "put the baking tray in the oven:35",
+            "close the oven:35",
+            "grab oven mitts:40",
+            "remove the baking tray from the oven:22"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Shop",
+        "task": "Go to buy a mop.",
+        "type": "action",
+        "predicates": [
+            "grab 5",
+            "near 7",
+            "open 7",
+            "near 11",
+            "put in 13"
+        ],
+        "answer": [],
+        "options": [
+            "grab the mop:2",
+            "grab the wallet:5",
+            "open the door:7",
+            "close the door:7",
+            "drive to the store:11",
+            "put the wallet in the car:13"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Shop",
+        "task": "Pick up a birthday gift for a friend from the mall.",
+        "type": "action",
+        "predicates": [
+            "near 15",
+            "grab 5",
+            "put in 10",
+            "near 20"
+        ],
+        "answer": [],
+        "options": [
+            "grab the gift bag:5",
+            "put the gift bag in the shopping cart:10",
+            "go to the checkout counter:20",
+            "leave the store:15"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Shop",
+        "task": "Purchase cleaning supplies from the store.",
+        "type": "action",
+        "predicates": [
+            "grab 21",
+            "grab 14",
+            "grab 19",
+            "near 24",
+            "in 14 24",
+            "near 32",
+            "in 14 32",
+            "near 35",
+            "in 14 35"
+        ],
+        "answer": [],
+        "options": [
+            "grab the cleaning supply list:21",
+            "grab the shopping bag:14",
+            "grab the car keys:19",
+            "open the store door:24",
+            "close the store door:24",
+            "go to the cleaning supplies shelf:32",
+            "put in the shopping bag:14",
+            "go to the checkout counter:35",
+            "put in the shopping bag:14"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Shop",
+        "task": "Buy ingredients for cooking spaghetti bolognese.",
+        "type": "action",
+        "predicates": [
+            "grab 11",
+            "grab 12",
+            "grab 13",
+            "grab 14",
+            "grab 15",
+            "grab 16",
+            "near 17 18"
+        ],
+        "answer": [],
+        "options": [
+            "grab spaghetti:11",
+            "grab ground beef:12",
+            "grab tomato sauce:13",
+            "grab onion:14",
+            "grab garlic:15",
+            "grab carrot:16",
+            "put in shopping_cart:17",
+            "go to checkout_counter:18"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Shop",
+        "task": "Acquire a new set of kitchen towels from the supermarket.",
+        "type": "action",
+        "predicates": [
+            "grab 18",
+            "open 13",
+            "near 11",
+            "put in 24",
+            "close 13",
+            "drive 11",
+            "grab 7"
+        ],
+        "answer": [],
+        "options": [
+            "grab the wallet:18",
+            "open the front door:13",
+            "close the front door:13",
+            "drive to the supermarket:11",
+            "grab the kitchen towels:7"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "I'm starving; please find me the most filling hot food.",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Pizza",
+            "Soup",
+            "Salad",
+            "Steak"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "Bring me items for cleaning my face.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "near 23",
+            "near 34",
+            "near 45"
+        ],
+        "answer": [],
+        "options": [
+            "grab the facial cleanser:12",
+            "grab the cotton pads:23",
+            "grab the towel:34",
+            "grab the moisturizer:45"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "Grab me a glass of juice.",
+        "type": "action",
+        "predicates": [
+            "near 50",
+            "grab 12",
+            "put in 27",
+            "near 33"
+        ],
+        "answer": [],
+        "options": [
+            "grab the juice bottle:12",
+            "grab the cup:27",
+            "put the cup on the table:45",
+            "put the juice bottle in the fridge:50"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "I feel thirsty while watching TV. What should you do?",
+        "type": "QA",
+        "predicates": [],
+        "answer": [
+            0
+        ],
+        "options": [
+            "Get a glass of water",
+            "Turn up the volume",
+            "Change the channel",
+            "Adjust the lights"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Service",
+        "task": "Call my mother.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "in 12 27"
+        ],
+        "answer": [],
+        "options": [
+            "grab the phone:12",
+            "open the contact list:27",
+            "call the contact in the list"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Social Interaction",
+        "task": "Invite guests to sit at the dining table.",
+        "type": "action",
+        "predicates": [
+            "near 10",
+            "grab 11",
+            "put on 11",
+            "near_human 11"
+        ],
+        "answer": [],
+        "options": [
+            "grab the chair:11",
+            "put on the chair:11",
+            "near the dining table:10",
+            "call the guests",
+            "move the dining table:10"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Social Interaction",
+        "task": "Welcome visitors into the house.",
+        "type": "action",
+        "predicates": [
+            "open 10",
+            "near_human 12",
+            "turn on 15"
+        ],
+        "answer": [],
+        "options": [
+            "open the door:10",
+            "turn on the light:15",
+            "close the door:10",
+            "make the visitor wait:12",
+            "invite the visitor in:12"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Social Interaction",
+        "task": "Go to the couch and talk with guests.",
+        "type": "action",
+        "predicates": [
+            "near 10",
+            "near_human 25"
+        ],
+        "answer": [],
+        "options": [
+            "walk to the couch:10",
+            "sit on the couch:10",
+            "stand near the guests:25",
+            "greet the guests:25"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Social Interaction",
+        "task": "Check if the children are hungry and offer some snacks.",
+        "type": "action",
+        "predicates": [
+            "near 12",
+            "grab 25",
+            "open 35"
+        ],
+        "answer": [],
+        "options": [
+            "grab the snacks:25",
+            "open the kitchen:35",
+            "ask the children:12",
+            "close the fridge:40",
+            "put snacks on the table:21"
+        ]
+    },
+    {
+        "ability": "Planning",
+        "sub_ability": "Social Interaction",
+        "task": "Bring out toys to children",
+        "type": "action",
+        "predicates": [
+            "open 10",
+            "grab 11",
+            "near 5"
+        ],
+        "answer": [],
+        "options": [
+            "grab the toys:11",
+            "open the toys box:10",
+            "put the toys near the children:11",
+            "close the toys box:10",
+            "put the toys in the box:11"
+        ]
+    }
+]

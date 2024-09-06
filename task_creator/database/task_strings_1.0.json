@@ -1,0 +1,269 @@
+[
+    {
+        "ability": "Grounding",
+        "components": [
+            {
+                "ability": "Existence",
+                "QA": [
+                    "Scan the floor to see if there is a mat near the entrance.",
+                    "Determine if a painting hangs on the wall in the hallway.",
+                    "Investigate whether there are utensils in the drawer next to the oven.",
+                    "Confirm if there is a rug under the coffee table.",
+                    "Check if there's a bottle in the refrigerator.",
+                    "Is there a vase on the shelf in the living room?",
+                    "Examine whether there is a pillow on the sofa.",
+                    "Check if there is a cup on the kitchen counter.",
+                    "Verify if a chair is present near the dining table.",
+                    "Look around to see if there is a jacket hanging on the coat rack.",
+                    "Check if there is a lamp on the side table next to the bed.",
+                    "Investigate whether there are dishes in the sink.",
+                    "Search for a book on the desk in the study.",
+                    "Confirm if a clock is mounted on the wall in the living room.",
+                    "Examine whether there are shoes stored in the closet by the entrance.",
+                    "Determine if there is a blanket draped over the armchair.",
+                    "Verify if there is a basket on the floor in the laundry room."
+                ]
+            },
+            {
+                "ability": "Attribute",
+                "QA": [
+                    "Search for the green notebook under the sofa, what is written on its first page?",
+                    "Find the red box on the coffee table, what does it do?",
+                    "Locate the blue jar in the kitchen cabinet, what is inside it?",
+                    "Open the red toolbox in the garage, what tools are stored inside?",
+                    "Discover the white cup in the bedroom drawer, what image is printed on its side?",
+                    "Uncover the purple pillow on the bed, what design is stitched on it?",
+                    "Retrieve the silver keychain from the hallway hook, what keys are attached to it?",
+                    "Find the yellow ball on the patio, what kind of material is it made from?",
+                    "Identify the orange folder on the dining table, what documents are contained within it?",
+                    "Look for the black remote control on the living room shelf, which devices does it operate?"
+                ],
+                "action": [
+                    "Place the blue fabric square pillow on the sofa.",
+                    "Bring me the glass bottle with a handle in the kitchen.",
+                    "Open the black appliance used for heating food.",
+                    "Retrieve the green item on the table.",
+                    "Walk to the rectangular object that is typically used for sitting.",
+                    "Locate the glass object used for drinking water.",
+                    "Identify a rectangular towel in the bathroom and place it on the rack next to the sink.",
+                    "Move the brown, rectangular object on the dining table to the chair.",
+                    "Get the cooking item with a handle and lid.",
+                    "Find the place to wash hands before cooking."
+                ]
+            },
+            {
+                "ability": "Counting",
+                "QA": [
+                    "Calculate the total items inside the cabinet.",
+                    "Identify the total number of chairs around the dining table.",
+                    "Inspect the refrigerator and list out the total number of eggs in the carton.",
+                    "How many apples are there in the fruit bowl on the kitchen counter?",
+                    "Tally up the total number of windows in the bedroom.",
+                    "Tell me the number of white nightstands you can spot in the bedroom.",
+                    "From the hallway, quantify the number of shoes placed by the front door.",
+                    "Which desk drawer contains a greater number of items?",
+                    "Scan the living room and count how many books are on the coffee table."
+                ],
+                "action": [
+                    "Grab two apples from the counter, and put them in the bowl on the dining table.",
+                    "Go to the foyer to find a pair of shoes, and put them on the shoe rack.",
+                    "Retrieve three clean towels from the bathroom closet, and place them on the rack near the entrance.",
+                    "Collect five oranges from the fruit basket, then place them into the shopping bag on the kitchen counter.",
+                    "Find four books from the shelf in the living room, and stack them neatly on the coffee table.",
+                    "Take two chairs from the dining area, and position them next to the table in the patio.",
+                    "Locate a single umbrella from the hallway, then open it and place it by the door.",
+                    "Grab three plates from the kitchen cabinet, and put them in the dishwasher.",
+                    "Go to the laundry room to find two detergent bottles, and put them on the shelf in the garage.",
+                    "Fetch one blanket from the bedroom, and lay it over the couch in the living room."
+                ]
+            }
+        ]
+    },
+    {
+        "ability": "Spatial Reasoning",
+        "components": [
+            {
+                "ability": "Relation",
+                "QA": [
+                    "Determine which appliances are closest to the sink.",
+                    "Identify the storage container that occupies the least amount of space on the shelf.",
+                    "Locate the item that is furthest from the main entrance of the living room.",
+                    "Determine which item placed on the counter is farthest from the sink.",
+                    "Which bowl in the kitchen holds the most?",
+                    "List the objects on the table from smallest to largest.",
+                    "Find the largest furniture in the kitchen.",
+                    "Find the closet that contains the most pairs of shoes.",
+                    "Which drawer contains the smallest utensils?",
+                    "Arrange the books on the desk from the tallest to the shortest.",
+                    "Walk to the shorter one of two desks with monitors."
+                ],
+                "action": [
+                    "Step towards the window and insert the plant into the larger pot on the sill.",
+                    "Grab the largest plant in the room and put it in the corner near the window.",
+                    "Walk to the bookshelf and place the red book on the second shelf from the bottom.",
+                    "Approach the kitchen counter and put the blender inside the cabinet to the left.",
+                    "Move to the dining table and set the vase in the center.",
+                    "Go to the living room and put the small rug under the coffee table.",
+                    "Head to the laundry room and close the door after placing the detergent on the top shelf.",
+                    "Navigate to the bedroom and put the pillow on the bed in the corner by the nightstand.",
+                    "Walk over to the refrigerator and put the leftover food in the middle shelf.",
+                    "Go to the porch and take the garden tools and place them in the shed beside the fence."
+                ]
+            },
+            {
+                "ability": "Direction",
+                "QA": [
+                    "Describe whether the sofa and TV are facing each other.",
+                    "Are the bookshelves to the left or right of the window?",
+                    "Is there a plant in the corner of the room?",
+                    "Is the lamp placed next to the sofa or across the room?",
+                    "Are the boxes stacked vertically or laid flat on the ground?",
+                    "Is the dining table positioned in the center of the room?",
+                    "Is the black chair against the wall or facing it?",
+                    "Is there a rug in the middle of the living room or against the wall?",
+                    "Can you see a chair under the table or is it elsewhere?",
+                    "Is the desk oriented towards the wall or away from it?"
+                ],
+                "action": [
+                    "Position yourself in the center of the room.",
+                    "Position yourself in front of the closet and hang the jacket on the leftmost hook.",
+                    "Grab a mystery book and put it on the middle shelf, then grab a history book and put it in the rightmost position on the top shelf. Close the bookcase doors once finished.",
+                    "Head to the refrigerator and put the milk inside the middle section.",
+                    "Grab a plate and put it down on the table in front of the chair. Grab a utensil and put it above the plate.",
+                    "Move forward to the dining table and put the salt shaker in the center.",
+                    "Approach the bookshelf and place the novel on the second shelf from the bottom.",
+                    "Transfer the book in the middle of the table to the counter.",
+                    "Move the blue mug to the top shelf of the cabinet",
+                    "Approach the coffee table and place the remote control in the center, ensuring it's facing towards the couch.",
+                    "Navigate to the bedroom dresser and place the pair of socks in the third drawer from the top, closing the drawer afterward.",
+                    "Move to the kitchen countertop and position the toaster to the far left, then place the jar of jam directly to its right.",
+                    "Go to the entryway and hang your hat on the hook that is second from the right.",
+                    "Head to the bathroom cabinet and move the toothpaste to the second shelf, placing it in the center.",
+                    "Walk to the living room and put the plant on the windowsill, ensuring it's centered between the two window panes."
+                ]
+            },
+            {
+                "ability": "Distance",
+                "QA": [
+                    "Assess how many steps it takes to go from the front door to the hallway.",
+                    "Calculate the distance from the armchair to the window.",
+                    "What is the approximate space between the coffee table and the wall?",
+                    "Evaluate the room available between the patio door and the coffee table.",
+                    "Estimate the distance from the edge of the sofa to the nearest lamp.",
+                    "Find out the separation between the refrigerator and the kitchen counter.",
+                    "Determine how far the bookshelf is from the study desk.",
+                    "Pinpoint the area between the cabinet and the kitchen sink.",
+                    "Identify the space between the bed and the wall on the left side.",
+                    "Measure the gap between the dining chair and the table edge."
+                ],
+                "action": [
+                    "Place the water bottle on the furniture that is closest to the center of the room.",
+                    "Retrieve the book from the shelf that is farthest from the reading chair.",
+                    "Move to the chair that is farest from the door.",
+                    "Move to the shelf that contains the items nearest to the floor.",
+                    "Place the fruit bowl on the counter that is the second farthest from the sink.",
+                    "Open the cabinet that is positioned furthest from the main area of the kitchen.",
+                    "Go to the table that is located closest to the window.",
+                    "Go to the chair that is neareast to the door.",
+                    "Retrieve the keys from the place that is farthest from the entrance.",
+                    "Grab the remote control from the surface that is closest to the couch."
+                ]
+            },
+            {
+                "ability": "Memory",
+                "QA": [
+                    "Go to the bathroom and look in the cabinet under the sink. Recall what cleaning supplies are stored there.",
+                    "Navigate to the bookshelf and grab a book. Describe its position in relation to the other books on the shelf.",
+                    "Walk to the dining table and open the drawer. What color napkins did you find inside?",
+                    "Open a cabinet door in the kitchen and then close it. Recall what items were inside the cabinet.",
+                    "Head to the laundry room and open the dryer. What items did you see inside?",
+                    "Walk to the garage and open the tool box. List all the tools you can remember seeing inside.",
+                    "Move to the living room and check under the coffee table. Did you find any magazines, and if so, how many?",
+                    "Move the laptop over to the sofa and let me know if there's a mouse where the laptop was originally.",
+                    "Search all the cups in the room and list their colors.",
+                    "Look around the kitchen and then come to me. Tell me if the refrigerator it open or not."
+                ],
+                "action": [
+                    "Locate the blue backpack in the living room, then take it to the hallway where the green jacket is hanging.",
+                    "Head toward the bathroom and return to your starting position.",
+                    "Place the book in a certain spot in the room, then come back and lead me to it.",
+                    "Find a red cup in the room, then locate another red one, and place the second cup where the first one was.",
+                    "Retrieve the remote control from under the couch and place it back in the exact spot on the coffee table where you found it.",
+                    "Seek out the yellow notebook from the study and set it down on the shelf in the bedroom where the white folder used to be.",
+                    "Put the apple inside the fridge. Where was the apple before before you move it?",
+                    "Bring a lipstick to me and return it to its original place.",
+                    "Find the keys on the kitchen counter and place them in the drawer after checking if they were also on the table.",
+                    "Find my sunglasses in the bedroom for going outside, and then place the red shoes where the sunglasses were."
+                ]
+            },
+            {
+                "ability": "Rearrange",
+                "QA":[],
+                "action":[]
+            }
+        ]
+    },
+    {
+        "ability": "Planning",
+        "components": [
+            {
+                "ability": "Clean",
+                "action": [
+                    "Scrub the toilet and make it fragrant.",
+                    "Retrieve the vacuum cleaner from the closet and clean the carpet in the living room.",
+                    "I accidentally spilled some juice on the floor. Please mop up the floor.",
+                    "Locate all food items in the pantry that have expired and dispose of them in the trash can.",
+                    "Wipe off the dining table.",
+                    "Find all shirts in the house and clean them using the washing machine.",
+                    "Collect all the scattered toys in the playroom and put them back in their designated storage bins.",
+                    "Gather all the dirty dishes from the living room and place them in the sink.",
+                    "Collect the dirty laundry from the bedroom and put it in the hamper."
+                ]
+            },
+            {
+                "ability": "Arrange",
+                "action": [
+                    "Organize a pair of socks into the laundry basket.",
+                    "Move the empty wine bottles from the countertop and place them in the recycling bin.",
+                    "Retrieve the mail from the foyer table and put it in the designated drawer.",
+                    "How can you prevent the sandwich from spoiling?",
+                    "Put a lid on the pot on the stove.",
+                    "Collect the dirty dishes from the dining table and put them in the sink.",
+                    "Inventory the items in the brown cabinets.",
+                    "Organize the desk by arranging the laptop computer, magazine, and coffee cup neatly.",
+                    "Move the potted plant from the living room to the balcony.",
+                    "Please gather the books from the coffee table and arrange them on the shelf."
+                ]
+            },
+            {
+                "ability": "Cook",
+                "action": [
+                    "Please heat up the leftover pizza from last night for breakfast.",
+                    "Assemble a sandwich using bread, grabbing lettuce, tomato, and ham, then putting all ingredients between the slices.",
+                    "Prepare a breakfast smoothie by grabbing a banana, opening the fridge to get yogurt, and putting them in a blender.",
+                    "Prepare coffee and serve it on a plate.",
+                    "Set up a cheese platter by putting different cheeses on a serving board.",
+                    "Create a fruit bowl by putting apples, oranges, and grapes in a large bowl.",
+                    "Refresh me with a beverage.",
+                    "Make a salad with three kinds of vegetables.",
+                    "Marinate the chicken with spices and herbs."
+                ]
+            },
+            {
+                "ability": "Service",
+                "action": [
+                    "Please fetch me a pair of comfortable shoes before we go for a walk.",
+                    "Bring me items for cleaning my face.",
+                    "Wake up my mother.",
+                    "I'm starving; please find me the most filling hot food.",
+                    "Turn on the TV.",
+                    "I feel thirsty while watching TV. What should you do?",
+                    "Get me a snack from the pantry; I'm feeling a bit peckish.",
+                    "Grab me a glass of juice.",
+                    "Please bring me my reading glasses and a book.",
+                    "I need a cup of hot tea; could you heat the kettle?"
+                ]
+            }
+        ]
+    }
+]
