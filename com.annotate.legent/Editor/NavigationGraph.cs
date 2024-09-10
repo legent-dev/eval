@@ -124,39 +124,39 @@ namespace Annotator
                     allInterest.Add(obj);
                 }
             }
-            foreach(Predicate predicate in infoList.predicates){
-                allInterest.Add(predicate.targetObject);
-                allInterest.Add(predicate.targetPlace);
-            }
+            // foreach(Predicate predicate in infoList.predicates){
+            //     allInterest.Add(predicate.targetObject);
+            //     allInterest.Add(predicate.targetPlace);
+            // }
 
-                foreach(GameObject obj in allInterest){
-                    Vector3 position = Utils.VecXZ(Utils.GetBounds(obj).center);
-                    bool success = AddNavPoint(position, true);
-                    if(success) {
-                        // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                        // cube.transform.position = position;
-                        // cube.transform.parent = navPoints;
-                        string name = "NavigationPoint"+interestPoints.Count+"-Target";
-                        GameObject navPoint = new GameObject(name);
-                        navPoint.transform.position = Utils.GetBounds(obj).center;
-                        navPoint.transform.parent = targetPoints;
+            foreach(GameObject obj in allInterest){
+                Vector3 position = Utils.VecXZ(Utils.GetBounds(obj).center);
+                bool success = AddNavPoint(position, true);
+                if(success) {
+                    // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    // cube.transform.position = position;
+                    // cube.transform.parent = navPoints;
+                    string name = "NavigationPoint"+interestPoints.Count+"-Target";
+                    GameObject navPoint = new GameObject(name);
+                    navPoint.transform.position = Utils.GetBounds(obj).center;
+                    navPoint.transform.parent = targetPoints;
 
-                        Debug.Log("NavPoint"+navPoint);
-                        interestPoints.Add(navPoint);
-                        
-                        
-                        Utils.DrawSphere(navPoint.transform.position, 0.11f, Color.red, navPoint, "sphere", navPoint);
-                        //navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], navPoint);
-                        // Debug.Log("Add interest point"+obj+" "+obj.transform.Find("MeshCenter").gameObject);
-                        // interestPoints.Add(obj.transform.Find("MeshCenter").gameObject);
-                        // navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], obj.transform.Find("MeshCenter").gameObject);
-                    }
-                    if(!success){
-                        Utils.DrawSphere(position, 0.1f, Color.red, null, "sphere", null); //.layer = LayerMask.NameToLayer("SceneEditor");
-                        if (!NavMesh.SamplePosition(position, out _, NavigationGraph.SAMPLE_DISTANCE, NavMesh.AllAreas))
-                            Debug.LogError("Could not find a navigation point for the object "+obj);
-                    }
+                    Debug.Log("NavPoint"+navPoint);
+                    interestPoints.Add(navPoint);
+                    
+                    
+                    Utils.DrawSphere(navPoint.transform.position, 0.11f, Color.red, navPoint, "sphere", navPoint);
+                    //navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], navPoint);
+                    // Debug.Log("Add interest point"+obj+" "+obj.transform.Find("MeshCenter").gameObject);
+                    // interestPoints.Add(obj.transform.Find("MeshCenter").gameObject);
+                    // navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], obj.transform.Find("MeshCenter").gameObject);
                 }
+                if(!success){
+                    Utils.DrawSphere(position, 0.1f, Color.red, null, "sphere", null); //.layer = LayerMask.NameToLayer("SceneEditor");
+                    if (!NavMesh.SamplePosition(position, out _, NavigationGraph.SAMPLE_DISTANCE, NavMesh.AllAreas))
+                        Debug.LogError("Could not find a navigation point for the object "+obj);
+                }
+            }
             
             // 根据options看看再加上哪些感兴趣的物体
             // for(int i=0;i<infoList.options.Count;i++){

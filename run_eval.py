@@ -11,7 +11,7 @@ from agent import *
 
 use_video = False
 
-def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance):
 
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
@@ -26,7 +26,30 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
     print(len(task_settings), "tasks")
     store_json(task_settings, f"task_settings.json")
-
+    
+    def save_to_csv():
+        tasks_text = []
+        template_to_task = {}
+        for i in task_ids:
+            setting = task_settings[i]
+            # options = '/'.join([op["description"] for op in setting["scene"]["options"]])
+            options = '/'.join([op for op in setting["task_raw"]["options"]])
+            assert len(setting["scene"]["predicates"]) == 1
+            pred = setting["scene"]["predicates"][0]
+            predicate = pred["predicate"]+" "+pred["content"]+" "+'，'.join([str(j) for j in pred["object_ids"]])
+            template = setting['task_raw']["template"].replace(",","，")
+            if template not in template_to_task:
+                template_to_task[template] = []
+            # remove all ,options
+            template, setting["task"], options, predicate = template.replace(",","，"), setting["task"].replace(",","，"), options.replace(",","，"), predicate.replace(",","，")
+            text = template+","+setting["task"]+","+options+","+predicate
+            template_to_task[template].append(text)
+            tasks_text.append(text)
+        with open(f"task_texts.csv", "w") as f:
+            for template, tasks in template_to_task.items():
+                for task in tasks:
+                    f.write(f"{task}\n")
+        exit(0)
     failed_cases = []
     success_cases = []
 
@@ -63,6 +86,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     store_json(run_args, f"{save_path}/run_args.json")
     def save_all_scenes_to_gltf():
         used_scenes = set()
+        inspect_only = True
         for task_i in task_ids:
             task_setting = task_settings[task_i]
             file = task_setting["scene_file"]
@@ -74,79 +98,51 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # if not ("two" in file and number==1):
             #     continue 
             # if not ("two" in file):
-            #     continue 
-            if not ("four" in file and number==1):
-                continue 
+            #     continue
+            if inspect_only:
+                if not ("living" in file and number==0):
+                    continue 
+                # if not ("four" in file and number==1):
+                #     continue 
             if file in used_scenes:
                 continue
             
             instances = task_setting["scene"]["instances"]
             new_instances = []
-            for instance in instances:
-                # two room 10
-                if "Window_Slider_48x24.fbx" in instance["prefab"]:
+            for i, instance in enumerate(instances):
+                pos = instance["position"]
+                if pos[1] < -1 or pos[1] > 4 or pos[0] < -50 or pos[0] > 50 or pos[2] < -50 or pos[2] > 50:
+                    print(instance["prefab"], instance["position"])
                     continue
-                
-                if "Vacuum_Cleaner_1_1.fbx" in instance["prefab"]:
-                    continue
-                if "Toilet_2.fbx" in instance["prefab"]:
-                    continue
-                if "Doorframe_3.fbx" in instance["prefab"]:
-                    continue
-                if "Window_Slider_60x36.fbx" in instance["prefab"]:
-                    continue
-                if "Window_Slider_48x36.fbx" in instance["prefab"]:
-                    continue
-                if "Window_Slider_60x48.fbx" in instance["prefab"]:
-                    continue
-                if "Window_Slider_36x36.fbx" in instance["prefab"]:
-                    continue
-                if "Doorframe_6.fbx" in instance["prefab"]:
-                    continue
-                if "Doorway_8.fbx" in instance["prefab"] or "bin_30.fbx" in instance["prefab"]:
-                    continue
-                if "Pan_28.fbx" in instance["prefab"]:
-                    continue
-                if "Window_Slider_48x48.fbx" in instance["prefab"]:
-                    continue
-                if "Doorframe_7.fbx" in instance["prefab"]:
-                    continue
-                if "Doorway_5.fbx" in instance["prefab"]:
-                    continue
-                if "Stool_1_3.fbx" in instance["prefab"]:
-                    continue
-                if "Dining_Table_228_1.fbx" in instance["prefab"]:
-                    continue
-                if "Doorway_6.fbx" in instance["prefab"]:
-                    continue
-                if "Wall_Decor_Photo_2V.fbx" in instance["prefab"]:
-                    continue
+                instance["object_identifier_for_evaluation"] = "identifier" + str(i)
                 new_instances.append(instance)
                 
                 # QuickHull coplanar!
-                if "09fad6a11f8b459d99d22f83dda714b7.glb" in instance["prefab"]:
-                    continue
-            # task_setting["scene"]["instances"] = new_instances
-            
-            
+                # if "09fad6a11f8b459d99d22f83dda714b7.glb" in instance["prefab"]:
+                #     continue
+            task_setting["scene"]["instances"] = new_instances
+
             used_scenes.add(file)
             
             # use gltFast, gltFast需要旋转180度
-            for instance in task_setting["scene"]["instances"]:
-                if instance["prefab"].endswith(".glb"):
-                    instance["rotation"][1] +=180
+            if not inspect_only:
+                for instance in task_setting["scene"]["instances"]:
+                    if instance["prefab"].endswith(".glb"):
+                        instance["rotation"][1] +=180
             
             env.reset(ResetInfo(scene=task_setting["scene"]))
-            dir_and_file = '/'.join(file.split("/")[-2:]).split(".")[0]
-            os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes/"+dir_and_file.split("/")[0], exist_ok=True)
-            path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file}.glb"
-            # env.step(Action(api_calls=[SaveSceneToGltf(path)]))
-            while True:
-                env.step(Action())
+            if inspect_only:
+                while True:
+                    env.step(Action())
+            else:
+                dir_and_file = '/'.join(file.split("/")[-2:]).split(".")[0]
+                os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes/"+dir_and_file.split("/")[0], exist_ok=True)
+                path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file}.glb"
+                env.step(Action(api_calls=[SaveSceneToGltf(path)]))
         raise
     
     try:
-        save_all_scenes_to_gltf()
+        # save_all_scenes_to_gltf()
         for task_i in task_ids:
 
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
@@ -163,6 +159,21 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # api_calls = [SetVideoRecordingPath("eval_video")] if use_video else []
             # 初始化不需要录制视频
             api_calls = []
+            if run_one_task_instance:
+                from legent.utils.io import load_json
+                task_setting["scene"]["task_instance"] = load_json(run_one_task_instance)
+                task_setting["scene"]["instances"] = [{
+                    "prefab":task_setting["scene"]["task_instance"]["scene_path"],
+
+                    "position": [0,0,0],
+                    "rotation": [0,0,0],
+                    "scale": [1,1,1],
+                    "parent": 0,
+                    "type": "kinematic"
+                }]
+                task_setting["scene"]["walls"] = []
+                task_setting["scene"]["floors"] = []
+                task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["special_points"][0]["position"]
             obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
             predicate = build_predicate(task_setting["predicates"], obs)
 
@@ -180,7 +191,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
 
             stuck_count = 0
-            MAX_STAY_COUNT = 10
+            MAX_STAY_COUNT = 100 # TODO: add max stay
             stuck_pos = obs.game_states["agent"]["position"]
             while step < MAX_STEPS:
                 # break
@@ -246,6 +257,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
             print(result)
             store_json(result, f"{save_path}/result_temp.json")
+            if run_one_task_instance:
+                break
     except Exception as e:
         result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
         print(result)
@@ -259,11 +272,6 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 
 if __name__ == "__main__":
-    # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50058 --test_case_start=14 --test_case_end=100
-    # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
-    # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
-    # python run_eval.py --agent rotate --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
-    # python run_eval.py --agent random --max_steps 3 --max_images 25 --port 50051 --sync --test_case_start=0 --test_case_end=100
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
@@ -274,8 +282,15 @@ if __name__ == "__main__":
     parser.add_argument("--eval_folder", type=str, default="./eval_folder_20240614_0251")
     parser.add_argument("--save_path", type=str, default=None)
     parser.add_argument("--sync", action="store_true")
+    parser.add_argument("--run_one_task_instance", type=str, default=None)
     args = parser.parse_args()
     task_ids = None
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
-    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync)
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance)
+
+    # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50058 --test_case_start=14 --test_case_end=100
+    # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
+    # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
+    # python run_eval.py --agent rotate --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
+    # python run_eval.py --agent random --max_steps 3 --max_images 25 --port 50051 --sync --test_case_start=0 --test_case_end=100

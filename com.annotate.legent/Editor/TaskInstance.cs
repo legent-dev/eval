@@ -145,6 +145,8 @@ namespace Annotator
     {
         [Label("场景"), ReadOnly]
         public string scene_name;
+        [HideInInspector]
+        public string scene_path;
 
         [HideInInspector]
         public List<float> scene_scale;
@@ -311,10 +313,19 @@ namespace Annotator
             }
             return obj.transform;
         }
+        
+        [ResizableTextArea]
+        [Label("标注文件保存信息")]
+        public string savePath;
 
         [Button("保存为任务文件")]
         private void Save(){
             scene_name = gameObject.name;
+            // Get the full prefab path of the nearest instance root of the object
+            scene_path = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(gameObject);
+            scene_path = scene_path.Replace(Application.dataPath, "Assets");
+            scene_path = Path.GetFullPath(scene_path);
+            scene_path = scene_path.Replace("\\", "/");
             scene_scale = new List<float>(){
                 gameObject.transform.localScale.x,
                 gameObject.transform.localScale.y,
@@ -420,7 +431,10 @@ namespace Annotator
             //get current time second
             string time = Utils.GetTimeString(true);
             Utils.WriteFile(Path.Combine(Application.dataPath, "Tasks"), $"task-{gameObject.name}-{time}.json", JsonUtility.ToJson(this, true));
-        
+            savePath = Path.Combine(Application.dataPath, "Tasks", $"task-{gameObject.name}-{time}.json");
+            savePath = Path.GetFullPath(savePath);
+            savePath = savePath.Replace("\\", "/");
+            savePath = $"（请勿修改此文本）文件被保存在\n{savePath}\n用下列命令打开此任务：\npython run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance {savePath}\n\n";
             Refresh();
         }
         
