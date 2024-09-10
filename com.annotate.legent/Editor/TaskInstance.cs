@@ -29,7 +29,9 @@ namespace Annotator
         // private List<string> optionTypes { get { return new List<string>() { "Answer", "PickUp", "PlaceTo", "OpenDrawer", "OpenDoor", "CloseDrawer", "CloseDoor" }; } }
         private List<string> optionTypes { get { return new List<string>() { "Answer-回答", "PickUp-拿起", "PlaceTo-放到", "OpenDrawer-开抽屉", "OpenDoor-开门", "CloseDrawer-关抽屉", "CloseDoor-关门" }; } }
 
-        private bool needObject = false;
+        bool NeedObject(){
+            return option_type != "Answer-回答";
+        }
         public void OnOptionChanged()
         {
             Dictionary<string, string> saved2option = new Dictionary<string, string>(){
@@ -45,7 +47,7 @@ namespace Annotator
                 option_type = saved2option[option_type];
             }
             Debug.Log("OnOptionChanged "+option_type);
-            needObject = option_type != "Answer-回答";
+            bool needObject = option_type != "Answer-回答";
             if (needObject)
             {
                 if(option_text == null || option_text == ""){
@@ -72,7 +74,7 @@ namespace Annotator
 
 
 
-        [Label("可操作对象"), AllowNesting, ShowIf("needObject")]
+        [Label("可操作对象"), AllowNesting, ShowIf("NeedObject")]
         //[HideNestedArray]
         // List<GameObject>不行，只有自己单独写一个类NestedArray进行嵌套
         public NestedArray<GameObject> gameObjects;
@@ -92,23 +94,40 @@ namespace Annotator
         [OnValueChanged("OnPredicateChanged")]
         public string predicate_type;
 
-        [Label("物体"), AllowNesting]
+
+        [Label("正确回答"), AllowNesting, ShowIf("Need0Param")]
+        public string right_answer_content;
+
+        [Label("参数一"), AllowNesting, ShowIf("Need1Param")]
         //[NonSerialized]
         public GameObject targetObject;
         [HideInInspector]
         public string predicate_object;
 
-        [Label("位置"), AllowNesting]
+        [Label("参数二"), AllowNesting, ShowIf("Need2Param")]
         //[NonSerialized]
         public GameObject targetPlace;
         [HideInInspector]
         public string predicate_place;
 
+        bool Need0Param(){
+            return predicate_type == "choose";
+        }
+        bool Need1Param(){
+            bool need = predicate_type!="choose";
+            if(!need) targetObject = null;
+            return need;
+        }
+        bool Need2Param(){
+            bool need = predicate_type != "choose" && !predicate_type.StartsWith("agent") && !predicate_type.StartsWith("grab");
+            if(!need) targetPlace = null;
+            return need;
+        }
 
-        private List<string> predicateTypes { get { return new List<string>() { "choose", "at", "notat" }; } }
+
+        private List<string> predicateTypes { get { return new List<string>() { "choose", "agent_at", "agent_near", "at", "near", "not_at", "agent_pass", "grab", "closer", "further"}; } }
         //  "in", "on", "near", "not in", "not on"
 
-        
         public void OnPredicateChanged()
         {
             
@@ -153,6 +172,38 @@ namespace Annotator
         [HideInInspector]
         public List<float> scene_position;
 
+        [NonSerialized]
+        GameObject _agent;
+        GameObject agent{
+            get{
+                if(_agent == null){
+                    if(GameObject.Find("Agent")==null) {
+                        GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                        capsule.transform.localScale = new Vector3(0.3f, 3f, 0.3f);
+                        capsule.name = "Agent";
+                        // Remove(capsule.GetComponent<Collider>());
+                        capsule.transform.position = Vector3.zero; //Utils.GetBounds(gameObject).center;
+                        capsule.transform.position = new Vector3(capsule.transform.position.x, 0, capsule.transform.position.z);
+                        // add a capsule
+                    }
+                    _agent = GameObject.Find("Agent");
+                }
+                else {
+                }
+
+
+                return _agent;
+            }
+            set{
+                _agent = value;
+            }
+        }
+
+        [HideInInspector]
+        public List<float> agent_position;
+        [HideInInspector]
+        public List<float> agent_rotation;
+
         [Label("地板")]
         public List<GameObject> floorObjects;
         [HideInInspector]
@@ -174,7 +225,7 @@ namespace Annotator
         // show task_template as "任务文本" in spector
         [Label("任务模板")]
         [OnValueChanged("Refresh")]
-        [ValidateInput("TemplateExist", "请选择任务模板中存在的任务")]
+        //[ValidateInput("TemplateExist", "请选择任务模板中存在的任务")]
         public string task_template="";
         public void Refresh()
         {
@@ -223,26 +274,53 @@ namespace Annotator
 
         }
         // [Button("初始化场景变量")]
+
+        private bool onValidateUseDestroy = false;
+        public void Remove(GameObject obj)
+        {
+            onValidateUseDestroy = false;
+            try{
+
+            if(onValidateUseDestroy) Destroy(obj);
+            else DestroyImmediate(obj);
+            }
+            catch(Exception e){
+                Debug.Log("Remove Error");
+                Debug.LogError(e);
+            }
+        }
+        public void Remove(Collider obj)
+        {
+            onValidateUseDestroy = false;
+            if(onValidateUseDestroy) Destroy(obj);
+            else DestroyImmediate(obj);
+        }
         public void InitScene()
         {
             Debug.Log("InitScene");
             NavigationGraph CreateNavMesh(){
                 {
-                    if(GameObject.Find("NavPoints")!=null) DestroyImmediate(GameObject.Find("NavPoints"));
-                    GameObject obj = new GameObject("NavPoints");
+                    if(GameObject.Find("NavPoints")==null){
+                        new GameObject("NavPoints");
+                    }
+                    GameObject obj = GameObject.Find("NavPoints");
                     obj.AddComponent<NavigationGraph>();
                     obj.transform.position = new Vector3(0, 0, 0);
                     obj.transform.localScale = new Vector3(1, 1, 1);
                 }
                 {
-                    if(GameObject.Find("TargetPoints")!=null) DestroyImmediate(GameObject.Find("TargetPoints"));
-                    GameObject obj = new GameObject("TargetPoints");
+                    if(GameObject.Find("TargetPoints")==null){
+                        new GameObject("TargetPoints");
+                    }
+                    GameObject obj = GameObject.Find("TargetPoints");
                     obj.transform.position = new Vector3(0, 0, 0);
                     obj.transform.localScale = new Vector3(1, 1, 1);
                 }
                 NavigationGraph graph = GameObject.Find("NavPoints").gameObject.GetComponent<NavigationGraph>();
                 graph.infoList = this;
+                agent.SetActive(false);
                 graph.CreateNavMesh();
+                agent.SetActive(true);
                 return graph;
             }
             // 获取所有子物体的Transform组件
@@ -272,13 +350,23 @@ namespace Annotator
                 // rb.isKinematic = true;
             }
 
+            agent = null;
+            agent = agent;
+
             Annotate.Unity.AI.Navigation.Samples.NavigationSampleInitializer.CreateAgent();
             CreateNavMesh();
         }
 
+        private void DestroyNavPoints(){
+            if(GameObject.Find("NavPoints")!=null)
+                Remove(GameObject.Find("NavPoints"));
+            if(GameObject.Find("TargetPoints")!=null)
+                Remove(GameObject.Find("TargetPoints"));
+        }
         [Button("生成导航点")]
         private void CreateNavPoints()
         {
+            DestroyNavPoints();
             InitScene();
             NavigationGraph graph = GameObject.Find("NavPoints").GetComponent<NavigationGraph>();
             graph.AddNavigationPointsForInterest();
@@ -336,6 +424,19 @@ namespace Annotator
                 gameObject.transform.position.y,
                 gameObject.transform.position.z
             };
+
+            agent_position = new List<float>(){
+                agent.transform.position.x,
+                agent.transform.position.y,
+                agent.transform.position.z
+            };
+            agent_rotation = new List<float>(){
+                agent.transform.rotation.eulerAngles.x,
+                agent.transform.rotation.eulerAngles.y,
+                agent.transform.rotation.eulerAngles.z
+            };
+
+
             // 地板改成floor的路径
             floor_objects = new List<string>();
             foreach(GameObject floor in floorObjects){
@@ -352,8 +453,7 @@ namespace Annotator
             special_points = new List<SpecialPoint>();
             foreach(Transform child in GameObject.Find("NavPoints").transform){
                 if(specialPointNames.Contains(child.name)) {
-                    Debug.LogError("重复的导航点名字：" + child.name);
-                    message = "重复的导航点名字：" + child.name;
+                    Error("重复的导航点名字：" + child.name);
                     return;
                 }
                 specialPointNames.Add(child.name);
@@ -370,8 +470,7 @@ namespace Annotator
             }
             foreach(Transform child in GameObject.Find("TargetPoints").transform){
                 if(specialPointNames.Contains(child.name)) {
-                    Debug.LogError("重复的导航点名字：" + child.name);
-                    message = "重复的导航点名字：" + child.name;
+                    Error("重复的导航点名字：" + child.name);
                     return;
                 }
                 specialPointNames.Add(child.name);
@@ -389,8 +488,7 @@ namespace Annotator
             foreach(GameObject _child in GetSpecialPoints()){
                 Transform child = _child.transform;
                 if(specialPointNames.Contains(child.name)) {
-                    Debug.LogError("重复的特殊点名字：" + child.name);
-                    message = "重复的特殊点名字：" + child.name;
+                    Error("重复的特殊点名字：" + child.name);
                     return;
                 }
                 specialPointNames.Add(child.name);
@@ -410,8 +508,14 @@ namespace Annotator
             for(int i = 0; i < options.Count; i++){
                 options[i].option_type = options[i].option_type.Split('-')[0];
                 options[i].objects = new List<string>();
-                for(int j = 0; j < options[i].gameObjects.list.Count; j++){
-                    options[i].objects.Add(GetPath(options[i].gameObjects.list[j].transform));
+                if(options[i].option_type!="Answer"){
+                    for(int j = 0; j < options[i].gameObjects.list.Count; j++){
+                        if(options[i].gameObjects.list[j] == null){
+                            Error("选项"+options[i].option_type+" " + options[i].option_text + "的物体为空");
+                            return;
+                        }
+                        options[i].objects.Add(GetPath(options[i].gameObjects.list[j].transform));
+                    }
                 }
             }
 
@@ -430,20 +534,27 @@ namespace Annotator
             message = "";
             //get current time second
             string time = Utils.GetTimeString(true);
-            Utils.WriteFile(Path.Combine(Application.dataPath, "Tasks"), $"task-{gameObject.name}-{time}.json", JsonUtility.ToJson(this, true));
-            savePath = Path.Combine(Application.dataPath, "Tasks", $"task-{gameObject.name}-{time}.json");
+            string file_name = $"task-{time}-{gameObject.name}-{task_text.Replace(" ","_").Replace(".","_").Replace("?","_").Replace("!","_").Replace(":","_").Replace(";","_")}.json";
+            savePath = Path.Combine(Application.dataPath, "Tasks", file_name);
+            Utils.WriteFile(Path.Combine(Application.dataPath, "Tasks"), file_name, JsonUtility.ToJson(this, true));
             savePath = Path.GetFullPath(savePath);
             savePath = savePath.Replace("\\", "/");
             savePath = $"（请勿修改此文本）文件被保存在\n{savePath}\n用下列命令打开此任务：\npython run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance {savePath}\n\n";
             Refresh();
         }
+
         
-        [ValidateInput("IsEmpty", "点的名称重复了")]
+        [ValidateInput("IsEmpty", "出错了！")]
         [HideIf("IsEmpty")]
+        [Label("出错信息")]
         [ReadOnly]
 	    public string message="";
         public bool IsEmpty(){
             return message == "";
+        }
+        public void Error(string str){
+            Debug.LogError(str);
+            message = str;
         }
 
         public void Load(string text){
@@ -459,6 +570,10 @@ namespace Annotator
             JsonUtility.FromJsonOverwrite(json, this);
             transform.position = new Vector3(scene_position[0], scene_position[1], scene_position[2]);
             transform.localScale = new Vector3(scene_scale[0], scene_scale[1], scene_scale[2]);
+            
+            agent.transform.position = new Vector3(agent_position[0], agent_position[1], agent_position[2]);
+            agent.transform.rotation = Quaternion.Euler(agent_rotation[0], agent_rotation[1], agent_rotation[2]);
+
             removedObjects = new List<GameObject>();
             foreach(string path in removed_objects){
                 removedObjects.Add(LoadPath(path).gameObject);
@@ -468,11 +583,12 @@ namespace Annotator
                 Debug.Log("LoadPath "+path);
                 floorObjects.Add(LoadPath(path).gameObject);
             }
+            DestroyNavPoints();
             InitScene();
 
             // 把导航点和特殊点都转成物体
             foreach(GameObject go in GetSpecialPoints()){
-                DestroyImmediate(go);
+                Remove(go);
             }
 
 
@@ -504,8 +620,7 @@ namespace Annotator
                 foreach(string name in option.objects){
                     GameObject obj=LoadPath(name).gameObject;
                     if(obj == null){
-                        Debug.LogError("找不到物体：" + name);
-                        message = "找不到物体：" + name;
+                        Error("找不到物体：" + name);
                         return;
                     }
                     option.gameObjects.list.Add(obj);
@@ -520,14 +635,14 @@ namespace Annotator
                 }
             }
         }
-
-
-
         public void OnValidate(){
+            // On Validate不能destory也不能destory immediately
+            // https://discussions.unity.com/t/in-onvalidate-since-using-destroy-and-destroyimmediate-can-result-in-errors/924876/6
+            Debug.Log("OnValidate");
             if(floorObjects == null) {
                 InitVariables();
             }
-            if(floorObjects.Count == 0){
+            if(floorObjects.Count == 0 || floorObjects[0] == null){
                 InitScene();
             }
         }
