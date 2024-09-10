@@ -1,3 +1,4 @@
+from typing import List
 from legent import Action, Observation
 from legent.utils.math import vec_xz, distance
 
@@ -36,7 +37,6 @@ class PredicateAgentNear(Predicate):
             return 1, {"distance": d}
         else:
             return 0, {"distance": d}
-
 
 class PredicateCloser(Predicate):
     def __init__(self, object1, object2, obs: Observation) -> None:
@@ -145,45 +145,165 @@ class PredicateNotOn(Predicate):
         return 1, {}
 
 
-def build_predicate(predicates, obs) -> Predicate:
-    assert len(predicates) == 1, predicates
-    predicate: str = predicates[0]
-    print(predicate)
-    if predicate.startswith("choose"):
-        return PredicateChoose(predicate.split(" ", maxsplit=1)[1])
-    elif predicate.startswith("near"):
-        splits = predicate.split(" ")
-        assert len(splits) == 2
-        if len(splits) == 2:
-            return PredicateAgentNear(int(splits[1]))
-    elif predicate.startswith("closer"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3
-        return PredicateCloser(int(splits[1]), int(splits[2]), obs)
-    elif predicate.startswith("further"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3
-        return PredicateFurther(int(splits[1]), int(splits[2]), obs)
-    elif predicate.startswith("on"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3
-        return PredicateOn(int(splits[1]), int(splits[2]))
-    elif predicate.startswith("grab"):
-        splits = predicate.split(" ")
-        assert len(splits) == 2
-        return PredicateGrab(int(splits[1]))
-    elif predicate.startswith("swap"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3
-        return PredicateSwap(int(splits[1]), int(splits[2]), obs)
-    elif predicate.startswith("in"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3 or len(splits) == 4
-        return PredicateIn([int(_id) for _id in splits[1:-1]], int(splits[-1]))
-    elif predicate.startswith("noton"):
-        splits = predicate.split(" ")
-        assert len(splits) == 3 or len(splits) == 4 or len(splits) == 5
-        return PredicateNotOn([int(_id) for _id in splits[1:-1]], int(splits[-1]))
+
+# TODO: near和at基本一样，可以合并
+class PredicateAgentAt(Predicate):
+    def __init__(self, object_id) -> None:
+        self.object_id = object_id
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+
+        game_states = obs.game_states
+        d = distance(vec_xz(game_states["agent"]["position"]), vec_xz(game_states["instances"][self.object_id]["position"]))
+        if d < 0.3:
+            return 1, {"distance": d}
+        else:
+            return 0, {"distance": d}
+        
+class PredicateAt(Predicate):
+    def __init__(self, object1, object2) -> None:
+        self.object1 = object1
+        self.object2 = object2
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        instances = obs.game_states["instances"]
+        d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
+        if d < 0.3:
+            return 1, {"distance": d}
+        else:
+            return 0, {"distance": d}
+
+class PredicateNear(Predicate):
+    def __init__(self, object1, object2) -> None:
+        self.object1 = object1
+        self.object2 = object2
+        
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        instances = obs.game_states["instances"]
+        d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
+        if d < 1.5:
+            return 1, {"distance": d}
+        else:
+            return 0, {"distance": d}
+
+
+class PredicateNotNear(Predicate):
+    def __init__(self, object1, object2) -> None:
+        self.object1 = object1
+        self.object2 = object2
+        
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        instances = obs.game_states["instances"]
+        d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
+        if d > 1.5:
+            return 1, {"distance": d}
+        else:
+            return 0, {"distance": d}
+
+# TODO: agent pass 和 agent at一样，可以合并
+class PredicateAgentPass(Predicate):
+    def __init__(self, object1, object2) -> None:
+        self.object1 = object1
+        self.object2 = object2
+        self.passed = False
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        if passed:
+            return 1, {}
+        instances = obs.game_states["instances"]
+        d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
+        if d < 0.3:
+            passed = True
+            return 1, {}
+        else:
+            return 0, {}
+
+
+def build_predicate(predicates, obs, old_version) -> List[Predicate]:
+    pred_list = []
+    print(predicates)
+    for i in range(len(predicates)):
+        def build_one_predicate(predicate):
+            if old_version:
+                if predicate.startswith("choose"):
+                    return PredicateChoose(predicate.split(" ", maxsplit=1)[1])
+                elif predicate.startswith("near"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    if len(splits) == 2:
+                        return PredicateAgentNear(int(splits[1]))
+                elif predicate.startswith("closer"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateCloser(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("further"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateFurther(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("on"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateOn(int(splits[1]), int(splits[2]))
+                elif predicate.startswith("grab"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateGrab(int(splits[1]))
+                elif predicate.startswith("swap"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateSwap(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("in"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3 or len(splits) == 4
+                    return PredicateIn([int(_id) for _id in splits[1:-1]], int(splits[-1]))
+                elif predicate.startswith("noton"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3 or len(splits) == 4 or len(splits) == 5
+                    return PredicateNotOn([int(_id) for _id in splits[1:-1]], int(splits[-1]))
+            else:
+
+                if predicate.startswith("choose"):
+                    return PredicateChoose(predicate.split(" ", maxsplit=1)[1])
+
+                elif predicate.startswith("agent_at"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateAgentAt(int(splits[1]))
+                elif predicate.startswith("agent_near"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateAgentNear(int(splits[1]))
+                elif predicate.startswith("agent_pass"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateAgentPass(int(splits[1]))
+                elif predicate.startswith("at"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateAt(int(splits[1]), int(splits[2]))
+                elif predicate.startswith("near"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateNear(int(splits[1]), int(splits[2]))
+                elif predicate.startswith("not_near"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateNotNear(int(splits[1]), int(splits[2]))
+
+                elif predicate.startswith("closer"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateCloser(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("further"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateFurther(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("grab"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateGrab(int(splits[1]))
+        pred_list.append(build_one_predicate(predicates[i]))
+    return pred_list
 
 
 

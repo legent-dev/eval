@@ -153,8 +153,6 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # task_setting["scene"]["floors"][0]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_MarbleNoisy0062_1_seamless_S.png"
             # task_setting["scene"]["floors"][1]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_WoodFine0038_1_seamless_albedo_S.png"
 
-            print(task_setting["task"])
-            print("Predicates:", task_setting["predicates"])
             agent.start(task_setting["task"])
             # api_calls = [SetVideoRecordingPath("eval_video")] if use_video else []
             # 初始化不需要录制视频
@@ -173,9 +171,28 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 }]
                 task_setting["scene"]["walls"] = []
                 task_setting["scene"]["floors"] = []
-                task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["special_points"][0]["position"]
+                task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
+                task_setting["scene"]["agent"]["rotation"] = task_setting["scene"]["task_instance"]["agent_rotation"]
+                
+                for option in task_setting["scene"]["task_instance"]["options"]:
+                    if option["option_type"] == "Answer":
+                        option["option_text"] =  f"answer \"{option['option_text']}\""
+                for predicate in task_setting["scene"]["task_instance"]["predicates"]:
+                    if predicate["predicate_type"] == "choose":
+                        predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
+            else:
+                print(task_setting["task"])
+                print("Predicates:", task_setting["predicates"])
             obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
-            predicate = build_predicate(task_setting["predicates"], obs)
+            if run_one_task_instance:
+                task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
+                # replace multiple spaces with one space
+                for i in range(len(task_setting["predicates"])):
+                    import re
+                    task_setting["predicates"][i] = re.sub(r"\s+", " ", task_setting["predicates"][i])
+                print(task_setting["scene"]["task_instance"]["task_text"])
+                print("Predicates:", task_setting["predicates"])
+            pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance)
 
             options = obs.game_states["option_mode_info"]["options"]
             feedback = None
@@ -225,7 +242,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
                 save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
                 print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}\n")
-                done, info = predicate.task_done(action, obs, options, task_setting)
+                done = 1
+                for predicate in pred_list:
+                    _done, info = predicate.task_done(action, obs, options, task_setting)
+                    if _done == -1:
+                        done = -1
+                        break
+                    elif _done == 0:
+                        done = 0
 
                 if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"])) < 0.01:
                     stuck_count += 1
@@ -243,19 +267,20 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 step += 1
                 if done == 1:
                     success_count += 1
-                    print("Task accomplished.")
+                    log_green("Task accomplished.")
                 if isinstance(action, ActionFinish) or action.text != "" or done != 0:
                     save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
                     break
             if done != 1:
                 failed_cases.append(task_i)
-                print("Task failed.")
+                log_green("Task failed.")
             else:
                 success_cases.append(task_i)
 
             log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
             result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
-            print(result)
+            if not run_one_task_instance:
+                print(result)
             store_json(result, f"{save_path}/result_temp.json")
             if run_one_task_instance:
                 break
@@ -267,7 +292,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     finally:
         env.close()
     result = {"Success Rate": f"{success_count}/{len(task_ids)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
-    print(result)
+    if not run_one_task_instance:
+        print(result)
     store_json(result, f"{save_path}/result.json")
 
 
