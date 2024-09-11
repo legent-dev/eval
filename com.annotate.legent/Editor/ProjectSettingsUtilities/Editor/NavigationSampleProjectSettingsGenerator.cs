@@ -31,6 +31,14 @@ namespace Annotate.Unity.AI.Navigation.Samples.Editor
         const float k_LigentAgentClimb = 0.25f;
         const float k_LigentAgentSlope = 45.0f;
 
+
+        const string k_LigentSmallAgentTypeName = "SmallAgent";
+        const int k_LigentSmallAgentTypeID = 3;
+        const float k_LigentSmallAgentRadius = 0.2f;
+        const float k_LigentSmallAgentHeight = 1.6f;
+        const float k_LigentSmallAgentClimb = 0.25f;
+        const float k_LigentSmallAgentSlope = 45.0f;
+
         static SerializedObject s_NavMeshParameters;
         static SerializedProperty s_AgentsSettings;
         static SerializedProperty s_SettingNames;
@@ -46,6 +54,8 @@ namespace Annotate.Unity.AI.Navigation.Samples.Editor
 
             GenerateProjectSettings(k_LigentPlayerTypeName, k_LigentPlayerTypeID, CreateLigentPlayerSettings, hasInitializedOnProjectLoad);
             GenerateProjectSettings(k_LigentAgentTypeName, k_LigentAgentTypeID, CreateLigentAgentSettings, hasInitializedOnProjectLoad);
+            GenerateProjectSettings(k_LigentSmallAgentTypeName, k_LigentSmallAgentTypeID, CreateLigentSmallAgentSettings, hasInitializedOnProjectLoad);
+
             s_NavMeshParameters.ApplyModifiedProperties();
             settingsState.generated = true;
 
@@ -135,6 +145,17 @@ namespace Annotate.Unity.AI.Navigation.Samples.Editor
 
             return ligentAgentSettings;
         }
+        static NavMeshBuildSettings CreateLigentSmallAgentSettings()
+        {
+            var ligentAgentSettings = NavMesh.CreateSettings();
+            ligentAgentSettings.agentRadius = k_LigentSmallAgentRadius;
+            ligentAgentSettings.agentHeight = k_LigentSmallAgentHeight;
+            ligentAgentSettings.agentClimb = k_LigentSmallAgentClimb;
+            ligentAgentSettings.agentSlope = k_LigentSmallAgentSlope;
+
+            return ligentAgentSettings;
+        }
+
 
         static SerializedProperty GetSerializedSettingsByID(int agentTypeID, out int index)
         {

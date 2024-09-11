@@ -4,7 +4,6 @@ using Codice.Client.Commands;
 using UnityEngine;
 using UnityEditor;
 using NaughtyAttributes;
-using NaughtyAttributes.Editor;
 using System.IO;
 using System;
 using UnityEngine.SceneManagement;
@@ -46,7 +45,6 @@ namespace Annotator
             if(saved2option.ContainsKey(option_type)){
                 option_type = saved2option[option_type];
             }
-            Debug.Log("OnOptionChanged "+option_type);
             bool needObject = option_type != "Answer-回答";
             if (needObject)
             {
@@ -304,7 +302,8 @@ namespace Annotator
                         new GameObject("NavPoints");
                     }
                     GameObject obj = GameObject.Find("NavPoints");
-                    obj.AddComponent<NavigationGraph>();
+                    if(obj.GetComponent<NavigationGraph>()==null)
+                        obj.AddComponent<NavigationGraph>();
                     obj.transform.position = new Vector3(0, 0, 0);
                     obj.transform.localScale = new Vector3(1, 1, 1);
                 }
@@ -319,8 +318,22 @@ namespace Annotator
                 NavigationGraph graph = GameObject.Find("NavPoints").gameObject.GetComponent<NavigationGraph>();
                 graph.infoList = this;
                 agent.SetActive(false);
+                // 所有specialPoints都要隐藏，所有抽屉都要隐藏，防止影响到navMesh生成
+                List<GameObject> noBakeObjects = GetSpecialPoints();
+                if(options!=null){
+                    foreach(Option option in options){
+                        foreach(GameObject go in option.gameObjects.list){
+                            if(go == null) continue;
+                            noBakeObjects.Add(go);
+                        }
+                    }
+                }
+                // 所有removedObjects都要隐藏，防止影响到navMesh生成
+                foreach(GameObject go in removedObjects) noBakeObjects.Add(go);
+                foreach(GameObject go in noBakeObjects) go.SetActive(false);
                 graph.CreateNavMesh();
                 agent.SetActive(true);
+                foreach(GameObject go in noBakeObjects) go.SetActive(true);
                 return graph;
             }
             // 获取所有子物体的Transform组件
@@ -336,7 +349,29 @@ namespace Annotator
                 MeshCollider meshCollider = child.gameObject.GetComponent<MeshCollider>();
                 if (meshCollider == null)
                 {
-                    meshCollider = child.gameObject.AddComponent<MeshCollider>();
+                    
+                    bool MeshValid(MeshFilter meshFilter)
+                    {
+                        if (meshFilter != null && meshFilter.sharedMesh != null)
+                        {
+                            if (meshFilter.sharedMesh.vertexCount < 3) return false; // 数量太小加MeshCollider会报错
+
+                            Mesh mesh = meshFilter.sharedMesh;
+                            for (int i = 0; i < mesh.subMeshCount; i++)
+                            {
+                                MeshTopology topology = mesh.GetTopology(i);
+                                if (topology == MeshTopology.Lines || topology == MeshTopology.Points)
+                                {
+                                    // 不是三角形拓扑加Rigidbody会报错
+                                    return false;
+                                }
+                            }
+                            return true;
+                        }
+                        else return false;
+                    }
+                    if (MeshValid(child.gameObject.GetComponent<MeshFilter>()))
+                        meshCollider = child.gameObject.AddComponent<MeshCollider>();
                 }
 
                 // // 添加Rigidbody组件，如果没有的话
@@ -635,15 +670,17 @@ namespace Annotator
                 }
             }
         }
+        bool notValid = true;
         public void OnValidate(){
+            if(!SceneManager.GetActiveScene().isLoaded)return;
             // On Validate不能destory也不能destory immediately
             // https://discussions.unity.com/t/in-onvalidate-since-using-destroy-and-destroyimmediate-can-result-in-errors/924876/6
-            Debug.Log("OnValidate");
             if(floorObjects == null) {
                 InitVariables();
             }
-            if(floorObjects.Count == 0 || floorObjects[0] == null){
+            if(notValid){
                 InitScene();
+                notValid = false;
             }
         }
     }

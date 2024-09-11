@@ -20,7 +20,8 @@ namespace Annotate.Unity.AI.Navigation.Samples
         public static void CreateAgent()
         {
             settingsState = ScriptableObject.CreateInstance<NavigationSampleSettingsState>();
-            settingsState.generated = true;
+            // settingsState.generated = true;
+            settingsState.generated = false;
             NavigationSampleProjectSettingsGenerator.GenerateAllProjectSettings(settingsState);
         }
     }

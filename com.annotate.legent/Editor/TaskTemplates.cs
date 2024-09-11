@@ -4,7 +4,6 @@ using Codice.Client.Commands;
 using UnityEngine;
 using UnityEditor;
 using NaughtyAttributes;
-using NaughtyAttributes.Editor;
 using System.IO;
 using System;
 using UnityEngine.SceneManagement;

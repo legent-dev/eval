@@ -18,9 +18,9 @@ namespace Annotator
         public List<NavigationNode> neighbors;
 
     }
-    
+
     [ExecuteInEditMode] // 让OnTransformChildrenChanged一直执行
-    public class NavigationGraph: MonoBehaviour
+    public class NavigationGraph : MonoBehaviour
     {
         // 既是sample distance，又是可抓取distance
         public static float SAMPLE_DISTANCE = 2f; // 一个insterest point是否需要被连接到一个完全无关的navigation point上，如果在可抓取距离内，可以加上，例如从桌子的两个方向上过来都可以抓。否则不要了。
@@ -41,7 +41,7 @@ namespace Annotator
             // 新建NavMesh
             GameObject navMeshSurfaceGameObject = gameObject;
             NavMeshSurface navMeshSurface = navMeshSurfaceGameObject.AddComponent<NavMeshSurface>();
-            navMeshSurface.agentTypeID = 1;
+            navMeshSurface.agentTypeID = 3;
             navMeshSurface.layerMask = NavMesh.AllAreas; // Use NavMesh.AllAreas to include all layers.
 
             // 设置layerMask忽略掉一些mesh
@@ -72,43 +72,89 @@ namespace Annotator
 
 
         }
-        
 
-        public void GetInterestPoints(){
+
+        public void GetInterestPoints()
+        {
 
         }
-        public void AddNavigationPointsForInterest(){
+        public void AddNavigationPointsForInterest()
+        {
             isCreating = true;
             navigationPoints = new List<GameObject>(); // TODO: 可以使用预定义的navigationPoints（例如python端传入），不是重新实时生成
             interestPoints = new List<GameObject>();
             const float MIN_NEIGHBOR_DISTANCE = 1.5f;
             Transform navPoints = gameObject.transform;
             Transform targetPoints = GameObject.Find("TargetPoints").transform;
-            if(!GameObject.Find("DrawScratch")) new GameObject("DrawScratch");
+            if (!GameObject.Find("DrawScratch")) new GameObject("DrawScratch");
 
-            bool AddNavPoint(Vector3 position, bool forInterest){
+            bool AddNavPoint(Vector3 position, bool forInterest)
+            {
                 // https://docs.unity3d.com/ScriptReference/AI.NavMesh.SamplePosition.html
                 NavMeshHit hit;
                 if (NavMesh.SamplePosition(position, out hit, NavigationGraph.SAMPLE_DISTANCE, NavMesh.AllAreas))
                 {
-                    if(hit.position.y > 1) return false; // 太高了，可能是屋顶
+                    if (hit.position.y > 1) return false; // 太高了，可能是屋顶
+                    Vector3 hit_position = hit.position;
+                    Vector3 dir = hit_position - position;
+                    dir = new Vector3(dir.x, 0, dir.z);
+                    // 让导航点不要都在边缘，往中间去一点，因为大多时候确实导航点都是在边缘的。
+                    if (dir.magnitude > 0.1f)
+                    { // 原位置离成功采样位置很远，表示在边缘
+                        // 如果往里走0.2还是在navmesh上，就用这个位置
+                        if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.1f, out hit, 0, NavMesh.AllAreas))
+                        {
+                            if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.2f, out hit, 0, NavMesh.AllAreas))
+                            {
+                                if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.4f, out hit, 0, NavMesh.AllAreas))
+                                {
+                                    
+                                    if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.5f, out hit, 0, NavMesh.AllAreas)&&NavMesh.SamplePosition(hit_position + dir.normalized * 0.6f, out hit, 0, NavMesh.AllAreas))
+                                    {
+                                        // 对于interest点，不要走太远
+                                        if (!forInterest && NavMesh.SamplePosition(hit_position + dir.normalized * 0.7f, out hit, 0, NavMesh.AllAreas) && NavMesh.SamplePosition(hit_position + dir.normalized * 0.8f, out hit, 0, NavMesh.AllAreas))
+                                        {
+                                            // 如果往里走0.8还是在navmesh上，就用往里走0.4m
+                                            if (!forInterest && NavMesh.SamplePosition(hit_position + dir.normalized * 0.9f, out hit, 0, NavMesh.AllAreas) && NavMesh.SamplePosition(hit_position + dir.normalized * 1.0f, out hit, 0, NavMesh.AllAreas))
+                                            {
+                                                // if(!forInterest && NavMesh.SamplePosition(hit_position + dir.normalized * 1.2f, out hit, 0, NavMesh.AllAreas)){
+                                                //     hit_position  += dir.normalized * 0.6f;
+                                                // }
+                                                // else hit_position  += dir.normalized * 0.5f;
+                                                hit_position  += dir.normalized * 0.5f;
+                                            }
+                                            else hit_position += dir.normalized * 0.4f;
+                                        }
+                                        else hit_position += dir.normalized * 0.3f;
+                                    }
+                                    else hit_position += dir.normalized * 0.2f;
+                                }
+                                else hit_position += dir.normalized * 0.2f;
+                            }
+                            else hit_position += dir.normalized * 0.1f;
+                        }
+                    }
+
                     bool hasNeighbor = false;
-                    foreach(GameObject nav in navigationPoints){
+                    foreach (GameObject nav in navigationPoints)
+                    {
                         // 感兴趣点，加navPoint宽容度高（也不是一定要加，不然两个点重合了会报错）
-                        float nearJudgeDistance = forInterest? 0.3f : MIN_NEIGHBOR_DISTANCE;
-                        if(Vector3.Distance(nav.transform.position, hit.position)<nearJudgeDistance){
+                        float nearJudgeDistance = forInterest ? 0.3f : MIN_NEIGHBOR_DISTANCE;
+                        if (Vector3.Distance(nav.transform.position, hit_position) < nearJudgeDistance)
+                        {
                             hasNeighbor = true;
                             break;
                         }
                     }
-                    if(!hasNeighbor){
-                        string name = "NavigationPoint"+navigationPoints.Count;
+                    if (!hasNeighbor)
+                    {
+                        string name = "NavigationPoint" + navigationPoints.Count;
                         GameObject navPoint = new GameObject(name);
-                        navPoint.transform.position = hit.position;
-                        
+                        navPoint.transform.position = hit_position;
+
                         navPoint.transform.parent = navPoints;
                         navigationPoints.Add(navPoint);
-                        Utils.DrawSphere(hit.position, 0.1f, forInterest? Color.green:Color.cyan, navPoint, "sphere", navPoint); //.layer = LayerMask.NameToLayer("SceneEditor");
+                        Utils.DrawSphere(hit_position, 0.1f, forInterest ? Color.green : Color.cyan, navPoint, "sphere", navPoint); //.layer = LayerMask.NameToLayer("SceneEditor");
                         //Utils.DrawLine(hit.position,new Vector3(position.x, hit.position.y, position.z), Color.yellow);
                         return true;
                     }
@@ -116,12 +162,21 @@ namespace Annotator
                 return false;
             }
 
-            
+
+            infoList.message = "";
             // 根据options和predicates看看再加上哪些感兴趣的物体
             HashSet<GameObject> allInterest = new HashSet<GameObject>();
-            foreach(Option option in infoList.options){
-                foreach(GameObject obj in option.gameObjects.list){
-                    allInterest.Add(obj);
+            foreach (Option option in infoList.options)
+            {
+                foreach (GameObject obj in option.gameObjects.list)
+                {
+                    if (option.option_type == "Answer-回答") continue;
+                    else if (obj == null) infoList.Error($"选项{option.option_type} {option.option_text} 的可操作对象为空！");
+                    else
+                    {
+                        allInterest.Add(obj);
+                    }
+
                 }
             }
             // foreach(Predicate predicate in infoList.predicates){
@@ -129,35 +184,38 @@ namespace Annotator
             //     allInterest.Add(predicate.targetPlace);
             // }
 
-            foreach(GameObject obj in allInterest){
+            foreach (GameObject obj in allInterest)
+            {
                 Vector3 position = Utils.VecXZ(Utils.GetBounds(obj).center);
                 bool success = AddNavPoint(position, true);
-                if(success) {
+                if (success)
+                {
                     // GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     // cube.transform.position = position;
                     // cube.transform.parent = navPoints;
-                    string name = "NavigationPoint"+interestPoints.Count+"-Target";
+                    string name = "NavigationPoint" + interestPoints.Count + "-Target";
                     GameObject navPoint = new GameObject(name);
                     navPoint.transform.position = Utils.GetBounds(obj).center;
                     navPoint.transform.parent = targetPoints;
 
-                    Debug.Log("NavPoint"+navPoint);
+                    Debug.Log("NavPoint" + navPoint);
                     interestPoints.Add(navPoint);
-                    
-                    
+
+
                     Utils.DrawSphere(navPoint.transform.position, 0.11f, Color.red, navPoint, "sphere", navPoint);
                     //navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], navPoint);
                     // Debug.Log("Add interest point"+obj+" "+obj.transform.Find("MeshCenter").gameObject);
                     // interestPoints.Add(obj.transform.Find("MeshCenter").gameObject);
                     // navigationPointToInterestPoint.Add(navigationPoints[navigationPoints.Count-1], obj.transform.Find("MeshCenter").gameObject);
                 }
-                if(!success){
+                if (!success)
+                {
                     Utils.DrawSphere(position, 0.1f, Color.red, null, "sphere", null); //.layer = LayerMask.NameToLayer("SceneEditor");
                     if (!NavMesh.SamplePosition(position, out _, NavigationGraph.SAMPLE_DISTANCE, NavMesh.AllAreas))
-                        Debug.LogError("Could not find a navigation point for the object "+obj);
+                        Debug.LogError("Could not find a navigation point for the object " + obj);
                 }
             }
-            
+
             // 根据options看看再加上哪些感兴趣的物体
             // for(int i=0;i<infoList.options.Count;i++){
             //     foreach(int objectID in infoList.options[i].object_ids){
@@ -180,9 +238,9 @@ namespace Annotator
             // 加入其他物体的导航点
             // for(int i=0;i<infoList.instances.Count;i++) {
             //     if(infoList.instances[i].of_interest) continue;
-                
+
             //     bool isFloor = infoList.instances[i].prefab.StartsWith("LowPolyInterior") && infoList.instances[i].prefab.Contains("Floor");
-                
+
             //     if(isFloor) {
             //         bool success = AddNavPoint(Utils.VecXZ(assetsLoader.sceneObjects.objects[i].position), false);
             //         if(success) interestPoints.Add(null);
@@ -197,20 +255,24 @@ namespace Annotator
             const float UNIT_DISTANCE = 1.0f;
             // Find TaskInstance Component in the whole scene
             TaskInstance[] taskInstances = FindObjectsOfType<TaskInstance>();
-            if(taskInstances.Length == 0) {
+            if (taskInstances.Length == 0)
+            {
                 Debug.LogError("No TaskInstance found in the scene");
                 return;
             }
-            else if(taskInstances.Length > 1) {
+            else if (taskInstances.Length > 1)
+            {
                 Debug.LogError("More than one TaskInstance found in the scene");
                 return;
             }
             TaskInstance taskInstance = taskInstances[0];
             Bounds bounds = Utils.GetBounds(taskInstance.gameObject);
-            Vector3 floor_position = bounds.center-new Vector3(0, bounds.size.y/2, 0);
+            Vector3 floor_position = bounds.center - new Vector3(0, bounds.size.y / 2, 0);
             Vector3 floor_size = bounds.size;
-            for(float x=floor_position[0]-floor_size[0]/2+1;x<floor_position[0]+floor_size[0]/2;x+=UNIT_DISTANCE){
-                for(float z=floor_position[2]-floor_size[2]/2+1;z<floor_position[2]+floor_size[2]/2;z+=UNIT_DISTANCE){
+            for (float x = floor_position[0] - floor_size[0] / 2 + 1; x < floor_position[0] + floor_size[0] / 2; x += UNIT_DISTANCE)
+            {
+                for (float z = floor_position[2] - floor_size[2] / 2 + 1; z < floor_position[2] + floor_size[2] / 2; z += UNIT_DISTANCE)
+                {
                     bool success = AddNavPoint(new Vector3(x, 0, z), false);
                     // if(success) interestPoints.Add(null);
                 }
@@ -226,12 +288,14 @@ namespace Annotator
             // List<GameObject> navigationPoints;
             // List<GameObject> interestPoints;
             Utils.ClearScratch();
-            if(interestPoints == null) {
+            if (interestPoints == null)
+            {
                 return;
                 Debug.Log("interestPoints is null");
                 return;
                 interestPoints = new List<GameObject>();
-                for(int i=0;i<navigationPoints.Count;i++){
+                for (int i = 0; i < navigationPoints.Count; i++)
+                {
                     interestPoints.Add(null);
                 }
             }
@@ -239,8 +303,8 @@ namespace Annotator
             // NavMeshTriangulation
 
             // NavMesh.Raycast 可以判断两点间是否有障碍物（是否两点连线会有在navmesh外的部分）
-            
-            
+
+
             //const float CONNECT_DISTANCE = 2.5f;
             const float CONNECT_DISTANCE = 3.5f;
             nodes = new List<NavigationNode>();
@@ -250,14 +314,14 @@ namespace Annotator
                 GameObject point = navigationPoints[i];
                 NavigationNode node = new NavigationNode
                 {
-                    position = Utils.VecXZ(point.transform.position)+new Vector3(0, 0.1f, 0),
+                    position = Utils.VecXZ(point.transform.position) + new Vector3(0, 0.1f, 0),
                     type = NodeType.Navigable,
                     neighbors = new List<NavigationNode>()
                 };
                 nodes.Add(node);
                 // 连接自己的interest
-                if(targetPoints.transform.Find(point.name+"-Target")!=null)
-                    point = targetPoints.transform.Find(point.name+"-Target").gameObject;
+                if (targetPoints.transform.Find(point.name + "-Target") != null)
+                    point = targetPoints.transform.Find(point.name + "-Target").gameObject;
                 else point = null;
                 // point = interestPoints[i];
                 if (point != null)
@@ -289,7 +353,8 @@ namespace Annotator
             for (int i = 0; i < nodes.Count; i++)
             {
                 NavigationNode thisNode = nodes[i];
-                bool TooDenseAfterAdd(NavigationNode newNode){
+                bool TooDenseAfterAdd(NavigationNode newNode)
+                {
                     // 不要让夹角过于密集
                     bool tooDense = false;
                     foreach (NavigationNode neighbor in thisNode.neighbors)
@@ -310,21 +375,23 @@ namespace Annotator
                     if (thisNode.neighbors.Contains(nodes[j])) continue;
                     NavMeshHit hit;
                     bool blocked = NavMesh.Raycast(thisNode.position, nodes[j].position, out hit, NavMesh.AllAreas);
-                    if (nodes[j].type == NodeType.Navigable && Vector3.Distance(thisNode.position, nodes[j].position) < CONNECT_DISTANCE+0.01f && !blocked) 
+                    if (nodes[j].type == NodeType.Navigable && Vector3.Distance(thisNode.position, nodes[j].position) < CONNECT_DISTANCE + 0.01f && !blocked)
                     {
                         //if(nodes[j].neighbors.Contains(nodes[i])) continue;
-                        if(!TooDenseAfterAdd(nodes[j])) {
+                        if (!TooDenseAfterAdd(nodes[j]))
+                        {
                             thisNode.neighbors.Add(nodes[j]);
                             nodes[j].neighbors.Add(thisNode);
                         }
                     }
                 }
-                
+
                 // 连接其他interest
                 for (int j = 0; j < nodes.Count; j++)
                 {
-                    if(nodes[j].type == NodeType.Interest && Vector3.Distance(thisNode.position, nodes[j].position) < SAMPLE_DISTANCE + 0.01f){
-                        if(!TooDenseAfterAdd(nodes[j])) thisNode.neighbors.Add(nodes[j]);
+                    if (nodes[j].type == NodeType.Interest && Vector3.Distance(thisNode.position, nodes[j].position) < SAMPLE_DISTANCE + 0.01f)
+                    {
+                        if (!TooDenseAfterAdd(nodes[j])) thisNode.neighbors.Add(nodes[j]);
                     }
                 }
 
@@ -370,7 +437,7 @@ namespace Annotator
                             type = NodeType.Interest,
                             neighbors = new List<NavigationNode>()
                         };
-                        
+
                         //Utils.DrawLine(thisNode.position, thisNode.position + newDirection.normalized*0.3f, Color.yellow);
                         thisNode.neighbors.Add(interest);
                         nodes.Add(interest);
@@ -383,31 +450,36 @@ namespace Annotator
                 for (int j = 0; j < nodes[i].neighbors.Count; j++)
                 {
                     Vector3 dir = nodes[i].neighbors[j].position - nodes[i].position;
-                    if(nodes[i].type == NodeType.Navigable && nodes[i].neighbors[j].type==NodeType.Navigable)
-                    Utils.DrawLine(nodes[i].position, nodes[i].position + dir, Color.green); // .layer = LayerMask.NameToLayer("SceneEditor");;
+                    if (nodes[i].type == NodeType.Navigable && nodes[i].neighbors[j].type == NodeType.Navigable)
+                        Utils.DrawLine(nodes[i].position, nodes[i].position + dir, Color.green); // .layer = LayerMask.NameToLayer("SceneEditor");;
                     else
-                    Utils.DrawLine(nodes[i].position, nodes[i].position + dir.normalized*0.5f, Color.yellow); // .layer = LayerMask.NameToLayer("SceneEditor");;
+                        Utils.DrawLine(nodes[i].position, nodes[i].position + dir.normalized * 0.5f, Color.yellow); // .layer = LayerMask.NameToLayer("SceneEditor");;
                 }
             }
         }
-        private NavigationNode CurrentNode(){
+        private NavigationNode CurrentNode()
+        {
             return nodes[currentNode];
         }
-        private NavigationNode FaceNode(){
+        private NavigationNode FaceNode()
+        {
             return nodes[currentNode].neighbors[faceNode];
         }
 
         private bool isLookingUpward = false;
 
-        public void ResetAgentToNearest(){
+        public void ResetAgentToNearest()
+        {
             // 找到最近的node
             float minDistance = float.MaxValue;
             int nearestNode = -1;
-            for(int i=0;i<nodes.Count;i++ ){
+            for (int i = 0; i < nodes.Count; i++)
+            {
                 NavigationNode node = nodes[i];
-                if(node.type != NodeType.Navigable) continue;
+                if (node.type != NodeType.Navigable) continue;
                 float distance = Vector3.Distance(node.position, playmateArmature.transform.position);
-                if(distance < minDistance){
+                if (distance < minDistance)
+                {
                     minDistance = distance;
                     nearestNode = i;
                 }
@@ -417,9 +489,11 @@ namespace Annotator
             // 在node中找到和foward方向最接近的neighbor
             float minAngle = float.MaxValue;
             int nearestNeighbor = -1;
-            for(int i=0;i<CurrentNode().neighbors.Count;i++ ){
+            for (int i = 0; i < CurrentNode().neighbors.Count; i++)
+            {
                 float angle = Vector3.Angle(CurrentNode().neighbors[i].position - CurrentNode().position, playmateArmature.transform.forward);
-                if(angle < minAngle){
+                if (angle < minAngle)
+                {
                     minAngle = angle;
                     nearestNeighbor = i;
                 }
@@ -432,43 +506,54 @@ namespace Annotator
             // playmateArmature.GetComponent<BasePersonController>().SetCameraPitch(45);
             isLookingUpward = false;
         }
-        public void OnKeyboard(){
-            
+        public void OnKeyboard()
+        {
+
         }
 
-        public void RefreshNavigationPoints(){
+        public void RefreshNavigationPoints()
+        {
             navigationPoints = new List<GameObject>();
             interestPoints = new List<GameObject>();
-            foreach(Transform child in transform){
+            foreach (Transform child in transform)
+            {
                 navigationPoints.Add(child.gameObject);
             }
-            foreach(Transform child in GameObject.Find("TargetPoints").transform){
+            foreach (Transform child in GameObject.Find("TargetPoints").transform)
+            {
                 bool valid = false;
-                foreach(Transform nav in GameObject.Find("NavPoints").transform){
-                    if(nav.name == child.name.Replace("-Target", "")){
+                foreach (Transform nav in GameObject.Find("NavPoints").transform)
+                {
+                    if (nav.name == child.name.Replace("-Target", ""))
+                    {
                         valid = true;
                     }
                 }
-                if(!valid) DestroyImmediate(child.gameObject);
+                if (!valid) DestroyImmediate(child.gameObject);
                 else interestPoints.Add(child.gameObject);
             }
         }
-        public void Update(){
+        public void Update()
+        {
             bool changed = false;
-            foreach(Transform child in transform){
-                if(child.hasChanged) {
+            foreach (Transform child in transform)
+            {
+                if (child.hasChanged)
+                {
                     changed = true;
                     break;
                 }
             }
-            if(changed) {
+            if (changed)
+            {
                 RefreshNavigationPoints();
                 BuildNavigationGraph();
             }
         }
 
-        public void OnTransformChildrenChanged(){
-            if(isCreating) return;
+        public void OnTransformChildrenChanged()
+        {
+            if (isCreating) return;
             Debug.Log("OnTransformChildrenChanged");
             RefreshNavigationPoints();
             BuildNavigationGraph();
