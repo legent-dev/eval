@@ -19,10 +19,39 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
     eval_folder = os.path.abspath(eval_folder)
 
-    if not task_settings:
-        task_settings = get_task_settings(eval_folder)
-    if not task_ids:
-        task_ids = list(range(len(task_settings)))
+    if run_one_task_instance:
+        from legent.utils.io import load_json
+        task_settings = [{"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}]
+        task_setting = task_settings[0]
+        task_setting["scene"]["task_instance"] = load_json(run_one_task_instance)
+        task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
+        task_setting["scene"]["instances"] = [{
+            "prefab":task_setting["scene"]["task_instance"]["scene_path"],
+
+            "position": [0,0,0],
+            "rotation": [0,0,0],
+            "scale": [1,1,1],
+            "parent": 0,
+            "type": "kinematic"
+        }]
+        task_setting["scene"]["walls"] = []
+        task_setting["scene"]["floors"] = []
+        task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
+        task_setting["scene"]["agent"]["rotation"] = task_setting["scene"]["task_instance"]["agent_rotation"]
+        
+        for option in task_setting["scene"]["task_instance"]["options"]:
+            if option["option_type"] == "Answer":
+                option["option_text"] =  f"answer \"{option['option_text']}\""
+        for predicate in task_setting["scene"]["task_instance"]["predicates"]:
+            if predicate["predicate_type"] == "choose":
+                predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
+        
+        task_ids = [0]
+    else:
+        if not task_settings:
+            task_settings = get_task_settings(eval_folder)
+        if not task_ids:
+            task_ids = list(range(len(task_settings)))
 
     print(len(task_settings), "tasks")
     store_json(task_settings, f"task_settings.json")
@@ -157,32 +186,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # api_calls = [SetVideoRecordingPath("eval_video")] if use_video else []
             # 初始化不需要录制视频
             api_calls = []
-            if run_one_task_instance:
-                from legent.utils.io import load_json
-                task_setting["scene"]["task_instance"] = load_json(run_one_task_instance)
-                task_setting["scene"]["instances"] = [{
-                    "prefab":task_setting["scene"]["task_instance"]["scene_path"],
-
-                    "position": [0,0,0],
-                    "rotation": [0,0,0],
-                    "scale": [1,1,1],
-                    "parent": 0,
-                    "type": "kinematic"
-                }]
-                task_setting["scene"]["walls"] = []
-                task_setting["scene"]["floors"] = []
-                task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
-                task_setting["scene"]["agent"]["rotation"] = task_setting["scene"]["task_instance"]["agent_rotation"]
                 
-                for option in task_setting["scene"]["task_instance"]["options"]:
-                    if option["option_type"] == "Answer":
-                        option["option_text"] =  f"answer \"{option['option_text']}\""
-                for predicate in task_setting["scene"]["task_instance"]["predicates"]:
-                    if predicate["predicate_type"] == "choose":
-                        predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
-            else:
-                print(task_setting["task"])
-                print("Predicates:", task_setting["predicates"])
+            print(task_setting["task"])
             obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
             if run_one_task_instance:
                 task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
@@ -191,7 +196,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     import re
                     task_setting["predicates"][i] = re.sub(r"\s+", " ", task_setting["predicates"][i])
                 print(task_setting["scene"]["task_instance"]["task_text"])
-                print("Predicates:", task_setting["predicates"])
+            print("Predicates:", task_setting["predicates"])
             pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance)
 
             options = obs.game_states["option_mode_info"]["options"]
