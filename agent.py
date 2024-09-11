@@ -273,7 +273,10 @@ class AgentHuman(AgentBase):
         while True:
             obs = self.env.step()
             if obs.text != "":
-                action.action_choice = int(obs.text)
+                try:
+                    action.action_choice = int(obs.text)
+                except:
+                    continue
                 return action
 
 
