@@ -267,14 +267,20 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
 
                 elif predicate.startswith("agent_at"):
                     splits = predicate.split(" ")
+                    if len(splits) == 3:
+                        splits = splits[:-1]
                     assert len(splits) == 2
                     return PredicateAgentAt(int(splits[1]))
                 elif predicate.startswith("agent_near"):
                     splits = predicate.split(" ")
+                    if len(splits) == 3:
+                        splits = splits[:-1]
                     assert len(splits) == 2
                     return PredicateAgentNear(int(splits[1]))
                 elif predicate.startswith("agent_pass"):
                     splits = predicate.split(" ")
+                    if len(splits) == 3:
+                        splits = splits[:-1]
                     assert len(splits) == 2
                     return PredicateAgentPass(int(splits[1]))
                 elif predicate.startswith("at"):
@@ -300,6 +306,8 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                     return PredicateFurther(int(splits[1]), int(splits[2]), obs)
                 elif predicate.startswith("grab"):
                     splits = predicate.split(" ")
+                    if len(splits) == 3:
+                        splits = splits[:-1]
                     assert len(splits) == 2
                     return PredicateGrab(int(splits[1]))
         pred_list.append(build_one_predicate(predicates[i]))
