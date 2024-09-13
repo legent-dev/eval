@@ -166,6 +166,7 @@ namespace Annotator
             infoList.message = "";
             // 根据options和predicates看看再加上哪些感兴趣的物体
             HashSet<GameObject> allInterest = new HashSet<GameObject>();
+            if(infoList.options != null)
             foreach (Option option in infoList.options)
             {
                 foreach (GameObject obj in option.gameObjects.list)
