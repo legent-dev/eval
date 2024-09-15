@@ -208,7 +208,7 @@ class PredicateAgentPass(Predicate):
         self.passed = False
 
     def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
-        if passed:
+        if self.passed:
             return 1, {}
         instances = obs.game_states["instances"]
         d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
@@ -217,6 +217,20 @@ class PredicateAgentPass(Predicate):
             return 1, {}
         else:
             return 0, {}
+        
+class PredicateSpecialActionSuccess(Predicate):
+    def __init__(self, action_text) -> None:
+        self.action_text = action_text
+        self.passed = False
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        if self.passed:
+            return 1, {}
+        if options[action.action_choice] == self.action_text:
+            if obs.game_states["option_mode_info"]["feedback"] == "success":
+                self.passed = True
+                return 1, {}
+        return 0, {}
 
 
 def build_predicate(predicates, obs, old_version) -> List[Predicate]:
@@ -310,12 +324,16 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                         splits = splits[:-1]
                     assert len(splits) == 2
                     return PredicateGrab(int(splits[1]))
+                elif predicate.startswith("special_action_succes"):
+                    splits = predicate.split(" ", maxsplit=1)
+                    return PredicateSpecialActionSuccess(splits[1])
         pred_list.append(build_one_predicate(predicates[i]))
     return pred_list
 
 
 
 def get_feedback(action: str, prev_obs, obs):
+    return obs.game_states["option_mode_info"]["feedback"]
     action = action.lower()
     if action.startswith("grab"):
         if prev_obs.game_states["agent_grab_instance"] == -1 and obs.game_states["agent_grab_instance"] != -1:

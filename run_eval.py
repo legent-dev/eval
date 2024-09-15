@@ -24,6 +24,17 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         task_settings = [{"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}]
         task_setting = task_settings[0]
         task_setting["scene"]["task_instance"] = load_json(run_one_task_instance)
+        scene_path = task_setting["scene"]["task_instance"]["scene_path"]
+        
+        if not os.path.exists(scene_path):
+            scene_path = "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/"+scene_path.split("/")[-1]
+            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
+            print(task_setting["scene"]["task_instance"]["scene_path"])
+        if not os.path.exists(scene_path):
+            scene_path = "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/"+scene_path.split("/")[-1]
+            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
+            print(task_setting["scene"]["task_instance"]["scene_path"])
+        
         task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
         task_setting["scene"]["instances"] = [{
             "prefab":task_setting["scene"]["task_instance"]["scene_path"],
@@ -246,7 +257,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 prev_obs = obs
 
                 save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
-                print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}\n")
+                print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback}\n")
                 done = 1
                 for predicate in pred_list:
                     _done, info = predicate.task_done(action, obs, options, task_setting)
@@ -325,3 +336,10 @@ if __name__ == "__main__":
     # python run_eval.py --agent gemini-flash --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
     # python run_eval.py --agent rotate --max_steps 25 --max_images 25 --port 50058 --sync --test_case_start=0 --test_case_end=100
     # python run_eval.py --agent random --max_steps 3 --max_images 25 --port 50051 --sync --test_case_start=0 --test_case_end=100
+    
+    # python run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance F:/UnityProjects/SceneProcessor/Assets/Tasks/task-20240912043700-102344094-Is_my_computer_on_in_the_bedroom_.json
+    # python run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance F:/Downloads/task-20240913110854-FloorPlan11_physics-Check_what_s_on_the_other_side_of_the_bread__.json
+    
+    
+    # python run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance F:/UnityProjects/SceneProcessor/Assets/Tasks/task-20240915152356-102344280-Reach_the_front_door_after_passing_through_the_hallway_and_turning_right__.json
+    # 
