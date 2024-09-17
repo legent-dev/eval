@@ -11,13 +11,16 @@ from agent import *
 
 use_video = False
 
-def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance, run_all_task_instance):
 
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
 
     eval_folder = os.path.abspath(eval_folder)
+    if run_all_task_instance:
+        eval_folder = "eval_annotated_20240916_1946"
+        # Start episode 86崩溃了
 
     if run_one_task_instance:
         from legent.utils.io import load_json
@@ -58,9 +61,60 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
         
         task_ids = [0]
+    elif run_all_task_instance:
+        task_folder = eval_folder
+        task_settings = []
+        for filename in [file for file in os.listdir(task_folder) if file.endswith(".json")]:
+            path = f"{task_folder}/{filename}"
+            from legent.utils.io import load_json
+            task_setting = {"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}
+            task_setting["scene"]["task_instance"] = load_json(path)
+            scene_path = task_setting["scene"]["task_instance"]["scene_path"]
+
+            scene_path = scene_path.split("/")[-1]
+            if os.path.exists(f"{task_folder}/scenes/AI2THOR/{scene_path}"):
+                scene_path = f"{task_folder}/scenes/AI2THOR/{scene_path}"
+            elif os.path.exists(f"{task_folder}/scenes/HSSD/{scene_path}"):
+                scene_path = f"{task_folder}/scenes/HSSD/{scene_path}"
+            elif os.path.exists(f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"):
+                scene_path = f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"
+            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
+
+            task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
+            print(scene_path, task_setting["task"])
+            task_setting["scene"]["instances"] = [{
+                "prefab":task_setting["scene"]["task_instance"]["scene_path"],
+
+                "position": [0,0,0],
+                "rotation": [0,0,0],
+                "scale": [1,1,1],
+                "parent": 0,
+                "type": "kinematic"
+            }]
+            task_setting["scene"]["walls"] = []
+            task_setting["scene"]["floors"] = []
+            task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
+            task_setting["scene"]["agent"]["rotation"] = task_setting["scene"]["task_instance"]["agent_rotation"]
+
+            for option in task_setting["scene"]["task_instance"]["options"]:
+                if option["option_type"] == "Answer":
+                    option["option_text"] =  f"answer \"{option['option_text']}\""
+            for predicate in task_setting["scene"]["task_instance"]["predicates"]:
+                if predicate["predicate_type"] == "choose":
+                    predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
+            task_settings.append(task_setting)
+
+        task_ids = list(range(len(task_settings)))
     else:
         if not task_settings:
             task_settings = get_task_settings(eval_folder)
+            for task_setting in task_settings:
+                for instance in task_setting["scene"]["instances"]:
+                    if instance["prefab"].endswith(".fbx"):
+                        instance["prefab"] = instance["prefab"].replace(".fbx", ".glb")
+                        instance["scale"] = [1, 1, 1]
+                        instance["rotation"][1] += 180
+                        del instance["mesh_materials"]
         if not task_ids:
             task_ids = list(range(len(task_settings)))
 
@@ -96,7 +150,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
     path = "C:/users/cheng/desktop/ligent_dev/.legent/env/client/LEGENT-win-202408261101"
     path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20240827"
-    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
+    env = Environment(env_path=None, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
@@ -126,12 +180,12 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     store_json(run_args, f"{save_path}/run_args.json")
     def save_all_scenes_to_gltf():
         used_scenes = set()
-        inspect_only = True
+        inspect_only = False
         for task_i in task_ids:
             task_setting = task_settings[task_i]
             file = task_setting["scene_file"]
             number = int(file.split("/")[-1].split(".")[0].split("_")[-1])
-            # if "bedroom" in file or "livingroom" in file or "two" in file or "three" in file:
+            # if "bedroom" in file or "livingroom" in file or "two" in file:
             #     continue
             # if number<=3:
             #     continue
@@ -139,11 +193,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             #     continue 
             # if not ("two" in file):
             #     continue
-            if inspect_only:
-                if not ("living" in file and number==0):
-                    continue 
-                # if not ("four" in file and number==1):
-                #     continue 
+            # if inspect_only:
+            #     if not ("living" in file and number==0):
+            #         continue 
+            #     # if not ("four" in file and number==1):
+            #     #     continue 
             if file in used_scenes:
                 continue
             
@@ -165,19 +219,28 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             used_scenes.add(file)
             
             # use gltFast, gltFast需要旋转180度
-            if not inspect_only:
+            if not inspect_only or True:
                 for instance in task_setting["scene"]["instances"]:
                     if instance["prefab"].endswith(".glb"):
                         instance["rotation"][1] +=180
-            
+            dir_and_file = '/'.join(file.split("/")[-2:]).split(".")[0]
+            if os.path.exists(f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file.replace('/', '_')}.glb"):
+                print(f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file.replace('/', '_')}.glb exists")
+                continue
+            # if dir_and_file.replace('/', '_') != "livingroom_15_scene_13":
+            #     continue
             env.reset(ResetInfo(scene=task_setting["scene"]))
+            for i in range(180):
+                env.step()
+                print(".", end="",flush=True)
             if inspect_only:
                 while True:
                     env.step(Action())
             else:
-                dir_and_file = '/'.join(file.split("/")[-2:]).split(".")[0]
-                os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes/"+dir_and_file.split("/")[0], exist_ok=True)
-                path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file}.glb"
+                # os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes/"+dir_and_file.split("/")[0], exist_ok=True)
+                # path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file}.glb"
+                os.makedirs(f"F:/Downloads/EmaBench_EMNLP_scenes", exist_ok=True)
+                path = f"F:/Downloads/EmaBench_EMNLP_scenes/{dir_and_file.replace('/', '_')}.glb"
                 env.step(Action(api_calls=[SaveSceneToGltf(path)]))
         raise
     
@@ -200,7 +263,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 
             print(task_setting["task"])
             obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
-            if run_one_task_instance:
+            if run_one_task_instance or run_all_task_instance:
                 task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
                 # replace multiple spaces with one space
                 for i in range(len(task_setting["predicates"])):
@@ -208,7 +271,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     task_setting["predicates"][i] = re.sub(r"\s+", " ", task_setting["predicates"][i])
                 print(task_setting["scene"]["task_instance"]["task_text"])
             print("Predicates:", task_setting["predicates"])
-            pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance)
+            pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance and not run_all_task_instance)
 
             options = obs.game_states["option_mode_info"]["options"]
             feedback = None
@@ -325,11 +388,12 @@ if __name__ == "__main__":
     parser.add_argument("--save_path", type=str, default=None)
     parser.add_argument("--sync", action="store_true")
     parser.add_argument("--run_one_task_instance", type=str, default=None)
+    parser.add_argument("--all", action="store_true")
     args = parser.parse_args()
     task_ids = None
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
-    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance)
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all)
 
     # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50058 --test_case_start=14 --test_case_end=100
     # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
