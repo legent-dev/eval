@@ -2,10 +2,11 @@
     "name": "Annotate.Runtime",
     "rootNamespace": "",
     "references": [
-        "NaughtyAttributes.Core",
         "Unity.AI.Navigation",
         "Annotate.Unity.AI.Navigation.Samples.Initialization.Editor",
-        "Unity.AI.Navigation.Editor"
+        "Unity.AI.Navigation.Editor",
+        "NaughtyAttributes.Editor",
+        "NaughtyAttributes.Core"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

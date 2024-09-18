@@ -182,6 +182,37 @@ namespace Annotator
     }
 
     [Serializable]
+    public class Human
+    {
+        [Label("人物物体"), AllowNesting]
+        [OnValueChanged("OnHumanChanged")]
+        public GameObject human;
+        [HideInInspector]
+        public List<float> human_position;
+        [HideInInspector]
+        public List<float> human_rotation;
+
+        [HideInInspector]
+        public string asset;
+
+        [Label("姿势"), AllowNesting]
+        [Dropdown("poses")]
+        [OnValueChanged("OnPoseChanged")]
+        public string pose="stand";
+        
+        [Label("右手指向物体(SpecialPoint,可不填)"), AllowNesting]
+        public GameObject pointingTo;
+        [HideInInspector]
+        public string pointing_to;
+        
+        private List<string> poses { get { return new List<string>() { "stand", "sit", "lay"}; } }
+        
+        private void OnHumanChanged(){
+            // Add an capsule
+        }
+    }
+
+    [Serializable]
     [RequireComponent(typeof(TaskLoader))]
     public class TaskInstance : MonoBehaviour
     {
@@ -244,6 +275,9 @@ namespace Annotator
                 obj.SetActive(false);
             }
         }
+
+        [Label("人物-Social任务")]
+        public List<Human> humans;
 
         // show task_template as "任务文本" in spector
         [Label("任务模板")]
@@ -353,6 +387,25 @@ namespace Annotator
                         }
                     }
                 }
+                // 为所有human创建一个capsule
+                if(humans!=null){
+                    Debug.Log("Create Capsule");
+                    foreach(Human h in humans){
+                        Debug.Log("Create Capsule for "+h.human.name);
+                        GameObject human = h.human;
+                        if(human == null) continue;
+
+                        if(human.transform.Find("Capsule")==null){
+                            GameObject capsule = GameObject.CreatePrimitive(PrimitiveType.Capsule);
+                            capsule.name = "Capsule";
+                            // capsule.GetComponent<MeshRenderer>().enabled = false;
+                            capsule.transform.position = human.transform.position;
+                            capsule.transform.rotation = human.transform.rotation;
+                            capsule.transform.localScale = new Vector3(0.4f, 1f, 0.4f);
+                            capsule.transform.parent = human.transform;
+                        }
+                    }
+                }
                 // 所有removedObjects都要隐藏，防止影响到navMesh生成
                 foreach(GameObject go in removedObjects) noBakeObjects.Add(go);
                 foreach(GameObject go in noBakeObjects) go.SetActive(false);
@@ -456,11 +509,21 @@ namespace Annotator
             if(path.StartsWith("NavigationPoint")||path.StartsWith("SpecialPoint")){
                 return GameObject.Find(path).transform;
             }
+            if(path.StartsWith("Ch") && path.EndsWith("_nonPBR")){
+                if(GameObject.Find(path)==null) {
+                    string assetPath = "Assets/Mixamo/" + path + ".fbx";
+                    GameObject o = (GameObject)AssetDatabase.LoadAssetAtPath(assetPath, typeof(GameObject));
+                    o = Instantiate(o);
+                    o.name = path;
+                }
+                return GameObject.Find(path).transform;
+            }
             string[] names = path.Split('/');
             GameObject obj = GameObject.Find(names[0]);
             for(int i = 1; i < names.Length; i++){
                 obj = obj.transform.Find(names[i]).gameObject;
             }
+            Debug.Log("LoadPath "+path);
             return obj.transform;
         }
         
@@ -508,6 +571,24 @@ namespace Annotator
             removed_objects = new List<string>();
             foreach(GameObject obj in removedObjects){
                 removed_objects.Add(GetPath(obj.transform));
+            }
+
+            // 人物改成物体的路径
+            foreach(Human human in humans){
+                human.human_position = new List<float>(){
+                    human.human.transform.position.x,
+                    human.human.transform.position.y,
+                    human.human.transform.position.z
+                };
+                human.human_rotation = new List<float>(){
+                    human.human.transform.rotation.eulerAngles.x,
+                    human.human.transform.rotation.eulerAngles.y,
+                    human.human.transform.rotation.eulerAngles.z
+                };
+                human.asset = human.human.name;
+                if(human.pointingTo!=null){
+                    human.pointing_to = GetPath(human.pointingTo.transform);
+                }
             }
             
             HashSet<string> specialPointNames = new HashSet<string>();
@@ -657,6 +738,13 @@ namespace Annotator
             foreach(string path in floor_objects){
                 Debug.Log("LoadPath "+path);
                 floorObjects.Add(LoadPath(path).gameObject);
+            }
+            // 人物位置转换成人物
+            foreach(Human human in humans){
+                human.human = LoadPath(human.asset).gameObject;
+                human.human.transform.position = new Vector3(human.human_position[0], human.human_position[1], human.human_position[2]);
+                human.human.transform.rotation = Quaternion.Euler(human.human_rotation[0], human.human_rotation[1], human.human_rotation[2]);
+                if(human.pointing_to!=null&&human.pointing_to!="") human.pointingTo = LoadPath(human.pointing_to).gameObject;
             }
             DestroyNavPoints();
             InitScene();

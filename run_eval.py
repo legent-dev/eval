@@ -89,7 +89,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
             task_settings.append(task_setting)
 
-        task_ids = list(range(len(task_settings)))
+        task_ids = list(range(min(task_ids), len(task_settings)))
     else:
         if not task_settings:
             task_settings = get_task_settings(eval_folder)
@@ -135,7 +135,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
     path = "C:/users/cheng/desktop/ligent_dev/.legent/env/client/LEGENT-win-202408261101"
     path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20240827"
-    env = Environment(env_path=None, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
+    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
@@ -304,10 +304,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 new_options = obs.game_states["option_mode_info"]["options"]
                 # success_calculated_by_env = obs.game_states["option_mode_info"]["success"]
                 feedback = get_feedback(options[action.action_choice], prev_obs, obs)
+                feedback_content = obs.game_states["option_mode_info"]["feedback_content"]
                 prev_obs = obs
 
                 save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
-                print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback}\n")
+                print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback} - {feedback_content}\n")
                 done = 1
                 for predicate in pred_list:
                     _done, info = predicate.task_done(action, obs, options, task_setting)
@@ -393,4 +394,8 @@ if __name__ == "__main__":
     
     
     # python run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance F:/UnityProjects/SceneProcessor/Assets/Tasks/task-20240915152356-102344280-Reach_the_front_door_after_passing_through_the_hallway_and_turning_right__.json
-    # 
+    
+    # 运行所有测例
+    # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50051 --test_case_start=0 --test_case_end=100 --all
+    
+    
