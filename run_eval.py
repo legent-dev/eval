@@ -89,6 +89,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
             task_settings.append(task_setting)
 
+        if task_ids is None:
+            task_ids = [0]
         task_ids = list(range(min(task_ids), len(task_settings)))
     else:
         if not task_settings:
