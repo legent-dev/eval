@@ -171,7 +171,7 @@ namespace Annotator
             {
                 foreach (GameObject obj in option.gameObjects.list)
                 {
-                    if (option.option_type == "Answer-回答") continue;
+                    if (option.option_type == "Answer-回答" || option.option_type == "SpecialAction-特殊动作") continue;
                     else if (obj == null) infoList.Error($"选项{option.option_type} {option.option_text} 的可操作对象为空！");
                     else
                     {

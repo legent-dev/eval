@@ -10,6 +10,17 @@ using UnityEngine.SceneManagement;
 
 namespace Annotator
 {
+    
+    [System.Serializable]
+    public class SpecialActionFeedback {
+        [Label("执行位置和所需物体"), AllowNesting]
+        public List<GameObject> requiredObjects;
+
+        [HideInInspector]
+        public List<string> required_objects;
+        [Label("执行反馈"), AllowNesting]
+        public string feedback;
+    }
     [System.Serializable]
 
     public class Option
@@ -26,10 +37,13 @@ namespace Annotator
         [OnValueChanged("OnOptionChanged")]
         public string option_type = "Answer-回答";
         // private List<string> optionTypes { get { return new List<string>() { "Answer", "PickUp", "PlaceTo", "OpenDrawer", "OpenDoor", "CloseDrawer", "CloseDoor" }; } }
-        private List<string> optionTypes { get { return new List<string>() { "Answer-回答", "PickUp-拿起", "PlaceTo-放到", "OpenDrawer-开抽屉", "OpenDoor-开门", "CloseDrawer-关抽屉", "CloseDoor-关门" }; } }
+        private List<string> optionTypes { get { return new List<string>() { "Answer-回答", "PickUp-拿起", "PlaceTo-放到", "OpenDrawer-开抽屉", "OpenDoor-开门", "CloseDrawer-关抽屉", "CloseDoor-关门", "SpecialAction-特殊动作" }; } }
 
-        bool NeedObject(){
-            return option_type != "Answer-回答";
+        public bool NeedObject(){
+            return !option_type.StartsWith("Answer") && !option_type.StartsWith("SpecialAction");
+        }
+        public bool IsSpecial(){
+            return option_type.StartsWith("SpecialAction");
         }
         public void OnOptionChanged()
         {
@@ -40,28 +54,43 @@ namespace Annotator
                 {"OpenDrawer", "OpenDrawer-开抽屉"},
                 {"CloseDrawer", "CloseDrawer-关抽屉"},
                 {"OpenDoor", "OpenDoor-开门"},
-                {"CloseDoor", "CloseDoor-关门"}
+                {"CloseDoor", "CloseDoor-关门"},
+                {"SpecialAction", "SpecialAction-特殊动作"}
+            };
+            HashSet<string> optionPrefix = new HashSet<string>(){
+                "pick up the ", "place to the ", "open the drawer of the ", "close the drawer of the ", "open the door of the ", "close the door of the "
             };
             if(saved2option.ContainsKey(option_type)){
                 option_type = saved2option[option_type];
             }
-            bool needObject = option_type != "Answer-回答";
-            if (needObject)
+            if(option_text == null || option_text == "" || optionPrefix.Contains(option_text)){
+                string t = option_type.Split('-')[0];
+                if(t == "PickUp") option_text = "pick up the ";
+                else if(t == "PlaceTo") option_text = "place to the ";
+                else if(t == "OpenDrawer") option_text = "open the drawer of the ";
+                else if(t == "CloseDrawer") option_text = "close the drawer of the ";
+                else if(t == "OpenDoor") option_text = "open the door of the ";
+                else if(t == "CloseDoor") option_text = "close the door of the ";
+                else if(t == "SpecialAction") option_text = "";
+            }
+            if (NeedObject())
             {
-                if(option_text == null || option_text == ""){
-                    string t = option_type.Split('-')[0];
-                    if(t == "PickUp") option_text = "pick up the ";
-                    else if(t == "PlaceTo") option_text = "place to the ";
-                    else if(t == "OpenDrawer") option_text = "open the drawer of the";
-                    else if(t == "CloseDrawer") option_text = "close the drawer of the";
-                    else if(t == "OpenDoor") option_text = "open the door of the";
-                    else if(t == "CloseDoor") option_text = "close the door of the";
-                }
                 if (gameObjects == null || gameObjects.list == null || gameObjects.list.Count == 0)
                 {
                     gameObjects = new NestedArray<GameObject>();
                     gameObjects.list = new List<GameObject>();
                     gameObjects.list.Add(null);
+                }
+            }
+            if(IsSpecial()){
+                if(specialActionFeedbacks == null || specialActionFeedbacks.list == null || specialActionFeedbacks.list.Count == 0){
+                    specialActionFeedbacks = new NestedArray<SpecialActionFeedback>();
+                    specialActionFeedbacks.list = new List<SpecialActionFeedback>();
+                    SpecialActionFeedback feedback = new SpecialActionFeedback();
+                    feedback.feedback = "success";
+                    feedback.requiredObjects = new List<GameObject>();
+                    feedback.requiredObjects.Add(null);
+                    specialActionFeedbacks.list.Add(feedback);
                 }
             }
         }
@@ -80,7 +109,8 @@ namespace Annotator
         [HideInInspector]
         public List<string> objects;
 
-
+        [Label("Required Objects=可执行位置+所需物体(没有可不填), 执行反馈"), AllowNesting, ShowIf("IsSpecial")]
+        public NestedArray<SpecialActionFeedback> specialActionFeedbacks;
     }
 
     [System.Serializable]
@@ -95,6 +125,9 @@ namespace Annotator
 
         [Label("正确回答"), AllowNesting, ShowIf("Need0Param")]
         public string right_answer_content;
+        
+        [Label("正确特殊动作"), AllowNesting, ShowIf("IsSpecial")]
+        public string right_special_action;
 
         [Label("参数一"), AllowNesting, ShowIf("Need1Param")]
         //[NonSerialized]
@@ -108,37 +141,29 @@ namespace Annotator
         [HideInInspector]
         public string predicate_place;
 
+        bool IsSpecial(){
+            return predicate_type == "special_action_success";
+        }
         bool Need0Param(){
+            if(IsSpecial()) return false;
             return predicate_type == "choose";
         }
         bool Need1Param(){
+            if(IsSpecial()) return false;
             bool need = predicate_type!="choose";
             if(!need) targetObject = null;
             return need;
         }
         bool Need2Param(){
+            if(IsSpecial()) return false;
             bool need = predicate_type != "choose" && !predicate_type.StartsWith("agent") && !predicate_type.StartsWith("grab");
             if(!need) targetPlace = null;
             return need;
         }
 
 
-        private List<string> predicateTypes { get { return new List<string>() { "choose", "agent_at", "agent_near", "at", "near", "not_at", "agent_pass", "grab", "closer", "further"}; } }
+        private List<string> predicateTypes { get { return new List<string>() { "choose", "agent_at", "agent_near", "at", "special_action_success","near", "not_at", "agent_pass", "grab", "closer", "further"}; } }
         //  "in", "on", "near", "not in", "not on"
-
-        public void OnPredicateChanged()
-        {
-            
-            // needObject = option_type != "Answer";
-            // if (needObject)
-            // {
-            //     if (gameObjects == null)
-            //     {
-            //         gameObjects = new NestedArray<GameObject>();
-            //         gameObjects.list = new GameObject[0];
-            //     }
-            // }
-        }
 
     }
 
@@ -342,6 +367,7 @@ namespace Annotator
             // 遍历所有子物体
             foreach (Transform child in allChildren)
             {
+                // continue;
                 // 跳过父物体本身
                 if (child == gameObject.transform) continue;
 
@@ -352,6 +378,7 @@ namespace Annotator
                     
                     bool MeshValid(MeshFilter meshFilter)
                     {
+                        // if(meshFilter.gameObject.GetComponent<MeshRenderer>()!=null){};
                         if (meshFilter != null && meshFilter.sharedMesh != null)
                         {
                             if (meshFilter.sharedMesh.vertexCount < 3) return false; // 数量太小加MeshCollider会报错
@@ -543,7 +570,20 @@ namespace Annotator
             for(int i = 0; i < options.Count; i++){
                 options[i].option_type = options[i].option_type.Split('-')[0];
                 options[i].objects = new List<string>();
-                if(options[i].option_type!="Answer"){
+                if(options[i].IsSpecial()){
+                    HashSet<GameObject> interest_objects = new HashSet<GameObject>();
+                    for (int j = 0; j < options[i].specialActionFeedbacks.list.Count; j++)
+                    {
+                        SpecialActionFeedback feedback = options[i].specialActionFeedbacks.list[j];
+                        feedback.required_objects = new List<string>();
+                        foreach(GameObject go in feedback.requiredObjects){
+                            feedback.required_objects.Add(GetPath(go.transform));
+                            interest_objects.Add(go);
+                        }
+                    }
+                    options[i].gameObjects.list = new List<GameObject>(interest_objects);
+                }
+                if(options[i].NeedObject()||options[i].IsSpecial()){
                     for(int j = 0; j < options[i].gameObjects.list.Count; j++){
                         if(options[i].gameObjects.list[j] == null){
                             Error("选项"+options[i].option_type+" " + options[i].option_text + "的物体为空");
@@ -660,12 +700,27 @@ namespace Annotator
                     }
                     option.gameObjects.list.Add(obj);
                 }
+                if(option.IsSpecial()){
+                    for (int i = 0; i < option.specialActionFeedbacks.list.Count; i++)
+                    {
+                        SpecialActionFeedback feedback = option.specialActionFeedbacks.list[i];
+                        feedback.requiredObjects = new List<GameObject>();
+                        foreach(string name in feedback.required_objects){
+                            GameObject obj = LoadPath(name).gameObject;
+                            if(obj == null){
+                                Error("找不到物体：" + name);
+                                continue;
+                            }
+                            feedback.requiredObjects.Add(obj);
+                        }
+                    }
+                }
             }
             foreach(Predicate predicate in predicates){
-                if(predicate.predicate_object != null){
+                if(predicate.predicate_object != null && predicate.predicate_object != ""){
                     predicate.targetObject = LoadPath(predicate.predicate_object).gameObject;
                 }
-                if(predicate.predicate_place != null){
+                if(predicate.predicate_place != null && predicate.predicate_place != ""){
                     predicate.targetPlace = LoadPath(predicate.predicate_place).gameObject;
                 }
             }

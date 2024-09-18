@@ -37,6 +37,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             scene_path = "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/"+scene_path.split("/")[-1]
             task_setting["scene"]["task_instance"]["scene_path"] = scene_path
             print(task_setting["scene"]["task_instance"]["scene_path"])
+        if not os.path.exists(scene_path):
+            scene_path = "F:/codes/github-LEGENT/eval/eval_annotated_20240916_1946/scenes/ObjaverseSynthetic/"+scene_path.split("/")[-1]
+            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
+            print(task_setting["scene"]["task_instance"]["scene_path"])
         
         task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
         task_setting["scene"]["instances"] = [{
@@ -79,6 +83,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             elif os.path.exists(f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"):
                 scene_path = f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"
             task_setting["scene"]["task_instance"]["scene_path"] = scene_path
+            task_setting["scene_file"] = scene_path
 
             task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
             print(scene_path, task_setting["task"])
@@ -249,6 +254,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         for task_i in task_ids:
 
             print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
+            # if task_i < 86:
+            #     continue
             print(task_i, task_settings[task_i]["scene_file"])
             task_setting = task_settings[task_i]
             # for wall in task_setting["scene"]["walls"]:
