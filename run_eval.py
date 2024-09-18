@@ -1,5 +1,5 @@
 import os
-from legent import Environment, Action, ActionFinish, Observation, store_json, ResetInfo, save_image, time_string
+from legent import Environment, Action, ActionFinish, Observation, store_json, load_json, ResetInfo, save_image, time_string
 from legent.utils.math import distance, vec_xz
 from legent.action.action import Action, ActionFinish
 from legent.utils.io import log_green, create_video
@@ -18,62 +18,25 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     MAX_IMAGE_HISTORY = max_images - 1
 
     eval_folder = os.path.abspath(eval_folder)
-    if run_all_task_instance:
-        eval_folder = "eval_annotated_20240916_1946"
-        # Start episode 86崩溃了
-
-    if run_one_task_instance:
-        from legent.utils.io import load_json
-        task_settings = [{"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}]
-        task_setting = task_settings[0]
-        task_setting["scene"]["task_instance"] = load_json(run_one_task_instance)
-        scene_path = task_setting["scene"]["task_instance"]["scene_path"]
         
-        if not os.path.exists(scene_path):
-            scene_path = "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/"+scene_path.split("/")[-1]
-            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
-            print(task_setting["scene"]["task_instance"]["scene_path"])
-        if not os.path.exists(scene_path):
-            scene_path = "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/"+scene_path.split("/")[-1]
-            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
-            print(task_setting["scene"]["task_instance"]["scene_path"])
-        if not os.path.exists(scene_path):
-            scene_path = "F:/codes/github-LEGENT/eval/eval_annotated_20240916_1946/scenes/ObjaverseSynthetic/"+scene_path.split("/")[-1]
-            task_setting["scene"]["task_instance"]["scene_path"] = scene_path
-            print(task_setting["scene"]["task_instance"]["scene_path"])
-        
-        task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
-        task_setting["scene"]["instances"] = [{
-            "prefab":task_setting["scene"]["task_instance"]["scene_path"],
-
-            "position": [0,0,0],
-            "rotation": [0,0,0],
-            "scale": [1,1,1],
-            "parent": 0,
-            "type": "kinematic"
-        }]
-        task_setting["scene"]["walls"] = []
-        task_setting["scene"]["floors"] = []
-        task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
-        task_setting["scene"]["agent"]["rotation"] = task_setting["scene"]["task_instance"]["agent_rotation"]
-        
-        for option in task_setting["scene"]["task_instance"]["options"]:
-            if option["option_type"] == "Answer":
-                option["option_text"] =  f"answer \"{option['option_text']}\""
-        for predicate in task_setting["scene"]["task_instance"]["predicates"]:
-            if predicate["predicate_type"] == "choose":
-                predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
-        
-        task_ids = [0]
-    elif run_all_task_instance:
+    # Start episode 86崩溃了
+     
+    if run_one_task_instance or run_all_task_instance:
+        eval_folder = "eval_annotated_20240916_1946" # if run_all_task_instance else "generated_eval_folder"
         task_folder = eval_folder
         task_settings = []
-        for filename in [file for file in os.listdir(task_folder) if file.endswith(".json")]:
-            path = f"{task_folder}/{filename}"
-            from legent.utils.io import load_json
+        
+        character2material = {asset["asset_id"]: asset for asset in load_json("mixamo_assets.json")["assets"]}
+        if run_one_task_instance:
+            all_paths = [run_one_task_instance]
+        else:
+            all_paths = [f"{task_folder}/{file}" for file in os.listdir(task_folder) if file.endswith(".json")]
+        
+        for path in all_paths:
             task_setting = {"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}
             task_setting["scene"]["task_instance"] = load_json(path)
             scene_path = task_setting["scene"]["task_instance"]["scene_path"]
+            mixamo_path = scene_path.split("/Assets/")[0] + "/Assets/Mixamo"
 
             scene_path = scene_path.split("/")[-1]
             if os.path.exists(f"{task_folder}/scenes/AI2THOR/{scene_path}"):
@@ -96,6 +59,23 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 "parent": 0,
                 "type": "kinematic"
             }]
+            if "humans" in task_setting["scene"]["task_instance"]:
+                for human in task_setting["scene"]["task_instance"]["humans"]:
+                    mesh_materials = character2material[human["asset"]+".fbx"]["mesh_materials"]
+                    for mesh_material in mesh_materials:
+                        for material in mesh_material["materials"]:
+                            material["base_map"] = mixamo_path+"/Textures/"+material["base_map"].split("/")[-1]
+                            material["normal_map"] = mixamo_path+"/Textures/"+material["normal_map"].split("/")[-1]
+                            print(material["base_map"], material["normal_map"])
+                    task_setting["scene"]["instances"].append({
+                        "prefab": f"{mixamo_path}/{human['asset']}.fbx",
+                        "position": human["human_position"],
+                        "rotation": human["human_rotation"],
+                        "scale": [1,1,1],
+                        "parent": 0,
+                        "type": "human",
+                        "mesh_materials": mesh_materials
+                    })
             task_setting["scene"]["walls"] = []
             task_setting["scene"]["floors"] = []
             task_setting["scene"]["agent"]["position"] = task_setting["scene"]["task_instance"]["agent_position"]
@@ -155,7 +135,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
     path = "C:/users/cheng/desktop/ligent_dev/.legent/env/client/LEGENT-win-202408261101"
     path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20240827"
-    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
+    env = Environment(env_path=None, action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
