@@ -739,12 +739,11 @@ namespace Annotator
                 Debug.Log("LoadPath "+path);
                 floorObjects.Add(LoadPath(path).gameObject);
             }
-            // 人物位置转换成人物
+            // 设置人物 1： 人物位置转换成人物
             foreach(Human human in humans){
                 human.human = LoadPath(human.asset).gameObject;
                 human.human.transform.position = new Vector3(human.human_position[0], human.human_position[1], human.human_position[2]);
                 human.human.transform.rotation = Quaternion.Euler(human.human_rotation[0], human.human_rotation[1], human.human_rotation[2]);
-                if(human.pointing_to!=null&&human.pointing_to!="") human.pointingTo = LoadPath(human.pointing_to).gameObject;
             }
             DestroyNavPoints();
             InitScene();
@@ -775,6 +774,10 @@ namespace Annotator
                     obj.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
                     obj.name = point.name;
                 }
+            }
+            // 设置人物 2，必须special point初始化以后才行
+            foreach(Human human in humans){
+                if(human.pointing_to!=null&&human.pointing_to!="") human.pointingTo = LoadPath(human.pointing_to).gameObject;
             }
 
             foreach(Option option in options){
