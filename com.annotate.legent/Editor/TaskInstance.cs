@@ -556,6 +556,9 @@ namespace Annotator
             scene_name = gameObject.name;
             // Get the full prefab path of the nearest instance root of the object
             scene_path = PrefabUtility.GetPrefabAssetPathOfNearestInstanceRoot(gameObject);
+            if(scene_path == ""){
+                scene_path = JsonProcessor.GetGlbFilePath(scene_name);
+            }
             scene_path = scene_path.Replace(Application.dataPath, "Assets");
             scene_path = Path.GetFullPath(scene_path);
             scene_path = scene_path.Replace("\\", "/");
