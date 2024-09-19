@@ -478,12 +478,32 @@ namespace Annotator
             if(GameObject.Find("TargetPoints")!=null)
                 Remove(GameObject.Find("TargetPoints"));
         }
+
+        [Label("导航点最大连接距离(默认3.5)")]
+        [OnValueChanged("OnNavigationPointConnectDistanceChanged")]
+        private float nav_connect_distance = 3.5f; // NOTE: 这个好像是不需要调整的
+        public void OnNavigationPointConnectDistanceChanged(){
+            NavigationGraph graph = GameObject.Find("NavPoints").GetComponent<NavigationGraph>();
+            graph.CONNECT_DISTANCE = nav_connect_distance;
+            graph.BuildNavigationGraph();
+        }
+        
+        [Label("导航点生成间隔(默认1.5,生成导航点前可设置,屋子小时可调小)")]
+        [OnValueChanged("OnNavMinNeighborDistanceChanged")]
+        public float nav_min_neighbor_distance = 1.5f;
+        public void OnNavMinNeighborDistanceChanged(){
+            NavigationGraph graph = GameObject.Find("NavPoints").GetComponent<NavigationGraph>();
+            NavigationGraph.MIN_NEIGHBOR_DISTANCE = nav_min_neighbor_distance;
+        }
+
         [Button("生成导航点")]
         private void CreateNavPoints()
         {
             DestroyNavPoints();
             InitScene();
             NavigationGraph graph = GameObject.Find("NavPoints").GetComponent<NavigationGraph>();
+            OnNavigationPointConnectDistanceChanged();
+            OnNavMinNeighborDistanceChanged();
             graph.AddNavigationPointsForInterest();
         }
 

@@ -34,6 +34,8 @@ namespace Annotator
         public List<Option> manipulations;
         public bool isCreating = false;
         public TaskInstance infoList;
+        public float CONNECT_DISTANCE=3.5f;
+        public static float MIN_NEIGHBOR_DISTANCE=1.5f;
         public void CreateNavMesh()
         {
             // SetLayerRecursively(createdScene, NAV_MESH_LAYER);
@@ -83,7 +85,7 @@ namespace Annotator
             isCreating = true;
             navigationPoints = new List<GameObject>(); // TODO: 可以使用预定义的navigationPoints（例如python端传入），不是重新实时生成
             interestPoints = new List<GameObject>();
-            const float MIN_NEIGHBOR_DISTANCE = 1.5f;
+            // const float MIN_NEIGHBOR_DISTANCE = 1.5f;
             Transform navPoints = gameObject.transform;
             Transform targetPoints = GameObject.Find("TargetPoints").transform;
             if (!GameObject.Find("DrawScratch")) new GameObject("DrawScratch");
@@ -106,7 +108,7 @@ namespace Annotator
                         {
                             if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.2f, out hit, 0, NavMesh.AllAreas))
                             {
-                                if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.4f, out hit, 0, NavMesh.AllAreas))
+                                if (MIN_NEIGHBOR_DISTANCE>=1.5f&&NavMesh.SamplePosition(hit_position + dir.normalized * 0.4f, out hit, 0, NavMesh.AllAreas))
                                 {
                                     
                                     if (NavMesh.SamplePosition(hit_position + dir.normalized * 0.5f, out hit, 0, NavMesh.AllAreas)&&NavMesh.SamplePosition(hit_position + dir.normalized * 0.6f, out hit, 0, NavMesh.AllAreas))
@@ -307,7 +309,7 @@ namespace Annotator
 
 
             //const float CONNECT_DISTANCE = 2.5f;
-            const float CONNECT_DISTANCE = 3.5f;
+            //const float CONNECT_DISTANCE = 3.5f;
             nodes = new List<NavigationNode>();
             GameObject targetPoints = GameObject.Find("TargetPoints");
             for (int i = 0; i < navigationPoints.Count; i++)
@@ -370,8 +372,27 @@ namespace Annotator
                 }
                 // 连接其他navigable
                 if (thisNode.type == NodeType.Interest) continue;
+
+                // 按距离连接，由近及远连接
+                List<(float, int)> distance_index = new List<(float, int)>();
                 for (int j = 0; j < nodes.Count; j++)
                 {
+                    if (i == j) continue;
+                    if (nodes[j].type == NodeType.Interest) continue;
+                    if (thisNode.neighbors.Contains(nodes[j])) continue;
+                    NavMeshHit hit;
+                    bool blocked = NavMesh.Raycast(thisNode.position, nodes[j].position, out hit, NavMesh.AllAreas);
+                    if (Vector3.Distance(thisNode.position, nodes[j].position) < CONNECT_DISTANCE + 0.01f && !blocked)
+                    {
+                        distance_index.Add((Vector3.Distance(thisNode.position, nodes[j].position), j));
+                    }
+                }
+                distance_index.Sort((a, b) => a.Item1.CompareTo(b.Item1));
+                foreach((float, int) item in distance_index)
+                {
+                    int j = item.Item2;
+                // for (int j = 0; j < nodes.Count; j++)
+                // {
                     if (i == j) continue;
                     if (thisNode.neighbors.Contains(nodes[j])) continue;
                     NavMeshHit hit;
