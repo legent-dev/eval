@@ -38,13 +38,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             scene_path = task_setting["scene"]["task_instance"]["scene_path"]
             mixamo_path = scene_path.split("/Assets/")[0] + "/Assets/Mixamo"
 
-            scene_path = scene_path.split("/")[-1]
-            if os.path.exists(f"{task_folder}/scenes/AI2THOR/{scene_path}"):
-                scene_path = f"{task_folder}/scenes/AI2THOR/{scene_path}"
-            elif os.path.exists(f"{task_folder}/scenes/HSSD/{scene_path}"):
-                scene_path = f"{task_folder}/scenes/HSSD/{scene_path}"
-            elif os.path.exists(f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"):
-                scene_path = f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"
+            if not os.path.exists(scene_path):
+                scene_path = scene_path.split("/")[-1]
+                if os.path.exists(f"{task_folder}/scenes/AI2THOR/{scene_path}"):
+                    scene_path = f"{task_folder}/scenes/AI2THOR/{scene_path}"
+                elif os.path.exists(f"{task_folder}/scenes/HSSD/{scene_path}"):
+                    scene_path = f"{task_folder}/scenes/HSSD/{scene_path}"
+                elif os.path.exists(f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"):
+                    scene_path = f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"
             task_setting["scene"]["task_instance"]["scene_path"] = scene_path
             task_setting["scene_file"] = scene_path
 
