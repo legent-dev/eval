@@ -255,7 +255,7 @@ namespace Annotator
             // }
 
             // 加入均匀洒落的补充导航点
-            const float UNIT_DISTANCE = 1.0f;
+            const float UNIT_DISTANCE = 0.5f;
             // Find TaskInstance Component in the whole scene
             TaskInstance[] taskInstances = FindObjectsOfType<TaskInstance>();
             if (taskInstances.Length == 0)
@@ -272,9 +272,9 @@ namespace Annotator
             Bounds bounds = Utils.GetBounds(taskInstance.gameObject);
             Vector3 floor_position = bounds.center - new Vector3(0, bounds.size.y / 2, 0);
             Vector3 floor_size = bounds.size;
-            for (float x = floor_position[0] - floor_size[0] / 2 + 1; x < floor_position[0] + floor_size[0] / 2; x += UNIT_DISTANCE)
+            for (float x = floor_position[0] - floor_size[0] / 2 + UNIT_DISTANCE/2; x < floor_position[0] + floor_size[0] / 2; x += UNIT_DISTANCE)
             {
-                for (float z = floor_position[2] - floor_size[2] / 2 + 1; z < floor_position[2] + floor_size[2] / 2; z += UNIT_DISTANCE)
+                for (float z = floor_position[2] - floor_size[2] / 2 + UNIT_DISTANCE/2; z < floor_position[2] + floor_size[2] / 2; z += UNIT_DISTANCE)
                 {
                     bool success = AddNavPoint(new Vector3(x, 0, z), false);
                     // if(success) interestPoints.Add(null);
