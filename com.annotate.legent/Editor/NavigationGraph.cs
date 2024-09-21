@@ -417,6 +417,15 @@ namespace Annotator
                     }
                 }
 
+            }
+
+            // 加入interest
+            // NOTE:需要在navigable互相连完之后再做，不然会出现A点有了4个朝向之后，B点由于只能和A点相连，又去连接A点了，导致A点有了5个朝向
+            for (int i = 0; i < nodes.Count; i++){
+                
+                NavigationNode thisNode = nodes[i];
+                if (thisNode.type == NodeType.Interest) continue;
+
                 // 给只有一个neighbor的点加上一个新的interest
                 if (thisNode.neighbors.Count == 1)
                 {
