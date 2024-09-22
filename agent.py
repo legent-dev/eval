@@ -275,6 +275,8 @@ class AgentHuman(AgentBase):
             if obs.text != "":
                 try:
                     action.action_choice = int(obs.text)
+                    if action.action_choice < 0 or action.action_choice >= len(options):
+                        continue
                 except:
                     continue
                 return action
