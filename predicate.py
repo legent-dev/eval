@@ -213,7 +213,7 @@ class PredicateAgentPass(Predicate):
         game_states = obs.game_states
         d = distance(vec_xz(game_states["agent"]["position"]), vec_xz(game_states["instances"][self.object_id]["position"]))
         if d < 0.3:
-            passed = True
+            self.passed = True
             return 1, {"distance": d}
         else:
             return 0, {"distance": d}
