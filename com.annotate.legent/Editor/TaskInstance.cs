@@ -746,7 +746,14 @@ namespace Annotator
             // Monobeheviour不能直接用JsonUtility.FromJson序列化
             // https://gamedev.stackexchange.com/questions/186780/how-do-you-de-serialize-a-monobehaviour-class
             // TaskInstance task = JsonUtility.FromJson<TaskInstance>(json);
+            
             JsonUtility.FromJsonOverwrite(json, this);
+            // Overwrite也要清空一些东西，不然overwrite不干净
+            foreach(Option option in options){
+                option.gameObjects = new NestedArray<GameObject>();
+                option.gameObjects.list = new List<GameObject>();
+            }
+
             transform.position = new Vector3(scene_position[0], scene_position[1], scene_position[2]);
             transform.localScale = new Vector3(scene_scale[0], scene_scale[1], scene_scale[2]);
             
