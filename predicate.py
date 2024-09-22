@@ -202,21 +202,22 @@ class PredicateNotNear(Predicate):
 
 # TODO: agent pass 和 agent at一样，可以合并
 class PredicateAgentPass(Predicate):
-    def __init__(self, object1, object2) -> None:
-        self.object1 = object1
-        self.object2 = object2
+    def __init__(self, object_id) -> None:
+        self.object_id = object_id
         self.passed = False
 
     def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
         if self.passed:
             return 1, {}
-        instances = obs.game_states["instances"]
-        d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
+
+        game_states = obs.game_states
+        d = distance(vec_xz(game_states["agent"]["position"]), vec_xz(game_states["instances"][self.object_id]["position"]))
         if d < 0.3:
             passed = True
-            return 1, {}
+            return 1, {"distance": d}
         else:
-            return 0, {}
+            return 0, {"distance": d}
+
         
 class PredicateSpecialActionSuccess(Predicate):
     def __init__(self, action_text) -> None:
