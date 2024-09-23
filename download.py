@@ -72,6 +72,7 @@ class THUCloud:
         return response.content.decode()
 
     def _retrieve_file(self, url, name):  # for small files
+        print("Downloading file...", name)
         file_path = os.path.join(self.current_dir, name)
         response = requests.get(url=url, headers=self.headers)
         assert response.status_code == 200
