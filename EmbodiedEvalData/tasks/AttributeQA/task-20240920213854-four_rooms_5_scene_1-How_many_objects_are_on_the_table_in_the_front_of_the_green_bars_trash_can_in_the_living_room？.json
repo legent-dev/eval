@@ -1,0 +1,339 @@
+{
+    "scene_name": "four_rooms_5_scene_1",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/four_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        7.595517158508301,
+        0.0,
+        -9.870811462402344
+    ],
+    "agent_position": [
+        5.4019999504089359,
+        0.0,
+        -8.034000396728516
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -5545428
+        },
+        {
+            "instanceID": -5545416
+        },
+        {
+            "instanceID": -5545404
+        },
+        {
+            "instanceID": -5545392
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_1/CreatedWalls/identifier19_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier16_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "task_template": "How many pillows are on the bed in the master bedroom?",
+    "task_text": "How many objects are on the table in the front of the green bars trash can in the living room？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no objects",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "infinite",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "five",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                4.200000286102295,
+                0.03958180546760559,
+                -13.13333511352539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                4.200000286102295,
+                0.09292271733283997,
+                -11.5449800491333
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                5.188486099243164,
+                0.03958180546760559,
+                -7.9331207275390629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                5.40000057220459,
+                0.03958180546760559,
+                -9.600001335144043
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                5.733333587646484,
+                0.27291515469551089,
+                -13.13333511352539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                6.559338569641113,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                7.567999839782715,
+                0.03958180546760559,
+                -12.446000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                8.553999900817871,
+                0.03958180546760559,
+                -13.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                7.0766777992248539,
+                0.03958180546760559,
+                -8.347000122070313
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                6.561999797821045,
+                0.03958180546760559,
+                -9.270000457763672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                7.742000102996826,
+                0.03958180546760559,
+                -8.00100040435791
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                8.295744895935059,
+                0.03958180546760559,
+                -7.211135387420654
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                8.559338569641114,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                8.594178199768067,
+                0.03958180546760559,
+                -9.504222869873047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                9.454147338867188,
+                0.21739482879638673,
+                -6.066667556762695
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                10.559338569641114,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                10.559338569641114,
+                0.03958180546760559,
+                -9.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                10.559338569641114,
+                0.03958180546760559,
+                -7.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                11.638002395629883,
+                0.03958180546760559,
+                -5.533665657043457
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                12.37600040435791,
+                0.03958180546760559,
+                -9.277999877929688
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                12.559338569641114,
+                0.03958180546760559,
+                -7.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (1)",
+            "position": [
+                12.501999855041504,
+                0.03958180546760559,
+                -5.866000175476074
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                5.916999816894531,
+                0.7120000123977661,
+                -6.9710001945495609
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240920213854-four_rooms_5_scene_1-How_many_objects_are_on_the_table_in_the_front_of_the_green_bars_trash_can_in_the_living_room？.json",
+    "message": ""
+}

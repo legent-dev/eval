@@ -1,0 +1,385 @@
+{
+    "scene_name": "FloorPlan210_physics",
+    "scene_path": "C:/Users/32481/emabench/Assets/ai2thor娴村_11/ai2thor客厅_11/FloorPlan210_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -5.3429999351501469,
+        -0.03999999910593033,
+        3.421999931335449
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1420918
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan210_physics/Objects/Floor_9b56aa5a"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -1414226
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan210_physics/FPSController"
+    ],
+    "task_template": "Determine how far the bookshelf is from the study desk.",
+    "task_text": "Determine the maximum distance between the sofa and the TV.",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "targetObject": {
+                "instanceID": -283166
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.293196201324463,
+                0.5268893837928772,
+                0.3952677547931671
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -7.20860481262207,
+                0.03581422567367554,
+                -1.9497880935668946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -7.266667366027832,
+                0.03581422567367554,
+                0.05021190643310547
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -7.266667366027832,
+                0.03581422567367554,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -7.266667366027832,
+                0.0024808943271636965,
+                4.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -7.20860481262207,
+                0.0024808943271636965,
+                6.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -5.20860481262207,
+                0.03581422567367554,
+                -1.9497880935668946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -5.20860481262207,
+                0.03581422567367554,
+                0.05021190643310547
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -5.20860481262207,
+                0.03581422567367554,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                -6.484000205993652,
+                0.03581422567367554,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (2)",
+            "position": [
+                -6.458000183105469,
+                0.03581422567367554,
+                0.8320000171661377
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -6.485000133514404,
+                0.016987860202789308,
+                3.378999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                -5.242000102996826,
+                0.016987860202789308,
+                3.378999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -5.20860481262207,
+                0.0024808943271636965,
+                6.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -3.2086048126220705,
+                0.03581422567367554,
+                -1.9497880935668946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -3.4100000858306886,
+                0.03581422567367554,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                -3.4100000858306886,
+                0.03581422567367554,
+                1.2369999885559083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (2)",
+            "position": [
+                -2.513000011444092,
+                0.03581422567367554,
+                1.2369999885559083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (3)",
+            "position": [
+                -2.513000011444092,
+                0.03581422567367554,
+                2.055000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (4)",
+            "position": [
+                -2.513000011444092,
+                0.03581422567367554,
+                3.4719998836517336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (5)",
+            "position": [
+                -0.9580000042915344,
+                0.03581422567367554,
+                3.4719998836517336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -3.40000057220459,
+                0.022588612511754037,
+                3.444999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -3.2086048126220705,
+                0.0024808943271636965,
+                6.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -1.2086048126220704,
+                0.03581422567367554,
+                -1.9497880935668946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -0.7089999914169312,
+                0.13581421971321107,
+                0.625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.8840000033378601,
+                0.013000000268220902,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -1.200000286102295,
+                0.0024808943271636965,
+                4.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                -1.2086048126220704,
+                0.0024808943271636965,
+                6.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                0.7913951873779297,
+                0.03581422567367554,
+                -1.9497880935668946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                0.7913951873779297,
+                0.03581422567367554,
+                0.05021190643310547
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                0.7913951873779297,
+                0.02946566604077816,
+                2.0502119064331056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                0.7913951873779297,
+                0.01871294528245926,
+                4.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                0.7913951873779297,
+                0.0024808943271636965,
+                6.0502119064331059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -3.293196201324463,
+                0.6124489307403565,
+                0.3952677547931671
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.510999917984009,
+                0.20200000703334809,
+                1.2230000495910645
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -2.5179998874664308,
+                0.20200000703334809,
+                3.505000114440918
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "C:/Users/32481/emabench/Assets\\Tasks\\task-20240916171551-FloorPlan210_physics-Determine_the_maximum_distance_between_the_sofa_and_the_TV_.json",
+    "message": ""
+}

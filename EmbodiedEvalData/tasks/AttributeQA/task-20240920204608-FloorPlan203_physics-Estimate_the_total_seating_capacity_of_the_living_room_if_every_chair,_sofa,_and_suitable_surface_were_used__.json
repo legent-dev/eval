@@ -1,0 +1,332 @@
+{
+    "scene_name": "FloorPlan203_physics",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/AI2THOR/ai2thor客厅_11/FloorPlan203_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        6.330999851226807
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -22537712
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan203_physics/Objects/Floor_ce5eb378"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -22531634
+        },
+        {
+            "instanceID": -22536764
+        },
+        {
+            "instanceID": -22535820
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan203_physics/Objects/Ottoman_89afd8ca",
+        "FloorPlan203_physics/Objects/Newspaper_a1a8109a",
+        "FloorPlan203_physics/Objects/KeyChain_98cd04f4"
+    ],
+    "humans": [],
+    "task_template": "Estimate the total seating capacity of the house if every chair, sofa, and suitable surface were used.",
+    "task_text": "Estimate the total seating capacity of the living room if every chair, sofa, and suitable surface were used. ",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Seven people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Eight people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Nine people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Ten people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Ten people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Five people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Six people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Eleven people",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Nine people",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -5.426384925842285,
+                0.007039710879325867,
+                2.1331751346588136
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.190999984741211,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.9260034561157228,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.6730000972747804,
+                0.007039710879325867,
+                2.6327953338623049
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -0.6940000057220459,
+                0.007039710879325867,
+                4.375999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                -0.10599999874830246,
+                0.007039710879325867,
+                3.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (2)",
+            "position": [
+                1.065999984741211,
+                0.007039710879325867,
+                3.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (3)",
+            "position": [
+                1.065999984741211,
+                0.007039710879325867,
+                1.7899999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (4)",
+            "position": [
+                -0.33000001311302187,
+                0.007039710879325867,
+                2.6459999084472658
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (5)",
+            "position": [
+                -0.33000001311302187,
+                0.007039710879325867,
+                1.3359999656677247
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (6)",
+            "position": [
+                -0.33000001311302187,
+                0.007039710879325867,
+                0.8820000290870667
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.1666665077209473,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.9260034561157227,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -3.2339999675750734,
+                0.007039710879325867,
+                4.633333683013916
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -1.0839999914169312,
+                0.007039710879325867,
+                6.632795333862305
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                0.07399654388427735,
+                0.007039710879325867,
+                -0.3672046661376953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                0.07399654388427735,
+                0.007039710879325867,
+                6.333333969116211
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240920204608-FloorPlan203_physics-Estimate_the_total_seating_capacity_of_the_living_room_if_every_chair,_sofa,_and_suitable_surface_were_used__.json",
+    "message": ""
+}

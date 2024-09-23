@@ -1,0 +1,171 @@
+{
+    "scene_name": "FloorPlan5_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan5_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -4604928
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan5_physics/Objects/Floor_1ca2764b"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -4593754
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan5_physics/FPSController"
+    ],
+    "task_template": "How many white chairs are in the dining room?",
+    "task_text": "How many black chairs are in the dining room?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "i cannot find black chairs",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "two",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.32264965772628786,
+                0.022335126996040345,
+                -0.9839750528335571
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.46224644780158999,
+                0.022335126996040345,
+                1.424789547920227
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9115778803825378,
+                0.022335126996040345,
+                -0.5379999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                0.9115778803825378,
+                0.022335126996040345,
+                1.2940000295639039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.299999952316284,
+                0.022335126996040345,
+                1.100000023841858
+            ],
+            "type": "navigation"
+        }
+    ],
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240920201621-FloorPlan5_physics-How_many_black_chairs_are_in_the_dining_room_.json",
+    "message": ""
+}

@@ -1,0 +1,229 @@
+{
+    "scene_name": "cozy_living_room_baked",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/_Annotated/SketchfabScenes/cozy_living_room_baked.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.4700000286102297,
+        0.0,
+        -3.5799999237060549
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -9301610
+        }
+    ],
+    "floor_objects": [
+        "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Cube.019"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Move to the center of the dining room.",
+    "task_text": "Move to the center of the living room. ",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -9303958
+            },
+            "predicate_object": "NavPoints/NavigationPoint8",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.9965254068374634,
+                0.08236277103424072,
+                -3.963792324066162
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.9299999475479127,
+                0.08236277103424072,
+                -2.157820224761963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.8333334922790528,
+                0.08236277103424072,
+                -0.6578202247619629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.8333334922790528,
+                0.08236277103424072,
+                0.8421797752380371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.8333334922790528,
+                0.08236277103424072,
+                2.342179775238037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.8333334922790528,
+                0.08236277103424072,
+                3.842180013656616
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.5405025482177734,
+                0.08236277103424072,
+                -3.233333110809326
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.04050254821777344,
+                0.08236277103424072,
+                -1.2999999523162842
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.04050254821777344,
+                0.08236277103424072,
+                -0.1578202247619629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.04050254821777344,
+                0.08236277103424072,
+                1.342179775238037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -0.04050254821777344,
+                0.08236277103424072,
+                2.842179775238037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.007000000216066837,
+                0.08236277103424072,
+                3.822000026702881
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.9594974517822266,
+                0.08236277103424072,
+                -3.6999998092651369
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.5920000076293946,
+                0.08236277103424072,
+                -1.6239999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.4594974517822266,
+                0.11475513130426407,
+                0.09099999815225601
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.4594974517822266,
+                0.08236277103424072,
+                1.1699999570846558
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.4594974517822266,
+                0.08236277103424072,
+                2.342179775238037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.9594974517822266,
+                0.08236277103424072,
+                3.842179775238037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.4594974517822267,
+                0.08236277103424072,
+                -3.5333330631256105
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20240922174022-cozy_living_room_baked-Move_to_the_center_of_the_living_room__.json",
+    "message": ""
+}

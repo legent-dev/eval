@@ -1,0 +1,207 @@
+{
+    "scene_name": "FloorPlan206_physics",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/AI2THOR/ai2thor客厅_11/FloorPlan206_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -17334062
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan206_physics/Objects/Floor_3053f5a6"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -17330810
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan206_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Discover the white cup in the bedroom drawer, what image is printed on its side?",
+    "task_text": "Discover the red sofa in the living room, what is placed on top of it? ",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "remote control",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "key",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Notebook computer",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bowl",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "phone",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "apple",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "paper",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bowl",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "remote control",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.034999966621399,
+                0.03333333134651184,
+                -1.746999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.027999997138977,
+                0.03333333134651184,
+                -1.7489999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.799999475479126,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.3459999561309816,
+                0.20000001788139344,
+                -0.6610000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.3459999561309816,
+                0.20000001788139344,
+                0.7279999852180481
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240920185416-FloorPlan206_physics-Discover_the_red_sofa_in_the_living_room,_what_is_placed_on_top_of_it__.json",
+    "message": ""
+}

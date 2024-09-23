@@ -8,6 +8,7 @@ import argparse
 from predicate import build_predicate, get_feedback
 from task import get_task_settings
 from agent import *
+import glob
 
 use_video = False
 
@@ -22,7 +23,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     # Start episode 86崩溃了
      
     if run_one_task_instance or run_all_task_instance:
-        eval_folder = "eval_annotated_20240916_1946" # if run_all_task_instance else "generated_eval_folder"
+        eval_folder = "EmbodiedEvalData"
         task_folder = eval_folder
         task_settings = []
         
@@ -30,13 +31,16 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         if run_one_task_instance:
             all_paths = [run_one_task_instance]
         else:
-            all_paths = [f"{task_folder}/{file}" for file in os.listdir(task_folder) if file.endswith(".json")]
+            # all_paths = [f"{task_folder}/{file}" for file in os.listdir(f"{task_folder}/tasks") if file.endswith(".json")]
+            all_paths = glob.glob(os.path.join(f"{task_folder}/tasks", '**', '*.json'), recursive=True)
         
         for path in all_paths:
             task_setting = {"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}
             task_setting["scene"]["task_instance"] = load_json(path)
             scene_path = task_setting["scene"]["task_instance"]["scene_path"]
             mixamo_path = scene_path.split("/Assets/")[0] + "/Assets/Mixamo"
+            if not os.path.exists(mixamo_path):
+                mixamo_path = f"{task_folder}/scenes/Mixamo"
 
             if not os.path.exists(scene_path):
                 scene_path = scene_path.split("/")[-1]
@@ -67,7 +71,6 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         for material in mesh_material["materials"]:
                             material["base_map"] = mixamo_path+"/Textures/"+material["base_map"].split("/")[-1]
                             material["normal_map"] = mixamo_path+"/Textures/"+material["normal_map"].split("/")[-1]
-                            print(material["base_map"], material["normal_map"])
                     task_setting["scene"]["instances"].append({
                         "prefab": f"{mixamo_path}/{human['asset']}.fbx",
                         "position": human["human_position"],
@@ -400,5 +403,5 @@ if __name__ == "__main__":
     
     # 运行所有测例
     # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50051 --test_case_start=0 --test_case_end=100 --all
-    
+
     

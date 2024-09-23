@@ -1,0 +1,150 @@
+{
+    "scene_name": "bedroom_15_scene_5",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/Objaverse卧室_15/bedroom_15_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.07000000029802323,
+        -1.8600000143051148,
+        -0.20000000298023225
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -18101544
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_5/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Which object is closer to the front door: the coat rack or the shoe shelf?",
+    "task_text": "Which object is closer to the bedroom door: the sofa or the bed?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "sofa, with green pillow",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bed, with red pillow",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bed, with nothing on it",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "sofa, and there is a yellow carpet",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bunk bed",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "bed",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.3733333349227905,
+                0.06280517578125,
+                1.9600000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.5866667032241822,
+                0.06280517578125,
+                0.9104375839233398
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.799999952316284,
+                0.06280517578125,
+                3.91043758392334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.0991668701171877,
+                0.06280517578125,
+                0.9104375839233398
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921201500-bedroom_15_scene_5-Which_object_is_closer_to_the_bedroom_door__the_sofa_or_the_bed_.json",
+    "message": ""
+}

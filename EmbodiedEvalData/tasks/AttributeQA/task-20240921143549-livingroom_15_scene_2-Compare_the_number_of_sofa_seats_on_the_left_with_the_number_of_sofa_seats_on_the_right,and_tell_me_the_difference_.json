@@ -1,0 +1,217 @@
+{
+    "scene_name": "livingroom_15_scene_2",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/Objaverse客厅_15/livingroom_15_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.546999931335449,
+        0.07400000095367432,
+        1.2640000581741334
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -5370440
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_2/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Compare the number of books on the top shelf to those on the bottom shelf of the bookcase. What's the difference?",
+    "task_text": "Compare the number of sofa seats on the left with the number of sofa seats on the right,and tell me the difference.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The left side has more seats than the right side by one.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Both the left and right sides have the same number of seats.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The right side has fewer seats by one.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The left side has more seats, but they are smaller.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The right side has more seats, and they are bigger.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The right side has more seats, but they are smaller.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are no seats on the left, while the right has two.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The right side has more seats, but they are smaller.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.3589999675750733,
+                0.0601164847612381,
+                1.7790000438690186
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.9390000104904175,
+                0.0601164847612381,
+                2.6649999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.828000009059906,
+                0.0601164847612381,
+                3.3429999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9079999923706055,
+                0.0601164847612381,
+                4.682000160217285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.6380000114440919,
+                0.0601164847612381,
+                4.690000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.4719998836517336,
+                0.0601164847612381,
+                1.3109999895095826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.190999984741211,
+                0.0601164847612381,
+                4.732999801635742
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.6480000019073488,
+                0.0601164847612381,
+                3.8489999771118166
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.562999963760376,
+                0.0601164847612381,
+                2.746999979019165
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921143549-livingroom_15_scene_2-Compare_the_number_of_sofa_seats_on_the_left_with_the_number_of_sofa_seats_on_the_right,and_tell_me_the_difference_.json",
+    "message": ""
+}

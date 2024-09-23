@@ -1,0 +1,198 @@
+{
+    "scene_name": "FloorPlan5_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan5_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.803999900817871,
+        0.0,
+        1.062999963760376
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -5144278
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan5_physics/Objects/Floor_1ca2764b"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -5133128
+        },
+        {
+            "instanceID": -5133388
+        },
+        {
+            "instanceID": -5133284
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan5_physics/FPSController/TallVisibilityCapsule",
+        "FloorPlan5_physics/FPSController/VisibilityCapsule",
+        "FloorPlan5_physics/FPSController/StretchVisibilityCapsule"
+    ],
+    "task_template": "Inventory the items in the brown cabinets.",
+    "task_text": "Inventory the item in the black refrigerator and place it in the sink.",
+    "options": [
+        {
+            "option_type": "OpenDoor",
+            "option_text": "Open the refrigerator door",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -5135616
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan5_physics/Objects/Fridge_e67d14f5/FridgeBodyMesh/Door"
+            ]
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the apple",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -5140126
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan5_physics/Objects/Apple_24edbcc5"
+            ]
+        },
+        {
+            "option_type": "CloseDoor",
+            "option_text": "Close the refrigerator door",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -5135616
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan5_physics/Objects/Fridge_e67d14f5/FridgeBodyMesh/Door"
+            ]
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put the apple in the sink",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -5146402
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ]
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "targetObject": {
+                "instanceID": -5140126
+            },
+            "predicate_object": "FloorPlan5_physics/Objects/Apple_24edbcc5",
+            "targetPlace": {
+                "instanceID": -5146402
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.7749999761581421,
+                0.022335126996040345,
+                -0.5420916676521301
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.021803053095936776,
+                0.022335126996040345,
+                -1.1674599647521973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.46224644780158999,
+                0.022335126996040345,
+                1.424789547920227
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.2999999523162842,
+                0.022335126996040345,
+                1.4499998092651368
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.9672436714172365,
+                0.022335126996040345,
+                1.0900152921676636
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.7455332279205323,
+                0.8382384777069092,
+                -0.5420916676521301
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.03554108738899231,
+                0.8128055334091187,
+                -1.9544068574905396
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.03554108738899231,
+                0.8128055334091187,
+                -1.9544068574905396
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240920203402-FloorPlan5_physics-Inventory_the_item_in_the_black_refrigerator_and_place_it_in_the_sink_.json",
+    "message": ""
+}

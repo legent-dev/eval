@@ -1,0 +1,324 @@
+{
+    "scene_name": "FloorPlan201_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan201_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.24500000476837159,
+        0.0,
+        0.6959999799728394
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1763724
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan201_physics/Objects/Floor_e5fd1b1d"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -1755556
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan201_physics/FPSController"
+    ],
+    "task_template": "Search the garage for a bicycle and describe its color.",
+    "task_text": "Search the area next to the television for a tissue box and describe its color.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "red",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "blue",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "yellow",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "red and bule",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "red and yellow",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "green",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "green and red",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "grey",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "green",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -4.358509540557861,
+                0.00336340069770813,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.358509540557861,
+                0.00336340069770813,
+                2.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.358509540557861,
+                0.00336340069770813,
+                4.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -2.8540000915527345,
+                0.00336340069770813,
+                4.28000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -1.9700000286102296,
+                0.00336340069770813,
+                4.256999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.0128021240234377,
+                0.00336340069770813,
+                5.48525857925415
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                -2.263000011444092,
+                0.00336340069770813,
+                5.567999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -1.694000005722046,
+                0.00336340069770813,
+                5.420000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                -0.6700000166893005,
+                0.00336340069770813,
+                4.806000232696533
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.888460397720337,
+                -0.10817614942789078,
+                7.403855800628662
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.933333158493042,
+                0.00336340069770813,
+                -0.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.1550638675689699,
+                0.00336340069770813,
+                2.4615533351898195
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.7666662931442261,
+                0.00336340069770813,
+                3.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.3491067886352539,
+                0.00336340069770813,
+                -0.6746582388877869
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.35850954055786135,
+                0.00336340069770813,
+                1.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                -1.149999976158142,
+                0.00336340069770813,
+                0.46299999952316286
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (2)",
+            "position": [
+                -2.7090001106262209,
+                0.00336340069770813,
+                0.3499999940395355
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -0.35850954055786135,
+                0.00336340069770813,
+                7.000000476837158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.6414904594421387,
+                -0.0364895835518837,
+                4.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.2666667699813843,
+                -0.12996995449066163,
+                0.5792140960693359
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.2666667699813843,
+                -0.12996995449066163,
+                2.579214096069336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.2666667699813843,
+                -0.12996995449066163,
+                6.579214096069336
+            ],
+            "type": "navigation"
+        }
+    ],
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240920194245-FloorPlan201_physics-Search_the_area_next_to_the_television_for_a_tissue_box_and_describe_its_color_.json",
+    "message": ""
+}

@@ -1,0 +1,212 @@
+{
+    "scene_name": "two_rooms_10_scene_2",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/Objaverse二房间_10/two_rooms_10_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -9653732
+        },
+        {
+            "instanceID": -9653744
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_2/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_2/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Determine the ratio of seating options (chairs, stools, sofas) to the number of rooms in the house.",
+    "task_text": "Determine the ratio of seating options  to the number of rooms in the house.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "1:2",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "1:1",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "2:1",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "3:1",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "3:2",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "2:3",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "1:3",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "1:2",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.5268352031707765,
+                0.0416666716337204,
+                2.5190000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.3666667938232422,
+                0.0416666716337204,
+                0.8276559114456177
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.7443773746490479,
+                0.0416666716337204,
+                2.565000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.25562262535095217,
+                0.0416666716337204,
+                0.9593744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.2288247346878052,
+                0.0416666716337204,
+                2.2626242637634279
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -2.5268352031707765,
+                0.03623020648956299,
+                1.1728614568710328
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -2.130948305130005,
+                0.8193101286888123,
+                0.8276559114456177
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.130948305130005,
+                0.8193101286888123,
+                0.8276559114456177
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921152831-two_rooms_10_scene_2-Determine_the_ratio_of_seating_options__to_the_number_of_rooms_in_the_house_.json",
+    "message": ""
+}

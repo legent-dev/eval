@@ -1,0 +1,304 @@
+{
+    "scene_name": "bedroom_15_scene_10",
+    "scene_path": "C:/Users/32481/emabench/Assets/ai2thor娴村_11/bedroom_15_scene_10.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        4.441999912261963,
+        2.2351741790771486e-8,
+        2.878000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -8731922
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_10/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "I just heard something fall to the ground. What was it? Go check.",
+    "task_text": "I just saw something fall to the table. What was it? Go check.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "glasses",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "laptop",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "clock",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "book",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "pot",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "cup",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "LEGO",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "draw",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "clock",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.8810157775878906,
+                0.0416666716337204,
+                0.9415419101715088
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.6819999814033508,
+                0.0416666716337204,
+                2.4189999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                0.5519999861717224,
+                0.0416666716337204,
+                4.239999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.5349602699279786,
+                0.0416666716337204,
+                4.21999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.5349602699279786,
+                0.0416666716337204,
+                2.38100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.8810157775878908,
+                0.0416666716337204,
+                0.8629999756813049
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                2.8810157775878908,
+                0.0416666716337204,
+                1.8969999551773072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                2.3989999294281008,
+                0.0416666716337204,
+                1.8969999551773072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.8810157775878908,
+                0.5416667461395264,
+                2.941541910171509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                2.941541910171509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                1.88100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                1.1130000352859498
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                4.367480278015137,
+                0.0416666716337204,
+                4.624015808105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.614000082015991,
+                0.6710000038146973,
+                1.4470000267028809
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "C:/Users/32481/emabench/Assets\\Tasks\\task-20240920165307-bedroom_15_scene_10-I_just_saw_something_fall_to_the_table__What_was_it__Go_check_.json",
+    "message": ""
+}

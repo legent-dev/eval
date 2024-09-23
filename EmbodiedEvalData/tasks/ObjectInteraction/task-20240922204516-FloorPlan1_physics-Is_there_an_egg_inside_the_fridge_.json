@@ -1,0 +1,250 @@
+{
+    "scene_name": "FloorPlan1_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan1_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -56470230
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan1_physics/Objects/Floor_86781be7"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -56459554
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan1_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Is there a bottle inside the fridge?",
+    "task_text": "Is there an egg inside the fridge?",
+    "options": [
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the upper fridge door",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -56467202
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan1_physics/Objects/Fridge_e92350c6/FridgeBodyMesh/FreezerDoor"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the lower fridge door",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -56467258
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan1_physics/Objects/Fridge_e92350c6/FridgeBodyMesh/FridgeDoor"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "yes, in the lower fridge door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no, in the table",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "yes, in the upper fridge door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "yes , in  the table",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "yes, there's an apple in the fridge",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no, there's no egg in the fridge",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "I find an egg",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no tamato in the fridge",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "yes, in the lower fridge door",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2710000276565552,
+                2.2351741790771486e-8,
+                1.0528579950332642
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.11899995803833,
+                2.2351741790771486e-8,
+                -1.7400000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.1519999504089356,
+                2.2351741790771486e-8,
+                -1.784999966621399
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.4274070262908936,
+                2.2351741790771486e-8,
+                -0.07675471901893616
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.4359999895095826,
+                2.2351741790771486e-8,
+                1.6666667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.0089999437332154,
+                2.2351741790771486e-8,
+                1.6666667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.8908929824829102,
+                0.9730814695358276,
+                1.080528736114502
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240922204516-FloorPlan1_physics-Is_there_an_egg_inside_the_fridge_.json",
+    "message": ""
+}

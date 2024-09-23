@@ -1,0 +1,297 @@
+{
+    "scene_name": "102344094",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/HSSD/102344094.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        7.380000114440918,
+        0.0,
+        -1.840000033378601
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -21066864
+        }
+    ],
+    "floor_objects": [
+        "102344094/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -21066540
+        }
+    ],
+    "removed_objects": [
+        "102344094/openings/openings_wall_26/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C"
+    ],
+    "humans": [],
+    "task_template": "Are there more books on the living room shelf or the office desk?",
+    "task_text": "Are there more flower pots on the living room or the bedroom?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "There are more flower pots in the living room, while no one in bedroom",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Both the living room and bedroom have the same number of flower pots.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bedroom has only one flower pot, while the living room has several.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are no flower pots in the bedroom, only in the living room.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The living room has more flower pots, placed near the trash can.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Both rooms have flower pots, but the bedroom's pots are larger in size.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is only one flower pot in each room.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bedroom has a few flower pots, but the living room has none.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The bedroom has only one flower pot, while the living room has several.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.6927692890167238,
+                0.03087746910750866,
+                -4.636800289154053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                3.8681640625,
+                0.03087746910750866,
+                -1.0518555641174317
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                3.9299299716949465,
+                0.03087746910750866,
+                1.818713665008545
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                5.502999782562256,
+                0.03087746910750866,
+                -2.572000026702881
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                5.538000106811523,
+                0.046864934265613559,
+                -4.49399995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                5.367610454559326,
+                0.03087746910750866,
+                -1.0410000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                5.367610454559326,
+                0.03087746910750866,
+                1.1606740951538087
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                7.872823715209961,
+                0.03087746910750866,
+                -4.547062873840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                7.46999979019165,
+                0.03087746910750866,
+                -1.6890000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                7.367610454559326,
+                0.04092366248369217,
+                1.1606740951538087
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                9.027000427246094,
+                0.03087746910750866,
+                -1.7280000448226929
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                9.027000427246094,
+                0.03087746910750866,
+                -4.581999778747559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                8.64023208618164,
+                0.03087746910750866,
+                -0.717227041721344
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                -4.533333778381348
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                -1.753999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                0.1606740951538086
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240920203142-102344094-Are_there_more_flower_pots_on_the_living_room_or_the_bedroom_.json",
+    "message": ""
+}

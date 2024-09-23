@@ -1,0 +1,225 @@
+{
+    "scene_name": "FloorPlan207_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan207_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.1459999978542328,
+        0.0,
+        3.2950000762939455
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -41655076
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan207_physics/Objects/Floor_0d809d9e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -41649410
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan207_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Remove the laptop computer from the sofa.",
+    "task_text": "Remove the keys from the TV stand. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up this key",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -41653876
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan207_physics/Objects/KeyChain_277c5072"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put it on the table",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -41659114
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -41653876
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/KeyChain_277c5072",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.7122149467468262,
+                0.03333333134651184,
+                1.3666667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.6489999890327454,
+                0.03333333134651184,
+                0.7369999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.17467083036899568,
+                0.5127136707305908,
+                0.6883885264396668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.9158039689064026,
+                0.03333333134651184,
+                -1.6086163520812989
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -1.3739999532699586,
+                0.03333333134651184,
+                -0.9459999799728394
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -0.7419999837875366,
+                0.03333333134651184,
+                -0.8149999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (3)",
+            "position": [
+                -0.7680000066757202,
+                0.03333333134651184,
+                1.5549999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.5987101793289185,
+                0.03333333134651184,
+                2.881535768508911
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.04999947547912598,
+                0.03333333134651184,
+                3.200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.575457751750946,
+                0.03333333134651184,
+                -1.187637209892273
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.549999475479126,
+                0.03333333134651184,
+                3.125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.7122149467468262,
+                0.7559407949447632,
+                0.7825742959976196
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240922184116-FloorPlan207_physics-Remove_the_keys_from_the_TV_stand__.json",
+    "message": ""
+}

@@ -1,0 +1,282 @@
+{
+    "scene_name": "livingroom_15_scene_18",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/livingroom_15_scene_18.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.1180000305175782,
+        0.0,
+        1.503999948501587
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -14832434
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_18/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Analyze the room’s spatial distribution and identify which objects could be rearranged for efficiency.",
+    "task_text": "Analyze the spatial distribution of the room and identify items that can be rearranged to improve the cleanliness of the room",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Move the cluttered shoes near the door to a shoe rack.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Rearrange the scattered books on the floor to a bookshelf.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Shift the dining table to the corner to create more open space.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Move the chair from the center of the room to the wall.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pick up the book from the floor and place it on the sofa.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Move the mirror to improve lighting in the room.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Rearrange the pillows and blankets on the couch for a tidier look.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Move the chair from the center of the room to the wall.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Pick up the book from the floor and place it on the sofa.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.3860000371932984,
+                0.04109049588441849,
+                0.531000018119812
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.9989999532699586,
+                0.04109049588441849,
+                1.8170000314712525
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                2.062999963760376,
+                0.04109049588441849,
+                0.44999998807907107
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.2666666805744171,
+                0.04109049588441849,
+                2.1283152103424074
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                0.7409999966621399,
+                0.04109049588441849,
+                1.2970000505447388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.7526383399963379,
+                0.04109049588441849,
+                4.451077461242676
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.3580000400543215,
+                0.04109049588441849,
+                3.7260000705718996
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.1349999904632569,
+                0.04109049588441849,
+                3.6059999465942385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.709373950958252,
+                0.04109049588441849,
+                0.4333333373069763
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.2090001106262209,
+                0.04109049588441849,
+                4.164999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.3589999675750734,
+                0.04109049588441849,
+                2.984999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                3.11299991607666,
+                0.04109049588441849,
+                2.4000000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                4.209373950958252,
+                0.04109049588441849,
+                0.5333333611488342
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                4.209373950958252,
+                0.04109049588441849,
+                4.199999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.6890000104904175,
+                0.7369999885559082,
+                3.5269999504089357
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240921201748-livingroom_15_scene_18-Analyze_the_spatial_distribution_of_the_room_and_identify_items_that_can_be_rearranged_to_improve_the_cleanliness_of_the_room.json",
+    "message": ""
+}

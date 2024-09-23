@@ -1,0 +1,210 @@
+{
+    "scene_name": "livingroom_15_scene_6",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/livingroom_15_scene_6.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -6197620
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_6/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "task_template": "How many shelves are in the main bookcase?",
+    "task_text": "How many glass panes are there on the window？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "18",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "4",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "6",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "8",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "10",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "12",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "14",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "16",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": []
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "16",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.4390000104904175,
+                0.0416666716337204,
+                0.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.47999998927116396,
+                0.0416666716337204,
+                2.134999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.3940000534057618,
+                0.061710551381111148,
+                3.3310000896453859
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.2839999198913576,
+                0.0416666716337204,
+                5.317999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.9104371070861818,
+                0.0416666716337204,
+                0.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.546999931335449,
+                0.0416666716337204,
+                2.9104371070861818
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (3)",
+            "position": [
+                4.276000022888184,
+                0.0416666716337204,
+                3.0179998874664308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                3.4170000553131105,
+                0.0416666716337204,
+                4.3460001945495609
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (2)",
+            "position": [
+                3.4170000553131105,
+                0.0416666716337204,
+                5.382999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.5222296714782719,
+                0.0416666716337204,
+                1.203726053237915
+            ],
+            "type": "navigation"
+        }
+    ],
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240920220239-livingroom_15_scene_6-How_many_glass_panes_are_there_on_the_window？.json",
+    "message": ""
+}

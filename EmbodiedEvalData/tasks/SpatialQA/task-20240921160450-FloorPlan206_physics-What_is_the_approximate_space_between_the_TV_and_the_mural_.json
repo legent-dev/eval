@@ -1,0 +1,304 @@
+{
+    "scene_name": "FloorPlan206_physics",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/AI2THOR/ai2thor客厅_11/FloorPlan206_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.0110000371932984,
+        0.0,
+        -1.7319999933242798
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -12694976
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan206_physics/Objects/Floor_3053f5a6/mesh"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -12691716
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan206_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "What is the approximate space between the coffee table and the wall?",
+    "task_text": "What is the approximate space between the TV and the mural?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "1m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "6m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "60m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "2m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "10m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "15m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "20m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "6m",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "FloorPlan206_physics/Objects/Laptop_62aa2a4e",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "CoffeeTable_55966716"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.9160000085830689,
+                0.03333333134651184,
+                0.0430000014603138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -0.9160000085830689,
+                0.03333333134651184,
+                -0.48500001430511477
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                0.16099999845027924,
+                0.03333333134651184,
+                -0.5180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                0.16099999845027924,
+                0.03333333134651184,
+                0.08100000023841858
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.9549999833106995,
+                0.03333333134651184,
+                -1.222000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -0.9549999833106995,
+                0.03333333134651184,
+                -1.805999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.10270321369171143,
+                0.5837839841842651,
+                0.9333333969116211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.799999475479126,
+                0.03333333134651184,
+                -1.7549999952316285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.5399999618530274,
+                0.03333333134651184,
+                -1.7940000295639039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                1.5399999618530274,
+                0.03333333134651184,
+                -0.013000000268220902
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.799999475479126,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.690000057220459,
+                0.20000001788139344,
+                0.8519999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                2.4019999504089357,
+                0.20000001788139344,
+                0.8519999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                2.4019999504089357,
+                0.20000001788139344,
+                -0.9810000061988831
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (3)",
+            "position": [
+                1.6349999904632569,
+                0.20000001788139344,
+                -0.9810000061988831
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.7272156476974488,
+                0.891433835029602,
+                -0.6956850290298462
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.6768115758895875,
+                0.8564601540565491,
+                -1.2707749605178834
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.05999999865889549,
+                0.515999972820282,
+                -0.9419999718666077
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921160450-FloorPlan206_physics-What_is_the_approximate_space_between_the_TV_and_the_mural_.json",
+    "message": ""
+}

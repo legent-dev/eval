@@ -1,0 +1,359 @@
+{
+    "scene_name": "FloorPlan7_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan7_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -58444584
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan7_physics/Objects/Floor_e1b28141"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -58433288
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan7_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Wash the lettuce in the sink and place the lettuce in the fridge. ",
+    "task_text": "Wash the apple near the sink and place the apple in the fridge. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58434728
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan7_physics/Objects/Apple_49b8e66c"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the door of the fridge",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58435504
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan7_physics/Objects/Fridge_2088cdff/FridgeBodyMesh/FridgeDoor"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the fridge",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58448898
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "CloseDoor",
+            "option_text": "close the door of the fridge",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58435504
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan7_physics/Objects/Fridge_2088cdff/FridgeBodyMesh/FridgeDoor"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wash the apple",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58434728
+                    },
+                    {
+                        "instanceID": -58440280
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan7_physics/Objects/Apple_49b8e66c",
+                "FloorPlan7_physics/Objects/Sink_53169595/SinkMesh"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -58434728
+                            },
+                            {
+                                "instanceID": -58440280
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan7_physics/Objects/Apple_49b8e66c",
+                            "FloorPlan7_physics/Objects/Sink_53169595/SinkMesh"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58434728
+            },
+            "predicate_object": "FloorPlan7_physics/Objects/Apple_49b8e66c",
+            "targetPlace": {
+                "instanceID": -58448898
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.6292709112167358,
+                0.0315263569355011,
+                -0.6333333849906921
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.12099999934434891,
+                0.0315263569355011,
+                0.8949999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.0880000591278077,
+                0.0315263569355011,
+                1.0549999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.10008729994297028,
+                0.0315263569355011,
+                3.0333335399627687
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.8889999389648439,
+                0.0315263569355011,
+                -1.4869999885559083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -3.615999937057495,
+                0.0315263569355011,
+                0.11100000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.4170000553131105,
+                0.0315263569355011,
+                1.2610000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -3.061000108718872,
+                0.0315263569355011,
+                0.07100000232458115
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.5333335399627687,
+                0.0315263569355011,
+                2.1500000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.7039999961853028,
+                0.0315263569355011,
+                2.569999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.9499998092651368,
+                0.9704154133796692,
+                -0.8499999046325684
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.2029999494552613,
+                0.0315263569355011,
+                1.5149999856948853
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.0500001907348633,
+                0.0315263569355011,
+                -0.36666667461395266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.5500001907348633,
+                0.0315263569355011,
+                3.6500000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.5500001907348635,
+                0.0315263569355011,
+                -0.34999990463256838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                3.055000066757202,
+                0.0315263569355011,
+                1.11899995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                3.0500001907348635,
+                0.0315263569355011,
+                2.7333335876464845
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.6292709112167358,
+                0.9617499113082886,
+                -1.4413679838180543
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.028104662895202638,
+                0.7245513200759888,
+                1.8910150527954102
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                -0.10008728504180908,
+                0.7785906791687012,
+                2.135082960128784
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.10008728504180908,
+                0.7785906791687012,
+                2.135082960128784
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240922211009-FloorPlan7_physics-Wash_the_apple_near_the_sink_and_place_the_apple_in_the_fridge__.json",
+    "message": ""
+}

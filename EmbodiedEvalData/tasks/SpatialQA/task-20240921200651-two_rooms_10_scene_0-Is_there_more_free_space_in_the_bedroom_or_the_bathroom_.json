@@ -1,0 +1,234 @@
+{
+    "scene_name": "two_rooms_10_scene_0",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/Objaverse二房间_10/two_rooms_10_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -17909324
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_0/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -17905484
+        },
+        {
+            "instanceID": -17907936
+        },
+        {
+            "instanceID": -17907964
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_0/CreatedObjects/identifier3_Doorway_5.glb/Doorway_5(Clone)",
+        "two_rooms_10_scene_0/CreatedObjects/identifier37_2f0743a1d27345269d1444a8becfce59.glb/Sketchfab_model",
+        "two_rooms_10_scene_0/CreatedObjects/identifier38_a330158bc982400cae1749bb67ff5182.glb"
+    ],
+    "humans": [],
+    "task_template": "Is there more free space in the bedroom or the living room?",
+    "task_text": "Is there more free space in the bedroom or the bathroom?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "bedroom, a little more",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "toilet, a little more",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bedroom, much more",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "toilet, much more",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "bedroom, a little more",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "two_rooms_10_scene_0/CreatedObjects/identifier35_72772460843d443bbe16f9ede0572c6b.glb/Sketchfab_model/CounterStool_01.fbx/RootNode/CounterStool_01",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.963772773742676,
+                0.0416666716337204,
+                2.5747077465057375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                3.071597099304199,
+                0.0416666716337204,
+                2.2153878211975099
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.5808796882629396,
+                0.0416666716337204,
+                0.9593744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.636793613433838,
+                0.0416666716337204,
+                3.9034602642059328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.5808796882629395,
+                0.0416666716337204,
+                2.0320000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.33333349227905276,
+                0.0416666716337204,
+                1.8329999446868897
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.41912031173706057,
+                0.0416666716337204,
+                1.7610000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.100000023841858,
+                0.0416666716337204,
+                2.453000068664551
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.316999912261963,
+                0.0416666716337204,
+                0.506558895111084
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                2.316999912261963,
+                0.0416666716337204,
+                2.312000036239624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -4.208606719970703,
+                0.526729166507721,
+                2.9419589042663576
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                3.071597099304199,
+                0.08305992186069489,
+                2.2153878211975099
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.071597099304199,
+                0.08305992186069489,
+                2.2153878211975099
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921200651-two_rooms_10_scene_0-Is_there_more_free_space_in_the_bedroom_or_the_bathroom_.json",
+    "message": ""
+}

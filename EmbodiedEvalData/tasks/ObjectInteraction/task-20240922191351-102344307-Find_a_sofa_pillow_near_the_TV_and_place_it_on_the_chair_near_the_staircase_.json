@@ -1,0 +1,615 @@
+{
+    "scene_name": "102344307",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/HSSD/102344307.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        8.28600025177002,
+        0.0,
+        -11.137999534606934
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -42358038
+        }
+    ],
+    "floor_objects": [
+        "102344307/walls/geometry_rs-101"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Seek out the yellow notebook from the study and set it down on the shelf in the bedroom where the white folder is",
+    "task_text": "Find a sofa pillow near the TV and place it on the chair near the staircase.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -42337890
+                    }
+                ]
+            },
+            "objects": [
+                "102344307/furniture/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e > /7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e >  > root/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e >  > root > "
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -42399926
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoints"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42337890
+            },
+            "predicate_object": "102344307/furniture/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e > /7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e >  > root/7165e9d457a1fb2a4fa6d827d5ef9f5a90a6408e >  > root > ",
+            "targetPlace": {
+                "instanceID": -42399926
+            },
+            "predicate_place": "SpecialPoints"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.31035423278808596,
+                0.023300591856241227,
+                -15.566667556762696
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.31035423278808596,
+                0.711726725101471,
+                -14.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.31035423278808596,
+                0.023300591856241227,
+                -12.766667366027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.7335541248321534,
+                0.023300591856241227,
+                -5.584460258483887
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.233229160308838,
+                0.023300591856241227,
+                -10.210220336914063
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.322392702102661,
+                0.023300591856241227,
+                -3.8652424812316896
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.310354232788086,
+                0.023300591856241227,
+                -15.166667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.310354232788086,
+                0.023300591856241227,
+                -13.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.8329966068267824,
+                0.023300591856241227,
+                -7.6579999923706059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                5.699999809265137,
+                0.023300591856241227,
+                -8.128000259399414
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                3.3333334922790529,
+                0.023300591856241227,
+                -6.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                4.666666507720947,
+                0.023300591856241227,
+                -12.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                8.279999732971192,
+                0.023300591856241227,
+                -15.541000366210938
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                6.53000020980835,
+                0.023300591856241227,
+                -7.8420000076293949
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                5.640999794006348,
+                0.023300591856241227,
+                -7.459000110626221
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                5.310354232788086,
+                0.023300591856241227,
+                -6.23199987411499
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                8.5,
+                0.023300591856241227,
+                -13.460000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                9.22700023651123,
+                0.1720000058412552,
+                -13.404999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                4.741000175476074,
+                0.023300591856241227,
+                -11.149999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                7.359000205993652,
+                0.023300591856241227,
+                -9.008000373840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                7.459000110626221,
+                0.023300591856241227,
+                -6.315999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (2)",
+            "position": [
+                7.459000110626221,
+                0.023300591856241227,
+                -5.263999938964844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (3)",
+            "position": [
+                6.005000114440918,
+                0.023300591856241227,
+                -5.263999938964844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (4)",
+            "position": [
+                5.935999870300293,
+                0.023300591856241227,
+                -6.140999794006348
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (1)",
+            "position": [
+                7.828999996185303,
+                0.023300591856241227,
+                -6.863999843597412
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                8.310354232788086,
+                0.023300591856241227,
+                -11.119999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (1)",
+            "position": [
+                7.019000053405762,
+                0.023300591856241227,
+                -11.119999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                9.310354232788086,
+                0.023300591856241227,
+                -15.566667556762696
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                8.778566360473633,
+                0.023300591856241227,
+                -7.0871171951293949
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20 (1)",
+            "position": [
+                8.196000099182129,
+                0.023300591856241227,
+                -7.238999843597412
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20 (2)",
+            "position": [
+                7.872000217437744,
+                0.023300591856241227,
+                -8.137999534606934
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                10.698878288269043,
+                0.023300591856241227,
+                -6.112226963043213
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                10.995584487915039,
+                0.023300591856241227,
+                -2.4760777950286867
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                10.966508865356446,
+                0.023300591856241227,
+                -0.21257594227790833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                11.619999885559082,
+                0.023300591856241227,
+                -13.40999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                10.720000267028809,
+                0.023300591856241227,
+                -11.109999656677246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                11.829999923706055,
+                0.023300591856241227,
+                -15.567203521728516
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                12.700000762939454,
+                0.023300591856241227,
+                -4.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                13.700000762939454,
+                0.023300591856241227,
+                -17.170909881591798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                12.4399995803833,
+                0.023300591856241227,
+                -14.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29 (1)",
+            "position": [
+                12.4399995803833,
+                0.023300591856241227,
+                -15.390000343322754
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                12.15999984741211,
+                0.023300591856241227,
+                -10.95199966430664
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                12.310354232788086,
+                0.023300591856241227,
+                -5.833333969116211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                12.310354232788086,
+                0.023300591856241227,
+                -1.1709098815917969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                14.310354232788086,
+                0.023300591856241227,
+                -15.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                13.81972599029541,
+                0.023300591856241227,
+                -6.138920783996582
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                14.310354232788086,
+                0.023300591856241227,
+                -3.4333336353302
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                14.606094360351563,
+                0.023300591856241227,
+                -0.41370534896850588
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                15.310354232788086,
+                0.7899672985076904,
+                -17.170909881591798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint38",
+            "position": [
+                16.533334732055665,
+                0.023300591856241227,
+                -16.170909881591798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint39",
+            "position": [
+                16.310354232788087,
+                0.023300591856241227,
+                -14.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                16.310354232788087,
+                0.023300591856241227,
+                -6.133334159851074
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint41",
+            "position": [
+                16.310354232788087,
+                0.023300591856241227,
+                -3.3333334922790529
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint42",
+            "position": [
+                16.310354232788087,
+                0.023300591856241227,
+                -0.5333335995674133
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint43",
+            "position": [
+                18.170028686523439,
+                0.023300591856241227,
+                -5.834233283996582
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint44",
+            "position": [
+                18.100000381469728,
+                0.023300591856241227,
+                -4.170909881591797
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                18.200000762939454,
+                0.023300591856241227,
+                -1.1709098815917969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                6.435999870300293,
+                0.5590000152587891,
+                -8.847999572753907
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240922191351-102344307-Find_a_sofa_pillow_near_the_TV_and_place_it_on_the_chair_near_the_staircase_.json",
+    "message": ""
+}
