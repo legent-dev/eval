@@ -612,6 +612,7 @@ namespace Annotator
                 if(human.pointingTo!=null){
                     human.pointing_to = GetPath(human.pointingTo.transform);
                 }
+                else human.pointing_to = "";
             }
             
             HashSet<string> specialPointNames = new HashSet<string>();
