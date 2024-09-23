@@ -1,8 +1,10 @@
-# eval
+# EmbodiedEval
+
+## 环境配置
 
 #### 配环境
 
-```
+```bash
 conda create -n legent python=3.10
 conda activate legent
 git clone https://github.com/thunlp/LEGENT.git
@@ -11,23 +13,63 @@ pip install -e .
 legent download --dev --thu
 ```
 
-```
+```bash
 cd ..
 git clone git@github.com:legent-dev/eval.git
 ```
 
-#### 评测
+#### 下载场景文件
 
-`python download.py` 下载 `eval_folder_xxx.zip` 并解压，目前最新版是eval_folder_20240614_0251，`eval.py`的`eval_folder`路径改为对应路径.
+```bash
+python download.py
+```
 
-`python run_eval.py --agent gpt-4o`，查看是否运行成功，运行结果保存在eval_folder_xxx/results下.
+场景文件会下载到EmbodiedEvalData/scenes文件夹。
 
-#### 并行评测
+#### 服务器渲染环境（有显示器的机器不需要）
 
-```python run_eval_multiprocess.py```
+以下两种方式二选一，有条件选gpu渲染
+
+CPU渲染：
+
+```bash
+sudo apt install -y xorg-dev xvfb
+```
+
+GPU渲染：
+
+```bash
+
+```
+
+## 评测
+
+#### Random Baseline
+
+能运行这个就表示环境没有问题了。
+
+```bash
+python run_eval.py --agent random --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+```
+
+#### 人类评测
+
+```bash
+python run_eval.py --agent human --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+```
+
+#### gpt4o评测
+
+```bash
+python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+```
 
 #### 评测其他模型
 
 `agent.py` 里继承 `AgentBase` 实现你的Agent.
 
 `run_eval.py`改成你的Agent.
+
+#### 并行评测(TODO)
+
+```python run_eval_multiprocess.py```
