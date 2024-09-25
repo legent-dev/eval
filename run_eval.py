@@ -57,12 +57,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
             task_setting["task"] = task_setting["scene"]["task_instance"]["task_text"]
             print(scene_path, task_setting["task"])
+            scale = task_setting["scene"]["task_instance"]["scene_scale"]
             task_setting["scene"]["instances"] = [{
                 "prefab":task_setting["scene"]["task_instance"]["scene_path"],
 
                 "position": [0,0,0],
                 "rotation": [0,0,0],
-                "scale": [1,1,1],
+                # "scale": scale,
+                "scale": [1,1,1], # gltFast动态导入的scale和Editor模式的scale不一样，有问题。只能用1,1,1
                 "parent": 0,
                 "type": "kinematic"
             }]
@@ -257,6 +259,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             api_calls = []
                 
             print(task_setting["task"])
+            
+            # if "Inventory the item in the black refrigerator and place it in the sink." not in task_setting["task"]:
+            #     print(task_setting["task"])
+            #     continue
             obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
             if run_one_task_instance or run_all_task_instance:
                 task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
