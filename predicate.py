@@ -1,6 +1,7 @@
 from typing import List
 from legent import Action, Observation
 from legent.utils.math import vec_xz, distance
+import numpy as np
 
 
 class Predicate:
@@ -37,6 +38,7 @@ class PredicateAgentNear(Predicate):
             return 1, {"distance": d}
         else:
             return 0, {"distance": d}
+
 
 class PredicateCloser(Predicate):
     def __init__(self, object1, object2, obs: Observation) -> None:
@@ -145,7 +147,6 @@ class PredicateNotOn(Predicate):
         return 1, {}
 
 
-
 # TODO: near和at基本一样，可以合并
 class PredicateAgentAt(Predicate):
     def __init__(self, object_id) -> None:
@@ -159,7 +160,8 @@ class PredicateAgentAt(Predicate):
             return 1, {"distance": d}
         else:
             return 0, {"distance": d}
-        
+
+
 class PredicateAt(Predicate):
     def __init__(self, object1, object2) -> None:
         self.object1 = object1
@@ -173,11 +175,12 @@ class PredicateAt(Predicate):
         else:
             return 0, {"distance": d}
 
+
 class PredicateNear(Predicate):
     def __init__(self, object1, object2) -> None:
         self.object1 = object1
         self.object2 = object2
-        
+
     def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
         instances = obs.game_states["instances"]
         d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
@@ -191,7 +194,7 @@ class PredicateNotNear(Predicate):
     def __init__(self, object1, object2) -> None:
         self.object1 = object1
         self.object2 = object2
-        
+
     def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
         instances = obs.game_states["instances"]
         d = distance(vec_xz(instances[self.object1]["position"]), vec_xz(instances[self.object2]["position"]))
@@ -199,6 +202,25 @@ class PredicateNotNear(Predicate):
             return 1, {"distance": d}
         else:
             return 0, {"distance": d}
+
+
+class PredicateNotAt(Predicate):
+    def __init__(self, object1, object2) -> None:
+        self.object1 = object1
+        self.object2 = object2
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        instances = obs.game_states["instances"]
+
+        def vec_xyz(position):
+            return np.array([position["x"], position["y"], position["z"]])
+
+        d = np.linalg.norm(vec_xyz(instances[self.object1]["position"]) - vec_xyz(instances[self.object2]["position"]))
+        if d > 0.3:
+            return 1, {"distance": d}
+        else:
+            return 0, {"distance": d}
+
 
 # TODO: agent pass 和 agent at一样，可以合并
 class PredicateAgentPass(Predicate):
@@ -218,7 +240,7 @@ class PredicateAgentPass(Predicate):
         else:
             return 0, {"distance": d}
 
-        
+
 class PredicateSpecialActionSuccess(Predicate):
     def __init__(self, action_text) -> None:
         self.action_text = action_text
@@ -238,6 +260,7 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
     pred_list = []
     print(predicates)
     for i in range(len(predicates)):
+
         def build_one_predicate(predicate):
             if old_version:
                 if predicate.startswith("choose"):
@@ -310,6 +333,10 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                     splits = predicate.split(" ")
                     assert len(splits) == 3
                     return PredicateNotNear(int(splits[1]), int(splits[2]))
+                elif predicate.startswith("not_at"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 3
+                    return PredicateNotAt(int(splits[1]), int(splits[2]))
 
                 elif predicate.startswith("closer"):
                     splits = predicate.split(" ")
@@ -328,9 +355,9 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                 elif predicate.startswith("special_action_succes"):
                     splits = predicate.split(" ", maxsplit=1)
                     return PredicateSpecialActionSuccess(splits[1])
+
         pred_list.append(build_one_predicate(predicates[i]))
     return pred_list
-
 
 
 def get_feedback(action: str, prev_obs, obs):
