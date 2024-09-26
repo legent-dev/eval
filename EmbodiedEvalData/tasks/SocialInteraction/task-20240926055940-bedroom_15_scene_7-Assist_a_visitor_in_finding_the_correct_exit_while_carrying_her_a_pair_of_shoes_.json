@@ -1,0 +1,266 @@
+{
+    "scene_name": "bedroom_15_scene_7",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/bedroom_15_scene_7.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.6570000052452087,
+        2.2351741790771486e-8,
+        0.5120000243186951
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -21410864
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_7/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -21411384
+            },
+            "human_position": [
+                3.430000066757202,
+                0.0,
+                0.9570000171661377
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch21_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -21410044
+            },
+            "pointing_to": "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb"
+        }
+    ],
+    "task_template": "Assist a visitor in finding the correct exit while carrying their luggage.",
+    "task_text": "Assist a visitor in finding the correct exit while carrying her a pair of shoes.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -21410044
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "guide the guest to the exit",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -21411384
+                    }
+                ]
+            },
+            "objects": [
+                "Ch21_nonPBR"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -21411384
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch21_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -21410044
+            },
+            "predicate_object": "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "guide the guest to the exit",
+            "targetObject": {
+                "instanceID": -21410044
+            },
+            "predicate_object": "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.9059998989105226,
+                0.056915283203125,
+                1.0110000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                3.9059998989105226,
+                0.056915283203125,
+                1.8350000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                3.4230000972747804,
+                0.056915283203125,
+                1.8350000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.7009999752044678,
+                0.056915283203125,
+                0.36666667461395266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.0089999437332154,
+                0.06167558953166008,
+                2.9019999504089357
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.0700000524520875,
+                0.056915283203125,
+                4.3979997634887699
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.9170000553131104,
+                0.056915283203125,
+                4.4120001792907719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                1.9170000553131104,
+                0.056915283203125,
+                3.7139999866485597
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                1.9170000553131104,
+                0.056915283203125,
+                2.934000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (4)",
+            "position": [
+                3.3519999980926515,
+                0.056915283203125,
+                2.8239998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.7333335876464845,
+                0.823577880859375,
+                0.40000003576278689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.630000114440918,
+                0.056915283203125,
+                3.6589999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.8493540287017824,
+                0.8735537528991699,
+                0.3967892527580261
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.9609999656677247,
+                0.33799999952316286,
+                4.449999809265137
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926055940-bedroom_15_scene_7-Assist_a_visitor_in_finding_the_correct_exit_while_carrying_her_a_pair_of_shoes_.json",
+    "message": ""
+}

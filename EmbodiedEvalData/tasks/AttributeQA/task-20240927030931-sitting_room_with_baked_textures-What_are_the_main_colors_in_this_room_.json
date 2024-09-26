@@ -1,0 +1,449 @@
+{
+    "scene_name": "sitting_room_with_baked_textures",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/sitting_room_with_baked_textures.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -5923216
+        }
+    ],
+    "floor_objects": [
+        "sitting_room_with_baked_textures/hall01.obj.cleaner.materialmerger.gles/Object_3"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "What are the main colors in this room?",
+    "task_text": "What are the main colors in this room?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Red, Blue, and Yellow",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Green, Orange, and White",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Purple, Brown, and Gray",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pink, Turquoise, and Gold",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Black, Silver, and Beige",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Crimson, Ivory, and Olive",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Cyan, Magenta, and Yellow",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "I do not know",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Purple, Brown, and Gray",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "NavPoints/NavigationPoint17",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.433495044708252,
+                0.033332619816064838,
+                -4.990140914916992
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.122046947479248,
+                0.033332619816064838,
+                -2.800159215927124
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.112545967102051,
+                0.033332619816064838,
+                0.3662344813346863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.199999809265137,
+                0.033332619816064838,
+                2.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.0333333015441896,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.133333206176758,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.6999998092651369,
+                0.033332619816064838,
+                1.4527158737182618
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.1999998092651369,
+                0.033332619816064838,
+                -3.0472841262817385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.2999999523162842,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -2.17136287689209,
+                0.033332619816064838,
+                2.9527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.6713628768920899,
+                0.033332619816064838,
+                -0.04728412628173828
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.13365061581134797,
+                0.033332619816064838,
+                -4.988733291625977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.1713628768920899,
+                0.033332619816064838,
+                1.4527158737182618
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.6713628768920898,
+                0.033332619816064838,
+                2.9527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -0.17136287689208985,
+                0.033332619816064838,
+                -3.0472841262817385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -0.17136287689208985,
+                0.033332619816064838,
+                -0.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -0.17136287689208985,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.32863712310791018,
+                0.033332619816064838,
+                0.9527158737182617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                1.6959956884384156,
+                0.033332619816064838,
+                -4.936846733093262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                0.8286371231079102,
+                0.033332619816064838,
+                2.4527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                1.3286371231079102,
+                0.033332619816064838,
+                -3.0472841262817385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                1.3286371231079102,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                1.3286371231079102,
+                0.033332619816064838,
+                3.9527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                1.8286371231079102,
+                0.033332619816064838,
+                -0.04728412628173828
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                2.32863712310791,
+                0.033332619816064838,
+                2.5333335399627687
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                3.066666841506958,
+                0.033332619816064838,
+                -4.199999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                3.355609178543091,
+                0.033332619816064838,
+                -1.4854567050933838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                2.82863712310791,
+                0.033332619816064838,
+                3.9527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                3.32863712310791,
+                0.033332619816064838,
+                0.4527158737182617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                3.9165396690368654,
+                0.033332619816064838,
+                2.743837594985962
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240927030931-sitting_room_with_baked_textures-What_are_the_main_colors_in_this_room_.json",
+    "message": ""
+}

@@ -1,0 +1,348 @@
+{
+    "scene_name": "apartamento",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/apartamento.glb",
+    "scene_scale": [
+        1.1111111640930176,
+        1.1111111640930176,
+        1.1111111640930176
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        99.96829986572266,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -26666404
+        }
+    ],
+    "floor_objects": [
+        "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/1_Structure"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Go to the laundry room to find two detergent bottles, and put them on the shelf in the garage.",
+    "task_text": "Go to the kitchen to find two vegetation plants, and put them on the coffee table in the living room.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up one plant",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -26668108
+                    },
+                    {
+                        "instanceID": -26668140
+                    },
+                    {
+                        "instanceID": -26668028
+                    }
+                ]
+            },
+            "objects": [
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Green Plant",
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Red Plant",
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Coffee machine"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the coffee table",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -26675356
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -26668108
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Green Plant",
+            "targetPlace": {
+                "instanceID": -26675356
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -26668140
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Red Plant",
+            "targetPlace": {
+                "instanceID": -26675356
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.0012221336364748,
+                0.028578385710716249,
+                -0.15944130718708039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.36399999260902407,
+                0.028578385710716249,
+                -6.874000072479248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.469660997390747,
+                0.028578385710716249,
+                -7.196460723876953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.2410409450531008,
+                0.028578385710716249,
+                -3.9852705001831056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.258394956588745,
+                0.028578385710716249,
+                -2.2485880851745607
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.3666670322418215,
+                0.028578385710716249,
+                -0.5949039459228516
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.3333334922790529,
+                0.8139218688011169,
+                -5.420492172241211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.885410785675049,
+                0.028578385710716249,
+                0.9050960540771484
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.35600000619888308,
+                -0.00475495308637619,
+                -8.631999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.8854107856750489,
+                0.028578385710716249,
+                -7.166667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.7599999904632569,
+                0.028578385710716249,
+                -5.5370001792907719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.20600000023841859,
+                0.028578385710716249,
+                -0.3100000023841858
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.3854107856750489,
+                0.028578385710716249,
+                -4.094903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.12300000339746475,
+                0.028578385710716249,
+                -2.9049999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (1)",
+            "position": [
+                0.8830000162124634,
+                0.028578385710716249,
+                -3.1619999408721926
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.2980000078678131,
+                0.028578385710716249,
+                -4.4670000076293949
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.1820000410079957,
+                -0.00475495308637619,
+                -7.7820000648498539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.1145892143249512,
+                -0.00475495308637619,
+                -9.594903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.0399999618530275,
+                0.028578385710716249,
+                -2.1640000343322756
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                1.6145892143249512,
+                0.028578385710716249,
+                -5.094903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                1.7020000219345093,
+                0.028578385710716249,
+                -3.632999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                1.7869999408721924,
+                0.028578385710716249,
+                -7.145999908447266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                2.614589214324951,
+                -0.00475495308637619,
+                -9.594903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.2048797607421877,
+                1.056270956993103,
+                0.7516453862190247
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.0738450288772584,
+                0.42100000381469729,
+                -6.11899995803833
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.0738450288772584,
+                0.42100000381469729,
+                -6.11899995803833
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926161153-apartamento-Go_to_the_kitchen_to_find_two_vegetation_plants,_and_put_them_on_the_coffee_table_in_the_living_room_.json",
+    "message": ""
+}

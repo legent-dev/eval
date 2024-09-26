@@ -1,0 +1,214 @@
+{
+    "scene_name": "FloorPlan208_physics",
+    "scene_path": "D:/4444444/emabench/Assets/Scenes/FloorPlan208_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.069000005722046,
+        0.0,
+        -2.115000009536743
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -820528
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan208_physics/Objects/Floor_86d9f20f"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -815880
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan208_physics/FPSController"
+    ],
+    "task_template": "Locate the glass object used for drinking water.",
+    "task_text": "Locate the furniture that can be used for playing music. ",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "targetObject": {
+                "instanceID": -1059306
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -3.687000036239624,
+                0.03333333134651184,
+                -2.3239998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.062000036239624,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.0390000343322756,
+                0.03333333134651184,
+                -2.1429998874664308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.8333334922790528,
+                0.03333333134651184,
+                -0.4999997615814209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.3279999494552613,
+                0.03333333134651184,
+                2.0899999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.9399995803833008,
+                0.03333333134651184,
+                -1.9133330583572388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                0.07900000363588333,
+                0.03333333134651184,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.5,
+                0.03333333134651184,
+                -2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.7637953758239747,
+                0.03333333134651184,
+                -0.9748316407203674
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.1399999856948853,
+                0.03333333134651184,
+                1.4299999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.1334762573242188,
+                0.0580599419772625,
+                1.4162484407424927
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "D:/4444444/emabench/Assets\\Tasks\\task-20240916085603-FloorPlan208_physics-Locate_the_furniture_that_can_be_used_for_playing_music__.json",
+    "message": ""
+}

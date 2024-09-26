@@ -1,0 +1,227 @@
+{
+    "scene_name": "FloorPlan401_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan401_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.8069999814033508,
+        0.0,
+        3.186000108718872
+    ],
+    "agent_rotation": [
+        0.0,
+        261.47991943359377,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -11102920
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan401_physics/Objects/Floor_c6579873"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -11098472
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan401_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Create a fruit bowl by putting apples, oranges, and grapes in a large bowl.",
+    "task_text": "Set up a washbasin area by placing a spray bottle and a soap bottle on a shelf.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the spray bottle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11101388
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan401_physics/Objects/SprayBottle_6f3b5fe8"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the spray bottle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11105264
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the soap bottle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11101204
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan401_physics/Objects/SoapBottle_1686be5e"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the soap bottle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11105274
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -11101204
+            },
+            "predicate_object": "FloorPlan401_physics/Objects/SoapBottle_1686be5e",
+            "targetPlace": {
+                "instanceID": -11105274
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -11101204
+            },
+            "predicate_object": "FloorPlan401_physics/Objects/SoapBottle_1686be5e",
+            "targetPlace": {
+                "instanceID": -11105274
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.427999973297119,
+                0.019562378525733949,
+                0.3499999940395355
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.565000057220459,
+                0.0002504587173461914,
+                3.2333335876464845
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -2.4079999923706056,
+                0.0002504587173461914,
+                1.5069999694824219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.8090000152587891,
+                0.0002504587173461914,
+                3.5850000381469728
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.15293869376182557,
+                0.06691715121269226,
+                0.3730367422103882
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -3.0901994705200197,
+                0.3496299982070923,
+                0.29406654834747317
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -2.565000057220459,
+                0.8600000143051148,
+                3.8369998931884767
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.565000057220459,
+                0.8600000143051148,
+                3.8369998931884767
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -2.5859999656677248,
+                1.0750000476837159,
+                3.9200000762939455
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240925043817-FloorPlan401_physics-Set_up_a_washbasin_area_by_placing_a_spray_bottle_and_a_soap_bottle_on_a_shelf_.json",
+    "message": ""
+}

@@ -1,0 +1,231 @@
+{
+    "scene_name": "two_rooms_10_scene_9",
+    "scene_path": "C:/Users/32481/emabench/Assets/ai2thor娴村_11/ai2thor客厅_11/two_rooms_10_scene_9.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.46000000834465029,
+        2.2351741790771486e-8,
+        0.6200000047683716
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -378688
+        },
+        {
+            "instanceID": -378700
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_9/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_9/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "task_template": "Locate the object that is both green and cylindrical on the shelf.",
+    "task_text": "Locate the object that iscylindrical and silver on the table",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the ",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -376900
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_9/CreatedObjects/identifier34_0cea33fa41eb49d3a8b00d9e4d325053.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "spray it",
+            "targetObject": {
+                "instanceID": -376900
+            },
+            "predicate_object": "two_rooms_10_scene_9/CreatedObjects/identifier34_0cea33fa41eb49d3a8b00d9e4d325053.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.0369999408721926,
+                0.05484937131404877,
+                1.4226689338684083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.990000009536743,
+                0.05484937131404877,
+                2.4100000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.46999979019165,
+                0.05484937131404877,
+                2.0880000591278078
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -4.46999979019165,
+                0.05484937131404877,
+                0.996999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -3.444999933242798,
+                0.05484937131404877,
+                0.996999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.614000082015991,
+                0.05484937131404877,
+                3.635999917984009
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.784999966621399,
+                0.05484937131404877,
+                0.4959999918937683
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.2680000066757203,
+                0.05484937131404877,
+                3.688999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                -1.3170000314712525,
+                0.05484937131404877,
+                2.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                -2.8459999561309816,
+                0.05484937131404877,
+                2.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.27004963159561159,
+                0.05484937131404877,
+                0.5996147394180298
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.6234754323959351,
+                0.05484937131404877,
+                4.214000225067139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.7850000262260437,
+                0.05484937131404877,
+                2.325000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.653517246246338,
+                0.6521437168121338,
+                1.4226689338684083
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                3.6710000038146974,
+                0.6060000061988831,
+                1.8910000324249268
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.6710000038146974,
+                0.6060000061988831,
+                1.8910000324249268
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                3.552999973297119,
+                0.6060000061988831,
+                1.4119999408721924
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "C:/Users/32481/emabench/Assets\\Tasks\\task-20240919115238-two_rooms_10_scene_9-Locate_the_object_that_iscylindrical_and_silver_on_the_table.json",
+    "message": ""
+}

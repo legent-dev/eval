@@ -1,0 +1,338 @@
+{
+    "scene_name": "stylish_apartment",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/stylish_apartment.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.0399999618530274,
+        0.0,
+        -4.710000038146973
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -6457520
+        }
+    ],
+    "floor_objects": [
+        "stylish_apartment/1d4e1cfcb59844beaa65dd23456ac3bd.fbx/RootNode/i13 On My Own Apartment/i13AP Floor And Ceiling/i13AP Floor/i13AP Floor.Shape"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Can you describe the style of the paintings in this house?",
+    "task_text": "Can you describe the type of the paintings in this house?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Watercolor Painting",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Oil Painting",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Charcoal Drawing",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Digital Painting",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Mosaic Art",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pencil Drawing",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Oil Painting",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "NavPoints/NavigationPoint14 (2)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.6740000247955324,
+                0.02333332970738411,
+                4.561999797821045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.0950000286102297,
+                0.02333332970738411,
+                5.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.4678852558135988,
+                0.02333332970738411,
+                -6.511292457580566
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.2250216007232668,
+                0.02333332970738411,
+                -3.5652008056640627
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.440999984741211,
+                0.02333332970738411,
+                -1.559999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.7710000276565552,
+                0.02333332970738411,
+                1.0989999771118165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.2739601135253908,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.7685832381248474,
+                0.02333332970738411,
+                9.156266212463379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.8169999718666077,
+                0.02333332970738411,
+                -4.291999816894531
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.23100000619888307,
+                0.02333332970738411,
+                4.550000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.9959999918937683,
+                0.02333332970738411,
+                -2.063999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.22603988647460938,
+                0.02333332970738411,
+                0.28844642639160159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.8000000715255737,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.3440000116825104,
+                0.02333332970738411,
+                2.630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.703000068664551,
+                0.02333332970738411,
+                4.793000221252441
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                4.704999923706055,
+                0.02333332970738411,
+                4.315999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                2.813999891281128,
+                0.02333332970738411,
+                6.514999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.7260398864746095,
+                0.02333332970738411,
+                8.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.226039886474609,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                6.535286903381348,
+                0.02333332970738411,
+                3.21396803855896
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                7.014256477355957,
+                0.02333332970738411,
+                8.262157440185547
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240927032337-stylish_apartment-Can_you_describe_the_type_of_the_paintings_in_this_house_.json",
+    "message": ""
+}

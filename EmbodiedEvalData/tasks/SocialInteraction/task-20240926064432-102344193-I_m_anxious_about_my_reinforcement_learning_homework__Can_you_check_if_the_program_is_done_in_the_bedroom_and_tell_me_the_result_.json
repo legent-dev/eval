@@ -1,0 +1,377 @@
+{
+    "scene_name": "102344193",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/HSSD/102344193.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.9700000286102297,
+        0.0,
+        -4.96999979019165
+    ],
+    "agent_rotation": [
+        0.0,
+        231.31256103515626,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -22693954
+        }
+    ],
+    "floor_objects": [
+        "102344193/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -22692598
+        },
+        {
+            "instanceID": -22691778
+        },
+        {
+            "instanceID": -22692314
+        },
+        {
+            "instanceID": -22692394
+        }
+    ],
+    "removed_objects": [
+        "102344193/openings/openings_wall_24/6408/6408 > SketchUp/6408 > SketchUp > instance_8/6408 > SketchUp > instance_8 > C",
+        "102344193/openings/openings_wall_14/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C",
+        "102344193/openings/openings_wall_21/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "102344193/openings/openings_wall_24"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -22696742
+            },
+            "human_position": [
+                3.00600004196167,
+                3.5762786865234377e-7,
+                -6.874000072479248
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": -22706196
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "I'm expecting an important package. Could you check if it's arrived and bring it to me if it has?",
+    "task_text": "I'm anxious about my reinforcement learning homework. Can you check if the program is done in the bedroom and tell me the result?",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "check the results of the program",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -24728158
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -24728158
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "report the results",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22696742
+                    }
+                ]
+            },
+            "objects": [
+                "Ch01_nonPBR"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -22696742
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch01_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "check the results of the program",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "report the results",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.2929999828338625,
+                0.042812373489141467,
+                -8.246000289916993
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.114497423171997,
+                0.042812373489141467,
+                -2.880472183227539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.39500001072883608,
+                0.042812373489141467,
+                -5.480999946594238
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.9288702011108398,
+                0.7749569416046143,
+                -0.950261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.9200000166893005,
+                0.009479034692049027,
+                -3.4000000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.5239791870117188,
+                0.009479034692049027,
+                -8.379094123840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.5249999761581421,
+                0.011048834770917893,
+                -7.540999889373779
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.4199999570846558,
+                0.009479034692049027,
+                -2.180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                1.5549999475479127,
+                0.009479034692049027,
+                -4.9079999923706059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                4.449999809265137,
+                0.009479034692049027,
+                -2.180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                2.947000026702881,
+                0.009479034692049027,
+                -6.289000034332275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                4.559999942779541,
+                0.009479034692049027,
+                -8.710000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                2.7200000286102297,
+                0.009479034692049027,
+                -9.239999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                4.07112979888916,
+                0.009479034692049027,
+                -4.950261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                5.590000152587891,
+                0.009479034692049027,
+                -3.309999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                4.57112979888916,
+                0.009479034692049027,
+                -6.950261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                5.7170000076293949,
+                0.06338512152433396,
+                -5.443999767303467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                6.57112979888916,
+                0.009479034692049027,
+                -1.450261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                7.949999809265137,
+                0.042812373489141467,
+                -2.9800000190734865
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                8.064000129699707,
+                0.009479034692049027,
+                -5.2769999504089359
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                8.57112979888916,
+                0.009479034692049027,
+                -1.450261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.9100000262260437,
+                0.05805988237261772,
+                -4.179999828338623
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -3.072389602661133,
+                0.8190740346908569,
+                -2.497326374053955
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926064432-102344193-I_m_anxious_about_my_reinforcement_learning_homework__Can_you_check_if_the_program_is_done_in_the_bedroom_and_tell_me_the_result_.json",
+    "message": ""
+}

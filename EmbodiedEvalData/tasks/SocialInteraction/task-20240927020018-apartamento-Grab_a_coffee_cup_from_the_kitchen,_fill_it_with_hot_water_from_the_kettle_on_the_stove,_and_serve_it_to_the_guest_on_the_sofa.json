@@ -1,0 +1,411 @@
+{
+    "scene_name": "apartamento",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/apartamento.glb",
+    "scene_scale": [
+        1.1111111640930176,
+        1.1111111640930176,
+        1.1111111640930176
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.054999999701976779,
+        0.0,
+        -0.24400000274181367
+    ],
+    "agent_rotation": [
+        0.0,
+        84.71686553955078,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3640
+        }
+    ],
+    "floor_objects": [
+        "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/1_Structure"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -2310458
+            },
+            "human_position": [
+                2.2109999656677248,
+                -0.2199999988079071,
+                -5.8480000495910648
+            ],
+            "human_rotation": [
+                0.0,
+                278.841064453125,
+                0.0
+            ],
+            "asset": "Ch08_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Grab a coffee cup from the kitchen, fill it with hot water from the kettle on the stove, and serve it to the guest on the sofa",
+    "task_text": "Grab a coffee cup from the kitchen, fill it with hot water from the kettle on the stove, and serve it to the guest on the sofa",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the cup",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -5320
+                    }
+                ]
+            },
+            "objects": [
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Cup"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "fill it with hot water",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -4896
+                    },
+                    {
+                        "instanceID": -5320
+                    }
+                ]
+            },
+            "objects": [
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Teapot",
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Cup"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -4896
+                            },
+                            {
+                                "instanceID": -5320
+                            }
+                        ],
+                        "required_objects": [
+                            "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Teapot",
+                            "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Cup"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2310458
+                    }
+                ]
+            },
+            "objects": [
+                "Ch08_nonPBR"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -2310458
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch08_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "five",
+            "right_special_action": "fill it with hot water",
+            "targetObject": {
+                "instanceID": -4664
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vase_01",
+            "targetPlace": {
+                "instanceID": -1462476
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "five",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -4680
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vase_00",
+            "targetPlace": {
+                "instanceID": -1462476
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.469660997390747,
+                0.028578385710716249,
+                -7.196460723876953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.2410409450531008,
+                0.028578385710716249,
+                -3.9852705001831056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.258394956588745,
+                0.028578385710716249,
+                -2.2485880851745607
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.3333334922790529,
+                0.8139218688011169,
+                -5.420492172241211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.0409998893737795,
+                0.028578385710716249,
+                0.5099999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.4568542242050171,
+                -0.00475495308637619,
+                -9.2468843460083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.86899995803833,
+                0.028578385710716249,
+                -7.176000118255615
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                -2.6559998989105226,
+                0.028578385710716249,
+                -7.190000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                -1.7100000381469727,
+                0.028578385710716249,
+                -5.803999900817871
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.2759999930858612,
+                0.028578385710716249,
+                -0.2070000022649765
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.8040000200271607,
+                0.028578385710716249,
+                -4.383999824523926
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.14800000190734864,
+                0.028578385710716249,
+                -2.8989999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.1440000534057618,
+                0.028578385710716249,
+                -7.607999801635742
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (2)",
+            "position": [
+                1.815999984741211,
+                0.028578385710716249,
+                -7.169000148773193
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                0.38100001215934756,
+                0.028578385710716249,
+                -7.067999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.3479999899864197,
+                0.028578385710716249,
+                -4.763000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.7690000534057618,
+                0.028578385710716249,
+                -0.032999999821186069
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                1.899999976158142,
+                0.028578385710716249,
+                -0.8119999766349793
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                2.0460000038146974,
+                0.028578385710716249,
+                -2.4260001182556154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.079967975616455,
+                -0.00475495308637619,
+                -9.140812873840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.7289999723434449,
+                0.028578385710716249,
+                -5.139999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.8479999899864197,
+                0.028578385710716249,
+                -3.9809999465942385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.190000057220459,
+                0.028578385710716249,
+                -3.375999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.586259126663208,
+                -0.00475495308637619,
+                -9.405033111572266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                2.6000001430511476,
+                0.028578385710716249,
+                -4.333333969116211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.1846963167190552,
+                0.7419999837875366,
+                -5.578432083129883
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240927020018-apartamento-Grab_a_coffee_cup_from_the_kitchen,_fill_it_with_hot_water_from_the_kettle_on_the_stove,_and_serve_it_to_the_guest_on_the_sofa.json",
+    "message": ""
+}

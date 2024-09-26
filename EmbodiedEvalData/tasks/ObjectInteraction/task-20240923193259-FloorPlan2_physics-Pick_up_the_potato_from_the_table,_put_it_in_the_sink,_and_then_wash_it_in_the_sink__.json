@@ -1,0 +1,262 @@
+{
+    "scene_name": "FloorPlan2_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan2_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -105284590
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan2_physics/Objects/Floor_bbd4574e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -105275518
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan2_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Pick up the spoon from the bowl, place it on the countertop, and then wash it in the sink",
+    "task_text": "Pick up the potato from the table, put it in the sink, and then wash it in the sink. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -105283630
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan2_physics/Objects/Potato_582b16c0"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -105548996
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wash",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -105283630
+                    },
+                    {
+                        "instanceID": -105548996
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan2_physics/Objects/Potato_582b16c0",
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -105283630
+                            },
+                            {
+                                "instanceID": -105548996
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan2_physics/Objects/Potato_582b16c0",
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "wash",
+            "targetObject": {
+                "instanceID": -105282034
+            },
+            "predicate_object": "FloorPlan2_physics/Objects/Tomato_5fb6a620",
+            "targetPlace": {
+                "instanceID": -105287396
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.035999998450279239,
+                0.030222415924072267,
+                -0.753000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -0.921999990940094,
+                0.030222415924072267,
+                -0.6769999861717224
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                -1.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                0.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.433333396911621,
+                0.030222415924072267,
+                2.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -2.4260001182556154,
+                0.030222415924072267,
+                3.240000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.888651430606842,
+                0.030222415924072267,
+                0.7086656093597412
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.9279999732971191,
+                0.030222415924072267,
+                1.9789999723434449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.9049999713897705,
+                0.030222415924072267,
+                -0.7630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.5879999995231628,
+                0.030222415924072267,
+                2.9769999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                1.0169999599456788,
+                0.030222415924072267,
+                1.718000054359436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                1.0360000133514405,
+                0.030222415924072267,
+                0.7870000004768372
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.16780345141887666,
+                0.9744100570678711,
+                -0.28140586614608767
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.000284343957901001,
+                0.7520946860313416,
+                -1.437000036239624
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240923193259-FloorPlan2_physics-Pick_up_the_potato_from_the_table,_put_it_in_the_sink,_and_then_wash_it_in_the_sink__.json",
+    "message": ""
+}

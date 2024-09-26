@@ -1,0 +1,162 @@
+{
+    "scene_name": "FloorPlan303_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan303_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.1920000314712525,
+        0.0,
+        -1.0750000476837159
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -114419604
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan303_physics/Objects/Floor_ed78888e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -114413798
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan303_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Pick up a book and place it on the nearest shelf.",
+    "task_text": "Pick up the book and place it on the top of the shelf.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the book",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -114414698
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Objects/Book_7aad5d08/book_front_3"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the bookshelf below",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -114421092
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -114414698
+            },
+            "predicate_object": "FloorPlan303_physics/Objects/Book_7aad5d08/book_front_3",
+            "targetPlace": {
+                "instanceID": -114421092
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.3610000014305115,
+                0.033333227038383487,
+                -1.6449999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.2000000476837159,
+                0.033333227038383487,
+                -1.1333332061767579
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.7000002861022949,
+                0.033333227038383487,
+                -0.20000052452087403
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.5379999876022339,
+                0.06300000101327896,
+                -0.35199999809265139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                1.315000057220459,
+                0.06300000101327896,
+                -1.5010000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.339179664850235,
+                0.7401413321495056,
+                -2.6499509811401369
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.746000051498413,
+                0.6520000100135803,
+                -2.3359999656677248
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240924020620-FloorPlan303_physics-Pick_up_the_book_and_place_it_on_the_top_of_the_shelf_.json",
+    "message": ""
+}

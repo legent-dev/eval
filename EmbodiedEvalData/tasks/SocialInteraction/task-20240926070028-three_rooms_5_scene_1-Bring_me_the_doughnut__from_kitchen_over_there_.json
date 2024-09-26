@@ -1,0 +1,275 @@
+{
+    "scene_name": "three_rooms_5_scene_1",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/three_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.2160000801086427,
+        0.0,
+        0.7459999918937683
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -24821952
+        },
+        {
+            "instanceID": -24821940
+        },
+        {
+            "instanceID": -24821928
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_1/CreatedWalls/identifier14_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier12_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -24813152
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_1/CreatedObjects/identifier6_Doorway_8.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -24823816
+            },
+            "human_position": [
+                2.128999948501587,
+                0.02499997615814209,
+                2.7790000438690187
+            ],
+            "human_rotation": [
+                0.0,
+                178.1232452392578,
+                0.0
+            ],
+            "asset": "Ch13_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": -24824498
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "Bring me the newspaper from the front porch.",
+    "task_text": "Bring me the doughnut  from kitchen over there.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -24814964
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_1/CreatedObjects/identifier20_3535fb4ac14e42da8ac71ee05a594167.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -24814964
+                    },
+                    {
+                        "instanceID": -24823816
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_1/CreatedObjects/identifier20_3535fb4ac14e42da8ac71ee05a594167.glb",
+                "Ch13_nonPBR"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -24814964
+                            },
+                            {
+                                "instanceID": -24823816
+                            }
+                        ],
+                        "required_objects": [
+                            "three_rooms_5_scene_1/CreatedObjects/identifier20_3535fb4ac14e42da8ac71ee05a594167.glb",
+                            "Ch13_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.4800000190734864,
+                0.02499997615814209,
+                -1.7079999446868897
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.9754961729049683,
+                0.02499997615814209,
+                0.741100549697876
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.2333333492279053,
+                0.02499997615814209,
+                2.1594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.925000011920929,
+                0.02499997615814209,
+                3.802999973297119
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.39399999380111697,
+                0.02499997615814209,
+                0.8050000071525574
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.25,
+                0.02499997615814209,
+                1.6990000009536744
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                2.2300000190734865,
+                0.02499997615814209,
+                0.7950000166893005
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.9810000061988831,
+                0.04993162304162979,
+                2.0460000038146974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.6000003814697267,
+                0.02499997615814209,
+                3.1594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.819999933242798,
+                0.02499997615814209,
+                -1.75
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                2.239000082015991,
+                0.02499997615814209,
+                -0.4339999854564667
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                3.8319649696350099,
+                0.027591051533818246,
+                1.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.8062341213226318,
+                0.69108647108078,
+                -2.0124869346618654
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.5026538372039797,
+                1.0853192806243897,
+                -2.3340044021606447
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926070028-three_rooms_5_scene_1-Bring_me_the_doughnut__from_kitchen_over_there_.json",
+    "message": ""
+}

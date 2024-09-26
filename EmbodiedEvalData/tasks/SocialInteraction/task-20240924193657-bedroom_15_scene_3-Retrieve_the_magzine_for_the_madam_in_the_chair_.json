@@ -1,0 +1,207 @@
+{
+    "scene_name": "bedroom_15_scene_3",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/bedroom_15_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.7829999923706055,
+        0.0,
+        0.9020000100135803
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3386636
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_3/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -3387038
+            },
+            "human_position": [
+                3.927000045776367,
+                0.0,
+                2.2070000171661379
+            ],
+            "human_rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "asset": "Ch26_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": -3384392
+            },
+            "pointing_to": "bedroom_15_scene_3/CreatedObjects/identifier9_2ef84b073b224aefa682b55dab151ec6.glb"
+        }
+    ],
+    "task_template": "Retrieve the TV remote for the person in the chair.",
+    "task_text": "Retrieve the magzine for the madam in the chair.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -3384440
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -3387038
+                    },
+                    {
+                        "instanceID": -3384440
+                    }
+                ]
+            },
+            "objects": [
+                "Ch26_nonPBR",
+                "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -3387038
+                            },
+                            {
+                                "instanceID": -3384440
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch26_nonPBR",
+                            "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -3384392
+            },
+            "predicate_object": "bedroom_15_scene_3/CreatedObjects/identifier9_2ef84b073b224aefa682b55dab151ec6.glb",
+            "targetPlace": {
+                "instanceID": -3387038
+            },
+            "predicate_place": "Ch26_nonPBR"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.3259999752044678,
+                0.033333420753479007,
+                1.059999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.659999966621399,
+                0.033333420753479007,
+                1.777999997138977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.5220000743865969,
+                0.033333420753479007,
+                3.7727081775665285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.303999900817871,
+                0.033333420753479007,
+                1.003999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.9670000076293947,
+                0.033333420753479007,
+                2.0739998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.2300000190734865,
+                0.033333420753479007,
+                1.0770000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.9885276556015015,
+                0.7953245639801025,
+                3.4178764820098879
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.7860000133514406,
+                0.7929999828338623,
+                2.2019999027252199
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240924193657-bedroom_15_scene_3-Retrieve_the_magzine_for_the_madam_in_the_chair_.json",
+    "message": ""
+}

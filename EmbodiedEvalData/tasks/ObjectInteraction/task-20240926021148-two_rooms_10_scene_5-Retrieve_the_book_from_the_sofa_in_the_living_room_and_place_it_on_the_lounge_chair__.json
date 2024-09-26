@@ -1,0 +1,239 @@
+{
+    "scene_name": "two_rooms_10_scene_5",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/two_rooms_10_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.5339999794960022,
+        0.0,
+        2.2690000534057619
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -9158320
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_5/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Retrieve the keys from the living room table and place them on the counter.",
+    "task_text": "Retrieve the book from the sofa in the living room and place it on the lounge chair. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the book",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9153924
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_5/CreatedObjects/identifier33_9ebe03b486334d2696b974f9e58afd40.glb/Sketchfab_model/c7d32fa9b11b442bb418b2d9be9850e5.fbx/RootNode/books_geo/books_geo_yellow_0"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the chair",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9160636
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up chair",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9154728
+                    },
+                    {
+                        "instanceID": -9154864
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_5/CreatedObjects/identifier43_801b7b44350144bda06894d7602d38da.glb",
+                "two_rooms_10_scene_5/CreatedObjects/identifier45_pillow_14.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the sofa",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9160636
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -9153924
+            },
+            "predicate_object": "two_rooms_10_scene_5/CreatedObjects/identifier33_9ebe03b486334d2696b974f9e58afd40.glb/Sketchfab_model/c7d32fa9b11b442bb418b2d9be9850e5.fbx/RootNode/books_geo/books_geo_yellow_0",
+            "targetPlace": {
+                "instanceID": -9160636
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.700000286102295,
+                0.03490585833787918,
+                3.359890937805176
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                2.24399995803833,
+                0.03490585833787918,
+                1.6629999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                0.7229999899864197,
+                0.03490585833787918,
+                1.9229999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.4290000200271607,
+                0.03490585833787918,
+                3.6510000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.2300000190734864,
+                0.03490585833787918,
+                4.5879998207092289
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.130918502807617,
+                0.03490585833787918,
+                1.2000000476837159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.2849999964237213,
+                0.03490585833787918,
+                1.593000054359436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.937000036239624,
+                0.03490585833787918,
+                0.75
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.869081497192383,
+                0.03490585833787918,
+                0.6333333253860474
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.558932304382324,
+                0.457362562417984,
+                3.359890937805176
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.6389999985694885,
+                0.7689999938011169,
+                3.8350000381469728
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.6389999985694885,
+                0.7689999938011169,
+                3.8350000381469728
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926021148-two_rooms_10_scene_5-Retrieve_the_book_from_the_sofa_in_the_living_room_and_place_it_on_the_lounge_chair__.json",
+    "message": ""
+}

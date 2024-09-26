@@ -1,0 +1,136 @@
+{
+    "scene_name": "FloorPlan304_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan304_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.0449999570846558,
+        0.0,
+        2.0230000019073488
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1007886
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan304_physics/Objects/Floor_05410015"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -1002808
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan304_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Find and move to a location that would be ideal for growing indoor plants.",
+    "task_text": "Find and move to a location that would be ideal for placing indoor flower pots. ",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1031704
+            },
+            "predicate_object": "NavPoints/NavigationPoint0 (1)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.4800000190734864,
+                0.03333306312561035,
+                -0.5440000295639038
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.37400001287460329,
+                0.03333306312561035,
+                -1.1100000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -0.19099999964237214,
+                0.03333306312561035,
+                -0.4189999997615814
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -0.38499999046325686,
+                0.03333306312561035,
+                0.5419999957084656
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.27799999713897707,
+                0.03333306312561035,
+                1.8070000410079957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                1.1749999523162842,
+                0.03333306312561035,
+                0.8299999833106995
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                1.4739999771118165,
+                0.03333306312561035,
+                -0.5479999780654907
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.0709999799728394,
+                0.03333306312561035,
+                2.07623291015625
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240924030140-FloorPlan304_physics-Find_and_move_to_a_location_that_would_be_ideal_for_placing_indoor_flower_pots__.json",
+    "message": ""
+}

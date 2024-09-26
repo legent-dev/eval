@@ -1,0 +1,236 @@
+{
+    "scene_name": "FloorPlan307_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan307_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.9449999928474426,
+        0.0,
+        -0.2029999941587448
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -13137766
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan307_physics/Objects/Floor_b08a85bc"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -13131784
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan307_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Place all shoes from the entryway onto the shoe rack.",
+    "task_text": "Place all cloths from the floor into the trash can. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the green cloth",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -13135294
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Cloth_6ca4770e"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the white cloth",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -13135202
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Cloth_8fca360e"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put it in the trash can",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -13139382
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put it in the trash can",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -13139392
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -13135294
+            },
+            "predicate_object": "FloorPlan307_physics/Objects/Cloth_6ca4770e",
+            "targetPlace": {
+                "instanceID": -13139382
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -13135202
+            },
+            "predicate_object": "FloorPlan307_physics/Objects/Cloth_8fca360e",
+            "targetPlace": {
+                "instanceID": -13139392
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.8519999980926514,
+                0.02633318305015564,
+                -0.843999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.7940000295639038,
+                0.02633318305015564,
+                0.1289999932050705
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.8906837701797485,
+                0.02633318305015564,
+                -1.9517189264297486
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.9369709491729736,
+                0.02633318305015564,
+                -1.5110000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.9369709491729736,
+                0.02633318305015564,
+                -0.2280000001192093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.06302905082702637,
+                0.7929998636245728,
+                1.200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.3105461597442628,
+                0.009615985676646233,
+                -0.6947261691093445
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.3362832069396973,
+                0.1873065084218979,
+                -2.3973186016082765
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.3362832069396973,
+                0.1873065084218979,
+                -2.3973186016082765
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                1.2477110624313355,
+                0.18752968311309815,
+                -2.4873416423797609
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240925054609-FloorPlan307_physics-Place_all_cloths_from_the_floor_into_the_trash_can__.json",
+    "message": ""
+}

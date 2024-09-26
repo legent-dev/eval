@@ -1,0 +1,236 @@
+{
+    "scene_name": "FloorPlan6_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan6_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -97685224
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan6_physics/Objects/Floor_9ad2d7ca"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -97676540
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan6_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Return the book to the desk and the cup to the shelf.",
+    "task_text": "Put the frying pan back on the gas stove, and put the cup back on the coffee machine. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the pan",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -97684508
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan6_physics/Objects/Pan_4d9e9543"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the gas stove",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -97687246
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the cup",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -97683804
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan6_physics/Objects/Cup_44251a62"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the coffee machine",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -97687256
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -97684508
+            },
+            "predicate_object": "FloorPlan6_physics/Objects/Pan_4d9e9543",
+            "targetPlace": {
+                "instanceID": -97687246
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -97683804
+            },
+            "predicate_object": "FloorPlan6_physics/Objects/Cup_44251a62",
+            "targetPlace": {
+                "instanceID": -97687256
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.0770000219345093,
+                0.03333333134651184,
+                2.505000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.3569999933242798,
+                0.03333333134651184,
+                -0.5910000205039978
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                1.0230000019073487,
+                0.03333333134651184,
+                0.22499999403953553
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.3232576847076417,
+                0.03333333134651184,
+                0.09099999815225601
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.3771493434906006,
+                0.03333333134651184,
+                2.6314868927001955
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.04142439365386963,
+                0.929167628288269,
+                0.8762434720993042
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.4680694341659547,
+                0.9610000252723694,
+                0.07699999958276749
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                -0.6460021734237671,
+                0.9489606022834778,
+                0.7379993796348572
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.4680694341659547,
+                0.9610000252723694,
+                0.07699999958276749
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.46626943349838259,
+                0.9919999837875366,
+                -1.5499999523162842
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240923174404-FloorPlan6_physics-Put_the_frying_pan_back_on_the_gas_stove,_and_put_the_cup_back_on_the_coffee_machine__.json",
+    "message": ""
+}

@@ -1,0 +1,330 @@
+{
+    "scene_name": "bedroom_15_scene_11",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/bedroom_15_scene_11.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.865000009536743,
+        2.2351741790771486e-8,
+        2.878000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -21274366
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_11/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -21274828
+            },
+            "human_position": [
+                1.6679999828338624,
+                0.0,
+                0.9290000200271606
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch21_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Explain how to operate a new kitchen appliance and hand the instruction manual to the guest.",
+    "task_text": "Explain how to use a new router and hand the new router to the guest.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the router",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -21274046
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_11/CreatedObjects/identifier34_fc90c018647c4fd1a3a9f62559bf67f0.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -21274046
+                    },
+                    {
+                        "instanceID": -21277596
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_11/CreatedObjects/identifier34_fc90c018647c4fd1a3a9f62559bf67f0.glb",
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -21274046
+                            },
+                            {
+                                "instanceID": -21277596
+                            }
+                        ],
+                        "required_objects": [
+                            "bedroom_15_scene_11/CreatedObjects/identifier34_fc90c018647c4fd1a3a9f62559bf67f0.glb",
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "talk with guest",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -21277596
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -21277596
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "talk with guest",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.0490000247955323,
+                0.033333420753479007,
+                2.9519999027252199
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.0490000247955323,
+                0.033333420753479007,
+                4.192999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                1.9149999618530274,
+                0.033333420753479007,
+                3.8940000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                2.7890000343322756,
+                0.033333420753479007,
+                3.8940000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (4)",
+            "position": [
+                2.7890000343322756,
+                0.033333420753479007,
+                2.953000068664551
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.7459999918937683,
+                0.033333420753479007,
+                1.5679999589920045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                1.6349999904632569,
+                0.033333420753479007,
+                1.1970000267028809
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.5740000009536743,
+                0.033333420753479007,
+                2.95937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.8109999895095826,
+                0.033333420753479007,
+                3.0380001068115236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                3.7290000915527345,
+                0.033333420753479007,
+                3.0380001068115236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.9010000228881838,
+                0.033333420753479007,
+                3.95937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "Ch21_nonPBR",
+            "position": [
+                1.6679999828338624,
+                0.0,
+                0.9290000200271606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.8017568588256838,
+                0.6362944841384888,
+                4.46748161315918
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.5700000524520875,
+                0.13099999725818635,
+                0.8859999775886536
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                3.0989999771118166,
+                0.1589999943971634,
+                0.8859999775886536
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                2.9649999141693117,
+                0.1589999943971634,
+                0.8859999775886536
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (3)",
+            "position": [
+                2.819000005722046,
+                0.1589999943971634,
+                0.8859999775886536
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926055302-bedroom_15_scene_11-Explain_how_to_use_a_new_router_and_hand_the_new_router_to_the_guest_.json",
+    "message": ""
+}

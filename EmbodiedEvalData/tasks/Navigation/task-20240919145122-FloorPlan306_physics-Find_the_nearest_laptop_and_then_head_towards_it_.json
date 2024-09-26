@@ -1,0 +1,161 @@
+{
+    "scene_name": "FloorPlan306_physics",
+    "scene_path": "D:/unity/emabench/Assets/Scenes/ai2thor卧室_11/ai2thor鍗у_11/FloorPlan306_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.9660000801086427,
+        0.0,
+        0.2409999966621399
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -7446768
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan306_physics/Objects/Floor_a097d80d"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -7442802
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan306_physics/FPSController"
+    ],
+    "task_template": "Find the nearest table and walk towards it.",
+    "task_text": "Find the nearest laptop and then head towards it.",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1246
+            },
+            "predicate_object": "SpecialPoints",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.8500047326087952,
+                0.033333197236061099,
+                -0.36917340755462649
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -0.8500047326087952,
+                0.033333197236061099,
+                -0.7419999837875366
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.4259999990463257,
+                0.033333197236061099,
+                -0.36917340755462649
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.8666667342185974,
+                0.033333197236061099,
+                -1.4000002145767213
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.2536072731018067,
+                0.033333197236061099,
+                1.0180000066757203
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -0.8650000095367432,
+                0.033333197236061099,
+                1.0180000066757203
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.8569999933242798,
+                0.033333197236061099,
+                -0.11100000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.8966143131256105,
+                0.033333197236061099,
+                0.2891945242881775
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                -0.843999981880188,
+                0.18400000035762788,
+                -1.0140000581741334
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (1)",
+            "position": [
+                -3.316999912261963,
+                0.12999999523162843,
+                -0.9269999861717224
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (2)",
+            "position": [
+                2.7899999618530275,
+                0.2160000056028366,
+                -1.6089999675750733
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "D:/unity/emabench/Assets\\Tasks\\task-20240919145122-FloorPlan306_physics-Find_the_nearest_laptop_and_then_head_towards_it_.json",
+    "message": ""
+}

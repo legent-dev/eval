@@ -36,7 +36,7 @@
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "yes",
+            "option_text": "Painting more colorful.",
             "gameObjects": {
                 "list": [
                     {
@@ -48,7 +48,43 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "no",
+            "option_text": "Carpet more colorful.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Both equally colorful.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Neither colorful.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Weather is nice.",
             "gameObjects": {
                 "list": [
                     {
@@ -62,7 +98,7 @@
     "predicates": [
         {
             "predicate_type": "choose",
-            "right_answer_content": "no",
+            "right_answer_content": "Carpet more colorful.",
             "targetObject": {
                 "instanceID": 0
             },

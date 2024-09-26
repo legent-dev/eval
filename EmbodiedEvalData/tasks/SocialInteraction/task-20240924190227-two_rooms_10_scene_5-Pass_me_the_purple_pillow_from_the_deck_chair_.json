@@ -1,0 +1,282 @@
+{
+    "scene_name": "two_rooms_10_scene_5",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/two_rooms_10_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.6060000061988831,
+        0.0,
+        1.4049999713897706
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2293004
+        },
+        {
+            "instanceID": -2292992
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_5/CreatedWalls/identifier9_Floor",
+        "two_rooms_10_scene_5/CreatedWalls/identifier8_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -2294022
+            },
+            "human_position": [
+                2.5380001068115236,
+                0.0,
+                2.7019999027252199
+            ],
+            "human_rotation": [
+                0.0,
+                280.99383544921877,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -2295374
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Pass me the pen from the office desk.",
+    "task_text": "Pass me the purple pillow from the deck chair.",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2289552
+                    },
+                    {
+                        "instanceID": -2957998
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_5/CreatedObjects/identifier45_pillow_14.glb/pillow_14(Clone)",
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -2289552
+                            },
+                            {
+                                "instanceID": -2957998
+                            }
+                        ],
+                        "required_objects": [
+                            "two_rooms_10_scene_5/CreatedObjects/identifier45_pillow_14.glb/pillow_14(Clone)",
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2289552
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_5/CreatedObjects/identifier45_pillow_14.glb/pillow_14(Clone)"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -6078962
+                            },
+                            {
+                                "instanceID": 29602
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -2289552
+            },
+            "predicate_object": "two_rooms_10_scene_5/CreatedObjects/identifier45_pillow_14.glb/pillow_14(Clone)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.1679999828338624,
+                0.033333420753479007,
+                0.9829999804496765
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                0.9629999995231628,
+                0.033333420753479007,
+                2.177999973297119
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.76200008392334,
+                0.033333420753479007,
+                1.7920000553131104
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.097000002861023,
+                0.033333420753479007,
+                1.8509999513626099
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.0016028881072999,
+                0.033333420753479007,
+                0.29193681478500368
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.2029999494552613,
+                0.033333420753479007,
+                4.7769999504089359
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.2119998931884767,
+                0.033333420753479007,
+                1.0089999437332154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.119081497192383,
+                0.033333420753479007,
+                2.1799371242523195
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.1440000534057618,
+                0.033333420753479007,
+                3.3010001182556154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                2.3350000381469728,
+                0.033333420753479007,
+                3.4140000343322756
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.137477397918701,
+                0.033333420753479007,
+                0.6398342847824097
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.0579872131347657,
+                0.8648509979248047,
+                0.2030145525932312
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.236999988555908,
+                0.20399999618530274,
+                2.625999927520752
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240924190227-two_rooms_10_scene_5-Pass_me_the_purple_pillow_from_the_deck_chair_.json",
+    "message": ""
+}

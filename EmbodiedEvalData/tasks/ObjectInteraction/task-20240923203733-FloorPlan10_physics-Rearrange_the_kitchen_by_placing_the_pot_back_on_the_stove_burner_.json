@@ -1,0 +1,216 @@
+{
+    "scene_name": "FloorPlan10_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan10_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -3.3919999599456789,
+        0.0,
+        2.1679999828338625
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -109836822
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan10_physics/Objects/Floor_a224bc46"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -109827770
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan10_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Rearrange the kitchen by placing the spoons back next to the sink. ",
+    "task_text": "Rearrange the kitchen by placing the pot back on the stove burner.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -109828522
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan10_physics/Objects/Pot_83694083"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -110290972
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -109828522
+            },
+            "predicate_object": "FloorPlan10_physics/Objects/Pot_83694083",
+            "targetPlace": {
+                "instanceID": -110290972
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2210506200790406,
+                0.9274718761444092,
+                -0.490095853805542
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.8399999141693117,
+                0.027471795678138734,
+                -2.072000026702881
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.736999988555908,
+                0.027471795678138734,
+                -0.5860000252723694
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.568000078201294,
+                0.027471795678138734,
+                1.0549999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.433333396911621,
+                0.027471795678138734,
+                2.450000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.6619999408721924,
+                0.027471795678138734,
+                -2.1549999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.4160000085830689,
+                0.027471795678138734,
+                1.5980000495910645
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.023000000044703485,
+                0.027471795678138734,
+                1.9129999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.14499999582767487,
+                0.027471795678138734,
+                -1.437000036239624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                0.028999999165534974,
+                0.027471795678138734,
+                -2.200000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                0.11500000208616257,
+                0.027471795678138734,
+                -0.3490000069141388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.2210506200790406,
+                1.0208204984664918,
+                -0.490095853805542
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.8480594754219055,
+                0.953000009059906,
+                -1.5065267086029053
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240923203733-FloorPlan10_physics-Rearrange_the_kitchen_by_placing_the_pot_back_on_the_stove_burner_.json",
+    "message": ""
+}

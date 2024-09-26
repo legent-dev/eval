@@ -1,0 +1,347 @@
+{
+    "scene_name": "four_rooms_5_scene_2",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/four_rooms_5_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.8769999742507935,
+        0.0,
+        -0.9990000128746033
+    ],
+    "agent_rotation": [
+        0.0,
+        89.52301788330078,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -9485044
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_2/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -9469944
+        },
+        {
+            "instanceID": -9473788
+        },
+        {
+            "instanceID": -9473892
+        },
+        {
+            "instanceID": -9473756
+        },
+        {
+            "instanceID": -9473860
+        },
+        {
+            "instanceID": -9473820
+        },
+        {
+            "instanceID": -9470528
+        },
+        {
+            "instanceID": -9471400
+        }
+    ],
+    "removed_objects": [
+        "four_rooms_5_scene_2/CreatedObjects/identifier3_Doorway_5.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier30_55aed6c3768c41618e1fd182b15445e4.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier33_011399b546614840827206a87c13b877.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier29_2499c640054f4ec0902d9a993b9d8b83.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier32_a0d5dede519d46f1ba8fdc7b39b60c50.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier31_88067fa666d746928bc59af924eb62fe.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier6_Doorway_4.glb",
+        "four_rooms_5_scene_2/CreatedObjects/identifier10_Doorway_3.glb"
+    ],
+    "humans": [],
+    "task_template": "Collect three items from different rooms and place them in a box on the counter.",
+    "task_text": "Collect three items from different rooms and place them on the kitchen table. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the ice crean in the living room",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9484344
+                    }
+                ]
+            },
+            "objects": [
+                "four_rooms_5_scene_2/CreatedObjects/identifier103_a330158bc982400cae1749bb67ff5182.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place the ice cream",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9489500
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the body wash in the bathroom",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9475324
+                    }
+                ]
+            },
+            "objects": [
+                "four_rooms_5_scene_2/CreatedObjects/identifier52_50e31d461023475796a281239d7a0c0c.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place the body wash",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9489510
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the game console in the bedroom",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9476788
+                    }
+                ]
+            },
+            "objects": [
+                "four_rooms_5_scene_2/CreatedObjects/identifier66_1703e30d808a4985b5e1defe2ffb6599.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place the game console",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -9489520
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (2)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -9484344
+            },
+            "predicate_object": "four_rooms_5_scene_2/CreatedObjects/identifier103_a330158bc982400cae1749bb67ff5182.glb",
+            "targetPlace": {
+                "instanceID": -9489500
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -9475324
+            },
+            "predicate_object": "four_rooms_5_scene_2/CreatedObjects/identifier52_50e31d461023475796a281239d7a0c0c.glb",
+            "targetPlace": {
+                "instanceID": -9489510
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -9476788
+            },
+            "predicate_object": "four_rooms_5_scene_2/CreatedObjects/identifier66_1703e30d808a4985b5e1defe2ffb6599.glb",
+            "targetPlace": {
+                "instanceID": -9489520
+            },
+            "predicate_place": "SpecialPoint (2)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint2 (5)",
+            "position": [
+                0.8690000176429749,
+                0.0416666716337204,
+                -1.3669999837875367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                0.35600000619888308,
+                0.0416666716337204,
+                1.6670000553131104
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                1.315000057220459,
+                0.0416666716337204,
+                0.9739999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.9399999976158142,
+                0.0416666716337204,
+                2.5239999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.759999990463257,
+                0.0416666716337204,
+                1.0950000286102296
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.866666793823242,
+                0.0416666716337204,
+                2.681807518005371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.527999997138977,
+                0.0416666716337204,
+                1.065000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.5529999732971192,
+                0.0416666716337204,
+                -1.3630000352859498
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.7339999675750734,
+                0.0416666716337204,
+                -1.152999997138977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.8519999980926515,
+                0.0416666716337204,
+                -3.431999921798706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                -1.4481477737426758,
+                0.03837186098098755,
+                3.356537342071533
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.6649999618530275,
+                0.9047951698303223,
+                -1.930999994277954
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -2.694000005722046,
+                0.904795229434967,
+                -1.2109999656677247
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                -2.744999885559082,
+                0.847000002861023,
+                -1.6260000467300416
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926024342-four_rooms_5_scene_2-Collect_three_items_from_different_rooms_and_place_them_on_the_kitchen_table__.json",
+    "message": ""
+}

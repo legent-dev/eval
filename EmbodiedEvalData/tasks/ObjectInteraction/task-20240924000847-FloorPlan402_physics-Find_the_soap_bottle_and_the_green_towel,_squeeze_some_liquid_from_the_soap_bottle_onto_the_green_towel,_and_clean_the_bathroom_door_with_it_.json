@@ -1,0 +1,286 @@
+{
+    "scene_name": "FloorPlan402_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan402_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.1500000953674318,
+        0.0,
+        2.3919999599456789
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -111539240
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan402_physics/Objects/Floor_778474a8"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -111534584
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan402_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Find my shirt in the house and clean them using the washing machine.",
+    "task_text": "Find the soap bottle and the green towel, squeeze some liquid from the soap bottle onto the green towel, and clean the bathroom door with it.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the towel",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -111535852
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan402_physics/Objects/TowelHolder_fb9ff080/AttachPoint/Towel_4e1d52ab"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "squeeze from soap bottle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -111535852
+                    },
+                    {
+                        "instanceID": -111739854
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan402_physics/Objects/TowelHolder_fb9ff080/AttachPoint/Towel_4e1d52ab",
+                "NavPoints/NavigationPoint4 (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -111535852
+                            },
+                            {
+                                "instanceID": -111739854
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan402_physics/Objects/TowelHolder_fb9ff080/AttachPoint/Towel_4e1d52ab",
+                            "NavPoints/NavigationPoint4 (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "clean",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -111637756
+                    },
+                    {
+                        "instanceID": -111535852
+                    }
+                ]
+            },
+            "objects": [
+                "NavPoints/NavigationPoint0",
+                "FloorPlan402_physics/Objects/TowelHolder_fb9ff080/AttachPoint/Towel_4e1d52ab"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -111637756
+                            },
+                            {
+                                "instanceID": -111535852
+                            }
+                        ],
+                        "required_objects": [
+                            "NavPoints/NavigationPoint0",
+                            "FloorPlan402_physics/Objects/TowelHolder_fb9ff080/AttachPoint/Towel_4e1d52ab"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "squeeze from soap bottle",
+            "targetObject": {
+                "instanceID": -111537948
+            },
+            "predicate_object": "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d",
+            "targetPlace": {
+                "instanceID": -111541934
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "clean",
+            "targetObject": {
+                "instanceID": -111537948
+            },
+            "predicate_object": "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d",
+            "targetPlace": {
+                "instanceID": -111541934
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.7000001072883606,
+                -0.0003969818353652954,
+                2.410074472427368
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -2.259000062942505,
+                -0.0003969818353652954,
+                2.4790000915527345
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.3300000429153443,
+                -0.0003969818353652954,
+                3.319000005722046
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -2.3329999446868898,
+                -0.0003969818353652954,
+                4.181000232696533
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.768883228302002,
+                -0.0003969818353652954,
+                0.4470248818397522
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.6943888664245607,
+                -0.0003969818353652954,
+                4.547462463378906
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.197000026702881,
+                -0.0003969818353652954,
+                3.2279999256134035
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.1920000314712525,
+                0.11999999731779099,
+                4.21999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (2)",
+            "position": [
+                -0.5239999890327454,
+                0.11999999731779099,
+                4.164999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.8526085019111633,
+                -0.0003969818353652954,
+                0.8000000715255737
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.1844107210636139,
+                1.1385657787322999,
+                2.410074472427368
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.5370000004768372,
+                1.0529999732971192,
+                4.75600004196167
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.5370000004768372,
+                1.0529999732971192,
+                4.75600004196167
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240924000847-FloorPlan402_physics-Find_the_soap_bottle_and_the_green_towel,_squeeze_some_liquid_from_the_soap_bottle_onto_the_green_towel,_and_clean_the_bathroom_door_with_it_.json",
+    "message": ""
+}

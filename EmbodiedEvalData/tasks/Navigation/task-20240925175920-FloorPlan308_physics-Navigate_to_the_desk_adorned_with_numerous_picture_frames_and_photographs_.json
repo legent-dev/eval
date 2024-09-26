@@ -1,0 +1,208 @@
+{
+    "scene_name": "FloorPlan308_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan308_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.7879999876022339,
+        0.0,
+        -0.671999990940094
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -33705600
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan308_physics/Objects/Floor_83109f1a"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -33699618
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan308_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Navigate to the table with four different colored chairs.",
+    "task_text": "Navigate to the desk adorned with numerous picture frames and photographs.",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -33763330
+            },
+            "predicate_object": "NavPoints/NavigationPoint1",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.29100000858306887,
+                0.03333309292793274,
+                0.3959999978542328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.4229999780654908,
+                0.03333309292793274,
+                1.375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.378000020980835,
+                -2.384185791015625e-7,
+                2.4260001182556154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.18918508291244508,
+                0.03333309292793274,
+                -1.0684564113616944
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.3269999921321869,
+                0.03333309292793274,
+                1.3270000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.3034548759460449,
+                0.018691733479499818,
+                2.2482118606567385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.6965451240539551,
+                0.03333309292793274,
+                -0.06666666269302368
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.6965451240539551,
+                0.7666664123535156,
+                0.7482118606567383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.6965451240539551,
+                0.7666664123535156,
+                1.7482118606567383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.196545124053955,
+                0.03333309292793274,
+                -1.6666665077209473
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.533333420753479,
+                0.7666664123535156,
+                2.6000001430511476
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.696545124053955,
+                0.03333309292793274,
+                -0.7517881393432617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.696545124053955,
+                0.7666664123535156,
+                0.7482118606567383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                0.017000000923871995,
+                0.2750000059604645,
+                -0.9409999847412109
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (1)",
+            "position": [
+                -3.316999912261963,
+                0.12999999523162843,
+                -0.9269999861717224
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (2)",
+            "position": [
+                2.7899999618530275,
+                0.2160000056028366,
+                -1.6089999675750733
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240925175920-FloorPlan308_physics-Navigate_to_the_desk_adorned_with_numerous_picture_frames_and_photographs_.json",
+    "message": ""
+}

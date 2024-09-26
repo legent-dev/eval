@@ -1,0 +1,174 @@
+{
+    "scene_name": "FloorPlan8_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan8_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -10853938
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan8_physics/Objects/Floor_4dc721cd"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "I need a cup of hot tea; could you heat the kettle?",
+    "task_text": "I need a cup of hot tea; could you heat the kettle?",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the kettle",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -10855002
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan8_physics/Objects/Kettle_11210f08"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place it on the gas stove",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -10858060
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -10855002
+            },
+            "predicate_object": "FloorPlan8_physics/Objects/Kettle_11210f08",
+            "targetPlace": {
+                "instanceID": -10858060
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.529059112071991,
+                2.2351741790771486e-8,
+                -0.8418418169021606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.432357907295227,
+                2.2351741790771486e-8,
+                -0.7666667103767395
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.0828142166137697,
+                2.2351741790771486e-8,
+                1.5660462379455567
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.39500001072883608,
+                2.2351741790771486e-8,
+                1.2669999599456788
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.5900006294250488,
+                2.2351741790771486e-8,
+                2.68999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.4099993705749512,
+                2.2351741790771486e-8,
+                2.9666666984558107
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.7707880735397339,
+                0.9947251081466675,
+                -1.8350905179977418
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.432357907295227,
+                1.0022711753845215,
+                -1.540994644165039
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.432357907295227,
+                1.0022711753845215,
+                -1.540994644165039
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240925042104-FloorPlan8_physics-I_need_a_cup_of_hot_tea__could_you_heat_the_kettle_.json",
+    "message": ""
+}

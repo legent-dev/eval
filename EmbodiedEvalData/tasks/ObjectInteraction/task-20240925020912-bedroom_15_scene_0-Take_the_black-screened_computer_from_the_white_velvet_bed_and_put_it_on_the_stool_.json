@@ -1,0 +1,191 @@
+{
+    "scene_name": "bedroom_15_scene_0",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/bedroom_15_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.437999963760376,
+        0.0,
+        3.385999917984009
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -8025408
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_0/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Take a plate from the kitchen cabinet and put it on the dining table.",
+    "task_text": "Take the black-screened computer from the white velvet bed and put it on the stool.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the laptop near the notebook",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8022104
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_0/CreatedObjects/identifier30_391952ba56ee4a4f8effdaf78afc67cb.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the laptop on the sofa",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8021660
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_0/CreatedObjects/identifier24_781860fde457453b9eb1afb9c02ebd05.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the stool",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8030854
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -8022104
+            },
+            "predicate_object": "bedroom_15_scene_0/CreatedObjects/identifier30_391952ba56ee4a4f8effdaf78afc67cb.glb",
+            "targetPlace": {
+                "instanceID": -8030854
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.4210000038146973,
+                0.0416666716337204,
+                2.4189999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.4859999418258668,
+                0.0416666716337204,
+                0.6690000295639038
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.049999952316284,
+                0.0416666716337204,
+                3.5510001182556154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.5739998817443849,
+                0.0416666716337204,
+                2.068000078201294
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.8580000400543215,
+                0.0416666716337204,
+                3.813999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.7219998836517336,
+                0.0416666716337204,
+                4.120999813079834
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                3.859999895095825,
+                0.0416666716337204,
+                2.2850000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.7114148139953613,
+                0.5542122721672058,
+                3.359928607940674
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.3440000116825104,
+                0.8399999737739563,
+                2.6440000534057619
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240925020912-bedroom_15_scene_0-Take_the_black-screened_computer_from_the_white_velvet_bed_and_put_it_on_the_stool_.json",
+    "message": ""
+}

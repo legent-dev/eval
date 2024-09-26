@@ -1,0 +1,262 @@
+{
+    "scene_name": "dining_room__kichen_baked",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/dining_room__kichen_baked.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.312999963760376,
+        0.0,
+        -1.319000005722046
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -38715454
+        }
+    ],
+    "floor_objects": [
+        "dining_room__kichen_baked/3ea9d54983ef41049c8c29b9d6d4440a.fbx/RootNode/floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Find a vase, fill it with water from the kitchen sink, then place it on the windowsill with the most sunlight.",
+    "task_text": "Find a green plant in a vase on the dining table, fill it with water from the kitchen sink, and then place it in front of the painting.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -38715574
+                    }
+                ]
+            },
+            "objects": [
+                "dining_room__kichen_baked/3ea9d54983ef41049c8c29b9d6d4440a.fbx/RootNode/flower"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "water",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -38717492
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -38717492
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -38717798
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -38717492
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "water",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "water",
+            "targetObject": {
+                "instanceID": -38715574
+            },
+            "predicate_object": "dining_room__kichen_baked/3ea9d54983ef41049c8c29b9d6d4440a.fbx/RootNode/flower",
+            "targetPlace": {
+                "instanceID": -38717798
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.48558229207992556,
+                0.7797601819038391,
+                0.29015347361564639
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.7666666507720949,
+                0.04642680659890175,
+                -2.0880000591278078
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -2.877000093460083,
+                0.04642680659890175,
+                1.2209999561309815
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.1050000190734864,
+                0.04642680659890175,
+                2.9769999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -1.6749999523162842,
+                0.04642680659890175,
+                1.6260000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.9599999785423279,
+                0.04642680659890175,
+                -2.130000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.7440000176429749,
+                0.04642680659890175,
+                -1.0399999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.057999998331069949,
+                0.04642680659890175,
+                1.7350000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                1.2549999952316285,
+                0.04642680659890175,
+                0.671999990940094
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.8199215531349182,
+                1.0856647491455079,
+                0.6244924068450928
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -3.757999897003174,
+                0.8880000114440918,
+                -2.0880000591278078
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -3.7507259845733644,
+                0.6650000214576721,
+                1.3271820545196534
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -3.757999897003174,
+                0.8880000114440918,
+                -2.0880000591278078
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 3.0,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926200001-dining_room__kichen_baked-Find_a_green_plant_in_a_vase_on_the_dining_table,_fill_it_with_water_from_the_kitchen_sink,_and_then_place_it_in_front_of_the_painting_.json",
+    "message": ""
+}
