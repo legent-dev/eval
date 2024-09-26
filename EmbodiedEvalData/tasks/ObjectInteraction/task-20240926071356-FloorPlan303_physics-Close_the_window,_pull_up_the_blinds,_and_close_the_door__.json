@@ -1,0 +1,236 @@
+{
+    "scene_name": "FloorPlan303_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan303_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.925000011920929,
+        0.0,
+        -0.7910000085830689
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -25384108
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan303_physics/Objects/Floor_ed78888e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -25378302
+        },
+        {
+            "instanceID": -25378302
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan303_physics/FPSController",
+        "FloorPlan303_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Open the window, move the curtains aside, and close the door.",
+    "task_text": "Close the window, pull up the blinds, and close the door. ",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "close the window",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -25380438
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Objects/Window_8f20f776"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -25380438
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan303_physics/Objects/Window_8f20f776"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "pull up the roller blind",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -25380438
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Objects/Window_8f20f776"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -25380438
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan303_physics/Objects/Window_8f20f776"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "shut the door",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -25384932
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Structure/FP303:StandardDoor1"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -25384932
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan303_physics/Structure/FP303:StandardDoor1"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "close the window",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "shut the door",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "pull up the roller blind",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2000000476837159,
+                0.033333227038383487,
+                -1.1333332061767579
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.36399999260902407,
+                0.033333227038383487,
+                -0.828000009059906
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.5690000057220459,
+                0.033333227038383487,
+                -1.847000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.18446758389472962,
+                0.033333227038383487,
+                -0.12399999797344208
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.700000286102295,
+                0.033333227038383487,
+                -1.7333332300186158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.36899995803833,
+                0.033333227038383487,
+                -0.6460000276565552
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240926071356-FloorPlan303_physics-Close_the_window,_pull_up_the_blinds,_and_close_the_door__.json",
+    "message": ""
+}

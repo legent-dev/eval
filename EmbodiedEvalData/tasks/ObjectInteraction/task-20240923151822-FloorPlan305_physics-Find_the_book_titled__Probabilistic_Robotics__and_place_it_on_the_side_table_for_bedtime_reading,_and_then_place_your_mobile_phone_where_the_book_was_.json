@@ -1,0 +1,315 @@
+{
+    "scene_name": "FloorPlan305_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan305_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.8539999723434448,
+        0.0,
+        1.7309999465942383
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -79246766
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan305_physics/Objects/Floor_ac9ce665"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -79241614
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan305_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Find my sunglasses in the bedroom for going outside, and then place the red shoes where the sunglasses were.",
+    "task_text": "Find the book titled \"Probabilistic Robotics\" and place it on the side table for bedtime reading, and then place your mobile phone where the book was.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the book",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79245846
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan305_physics/Objects/Book_40bc7f7f/book_front_5"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the side table ",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79349536
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the bed",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79349908
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the desk",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79350094
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (2)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the garbage can",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79350746
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (3)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the phone",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -79242866
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan305_physics/Objects/CellPhone_9d7a0047"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -79245846
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/Book_40bc7f7f/book_front_5",
+            "targetPlace": {
+                "instanceID": -79349536
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -79242866
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/CellPhone_9d7a0047",
+            "targetPlace": {
+                "instanceID": -79350094
+            },
+            "predicate_place": "SpecialPoint (2)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.4880000054836273,
+                0.033333197236061099,
+                1.465999960899353
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -0.5559999942779541,
+                0.033333197236061099,
+                1.6360000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.06656386703252793,
+                0.033333197236061099,
+                -0.974144458770752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -0.12800000607967378,
+                0.033333197236061099,
+                0.10899999737739563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.3580000400543213,
+                0.033333197236061099,
+                -0.9129999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.23899999260902406,
+                0.033333197236061099,
+                0.7730000019073486
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.0999999046325684,
+                0.033333197236061099,
+                0.549999475479126
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.2000000476837159,
+                0.7999998331069946,
+                -1.3333332538604737
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.1444969177246094,
+                0.7475433349609375,
+                1.7984068393707276
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.09614774584770203,
+                0.6667822003364563,
+                -1.6891958713531495
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                1.1369999647140504,
+                0.2870755195617676,
+                0.5879999995231628
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.07599999755620957,
+                0.6621019840240479,
+                -1.7039999961853028
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.6129999756813049,
+                0.7779096364974976,
+                -1.225000023841858
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                1.1690876483917237,
+                0.7829999923706055,
+                1.7992398738861085
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (3)",
+            "position": [
+                1.1369999647140504,
+                0.2870755195617676,
+                0.5879999995231628
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240923151822-FloorPlan305_physics-Find_the_book_titled__Probabilistic_Robotics__and_place_it_on_the_side_table_for_bedtime_reading,_and_then_place_your_mobile_phone_where_the_book_was_.json",
+    "message": ""
+}
