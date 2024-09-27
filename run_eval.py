@@ -324,7 +324,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
                             raise
                     response = action.text
-                    payload = action.payload
+                    
+                    payload = action.payload if isinstance(action, EmbodiedEvalAction) else ""
                     action.text = ""
                     
                     if use_video:
