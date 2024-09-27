@@ -339,6 +339,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
                 save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
                 print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback} - {feedback_content}\n")
+                feedback = feedback + (f": {feedback_content}" if feedback_content!="" else "")
                 done = 1
                 for predicate in pred_list:
                     _done, info = predicate.task_done(action, obs, options, task_setting)
