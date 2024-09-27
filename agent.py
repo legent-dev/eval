@@ -1,7 +1,7 @@
 import os
 from typing import List, Tuple
 import requests
-from legent import Environment, Action
+from legent import Environment, Action, store_json, time_string
 from PIL import Image
 import io
 import base64
@@ -14,34 +14,41 @@ import numpy as np
 import time
 
 
-verbose = False  # 是否输出每步详细信息
+# 用于记录输入
+class EmbodiedEvalAction(Action):
+    def __init__(self, payload={}):
+        super().__init__() 
+        self.payload = payload
 
-PROMPT_PREFIX = """You are an intelligent vision-language assistant agent situated in a virtual environment.
-Your goal is to complete a specific task provided to you.
-You will be given a series of images and action history.
-The input images represent your ego-centric view of the environment. 
-Each image corresponds to a step in your action history, and the additional one image represents your latest view after the last action.
-Based on these views, you need to choose an action at each step to accomplish your task.
-After each action, the environment will respond, indicating whether the action was successful and providing a new view.
+verbose = True  # 是否输出每步详细信息
+
+PROMPT_PREFIX = """You are an intelligent vision-language embodied agent skilled in interacting with a household environment and answering questions. Your goal is to efficiently complete a given task.
+You will receive a series of ego-centric images and a corresponding action history. Each image shows what you see at a particular step in your action sequence, along with an extra image showing your current view.
+Your job is to analyze these visual inputs and past actions to decide the most appropriate action for each step, guiding you towards successful task completion. After each action, you will get feedback on whether it was successful, along with an updated view to guide your next move.
 
 Your current task is:
 {}
 """
 
 
-PROMPT_SUFFIX = """Your current options are presented in the format "[Option Number]. Content", as follows::
+PROMPT_SUFFIX = """Your available options are listed as "[Option Number]. Content" as follows:
 {}
-Considering your visual input and action history, select the next action.
-Please include the option number in your answer with "Choice: [Option Number]", for example, "Choice: [1]". Output your thoughts before making the choice.
-If an object is within your view and close to you, you can choose to grab it.
-Avoid repeating actions that have previously failed.
-If you need additional information beyond the current view, consider exploring the environment using "move forward", "turn left/right", or "look up/down". 
-If possible, prioritize "move forward."
-Note that you can only hold one object at a time, so put down the current object before picking up another.
-Remember: You have a limited number of {} steps to complete the task. Avoid unnecessary circling in one place.
-If you are approaching the maximum step count, make your final decision promptly.
+
+Choose your next action by replying with "Thought: Your reasoning.\nChoice: [Option Number]". For example, "Choice: [1]".
+
+Note:
+- If the task needs more information of the house, prioritize exploring unseen areas and rooms using "move forward", "turn left/right", or "look up/down". 
+- You can only hold one object at a time, so put down the current object before picking up another.
+- You can interact with objects or humans (e.g. grab/open/close/hand over) only if they are within your view and close to you.
+- Avoiding repeating already successful actions. 
+- Reflect on why previous actions fail to avoid repeating mistakes and ajdust your current action smartly.
+- You have a limited number of {} steps to complete the task, so choose wisely to maximize your progress and achieve your goal efficiently.
 """
 
+# 去掉了一些点：
+#  Avoid unnecessary circling in one place.
+#  If possible, prioritize "move forward."
+#  If you are approaching the maximum step count, make your final decision promptly.
 
 class AgentBase:
     def __init__(self, model_name: str, sync: bool, env) -> None:
@@ -103,13 +110,13 @@ class AgentBase:
         self.append_text(f"Action history (action -> feedback):\n")
         for a in actions:
             self.append_text(f"\t{a[0]} -> {a[1]}\n")
-        self.append_text(f"\nThe history of images you have seen:\n")
+        self.append_text(f"\nVisual history:\n")
         for o in images:
             self.append_image(o)
 
-        self.append_text(f"\nThe current image you see: \n")
+        self.append_text(f"\nCurrent view:\n")
         self.append_image(image)
-        options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options) if i > 0])
+        options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options) if i > 0]) #  去掉idle
         self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string, self.max_steps)}")  # Your History
 
         self.print_message()
@@ -134,11 +141,19 @@ class AgentBase:
     def act_sync(self, image, feedback, options):
         if feedback:
             self.update_feedback(feedback)
-        response = self._act(self.actions, self.images, image, options).strip()
+            
+        result = self._act(self.actions, self.images, image, options)
+        try:
+            payload, response = result["payload"], result["answer"]
+            response = response.strip()
+        except:
+            response = result.strip()
 
         print("response:", response)
-        action = Action()
+        action = EmbodiedEvalAction()
         action.text = response
+        action.payload = payload
+        
         try:
             action.action_choice = int(re.search(r"\[(\d+)\]", response).group(1))
         except:
@@ -168,7 +183,7 @@ class AgentGPT4V(AgentBase):
         self.client = OpenAI(api_key=self.api_key, base_url="https://yeysai.com/v1/")
 
     def init_message(self):
-        self.payload = {"model": "gpt-4v", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}
+        self.payload = {"model": "gpt-4o", "messages": [{"role": "user", "content": []}], "max_tokens": 1024}
 
     def append_text(self, text):
         self.payload["messages"][0]["content"].append({"type": "text", "text": text})
@@ -205,7 +220,7 @@ class AgentGPT4V(AgentBase):
             answer = response.json()["choices"][0]["message"]["content"]
             return answer
 
-        for i in range(10):
+        for i in range(50):
             try:
                 answer = send_request(self.payload)
                 break
@@ -214,7 +229,8 @@ class AgentGPT4V(AgentBase):
         else:
             raise Exception("Failed to get response from the model.")
 
-        return answer
+        # 输入和输出
+        return {"payload": self.payload, "answer":answer}
 
 
 class AgentGemini(AgentBase):
@@ -246,23 +262,82 @@ class AgentGemini(AgentBase):
             print("-" * 40 + "\n" + message + "-" * 40 + "\n")
 
     def generate(self):
-        for i in range(10):
-            try:
-                message = "".join(self.messages)
-                if self.use_flash:
-                    payload = {"message": message, "model": "flash"}  # model: flash or pro
-                else:
-                    payload = {"message": message, "model": "pro"}
-                answer = requests.post("http://146.190.166.36:8901/", files=self.files, data=payload).text
+        for i in range(50):
+            message = "".join(self.messages)
+            if self.use_flash:
+                payload = {"message": message, "model": "flash"}  # model: flash or pro
+            else:
+                payload = {"message": message, "model": "pro"}
+            response = requests.post("http://146.190.166.36:8901/", files=self.files, data=payload)
+            
+            if response.status_code == 200:
+                answer = response.text
                 break
-            except:
+            else:
+                # print(response)
+                # store_json(response.json(), f"/data41/private/legent/eval/gemini_error_file/{time_string()}.json")
                 print("retry")
                 time.sleep(5)
         else:
             raise Exception("Failed to get response from the model.")
-        return answer
+        
+        # 输入和输出
+        return {"payload": payload, "answer":answer}
 
 
+class AgentQwen(AgentBase):
+    def __init__(self, env) -> None:
+        super().__init__("qwen-vl", env == None, env)
+        self.api_key = "sk-5a6c7237637b4ee7b74445be2de15aa9"
+        self.client = OpenAI(api_key=self.api_key, base_url="https://dashscope.aliyuncs.com/compatible-mode/v1")
+
+    def init_message(self):
+        self.payload = {"model": "qwen-vl-max", "messages": [{"role": "user", "content": []}], "max_tokens": 32000}
+
+    def append_text(self, text):
+        self.payload["messages"][0]["content"].append({"type": "text", "text": text})
+
+    def append_image(self, image):
+        def encode_image(image):
+            if type(image) == str:
+                with open(image, "rb") as image:
+                    return base64.b64encode(image.read()).decode("utf-8")
+            else:
+                from PIL import Image
+
+                buffer = io.BytesIO()
+                Image.fromarray(image).save(buffer, format="PNG")
+                return base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+        image = {"type": "image_url", "image_url": {"url": f"data:image/jpeg;base64,{encode_image(image)}"}}
+        self.payload["messages"][0]["content"].append(image)
+
+    def print_message(self):
+        if verbose:
+            message = " ".join([m["text"] if m["type"] == "text" else "<image>" for m in self.payload["messages"][0]["content"]])
+            print("=" * 20 + "\n" + message + "=" * 20 + "\n")
+
+    def generate(self):
+        def send_request(payload):
+            completion = self.client.chat.completions.create(model=payload["model"],messages=payload["messages"])
+            return completion
+
+        for i in range(50):
+            completion = send_request(self.payload)
+            try:
+                answer = completion.choices[0].message.content
+                break
+            except:
+                error_json = completion.model_dump_json()
+                store_json(error_json, f'/data41/private/legent/eval/qwen_error_file/{time_string}.json')
+                time.sleep(3)
+        else:
+            raise Exception("Failed to get response from the model.")
+
+        # 输入和输出
+        return {"payload": self.payload, "answer":answer}
+   
+    
 class AgentHuman(AgentBase):
     def __init__(self, env) -> None:
         super().__init__("human", env == None, env)
