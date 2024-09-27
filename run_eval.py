@@ -9,6 +9,8 @@ from predicate import build_predicate, get_feedback
 from task import get_task_settings
 from agent import *
 import glob
+import json
+
 
 use_video = False
 
@@ -35,8 +37,20 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             all_paths = glob.glob(os.path.join(f"{task_folder}/tasks", '**', '*.json'), recursive=True)
         
         for path in all_paths:
+            with open(path, "r", encoding="utf-8") as f:
+                line = ''.join(f.readlines()).strip()
+                
+            def process_special_scene(line):
+                setting = json.loads(line)
+                for scene_name in ["mini_project_bedroom_on_sketchfab", "ejemplo"]:
+                    if setting["scene_path"].endswith(scene_name+".glb"):
+                        import re
+                        replaced_text = re.sub("Sketchfab_model/", f'/', line)
+                        return replaced_text
             task_setting = {"scene_file":"", "task_raw":"","scene": {"agent":{}, "player":{"prefab": "null", "position":[0,-100,0], "rotation":[0,0,0]}}}
-            task_setting["scene"]["task_instance"] = load_json(path)
+            # line = process_special_scene(line)
+            # task_setting["scene"]["use_gltFast"] = True
+            task_setting["scene"]["task_instance"] = json.loads(line)
             scene_path = task_setting["scene"]["task_instance"]["scene_path"]
             mixamo_path = scene_path.split("/Assets/")[0] + "/Assets/Mixamo"
             if not os.path.exists(mixamo_path):
@@ -51,6 +65,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     scene_path = f"{task_folder}/scenes/HSSD/{scene_path}"
                 elif os.path.exists(f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"):
                     scene_path = f"{task_folder}/scenes/ObjaverseSynthetic/{scene_path}"
+                elif os.path.exists(f"{task_folder}/scenes/Sketchfab/{scene_path}"):
+                    scene_path = f"{task_folder}/scenes/Sketchfab/{scene_path}"
             scene_path = os.path.abspath(scene_path)
             task_setting["scene"]["task_instance"]["scene_path"] = scene_path
             task_setting["scene_file"] = scene_path
@@ -169,7 +185,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     success_count = 0
 
     if not save_path:
-        save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}-{max_images}"
+        save_path = f"{eval_folder}/results/{time_string()}-{agent.model_name}-step{max_steps}-image{max_images}-case{task_ids[0]}"
     os.makedirs(save_path)
     store_json(task_ids, f"{save_path}/task_ids.json")
     store_json(run_args, f"{save_path}/run_args.json")
@@ -383,7 +399,7 @@ if __name__ == "__main__":
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
     parser.add_argument("--test_case_end", type=int, default=-1)
-    parser.add_argument("--max_steps", type=int, default=25)
+    parser.add_argument("--max_steps", type=int, default=24)
     parser.add_argument("--max_images", type=int, default=4)
     parser.add_argument("--port", type=int, default=50054)
     parser.add_argument("--eval_folder", type=str, default="./eval_folder_20240614_0251")

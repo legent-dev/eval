@@ -109,7 +109,7 @@ class AgentBase:
 
         self.append_text(f"\nThe current image you see: \n")
         self.append_image(image)
-        options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options)])
+        options_string = "\n".join([f"{i}. {option}" for i, option in enumerate(options) if i > 0])
         self.append_text(f"\n\n{PROMPT_SUFFIX.format(options_string, self.max_steps)}")  # Your History
 
         self.print_message()
