@@ -24,7 +24,7 @@ git clone git@github.com:legent-dev/eval.git
 python download.py
 ```
 
-场景文件会下载到EmbodiedEvalData/scenes文件夹。
+场景文件会下载到EmbodiedEvalData/scenes文件夹，共24G。
 
 #### 服务器渲染环境（有显示器的机器不需要）
 
@@ -39,8 +39,10 @@ sudo apt install -y xorg-dev xvfb
 GPU渲染：
 
 ```bash
-
+sudo apt install -y gcc make pkg-config xorg
+sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
 ```
+
 
 ## 评测
 
@@ -49,19 +51,19 @@ GPU渲染：
 能运行这个就表示环境没有问题了。
 
 ```bash
-python run_eval.py --agent random --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+python run_eval.py --agent random --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
 ```
 
 #### 人类评测
 
 ```bash
-python run_eval.py --agent human --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+python run_eval.py --agent human --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
 ```
 
 #### gpt4o评测
 
 ```bash
-python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+python run_eval.py --agent gpt-4o --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
 ```
 
 #### 评测其他模型
@@ -73,3 +75,9 @@ python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --
 #### 并行评测(TODO)
 
 ```python run_eval_multiprocess.py```
+
+
+```
+ssh -N -L 50051:localhost:50051 H100
+legent launch
+```
