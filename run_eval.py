@@ -157,6 +157,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         exit(0)
     failed_cases = []
     success_cases = []
+    error_cases = []
 
     path = "C:/Users/cheng/Desktop/LIGENT_dev/.legent/env/client/LEGENT-win-202406140317"
     path = "C:/users/cheng/desktop/ligent_dev/.legent/env/client/LEGENT-win-202408261101"
@@ -171,6 +172,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         agent = AgentGemini(None if sync else env, True)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
         agent = AgentGPT4V(None if sync else env)
+    elif agent == "qwen-vl":
+        agent = AgentQwen(None if sync else env)
     elif agent == "rotate":
         agent = AgentRotate(env)
     elif agent == "random":
@@ -279,117 +282,139 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # if "Inventory the item in the black refrigerator and place it in the sink." not in task_setting["task"]:
             #     print(task_setting["task"])
             #     continue
-            obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
-            if run_one_task_instance or run_all_task_instance:
-                task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
-                # replace multiple spaces with one space
-                for i in range(len(task_setting["predicates"])):
-                    import re
-                    task_setting["predicates"][i] = re.sub(r"\s+", " ", task_setting["predicates"][i])
-                print(task_setting["scene"]["task_instance"]["task_text"])
-            print("Predicates:", task_setting["predicates"])
-            pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance and not run_all_task_instance)
+            
+            # 如果环境加载失败之类的问题导致这个测例失败，就跳过然后评测下一个，并记录错误信息在error.jsonl
+            try: 
+                obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
+                if run_one_task_instance or run_all_task_instance:
+                    task_setting["predicates"] = obs.game_states["option_mode_info"]["predicates"]
+                    # replace multiple spaces with one space
+                    for i in range(len(task_setting["predicates"])):
+                        import re
+                        task_setting["predicates"][i] = re.sub(r"\s+", " ", task_setting["predicates"][i])
+                    print(task_setting["scene"]["task_instance"]["task_text"])
+                print("Predicates:", task_setting["predicates"])
+                pred_list = build_predicate(task_setting["predicates"], obs, old_version=not run_one_task_instance and not run_all_task_instance)
 
-            options = obs.game_states["option_mode_info"]["options"]
-            feedback = None
-            prev_obs = obs
-            print(options)
-
-            traj_save_dir = f"{save_path}/traj{task_i:04d}"
-            os.makedirs(traj_save_dir)
-            store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
-            store_json(task_setting, f"{traj_save_dir}/task.json")
-            step = 0
-            done = 0
-            save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
-
-            stuck_count = 0
-            MAX_STAY_COUNT = 100 # TODO: add max stay
-            stuck_pos = obs.game_states["agent"]["position"]
-            while step < MAX_STEPS:
-                # break
-                if step == MAX_STEPS - 1:
-                    action: Action = agent.act(obs.image, feedback, options)
-                else:
-                    action: Action = agent.act(obs.image, feedback, options)
-
-                if action.action_choice < 0:
-                    log_green(f"error occurred when evaluating {task_i}")
-                    if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
-                        raise
-                response = action.text
-                action.text = ""
-                
-                if use_video:
-                    video_path = f"{traj_save_dir}/videos/{step+1:04d}"
-                    action.api_calls = [SetVideoRecordingPath(video_path)]
-                obs = env.step(action)
-                
-                if use_video:
-                    if not os.path.exists(f"{video_path}/0.bmp"):
-                        # create_video(f"{video_path}/{i:04d}", "bmp", f"{video_path}/video.mp4", 30, remove_images=True)
-                        create_video([f"{traj_save_dir}/videos/{i:04d}" for i in range(1, step+2)], "bmp", f"{traj_save_dir}/{step+1:04d}.mp4", 30, remove_images=False)
-
-                # 获取选项和反馈信息
-                new_options = obs.game_states["option_mode_info"]["options"]
-                # success_calculated_by_env = obs.game_states["option_mode_info"]["success"]
-                feedback = get_feedback(options[action.action_choice], prev_obs, obs)
-                feedback_content = obs.game_states["option_mode_info"]["feedback_content"]
+                options = obs.game_states["option_mode_info"]["options"]
+                feedback = None
                 prev_obs = obs
-
-                save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
-                print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback} - {feedback_content}\n")
-                feedback = feedback + (f": {feedback_content}" if feedback_content!="" else "")
-                done = 1
-                for predicate in pred_list:
-                    _done, info = predicate.task_done(action, obs, options, task_setting)
-                    if _done == -1:
-                        done = -1
-                        break
-                    elif _done == 0:
-                        done = 0
-
-                if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"])) < 0.01:
-                    stuck_count += 1
-                else:
-                    stuck_count = 0
-                stuck_pos = obs.game_states["agent"]["position"]
-                if stuck_count > MAX_STAY_COUNT:
-                    done = -1
-
-                store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "done_after_action": done, "info_after_action": info}, f"{traj_save_dir}/{step:04d}a.json")
-
-                options = new_options
                 print(options)
 
-                step += 1
-                if done == 1:
-                    success_count += 1
-                    log_green("Task accomplished.")
-                if isinstance(action, ActionFinish) or action.text != "" or done != 0:
-                    save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
-                    break
-            if done != 1:
-                failed_cases.append(task_i)
-                log_green("Task failed.")
-            else:
-                success_cases.append(task_i)
+                traj_save_dir = f"{save_path}/traj{task_i:04d}"
+                os.makedirs(traj_save_dir)
+                store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
+                store_json(task_setting, f"{traj_save_dir}/task.json")
+                step = 0
+                done = 0
+                save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
 
-            log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
-            result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
-            if not run_one_task_instance:
-                print(result)
-            store_json(result, f"{save_path}/result_temp.json")
-            if run_one_task_instance:
-                break
+                stuck_count = 0
+                MAX_STAY_COUNT = 100 # TODO: add max stay
+                stuck_pos = obs.game_states["agent"]["position"]
+                while step < MAX_STEPS:
+                    # break
+                    if step == MAX_STEPS - 1:
+                        action = agent.act(obs.image, feedback, options) # 此处是EmbodiedEvalAction
+                    else:
+                        action = agent.act(obs.image, feedback, options)
+
+                    if action.action_choice < 0:
+                        log_green(f"error occurred when evaluating {task_i}")
+                        if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
+                            raise
+                    response = action.text
+                    payload = action.payload
+                    action.text = ""
+                    
+                    if use_video:
+                        video_path = f"{traj_save_dir}/videos/{step+1:04d}"
+                        action.api_calls = [SetVideoRecordingPath(video_path)]
+                    obs = env.step(action)
+                    
+                    if use_video:
+                        if not os.path.exists(f"{video_path}/0.bmp"):
+                            # create_video(f"{video_path}/{i:04d}", "bmp", f"{video_path}/video.mp4", 30, remove_images=True)
+                            create_video([f"{traj_save_dir}/videos/{i:04d}" for i in range(1, step+2)], "bmp", f"{traj_save_dir}/{step+1:04d}.mp4", 30, remove_images=False)
+
+                    # 获取选项和反馈信息
+                    new_options = obs.game_states["option_mode_info"]["options"]
+                    # success_calculated_by_env = obs.game_states["option_mode_info"]["success"]
+                    feedback = get_feedback(options[action.action_choice], prev_obs, obs)
+                    feedback_content = obs.game_states["option_mode_info"]["feedback_content"]
+                    prev_obs = obs
+
+                    save_image(obs.image, f"{traj_save_dir}/{step+1:04d}.png")
+                    print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback} - {feedback_content}\n")
+                    done = 1
+                    for predicate in pred_list:
+                        _done, info = predicate.task_done(action, obs, options, task_setting)
+                        if _done == -1:
+                            done = -1
+                            break
+                        elif _done == 0:
+                            done = 0
+
+                    if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"])) < 0.01:
+                        stuck_count += 1
+                    else:
+                        stuck_count = 0
+                    stuck_pos = obs.game_states["agent"]["position"]
+                    if stuck_count > MAX_STAY_COUNT:
+                        done = -1
+
+                    try:
+                        thought = re.search(r'Thought: (.*?)\nChoice:', response, re.DOTALL).group(1).strip()
+                    except:
+                        thought = ""
+                    store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "thought": thought, "done_after_action": done, "info_after_action": info,  "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+
+                    options = new_options
+                    print(options)
+
+                    step += 1
+                    if done == 1:
+                        success_count += 1
+                        log_green("Task accomplished.")
+                    if isinstance(action, ActionFinish) or action.text != "" or done != 0:
+                        save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
+                        break
+                if done != 1:
+                    failed_cases.append(task_i)
+                    log_green("Task failed.")
+                else:
+                    success_cases.append(task_i)
+
+                log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
+                result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
+                if not run_one_task_instance:
+                    print(result)
+                store_json(result, f"{save_path}/result_temp.json")
+                if run_one_task_instance:
+                    break
+            except Exception as e:
+                # Store index and element in JSONL file when an error occurs
+                with open(f'{save_path}/errors.jsonl', 'a') as jsonl_file:
+                    error_info = {
+                        'index': task_i,
+                        'task': task_settings[task_i]["scene_file"],
+                        'error': str(e),
+                        'time': time_string()
+                    }
+                    jsonl_file.write(json.dumps(error_info) + '\n')  # Write to file
+                error_cases.append(task_i)
+                print(e)
+                env.close()
+                env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
     except Exception as e:
-        result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
+        result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases, "error cases": error_cases}
         print(result)
         store_json(failed_cases, f"{save_path}/partial_results.json")
-        raise e
+        # raise e
+        print(e)
     finally:
         env.close()
-    result = {"Success Rate": f"{success_count}/{len(task_ids)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
+    result = {"Success Rate": f"{success_count}/{len(task_ids)-len(error_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases, "error cases": error_cases}
     if not run_one_task_instance:
         print(result)
     store_json(result, f"{save_path}/result.json")
@@ -397,7 +422,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro"
+    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro" "qwen-vl"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
     parser.add_argument("--test_case_end", type=int, default=-1)
     parser.add_argument("--max_steps", type=int, default=24)
@@ -413,6 +438,20 @@ if __name__ == "__main__":
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
     run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all)
+
+    # DISPLAY=:7 python run_eval.py --agent random --max_steps 24 --max_images 24 --port 50051 --test_case_start=0 --all
+    # DISPLAY=:7 python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+    # DISPLAY=:7 python run_eval.py --agent gemini-pro --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+    
+    
+    # DISPLAY=:7 python run_eval.py --agent qwen-vl --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
+    # DISPLAY=:7 python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --test_case_start=91 --test_case_end=182 --all
+    # DISPLAY=:7 python run_eval.py --agent gemini-flash --max_steps 24 --max_images 24 --port 50051 --test_case_start=91 --test_case_end=182 --all
+    # DISPLAY=:7 python run_eval.py --agent gemini-flash --max_steps 24 --max_images 24 --port 50050 --test_case_start=0 --test_case_end=400 --all
+    
+    # python run_eval.py --agent gemini-flash --max_steps 24 --max_images 24 --port 50011 --sync --run_one_task_instance /data41/private/legent/eval/EmbodiedEvalData/tasks/AttributeQA/task-20240920203402-FloorPlan5_physics-Inventory_the_item_in_the_black_refrigerator_and_place_it_in_the_sink_.json
+
+    # python run_eval.py --agent gemini-flash --max_steps 24 --max_images 24 --port 50051 --sync --run_one_task_instance /data41/private/legent/eval/EmbodiedEvalData/tasks/AttributeQA/task-20240913133202-102344094-Evaluate_whether_the_painting_above_the_living_room_sofa_is_more_colorful_than_the_carpet_.json
 
     # python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50058 --test_case_start=14 --test_case_end=100
     # python run_eval.py --agent gpt-4o --max_steps 25 --max_images 25 --port 50054 --sync
