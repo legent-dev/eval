@@ -1,6 +1,6 @@
 {
     "scene_name": "102344094",
-    "scene_path": "D:/4444444/emabench/Assets/Scenes/102344094.glb",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/HSSD/102344094.glb",
     "scene_scale": [
         1.0,
         1.0,
@@ -23,82 +23,118 @@
     ],
     "floorObjects": [
         {
-            "instanceID": -3892250
+            "instanceID": -19607838
         }
     ],
     "floor_objects": [
         "102344094/walls"
     ],
-    "removedObjects": [],
-    "removed_objects": [],
-    "task_template": "Assess whether the painting in the hallway is more colorful than the rug in the foyer.",
-    "task_text": "Evaluate whether the painting above the living room sofa is more colorful than the carpet.",
+    "removedObjects": [
+        {
+            "instanceID": -19607514
+        }
+    ],
+    "removed_objects": [
+        "102344094/openings/openings_wall_26/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C"
+    ],
+    "humans": [],
+    "task_template": "Compare the size of the television in the living room to the mirror in the hallway.",
+    "task_text": "Compare the size of the television in the living room to the mirror in the bedroom.",
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "Painting more colorful.",
+            "option_text": "The TV in the living room is slightly larger",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Carpet more colorful.",
+            "option_text": "The mirror in the bedroom is slightly larger",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Both equally colorful.",
+            "option_text": "The mirror in the bedroom is much larger",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Neither colorful.",
+            "option_text": "The TV in the living room is much larger",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Weather is nice.",
+            "option_text": "The mirror in the kitchen is much larger",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The mirror in the bathroom is much larger",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The TV in the bedroom is much larger",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "I do not know",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         }
     ],
     "predicates": [
         {
             "predicate_type": "choose",
-            "right_answer_content": "Carpet more colorful.",
+            "right_answer_content": "The mirror in the bedroom is slightly larger",
+            "right_special_action": "",
             "targetObject": {
                 "instanceID": 0
             },
@@ -138,20 +174,29 @@
             "type": "navigation"
         },
         {
+            "name": "NavigationPoint3",
+            "position": [
+                5.5879998207092289,
+                0.03087746910750866,
+                -2.118000030517578
+            ],
+            "type": "navigation"
+        },
+        {
             "name": "NavigationPoint4",
             "position": [
-                5.770999908447266,
+                5.671000003814697,
                 0.046864934265613559,
-                -4.733333587646484
+                -4.302000045776367
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                5.367610454559326,
+                5.461999893188477,
                 0.03087746910750866,
-                -1.0679999589920045
+                -1.003999948501587
             ],
             "type": "navigation"
         },
@@ -167,7 +212,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                7.872823715209961,
+                9.020000457763672,
                 0.03087746910750866,
                 -4.547062873840332
             ],
@@ -176,9 +221,9 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                5.857999801635742,
+                7.436764240264893,
                 0.03087746910750866,
-                -1.9013534784317017
+                -1.722000002861023
             ],
             "type": "navigation"
         },
@@ -194,9 +239,9 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                8.733333587646485,
+                9.144000053405762,
                 0.03087746910750866,
-                -2.8393259048461916
+                -1.8020000457763672
             ],
             "type": "navigation"
         },
@@ -223,7 +268,7 @@
             "position": [
                 10.367610931396485,
                 0.03087746910750866,
-                -1.7333332300186158
+                -1.8289999961853028
             ],
             "type": "navigation"
         },
@@ -237,6 +282,7 @@
             "type": "navigation"
         }
     ],
-    "savePath": "D:/4444444/emabench/Assets\\Tasks\\task-20240913133202-102344094-Evaluate_whether_the_painting_above_the_living_room_sofa_is_more_colorful_than_the_carpet_.json",
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928215449-102344094-Compare_the_size_of_the_television_in_the_living_room_to_the_mirror_in_the_bedroom_.json",
     "message": ""
 }

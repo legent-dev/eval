@@ -1,0 +1,263 @@
+{
+    "scene_name": "FloorPlan404_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan404_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.1500000953674318,
+        0.0,
+        2.3919999599456789
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -12661784
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan404_physics/Objects/Floor_92c453cf"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -12658084
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan404_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Please gather the books from the coffee table and arrange them on the shelf.",
+    "task_text": "Please collect plunger and  scrub brush from the bathroom and arrange them on the shelf.",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the black plunger",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12658816
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan404_physics/Objects/Plunger_339eefe6"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the plunger",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12664300
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the white scrub brush",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12659596
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan404_physics/Objects/ScrubBrush_bbf0823d"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the scrub brush",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12664310
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -12658816
+            },
+            "predicate_object": "FloorPlan404_physics/Objects/Plunger_339eefe6",
+            "targetPlace": {
+                "instanceID": -12664300
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -12659596
+            },
+            "predicate_object": "FloorPlan404_physics/Objects/ScrubBrush_bbf0823d",
+            "targetPlace": {
+                "instanceID": -12664310
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.8309999704360962,
+                0.004384860396385193,
+                0.08799999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.5290000438690186,
+                0.004384860396385193,
+                0.08799999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.8740000128746033,
+                0.004384860396385193,
+                1.6660000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.6260000467300416,
+                0.004384860396385193,
+                1.6619999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (3)",
+            "position": [
+                -2.565000057220459,
+                0.004384860396385193,
+                1.6619999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -2.5799999237060549,
+                0.004384860396385193,
+                0.4410000145435333
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (4)",
+            "position": [
+                -1.5360000133514405,
+                0.004384860396385193,
+                0.4410000145435333
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.25037115812301638,
+                0.037718191742897037,
+                0.07907380163669586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.10139060765504837,
+                0.004384860396385193,
+                2.264099597930908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.5385466814041138,
+                0.27042824029922488,
+                -0.6074742674827576
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.5709999799728394,
+                1.1490000486373902,
+                2.125999927520752
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.2710000276565552,
+                1.1490000486373902,
+                2.125999927520752
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -1.5679999589920045,
+                1.1490000486373902,
+                2.125999927520752
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928190753-FloorPlan404_physics-Please_collect_plunger_and__scrub_brush_from_the_bathroom_and_arrange_them_on_the_shelf_.json",
+    "message": ""
+}

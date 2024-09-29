@@ -1,6 +1,6 @@
 {
     "scene_name": "102344094",
-    "scene_path": "D:/4444444/emabench/Assets/Scenes/102344094.glb",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/HSSD/102344094.glb",
     "scene_scale": [
         1.0,
         1.0,
@@ -13,8 +13,8 @@
     ],
     "agent_position": [
         3.743000030517578,
-        -0.09200000017881394,
-        -0.9520000219345093
+        0.0,
+        -0.8299999833106995
     ],
     "agent_rotation": [
         0.0,
@@ -23,7 +23,7 @@
     ],
     "floorObjects": [
         {
-            "instanceID": -3892250
+            "instanceID": -16394472
         }
     ],
     "floor_objects": [
@@ -31,74 +31,104 @@
     ],
     "removedObjects": [],
     "removed_objects": [],
-    "task_template": "Assess whether the painting in the hallway is more colorful than the rug in the foyer.",
-    "task_text": "Evaluate whether the painting above the living room sofa is more colorful than the carpet.",
+    "humans": [],
+    "task_template": "Which is closer to the front door: the shoe rack or the umbrella stand?",
+    "task_text": "Which is closer to the front door near the sofa: the ladder or the bamboo basket?",
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "Painting more colorful.",
+            "option_text": "brown ladder",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Carpet more colorful.",
+            "option_text": "brown bamboo basket",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Both equally colorful.",
+            "option_text": "white bamboo basket",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Neither colorful.",
+            "option_text": "white ladder",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         },
         {
             "option_type": "Answer",
-            "option_text": "Weather is nice.",
+            "option_text": "black bamboo basket",
             "gameObjects": {
-                "list": [
-                    {
-                        "instanceID": 0
-                    }
-                ]
+                "list": []
             },
-            "objects": []
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black ladder",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "grey sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
         }
     ],
     "predicates": [
         {
             "predicate_type": "choose",
-            "right_answer_content": "Carpet more colorful.",
+            "right_answer_content": "brown bamboo basket",
+            "right_special_action": "",
             "targetObject": {
                 "instanceID": 0
             },
@@ -122,9 +152,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                3.8681640625,
+                3.671999931335449,
                 0.03087746910750866,
-                -1.0518555641174317
+                -0.8539999723434448
             ],
             "type": "navigation"
         },
@@ -138,9 +168,18 @@
             "type": "navigation"
         },
         {
+            "name": "NavigationPoint3",
+            "position": [
+                4.866666793823242,
+                0.03087746910750866,
+                -2.866666793823242
+            ],
+            "type": "navigation"
+        },
+        {
             "name": "NavigationPoint4",
             "position": [
-                5.770999908447266,
+                5.365099906921387,
                 0.046864934265613559,
                 -4.733333587646484
             ],
@@ -149,9 +188,9 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                5.367610454559326,
+                6.591000080108643,
                 0.03087746910750866,
-                -1.0679999589920045
+                -0.8393259048461914
             ],
             "type": "navigation"
         },
@@ -176,7 +215,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                5.857999801635742,
+                7.436764240264893,
                 0.03087746910750866,
                 -1.9013534784317017
             ],
@@ -237,6 +276,7 @@
             "type": "navigation"
         }
     ],
-    "savePath": "D:/4444444/emabench/Assets\\Tasks\\task-20240913133202-102344094-Evaluate_whether_the_painting_above_the_living_room_sofa_is_more_colorful_than_the_carpet_.json",
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928200728-102344094-Which_is_closer_to_the_front_door_near_the_sofa__the_ladder_or_the_bamboo_basket_.json",
     "message": ""
 }
