@@ -1,0 +1,221 @@
+{
+    "scene_name": "Floor_16856f36",
+    "scene_path": "C:/Users/1/LEGENT/emabench/Assets/Scenes/FloorPlan22_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.20399999618530274,
+        0.0,
+        2.2820000648498537
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -35602
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan22_physics/Objects/Floor_16856f36"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -27142
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan22_physics/FPSController"
+    ],
+    "task_template": "Check what is on the other side of the soda can",
+    "task_text": "Check what is on the other side of the trash can",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Chair",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Apple",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Bed",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Sofa",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Table",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Refrigerator",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Computer",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Banana",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": []
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Refrigerator",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.8869999647140504,
+                0.04000002145767212,
+                -0.466666579246521
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.7419999837875367,
+                0.04000002145767212,
+                0.9399999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.3269999027252199,
+                -0.00800000037997961,
+                2.2690000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.6809999942779541,
+                0.04000002145767212,
+                -0.5260000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -0.5569999814033508,
+                -0.00800000037997961,
+                0.9810000061988831
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.20499999821186067,
+                0.04000002145767212,
+                2.321000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.25600004196167,
+                0.04000002145767212,
+                2.5980000495910646
+            ],
+            "type": "navigation"
+        }
+    ],
+    "savePath": "C:/Users/1/LEGENT/emabench/Assets\\Tasks\\task-20240920105050-Floor_16856f36-Check_what_is_on_the_other_side_of_the_trash_can.json",
+    "message": ""
+}

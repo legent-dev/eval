@@ -1,0 +1,214 @@
+{
+    "scene_name": "FloorPlan301_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan301_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.8350000381469728,
+        0.0,
+        -0.49900001287460329
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -18498138
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan301_physics/Objects/Floor_a4e03a2b"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -18530888
+            },
+            "human_position": [
+                2.009000062942505,
+                0.009390115737915039,
+                1.434999942779541
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch02_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Please fetch me a pair of comfortable shoes before we go for a walk.",
+    "task_text": "Please fetch me a pair of comfortable shoes before I go for a walk. ",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the shoes",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -18493650
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan301_physics/Objects/Boots_afbbc20d"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place to the floor",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -18499462
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -18493650
+            },
+            "predicate_object": "FloorPlan301_physics/Objects/Boots_afbbc20d",
+            "targetPlace": {
+                "instanceID": -18499462
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.7239999771118164,
+                0.03333333134651184,
+                -1.0010000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.7020000219345093,
+                0.03333333134651184,
+                1.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.6480000019073486,
+                0.03333333134651184,
+                1.034000039100647
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.4480000138282776,
+                0.03333333134651184,
+                -0.5059999823570252
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.656000018119812,
+                0.03333333134651184,
+                0.16300000250339509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.4179999828338624,
+                0.1589999943971634,
+                -0.5649999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.6080000400543213,
+                0.03333333134651184,
+                0.29100000858306887
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.490000009536743,
+                0.03333333134651184,
+                -0.37700000405311587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.2483201026916505,
+                0.2656444311141968,
+                -1.2809056043624879
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.6390000581741334,
+                0.05806012079119682,
+                1.3980000019073487
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.6369999647140504,
+                0.05806012079119682,
+                1.4049999713897706
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20240923051225-FloorPlan301_physics-Please_fetch_me_a_pair_of_comfortable_shoes_before_I_go_for_a_walk__.json",
+    "message": ""
+}

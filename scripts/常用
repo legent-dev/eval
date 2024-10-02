@@ -1,0 +1,17 @@
+DISPLAY=:7 python run_eval.py --agent random --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
+
+
+random重新跑了
+/data41/private/legent/eval/EmbodiedEvalData/results/20240928-185208-460531-random-step24-image25-case0
+
+83 gemini pro重新跑了
+/data41/private/legent/eval/EmbodiedEvalData/results/20240928-200747-632935-gemini-pro-step24-image24-case0
+
+82 gpt4-o跑换掉的测例
+/data41/private/legent/eval/EmbodiedEvalData/results/20240928-213103-435426-gpt-4o-step24-image24-case0
+
+84 flash跑换掉的测例
+/data41/private/legent/eval/EmbodiedEvalData/results/20240928-213756-009977-gemini-flash-step24-image24-case0
+
+86 qwen跑换掉的测例
+/data41/private/legent/eval/EmbodiedEvalData/results/20240928-220458-777978-qwen-vl-step24-image24-case0

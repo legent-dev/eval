@@ -1,0 +1,362 @@
+{
+    "scene_name": "four_rooms_5_scene_3",
+    "scene_path": "F:/WorkDoing/UnityProject/emabench/Assets/Resources/Objaverse四房间_5/four_rooms_5_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.6299999952316285,
+        -0.27000001072883608,
+        1.4989999532699586
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3228878
+        },
+        {
+            "instanceID": -3228890
+        },
+        {
+            "instanceID": -3228902
+        },
+        {
+            "instanceID": -3228914
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_3/CreatedWalls/identifier16_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier19_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many burners does the stove have?",
+    "task_text": "How many layers does this wooden bookcase in the living room have?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "5",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "6",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "4",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "3",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "2",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "7",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "1",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no bookcase",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "5",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.266666889190674,
+                0.045013427734375,
+                -1.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.1979999542236329,
+                0.045013427734375,
+                -1.0410000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.2580000162124634,
+                0.045013427734375,
+                0.9049999713897705
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.707068681716919,
+                0.045013427734375,
+                2.9316015243530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.0869998931884767,
+                0.045013427734375,
+                3.8570001125335695
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.2330000400543213,
+                0.045013427734375,
+                -2.921999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.5540000200271607,
+                0.045013427734375,
+                3.0380001068115236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.41230010986328127,
+                0.045013427734375,
+                -1.0333337783813477
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.3369197845458985,
+                0.045013427734375,
+                -3.7875492572784426
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.7666666507720947,
+                0.045013427734375,
+                2.382354736328125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.5,
+                0.045013427734375,
+                2.8359999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.5876998901367188,
+                0.045013427734375,
+                -0.617645263671875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.871999979019165,
+                0.045013427734375,
+                2.0950000286102297
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.0876998901367189,
+                0.045013427734375,
+                3.382354736328125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.5876998901367189,
+                0.6215619444847107,
+                -3.117645263671875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                3.0876998901367189,
+                0.045013427734375,
+                -1.117645263671875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                4.035999774932861,
+                0.045013427734375,
+                -3.114000082015991
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.6700000762939455,
+                0.045013427734375,
+                0.9340000152587891
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                4.081999778747559,
+                0.045013427734375,
+                -1.218999981880188
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/WorkDoing/UnityProject/emabench/Assets\\Tasks\\task-20240921141243-four_rooms_5_scene_3-How_many_layers_does_this_wooden_bookcase_in_the_living_room_have_.json",
+    "message": ""
+}

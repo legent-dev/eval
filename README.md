@@ -41,6 +41,7 @@ GPU渲染：
 ```bash
 sudo apt install -y gcc make pkg-config xorg
 sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
+export DISPLAY=:7
 ```
 
 

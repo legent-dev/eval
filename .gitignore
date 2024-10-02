@@ -172,5 +172,27 @@ cython_debug/
 scene_*.json
 !scene_*_relative.json
 results
+reported_results
+new_reported_results
 task_settings.json
 eval_folder_20240614_0251
+
+# tasks_
+# EmbodiedEvalData/tasks/
+# tasks_0928
+EmbodiedEvalData/*
+!EmbodiedEvalData/final_tasks/
+
+scenes
+*.mem.*.blob
+# Ignore the entire __MACOSX directory and its contents
+__MACOSX/
+
+# Alternatively, to specifically ignore files like ._.* (e.g., ._DS_Store)
+**/._*
+
+useless
+
+plots
+old_data
+

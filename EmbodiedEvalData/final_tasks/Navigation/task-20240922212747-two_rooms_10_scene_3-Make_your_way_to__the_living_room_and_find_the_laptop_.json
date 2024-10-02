@@ -1,0 +1,314 @@
+{
+    "scene_name": "two_rooms_10_scene_3",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.9709999561309816,
+        0.0,
+        3.5280001163482668
+    ],
+    "agent_rotation": [
+        0.0,
+        286.3233642578125,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -13784418
+        },
+        {
+            "instanceID": -13784430
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_3/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_3/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Make your way to the bathroom and find the toothbrush holder.",
+    "task_text": "Make your way to  the living room and find the laptop.",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "sandwich",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -13788180
+            },
+            "predicate_object": "SpecialPoints",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.934671401977539,
+                0.05328369140625,
+                1.189029574394226
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.019000053405762,
+                0.05328369140625,
+                2.2909998893737795
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.922632932662964,
+                0.05328369140625,
+                3.6033077239990236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.3002142906188967,
+                0.05328369140625,
+                0.2732134759426117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.0989999771118166,
+                0.05328369140625,
+                1.1970000267028809
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.9690001010894777,
+                0.07425900548696518,
+                2.311000108718872
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.3369998931884767,
+                0.05328369140625,
+                1.225000023841858
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                -2.3970000743865969,
+                0.05328369140625,
+                2.3480000495910646
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.2369999885559083,
+                0.05328369140625,
+                2.450000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.3659999966621399,
+                0.05328369140625,
+                1.0920000076293946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                -1.1050000190734864,
+                0.05328369140625,
+                1.1260000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.40040087699890139,
+                0.05328369140625,
+                3.6540050506591799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.5853257179260254,
+                0.05328369140625,
+                4.658137798309326
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.2732405662536621,
+                0.05328369140625,
+                2.20937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.3100000023841858,
+                0.05328369140625,
+                1.1629999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                1.4670000076293946,
+                0.05328369140625,
+                0.972000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.6650000214576721,
+                0.05328369140625,
+                1.940999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.6579999923706055,
+                0.05328369140625,
+                2.871999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.4000000953674317,
+                0.05328369140625,
+                0.2666666805744171
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.726759433746338,
+                0.05328369140625,
+                1.7093744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.726759433746338,
+                0.05328369140625,
+                2.70937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.4756345748901369,
+                0.05328369140625,
+                4.2534260749816898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.7060000896453859,
+                0.05328369140625,
+                1.003999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (1)",
+            "position": [
+                2.750999927520752,
+                0.05328369140625,
+                1.6490000486373902
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (2)",
+            "position": [
+                3.815999984741211,
+                0.05328369140625,
+                0.9929999709129334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                2.8269999027252199,
+                0.05328369140625,
+                2.750999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                3.8666670322418215,
+                0.05328369140625,
+                1.7093744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                2.815000057220459,
+                0.050199318677186969,
+                2.75
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20240922212747-two_rooms_10_scene_3-Make_your_way_to__the_living_room_and_find_the_laptop_.json",
+    "message": ""
+}
