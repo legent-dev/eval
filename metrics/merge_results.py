@@ -197,10 +197,10 @@ def main():
     elif model == "gemini-pro":
         print("Add the folder to copy")
         folders_to_merge = [
-            "/data41/private/legent/eval/EmbodiedEvalData/results/20240929-183025-985943-gemini-pro-step24-image24-case0",
-            "/data41/private/legent/eval/EmbodiedEvalData/results/20240929-231631-935423-gemini-pro-step24-image24-case0",
-            "/data41/private/legent/eval/EmbodiedEvalData/results/20240930-072746-149158-gemini-pro-step24-image24-case230",
-            "/data41/private/legent/eval/EmbodiedEvalData/results/20240930-072904-057852-gemini-pro-step24-image24-case280"
+            # "/data41/private/legent/eval/EmbodiedEvalData/results/20240929-183025-985943-gemini-pro-step24-image24-case0",
+            # "/data41/private/legent/eval/EmbodiedEvalData/results/20240929-231631-935423-gemini-pro-step24-image24-case0",
+            # "/data41/private/legent/eval/EmbodiedEvalData/results/20241001-152105-055635-gemini-pro-step24-image24-case0",
+            "/data41/private/legent/eval/EmbodiedEvalData/results/20241001-152359-641965-gemini-pro-step24-image24-case0"
         ]
         merge_folders_for_model(folders_to_merge, model)
 

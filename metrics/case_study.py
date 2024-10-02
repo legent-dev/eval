@@ -14,6 +14,7 @@ def load_json(json_path):
         print(f"Error loading JSON file: {e}")
         return None
 
+
 def draw_checkmark(draw, x, y, size, color="green", width=10):
     """Draws a checkmark on the given ImageDraw object."""
     # 使用贝塞尔曲线绘制平滑的对勾，并加长左边线条
@@ -27,6 +28,7 @@ def draw_checkmark(draw, x, y, size, color="green", width=10):
         width=width,
         joint="curve",
     )
+
 
 def draw_cross(draw, x, y, size, color="red", width=10):
     """Draws a cross on the given ImageDraw object."""
@@ -85,14 +87,15 @@ def concatenate_images_with_actions(
     max_image_height = max(img.height for img in images)
     font = ImageFont.truetype(font_path, font_size)
 
-    title_font = ImageFont.truetype(font_path, font_size)
+    title_font = ImageFont.truetype("Georgia_Bold.ttf", font_size)
     title_lines = _wrap_text(title, title_font, max_image_width * images_per_row)
 
     title_height = len(title_lines) * (font_size + 10)
 
     canvas_width = images_per_row * (max_image_width + 2 * border_width)
+    # 增加 canvas 高度以容纳 thought 文本
     canvas_height = (
-        num_rows * (max_image_height + 2 * border_width + row_spacing)
+        num_rows * (max_image_height + 2 * border_width + row_spacing + max_image_height // 2)  # 为 thought 预留空间
         + title_height
         + 20
     )
@@ -115,7 +118,7 @@ def concatenate_images_with_actions(
         col = i % images_per_row
         x = col * (max_image_width + 2 * border_width) + border_width
         y = (
-            row * (max_image_height + 2 * border_width + row_spacing)
+            row * (max_image_height + 2 * border_width + row_spacing + max_image_height // 2)  # 增加 thought 空间
             + border_width
             + title_height
             + 20
@@ -149,6 +152,23 @@ def concatenate_images_with_actions(
             highlight_vertical_offset,
         )
 
+        # 绘制 thought 文本
+        thought_text = actions[i].get("thought", "")
+        _draw_text_with_wrapping(
+            draw,
+            thought_text,
+            ImageFont.truetype(font_path, 30),
+            (0,0,0),
+            x,
+            y + max_image_height + border_width * 2,  # 在图片下方绘制 thought
+            max_image_width,
+            False,  # 不高亮 thought
+            highlight_opacity,
+            highlight_padding,
+            highlight_vertical_offset,
+            align="left",  # 设置 thought 文本靠左对齐
+        )
+
         # 绘制图片序号
         circle_x = x + 45  # 调整圆圈的 x 坐标
         circle_y = y + 45  # 调整圆圈的 y 坐标
@@ -180,7 +200,7 @@ def concatenate_images_with_actions(
 
         # 在最后一张图片的右上角绘制对勾或叉叉
         if i == num_images - 1:
-            done_after_action = (actions[i]["done_after_action"] == 1)
+            done_after_action = actions[i]["done_after_action"] == 1
             # 定义对勾或叉叉的大小
             symbol_size = max_image_width * 0.2
             # 定义绘制位置，距离图片右上角有一定偏移
@@ -226,23 +246,24 @@ def _draw_text_with_wrapping(
     highlight_opacity,
     highlight_padding,
     highlight_vertical_offset,
+    align="center",  # 添加 align 参数，默认为居中
 ):
     """辅助函数：绘制换行文本并添加高亮。"""
-    words = text.split()
-    lines = []
-    current_line = ""
-    for word in words:
-        if font.getbbox(current_line + " " + word)[2] > max_width:
-            lines.append(current_line)
-            current_line = word
-        else:
-            current_line += " " + word if current_line else word
-    lines.append(current_line)
+    lines = _wrap_text(text, font, max_width)  # 使用 _wrap_text 函数进行换行
 
     for j, line in enumerate(lines):
         text_bbox = font.getbbox(line)
         text_width = text_bbox[2] - text_bbox[0]
-        text_x = x + (max_width - text_width) // 2
+
+        # 根据 align 参数计算文本的 x 坐标
+        if align == "center":
+            text_x = x + (max_width - text_width) // 2
+        elif align == "left":
+            text_x = x
+        elif align == "right":
+            text_x = x + max_width - text_width
+        else:
+            raise ValueError(f"Invalid align value: {align}")
 
         # 高亮处理
         if highlight:
