@@ -1,0 +1,234 @@
+{
+    "scene_name": "FloorPlan207_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan207_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.16599999368190766,
+        0.0,
+        -1.2079999446868897
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -21303330
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan207_physics/Objects/Floor_0d809d9e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -21297664
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan207_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Determine the optimal placement of surround sound speakers in the living room for the best audio experience from multiple seating positions.",
+    "task_text": "Determine the optimal placement of the living room TV to achieve the best viewing experience from multiple seating positions.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "In the corner",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Across from the sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "At the center",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "near the door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "near the window",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "near the sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "more than one option is correct",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no correct option",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Across from the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                -1.125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.7371749877929688,
+                0.03333333134651184,
+                1.4270000457763672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -0.7371749877929688,
+                0.03333333134651184,
+                -1.1019999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                3.315000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.799999475479126,
+                0.03333333134651184,
+                -1.125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.799999475479126,
+                0.03333333134651184,
+                1.3270000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.5789999961853028,
+                0.03333333134651184,
+                3.1589999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                1.5789999961853028,
+                0.03333333134651184,
+                1.319000005722046
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.05000000074505806,
+                0.515999972820282,
+                -0.593999981880188
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928221800-FloorPlan207_physics-Determine_the_optimal_placement_of_the_living_room_TV_to_achieve_the_best_viewing_experience_from_multiple_seating_positions_.json",
+    "message": ""
+}

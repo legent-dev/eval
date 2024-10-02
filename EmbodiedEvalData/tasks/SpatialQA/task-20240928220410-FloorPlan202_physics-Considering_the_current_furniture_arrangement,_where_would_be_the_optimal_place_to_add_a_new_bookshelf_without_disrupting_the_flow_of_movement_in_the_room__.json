@@ -1,0 +1,192 @@
+{
+    "scene_name": "FloorPlan202_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan202_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -20813248
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan202_physics/Objects/Floor_a06fd6c4"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Considering the current furniture arrangement, where would be the optimal place to add a new bookshelf that doesn't disrupt the flow of movement in the room?",
+    "task_text": "Considering the current furniture arrangement, where would be the optimal place to add a new bookshelf without disrupting the flow of movement in the room? ",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "In front of the wall near the door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Between the sofa and coffee table",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "In front of the mural",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "In front of the sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "In front of the laptop",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "in a coner far from door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Behind the sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It's hard to deal with",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "In front of the wall near the door",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.2104146480560304,
+                -0.00002345442771911621,
+                1.809959888458252
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.269500732421875,
+                -0.00002345442771911621,
+                3.005000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.237877368927002,
+                -0.00002345442771911621,
+                1.312999963760376
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.2642706632614136,
+                -0.00002345442771911621,
+                3.0339999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.4333333969116211,
+                -0.00002345442771911621,
+                1.2660000324249268
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928220410-FloorPlan202_physics-Considering_the_current_furniture_arrangement,_where_would_be_the_optimal_place_to_add_a_new_bookshelf_without_disrupting_the_flow_of_movement_in_the_room__.json",
+    "message": ""
+}

@@ -125,6 +125,15 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
             task_settings.append(task_setting)
 
+        # 保证输出顺序
+        new_task_settings = []
+        for index in index2json:
+            for setting in task_settings:
+                json_name = setting["scene"]["task_instance"]["savePath"].replace("\\","/").split("/")[-1]
+                if index2json[index].split("/")[-1] == json_name:
+                    new_task_settings.append(setting)
+        task_settings = new_task_settings
+        
         if task_ids is None:
             task_ids = [0]
         task_ids = list(range(min(task_ids), len(task_settings)))
@@ -182,9 +191,19 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         # agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
         agent = AgentGeminiPro(None if sync else env)
     elif agent == "gemini-flash":
+    elif agent == "gemini-pro":
+        # agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+        agent = AgentGeminiPro(None if sync else env)
+    elif agent == "gemini-flash":
         agent = AgentGemini(None if sync else env, True)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
         agent = AgentGPT4V(None if sync else env)
+    elif agent == "gpt-4o-mini":
+        agent = AgentGPT4V(None if sync else env, "gpt-4o-mini")
+    elif agent == "qwen-vl-max":
+        agent = AgentQwen(None if sync else env, "qwen-vl-max")
+    elif agent == "qwen-vl-plus":
+        agent = AgentQwen(None if sync else env, "qwen-vl-plus")
     elif agent == "gpt-4o-mini":
         agent = AgentGPT4V(None if sync else env, "gpt-4o-mini")
     elif agent == "qwen-vl-max":
@@ -195,6 +214,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         agent = AgentRotate(env)
     elif agent == "random":
         agent = AgentRandom(env)
+    else:
+        raise ValueError(f"Unsupported agent type: {agent}")
     else:
         raise ValueError(f"Unsupported agent type: {agent}")
 
@@ -215,6 +236,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         used_scenes = set()
         inspect_only = False
         for task_i in task_ids:
+            if task_i in already_done_tasks:
+                continue
             task_setting = task_settings[task_i]
             file = task_setting["scene_file"]
             number = int(file.split("/")[-1].split(".")[0].split("_")[-1])
@@ -301,6 +324,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             # if task_i in wrong_tasks + already_done_tasks:
                 # continue
         
+            # if task_i in wrong_tasks + already_done_tasks:
+                # continue
+        
             # if task_i < 86:
             #     continue
             # print(task_i, task_settings[task_i]["scene_file"])
@@ -360,6 +386,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 # traj_save_dir = f"{save_path}/traj{task_i:04d}"
                 traj_save_dir = f"{save_path}/traj{task_i:04d}_{case_id}"
                 
+                # traj_save_dir = f"{save_path}/traj{task_i:04d}"
+                traj_save_dir = f"{save_path}/traj{task_i:04d}_{case_id}"
+                
                 os.makedirs(traj_save_dir)
                 store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
                 store_json(task_setting, f"{traj_save_dir}/task.json")
@@ -389,7 +418,35 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     except:
                         thought = ""
                         
+                    
+                    if not action:
+                        format_error = "api_crash"
+                        store_json({"step": step, "options": options, "action_choice": None, "action_error": format_error, "response": "", "thought": "", "done_after_action": done, "info_after_action": "",  "feedback":  "", "time":time_string(), "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+                        break
+                    else:
+                        response = action.text
+                        
+                    try:
+                        thought = re.search(r'Thought: (.*?)\nChoice:', response, re.DOTALL).group(1).strip()
+                    except:
+                        thought = ""
+                        
                     if action.action_choice < 0:
+                        # if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
+                        #     raise
+                        if action.action_choice == -1:
+                            format_error = "no option match"
+                        else:
+                            format_error = "option out of range"
+                        log_green(format_error)
+                        store_json({"step": step, "options": options, "action_choice": action.action_choice, "action_error": format_error, "response": response, "thought": thought, "done_after_action": done, "info_after_action": "",  "feedback":  "", "time":time_string(), "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+
+                        break # 如果错误就停止评测
+                    
+                    try:
+                        payload = action.payload
+                    except:
+                        payload = ""
                         # if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
                         #     raise
                         if action.action_choice == -1:
@@ -463,18 +520,22 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 if done != 1:
                     failed_cases.append(task_i)
                     store_json({"result": "failed", "steps_taken": step}, f"{traj_save_dir}/result.json")
+                    store_json({"result": "failed", "steps_taken": step}, f"{traj_save_dir}/result.json")
                     log_green("Task failed.")
                 else:
                     success_cases.append(task_i)
                     store_json({"result": "success", "steps_taken": step}, f"{traj_save_dir}/result.json")
+                    store_json({"result": "success", "steps_taken": step}, f"{traj_save_dir}/result.json")
 
                 log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
                 result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
-                if not run_one_task_instance:
-                    print(result)
+                # if not run_one_task_instance:
+                #     print(result)
                 store_json(result, f"{save_path}/result_temp.json")
                 if run_one_task_instance:
                     break
+                # if agent.model_name == "gemini-pro":  # gemini-pro要多等再跑下一个测例
+                #     time.sleep(15)
                 # if agent.model_name == "gemini-pro":  # gemini-pro要多等再跑下一个测例
                 #     time.sleep(15)
             except Exception as e:
@@ -499,7 +560,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases, "error cases": error_cases}
         print(result)
         store_json(failed_cases, f"{save_path}/partial_results.json")
-        # raise e
+        raise e
         print(e)
     finally:
         env.close()
@@ -511,6 +572,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
+    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro" "qwen-vl" "gpt-4o-mini"
     parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro" "qwen-vl" "gpt-4o-mini"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
     parser.add_argument("--test_case_end", type=int, default=-1)

@@ -1,0 +1,264 @@
+{
+    "scene_name": "FloorPlan203_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan203_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        6.330999851226807
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -20458318
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan203_physics/Objects/Floor_ce5eb378"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Determine which window provides the widest view of the outside.",
+    "task_text": "Determine which window in the living room provides the widest view of the outside. ",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Window near the sofa",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Window near the stool",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Same size as the window, they are far apart",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Same size as the window, they are very close to each other",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Window near the stool, much wider",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Window near the sofa, much wider",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "I am thinking",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Today is sunny",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Same size as the window, they are far apart",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -5.426384925842285,
+                0.007039710879325867,
+                2.1331751346588136
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.190999984741211,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.9260034561157228,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.6730000972747804,
+                0.007039710879325867,
+                2.6327953338623049
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -3.9260034561157228,
+                0.007039710879325867,
+                6.632795333862305
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.1666665077209473,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.9260034561157227,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -3.2339999675750734,
+                0.007039710879325867,
+                4.633333683013916
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -1.9260034561157227,
+                0.007039710879325867,
+                6.632795333862305
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                0.07399654388427735,
+                0.007039710879325867,
+                -0.3672046661376953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                0.07399654388427735,
+                0.007039710879325867,
+                6.333333969116211
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928215938-FloorPlan203_physics-Determine_which_window_in_the_living_room_provides_the_widest_view_of_the_outside__.json",
+    "message": ""
+}
