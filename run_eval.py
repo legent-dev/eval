@@ -10,11 +10,23 @@ from task import get_task_settings
 from agent import *
 import glob
 import json
+import sys
 
+# wrong_tasks = [111, 123, 195, 169, 287]
+# wrong_tasks = []
+old_tasks = []
+new_tasks = load_json(
+    "/data41/private/legent/eval/scripts/index2json_0929.json")
+# 互换键值
+task_to_type = {k:v.split("/")[0] for k, v in new_tasks.items()}
+
+from combine import *
+    
+partial_final_results = set() # get_qwen_partial_final_results()
 
 use_video = False
 
-def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance, run_all_task_instance):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance, run_all_task_instance, rerun):
 
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
@@ -34,7 +46,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             all_paths = [run_one_task_instance]
         else:
             # all_paths = [f"{task_folder}/{file}" for file in os.listdir(f"{task_folder}/tasks") if file.endswith(".json")]
-            all_paths = glob.glob(os.path.join(f"{task_folder}/tasks", '**', '*.json'), recursive=True)
+            all_paths = glob.glob(os.path.join(f"{task_folder}/final_tasks", '**', '*.json'), recursive=True)
         
         for path in all_paths:
             with open(path, "r", encoding="utf-8") as f:
@@ -166,18 +178,25 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
-    if agent == "gemini-pro":
-        agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
-    if agent == "gemini-flash":
+    elif agent == "gemini-pro":
+        # agent = AgentGemini(None if sync else env)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
+        agent = AgentGeminiPro(None if sync else env)
+    elif agent == "gemini-flash":
         agent = AgentGemini(None if sync else env, True)  # 如果带上env参数，就是异步的，人还可以操作环境前端界面
     elif agent == "gpt-4o":
         agent = AgentGPT4V(None if sync else env)
-    elif agent == "qwen-vl":
-        agent = AgentQwen(None if sync else env)
+    elif agent == "gpt-4o-mini":
+        agent = AgentGPT4V(None if sync else env, "gpt-4o-mini")
+    elif agent == "qwen-vl-max":
+        agent = AgentQwen(None if sync else env, "qwen-vl-max")
+    elif agent == "qwen-vl-plus":
+        agent = AgentQwen(None if sync else env, "qwen-vl-plus")
     elif agent == "rotate":
         agent = AgentRotate(env)
     elif agent == "random":
         agent = AgentRandom(env)
+    else:
+        raise ValueError(f"Unsupported agent type: {agent}")
 
     # TODO: Change the agent to your agent
     # agent = YourAgent(env)
@@ -258,15 +277,52 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 env.step(Action(api_calls=[SaveSceneToGltf(path)]))
         raise
     
+    # if agent.model_name == "gemini-pro":
+    #     already_done_tasks = load_json("/data41/private/legent/eval/EmbodiedEvalData/reported_results/gemini-pro/result.json")
+    # elif agent.model_name == "gpt-4o":
+    #     already_done_tasks = load_json("/data41/private/legent/eval/EmbodiedEvalData/reported_results/gpt4-o/result.json")
+    # elif agent.model_name == "gemini-flash":
+    #     already_done_tasks = load_json("/data41/private/legent/eval/EmbodiedEvalData/reported_results/gemini-flash/result.json")
+    # elif agent.model_name == "qwen-vl":
+    #     pass
+    #     # already_done_tasks = load_json("/data41/private/legent/eval/EmbodiedEvalData/reported_results/qwen/result.json")
+    # else:
+    #     already_done_tasks = []
+    # already_done_tasks = []
+    if not rerun:
+        to_be_done_tasks = load_json(f"/data41/private/legent/eval/EmbodiedEvalData/final_results/{agent.model_name}/missed_tasks.json")
+        to_be_done_tasks = [s.split("/")[-1] for s in to_be_done_tasks]
+        # log_green(str(wrong_tasks + already_done_tasks))
+        log_green(f"About to run {len(to_be_done_tasks)} tasks")
+    
     try:
         # save_all_scenes_to_gltf()
         for task_i in task_ids:
-
-            print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
+            # if task_i in wrong_tasks + already_done_tasks:
+                # continue
+        
             # if task_i < 86:
             #     continue
-            print(task_i, task_settings[task_i]["scene_file"])
+            # print(task_i, task_settings[task_i]["scene_file"])
             task_setting = task_settings[task_i]
+            case_id = task_setting["scene"]["task_instance"]["savePath"].replace("\\","/").split("/")[-1].split(".")[0]
+            
+            # 只跑指定的任务类型
+            task_category = task_to_type[str(task_i)]
+            if task_category in ["AttributeQA", "SpatialQA"]:
+                continue
+
+
+            if case_id+".json" in partial_final_results:
+                log_green(f"skip final results {case_id}, already done")
+                continue
+            if not rerun:
+                if case_id+".json"  not in to_be_done_tasks:
+                    continue
+
+            
+            print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
+            
             # for wall in task_setting["scene"]["walls"]:
             #     wall['material'] = "F:/Downloads/SourceTextures/SourceTextures/RoboTHOR_Wall_Panel_Fabric_Mat.png"
             # task_setting["scene"]["floors"][0]['material'] = "F:/Downloads/SourceTextures/SourceTextures/TexturesCom_MarbleNoisy0062_1_seamless_S.png"
@@ -301,7 +357,9 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 prev_obs = obs
                 print(options)
 
-                traj_save_dir = f"{save_path}/traj{task_i:04d}"
+                # traj_save_dir = f"{save_path}/traj{task_i:04d}"
+                traj_save_dir = f"{save_path}/traj{task_i:04d}_{case_id}"
+                
                 os.makedirs(traj_save_dir)
                 store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
                 store_json(task_setting, f"{traj_save_dir}/task.json")
@@ -318,14 +376,35 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         action = agent.act(obs.image, feedback, options) # 此处是EmbodiedEvalAction
                     else:
                         action = agent.act(obs.image, feedback, options)
-
-                    if action.action_choice < 0:
-                        log_green(f"error occurred when evaluating {task_i}")
-                        if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
-                            raise
-                    response = action.text
                     
-                    payload = action.payload if isinstance(action, EmbodiedEvalAction) else ""
+                    if not action:
+                        format_error = "api_crash"
+                        store_json({"step": step, "options": options, "action_choice": None, "action_error": format_error, "response": "", "thought": "", "done_after_action": done, "info_after_action": "",  "feedback":  "", "time":time_string(), "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+                        break
+                    else:
+                        response = action.text
+                        
+                    try:
+                        thought = re.search(r'Thought: (.*?)\nChoice:', response, re.DOTALL).group(1).strip()
+                    except:
+                        thought = ""
+                        
+                    if action.action_choice < 0:
+                        # if agent.model_name == "gemini-pro":  # server error等问题，不是模型的问题，停止评测
+                        #     raise
+                        if action.action_choice == -1:
+                            format_error = "no option match"
+                        else:
+                            format_error = "option out of range"
+                        log_green(format_error)
+                        store_json({"step": step, "options": options, "action_choice": action.action_choice, "action_error": format_error, "response": response, "thought": thought, "done_after_action": done, "info_after_action": "",  "feedback":  "", "time":time_string(), "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+
+                        break # 如果错误就停止评测
+                    
+                    try:
+                        payload = action.payload
+                    except:
+                        payload = ""
                     action.text = ""
                     
                     if use_video:
@@ -350,8 +429,10 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     
                     feedback = feedback + (f": {feedback_content}" if feedback_content!="" else "")
                     done = 1
+                    done_list = [] # predicates的结果
                     for predicate in pred_list:
                         _done, info = predicate.task_done(action, obs, options, task_setting)
+                        done_list.append(_done)
                         if _done == -1:
                             done = -1
                             break
@@ -366,11 +447,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     if stuck_count > MAX_STAY_COUNT:
                         done = -1
 
-                    try:
-                        thought = re.search(r'Thought: (.*?)\nChoice:', response, re.DOTALL).group(1).strip()
-                    except:
-                        thought = ""
-                    store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "thought": thought, "done_after_action": done, "info_after_action": info,  "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
+                    
+                    store_json({"step": step, "options": options, "action_choice": action.action_choice, "action": options[action.action_choice], "response": response, "thought": thought, "done_after_action": done, "info_after_action": info,  "feedback":  feedback, "predicates_done":done_list, "time":time_string(), "payload":payload}, f"{traj_save_dir}/{step:04d}a.json")
 
                     options = new_options
                     print(options)
@@ -384,9 +462,11 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         break
                 if done != 1:
                     failed_cases.append(task_i)
+                    store_json({"result": "failed", "steps_taken": step}, f"{traj_save_dir}/result.json")
                     log_green("Task failed.")
                 else:
                     success_cases.append(task_i)
+                    store_json({"result": "success", "steps_taken": step}, f"{traj_save_dir}/result.json")
 
                 log_green(f"success rate: {success_count}/{len(success_cases)+len(failed_cases)} of {len(task_settings)}")
                 result = {"Success Rate": f"{success_count}/{len(success_cases)+len(failed_cases)}", "test cases": task_ids, "failed cases": failed_cases, "success cases": success_cases}
@@ -395,8 +475,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 store_json(result, f"{save_path}/result_temp.json")
                 if run_one_task_instance:
                     break
+                # if agent.model_name == "gemini-pro":  # gemini-pro要多等再跑下一个测例
+                #     time.sleep(15)
             except Exception as e:
-                # Store index and element in JSONL file when an error occurs
+                # Check if the error message is "Game client exited"
+                if "Game client exited" in str(e):
+                    print("Game client exited. Terminating execution.")
+                    sys.exit(1)  # Exit the program
+                            # Store index and element in JSONL file when an error occurs
                 with open(f'{save_path}/errors.jsonl', 'a') as jsonl_file:
                     error_info = {
                         'index': task_i,
@@ -425,7 +511,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro" "qwen-vl"
+    parser.add_argument("--agent", type=str, default="gpt-4o")  # "gpt-4o" "gemini-pro" "qwen-vl" "gpt-4o-mini"
     parser.add_argument("--test_case_start", type=int, default=-1)  # 0-99
     parser.add_argument("--test_case_end", type=int, default=-1)
     parser.add_argument("--max_steps", type=int, default=24)
@@ -436,11 +522,12 @@ if __name__ == "__main__":
     parser.add_argument("--sync", action="store_true")
     parser.add_argument("--run_one_task_instance", type=str, default=None)
     parser.add_argument("--all", action="store_true")
+    parser.add_argument("--rerun", action="store_true")
     args = parser.parse_args()
     task_ids = None
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
-    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all)
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all, args.rerun)
 
     # DISPLAY=:7 python run_eval.py --agent random --max_steps 24 --max_images 24 --port 50051 --test_case_start=0 --all
     # DISPLAY=:7 python run_eval.py --agent gpt-4o --max_steps 32 --max_images 25 --port 50051 --test_case_start=0 --all
