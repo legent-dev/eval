@@ -41,8 +41,16 @@ GPU渲染：
 ```bash
 sudo apt install -y gcc make pkg-config xorg
 sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
+sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
 ```
+编辑/etc/X11/xorg-0.conf,删掉ServerLayout和Screen Section
 
+nvidia-xconfig --query-gpu-info查看busid和board id, 然后选一个gpu将其信息跳到Section "Device"
+```
+    BusID          "PCI:62:0:0"
+	BoardName      "NVIDIA GeForce RTX 3090"
+```
+新建一个screen，运行Xorg :7 -config /etc/X11/xorg-0.conf
 
 ## 评测
 
