@@ -113,11 +113,15 @@ if __name__ == "__main__":
         https://cloud.tsinghua.edu.cn/d/36320b3f8a86487c931a/
     """
 
-    # replace the shared_link here
-    shared_link = "https://cloud.tsinghua.edu.cn/d/19c50fbc6bd64fe8ac87/"
+    # # replace the shared_link here
+    # shared_link = "https://cloud.tsinghua.edu.cn/d/19c50fbc6bd64fe8ac87/"
 
-    # output dir (optional)
-    out_dir = "EmbodiedEvalData"
+    # # output dir (optional)
+    # out_dir = "EmbodiedEvalData"
+     
+    shared_link = "https://cloud.tsinghua.edu.cn/d/502178ebdc6647138ce2/files/?p=%2F%E8%AF%84%E6%B5%8B%E6%96%87%E4%BB%B6%E5%A4%B9%2Ftraj-human_0930.zip"
+
+    out_dir = "/data41/private/legent/eval/human"
 
     t = THUCloud(shared_link, out_dir)
     t.download()

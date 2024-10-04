@@ -1,0 +1,396 @@
+{
+    "scene_name": "FloorPlan204_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan204_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.42899999022483828,
+        0.0,
+        2.3919999599456789
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -18734018
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan204_physics/Objects/Floor_77f35e1b/mesh"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -18723714
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan204_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Confirm if a clock is mounted on the wall in the living room.Compare the sizes of the coffee table and the sofa in the livingroom, which one is bigger?",
+    "task_text": "Compare the sizes of the sofa and the chair in the livingroom, which one is bigger?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is much wider, while the chair is slightly taller and narrower.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The chair and sofa are nearly the same size, but the chair has a higher backrest.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Both the sofa and the chair are the same size.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The chair is slightly smaller than the sofa, but they both take up similar space.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The chair is slightly smaller than the sofa, but they both take up similar space.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The chair is bigger and more comfortable than the sofa.",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The chairs are red",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "sofa is much higher than chair",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The sofa is much wider, while the chair is slightly taller and narrower.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.566666603088379,
+                0.017319679260253907,
+                -5.744655609130859
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.866666555404663,
+                0.017319679260253907,
+                -3.7446556091308595
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -5.112756729125977,
+                -0.006781836971640587,
+                -0.866666316986084
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -5.112869739532471,
+                0.0037649432197213175,
+                1.2553443908691407
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -5.112869739532471,
+                0.003764835186302662,
+                3.2553443908691408
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -5.112869739532471,
+                0.0037648119032382967,
+                5.255344390869141
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -5.112869739532471,
+                -0.00395900197327137,
+                7.255344390869141
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.366666793823242,
+                0.017319679260253907,
+                0.2553443908691406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.066666841506958,
+                0.017319679260253907,
+                -1.7446554899215699
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -2.9311046600341799,
+                0.017319679260253907,
+                3.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                -1.88100004196167,
+                0.017319679260253907,
+                3.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (2)",
+            "position": [
+                -1.88100004196167,
+                0.017319679260253907,
+                2.302000045776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (3)",
+            "position": [
+                -0.2409999966621399,
+                0.017319679260253907,
+                2.2249999046325685
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (4)",
+            "position": [
+                -0.2409999966621399,
+                0.017319679260253907,
+                2.700000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -3.1128697395324709,
+                0.017319679260253907,
+                7.000000476837158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -2.1128697395324709,
+                0.017319679260253907,
+                -4.744655609130859
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.5158461332321168,
+                0.017319679260253907,
+                2.5986459255218508
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.6130133867263794,
+                0.017319679260253907,
+                -2.827965021133423
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -0.8440484404563904,
+                0.017319679260253907,
+                -1.072603702545166
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -2.8949999809265138,
+                0.251699298620224,
+                4.267000198364258
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -1.1128698587417603,
+                0.017319679260253907,
+                7.000000476837158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.19999980926513673,
+                0.017319679260253907,
+                -5.744655609130859
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -0.11413546651601792,
+                0.017319679260253907,
+                0.25724297761917117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                0.257999986410141,
+                0.017319679260253907,
+                2.742000102996826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (1)",
+            "position": [
+                0.257999986410141,
+                0.017319679260253907,
+                4.5980000495910648
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                0.46666669845581057,
+                0.017319679260253907,
+                7.000000476837158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.510999917984009,
+                0.20200000703334809,
+                1.2230000495910645
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20240928210235-FloorPlan204_physics-Compare_the_sizes_of_the_sofa_and_the_chair_in_the_livingroom,_which_one_is_bigger_.json",
+    "message": ""
+}

@@ -1,7 +1,49 @@
 import os
 import pandas as pd
+import json  # Added for JSON operations
 from legent import load_json
-from plot import plot_radar_chart_from_csv
+from plot import *
+
+# Rename columns for better presentation
+column_mapping_type = {
+    'model_name': 'Model',
+    'task_type': 'Task Type',
+    'success_count': 'Success Count',
+    'accuracy': 'Success Rate (%)',
+    'max_step_exceed_rate': 'Max Step Exceeded Rate (%)',
+    'average_trajectory_length': 'Average Trajectory Length',
+    'average_spl': 'Average SPL (%)',
+    'total_episodes': 'Total Episodes',
+    'interaction_accuracy': 'Interaction Accuracy (%)',
+    'interaction_rate': 'Interaction Rate (%)'
+}
+
+# Map task type names to more formal versions
+task_type_mapping = {
+    'SpatialQA': 'Spatial QA',
+    'SocialInteraction': 'Social Interaction',
+    'ObjectInteraction': 'Object Interaction',
+    'Navigation': 'Navigation',
+    'AttributeQA': 'Attribute QA'
+}
+
+model_name_mapping = {
+    'random': 'Random',
+    'qwen-vl-plus': 'Qwen-VL-Plus',
+    'qwen-vl-max': 'Qwen-VL-Max',
+    'human': 'Human',
+    'gpt-4o-mini': 'GPT-4o-Mini',
+    'gpt-4o': 'GPT-4o',
+    'gemini-flash': 'Gemini-Flash',
+    'gemini-pro': 'Gemini-Pro'
+}
+
+old_tasks = []
+new_tasks = load_json(
+    "/data41/private/legent/eval/scripts/index2json_0929.json")
+# 互换键值
+inverted_new_tasks = {v.split(".")[0]: k for k, v in new_tasks.items()}
+print(list(inverted_new_tasks.keys())[0])
 
 def get_subfolders(directory):
     subfolders = sorted([f.path for f in os.scandir(
@@ -14,23 +56,36 @@ def replace_third_last_folder(path):
         path_parts[-4] = "human"
     return os.sep.join(path_parts)
 
+def extract_dataset_and_trajectory(path):
+    # Remove leading and trailing slashes and split the path into parts
+    parts = path.strip('/').split('/')
+    if len(parts) >= 2:
+        # The dataset name is the second last part
+        dataset_name = parts[-2]
+        # The trajectory name is the last part
+        trajectory_name = "_".join(parts[-1].split("_")[1:])
+        return dataset_name + "/" + trajectory_name
+
 # Helper function for safe division
 def safe_divide(numerator, denominator):
     return round((numerator / denominator) * 100, 2) if denominator > 0 else 0
-    
-def compute_metrics_for_each_type(task_type_folder):
+
+def compute_metrics_for_each_type(task_type_folder, max_step=20):
     max_step_exceeded, success, failure, traj_lengths = [], [], [], []
     interaction_success_count, interaction_total_count = 0, 0  # 用于计算interaction accuracy
     spls = []  # List to store SPL for each episode
 
     for episode_folder in get_subfolders(task_type_folder):
         traj_list = load_json(f"{episode_folder}/traj.json")
-        optimal_traj = load_json(replace_third_last_folder(f"{episode_folder}/traj.json"))
+        try:
+            optimal_traj = load_json(replace_third_last_folder(f"{episode_folder}/traj.json"))
+        except:
+            print(episode_folder)
         traj_lengths.append(len(traj_list))
-        
+
         # 计算 done 状态
         done_status = traj_list[-1]["done_after_action"]
-        if done_status == 0:
+        if done_status == 0 and len(traj_list) >= max_step:
             max_step_exceeded.append(episode_folder)
         elif done_status == 1:
             success.append(episode_folder)
@@ -54,7 +109,7 @@ def compute_metrics_for_each_type(task_type_folder):
 
     # 计算各类metrics
     accuracy = safe_divide(len(success), total_episodes)
-    max_exceed_rate = round(len(max_step_exceeded) / total_episodes, 2)
+    max_exceed_rate = safe_divide(len(max_step_exceeded), total_episodes)
     avg_traj_length = sum(traj_lengths) / len(traj_lengths) if traj_lengths else 0
 
     # 计算 interaction accuracy
@@ -74,8 +129,12 @@ def compute_metrics_for_each_type(task_type_folder):
         "max_step_exceeded_count": len(max_step_exceeded),
         "interaction_accuracy": interaction_accuracy,
         "total_interactions": interaction_total_count,
-        "interaction_rate": round(interaction_total_count / total_episodes, 2),
-        "successful_interactions": interaction_success_count 
+        "interaction_rate": interaction_total_count / total_episodes,
+        "successful_interactions": interaction_success_count,
+        # Added lists for JSON output
+        "success": success,
+        "failure": failure,
+        "max_exceed": max_step_exceeded
     }
 
 def compute_metrics_for_all_types(total_result_folder, model_name):
@@ -101,7 +160,10 @@ def compute_metrics_for_all_types(total_result_folder, model_name):
         type_metrics.append({
             "model_name": model_name,  # Add model name for tracking
             "task_type": os.path.basename(task_type_folder),
-            **metrics  # Unpack metrics directly
+            **{k: v for k, v in metrics.items() if k not in ["success", "failure", "max_exceed"]},  # Unpack metrics excluding lists
+            "success": metrics["success"],  # Include the lists
+            "failure": metrics["failure"],
+            "max_exceed": metrics["max_exceed"]
         })
 
         # 更新总计数和总数
@@ -124,7 +186,7 @@ def compute_metrics_for_all_types(total_result_folder, model_name):
         for key in ["accuracy", "max_step_exceed_rate", "average_trajectory_length", "interaction_accuracy", "average_spl"]:
             total_metrics[key] /= total_metrics["total_episodes"]
 
-    total_metrics["interaction_rate"] = round(total_metrics["total_interactions"] / total_metrics["total_episodes"], 2)
+    total_metrics["interaction_rate"] = total_metrics["total_interactions"] / total_metrics["total_episodes"]  # Removed safe_divide
     return total_metrics, type_metrics
 
 def compute_metrics_for_models(base_path, output_folder):
@@ -134,6 +196,7 @@ def compute_metrics_for_models(base_path, output_folder):
 
     all_total_metrics = []
     all_type_metrics = []
+    final_json = []  # Added to collect final JSON data
 
     for model_folder in get_subfolders(base_path):
         model_name = os.path.basename(model_folder)  # Extract the model name (without full path)
@@ -142,21 +205,110 @@ def compute_metrics_for_models(base_path, output_folder):
         all_total_metrics.append(total_metrics)
         all_type_metrics.extend(type_metrics)  # Combine type metrics for all models
 
+        # Collect per task_type lists for JSON
+        model_entry = {"model": model_name}
+        for type_metric in type_metrics:
+            task_type = type_metric["task_type"]
+            model_entry[task_type] = {
+                "success": type_metric["success"],
+                "failure": type_metric["failure"],
+                "max_exceed": type_metric["max_exceed"]
+            }
+        final_json.append(model_entry)  # Add the model entry to final_json
+
     # Save only the required columns for total_metrics_df
     total_metrics_df = pd.DataFrame(all_total_metrics)
-    filtered_total_metrics_df = total_metrics_df[
-        ['model_name', 'accuracy', 'success_count', 'max_step_exceed_rate', 'average_trajectory_length', 'average_spl', 'total_episodes', 'interaction_accuracy', 'interaction_rate']
-    ]
-    filtered_total_metrics_df.to_csv(os.path.join(output_folder, 'all_models_total_metrics.csv'), index=False)
+    total_metrics_df['model_name'] = total_metrics_df['model_name'].map(model_name_mapping)
+    # Rename the columns in total_metrics_df using the same mapping
+    filtered_total_metrics_df = total_metrics_df.rename(columns=column_mapping_type)
 
+    # Keep only the columns specified in column_mapping_type
+    filtered_total_metrics_df = filtered_total_metrics_df[
+        ['Model', 'Success Rate (%)', 'Success Count', 'Max Step Exceeded Rate (%)', 'Average Trajectory Length', 'Average SPL (%)', 'Total Episodes', 'Interaction Accuracy (%)', 'Interaction Rate (%)']
+    ]
+
+    # Round numerical values to two decimal places
+    filtered_total_metrics_df = filtered_total_metrics_df.round(2)
+
+    # Save the updated DataFrame to a CSV file
+    filtered_total_metrics_df.to_csv(os.path.join(output_folder, 'all_models_total_metrics.csv'), index=False)
+    
     # Filter type_metrics_df to include task_type along with other required columns
     type_metrics_df = pd.DataFrame(all_type_metrics)
+    type_metrics_df['model_name'] = type_metrics_df['model_name'].map(model_name_mapping)
+    type_metrics_df['task_type'] = type_metrics_df['task_type'].map(task_type_mapping)
     filtered_type_metrics_df = type_metrics_df[
-        ['model_name', 'task_type', 'success_count', 'accuracy', 'max_step_exceed_rate', 'average_trajectory_length', 'average_spl', 'total_episodes', 'interaction_accuracy', 'interaction_rate']
+        list(column_mapping_type.keys())
     ]
+    filtered_type_metrics_df = filtered_type_metrics_df.rename(columns=column_mapping_type)
+    # Round numerical values to two decimal places
+    filtered_type_metrics_df = filtered_type_metrics_df.round(2)
     filtered_type_metrics_df.to_csv(os.path.join(output_folder, 'all_models_type_metrics.csv'), index=False)
+
+    # Save the final JSON with success, failure, and max_exceed lists
+    final_json_path = "/data41/private/legent/eval/EmbodiedEvalData/final_results/final.json"
+    with open(final_json_path, 'w') as f:
+        json.dump(final_json, f, indent=4)
+    print(f"Final results saved to {final_json_path}")  # Optional: Print confirmation
+
+def convert_final(input_json_file, output_json_file):
+    # Load data from the input JSON file
+    with open(input_json_file, 'r') as infile:
+        data = json.load(infile)
+
+    # Extract success paths for all tasks except SpatialQA
+    success_paths = {}
+    for model in data:
+        model_name = model["model"]
+        success_paths[model_name] = []
+        for task, task_data in model.items():
+            if task != "model":
+                success_path_list = task_data.get("success", [])
+                success_paths[model_name].extend([int(inverted_new_tasks[extract_dataset_and_trajectory(success_path)]) for success_path in success_path_list])
+
+    # Save success paths to the output JSON file
+    with open(output_json_file, 'w') as outfile:
+        json.dump(success_paths, outfile, indent=4)
 
 if __name__ == "__main__":
     compute_metrics_for_models("/data41/private/legent/eval/EmbodiedEvalData/final_results", "/data41/private/legent/eval/metrics/output")
-
-    plot_radar_chart_from_csv('/data41/private/legent/eval/metrics/output/all_models_type_metrics.csv', exclude_models=['human', "gpt-4o-mini"], custom_labels_order=["SpatialQA", "Navigation", "SocialInteraction", "ObjectInteraction", "AttributeQA"], y_max=40, metric_name='average_spl')
+    
+    convert_final("/data41/private/legent/eval/EmbodiedEvalData/final_results/final.json", "/data41/private/legent/eval/EmbodiedEvalData/final_results/final_index.json")
+    
+    plot_radar_chart_from_csv(
+        '/data41/private/legent/eval/metrics/output/all_models_type_metrics.csv', 
+        exclude_models=['Human'], 
+        custom_labels_order=["Spatial QA", "Navigation", "Social Interaction", "Object Interaction", "Attribute QA"], 
+        y_max=40, 
+        metric_name='Average SPL (%)'
+    )
+    
+    plot_radar_chart_from_csv(
+        '/data41/private/legent/eval/metrics/output/all_models_type_metrics.csv', 
+        exclude_models=['Human'], 
+        custom_labels_order=["Spatial QA", "Navigation", "Social Interaction", "Object Interaction", "Attribute QA"], 
+        y_max=50, 
+        metric_name='Success Rate (%)'
+    )
+    
+    plot_radar_chart_from_csv(
+        '/data41/private/legent/eval/metrics/output/all_models_type_metrics.csv', 
+        exclude_models=['Human'], 
+        custom_labels_order=["Spatial QA", "Navigation", "Social Interaction", "Object Interaction", "Attribute QA"], 
+        y_max=20, 
+        metric_name='Interaction Rate (%)'
+    )
+    
+    csv_file = '/data41/private/legent/eval/metrics/output/all_models_total_metrics.csv'
+    df = pd.read_csv(csv_file)
+    # Assuming the first column is 'Model' and second is 'Step', start from third column
+    metrics = df.columns[1:]
+    
+    # Loop through each metric and plot
+    for metric in metrics:
+        if metric in ["Success Count", "Total Episodes"]:
+            continue
+        if metric in ["Success Rate (%)", "Average SPL (%)", "Interaction Accuracy"]:
+            plot_metric_from_csv(csv_file, metric, exclude_models=['Human'])
+        else:
+            plot_metric_from_csv(csv_file, metric)

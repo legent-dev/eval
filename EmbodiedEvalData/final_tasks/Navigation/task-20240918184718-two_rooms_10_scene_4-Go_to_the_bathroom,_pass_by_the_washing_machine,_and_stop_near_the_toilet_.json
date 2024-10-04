@@ -1,0 +1,192 @@
+{
+    "scene_name": "two_rooms_10_scene_4",
+    "scene_path": "C:/Users/32481/emabench/Assets/ai2thor娴村_11/ai2thor客厅_11/two_rooms_10_scene_4.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.8849999904632569,
+        0.0,
+        1.3949999809265137
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -11260312
+        },
+        {
+            "instanceID": -11260324
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_4/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_4/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -11256128
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_4/CreatedObjects/identifier3_Doorway_9.glb"
+    ],
+    "task_template": "Proceed to the kitchen, pass the refrigerator, and stop near the knife block.",
+    "task_text": "Go to the bathroom, pass by the washing machine, and stop near the toilet.",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -283166
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.266666889190674,
+                0.0416666716337204,
+                0.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.5870275497436525,
+                0.0416666716337204,
+                2.9104371070861818
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.5870275497436524,
+                0.0416666716337204,
+                1.2719999551773072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.5870275497436524,
+                0.0416666716337204,
+                2.9104371070861818
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -0.47200000286102297,
+                0.0416666716337204,
+                3.007999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                -0.47200000286102297,
+                0.0416666716337204,
+                3.946000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.3910000324249268,
+                0.0416666716337204,
+                0.7509999871253967
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                1.3910000324249268,
+                0.0416666716337204,
+                1.444000005722046
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.1109999418258668,
+                0.0416666716337204,
+                2.2679998874664308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.365000009536743,
+                0.0416666716337204,
+                0.9430000185966492
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                2.559999942779541,
+                0.0416666716337204,
+                0.9620000123977661
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (2)",
+            "position": [
+                2.559999942779541,
+                0.0416666716337204,
+                2.3359999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (3)",
+            "position": [
+                2.559999942779541,
+                0.0416666716337204,
+                2.3359999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.3589999675750734,
+                0.11500000208616257,
+                0.9160000085830689
+            ],
+            "type": "special"
+        }
+    ],
+    "savePath": "C:/Users/32481/emabench/Assets\\Tasks\\task-20240918184718-two_rooms_10_scene_4-Go_to_the_bathroom,_pass_by_the_washing_machine,_and_stop_near_the_toilet_.json",
+    "message": ""
+}

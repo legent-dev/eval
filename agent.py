@@ -40,11 +40,26 @@ Note:
 - If the task needs more information of the scene, prioritize exploring unseen areas and rooms using "move forward", "turn left/right", or "look up/down".
 - If the task includes terms like "I" or "me", the task is issued by a human in the scene.
 - You can only hold one object at a time, so put down the current object before picking up another.
-- You can interact with objects or humans (e.g. pick/place/open/close/handover) only if they are within your view and close to you. If not visible or close, try to look around to find it or move close to it.
+- You can interact with objects or humans (e.g. pick/place/open/close/handover) only if they are within your view and close to you (within 2m).
 - Avoiding repeating already successful actions. 
 - Reflect on why previous actions fail to avoid repeating mistakes and ajdust your current action smartly.
 - You have a limited number of {} steps to complete the task, so choose wisely to maximize your progress and achieve your goal efficiently.
 """
+
+# PROMPT_SUFFIX = """Your available options are listed as "[Option Number]. Content" as follows:
+# {}
+
+# Choose your next action from the above options by directly replying with "Choice: [Option Number]" without extra words. For example, "Choice: [1]".
+
+# Note:
+# - If the task needs more information of the scene, prioritize exploring unseen areas and rooms using "move forward", "turn left/right", or "look up/down".
+# - If the task includes terms like "I" or "me", the task is issued by a human in the scene.
+# - You can only hold one object at a time, so put down the current object before picking up another.
+# - You can interact with objects or humans (e.g. pick/place/open/close/handover) only if they are within your view and close to you. If not visible or close, try to look around to find it or move close to it.
+# - Avoiding repeating already successful actions. 
+# - Reflect on why previous actions fail to avoid repeating mistakes and ajdust your current action smartly.
+# - You have a limited number of {} steps to complete the task, so choose wisely to maximize your progress and achieve your goal efficiently.
+# """
 
 # 去掉了一些点：
 #  Avoid unnecessary circling in one place.
@@ -160,10 +175,12 @@ class AgentBase:
         
         try:
             # Match "Choice: [4]" or "Choice: 4" using a regular expression
-            action.action_choice = int(re.search(r"Choice:[\n\s]*\[?(\d+)\]?", response).group(1))
+            action.action_choice = int(re.search(r"Choice:?[\n\s]*\[?(\d+)\]?", response, re.IGNORECASE).group(1))
         except:
-            # If the regular expression fails, set the action_choice to -1
-            action.action_choice = -1 # bad formatting
+            try:
+                action.action_choice = int(re.search(r"(\d+)(?!.*\d)", response, re.DOTALL).group(1))
+            except:
+                action.action_choice = -1 # cannot match any number
         try:
             self.update_history(image, options[action.action_choice])
         except:

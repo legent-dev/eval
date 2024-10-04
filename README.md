@@ -41,7 +41,11 @@ GPU渲染：
 ```bash
 sudo apt install -y gcc make pkg-config xorg
 sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
+<<<<<<< HEAD
 sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
+=======
+export DISPLAY=:7
+>>>>>>> a7480c4d978f55d81a87dc2d3a601107be63f64a
 ```
 编辑/etc/X11/xorg-0.conf,删掉ServerLayout和Screen Section
 

@@ -1,0 +1,240 @@
+{
+    "scene_name": "bedroom_15_scene_8",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_8.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        -6.781341075897217,
+        0.0,
+        -3.9518625736236574
+    ],
+    "agent_position": [
+        -3.928999900817871,
+        0.0,
+        -1.0490000247955323
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -19356614
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_8/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -19354858
+        },
+        {
+            "instanceID": -19354766
+        },
+        {
+            "instanceID": -19354890
+        },
+        {
+            "instanceID": -19354642
+        },
+        {
+            "instanceID": -19354162
+        },
+        {
+            "instanceID": -19354990
+        }
+    ],
+    "removed_objects": [
+        "bedroom_15_scene_8/CreatedObjects/identifier18_196ab6a55cbd4b999beccbce3c7b92a0.glb",
+        "bedroom_15_scene_8/CreatedObjects/identifier17_669eb4fab4e04c4a9a97813a45265ca6.glb",
+        "bedroom_15_scene_8/CreatedObjects/identifier19_278ff0779c3a477da308a1f8cc6f863c.glb",
+        "bedroom_15_scene_8/CreatedObjects/identifier15_6e2ac1c4554b482b97fa0159e2dba017.glb",
+        "bedroom_15_scene_8/CreatedObjects/identifier8_c13bbde79cdc4255a6e48aa9e47635e6.glb",
+        "bedroom_15_scene_8/CreatedObjects/identifier20_f0916a69ba514ecc973b44528b9dcc43.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -19357148
+            },
+            "human_position": [
+                -2.7837445735931398,
+                0.02499997615814209,
+                -1.200929880142212
+            ],
+            "human_rotation": [
+                0.0,
+                198.57786560058595,
+                0.0
+            ],
+            "asset": "Ch02_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -19357818
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "What is the object I am pointing at?",
+    "task_text": "What is the object I am pointing at?",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "laptop computer",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "shoe",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "flashlight",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "telephone",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "window",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "door",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "fan",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "clock",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "flashlight",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -5.151000022888184,
+                0.02499997615814209,
+                -1.0829999446868897
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -4.7220001220703129,
+                0.02499997615814209,
+                -3.138000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -5.873041152954102,
+                0.02499997615814209,
+                -0.09417864680290222
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.870903968811035,
+                0.03849364444613457,
+                -1.0428853034973145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.749000072479248,
+                0.46000000834465029,
+                -2.763000011444092
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20240923054234-bedroom_15_scene_8-What_is_the_object_I_am_pointing_at_.json",
+    "message": ""
+}
