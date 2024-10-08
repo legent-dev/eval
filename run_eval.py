@@ -13,15 +13,13 @@ import re
 from agent import *
 import traceback
 
-new_tasks_path = "/data41/private/legent/eval/scripts/index2json_0929.json"
+new_tasks_path = "index2json_0929.json"
 task_to_type = {k: v.split("/")[0] for k, v in load_json(new_tasks_path).items()}
 
 partial_final_results = set()  # get_qwen_partial_final_results()
 
-use_video = False
 
-
-def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance, run_all_task_instance, rerun, no_infer):
+def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_settings, task_ids, sync, run_one_task_instance, run_all_task_instance, rerun, no_infer, use_video):
     run_args = {"agent": agent, "max_steps": max_steps, "max_images": max_images, "max_images_history": max_images - 1}
     MAX_STEPS = max_steps
     MAX_IMAGE_HISTORY = max_images - 1
@@ -200,6 +198,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 obs: Observation = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=api_calls))
                 step = 0
                 done = 0
+                frames = []
 
                 stuck_count = 0
                 MAX_STAY_COUNT = 100
@@ -232,7 +231,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                             result = {k:v for k,v in data.items() if k not in "payload"}
                             traj_list.append(result)
                 else:
-                    traj_save_dir = f"{save_path}/traj{task_i:04d}_{case_id}"
+                    # 路径奇怪时，写视频文件会有问题
+                    traj_save_dir = f"{save_path}/traj{task_i:04d}" # f"{save_path}/traj{task_i:04d}_{case_id}"
 
                     os.makedirs(traj_save_dir)
                     store_json(task_setting["task_raw"], f"{traj_save_dir}/task_raw.json")
@@ -276,6 +276,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                             log_green("fail")
 
                     else:
+                        if use_video:
+                            agent.frames = frames
                         if step == MAX_STEPS - 1:
                             action = agent.act(obs.image, feedback, options)
                         else:
@@ -310,13 +312,27 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         action.text = ""
 
                         if use_video:
-                            video_path = f"{traj_save_dir}/videos/{step + 1:04d}"
+                            video_path = f"{traj_save_dir}/frames_client/{step + 1:04d}_"
                             action.api_calls = [SetVideoRecordingPath(video_path)]
                         obs = env.step(action)
 
                         if use_video:
-                            if not os.path.exists(f"{video_path}/0.bmp"):
-                                create_video([f"{traj_save_dir}/videos/{i:04d}" for i in range(1, step + 2)], "bmp", f"{traj_save_dir}/{step + 1:04d}.mp4", 30, remove_images=False)
+                            write_frames = False
+                            write_video = True
+                            
+                            frames_folder = f"{traj_save_dir}/frames"
+                            if write_frames:
+                                start = time.time()
+                                os.makedirs(frames_folder, exist_ok=True)
+                                for i, frame in enumerate(obs.frames):
+                                    save_image(frame, f"{frames_folder}/{step + 1:04d}_{i:04d}.png")
+                                log_green(f"frames {len(obs.frames)}, time: {time.time() - start}")
+                                
+                            frames.extend(obs.frames)
+                            if write_video:
+                                create_video(frames, f"{traj_save_dir}/{step + 1:04d}.mp4", 30)
+                                # image_paths = sorted([os.path.join(frames_folder, img) for img in os.listdir(frames_folder) if img.endswith(f".png")], key=lambda x: (len(x), x))
+                                # create_video(image_paths, f"{traj_save_dir}/{step + 1:04d}_.mp4", 30)
 
                         new_options = obs.game_states["option_mode_info"]["options"]
                         feedback = get_feedback(options[action.action_choice], prev_obs, obs)
@@ -379,6 +395,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     # Save the updated traj_list back to the JSON file
                     store_json(traj_list, f"{agent_result_folder}/traj.json")
             except Exception as e:
+                raise
                 if "Game client exited" in str(e):
                     print("Game client exited. Terminating execution.")
                     sys.exit(1)
@@ -426,8 +443,9 @@ if __name__ == "__main__":
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--rerun", action="store_true")
     parser.add_argument("--no_infer", action="store_true")
+    parser.add_argument("--use_video", action="store_true")
     args = parser.parse_args()
     task_ids = None
     if args.test_case_start != -1 and args.test_case_end != -1:
         task_ids = list(range(args.test_case_start, args.test_case_end))
-    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all, args.rerun, args.no_infer)
+    run_eval(args.agent, args.max_steps, args.max_images, args.port, args.eval_folder, args.save_path, None, task_ids, args.sync, args.run_one_task_instance, args.all, args.rerun, args.no_infer, args.use_video)
