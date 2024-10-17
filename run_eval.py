@@ -181,6 +181,39 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             task_category = task_to_type[str(task_i)]
             # if task_category in ["AttributeQA", "SpatialQA"]:
             #     continue
+            agent_result_folder = f"/data41/private/legent/eval/EmbodiedEvalData/final_results/{agent.model_name}/{task_category}/traj{task_i:04d}_{case_id}"
+            
+                  
+            if no_infer:
+                try:
+                    try:
+                        traj_list = load_json(f"{agent_result_folder}/traj.json")
+                    except:
+                        files = sorted(f for f in os.listdir(agent_result_folder) if f.endswith("a.json"))
+                        traj_list = []
+                        for file_name in files:
+                            data = load_json(f"{agent_result_folder}/{file_name}")
+                            result = {k:v for k,v in data.items() if k not in "payload"}
+                            traj_list.append(result)
+                    done_after_action = -1 if -1 in traj_list[-1]["predicates_done"] else 1 if all(x == 1 for x in traj_list[-1]["predicates_done"]) else 0
+                    if traj_list[-1]["done_after_action"] == done_after_action:
+                        log_green("already done")
+                        continue
+                except:
+                    files = sorted(f for f in os.listdir(agent_result_folder) if f.endswith("a.json"))
+                    traj_list = []
+                    for file_name in files:
+                        data = load_json(f"{agent_result_folder}/{file_name}")
+                        result = {k:v for k,v in data.items() if k not in "payload"}
+                        traj_list.append(result)
+                
+                # 从agent的结果文件夹中读取已有的结果 
+                predicates = load_json(f"{agent_result_folder}/task.json")["predicates"]
+                if len(predicates) == 1:
+                    for traj in traj_list:
+                        traj["predicates_done"] = [traj["done_after_action"]]
+                    store_json(traj_list, f"{agent_result_folder}/traj.json")
+                    continue
 
             if case_id + ".json" in partial_final_results:
                 log_green(f"skip final results {case_id}, already done")
@@ -220,19 +253,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                 print(options)
                 
                 
-                if no_infer:
-                    # 从agent的结果文件夹中读取已有的结果 
-                    agent_result_folder = f"/data41/private/legent/eval/EmbodiedEvalData/final_results/{agent.model_name}/{task_category}/traj{task_i:04d}_{case_id}"
-                    try:
-                        traj_list = load_json(f"{agent_result_folder}/traj.json")
-                    except:
-                        files = sorted(f for f in os.listdir(agent_result_folder) if f.endswith("a.json"))
-                        traj_list = []
-                        for file_name in files:
-                            data = load_json(f"{agent_result_folder}/{file_name}")
-                            result = {k:v for k,v in data.items() if k not in "payload"}
-                            traj_list.append(result)
-                else:
+                if not no_infer:
                     # 路径奇怪时，写视频文件会有问题
                     traj_save_dir = f"{save_path}/traj{task_i:04d}" # f"{save_path}/traj{task_i:04d}_{case_id}"
 
@@ -241,8 +262,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                     store_json(task_setting, f"{traj_save_dir}/task.json")
                     
                     save_image(obs.image, f"{traj_save_dir}/{step:04d}.png")
-                    
                 
+                    
                 while step < MAX_STEPS:
                     if no_infer:
                         if step == len(traj_list):
@@ -251,32 +272,32 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         action = Action()
                         action.text = traj["response"]
                         action.action_choice = traj["action_choice"]
+                        if "action" in traj and traj["action"]:
+                            action_text = traj["action"]
+                        else:
+                            # option是错的，就当什么也没做
+                            action_text = "idle"
+                            action.action_choice = 0
                         
-                        feedback = get_feedback(options[action.action_choice], prev_obs, obs)  
+                        obs = env.step(action)
+                        new_options = obs.game_states["option_mode_info"]["options"]
+                        
+
+                        feedback = get_feedback(action_text, prev_obs, obs)
                         feedback_content = obs.game_states["option_mode_info"]["feedback_content"]
                         prev_obs = obs
 
                         feedback = feedback + (f": {feedback_content}" if feedback_content != "" else "")
-                        done = 1
                         done_list = [] # predicates的结果
                         for predicate in pred_list:
                             _done, info = predicate.task_done(action, obs, options, task_setting)
                             done_list.append(_done)
-                            if _done == -1:
-                                done = -1
-                                break
-                            elif _done == 0:
-                                done = 0
                         traj["feedback"] = feedback
                         traj["predicates_done"] = done_list
                         # Write the updated 'traj' back into the 'traj_list'
                         traj_list[step] = traj
+                        options = new_options
                         step += 1
-                        if done==1:
-                            log_green("success")
-                        else:
-                            log_green("fail")
-
                     else:
                         if use_video:
                             agent.frames = frames
@@ -319,7 +340,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         obs = env.step(action)
 
                         if use_video:
-                            write_frames = False
+                            write_frames = True
                             write_video = True
                             
                             frames_folder = f"{traj_save_dir}/frames"
@@ -395,7 +416,20 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         break
                 else:
                     # Save the updated traj_list back to the JSON file
-                    store_json(traj_list, f"{agent_result_folder}/traj.json")
+                    try:
+                        done_after_action = -1 if -1 in traj_list[-1]["predicates_done"] else 1 if all(x == 1 for x in traj_list[-1]["predicates_done"]) else 0
+                        assert traj_list[-1]["done_after_action"] == done_after_action
+                        store_json(traj_list, f"{agent_result_folder}/traj.json")
+                    except:
+                        with open(f'/data41/private/legent/eval/EmbodiedEvalData/final_results/{agent.model_name}/errors.jsonl', 'a') as jsonl_file:
+                            error_info = {
+                                'index': task_i,
+                                "folder": agent_result_folder,
+                                "traj_list": traj_list
+                            }
+                            jsonl_file.write(json.dumps(error_info) + '\n')
+                        log_green(agent_result_folder)
+                        # exit()
             except Exception as e:
                 raise
                 if "Game client exited" in str(e):
