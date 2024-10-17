@@ -101,6 +101,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             for predicate in task_setting["scene"]["task_instance"]["predicates"]:
                 if predicate["predicate_type"] == "choose":
                     predicate["right_answer_content"] = f"answer \"{predicate['right_answer_content']}\""
+            task_setting["scene"]["interaction_distance"] = 1
             task_settings.append(task_setting)
 
         if task_ids is None:
@@ -128,7 +129,8 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     error_cases = []
 
     # path = ...  # Removed unused path assignments
-    env = Environment(env_path="auto", action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20241015"
+    env = Environment(env_path="auto",action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port,"width":1024,"height":1024}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
         agent = AgentHuman(env)  # 如果想要手动操作，"评测人类的性能"，可以使用这个
