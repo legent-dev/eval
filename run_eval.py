@@ -40,7 +40,15 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         for path in all_paths:
             with open(path, "r", encoding="utf-8") as f:
                 line = ''.join(f.readlines()).strip()
-
+            
+            def process_special_scene(line):
+                setting = json.loads(line)
+                for scene_name in ["mini_project_bedroom_on_sketchfab", "ejemplo"]:
+                    if setting["scene_path"].endswith(scene_name+".glb"):
+                        import re
+                        replaced_text = re.sub("Sketchfab_model/", f'/', line)
+                        return replaced_text
+            line = process_special_scene(line)
             task_setting = {"scene_file": "", "task_raw": "", "scene": {"agent": {}, "player": {"prefab": "null", "position": [0, -100, 0], "rotation": [0, 0, 0]}}}
             task_setting["scene"]["task_instance"] = json.loads(line)
             scene_path = task_setting["scene"]["task_instance"]["scene_path"]
@@ -371,11 +379,14 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         for predicate in pred_list:
                             _done, info = predicate.task_done(action, obs, options, task_setting)
                             done_list.append(_done)
+                            # calcuate Goal-condition Success Rate
                             if _done == -1:
                                 done = -1
                                 break
                             elif _done == 0:
                                 done = 0
+                        
+                        print(f"goal complete ratio: {done_list.count(1)} / {len(done_list)}")
 
                         if distance(vec_xz(stuck_pos), vec_xz(obs.game_states["agent"]["position"])) < 0.01:
                             stuck_count += 1
