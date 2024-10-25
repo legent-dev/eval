@@ -48,6 +48,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         import re
                         replaced_text = re.sub("Sketchfab_model/", f'/', line)
                         return replaced_text
+                return line
             line = process_special_scene(line)
             task_setting = {"scene_file": "", "task_raw": "", "scene": {"agent": {}, "player": {"prefab": "null", "position": [0, -100, 0], "rotation": [0, 0, 0]}}}
             task_setting["scene"]["task_instance"] = json.loads(line)
