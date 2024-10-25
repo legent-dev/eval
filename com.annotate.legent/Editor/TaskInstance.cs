@@ -98,6 +98,8 @@ namespace Annotator
 
         [Label("选项文本"), AllowNesting]
         public string option_text;
+        [Label("选项文本中文"), AllowNesting]
+        public string option_text_cn;
 
 
 
@@ -297,6 +299,8 @@ namespace Annotator
 
         [Label("任务文本")]
         public string task_text;
+        [Label("任务文本中文")]
+        public string task_text_cn;
 
         [Label("行动选项")]
         [OnValueChanged("OnOptionsChanged")]
@@ -540,6 +544,7 @@ namespace Annotator
             }
             string[] names = path.Split('/');
             GameObject obj = GameObject.Find(names[0]);
+            Debug.Log("LoadingPath "+path);
             for(int i = 1; i < names.Length; i++){
                 obj = obj.transform.Find(names[i]).gameObject;
             }
@@ -719,7 +724,7 @@ namespace Annotator
             Utils.WriteFile(Path.Combine(Application.dataPath, "Tasks"), file_name, JsonUtility.ToJson(this, true));
             savePath = Path.GetFullPath(savePath);
             savePath = savePath.Replace("\\", "/");
-            savePath = $"（请勿修改此文本）文件被保存在\n{savePath}\n用下列命令打开此任务：\npython run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance {savePath}\n\n";
+            savePath = $"（请勿修改此文本）文件被保存在\n{savePath}\n用下列命令打开此任务：\npython run_eval.py --agent human --max_steps 24 --max_images 25 --port 50051 --sync --rerun --run_one_task_instance {savePath}\n\n";
             Refresh();
         }
 

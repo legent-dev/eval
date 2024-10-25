@@ -288,6 +288,7 @@ namespace Annotator
 
         public void BuildNavigationGraph()
         {
+            bool visualizeLarge = false;
             // List<GameObject> navigationPoints;
             // List<GameObject> interestPoints;
             Utils.ClearScratch();
@@ -476,15 +477,18 @@ namespace Annotator
                 }
             }
 
-            for (int i = 0; i < nodes.Count; i++)
+            for (int i = 0; i < nodes.Count; i++) //visualizeLarge
             {
                 for (int j = 0; j < nodes[i].neighbors.Count; j++)
                 {
                     Vector3 dir = nodes[i].neighbors[j].position - nodes[i].position;
+                    Vector3 position = nodes[i].position + (visualizeLarge ? new Vector3(0, 0.3f, 0) : Vector3.zero);
+                    // Color lineColor = new Color(0.25f, 0.25f, 1f);
+                    Color lineColor = new Color(0, 1f, 0);
                     if (nodes[i].type == NodeType.Navigable && nodes[i].neighbors[j].type == NodeType.Navigable)
-                        Utils.DrawLine(nodes[i].position, nodes[i].position + dir, Color.green); // .layer = LayerMask.NameToLayer("SceneEditor");;
+                        Utils.DrawLine(position, position + dir, visualizeLarge? lineColor: Color.green, visualizeLarge? 0.1f: 0.01f); // .layer = LayerMask.NameToLayer("SceneEditor");;
                     else
-                        Utils.DrawLine(nodes[i].position, nodes[i].position + dir.normalized * 0.5f, Color.yellow); // .layer = LayerMask.NameToLayer("SceneEditor");;
+                        Utils.DrawLine(position, position + dir.normalized * 0.5f, visualizeLarge? lineColor: Color.yellow, visualizeLarge? 0.1f: 0.01f); // .layer = LayerMask.NameToLayer("SceneEditor");;
                 }
             }
         }
