@@ -43,7 +43,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             
             def process_special_scene(line):
                 setting = json.loads(line)
-                for scene_name in ["mini_project_bedroom_on_sketchfab", "ejemplo"]:
+                for scene_name in ["mini_project_bedroom_on_sketchfab", "ejemplo","richards_art_gallery_-_audio_tour"]:
                     if setting["scene_path"].endswith(scene_name+".glb"):
                         import re
                         replaced_text = re.sub("Sketchfab_model/", f'/', line)

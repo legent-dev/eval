@@ -719,7 +719,10 @@ namespace Annotator
             message = "";
             //get current time second
             string time = Utils.GetTimeString(true);
-            string file_name = $"task-{time}-{gameObject.name}-{task_text.Replace(" ","_").Replace(".","_").Replace("?","_").Replace("!","_").Replace(":","_").Replace(";","_").Replace("\'","_").Replace("\"","_")}.json";
+            int maxLength = 160-$"task-{time}-{gameObject.name}-.json".Length; // 最大路径长度是260字符，留给文件夹100个字符
+            string task_in_filename = task_text.Replace(" ","_").Replace(".","_").Replace("?","_").Replace("!","_").Replace(":","_").Replace(";","_").Replace("\'","_").Replace("\"","_");
+            task_in_filename = task_in_filename.Length > maxLength ? task_in_filename.Substring(0, maxLength) : task_in_filename;
+            string file_name = $"task-{time}-{gameObject.name}-{task_in_filename}.json";
             savePath = Path.Combine(Application.dataPath, "Tasks", file_name);
             Utils.WriteFile(Path.Combine(Application.dataPath, "Tasks"), file_name, JsonUtility.ToJson(this, true));
             savePath = Path.GetFullPath(savePath);
