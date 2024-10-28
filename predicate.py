@@ -97,6 +97,21 @@ class PredicateGrab(Predicate):
         else:
             return 0, {}
 
+class PredicateGrabOnce(Predicate):
+    def __init__(self, object) -> None:
+        self.object = object
+        self.grabbed_once = False
+
+    def task_done(self, action: Action, obs: Observation, options, task_setting) -> int:
+        if self.grabbed_once:
+            return 1, {}
+        
+        done = obs.game_states["agent_grab_instance"] == self.object
+        if done:
+            self.grabbed_once = True
+            return 1, {}
+        else:
+            return 0, {}
 
 class PredicateSwap(Predicate):
     def __init__(self, object1, object2, obs: Observation) -> None:
@@ -282,6 +297,10 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                     splits = predicate.split(" ")
                     assert len(splits) == 3
                     return PredicateOn(int(splits[1]), int(splits[2]))
+                elif predicate.startswith("grab_once"):
+                    splits = predicate.split(" ")
+                    assert len(splits) == 2
+                    return PredicateGrab(int(splits[1]))
                 elif predicate.startswith("grab"):
                     splits = predicate.split(" ")
                     assert len(splits) == 2

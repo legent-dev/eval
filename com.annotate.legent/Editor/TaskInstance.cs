@@ -111,6 +111,9 @@ namespace Annotator
         [HideInInspector]
         public List<string> objects;
 
+        [Label("交互距离"), AllowNesting]
+        public float interaction_distance = 1f;
+        
         [Label("Required Objects=可执行位置+所需物体(没有可不填), 执行反馈"), AllowNesting, ShowIf("IsSpecial")]
         public NestedArray<SpecialActionFeedback> specialActionFeedbacks;
     }
@@ -164,7 +167,7 @@ namespace Annotator
         }
 
 
-        private List<string> predicateTypes { get { return new List<string>() { "choose", "agent_at", "agent_near", "at", "special_action_success","near", "not_at", "agent_pass", "grab", "closer", "further"}; } }
+        private List<string> predicateTypes { get { return new List<string>() { "choose", "agent_at", "agent_near", "at", "special_action_success","near", "not_at", "agent_pass", "grab", "grab_once", "closer", "further"}; } }
         //  "in", "on", "near", "not in", "not on"
 
     }
