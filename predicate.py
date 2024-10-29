@@ -300,7 +300,7 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                 elif predicate.startswith("grab_once"):
                     splits = predicate.split(" ")
                     assert len(splits) == 2
-                    return PredicateGrab(int(splits[1]))
+                    return PredicateGrabOnce(int(splits[1]))
                 elif predicate.startswith("grab"):
                     splits = predicate.split(" ")
                     assert len(splits) == 2
@@ -365,6 +365,12 @@ def build_predicate(predicates, obs, old_version) -> List[Predicate]:
                     splits = predicate.split(" ")
                     assert len(splits) == 3
                     return PredicateFurther(int(splits[1]), int(splits[2]), obs)
+                elif predicate.startswith("grab_once"):
+                    splits = predicate.split(" ")
+                    if len(splits) == 3:
+                        splits = splits[:-1]
+                    assert len(splits) == 2
+                    return PredicateGrabOnce(int(splits[1]))
                 elif predicate.startswith("grab"):
                     splits = predicate.split(" ")
                     if len(splits) == 3:
