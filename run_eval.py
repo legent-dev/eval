@@ -27,7 +27,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
     eval_folder = os.path.abspath(eval_folder)
 
     if run_one_task_instance or run_all_task_instance:
-        eval_folder = "EmbodiedEvalData"
+        eval_folder = "data"
         task_folder = eval_folder
         task_settings = []
 
@@ -35,7 +35,7 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
         if run_one_task_instance:
             all_paths = [run_one_task_instance]
         else:
-            all_paths = glob.glob(os.path.join(f"{task_folder}/final_tasks", '**', '*.json'), recursive=True)
+            all_paths = glob.glob(os.path.join(f"{task_folder}/tasks", '**', '*.json'), recursive=True)
 
         for path in all_paths:
             with open(path, "r", encoding="utf-8") as f:
@@ -139,6 +139,13 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
 
     # path = ...  # Removed unused path assignments
     path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20241015"
+    #path = "C:/Users/cheng/UnityProjects/thyplaymate/Builds/Windows/202410280606"
+    #path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20241028"
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/build/win-20241028-全有"
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/Builds/Windows/202410280631"
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/Builds/Windows/202410281017" # 这个非常神奇又不行了
+    path = "C:/Users/cheng/UnityProjects/thyplaymate/Builds/Windows/202410290306"
+    port = 50051
     env = Environment(env_path="auto",action_mode=1, camera_resolution_width=448, camera_resolution_height=448, camera_field_of_view=90, run_options={"port": port,"width":1024,"height":1024}, use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0})
 
     if agent == "human":
@@ -375,11 +382,13 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
                         print(f"step {step}, action: {action.action_choice}. {options[action.action_choice]}, feedback: {feedback} - {feedback_content}\n")
 
                         feedback = feedback + (f": {feedback_content}" if feedback_content != "" else "")
+                        print("feedback:", feedback)
                         done = 1
                         done_list = [] # predicates的结果
                         for predicate in pred_list:
                             _done, info = predicate.task_done(action, obs, options, task_setting)
                             done_list.append(_done)
+                            print(f"predicate: {type(predicate)}, {_done}")
                             # calcuate Goal-condition Success Rate
                             if _done == -1:
                                 done = -1
