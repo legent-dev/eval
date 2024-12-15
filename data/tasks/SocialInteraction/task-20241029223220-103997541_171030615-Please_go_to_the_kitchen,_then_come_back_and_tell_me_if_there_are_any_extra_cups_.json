@@ -1,0 +1,427 @@
+{
+    "scene_name": "103997541_171030615",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997541_171030615.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        17.6299991607666,
+        0.0,
+        -3.0
+    ],
+    "agent_rotation": [
+        0.0,
+        105.42555236816406,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -15159898
+        },
+        {
+            "instanceID": -15160590
+        },
+        {
+            "instanceID": -15146994
+        }
+    ],
+    "floor_objects": [
+        "103997541_171030615/walls",
+        "103997541_171030615/walls/geometry_rs-13507",
+        "103997541_171030615/furniture/535dea3c8558c43468a8d42badd2b9db3f0800b2_0/535dea3c8558c43468a8d42badd2b9db3f0800b2 > /535dea3c8558c43468a8d42badd2b9db3f0800b2 >  > root"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -15164572
+            },
+            "human_position": [
+                19.106000900268556,
+                0.015050768852233887,
+                -4.053999900817871
+            ],
+            "human_rotation": [
+                0.0,
+                279.6620788574219,
+                0.0
+            ],
+            "asset": "Ch37_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Please go to the bedroom, then come back and tell me if there are any extra chairs.",
+    "task_text": "Please go to the kitchen, then come back and tell me if there are any extra cups.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "No, there don't seem to be any extra cups.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15551800
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is only one cup on the counter.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15551800
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -15551800
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there are two cups on the counter.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15551800
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there are a few extra cups on the counter.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15551800
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "speak(\"yes\") ",
+            "right_special_action": "Yes, there are a few extra cups on the counter.",
+            "targetObject": {
+                "instanceID": -15420308
+            },
+            "predicate_object": "NavPoints/NavigationPoint130",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Yes, there are a few extra cups on the counter.",
+            "right_special_action": "Yes, there are a few extra cups on the counter.",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "speak(\"yes\") ",
+            "right_special_action": "Yes, there are a few extra cups on the counter.",
+            "targetObject": {
+                "instanceID": -15285190
+            },
+            "predicate_object": "NavPoints/NavigationPoint89",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.2333333492279053,
+                0.016267061233520509,
+                -7.047279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                6.830489635467529,
+                0.016267061233520509,
+                -5.00637149810791
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint46",
+            "position": [
+                6.926000118255615,
+                0.016267061233520509,
+                0.02500000037252903
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint55",
+            "position": [
+                8.949999809265137,
+                0.04960036277770996,
+                -1.8200000524520875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint59",
+            "position": [
+                9.130000114440918,
+                0.016267061233520509,
+                -5.309999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint60",
+            "position": [
+                6.881999969482422,
+                0.016267061233520509,
+                -1.649999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint61",
+            "position": [
+                7.960000038146973,
+                0.016267061233520509,
+                1.8600000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint61 (1)",
+            "position": [
+                9.039999961853028,
+                0.016267061233520509,
+                -0.03999999910593033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint73",
+            "position": [
+                11.350000381469727,
+                0.016267061233520509,
+                -5.070000171661377
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint74",
+            "position": [
+                10.739999771118164,
+                0.016267061233520509,
+                -1.7999999523162842
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint75",
+            "position": [
+                10.762310028076172,
+                0.016267061233520509,
+                0.9527206420898438
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint77",
+            "position": [
+                10.800000190734864,
+                0.016267061233520509,
+                3.990000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint78",
+            "position": [
+                10.762310028076172,
+                0.016267061233520509,
+                6.952720642089844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint79",
+            "position": [
+                10.859999656677246,
+                0.016267061233520509,
+                9.550000190734864
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint89",
+            "position": [
+                12.9399995803833,
+                0.02673189528286457,
+                -2.1700000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint100",
+            "position": [
+                13.762310028076172,
+                0.016267061233520509,
+                -7.047279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint101",
+            "position": [
+                13.762310028076172,
+                0.016267061233520509,
+                -4.699999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint105",
+            "position": [
+                15.16100025177002,
+                0.016267061233520509,
+                -2.0380001068115236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint117",
+            "position": [
+                15.479999542236329,
+                0.016267061233520509,
+                -6.960000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint118",
+            "position": [
+                15.539999961853028,
+                0.016267061233520509,
+                -4.610000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint130",
+            "position": [
+                18.08799934387207,
+                0.016267061233520509,
+                -3.1579999923706056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint144",
+            "position": [
+                19.762310028076173,
+                0.016267061233520509,
+                -7.047279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                18.312000274658204,
+                0.22300000488758088,
+                -2.9489998817443849
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029223220-103997541_171030615-Please_go_to_the_kitchen,_then_come_back_and_tell_me_if_there_are_any_extra_cups_.json",
+    "message": ""
+}

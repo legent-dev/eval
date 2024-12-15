@@ -1,0 +1,227 @@
+{
+    "scene_name": "FloorPlan301_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan301_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.562999963760376,
+        0.0,
+        0.18199999630451203
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -48219114
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan301_physics/Objects/Floor_a4e03a2b"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -48215562
+        },
+        {
+            "instanceID": -48215714
+        },
+        {
+            "instanceID": -48212712
+        },
+        {
+            "instanceID": -48218950
+        },
+        {
+            "instanceID": -48213796
+        },
+        {
+            "instanceID": -48211680
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan301_physics/Objects/DogBed_6ba109dd",
+        "FloorPlan301_physics/Objects/Dresser_58d7b5ee",
+        "FloorPlan301_physics/Objects/AlarmClock_b6b90d65",
+        "FloorPlan301_physics/Objects/Statue_b6f50833",
+        "FloorPlan301_physics/Objects/DeskLamp_3565aaaa",
+        "FloorPlan301_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "If you were sitting on the couch facing the TV, what objects would be in your peripheral vision on both sides?",
+    "task_text": "If you were sitting at the desk studying, what objects would be on your right side? ",
+    "task_text_cn": "如果你坐在书桌前学习，你右边会有什么物品？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "books and pillows",
+            "option_text_cn": "书和枕头。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "baseball bats and trash cans",
+            "option_text_cn": "棒球棒和垃圾桶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "laptop and trash can",
+            "option_text_cn": "笔记本电脑和垃圾桶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "laptop and paper box",
+            "option_text_cn": "笔记本电脑和纸盒。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "card and pillow",
+            "option_text_cn": "卡片和枕头。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "shoes and basketball",
+            "option_text_cn": "鞋子和篮球。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "shoes and tennis ball",
+            "option_text_cn": "鞋子和网球。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "tennis ball and pillows",
+            "option_text_cn": "网球和枕头。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "shoes and basketball",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.921259880065918,
+                0.03333333134651184,
+                -0.7640752792358398
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.49900001287460329,
+                0.03333333134651184,
+                1.3730000257492066
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.5139999985694885,
+                0.1056300699710846,
+                -0.3700000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.4930000305175782,
+                0.03333333134651184,
+                -0.028999999165534974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.1459999084472658,
+                0.03333333134651184,
+                1.4220000505447388
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023103937-FloorPlan301_physics-If_you_were_sitting_at_the_desk_studying,_what_objects_would_be_on_your_right_side__.json",
+    "message": ""
+}

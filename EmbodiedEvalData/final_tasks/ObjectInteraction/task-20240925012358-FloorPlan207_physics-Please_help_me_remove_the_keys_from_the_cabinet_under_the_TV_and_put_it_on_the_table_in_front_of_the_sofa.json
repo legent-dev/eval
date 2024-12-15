@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Please help me move my laptop off the the cabinet next to the lounge chair.",
     "task_text": "Please help me remove the keys from the cabinet under the TV and put it on the table in front of the sofa",
+    "task_text_cn": "请帮我从电视下面的柜子里拿出钥匙，把它放在沙发前面的桌子上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up this key",
+            "option_text_cn": "拿起这把钥匙。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it on the table",
+            "option_text_cn": "把它放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -125,7 +128,7 @@
         {
             "name": "NavigationPoint0 (5)",
             "position": [
-                -0.18199999630451203,
+                -0.18199999630451202,
                 0.03333333134651184,
                 -0.8029999732971191
             ],
@@ -134,7 +137,7 @@
         {
             "name": "NavigationPoint0 (6)",
             "position": [
-                -0.18199999630451203,
+                -0.18199999630451202,
                 0.03333333134651184,
                 -1.524999976158142
             ],
@@ -161,9 +164,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.17467083036899568,
+                -0.17467083036899567,
                 0.5127136707305908,
-                0.6883885264396668
+                0.6883885264396667
             ],
             "type": "navigation"
         },
@@ -215,18 +218,18 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "special"
         }

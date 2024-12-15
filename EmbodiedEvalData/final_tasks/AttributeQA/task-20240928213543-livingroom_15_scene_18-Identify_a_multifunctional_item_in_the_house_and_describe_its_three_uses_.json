@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        1.1180000305175782,
+        1.1180000305175781,
         0.0,
         1.503999948501587
     ],
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Identify all multi-functional objects in the living room and describe their various uses.",
     "task_text": "Identify a multifunctional item in the house and describe its three uses.",
+    "task_text_cn": "识别房子里的一个多功能物品并描述它的三个用途。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Bench, can seat people",
+            "option_text_cn": "长凳，可以让人坐",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Sofa, can accommodate people and store miscellaneous items",
+            "option_text_cn": "沙发，可以容纳人并存放杂物",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "TV, you can watch videos, listen to music, and play games",
+            "option_text_cn": "电视，可以看视频、听音乐和玩游戏",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Storage. It might have drawers or shelves to store office supplies, books, or other items.",
+            "option_text_cn": "储物柜。它可能有抽屉或架子来存放办公用品、书籍或其他物品。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "Refrigerator, can be used for storage and freezing food",
+            "option_text_cn": "冰箱，可以用于存储和冷冻食物",
             "gameObjects": {
                 "list": []
             },
@@ -92,7 +98,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Phone, can play games and make phone call",
+            "option_text": "Phone, can play games and make phone calls",
+            "option_text_cn": "手机，可以玩游戏和打电话",
             "gameObjects": {
                 "list": []
             },
@@ -103,7 +110,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Lamp,  can light the house",
+            "option_text": "Lamp, can light the house",
+            "option_text_cn": "灯，可以照亮房子",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yakult, quench your thirst",
+            "option_text_cn": "养乐多，可以解渴。",
             "gameObjects": {
                 "list": []
             },
@@ -152,7 +161,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                0.45500001311302187,
+                0.45500001311302185,
                 0.04109049588441849,
                 2.186000108718872
             ],
@@ -170,7 +179,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                1.8669999837875367,
+                1.8669999837875366,
                 0.04109049588441849,
                 4.171999931335449
             ],
@@ -179,7 +188,7 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                2.0380001068115236,
+                2.0380001068115234,
                 0.04109049588441849,
                 2.174999952316284
             ],
@@ -197,9 +206,9 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                3.3410000801086427,
+                3.3410000801086426,
                 0.04109049588441849,
-                2.2309999465942385
+                2.2309999465942383
             ],
             "type": "navigation"
         },
@@ -208,7 +217,7 @@
             "position": [
                 4.245999813079834,
                 0.04109049588441849,
-                0.43799999356269839
+                0.43799999356269836
             ],
             "type": "navigation"
         },
@@ -226,7 +235,7 @@
             "position": [
                 1.6890000104904175,
                 0.7369999885559082,
-                3.5269999504089357
+                3.5269999504089355
             ],
             "type": "special"
         }

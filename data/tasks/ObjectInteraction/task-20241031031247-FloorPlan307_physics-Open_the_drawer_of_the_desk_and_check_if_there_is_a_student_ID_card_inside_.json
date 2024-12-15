@@ -1,0 +1,270 @@
+{
+    "scene_name": "FloorPlan307_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan307_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -23256214
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan307_physics/Objects/Floor_b08a85bc"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -23250232
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan307_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Open the top drawer of the dresser in the bedroom.",
+    "task_text": "Open the drawer of the desk and check if there is a student ID card inside.",
+    "task_text_cn": "打开书桌的抽屉，检查里面是否有学生证。",
+    "options": [
+        {
+            "option_type": "OpenDrawer",
+            "option_text": "open the drawer of the desk",
+            "option_text_cn": "打开书桌抽屉。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23255462
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Desk_fdd9e006/Drawer_b735fe7d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "CloseDrawer",
+            "option_text": "close the drawer of the desk",
+            "option_text_cn": "关上书桌抽屉。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23255462
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Desk_fdd9e006/Drawer_b735fe7d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is a student ID card inside.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23257364
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there is no student ID card inside.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23257364
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no drawer.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23257364
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "check",
+            "targetObject": {
+                "instanceID": -23257364
+            },
+            "predicate_object": "NavPoints/NavigationPoint0",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "No, there is no student ID card inside.",
+            "right_special_action": "check",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "FloorPlan307_physics/Objects/Desk_fdd9e006/Drawer_b735fe7d",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2000000476837159,
+                0.02633318305015564,
+                -1.5470000505447388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.03099999949336052,
+                0.02633318305015564,
+                -1.534999966621399
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -0.054999999701976779,
+                0.02633318305015564,
+                0.03200000151991844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.2960000038146973,
+                0.02633318305015564,
+                0.2939999997615814
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.06302905082702637,
+                0.7929998636245728,
+                1.200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.0630290508270264,
+                0.02633318305015564,
+                -1.799999713897705
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.0630290508270264,
+                0.02633318305015564,
+                0.20000028610229493
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.2990000247955323,
+                0.731876015663147,
+                -2.255000114440918
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031031247-FloorPlan307_physics-Open_the_drawer_of_the_desk_and_check_if_there_is_a_student_ID_card_inside_.json",
+    "message": ""
+}

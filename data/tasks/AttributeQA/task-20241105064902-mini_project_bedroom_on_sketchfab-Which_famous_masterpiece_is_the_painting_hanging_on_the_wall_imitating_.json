@@ -1,0 +1,254 @@
+{
+    "scene_name": "mini_project_bedroom_on_sketchfab",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/mini_project_bedroom_on_sketchfab.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.2519999742507935,
+        0.0,
+        1.6610000133514405
+    ],
+    "agent_rotation": [
+        0.0,
+        87.57624053955078,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -63126108
+        }
+    ],
+    "floor_objects": [
+        "mini_project_bedroom_on_sketchfab/Sketchfab_model/Root/Cube.002"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Which famous masterpiece is the painting hanging on the wall imitating?",
+    "task_text": "Which famous masterpiece is the painting hanging on the wall imitating?",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Monet, Water Lilies",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Van Gogh, Sunflowers",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Constable, The Hay Wain",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Van Gogh, The Starry Night",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Munch, Starry Night",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Munch, The Scream",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "El Greco, View of Toledo",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Giorgione, The Tempest",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Van Gogh, The Starry Night",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2430000305175782,
+                0.003440558910369873,
+                0.18299999833106996
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.1670000553131104,
+                0.003440558910369873,
+                1.7020000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.281000018119812,
+                0.003440558910369873,
+                3.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.08195710182189942,
+                0.6931532025337219,
+                -0.6422598361968994
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.08195710182189942,
+                0.5371171832084656,
+                0.8577401638031006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.41200000047683718,
+                0.0211570393294096,
+                1.6890000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.0169999599456789,
+                0.003440558910369873,
+                1.6710000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.069999933242798,
+                0.036773860454559329,
+                -0.27000001072883608
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.0260000228881838,
+                0.021809186786413194,
+                3.0329999923706056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                0.33899998664855959,
+                0.021809186786413194,
+                3.135999917984009
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105064902-mini_project_bedroom_on_sketchfab-Which_famous_masterpiece_is_the_painting_hanging_on_the_wall_imitating_.json",
+    "message": ""
+}

@@ -1,0 +1,321 @@
+{
+    "scene_name": "three_rooms_5_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.32499998807907107,
+        0.0,
+        0.45899999141693118
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -10077384
+        },
+        {
+            "instanceID": -10077372
+        },
+        {
+            "instanceID": -10077360
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_0/CreatedWalls/identifier14_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier12_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -10070708
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_0/CreatedObjects/identifier1_Doorway_4.glb/Doorway_4(Clone)/Doorway_Door_4"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -10078132
+            },
+            "human_position": [
+                -3.4700000286102297,
+                0.024999618530273439,
+                2.496999979019165
+            ],
+            "human_rotation": [
+                0.0,
+                92.56663513183594,
+                0.0
+            ],
+            "asset": "Ch26_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -10087404
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "Pick up the box on my right.",
+    "task_text": "Pick up the watermelon on my right.",
+    "task_text_cn": "拿起我右边的西瓜。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the watermelon",
+            "option_text_cn": "拿起西瓜。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -10073248
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_0/CreatedObjects/identifier23_0915c80f2f6a48418283aefa4b063861.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -10073248
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier23_0915c80f2f6a48418283aefa4b063861.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.6589999198913576,
+                0.05833303928375244,
+                1.1339999437332154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.3690409660339357,
+                0.05833303928375244,
+                2.561753749847412
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.2300000190734864,
+                0.05833303928375244,
+                1.0740000009536744
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.9100497364997864,
+                0.05833303928375244,
+                3.4089503288269045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.61299991607666,
+                0.05833303928375244,
+                2.446000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.9968600273132324,
+                0.05833303928375244,
+                2.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.0950000286102296,
+                0.05833303928375244,
+                -2.3359999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.3630000054836273,
+                0.05833303928375244,
+                0.5860000252723694
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                0.4569999873638153,
+                0.05833303928375244,
+                2.0320000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.2651766538619996,
+                0.05833303928375244,
+                3.575632333755493
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.4600000381469728,
+                0.05833303928375244,
+                -2.4549999237060549
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.1130000352859498,
+                0.05833303928375244,
+                -0.906000018119812
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.065999984741211,
+                0.05833303928375244,
+                0.6179999709129334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.2269999980926514,
+                0.1469999998807907,
+                1.6610000133514405
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                2.0031399726867677,
+                0.5899652242660523,
+                2.669175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.3589999675750734,
+                0.05833303928375244,
+                -1.156999945640564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.2039999961853029,
+                0.05833303928375244,
+                0.8849999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                3.3010001182556154,
+                0.05833303928375244,
+                -1.2079999446868897
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                3.0031399726867677,
+                0.6088178753852844,
+                2.169175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                3.0031399726867677,
+                0.600039005279541,
+                3.169175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                3.5031399726867677,
+                0.05833303928375244,
+                1.0850000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -2.5321590900421144,
+                0.7634530067443848,
+                0.6389999985694885
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.5321590900421144,
+                0.7634530067443848,
+                0.6389999985694885
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028092503-three_rooms_5_scene_0-Pick_up_the_watermelon_on_my_right_.json",
+    "message": ""
+}

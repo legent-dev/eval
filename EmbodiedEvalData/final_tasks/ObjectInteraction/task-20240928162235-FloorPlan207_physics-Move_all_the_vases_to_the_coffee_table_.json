@@ -14,7 +14,7 @@
     "agent_position": [
         0.6990000009536743,
         0.0,
-        0.15700000524520875
+        0.15700000524520874
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Close all open cabinet doors in the kitchen.",
     "task_text": "Move all the vases to the coffee table.",
+    "task_text_cn": "把所有的花瓶移到咖啡桌上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up vase_1",
+            "option_text_cn": "拿起花瓶1。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up vase_2",
+            "option_text_cn": "拿起花瓶2。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up vase_3",
+            "option_text_cn": "拿起花瓶3。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the vase_1",
+            "option_text_cn": "放下花瓶1。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +117,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the vase_2",
+            "option_text_cn": "放下花瓶2。",
             "gameObjects": {
                 "list": [
                     {
@@ -129,6 +135,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the vase_3",
+            "option_text_cn": "放下花瓶3。",
             "gameObjects": {
                 "list": [
                     {
@@ -191,7 +198,7 @@
             "position": [
                 -0.7289999723434448,
                 0.03333333134651184,
-                -1.3420000076293946
+                -1.3420000076293945
             ],
             "type": "navigation"
         },
@@ -218,7 +225,7 @@
             "position": [
                 -1.6460000276565552,
                 0.03333333134651184,
-                3.1459999084472658
+                3.1459999084472656
             ],
             "type": "navigation"
         },
@@ -236,7 +243,7 @@
             "position": [
                 0.5659999847412109,
                 0.03333333134651184,
-                1.3359999656677247
+                1.3359999656677246
             ],
             "type": "navigation"
         },
@@ -245,25 +252,25 @@
             "position": [
                 0.7260000109672546,
                 0.03333333134651184,
-                0.15399999916553498
+                0.15399999916553497
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                1.5789999961853028,
+                1.5789999961853027,
                 0.03333333134651184,
-                3.1589999198913576
+                3.1589999198913574
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5 (2)",
             "position": [
-                0.18000000715255738,
+                0.18000000715255737,
                 0.03333333134651184,
-                3.1589999198913576
+                3.1589999198913574
             ],
             "type": "navigation"
         },
@@ -288,9 +295,9 @@
         {
             "name": "SpecialPoint (2)",
             "position": [
-                -0.15600000321865083,
+                -0.15600000321865082,
                 0.5040000081062317,
-                0.18400000035762788
+                0.18400000035762787
             ],
             "type": "special"
         }

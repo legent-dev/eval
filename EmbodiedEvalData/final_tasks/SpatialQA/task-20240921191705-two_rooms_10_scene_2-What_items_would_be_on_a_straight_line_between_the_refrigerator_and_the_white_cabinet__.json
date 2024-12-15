@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "What items would be on a straight line between the coffee table and the front door?",
     "task_text": "What items would be on a straight line between the refrigerator and the white cabinet? ",
+    "task_text_cn": "在冰箱和白色橱柜之间的直线上会有什么物品？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "toilet",
+            "option_text_cn": "马桶。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "plate",
+            "option_text_cn": "盘子。",
             "gameObjects": {
                 "list": []
             },
@@ -59,7 +62,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "dinning table",
+            "option_text": "dining table",
+            "option_text_cn": "餐桌。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "clock",
+            "option_text_cn": "时钟。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "bread",
+            "option_text_cn": "面包。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "stool",
+            "option_text_cn": "凳子。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "oven",
+            "option_text_cn": "烤箱。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "tub",
+            "option_text_cn": "浴缸。",
             "gameObjects": {
                 "list": []
             },
@@ -143,9 +152,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.3469252586364748,
+                -2.3469252586364746,
                 0.0416666716337204,
-                2.1645562648773195
+                2.1645562648773193
             ],
             "type": "navigation"
         },
@@ -154,7 +163,7 @@
             "position": [
                 -0.9629999995231628,
                 0.0416666716337204,
-                0.41100001335144045
+                0.41100001335144043
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 -0.5879999995231628,
                 0.0416666716337204,
-                2.4630000591278078
+                2.4630000591278076
             ],
             "type": "navigation"
         },
@@ -172,7 +181,7 @@
             "position": [
                 -0.9810000061988831,
                 0.0416666716337204,
-                3.2809998989105226
+                3.2809998989105225
             ],
             "type": "navigation"
         },
@@ -199,7 +208,7 @@
             "position": [
                 -0.7210000157356262,
                 0.0416666716337204,
-                1.7890000343322755
+                1.7890000343322754
             ],
             "type": "navigation"
         },
@@ -224,9 +233,9 @@
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                1.5570000410079957,
+                1.5570000410079956,
                 0.0416666716337204,
-                2.5169999599456789
+                2.5169999599456787
             ],
             "type": "navigation"
         },
@@ -235,23 +244,23 @@
             "position": [
                 1.8650000095367432,
                 0.0416666716337204,
-                0.37400001287460329
+                0.37400001287460327
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6 (1)",
             "position": [
-                1.3240000009536744,
+                1.3240000009536743,
                 0.0416666716337204,
-                0.38199999928474429
+                0.38199999928474426
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6 (2)",
             "position": [
-                1.2940000295639039,
+                1.2940000295639038,
                 0.0416666716337204,
                 0.9359999895095825
             ],
@@ -271,7 +280,7 @@
             "position": [
                 1.902999997138977,
                 0.0416666716337204,
-                1.7860000133514405
+                1.7860000133514404
             ],
             "type": "navigation"
         },

@@ -1,0 +1,238 @@
+{
+    "scene_name": "FloorPlan8_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan8_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -8552610
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan8_physics/Objects/Floor_4dc721cd"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -8544470
+        },
+        {
+            "instanceID": -8555618
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan8_physics/FPSController",
+        "FloorPlan8_physics/Lighting"
+    ],
+    "humans": [],
+    "task_template": "Rearrange the kitchen by placing the books back on the shelves.",
+    "task_text": "Rearrange the kitchen by placing the soup ladle that is next to the tomato back to its place next to the sink.",
+    "task_text_cn": "通过把放在西红柿旁边的汤勺放回水槽旁边的原位来重新整理厨房。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the ladle",
+            "option_text_cn": "拿起汤勺。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8554354
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan8_physics/Objects/Ladle_2d399ae3"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "放下",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8557764
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -8554354
+            },
+            "predicate_object": "FloorPlan8_physics/Objects/Ladle_2d399ae3",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -8554354
+            },
+            "predicate_object": "FloorPlan8_physics/Objects/Ladle_2d399ae3",
+            "targetPlace": {
+                "instanceID": -8557764
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.1050000190734865,
+                2.2351741790771486e-8,
+                -0.8379999995231628
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.850000023841858,
+                2.2351741790771486e-8,
+                -0.27799999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.3204882740974426,
+                2.2351741790771486e-8,
+                -0.8055860996246338
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.6490000486373902,
+                2.2351741790771486e-8,
+                1.2610000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.8333330154418946,
+                2.2351741790771486e-8,
+                2.93999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.8400006294250488,
+                2.2351741790771486e-8,
+                0.9399998188018799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.0570000410079957,
+                2.2351741790771486e-8,
+                0.15000000596046449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.34000062942504885,
+                2.2351741790771486e-8,
+                2.43999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.6000000238418579,
+                2.2351741790771486e-8,
+                0.4399998188018799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.5149999856948853,
+                2.2351741790771486e-8,
+                1.7799999713897706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.8438359498977662,
+                0.9106653928756714,
+                0.10143236815929413
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.3893561363220215,
+                0.9595595002174377,
+                -1.6319999694824219
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.3893561363220215,
+                0.9309999942779541,
+                -1.6319999694824219
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030031945-FloorPlan8_physics-Rearrange_the_kitchen_by_placing_the_soup_ladle_that_is_next_to_the_tomato_back_to_its_place_next_to_the_sink_.json",
+    "message": ""
+}

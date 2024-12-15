@@ -1,0 +1,319 @@
+{
+    "scene_name": "stylish_apartment",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/stylish_apartment.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.8929998874664308,
+        0.0,
+        -6.38700008392334
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -75824164
+        }
+    ],
+    "floor_objects": [
+        "stylish_apartment/1d4e1cfcb59844beaa65dd23456ac3bd.fbx/RootNode/i13 On My Own Apartment/i13AP Floor And Ceiling/i13AP Floor/i13AP Floor.Shape"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Go to the white book on the coffe table in the living room, and then go to the black telephone on the brown dresser below the painting, and then go to the white sink in the bathroom below the mirror",
+    "task_text": "Go to the books on the bedside table in the bedroom, and then go to the red book on the round table in the living room, and then go to the books on the long cabinet in the hallway.",
+    "task_text_cn": "",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -75828590
+            },
+            "predicate_object": "NavPoints/NavigationPoint8",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -76232206
+            },
+            "predicate_object": "NavPoints/NavigationPoint11 (2)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -75831878
+            },
+            "predicate_object": "NavPoints/NavigationPoint14",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.6740000247955324,
+                0.02333332970738411,
+                4.561999797821045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.9709999561309816,
+                0.02333332970738411,
+                6.960000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.4678852558135988,
+                0.02333332970738411,
+                -6.511292457580566
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.0950000286102297,
+                0.02333332970738411,
+                -3.9649999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                0.8920000195503235,
+                0.02333332970738411,
+                -3.744999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.8969999551773072,
+                0.02333332970738411,
+                -1.3079999685287476
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.1489999294281008,
+                0.02333332970738411,
+                0.37400001287460329
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.6239999532699586,
+                0.02333332970738411,
+                7.058000087738037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.7685832381248474,
+                0.02333332970738411,
+                9.156266212463379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.6548373103141785,
+                0.02333332970738411,
+                -5.551510334014893
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.23100000619888307,
+                0.02333332970738411,
+                4.550000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.550000011920929,
+                0.02333332970738411,
+                -1.850000023841858
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.1080000028014183,
+                0.02333332970738411,
+                -0.014999999664723874
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (2)",
+            "position": [
+                -0.7549999952316284,
+                0.02333332970738411,
+                1.3350000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                1.7569999694824219,
+                0.02333332970738411,
+                0.6629999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.8000000715255737,
+                0.06400000303983689,
+                5.973999977111816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                0.8240000009536743,
+                0.06400000303983689,
+                8.008999824523926
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.4359999895095825,
+                0.02333332970738411,
+                2.5190000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.6430000066757203,
+                0.02333332970738411,
+                3.3499999046325685
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (3)",
+            "position": [
+                2.9119999408721926,
+                0.02333332970738411,
+                4.114999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                5.909999847412109,
+                0.02333332970738411,
+                4.329999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                2.813999891281128,
+                0.02333332970738411,
+                6.514999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.7260398864746095,
+                0.02333332970738411,
+                8.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.226039886474609,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                6.535286903381348,
+                0.02333332970738411,
+                3.21396803855896
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                7.014256477355957,
+                0.02333332970738411,
+                8.262157440185547
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241027064953-stylish_apartment-Go_to_the_books_on_the_bedside_table_in_the_bedroom,_and_then_go_to_the_red_book_on_the_round_table_in_the_living_room,_and_then_go_to_the_books_on_the_long_.json",
+    "message": ""
+}

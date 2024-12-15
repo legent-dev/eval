@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "If all interior doors in the house were open, from which single point could you see into the most rooms?",
     "task_text": "If all interior doors in the house were open, from which single point could you see the most rooms? ",
+    "task_text_cn": "如果房子里所有的内门都打开，从哪个点能看到最多的房间？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "corridor",
+            "option_text_cn": "走廊。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "kitchen",
+            "option_text_cn": "厨房。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Behind the sofa",
+            "option_text_cn": "沙发后面。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "bathroom",
+            "option_text_cn": "浴室。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "bedroom",
+            "option_text_cn": "卧室。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "living room",
+            "option_text_cn": "客厅。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "at the piano",
+            "option_text_cn": "在钢琴处。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -143,9 +152,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.02922287955880165,
-                -19.666767120361329
+                -19.666767120361328
             ],
             "type": "navigation"
         },
@@ -154,32 +163,32 @@
             "position": [
                 0.9333333969116211,
                 0.02922287955880165,
-                -16.866666793823243
+                -16.866666793823242
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.02922287955880165,
-                -14.666767120361329
+                -14.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                1.4919999837875367,
+                1.4919999837875366,
                 0.02922287955880165,
-                -12.666767120361329
+                -12.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                1.5880000591278077,
+                1.5880000591278076,
                 0.02922287955880165,
                 -9.975000381469727
             ],
@@ -188,7 +197,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.5838876962661744,
+                1.5838876962661743,
                 0.02922287955880165,
                 -6.739828109741211
             ],
@@ -197,7 +206,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                2.5209221839904787,
+                2.5209221839904785,
                 0.02922287955880165,
                 -4.12440299987793
             ],
@@ -206,7 +215,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.06208863481879234,
                 -2.666767120361328
             ],
@@ -215,7 +224,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                2.4666666984558107,
+                2.4666666984558105,
                 0.22922289371490479,
                 -18.60000228881836
             ],
@@ -224,16 +233,16 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                3.3333334922790529,
+                3.3333334922790527,
                 0.06255621463060379,
-                -8.666767120361329
+                -8.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint10",
             "position": [
-                3.1140336990356447,
+                3.1140336990356445,
                 0.02922287955880165,
                 -7.009192943572998
             ],
@@ -253,7 +262,7 @@
             "position": [
                 4.033333778381348,
                 0.02922287955880165,
-                -18.666767120361329
+                -18.666767120361328
             ],
             "type": "navigation"
         },
@@ -262,16 +271,16 @@
             "position": [
                 3.642117738723755,
                 0.02922287955880165,
-                -16.865129470825197
+                -16.865129470825195
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint13",
             "position": [
-                3.7666666507720949,
+                3.7666666507720947,
                 0.02922287955880165,
-                -14.666767120361329
+                -14.666767120361328
             ],
             "type": "navigation"
         },
@@ -280,14 +289,14 @@
             "position": [
                 3.34171986579895,
                 0.02922287955880165,
-                -12.666767120361329
+                -12.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint15",
             "position": [
-                3.3397974967956545,
+                3.3397974967956543,
                 0.04998430609703064,
                 -9.963000297546387
             ],
@@ -298,7 +307,7 @@
             "position": [
                 4.995405673980713,
                 0.02922287955880165,
-                -16.172698974609376
+                -16.172698974609375
             ],
             "type": "navigation"
         },
@@ -307,7 +316,7 @@
             "position": [
                 4.649708271026611,
                 0.02922287955880165,
-                -11.358777046203614
+                -11.358777046203613
             ],
             "type": "navigation"
         },
@@ -325,7 +334,7 @@
             "position": [
                 5.341719627380371,
                 0.02922287955880165,
-                -19.666767120361329
+                -19.666767120361328
             ],
             "type": "navigation"
         },
@@ -334,7 +343,7 @@
             "position": [
                 5.341719627380371,
                 0.02922287955880165,
-                -17.666767120361329
+                -17.666767120361328
             ],
             "type": "navigation"
         },
@@ -343,7 +352,7 @@
             "position": [
                 5.341719627380371,
                 0.5742021799087524,
-                -13.666767120361329
+                -13.666767120361328
             ],
             "type": "navigation"
         },
@@ -352,14 +361,14 @@
             "position": [
                 5.670000076293945,
                 0.02922287955880165,
-                -7.9120001792907719
+                -7.9120001792907715
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint24",
             "position": [
-                5.6666669845581059,
+                5.6666669845581055,
                 0.02922287955880165,
                 -4.941999912261963
             ],

@@ -1,0 +1,455 @@
+{
+    "scene_name": "FloorPlan311_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan311_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.2919999957084656,
+        0.0,
+        0.41499999165534975
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -717904
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan311_physics/Objects/Floor_3aeacd82"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -712752
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan311_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Grab the largest plant in the room and put it in the corner near the window.",
+    "task_text": "Grab the smallest electronic device in the room and put it on the sofa near the window. ",
+    "task_text_cn": "拿起房间里最小的电子设备，把它放在靠窗的沙发上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the laptop",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -714976
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan311_physics/Objects/Laptop_ab8a2a00"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the phone",
+            "option_text_cn": "拿起手机。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -713272
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan311_physics/Objects/CellPhone_e64d9865"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place on the sofa",
+            "option_text_cn": "把它放在沙发上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -738562
+                    },
+                    {
+                        "instanceID": -738572
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -713272
+            },
+            "predicate_object": "FloorPlan311_physics/Objects/CellPhone_e64d9865",
+            "targetPlace": {
+                "instanceID": -738562
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -713272
+            },
+            "predicate_object": "FloorPlan311_physics/Objects/CellPhone_e64d9865",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.7660000324249268,
+                0.03333228826522827,
+                0.8679999709129334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.3333333134651184,
+                0.03333228826522827,
+                -1.1926847696304322
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -0.45399999618530276,
+                0.03333228826522827,
+                -0.3400000035762787
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -1.5759999752044678,
+                0.03333228826522827,
+                -0.289000004529953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (3)",
+            "position": [
+                -1.4329999685287476,
+                0.03333228826522827,
+                0.6449999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.238598823547363,
+                0.03333228826522827,
+                -1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.238598823547363,
+                0.03333228826522827,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -4.238598823547363,
+                0.03333228826522827,
+                2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -4.238598823547363,
+                0.03333228826522827,
+                4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.2385988235473635,
+                0.03333228826522827,
+                -1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.2385988235473635,
+                0.03333228826522827,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -2.2385988235473635,
+                0.03333228826522827,
+                2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -2.2385988235473635,
+                0.03333228826522827,
+                4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.2385988235473633,
+                0.7333323359489441,
+                1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.4000000059604645,
+                0.03333228826522827,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -0.023000000044703485,
+                0.03333228826522827,
+                4.140999794006348
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.9079999923706055,
+                0.03333228826522827,
+                2.2899999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (3)",
+            "position": [
+                1.2109999656677247,
+                0.03333228826522827,
+                3.813999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (4)",
+            "position": [
+                -0.03799999877810478,
+                0.03333228826522827,
+                4.776000022888184
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (1)",
+            "position": [
+                0.8519999980926514,
+                0.03333228826522827,
+                0.597000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.4759999513626099,
+                0.03333228826522827,
+                -0.49300000071525576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                1.4839999675750733,
+                0.03333228826522827,
+                -1.4479999542236329
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (4)",
+            "position": [
+                1.8739999532699586,
+                0.03333228826522827,
+                1.9079999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.0920000076293946,
+                0.03333228826522827,
+                4.867000102996826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                1.1759999990463257,
+                0.03333228826522827,
+                5.664000034332275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (2)",
+            "position": [
+                2.7109999656677248,
+                0.03333228826522827,
+                5.577000141143799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (3)",
+            "position": [
+                2.638000011444092,
+                0.03333228826522827,
+                4.831999778747559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                3.8333334922790529,
+                0.03333228826522827,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                3.8333334922790529,
+                0.03333228826522827,
+                2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                3.7614011764526369,
+                0.03333228826522827,
+                -1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                4.4666666984558109,
+                0.03333228826522827,
+                4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.4772422313690187,
+                0.8466722369194031,
+                1.013384222984314
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.2236576080322266,
+                0.42974531650543215,
+                -1.1926847696304322
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.2236576080322266,
+                0.5,
+                -1.1926847696304322
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                2.1936299800872804,
+                0.5,
+                -0.6826591491699219
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030011252-FloorPlan311_physics-Grab_the_smallest_electronic_device_in_the_room_and_put_it_on_the_sofa_near_the_window__.json",
+    "message": ""
+}

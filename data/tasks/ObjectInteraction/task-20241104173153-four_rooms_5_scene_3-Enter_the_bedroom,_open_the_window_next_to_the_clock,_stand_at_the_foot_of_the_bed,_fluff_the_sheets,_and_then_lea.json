@@ -1,0 +1,358 @@
+{
+    "scene_name": "four_rooms_5_scene_3",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.5619999766349793,
+        0.0,
+        -1.5479999780654908
+    ],
+    "agent_rotation": [
+        0.0,
+        94.36902618408203,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -50792682
+        },
+        {
+            "instanceID": -50792670
+        },
+        {
+            "instanceID": -50792658
+        },
+        {
+            "instanceID": -50792646
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_3/CreatedWalls/identifier19_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_3/CreatedWalls/identifier16_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Enter the guest room, open the curtains, fluff the pillows, and exit.",
+    "task_text": "Enter the bedroom, open the window next to the clock, stand at the foot of the bed, fluff the sheets, and then leave for the living room.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "open the window",
+            "option_text_cn": "打开窗户。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -50796444
+                    }
+                ]
+            },
+            "objects": [
+                "NavPoints/NavigationPoint6"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -50796444
+                            }
+                        ],
+                        "required_objects": [
+                            "NavPoints/NavigationPoint6"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "fluff the sheets",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -50805092
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoints (2)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -50805092
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoints (2)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "books > chairs",
+            "right_special_action": "tidy up",
+            "targetObject": {
+                "instanceID": -50802754
+            },
+            "predicate_object": "NavPoints/NavigationPoint11 (1)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "books > chairs",
+            "right_special_action": "fluff the sheets",
+            "targetObject": {
+                "instanceID": -91875590
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "books > chairs",
+            "right_special_action": "open the window",
+            "targetObject": {
+                "instanceID": -91875590
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.351373314857483,
+                0.045013427734375,
+                -2.9538493156433107
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -0.9340000152587891,
+                0.045013427734375,
+                -0.6809999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -1.281999945640564,
+                0.045013427734375,
+                0.06599999964237213
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -1.281999945640564,
+                0.045013427734375,
+                1.4910000562667847
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.7690000534057618,
+                0.045013427734375,
+                -0.8610000014305115
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.007777690887451,
+                0.045013427734375,
+                1.131880283355713
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.4860000610351564,
+                0.045013427734375,
+                2.941999912261963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.5759999752044678,
+                0.045013427734375,
+                4.611999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.1623001098632813,
+                0.045013427734375,
+                2.632354736328125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (3)",
+            "position": [
+                -0.3019999861717224,
+                0.045013427734375,
+                3.8570001125335695
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                -2.1419999599456789,
+                0.045013427734375,
+                3.2730000019073488
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.3250000476837159,
+                0.045013427734375,
+                -3.569999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.7519999742507935,
+                0.045013427734375,
+                0.7950000166893005
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (3)",
+            "position": [
+                1.1699999570846558,
+                0.045013427734375,
+                -1.0369999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                2.693000078201294,
+                0.045013427734375,
+                -1.472000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                0.8376998901367188,
+                0.045013427734375,
+                2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                4.020999908447266,
+                0.045013427734375,
+                -3.193000078201294
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (3)",
+            "position": [
+                4.126999855041504,
+                0.045013427734375,
+                -1.1929999589920045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                2.1579999923706056,
+                0.045013427734375,
+                -0.07100000232458115
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                2.5290000438690187,
+                0.045013427734375,
+                1.6660000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.940999984741211,
+                0.045013427734375,
+                3.1570000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints (2)",
+            "position": [
+                2.621000051498413,
+                0.7009999752044678,
+                -2.0929999351501467
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241104173153-four_rooms_5_scene_3-Enter_the_bedroom,_open_the_window_next_to_the_clock,_stand_at_the_foot_of_the_bed,_fluff_the_sheets,_and_then_lea.json",
+    "message": ""
+}

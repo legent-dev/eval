@@ -1,0 +1,228 @@
+{
+    "scene_name": "livingroom_15_scene_7",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_7.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.99399995803833,
+        -0.10100000351667404,
+        0.7990000247955322
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -10594834
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_7/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many chairs are around the dining table?",
+    "task_text": "How many things are hanging on the wall?",
+    "task_text_cn": "墙上挂着多少东西？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "eight",
+            "option_text_cn": "八个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "six",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.319000005722046,
+                0.09200000017881394,
+                3.8289999961853029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.4520000219345093,
+                0.06178709864616394,
+                2.0250000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.621000051498413,
+                0.06700000166893006,
+                3.999000072479248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.0,
+                -0.028999999165534974,
+                0.8389999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.552459716796875,
+                0.06178709864616394,
+                2.131439208984375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.314000129699707,
+                0.11900000274181366,
+                1.5260000228881837
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.677999973297119,
+                0.0989999994635582,
+                2.311000108718872
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                3.5769999027252199,
+                0.06178709864616394,
+                3.859999895095825
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019051500-livingroom_15_scene_7-How_many_things_are_hanging_on_the_wall_.json",
+    "message": ""
+}

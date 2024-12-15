@@ -1,0 +1,357 @@
+{
+    "scene_name": "two_rooms_10_scene_6",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_6.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.7820000648498537,
+        0.0,
+        1.4579999446868897
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3119114
+        },
+        {
+            "instanceID": -3119126
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_6/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_6/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -3116058
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_6/CreatedObjects/identifier3_Doorway_10.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -3119530
+            },
+            "human_position": [
+                -2.2279999256134035,
+                0.0,
+                4.061999797821045
+            ],
+            "human_rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -3123470
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "Engage in a short conversation with the guest and follow their verbal instructions to bring them a glass of water.",
+    "task_text": "Have a brief conversation with the guest and follow his verbal instructions to get him a yogurt.",
+    "task_text_cn": "与客人进行简短的交谈，并按照他的口头指示给他拿一份酸奶。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "chat with the guest",
+            "option_text_cn": "与客人交谈。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [],
+                        "required_objects": [],
+                        "feedback": "The yogurt is on the chair I'm pointing to."
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the yogurt",
+            "option_text_cn": "拿起酸奶。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -3118822
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_6/CreatedObjects/identifier47_742051f5b90948adaaeb5e75c10b0c36.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -3118822
+                    },
+                    {
+                        "instanceID": -3119530
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_6/CreatedObjects/identifier47_742051f5b90948adaaeb5e75c10b0c36.glb",
+                "Ch01_nonPBR"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -3118822
+                            },
+                            {
+                                "instanceID": -3119530
+                            }
+                        ],
+                        "required_objects": [
+                            "two_rooms_10_scene_6/CreatedObjects/identifier47_742051f5b90948adaaeb5e75c10b0c36.glb",
+                            "Ch01_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "NO",
+            "right_special_action": "chat with the guest",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "no",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -3118822
+            },
+            "predicate_object": "two_rooms_10_scene_6/CreatedObjects/identifier47_742051f5b90948adaaeb5e75c10b0c36.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "no",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -3116722
+            },
+            "predicate_object": "two_rooms_10_scene_6/CreatedObjects/identifier10_8f5da837bb2b4d75bab723c6664b3c19.glb",
+            "targetPlace": {
+                "instanceID": -20542924
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.7919999957084656,
+                0.033333420753479007,
+                1.024999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.061999797821045,
+                0.033333420753479007,
+                1.6890000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.821000099182129,
+                0.033333420753479007,
+                2.88100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.066999912261963,
+                0.033333420753479007,
+                1.6269999742507935
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.948488235473633,
+                0.033333420753479007,
+                2.7249999046325685
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.184999942779541,
+                0.033333420753479007,
+                1.5989999771118165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -2.0179998874664308,
+                0.033333420753479007,
+                3.4690001010894777
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.715999960899353,
+                0.033333420753479007,
+                2.490000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.1929999589920045,
+                0.04723459109663963,
+                3.13100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.46301859617233279,
+                0.033333420753479007,
+                0.3046920895576477
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.21199999749660493,
+                0.033333420753479007,
+                1.3070000410079957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.0515117645263672,
+                0.033333420753479007,
+                1.2249999046325684
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                0.6700000166893005,
+                0.033333420753479007,
+                2.299999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.5515117645263672,
+                0.033333420753479007,
+                0.2666666805744171
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                2.051511764526367,
+                0.033333420753479007,
+                1.2249999046325684
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.7950003147125246,
+                0.033333420753479007,
+                2.5555598735809328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.3778518736362457,
+                0.7545086741447449,
+                0.510909914970398
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.3630000054836273,
+                0.5839999914169312,
+                0.40700000524520876
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029062829-two_rooms_10_scene_6-Have_a_brief_conversation_with_the_guest_and_follow_his_verbal_instructions_to_get_him_a_yogurt_.json",
+    "message": ""
+}

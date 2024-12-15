@@ -1,0 +1,382 @@
+{
+    "scene_name": "102344193",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102344193.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        8.319999694824219,
+        0.0,
+        -2.0999999046325685
+    ],
+    "agent_rotation": [
+        0.0,
+        265.7182922363281,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -63237310
+        },
+        {
+            "instanceID": -63227974
+        },
+        {
+            "instanceID": -63228010
+        },
+        {
+            "instanceID": -63237890
+        },
+        {
+            "instanceID": -63237898
+        }
+    ],
+    "floor_objects": [
+        "102344193/walls",
+        "102344193/furniture/f927fc27c1c9849c5206f7fc15b4e7296b992572",
+        "102344193/furniture/f927fc27c1c9849c5206f7fc15b4e7296b992572_0",
+        "102344193/walls/geometry_rs-13668",
+        "102344193/walls/geometry_rs-2691"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -63230718
+        },
+        {
+            "instanceID": -63235954
+        },
+        {
+            "instanceID": -63235134
+        },
+        {
+            "instanceID": -63235674
+        },
+        {
+            "instanceID": -63229846
+        }
+    ],
+    "removed_objects": [
+        "102344193/openings/openings_wall_0/210/210 > SketchUp/210 > SketchUp > instance_8/210 > SketchUp > instance_8 > C",
+        "102344193/openings/openings_wall_24/6408/6408 > SketchUp/6408 > SketchUp > instance_8/6408 > SketchUp > instance_8 > C",
+        "102344193/openings/openings_wall_14/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C",
+        "102344193/openings/openings_wall_21/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C",
+        "102344193/furniture/6cd2dc2611c27f758c972b4874efad8c8cbd5d29"
+    ],
+    "humans": [],
+    "task_template": "Identify the area of the house that feels the most spacious relative to its actual size.",
+    "task_text": "Compare the rooms in the house and identify which one feels the most crowded relative to its actual size.",
+    "task_text_cn": "比较房子里的房间，确定哪个房间相对于其实际面积感觉最拥挤。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The balcony connected to the living room.",
+            "option_text_cn": "连接客厅的阳台",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The cloakroom.",
+            "option_text_cn": "衣帽间",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bathroom.",
+            "option_text_cn": "浴室",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The shower room.",
+            "option_text_cn": "淋浴室",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bedroom.",
+            "option_text_cn": "卧室",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The laundry room connected to the bathroom.",
+            "option_text_cn": "与浴室毗邻的洗衣房",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The playroom.",
+            "option_text_cn": "游戏室",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The living room.",
+            "option_text_cn": "客厅",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The bedroom.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.890000104904175,
+                0.042812373489141467,
+                -8.460000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.800000011920929,
+                0.009479034692049027,
+                -7.458000183105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.140000104904175,
+                0.10000000149011612,
+                -2.630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.0499999523162842,
+                0.009479034692049027,
+                -3.5299999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.5239791870117188,
+                0.009479034692049027,
+                -8.379094123840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.4699999988079071,
+                0.011048834770917893,
+                -5.449999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.5,
+                0.009479034692049027,
+                -2.130000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.5399999618530274,
+                0.023325037211179735,
+                -5.400000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                4.710000038146973,
+                0.023325037211179735,
+                -5.449999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                4.631999969482422,
+                0.009479034692049027,
+                -8.375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                3.062000036239624,
+                0.009479034692049027,
+                -9.13700008392334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                6.150000095367432,
+                0.009479034692049027,
+                -8.65999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                7.953000068664551,
+                0.013626417145133019,
+                -5.771999835968018
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                4.929999828338623,
+                0.009479034692049027,
+                -2.059999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                8.086000442504883,
+                0.042812373489141467,
+                -3.1540000438690187
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                8.15999984741211,
+                0.02202332392334938,
+                -7.510000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (1)",
+            "position": [
+                6.239999771118164,
+                0.02202332392334938,
+                -7.579999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                8.119999885559082,
+                0.009479034692049027,
+                -2.009999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -3.7799999713897707,
+                0.042812373489141467,
+                -8.3100004196167
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.4800000190734865,
+                0.005054473876953125,
+                -8.470000267028809
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105070351-102344193-Compare_the_rooms_in_the_house_and_identify_which_one_feels_the_most_crowded_relative_to_its_actual_size_.json",
+    "message": ""
+}

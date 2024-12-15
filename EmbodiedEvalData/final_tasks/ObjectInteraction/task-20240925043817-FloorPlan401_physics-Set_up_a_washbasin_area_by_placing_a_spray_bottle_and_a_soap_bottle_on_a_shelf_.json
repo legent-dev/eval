@@ -18,7 +18,7 @@
     ],
     "agent_rotation": [
         0.0,
-        261.47991943359377,
+        261.47991943359375,
         0.0
     ],
     "floorObjects": [
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Create a fruit bowl by putting apples, oranges, and grapes in a large bowl.",
     "task_text": "Set up a washbasin area by placing a spray bottle and a soap bottle on a shelf.",
+    "task_text_cn": "通过将一个喷雾瓶和一个肥皂瓶放在架子上设置一个洗脸盆区域。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the spray bottle",
+            "option_text_cn": "拿起喷雾瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the spray bottle",
+            "option_text_cn": "放置喷雾瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the soap bottle",
+            "option_text_cn": "拿起肥皂瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the soap bottle",
+            "option_text_cn": "放置肥皂瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -143,7 +148,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -2.427999973297119,
-                0.019562378525733949,
+                0.019562378525733948,
                 0.3499999940395355
             ],
             "type": "navigation"
@@ -153,14 +158,14 @@
             "position": [
                 -2.565000057220459,
                 0.0002504587173461914,
-                3.2333335876464845
+                3.2333335876464844
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                -2.4079999923706056,
+                -2.4079999923706055,
                 0.0002504587173461914,
                 1.5069999694824219
             ],
@@ -171,14 +176,14 @@
             "position": [
                 -0.8090000152587891,
                 0.0002504587173461914,
-                3.5850000381469728
+                3.5850000381469727
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -0.15293869376182557,
+                -0.15293869376182556,
                 0.06691715121269226,
                 0.3730367422103882
             ],
@@ -187,9 +192,9 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -3.0901994705200197,
+                -3.0901994705200195,
                 0.3496299982070923,
-                0.29406654834747317
+                0.29406654834747314
             ],
             "type": "navigation-target"
         },
@@ -197,8 +202,8 @@
             "name": "NavigationPoint1-Target",
             "position": [
                 -2.565000057220459,
-                0.8600000143051148,
-                3.8369998931884767
+                0.8600000143051147,
+                3.8369998931884766
             ],
             "type": "navigation-target"
         },
@@ -206,17 +211,17 @@
             "name": "SpecialPoint",
             "position": [
                 -2.565000057220459,
-                0.8600000143051148,
-                3.8369998931884767
+                0.8600000143051147,
+                3.8369998931884766
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoint (1)",
             "position": [
-                -2.5859999656677248,
-                1.0750000476837159,
-                3.9200000762939455
+                -2.5859999656677246,
+                1.0750000476837158,
+                3.9200000762939453
             ],
             "type": "special"
         }

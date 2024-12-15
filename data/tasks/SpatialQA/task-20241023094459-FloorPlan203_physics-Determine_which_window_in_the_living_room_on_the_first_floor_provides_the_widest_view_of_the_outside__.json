@@ -1,0 +1,273 @@
+{
+    "scene_name": "FloorPlan203_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan203_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.7540000081062317,
+        0.0,
+        6.514999866485596
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -44320302
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan203_physics/Objects/Floor_ce5eb378"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -44312696
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan203_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Determine which window provides the widest view of the outside.",
+    "task_text": "Determine which window in the living room on the first floor provides the widest view of the outside. ",
+    "task_text_cn": "确定一楼客厅的哪个窗户能看到最广阔的外面景色。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The single casement window near the sofa, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The double casement window near the sofa, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The single casement window near the dining table, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The double casement window near the dining table, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The single casement window near the refrigerator, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The double casement window near the refrigerator, much wider than the other windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The size of the windows is roughly the same.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are no windows.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is only one window, so there is no comparison to be made.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The size of the windows is roughly the same.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -5.926003456115723,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.190999984741211,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.992000102996826,
+                0.007039710879325867,
+                1.0410000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.549999952316284,
+                0.007039710879325867,
+                3.5399999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -4.454999923706055,
+                0.007039710879325867,
+                6.434000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                -3.1419999599456789,
+                0.007039710879325867,
+                5.988999843597412
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.1666665077209473,
+                0.007039710879325867,
+                -1.3672046661376954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.9260034561157227,
+                0.007039710879325867,
+                0.6327953338623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                0.07399654388427735,
+                0.007039710879325867,
+                -0.3672046661376953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -0.8479999899864197,
+                0.007039710879325867,
+                6.541999816894531
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023094459-FloorPlan203_physics-Determine_which_window_in_the_living_room_on_the_first_floor_provides_the_widest_view_of_the_outside__.json",
+    "message": ""
+}

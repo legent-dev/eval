@@ -14,7 +14,7 @@
     "agent_position": [
         0.734000027179718,
         0.6840000152587891,
-        2.4660000801086427
+        2.4660000801086426
     ],
     "agent_rotation": [
         0.0,
@@ -53,11 +53,11 @@
             "human_position": [
                 3.630000114440918,
                 0.656000018119812,
-                3.0190000534057619
+                3.0190000534057617
             ],
             "human_rotation": [
                 0.0,
-                273.22637939453127,
+                273.22637939453125,
                 0.0
             ],
             "asset": "Ch26_nonPBR",
@@ -70,10 +70,12 @@
     ],
     "task_template": "I need you to go to the kitchen, get a cup, fill it with coffee, and bring it to me in the office.",
     "task_text": "I need you to go to the kitchen, get a coconut, open it, and bring it to the bedroom for me.",
+    "task_text_cn": "我需要你去厨房，拿一个椰子，打开它，然后把它带到卧室给我。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the coconut",
+            "option_text_cn": "拿起椰子。",
             "gameObjects": {
                 "list": [
                     {
@@ -91,6 +93,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "open the coconut",
+            "option_text_cn": "打开椰子。",
             "gameObjects": {
                 "list": [
                     {
@@ -120,6 +123,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "hand over",
+            "option_text_cn": "递过去。",
             "gameObjects": {
                 "list": [
                     {
@@ -189,7 +193,7 @@
             "position": [
                 3.742279052734375,
                 0.05600005388259888,
-                -2.0333335399627687
+                -2.0333335399627686
             ],
             "type": "navigation"
         },
@@ -206,17 +210,17 @@
             "name": "NavigationPoint2",
             "position": [
                 -2.949272632598877,
-                0.24440383911132813,
-                2.7333335876464845
+                0.24440383911132812,
+                2.7333335876464844
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                0.46658819913864138,
+                0.46658819913864136,
                 0.05600005388259888,
-                -3.9943978786468508
+                -3.9943978786468506
             ],
             "type": "navigation"
         },
@@ -225,7 +229,7 @@
             "position": [
                 1.6699999570846558,
                 0.05600005388259888,
-                -2.7149999141693117
+                -2.7149999141693115
             ],
             "type": "navigation"
         },
@@ -250,7 +254,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.7480000257492066,
+                1.7480000257492065,
                 0.05600005388259888,
                 1.2829999923706055
             ],
@@ -259,7 +263,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                -0.24663570523262025,
+                -0.24663570523262024,
                 0.05600005388259888,
                 2.783419132232666
             ],
@@ -277,9 +281,9 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                1.4869999885559083,
+                1.4869999885559082,
                 0.05600005388259888,
-                -1.0180000066757203
+                -1.0180000066757202
             ],
             "type": "navigation"
         },
@@ -288,7 +292,7 @@
             "position": [
                 0.7049999833106995,
                 0.05600005388259888,
-                2.3970000743865969
+                2.3970000743865967
             ],
             "type": "navigation"
         },
@@ -297,14 +301,14 @@
             "position": [
                 2.388000011444092,
                 0.05600005388259888,
-                -2.6389999389648439
+                -2.6389999389648438
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint13",
             "position": [
-                2.8970000743865969,
+                2.8970000743865967,
                 0.05600005388259888,
                 -0.8539999723434448
             ],
@@ -342,7 +346,7 @@
             "position": [
                 3.742279052734375,
                 0.8962249159812927,
-                -2.8703746795654299
+                -2.8703746795654297
             ],
             "type": "navigation-target"
         }

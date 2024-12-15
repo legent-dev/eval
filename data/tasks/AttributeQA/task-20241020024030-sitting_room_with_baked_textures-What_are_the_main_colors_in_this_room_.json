@@ -1,0 +1,354 @@
+{
+    "scene_name": "sitting_room_with_baked_textures",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/sitting_room_with_baked_textures.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.4300000071525574,
+        0.0,
+        -0.8700000047683716
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -17632024
+        }
+    ],
+    "floor_objects": [
+        "sitting_room_with_baked_textures/hall01.obj.cleaner.materialmerger.gles/Object_3"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "What are the main colors in this room?",
+    "task_text": "What are the main colors in this room?",
+    "task_text_cn": "这个房间的主要颜色是什么？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Red, Blue, and Yellow",
+            "option_text_cn": "红、蓝和黄",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Green, Orange, and White",
+            "option_text_cn": "绿、橙和白",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Purple, Brown, and Gray",
+            "option_text_cn": "紫、棕和灰",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pink, Turquoise, and Gold",
+            "option_text_cn": "粉、青绿色和金",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Black, Silver, and Beige",
+            "option_text_cn": "黑、银和米色",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Crimson, Ivory, and Olive",
+            "option_text_cn": "深红色、象牙色和橄榄色",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Cyan, Magenta, and Yellow",
+            "option_text_cn": "青色、品红色和黄",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Black and White",
+            "option_text_cn": "黑和白",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Purple, Brown, and Gray",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "NavPoints/NavigationPoint17",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.433495044708252,
+                0.033332619816064838,
+                -4.990140914916992
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.12204647064209,
+                0.033332619816064838,
+                -2.800159215927124
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.112545490264893,
+                0.033332619816064838,
+                0.3662344813346863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.171363830566406,
+                0.033332619816064838,
+                2.4527158737182619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.0333333015441896,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.3589999675750734,
+                0.033332619816064838,
+                -2.8359999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.1713638305664064,
+                0.033332619816064838,
+                0.9527158737182617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.13365061581134797,
+                0.033332619816064838,
+                -4.988733291625977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.07000000029802323,
+                0.033332619816064838,
+                2.4800000190734865
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (2)",
+            "position": [
+                1.6399999856948853,
+                0.033332619816064838,
+                2.305999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                -2.130000114440918,
+                0.033332619816064838,
+                2.5299999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.35199999809265139,
+                0.033332619816064838,
+                -0.7509999871253967
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                -0.37400001287460329,
+                0.033332619816064838,
+                0.9940000176429749
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.32863616943359377,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.5,
+                0.033332619816064838,
+                -2.490000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                -0.3700000047683716,
+                0.033332619816064838,
+                -2.4200000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.7610000371932984,
+                0.033332619816064838,
+                0.5540000200271606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.8286361694335938,
+                0.033332619816064838,
+                -1.0472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.6200000047683716,
+                0.033332619816064838,
+                -4.579999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.756999969482422,
+                0.033332619816064838,
+                4.175000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                3.3286361694335939,
+                0.033332619816064838,
+                0.4527158737182617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                3.8286361694335939,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020024030-sitting_room_with_baked_textures-What_are_the_main_colors_in_this_room_.json",
+    "message": ""
+}

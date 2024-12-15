@@ -1,0 +1,224 @@
+{
+    "scene_name": "FloorPlan206_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan206_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2552870
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan206_physics/Objects/Floor_3053f5a6"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2549618
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan206_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Discover the white cup in the bedroom drawer, what image is printed on its side?",
+    "task_text": "Discover the red sofa in the living room. What is placed on top of it? ",
+    "task_text_cn": "发现客厅里的红色沙发。它上面放着什么？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "key",
+            "option_text_cn": "钥匙",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bowl",
+            "option_text_cn": "碗",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "phone",
+            "option_text_cn": "手机",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "apple",
+            "option_text_cn": "苹果",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "paper",
+            "option_text_cn": "纸",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bowl",
+            "option_text_cn": "碗",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "notebook computer",
+            "option_text_cn": "笔记本电脑",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "remote control",
+            "option_text_cn": "遥控器",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "remote control",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.034999966621399,
+                0.03333333134651184,
+                -1.746999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.027999997138977,
+                0.03333333134651184,
+                -1.7489999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.0190000534057618,
+                0.03333333134651184,
+                0.04899999871850014
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.3459999561309816,
+                0.20000001788139344,
+                -0.6610000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.3340001106262209,
+                0.20000001788139344,
+                1.1929999589920045
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107072823-FloorPlan206_physics-Discover_the_red_sofa_in_the_living_room__What_is_placed_on_top_of_it__.json",
+    "message": ""
+}

@@ -1,0 +1,284 @@
+{
+    "scene_name": "three_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.253999948501587,
+        2.2351741790771486e-8,
+        -2.0789999961853029
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -73150766
+        },
+        {
+            "instanceID": -73150778
+        },
+        {
+            "instanceID": -73150790
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_1/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier14_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -73142002
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_1/CreatedObjects/identifier6_Doorway_8.glb/Doorway_8(Clone)/Doorway_Door_8/mesh"
+    ],
+    "humans": [],
+    "task_template": "Walk past the kitchen, enter the hallway, and locate a small green object on the floor.",
+    "task_text": "Walk through the kitchen, enter the bedroom, and draw near to the switch handle next to the orange floor lamp.",
+    "task_text_cn": "走过厨房，进入卧室，接近橙色落地灯旁边的开关把手。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73154926
+            },
+            "predicate_object": "NavPoints/NavigationPoint14",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73155380
+            },
+            "predicate_object": "NavPoints/NavigationPoint15",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.0701982975006105,
+                0.0416666716337204,
+                0.4564402103424072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.4846668243408205,
+                0.0416666716337204,
+                1.6484167575836182
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.4700000286102296,
+                0.0416666716337204,
+                2.111999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -0.35899999737739565,
+                0.0416666716337204,
+                2.181999921798706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.4790000021457672,
+                0.0416666716337204,
+                1.0390000343322755
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.4630333185195923,
+                0.0416666716337204,
+                -2.4287168979644777
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.9994240403175354,
+                0.0416666716337204,
+                3.9670355319976808
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.4666668176651,
+                0.0416666716337204,
+                -1.3405652046203614
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.5609999895095825,
+                0.0416666716337204,
+                0.45500001311302187
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.4780000448226929,
+                0.0416666716337204,
+                1.3760000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.2485792636871338,
+                0.0416666716337204,
+                0.34977996349334719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.7279999852180481,
+                0.0416666716337204,
+                1.3730000257492066
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.8319649696350098,
+                0.0416666716337204,
+                2.6594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                2.2295010089874269,
+                0.0416666716337204,
+                -0.4399493634700775
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.8319649696350098,
+                0.0416666716337204,
+                1.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.3319649696350099,
+                0.0416666716337204,
+                0.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                3.88700008392334,
+                0.0416666716337204,
+                3.2039999961853029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                2.9392600059509279,
+                0.0416666716337204,
+                -1.6603198051452637
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.8319649696350099,
+                0.0416666716337204,
+                1.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                3.3319649696350099,
+                0.0416666716337204,
+                0.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                3.8319649696350099,
+                0.0416666716337204,
+                1.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.8799999952316285,
+                0.33799999952316286,
+                0.43299999833106997
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241026200402-three_rooms_5_scene_1-Walk_through_the_kitchen,_enter_the_bedroom,_and_draw_near_to_the_switch_handle_next_to_the_orange_floor_lamp_.json",
+    "message": ""
+}

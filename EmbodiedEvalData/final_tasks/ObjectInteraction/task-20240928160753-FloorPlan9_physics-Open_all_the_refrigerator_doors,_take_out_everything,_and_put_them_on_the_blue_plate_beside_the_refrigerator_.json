@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        3.0280001163482668,
+        3.0280001163482666,
         0.4020000100135803,
-        0.23100000619888307
+        0.23100000619888306
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Open all the drawers and take out everything.",
     "task_text": "Open all the refrigerator doors, take out everything, and put them on the blue plate beside the refrigerator.",
+    "task_text_cn": "打开所有冰箱门，拿出所有东西，并把它们放在冰箱旁边的蓝色盘子上。",
     "options": [
         {
             "option_type": "OpenDoor",
             "option_text": "open the left door",
+            "option_text_cn": "打开左边的门。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "OpenDoor",
             "option_text": "open the right door",
+            "option_text_cn": "打开右边的门。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -103,6 +107,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to",
+            "option_text_cn": "放在。",
             "gameObjects": {
                 "list": [
                     {
@@ -164,7 +169,7 @@
             "name": "NavigationPoint1",
             "position": [
                 0.0,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.0
             ],
             "type": "navigation"
@@ -173,8 +178,8 @@
             "name": "NavigationPoint2",
             "position": [
                 3.01200008392334,
-                2.2351741790771486e-8,
-                0.15700000524520875
+                2.2351741790771484e-08,
+                0.15700000524520874
             ],
             "type": "navigation"
         },
@@ -182,7 +187,7 @@
             "name": "NavigationPoint3",
             "position": [
                 1.9040000438690186,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.2280000001192093
             ],
             "type": "navigation"
@@ -190,9 +195,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                0.49399998784065249,
-                2.2351741790771486e-8,
-                0.34299999475479128
+                0.49399998784065247,
+                2.2351741790771484e-08,
+                0.34299999475479126
             ],
             "type": "navigation"
         },
@@ -200,16 +205,16 @@
             "name": "NavigationPoint5",
             "position": [
                 -1.7401530742645264,
-                2.2351741790771486e-8,
-                -0.18293705582618714
+                2.2351741790771484e-08,
+                -0.18293705582618713
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                -1.1499996185302735,
-                2.2351741790771486e-8,
+                -1.1499996185302734,
+                2.2351741790771484e-08,
                 1.25
             ],
             "type": "navigation"
@@ -218,16 +223,16 @@
             "name": "NavigationPoint7",
             "position": [
                 0.499835729598999,
-                2.2351741790771486e-8,
-                -1.7205170392990113
+                2.2351741790771484e-08,
+                -1.7205170392990112
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint8",
             "position": [
-                2.3500003814697267,
-                2.2351741790771486e-8,
+                2.3500003814697266,
+                2.2351741790771484e-08,
                 -1.7333333492279053
             ],
             "type": "navigation"
@@ -244,8 +249,8 @@
         {
             "name": "NavigationPoint2-Target",
             "position": [
-                2.9387190341949465,
-                1.3275527954101563,
+                2.9387190341949463,
+                1.3275527954101562,
                 -0.6071492433547974
             ],
             "type": "navigation-target"
@@ -262,7 +267,7 @@
         {
             "name": "NavigationPoint4-Target",
             "position": [
-                2.2122182846069338,
+                2.2122182846069336,
                 0.9399999976158142,
                 -0.4746784567832947
             ],
@@ -271,7 +276,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                2.2122182846069338,
+                2.2122182846069336,
                 0.9399999976158142,
                 -0.4746784567832947
             ],

@@ -1,0 +1,503 @@
+{
+    "scene_name": "102816114",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102816114.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.549999952316284,
+        0.0,
+        -4.559999942779541
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -82868910
+        },
+        {
+            "instanceID": -82868894
+        },
+        {
+            "instanceID": -82868838
+        }
+    ],
+    "floor_objects": [
+        "102816114/walls/geometry_rs-3837",
+        "102816114/walls/geometry_rs-2533",
+        "102816114/walls/geometry_rs-13786"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -82857674
+        },
+        {
+            "instanceID": -82854890
+        },
+        {
+            "instanceID": -82853362
+        },
+        {
+            "instanceID": -82853074
+        }
+    ],
+    "removed_objects": [
+        "102816114/openings/openings_wall_0/4141",
+        "102816114/furniture/1e77cd20fa2aa02b6477d111a9da15961f53f633",
+        "102816114/furniture/20ba326864f55fdc086275e0249c32763a1260e8_8",
+        "102816114/furniture/b82b789f20f789411bda89064544d7f3a0cc2b79"
+    ],
+    "humans": [],
+    "task_template": "Walk towards the tallest building visible from the window.",
+    "task_text": "Walk towards the tallest tree in the yard.",
+    "task_text_cn": "朝着院子里最高的树走去",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -82894982
+            },
+            "predicate_object": "NavPoints/NavigationPoint29",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -82883262
+            },
+            "predicate_object": "NavPoints/NavigationPoint19",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.390000104904175,
+                0.0033336281776428224,
+                -9.039999961853028
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.3000001907348635,
+                0.0033336281776428224,
+                -6.8254804611206059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.450000047683716,
+                0.0033336281776428224,
+                -4.670000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.440000057220459,
+                0.0033336281776428224,
+                -1.2699999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.4000000953674318,
+                0.0033336281776428224,
+                2.1745195388793947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.450000047683716,
+                0.0033336281776428224,
+                5.179999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.500000238418579,
+                0.0033336281776428224,
+                8.174519538879395
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                -3.2699999809265138,
+                0.0033336281776428224,
+                10.630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.2675948441028595,
+                0.0033336281776428224,
+                -2.714088201522827
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.20000000298023225,
+                0.0033336281776428224,
+                10.579999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                0.03999999910593033,
+                0.0033336281776428224,
+                -9.210000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -0.41979455947875979,
+                0.5715216398239136,
+                0.6745195388793945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.5099999904632569,
+                0.0033336281776428224,
+                3.5199999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                5.28000020980835,
+                0.0033336281776428224,
+                7.349999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.05000000074505806,
+                0.0033336281776428224,
+                5.260000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.03999999910593033,
+                0.0033336281776428224,
+                -7.010000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.07999999821186066,
+                0.0033336281776428224,
+                7.909999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                2.559999942779541,
+                0.0033336281776428224,
+                7.730000019073486
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                2.809999942779541,
+                0.0033336281776428224,
+                10.5600004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                5.769999980926514,
+                0.0033336281776428224,
+                -0.8999999761581421
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                3.2009999752044679,
+                0.0033336281776428224,
+                -1.0809999704360963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (4)",
+            "position": [
+                2.690000057220459,
+                0.0033336281776428224,
+                -0.26499998569488528
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (5)",
+            "position": [
+                2.8910000324249269,
+                0.0033336281776428224,
+                0.9139999747276306
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (2)",
+            "position": [
+                2.4200000762939455,
+                0.0033336281776428224,
+                -2.319999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (3)",
+            "position": [
+                2.5999999046325685,
+                0.0033336281776428224,
+                -4.630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                3.0799999237060549,
+                0.0033336281776428224,
+                -9.270000457763672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.029999999329447748,
+                0.01607048511505127,
+                -4.610000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.450000047683716,
+                0.0033336281776428224,
+                5.380000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                5.96999979019165,
+                0.0033336281776428224,
+                3.180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                3.3299999237060549,
+                0.0033336281776428224,
+                -7.099999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                5.619999885559082,
+                0.0033336281776428224,
+                5.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22 (1)",
+            "position": [
+                8.0600004196167,
+                0.0033336281776428224,
+                5.590000152587891
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                6.5,
+                0.0033336281776428224,
+                -9.350000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                5.900000095367432,
+                0.0033336281776428224,
+                0.9300000071525574
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                8.989999771118164,
+                0.0033336281776428224,
+                -3.180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                6.739999771118164,
+                0.0033336281776428224,
+                -7.050000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                9.010000228881836,
+                0.0033336281776428224,
+                0.2199999988079071
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28 (1)",
+            "position": [
+                10.229999542236329,
+                0.0033336281776428224,
+                0.8999999761581421
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28 (2)",
+            "position": [
+                10.1899995803833,
+                0.0033336281776428224,
+                3.2699999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28 (3)",
+            "position": [
+                7.940000057220459,
+                0.0033336281776428224,
+                3.2699999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                8.170000076293946,
+                0.0033336281776428224,
+                8.399999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                9.080205917358399,
+                0.0033336281776428224,
+                10.674519538879395
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                9.34000015258789,
+                0.0033336281776428224,
+                -9.359999656677246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                9.170000076293946,
+                0.0033336281776428224,
+                -6.460000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                10.649999618530274,
+                0.0033336281776428224,
+                5.539999961853027
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 3.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105110606-102816114-Walk_towards_the_tallest_tree_in_the_yard_.json",
+    "message": ""
+}

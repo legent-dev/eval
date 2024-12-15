@@ -1,0 +1,269 @@
+{
+    "scene_name": "FloorPlan2_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan2_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1085110
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan2_physics/Objects/Floor_bbd4574e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -1076038
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan2_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "I'm hungry. Find all objects that can be eaten on the table in this room.",
+    "task_text": "I'm hungry. Find all objects that can be used as ingredients on the table in this room.",
+    "task_text_cn": "我饿了。找出这个房间里桌子上所有能作为食材的东西。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "tomato, bread, egg",
+            "option_text_cn": "西红柿、面包、鸡蛋",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "potato, tomato",
+            "option_text_cn": "土豆、西红柿",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bread",
+            "option_text_cn": "面包",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "egg, bread",
+            "option_text_cn": "鸡蛋、面包",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "potato, tomato, egg, bread",
+            "option_text_cn": "土豆、西红柿、鸡蛋和面包",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "apple, potato",
+            "option_text_cn": "苹果、土豆",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "apple, egg, bread",
+            "option_text_cn": "苹果、鸡蛋、面包",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "potato, tomato, egg",
+            "option_text_cn": "土豆、西红柿、鸡蛋",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "potato, tomato, egg, bread",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                -1.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                0.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.740000009536743,
+                0.030222415924072267,
+                2.359999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.9125542044639587,
+                0.030222415924072267,
+                -0.663549542427063
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                0.9120000004768372,
+                0.030222415924072267,
+                -0.7239999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                -0.01899999938905239,
+                0.030222415924072267,
+                -0.7670000195503235
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.034217119216919,
+                0.030222415924072267,
+                1.2896758317947388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.090999960899353,
+                0.030222415924072267,
+                3.2990000247955324
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.9259999990463257,
+                0.030222415924072267,
+                0.13899999856948853
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.8783646821975708,
+                0.030222415924072267,
+                1.2686246633529664
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.4500000476837158,
+                0.030222415924072267,
+                2.75
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111054344-FloorPlan2_physics-I_m_hungry__Find_all_objects_that_can_be_used_as_ingredients_on_the_table_in_this_room_.json",
+    "message": ""
+}

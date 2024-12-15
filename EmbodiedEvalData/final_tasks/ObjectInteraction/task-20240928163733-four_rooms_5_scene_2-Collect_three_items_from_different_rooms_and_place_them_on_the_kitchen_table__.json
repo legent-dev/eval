@@ -68,10 +68,12 @@
     "humans": [],
     "task_template": "Collect three items from different rooms and place them in a box on the counter.",
     "task_text": "Collect three items from different rooms and place them on the kitchen table. ",
+    "task_text_cn": "从不同的房间收集三件物品，把它们放在厨房桌子上。",
     "options": [
         {
             "option_type": "PickUp",
-            "option_text": "Pick up the ice crean in the living room",
+            "option_text": "Pick up the ice cream in the living room",
+            "option_text_cn": "拿起客厅里的冰淇淋。",
             "gameObjects": {
                 "list": [
                     {
@@ -89,6 +91,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place the ice cream",
+            "option_text_cn": "放下冰淇淋。",
             "gameObjects": {
                 "list": [
                     {
@@ -106,6 +109,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up the body wash in the bathroom",
+            "option_text_cn": "拿起浴室里的沐浴露。",
             "gameObjects": {
                 "list": [
                     {
@@ -123,6 +127,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place the body wash",
+            "option_text_cn": "放下沐浴露。",
             "gameObjects": {
                 "list": [
                     {
@@ -140,6 +145,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up the game console in the bedroom",
+            "option_text_cn": "拿起卧室里的游戏机。",
             "gameObjects": {
                 "list": [
                     {
@@ -157,6 +163,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place the game console",
+            "option_text_cn": "放下游戏机。",
             "gameObjects": {
                 "list": [
                     {
@@ -219,7 +226,7 @@
             "position": [
                 0.8690000176429749,
                 0.0416666716337204,
-                -1.3669999837875367
+                -1.3669999837875366
             ],
             "type": "navigation"
         },
@@ -228,7 +235,7 @@
             "position": [
                 0.9700000286102295,
                 0.0416666716337204,
-                2.0160000324249269
+                2.0160000324249268
             ],
             "type": "navigation"
         },
@@ -244,9 +251,9 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -1.0219999551773072,
+                -1.0219999551773071,
                 0.0416666716337204,
-                2.2850000858306886
+                2.2850000858306885
             ],
             "type": "navigation"
         },
@@ -255,7 +262,7 @@
             "position": [
                 -0.3709999918937683,
                 0.0416666716337204,
-                3.2219998836517336
+                3.2219998836517334
             ],
             "type": "navigation"
         },
@@ -264,7 +271,7 @@
             "position": [
                 -3.759999990463257,
                 0.0416666716337204,
-                1.0950000286102296
+                1.0950000286102295
             ],
             "type": "navigation"
         },
@@ -282,23 +289,23 @@
             "position": [
                 -0.5419999957084656,
                 0.0416666716337204,
-                1.1130000352859498
+                1.1130000352859497
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint10",
             "position": [
-                -1.5529999732971192,
+                -1.5529999732971191,
                 0.0416666716337204,
-                -1.3630000352859498
+                -1.3630000352859497
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint13",
             "position": [
-                2.7339999675750734,
+                2.7339999675750732,
                 0.0416666716337204,
                 -1.152999997138977
             ],
@@ -307,7 +314,7 @@
         {
             "name": "NavigationPoint14",
             "position": [
-                2.8519999980926515,
+                2.8519999980926514,
                 0.0416666716337204,
                 -3.431999921798706
             ],
@@ -325,7 +332,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -2.6649999618530275,
+                -2.6649999618530273,
                 0.9047951698303223,
                 -1.930999994277954
             ],
@@ -336,7 +343,7 @@
             "position": [
                 -2.694000005722046,
                 0.904795229434967,
-                -1.2109999656677247
+                -1.2109999656677246
             ],
             "type": "special"
         },
@@ -345,7 +352,7 @@
             "position": [
                 -2.744999885559082,
                 0.847000002861023,
-                -1.6260000467300416
+                -1.6260000467300415
             ],
             "type": "special"
         }

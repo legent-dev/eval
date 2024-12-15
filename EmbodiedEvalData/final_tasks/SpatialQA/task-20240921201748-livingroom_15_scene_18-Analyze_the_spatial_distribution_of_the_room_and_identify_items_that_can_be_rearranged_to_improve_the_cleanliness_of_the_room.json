@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        1.1180000305175782,
+        1.1180000305175781,
         0.0,
         1.503999948501587
     ],
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Analyze the room’s spatial distribution and identify which objects could be rearranged for efficiency.",
     "task_text": "Analyze the spatial distribution of the room and identify items that can be rearranged to improve the cleanliness of the room",
+    "task_text_cn": "分析房间的空间分布，并确定可以重新排列以提高房间整洁度的物品。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Move the cluttered shoes near the door to a shoe rack.",
+            "option_text_cn": "把门边杂乱的鞋子移到鞋架上。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Rearrange the scattered books on the floor to a bookshelf.",
+            "option_text_cn": "把散落在地板上的书重新整理到书架上。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Shift the dining table to the corner to create more open space.",
+            "option_text_cn": "把餐桌移到角落以创造更多开放空间。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Move the chair from the center of the room to the wall.",
+            "option_text_cn": "把椅子从房间中央移到墙边。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "Pick up the book from the floor and place it on the sofa.",
+            "option_text_cn": "从地板上捡起书并放在沙发上。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "Move the mirror to improve lighting in the room.",
+            "option_text_cn": "移动镜子以改善房间的照明。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "Rearrange the pillows and blankets on the couch for a tidier look.",
+            "option_text_cn": "重新整理沙发上的枕头和毯子以使其看起来更整洁。",
             "gameObjects": {
                 "list": []
             },
@@ -114,7 +122,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Move the chair from the center of the room to the wall.",
+            "option_text": "Move the clock from the center of the room to the wall.",
+            "option_text_cn": "把时钟从房间中央移到墙上。",
             "gameObjects": {
                 "list": []
             },
@@ -143,7 +152,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.3860000371932984,
+                1.3860000371932983,
                 0.04109049588441849,
                 0.531000018119812
             ],
@@ -152,9 +161,9 @@
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                1.9989999532699586,
+                1.9989999532699585,
                 0.04109049588441849,
-                1.8170000314712525
+                1.8170000314712524
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 2.062999963760376,
                 0.04109049588441849,
-                0.44999998807907107
+                0.44999998807907104
             ],
             "type": "navigation"
         },
@@ -172,7 +181,7 @@
             "position": [
                 0.2666666805744171,
                 0.04109049588441849,
-                2.1283152103424074
+                2.1283152103424072
             ],
             "type": "navigation"
         },
@@ -197,18 +206,18 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.3580000400543215,
+                2.3580000400543213,
                 0.04109049588441849,
-                3.7260000705718996
+                3.7260000705718994
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3 (1)",
             "position": [
-                1.1349999904632569,
+                1.1349999904632568,
                 0.04109049588441849,
-                3.6059999465942385
+                3.6059999465942383
             ],
             "type": "navigation"
         },
@@ -224,7 +233,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                3.2090001106262209,
+                3.2090001106262207,
                 0.04109049588441849,
                 4.164999961853027
             ],
@@ -233,7 +242,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                3.3589999675750734,
+                3.3589999675750732,
                 0.04109049588441849,
                 2.984999895095825
             ],
@@ -244,7 +253,7 @@
             "position": [
                 3.11299991607666,
                 0.04109049588441849,
-                2.4000000953674318
+                2.4000000953674316
             ],
             "type": "navigation"
         },
@@ -271,7 +280,7 @@
             "position": [
                 1.6890000104904175,
                 0.7369999885559082,
-                3.5269999504089357
+                3.5269999504089355
             ],
             "type": "special"
         }

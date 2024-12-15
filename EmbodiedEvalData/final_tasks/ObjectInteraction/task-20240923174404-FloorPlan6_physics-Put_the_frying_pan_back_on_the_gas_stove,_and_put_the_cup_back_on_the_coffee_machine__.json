@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Return the book to the desk and the cup to the shelf.",
     "task_text": "Put the frying pan back on the gas stove, and put the cup back on the coffee machine. ",
+    "task_text_cn": "把煎锅放回煤气灶上，把杯子放回咖啡机上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the pan",
+            "option_text_cn": "拿起煎锅。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the gas stove",
+            "option_text_cn": "放在煤气灶上。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the cup",
+            "option_text_cn": "拿起杯子。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the coffee machine",
+            "option_text_cn": "放在咖啡机上。",
             "gameObjects": {
                 "list": [
                     {
@@ -160,16 +165,16 @@
         {
             "name": "NavigationPoint1 (2)",
             "position": [
-                1.0230000019073487,
+                1.0230000019073486,
                 0.03333333134651184,
-                0.22499999403953553
+                0.22499999403953552
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.3232576847076417,
+                -1.3232576847076416,
                 0.03333333134651184,
                 0.09099999815225601
             ],
@@ -180,7 +185,7 @@
             "position": [
                 -1.3771493434906006,
                 0.03333333134651184,
-                2.6314868927001955
+                2.6314868927001953
             ],
             "type": "navigation"
         },
@@ -196,7 +201,7 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                1.4680694341659547,
+                1.4680694341659546,
                 0.9610000252723694,
                 0.07699999958276749
             ],
@@ -214,7 +219,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                1.4680694341659547,
+                1.4680694341659546,
                 0.9610000252723694,
                 0.07699999958276749
             ],
@@ -223,7 +228,7 @@
         {
             "name": "SpecialPoint (1)",
             "position": [
-                0.46626943349838259,
+                0.46626943349838257,
                 0.9919999837875366,
                 -1.5499999523162842
             ],

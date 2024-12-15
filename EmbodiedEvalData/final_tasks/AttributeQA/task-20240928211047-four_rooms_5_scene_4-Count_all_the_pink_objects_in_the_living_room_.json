@@ -42,10 +42,12 @@
     "humans": [],
     "task_template": "Count all the red objects in the room.",
     "task_text": "Count all the pink objects in the living room.",
+    "task_text_cn": "数一数客厅里所有粉色的物品。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "3",
+            "option_text_cn": "三个",
             "gameObjects": {
                 "list": []
             },
@@ -57,6 +59,7 @@
         {
             "option_type": "Answer",
             "option_text": "4",
+            "option_text_cn": "四个",
             "gameObjects": {
                 "list": []
             },
@@ -68,6 +71,7 @@
         {
             "option_type": "Answer",
             "option_text": "5",
+            "option_text_cn": "五个",
             "gameObjects": {
                 "list": []
             },
@@ -79,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "1",
+            "option_text_cn": "一个",
             "gameObjects": {
                 "list": []
             },
@@ -90,6 +95,7 @@
         {
             "option_type": "Answer",
             "option_text": "2",
+            "option_text_cn": "两个",
             "gameObjects": {
                 "list": []
             },
@@ -101,6 +107,7 @@
         {
             "option_type": "Answer",
             "option_text": "6",
+            "option_text_cn": "六个",
             "gameObjects": {
                 "list": []
             },
@@ -112,6 +119,7 @@
         {
             "option_type": "Answer",
             "option_text": "7",
+            "option_text_cn": "七个",
             "gameObjects": {
                 "list": []
             },
@@ -123,6 +131,7 @@
         {
             "option_type": "Answer",
             "option_text": "8",
+            "option_text_cn": "八个",
             "gameObjects": {
                 "list": []
             },
@@ -151,16 +160,16 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -3.3829779624938967,
+                -3.3829779624938965,
                 0.02783203125,
-                -2.9347832202911379
+                -2.9347832202911377
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -3.0333333015441896,
+                -3.0333333015441895,
                 0.02783203125,
                 -1.15924072265625
             ],
@@ -180,7 +189,7 @@
             "position": [
                 -4.133333206176758,
                 0.02783203125,
-                2.4000000953674318
+                2.4000000953674316
             ],
             "type": "navigation"
         },
@@ -196,7 +205,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -2.2089052200317385,
+                -2.2089052200317383,
                 0.02783203125,
                 1.84075927734375
             ],
@@ -216,7 +225,7 @@
             "position": [
                 -0.6930990219116211,
                 0.02783203125,
-                -2.8101282119750978
+                -2.8101282119750977
             ],
             "type": "navigation"
         },
@@ -234,7 +243,7 @@
             "position": [
                 -0.7089052200317383,
                 0.02783203125,
-                1.9000000953674317
+                1.9000000953674316
             ],
             "type": "navigation"
         },
@@ -259,9 +268,9 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                1.9450000524520875,
+                1.9450000524520874,
                 0.02783203125,
-                -1.6799999475479127
+                -1.6799999475479126
             ],
             "type": "navigation"
         },
@@ -277,16 +286,16 @@
         {
             "name": "NavigationPoint14",
             "position": [
-                1.7610000371932984,
+                1.7610000371932983,
                 0.02783203125,
-                1.7929999828338624
+                1.7929999828338623
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint15",
             "position": [
-                1.8029999732971192,
+                1.8029999732971191,
                 0.02783203125,
                 3.306999921798706
             ],
@@ -304,7 +313,7 @@
         {
             "name": "NavigationPoint17",
             "position": [
-                3.2910947799682619,
+                3.2910947799682617,
                 0.02783203125,
                 3.34075927734375
             ],
@@ -313,7 +322,7 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                3.2910947799682619,
+                3.2910947799682617,
                 0.02783203125,
                 4.84075927734375
             ],

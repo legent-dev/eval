@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "Place the water bottle on the furniture that is closest to the center of the room.",
     "task_text": "Place the keys on the furniture that is closest to the center of the room. ",
+    "task_text_cn": "把钥匙放在离房间中心最近的家具上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up this key",
+            "option_text_cn": "拿起这把钥匙。",
             "gameObjects": {
                 "list": [
                     {
@@ -51,6 +53,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it on the table",
+            "option_text_cn": "把它放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -117,7 +120,7 @@
         {
             "name": "NavigationPoint0 (5)",
             "position": [
-                -0.18199999630451203,
+                -0.18199999630451202,
                 0.03333333134651184,
                 -0.8029999732971191
             ],
@@ -126,7 +129,7 @@
         {
             "name": "NavigationPoint0 (6)",
             "position": [
-                -0.18199999630451203,
+                -0.18199999630451202,
                 0.03333333134651184,
                 -1.524999976158142
             ],
@@ -153,9 +156,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.17467083036899568,
+                -0.17467083036899567,
                 0.5127136707305908,
-                0.6883885264396668
+                0.6883885264396667
             ],
             "type": "navigation"
         },
@@ -207,18 +210,18 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "special"
         }

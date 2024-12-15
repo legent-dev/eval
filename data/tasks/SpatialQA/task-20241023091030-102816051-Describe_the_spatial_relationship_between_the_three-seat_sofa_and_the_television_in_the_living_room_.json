@@ -1,0 +1,444 @@
+{
+    "scene_name": "102816051",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102816051.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        9.210000038146973,
+        0.0,
+        -1.5499999523162842
+    ],
+    "agent_rotation": [
+        0.0,
+        85.23532104492188,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -43316904
+        }
+    ],
+    "floor_objects": [
+        "102816051/walls/geometry_rs-13563"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Describe the spatial relationship between the sofa and the coffee table in the living room",
+    "task_text": "Describe the spatial relationship between the three-seat sofa and the television in the living room.",
+    "task_text_cn": "描述客厅里沙发和电视的空间关系。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is to the left of the TV, and the TV is facing the left end of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is to the left of the TV, and the TV is facing the right end of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is to the left of the TV, and the TV is facing the center of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is to the right of the television, at a perpendicular angle to it.",
+            "option_text_cn": "沙发在电视的右边，呈直角。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is in front of the TV, and the TV is facing the left end of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is in front of the TV, and the TV is facing the right end of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa is in front of the TV, and the TV is facing the center of the sofa.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofas surround the television from four directions.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The sofa is in front of the TV, and the TV is facing the right end of the sofa.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.8961478471755982,
+                0.017367396503686906,
+                -7.272375583648682
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.9400691986083984,
+                0.017367396503686906,
+                -5.6373491287231449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.6666666865348816,
+                0.017367396503686906,
+                -2.6000003814697267
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.414862871170044,
+                0.017367396503686906,
+                -5.0676398277282719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.6228151321411135,
+                0.017367396503686906,
+                -0.9779776334762573
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                4.167180061340332,
+                0.017367396503686906,
+                -0.443109929561615
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                5.00436544418335,
+                0.017367396503686906,
+                -6.608606815338135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                5.97730016708374,
+                0.06701570749282837,
+                -4.9333343505859379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                7.510000228881836,
+                0.017367396503686906,
+                -3.6700000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                9.510000228881836,
+                0.017367396503686906,
+                -3.4000000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                8.77599811553955,
+                0.017367396503686906,
+                0.3716679811477661
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                10.166666984558106,
+                0.017367396503686906,
+                -12.637349128723145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                10.066666603088379,
+                0.017367396503686906,
+                -10.637349128723145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                9.149999618530274,
+                0.017367396503686906,
+                -6.210000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                10.260643005371094,
+                0.017367396503686906,
+                -8.869158744812012
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                9.919098854064942,
+                0.017367396503686906,
+                2.094237804412842
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                9.210000038146973,
+                0.017367396503686906,
+                -1.5700000524520875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                12.694119453430176,
+                0.017367396503686906,
+                -10.223531723022461
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                11.940069198608399,
+                0.017367396503686906,
+                -8.637349128723145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                12.200000762939454,
+                0.017367396503686906,
+                -6.9333343505859379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                12.369999885559082,
+                0.017367396503686906,
+                -0.6200000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27 (2)",
+            "position": [
+                12.5,
+                0.017367396503686906,
+                -2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                14.666666984558106,
+                0.017367396503686906,
+                -13.266668319702149
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                15.30000114440918,
+                0.017367396503686906,
+                -11.637349128723145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                13.940069198608399,
+                0.017367396503686906,
+                -8.100000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                13.940069198608399,
+                0.017367396503686906,
+                2.3626508712768556
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                15.000000953674317,
+                0.017367396503686906,
+                -9.637349128723145
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                15.57158088684082,
+                0.017367396503686906,
+                -0.2688601315021515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint38",
+            "position": [
+                15.53006649017334,
+                0.017367396503686906,
+                -8.080979347229004
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint39",
+            "position": [
+                15.982548713684082,
+                0.017367396503686906,
+                -2.977182626724243
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                15.933334350585938,
+                0.017367396503686906,
+                1.3626508712768555
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint42",
+            "position": [
+                17.600000381469728,
+                0.9507008194923401,
+                -1.0333337783813477
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023091030-102816051-Describe_the_spatial_relationship_between_the_three-seat_sofa_and_the_television_in_the_living_room_.json",
+    "message": ""
+}

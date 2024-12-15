@@ -14,7 +14,7 @@
     "agent_position": [
         -0.3269999921321869,
         -0.125,
-        -0.47999998927116396
+        -0.47999998927116394
     ],
     "agent_rotation": [
         0.0,
@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "Go to the bedroom and count how many pillows are on the bed.",
     "task_text": "Go to the bedroom and count how many blankets are on the bed. ",
+    "task_text_cn": "去卧室，数一数床上有多少条毯子。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "zero",
+            "option_text_cn": "零",
             "gameObjects": {
                 "list": []
             },
@@ -45,6 +47,7 @@
         {
             "option_type": "Answer",
             "option_text": "one",
+            "option_text_cn": "一",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +56,7 @@
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "二",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三",
             "gameObjects": {
                 "list": []
             },
@@ -69,6 +74,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +92,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "seven",
+            "option_text_cn": "七",
             "gameObjects": {
                 "list": []
             },
@@ -117,16 +126,16 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -0.34299999475479128,
+                -0.34299999475479126,
                 0.02500000037252903,
-                -0.36500000953674319
+                -0.36500000953674316
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.25088053941726687,
+                -0.25088053941726685,
                 0.03333306312561035,
                 0.6539810299873352
             ],
@@ -135,9 +144,9 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -0.11100000143051148,
+                -0.11100000143051147,
                 0.03333306312561035,
-                1.5390000343322755
+                1.5390000343322754
             ],
             "type": "navigation"
         },
@@ -162,18 +171,18 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                1.2350000143051148,
+                1.2350000143051147,
                 0.03333306312561035,
-                1.5950000286102296
+                1.5950000286102295
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                1.2369999885559083,
+                1.2369999885559082,
                 0.03333306312561035,
-                -0.44200000166893008
+                -0.44200000166893005
             ],
             "type": "navigation"
         },

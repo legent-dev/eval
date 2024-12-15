@@ -1,0 +1,383 @@
+{
+    "scene_name": "four_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        7.595517158508301,
+        0.0,
+        -9.870811462402344
+    ],
+    "agent_position": [
+        5.4019999504089359,
+        0.0,
+        -8.034000396728516
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -768306
+        },
+        {
+            "instanceID": -768294
+        },
+        {
+            "instanceID": -768282
+        },
+        {
+            "instanceID": -768270
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_1/CreatedWalls/identifier19_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier16_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many pillows are on the bed in the master bedroom?",
+    "task_text": "How many objects are on the table in the front of the green bars trash can in the living room?",
+    "task_text_cn": "客厅里绿色条形垃圾桶前面的桌子上有多少个物品？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "option_text_cn": "零个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "five",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                4.200000286102295,
+                0.03958180546760559,
+                -13.13333511352539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                4.200000286102295,
+                0.09292271733283997,
+                -11.5449800491333
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                5.188486099243164,
+                0.03958180546760559,
+                -7.9331207275390629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                5.40000057220459,
+                0.03958180546760559,
+                -9.600001335144043
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                5.733333587646484,
+                0.27291515469551089,
+                -13.13333511352539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                6.559338569641113,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                7.567999839782715,
+                0.03958180546760559,
+                -12.446000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                8.553999900817871,
+                0.03958180546760559,
+                -13.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                7.124000072479248,
+                0.03958180546760559,
+                -8.180000305175782
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                6.561999797821045,
+                0.03958180546760559,
+                -9.270000457763672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                8.42199993133545,
+                0.03958180546760559,
+                -7.881999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                8.46500015258789,
+                0.03958180546760559,
+                -6.982999801635742
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                8.559338569641114,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                8.594178199768067,
+                0.03958180546760559,
+                -9.504222869873047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                10.241999626159668,
+                0.0,
+                -6.579999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                10.559338569641114,
+                0.03958180546760559,
+                -11.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                10.559338569641114,
+                0.03958180546760559,
+                -9.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                10.364999771118164,
+                0.03958180546760559,
+                -7.672999858856201
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                11.638002395629883,
+                0.03958180546760559,
+                -5.533665657043457
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                12.37600040435791,
+                0.03958180546760559,
+                -9.277999877929688
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                12.559338569641114,
+                0.03958180546760559,
+                -7.511190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (1)",
+            "position": [
+                12.501999855041504,
+                0.03958180546760559,
+                -5.866000175476074
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                5.916999816894531,
+                0.7120000123977661,
+                -6.9710001945495609
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107063031-four_rooms_5_scene_1-How_many_objects_are_on_the_table_in_the_front_of_the_green_bars_trash_can_in_the_living_room_.json",
+    "message": ""
+}

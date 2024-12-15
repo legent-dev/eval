@@ -1,0 +1,310 @@
+{
+    "scene_name": "FloorPlan209_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan209_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -5.63100004196167,
+        0.0,
+        -0.6710000038146973
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -49927206
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan209_physics/Objects/Floor_661dfaaa"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -49925682
+        },
+        {
+            "instanceID": -49925934
+        },
+        {
+            "instanceID": -49925334
+        },
+        {
+            "instanceID": -49923188
+        },
+        {
+            "instanceID": -49923276
+        },
+        {
+            "instanceID": -49928310
+        },
+        {
+            "instanceID": -49923680
+        },
+        {
+            "instanceID": -49925382
+        },
+        {
+            "instanceID": -49924370
+        },
+        {
+            "instanceID": -49924494
+        },
+        {
+            "instanceID": -49921224
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan209_physics/Objects/Vase_58f3a922",
+        "FloorPlan209_physics/Objects/Vase_9c13a758",
+        "FloorPlan209_physics/Objects/Pen_df9323c1",
+        "FloorPlan209_physics/Objects/Book_7e290dff",
+        "FloorPlan209_physics/Objects/Book_7e290dff/book_front_9",
+        "FloorPlan209_physics/Objects/Statue_7e71d98f",
+        "FloorPlan209_physics/Objects/CreditCard_5794fee0",
+        "FloorPlan209_physics/Objects/Vase_99a3f189",
+        "FloorPlan209_physics/Objects/Mirror_f9af13ff",
+        "FloorPlan209_physics/Objects/Painting_0db0fb84",
+        "FloorPlan209_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "If you were to flood the ground floor with 6 inches of water, which items would remain completely dry?",
+    "task_text": "If you were to flood the living room floor with 4 inches of water, which items would remain completely dry? ",
+    "task_text_cn": "如果客厅地面被四英寸的水淹了，哪些物品会完全保持干燥？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Laptop, flower pot, and trash can.",
+            "option_text_cn": "笔记本电脑、花盆和垃圾桶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Laptop, flower pot, and sofa.",
+            "option_text_cn": "笔记本电脑、花盆和沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Laptop, figurine, and sofa",
+            "option_text_cn": "笔记本电脑、小雕像和沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Laptop, flower pot, and watch.",
+            "option_text_cn": "笔记本电脑、花盆和手表。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Laptop, figurine, and watering kettle.",
+            "option_text_cn": "笔记本电脑、小雕像和浇水壶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Watering kettle and doors.",
+            "option_text_cn": "浇水壶、门。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Watering kettle, drawings, and laptop.",
+            "option_text_cn": "浇水壶、画、笔记本电脑。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Lamp and remote control.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Laptop, flower pot, and watch.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -7.675503730773926,
+                0.003911375999450684,
+                -4.334000110626221
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -7.572289943695068,
+                0.003911375999450684,
+                -1.5246998071670533
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -7.675503730773926,
+                0.003911375999450684,
+                1.4901161193847657e-8
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -5.675503730773926,
+                0.003911375999450684,
+                -4.452000141143799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -5.675503730773926,
+                0.003911375999450684,
+                -2.660048484802246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -5.675503730773926,
+                0.003911375999450684,
+                -0.6600484848022461
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.437000036239624,
+                0.03724473714828491,
+                -4.622546195983887
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.562000036239624,
+                0.03724473714828491,
+                -2.6480000019073488
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.509000062942505,
+                0.003911375999450684,
+                -0.6600484848022461
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.6755037307739258,
+                0.0341326929628849,
+                -4.660048484802246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.6755037307739258,
+                0.03245639055967331,
+                -2.660048484802246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.6755037307739258,
+                0.003911375999450684,
+                -0.6600484848022461
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241024223649-FloorPlan209_physics-If_you_were_to_flood_the_living_room_floor_with_4_inches_of_water,_which_items_would_remain_completely_dry__.json",
+    "message": ""
+}

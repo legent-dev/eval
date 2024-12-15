@@ -1,0 +1,328 @@
+{
+    "scene_name": "duplex_houses_at_22_arnwood_street_manurewa",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/duplex_houses_at_22_arnwood_street_manurewa.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        -0.699999988079071,
+        0.0
+    ],
+    "agent_position": [
+        24.51300048828125,
+        -0.16666626930236817,
+        23.424999237060548
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -77348428
+        },
+        {
+            "instanceID": -77352600
+        },
+        {
+            "instanceID": -77330616
+        },
+        {
+            "instanceID": -77353280
+        },
+        {
+            "instanceID": -77330704
+        }
+    ],
+    "floor_objects": [
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/Group/TR - 020_2",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 019_3",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/ARCHICAD/Ground FLoor/Group_3/SLA - 011_0",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 020_0",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/ARCHICAD/Ground FLoor/Group_3/SLA - 010_11"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -77340840
+        }
+    ],
+    "removed_objects": [
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/1 GROUND FLOOR/Ground FLoor/DOO - 019_23"
+    ],
+    "humans": [],
+    "task_template": "Proceed to the kitchen, pass the refrigerator, and stop near the knife block.",
+    "task_text": "Proceed to the courtyard, pass the trees in the yard, and stop near the trash can.",
+    "task_text_cn": "前往庭院，路过院子里的树，在垃圾桶附近停下",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -77443650
+            },
+            "predicate_object": "NavPoints/NavigationPoint301",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -77387566
+            },
+            "predicate_object": "NavPoints/NavigationPoint243",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -11.871725082397461,
+                -0.601934015750885,
+                6.628582000732422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint75",
+            "position": [
+                -0.4499702453613281,
+                -0.5658932328224182,
+                0.8754692077636719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint93",
+            "position": [
+                2.050029754638672,
+                -0.6252161264419556,
+                -2.624530792236328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint97",
+            "position": [
+                2.550029754638672,
+                -0.5685353875160217,
+                0.3754692077636719
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint122",
+            "position": [
+                6.282144546508789,
+                -0.7666662931442261,
+                -15.667363166809082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint199",
+            "position": [
+                16.050029754638673,
+                -0.19987037777900697,
+                46.87546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint221",
+            "position": [
+                19.050029754638673,
+                -0.19988608360290528,
+                46.37546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240",
+            "position": [
+                20.950000762939454,
+                -0.33333301544189455,
+                24.325000762939454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240 (2)",
+            "position": [
+                20.628999710083009,
+                -0.33333301544189455,
+                21.55900001525879
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240 (1)",
+            "position": [
+                22.75,
+                -0.08100000023841858,
+                23.82200050354004
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243",
+            "position": [
+                20.690000534057618,
+                -0.33333301544189455,
+                27.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243 (2)",
+            "position": [
+                20.510000228881837,
+                -0.33333301544189455,
+                28.913999557495118
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243 (3)",
+            "position": [
+                22.40999984741211,
+                -0.33333301544189455,
+                28.450000762939454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243 (1)",
+            "position": [
+                22.459999084472658,
+                -0.33333301544189455,
+                26.889999389648439
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint244",
+            "position": [
+                22.050029754638673,
+                -0.19985878467559815,
+                45.87546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint255",
+            "position": [
+                24.050029754638673,
+                -0.36597034335136416,
+                20.875469207763673
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint255 (1)",
+            "position": [
+                27.059999465942384,
+                -0.36597034335136416,
+                20.299999237060548
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint256",
+            "position": [
+                24.94600486755371,
+                -0.16666626930236817,
+                24.72614097595215
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint256 (1)",
+            "position": [
+                24.51300048828125,
+                -0.16666626930236817,
+                23.424999237060548
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint264",
+            "position": [
+                25.583999633789064,
+                -0.20026056468486787,
+                26.517000198364259
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint274",
+            "position": [
+                27.050029754638673,
+                -0.4011765122413635,
+                19.375469207763673
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint275",
+            "position": [
+                27.050029754638673,
+                -0.16666626930236817,
+                22.375469207763673
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint281",
+            "position": [
+                28.760000228881837,
+                -0.33333301544189455,
+                25.8799991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint294",
+            "position": [
+                30.26583480834961,
+                -0.16666626930236817,
+                21.15230369567871
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint301",
+            "position": [
+                30.97800064086914,
+                -0.19999957084655763,
+                26.833999633789064
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint322",
+            "position": [
+                34.06057357788086,
+                -0.1663181185722351,
+                27.945171356201173
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 3.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105102826-duplex_houses_at_22_arnwood_street_manurewa-Proceed_to_the_courtyard,_pass_the_trees_in_the_yard,_and_stop_near_the_trash_can_.json",
+    "message": ""
+}

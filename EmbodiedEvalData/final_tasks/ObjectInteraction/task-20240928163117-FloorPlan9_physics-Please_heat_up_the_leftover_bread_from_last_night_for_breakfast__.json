@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        1.5230000019073487,
+        1.5230000019073486,
         0.0,
         0.13899999856948853
     ],
@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "Please heat up the leftover pizza from last night for breakfast.",
     "task_text": "Please heat up the leftover bread from last night for breakfast. ",
+    "task_text_cn": "请加热昨晚剩下的面包作为早餐。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the bread",
+            "option_text_cn": "拿起面包。",
             "gameObjects": {
                 "list": [
                     {
@@ -69,6 +71,7 @@
         {
             "option_type": "OpenDoor",
             "option_text": "Open the oven door",
+            "option_text_cn": "打开烤箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -86,6 +89,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it in the oven",
+            "option_text_cn": "把它放进烤箱。",
             "gameObjects": {
                 "list": [
                     {
@@ -103,6 +107,7 @@
         {
             "option_type": "CloseDoor",
             "option_text": "Close the oven door",
+            "option_text_cn": "关上烤箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -120,6 +125,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "heat",
+            "option_text_cn": "加热。",
             "gameObjects": {
                 "list": [
                     {
@@ -179,8 +185,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.0686538219451905,
-                2.2351741790771486e-8,
+                1.0686538219451904,
+                2.2351741790771484e-08,
                 0.3639651834964752
             ],
             "type": "navigation"
@@ -188,9 +194,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                0.49229684472084048,
-                2.2351741790771486e-8,
-                0.37707316875457766
+                0.49229684472084045,
+                2.2351741790771484e-08,
+                0.37707316875457764
             ],
             "type": "navigation"
         },
@@ -198,7 +204,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.430999994277954,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.4099999964237213
             ],
             "type": "navigation"
@@ -207,7 +213,7 @@
             "name": "NavigationPoint3",
             "position": [
                 0.5865826606750488,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -1.4830378293991089
             ],
             "type": "navigation"
@@ -215,8 +221,8 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                2.6000003814697267,
-                2.2351741790771486e-8,
+                2.6000003814697266,
+                2.2351741790771484e-08,
                 -1.5333333015441895
             ],
             "type": "navigation"
@@ -225,8 +231,8 @@
             "name": "NavigationPoint5",
             "position": [
                 3.007999897003174,
-                2.2351741790771486e-8,
-                0.32100000977516177
+                2.2351741790771484e-08,
+                0.32100000977516174
             ],
             "type": "navigation"
         },

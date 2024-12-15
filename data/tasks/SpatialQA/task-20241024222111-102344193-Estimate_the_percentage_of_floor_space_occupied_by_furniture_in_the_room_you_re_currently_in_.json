@@ -1,0 +1,296 @@
+{
+    "scene_name": "102344193",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102344193.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        8.15999984741211,
+        0.0,
+        -1.3600000143051148
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -49501294
+        }
+    ],
+    "floor_objects": [
+        "102344193/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -49499734
+        },
+        {
+            "instanceID": -49499486
+        },
+        {
+            "instanceID": -49498954
+        }
+    ],
+    "removed_objects": [
+        "102344193/openings/openings_wall_24",
+        "102344193/openings/openings_wall_21",
+        "102344193/openings/openings_wall_14/201/201 > SketchUp"
+    ],
+    "humans": [],
+    "task_template": "Determine the percentage of floor space occupied by furniture in the living room.",
+    "task_text": "Estimate the percentage of floor space occupied by furniture in the room you're currently in.",
+    "task_text_cn": "估算一下客厅中有多少地面空间被家具占用。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "0%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "5%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "40%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "60%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "80%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "90%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "95%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "100%",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "40%",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.909999966621399,
+                0.009479034692049027,
+                -2.859999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.1027543544769289,
+                0.042812373489141467,
+                -1.9190748929977418
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.7099999785423279,
+                0.042812373489141467,
+                -5.656031131744385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.8399999737739563,
+                0.023952551186084749,
+                -3.7017581462860109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.309999942779541,
+                0.009479034692049027,
+                -7.860000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.7799999713897705,
+                0.014639034867286682,
+                -7.559999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.7300000190734864,
+                0.009479034692049027,
+                -5.420000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                3.82112979888916,
+                0.009479034692049027,
+                -8.700261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                5.059999942779541,
+                0.009479034692049027,
+                -4.659999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                6.110000133514404,
+                0.009479034692049027,
+                -6.059999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                5.500000476837158,
+                0.009479034692049027,
+                -1.940000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                8.140000343322754,
+                0.042812373489141467,
+                -6.210000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                8.109999656677246,
+                0.009479034692049027,
+                -1.740006446838379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.4800000190734865,
+                0.005054473876953125,
+                -8.470000267028809
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241024222111-102344193-Estimate_the_percentage_of_floor_space_occupied_by_furniture_in_the_room_you_re_currently_in_.json",
+    "message": ""
+}

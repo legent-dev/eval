@@ -1,0 +1,409 @@
+{
+    "scene_name": "three_rooms_5_scene_13",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/three_rooms_5_scene_13.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.5989999771118164,
+        -0.0010000000474974513,
+        1.7730000019073486
+    ],
+    "agent_rotation": [
+        0.0,
+        136.74578857421875,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -15977542
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_13/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -15971958
+        },
+        {
+            "instanceID": -15972022
+        },
+        {
+            "instanceID": -15970186
+        },
+        {
+            "instanceID": -15975210
+        },
+        {
+            "instanceID": -15975326
+        },
+        {
+            "instanceID": -15975350
+        },
+        {
+            "instanceID": -15975382
+        },
+        {
+            "instanceID": -15975422
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_13/CreatedObjects/identifier30_14a4c834f401471c8ba59685d799f24c.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier32_12b0d602619a494a8b61448194641d58.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier7_Doorway_2.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier66_50c3271870f6453983227dfee4939f68.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier67_36e532ef9c454a9faa9ae3eb7282482c.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier68_47d1181e7a53452680209b0255961345.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier69_bccde59e7ca04b1a8c932d0ba18009a6.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier70_86ef05c725f542e1ae36d598530a9733.glb"
+    ],
+    "humans": [],
+    "task_template": "Proceed to the kitchen, take out the ingredients for a salad, prepare the salad in a bowl, and then refrigerate it.",
+    "task_text": "Proceed to the kitchen, take out the ingredients for dinner from the rocking chair, prepare dinner on the table, and then refrigerate it. ",
+    "task_text_cn": "前往厨房，从摇椅上拿出晚餐的食材，在桌子上准备晚餐，然后把它放进冰箱。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15975178
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier65_0896dc31d5154c97aa3f24e8ec1277aa.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Place it on the table",
+            "option_text_cn": "把它放在桌子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15980956
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "Process ingredients",
+            "option_text_cn": "处理食材。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15975178
+                    },
+                    {
+                        "instanceID": -15972242
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier65_0896dc31d5154c97aa3f24e8ec1277aa.glb",
+                "three_rooms_5_scene_13/CreatedObjects/identifier35_1044e2bc56a64d2597a84502fb48c89e.glb"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -15975178
+                            },
+                            {
+                                "instanceID": -15972242
+                            }
+                        ],
+                        "required_objects": [
+                            "three_rooms_5_scene_13/CreatedObjects/identifier65_0896dc31d5154c97aa3f24e8ec1277aa.glb",
+                            "three_rooms_5_scene_13/CreatedObjects/identifier35_1044e2bc56a64d2597a84502fb48c89e.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "OpenDoor",
+            "option_text": "Open the refrigerator door",
+            "option_text_cn": "打开冰箱门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15973870
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier46_LowPolyInterior2_Scene44_LowPolyInterior2_Refrigerator3_C2(Clone)/Refrigerator3_C2_07"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put it in the refrigerator",
+            "option_text_cn": "把它放进冰箱。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15980966
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "CloseDoor",
+            "option_text": "Close the refrigerator door",
+            "option_text_cn": "关上冰箱门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15973870
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier46_LowPolyInterior2_Scene44_LowPolyInterior2_Refrigerator3_C2(Clone)/Refrigerator3_C2_07"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "Process ingredients",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -15975178
+            },
+            "predicate_object": "three_rooms_5_scene_13/CreatedObjects/identifier65_0896dc31d5154c97aa3f24e8ec1277aa.glb",
+            "targetPlace": {
+                "instanceID": -15980966
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.7139999866485596,
+                0.0416666716337204,
+                -1.6410000324249268
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                2.8420000076293945,
+                0.0416666716337204,
+                -0.8410000205039978
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.4590001106262207,
+                0.0416666716337204,
+                -2.302999973297119
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.2910000085830688,
+                0.0416666716337204,
+                -2.950000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.324509859085083,
+                0.0416666716337204,
+                0.8332555294036865
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.7350000143051147,
+                0.0416666716337204,
+                2.6973509788513184
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.5850000381469727,
+                0.0416666716337204,
+                1.8960000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.637791633605957,
+                0.0416666716337204,
+                1.2230000495910645
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.5580000281333923,
+                0.0416666716337204,
+                2.888000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.637791633605957,
+                0.0416666716337204,
+                1.6973509788513184
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.637791633605957,
+                0.0416666716337204,
+                3.7333335876464844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                4.637791633605957,
+                0.0416666716337204,
+                1.133333444595337
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                2.506901741027832,
+                0.8544703125953674,
+                -3.1630001068115234
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                1.1010496616363525,
+                1.3250291347503662,
+                -3.5457212924957275
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.506901741027832,
+                0.8544703125953674,
+                -3.1630001068115234
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                1.1553096771240234,
+                1.1691956520080566,
+                -3.8184008598327637
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241009163119-three_rooms_5_scene_13-Proceed_to_the_kitchen,_take_out_the_ingredients_for_dinner_from_the_rocking_chair,_prepare_dinner_on_the_table,_and_then_refrigerate_it__.json",
+    "message": ""
+}

@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "If you were to draw a straight line from the front door to the back door, which pieces of furniture would it intersect?",
     "task_text": "If you were to draw a straight line from the sofa to the television, which items would it intersect? ",
+    "task_text_cn": "如果你从沙发向电视画一条直线，它会与哪些物品相交？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Tables and chairs",
+            "option_text_cn": "桌椅。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "Table and piano",
+            "option_text_cn": "桌子和钢琴。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "Tables and books",
+            "option_text_cn": "桌子和书。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "chair and table",
+            "option_text_cn": "椅子和桌子。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "books and lamp",
+            "option_text_cn": "书和灯。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "piano and vase",
+            "option_text_cn": "钢琴和花瓶。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "piano and lamp",
+            "option_text_cn": "钢琴和灯。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -149,9 +158,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.02922287955880165,
-                -19.666767120361329
+                -19.666767120361328
             ],
             "type": "navigation"
         },
@@ -160,41 +169,41 @@
             "position": [
                 0.9333333969116211,
                 0.02922287955880165,
-                -16.866666793823243
+                -16.866666793823242
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.02922287955880165,
-                -14.666767120361329
+                -14.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.02922287955880165,
-                -12.666767120361329
+                -12.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                1.4000000953674317,
+                1.4000000953674316,
                 0.02922287955880165,
-                -10.666767120361329
+                -10.666767120361328
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                1.5838876962661744,
+                1.5838876962661743,
                 0.02922287955880165,
                 -6.739828109741211
             ],
@@ -203,7 +212,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                2.4300711154937746,
+                2.4300711154937744,
                 0.02922287955880165,
                 -4.166189193725586
             ],
@@ -212,7 +221,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.3417198657989503,
+                1.3417198657989502,
                 0.06208863481879234,
                 -3.259000062942505
             ],
@@ -221,7 +230,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                2.4666666984558107,
+                2.4666666984558105,
                 0.22922289371490479,
                 -18.60000228881836
             ],
@@ -230,9 +239,9 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                3.3012259006500246,
+                3.3012259006500244,
                 0.06255621463060379,
-                -8.692017555236817
+                -8.692017555236816
             ],
             "type": "navigation"
         },
@@ -241,7 +250,7 @@
             "position": [
                 4.033333778381348,
                 0.02922287955880165,
-                -18.666767120361329
+                -18.666767120361328
             ],
             "type": "navigation"
         },
@@ -250,16 +259,16 @@
             "position": [
                 3.642117738723755,
                 0.02922287955880165,
-                -16.865129470825197
+                -16.865129470825195
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint13",
             "position": [
-                3.9666666984558107,
+                3.9666666984558105,
                 0.02922287955880165,
-                -14.666767120361329
+                -14.666767120361328
             ],
             "type": "navigation"
         },
@@ -268,7 +277,7 @@
             "position": [
                 3.34171986579895,
                 0.02922287955880165,
-                -12.666767120361329
+                -12.666767120361328
             ],
             "type": "navigation"
         },
@@ -286,7 +295,7 @@
             "position": [
                 4.995405673980713,
                 0.02922287955880165,
-                -16.172698974609376
+                -16.172698974609375
             ],
             "type": "navigation"
         },
@@ -295,7 +304,7 @@
             "position": [
                 4.649708271026611,
                 0.02922287955880165,
-                -11.358777046203614
+                -11.358777046203613
             ],
             "type": "navigation"
         },
@@ -313,7 +322,7 @@
             "position": [
                 5.341719627380371,
                 0.02922287955880165,
-                -19.666767120361329
+                -19.666767120361328
             ],
             "type": "navigation"
         },
@@ -322,7 +331,7 @@
             "position": [
                 5.341719627380371,
                 0.02922287955880165,
-                -17.666767120361329
+                -17.666767120361328
             ],
             "type": "navigation"
         },
@@ -331,7 +340,7 @@
             "position": [
                 5.341719627380371,
                 0.5742021799087524,
-                -13.666767120361329
+                -13.666767120361328
             ],
             "type": "navigation"
         },
@@ -347,7 +356,7 @@
         {
             "name": "NavigationPoint24",
             "position": [
-                5.6666669845581059,
+                5.6666669845581055,
                 0.02922287955880165,
                 -4.954999923706055
             ],

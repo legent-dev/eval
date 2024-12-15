@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Assess whether a new 6-foot couch could fit along the wall between the two windows in the living room without blocking either.",
     "task_text": "Assess whether a new 2-foot long mural can be placed on the wall between the two large windows in the living room without blocking either. ",
+    "task_text_cn": "评估一幅新的两英尺长的壁画是否可以放在客厅两个大窗户之间的墙上而不遮挡任何一个窗户。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Yes, the wall between the two windows has enough space for the mural without blocking either window.",
+            "option_text_cn": "是，两个窗户之间的墙上有足够的空间放置壁画而不遮挡任何一个窗户。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the space between the windows is too small for the mural.",
+            "option_text_cn": "不，窗户之间的空间对于壁画来说太小了。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, but it will be a tight fit, with only a few inches of clearance on each side.",
+            "option_text_cn": "是，但会很紧凑，每边只有几英寸的间隙。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the wall space is already occupied by a painting.",
+            "option_text_cn": "不，墙上的空间已经被一幅画占据了。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the wall space is already occupied by a painting.",
+            "option_text_cn": "不，墙上的空间已经被一幅画占据了。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the furniture in front of the wall would obstruct the mural placement.",
+            "option_text_cn": "不，墙前面的家具会阻碍壁画的放置。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "I am thinking",
+            "option_text_cn": "我在思考。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "It is hard to deal with",
+            "option_text_cn": "这很难处理。",
             "gameObjects": {
                 "list": []
             },
@@ -145,7 +154,7 @@
             "position": [
                 -5.926003456115723,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 -5.426384925842285,
                 0.007039710879325867,
-                2.1331751346588136
+                2.1331751346588135
             ],
             "type": "navigation"
         },
@@ -172,14 +181,14 @@
             "position": [
                 -3.190999984741211,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                -3.9260034561157228,
+                -3.9260034561157227,
                 0.007039710879325867,
                 0.6327953338623047
             ],
@@ -188,16 +197,16 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                -3.6730000972747804,
+                -3.6730000972747803,
                 0.007039710879325867,
-                2.6327953338623049
+                2.6327953338623047
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint10",
             "position": [
-                -3.9260034561157228,
+                -3.9260034561157227,
                 0.007039710879325867,
                 6.632795333862305
             ],
@@ -208,7 +217,7 @@
             "position": [
                 -1.1666665077209473,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
@@ -224,7 +233,7 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                -3.2339999675750734,
+                -3.2339999675750732,
                 0.007039710879325867,
                 4.633333683013916
             ],
@@ -242,7 +251,7 @@
         {
             "name": "NavigationPoint16",
             "position": [
-                0.07399654388427735,
+                0.07399654388427734,
                 0.007039710879325867,
                 -0.3672046661376953
             ],
@@ -251,7 +260,7 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                0.07399654388427735,
+                0.07399654388427734,
                 0.007039710879325867,
                 6.333333969116211
             ],

@@ -1,0 +1,343 @@
+{
+    "scene_name": "apartamento",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/apartamento.glb",
+    "scene_scale": [
+        1.1111111640930176,
+        1.1111111640930176,
+        1.1111111640930176
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        99.96829986572266,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1964508
+        }
+    ],
+    "floor_objects": [
+        "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/1_Structure"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Go to the laundry room to find two detergent bottles, and put them on the shelf in the garage.",
+    "task_text": "Go to the kitchen to find two artificial potted plants, and put them on the coffee table in the living room. When taking the red potted plant, approach it from the side of the table near the refrigerator, as the other sides are too narrow for you to reach.",
+    "task_text_cn": "去厨房找到两盆人造盆栽，把它们放在客厅的咖啡桌上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the plant",
+            "option_text_cn": "拿起一盆植物。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -1966212
+                    },
+                    {
+                        "instanceID": -1966244
+                    }
+                ]
+            },
+            "objects": [
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Green Plant",
+                "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Red Plant"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the coffee table",
+            "option_text_cn": "放在咖啡桌上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -1969850
+                    },
+                    {
+                        "instanceID": -1969860
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1966212
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Green Plant",
+            "targetPlace": {
+                "instanceID": -1969850
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1966244
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Red Plant",
+            "targetPlace": {
+                "instanceID": -1969860
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1966212
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Green Plant",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -1966244
+            },
+            "predicate_object": "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/7_Vegetation_Red Plant",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.9789999723434449,
+                0.028578385710716249,
+                -0.5239999890327454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.469660997390747,
+                0.028578385710716249,
+                -7.196460723876953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.2410409450531008,
+                0.028578385710716249,
+                -3.9852705001831056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.258394956588745,
+                0.028578385710716249,
+                -2.2485880851745607
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.3666670322418215,
+                0.028578385710716249,
+                -0.5949039459228516
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.3333334922790529,
+                0.8139218688011169,
+                -5.420492172241211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.885410785675049,
+                0.028578385710716249,
+                0.9050960540771484
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.5120000243186951,
+                -0.00475495308637619,
+                -8.788000106811524
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.8854107856750489,
+                0.028578385710716249,
+                -7.166667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.7869999408721924,
+                0.028578385710716249,
+                -5.251999855041504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.8489999771118164,
+                0.028578385710716249,
+                -1.0759999752044678
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.1380000114440919,
+                0.028578385710716249,
+                -3.993000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.2720000147819519,
+                0.028578385710716249,
+                -0.12099999934434891
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (4)",
+            "position": [
+                -0.3070000112056732,
+                0.028578385710716249,
+                -2.25600004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (2)",
+            "position": [
+                0.6610000133514404,
+                0.028578385710716249,
+                -5.104000091552734
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.052999973297119,
+                0.028578385710716249,
+                -2.5959999561309816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                2.124000072479248,
+                -0.00475495308637619,
+                -9.541999816894532
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13-Target",
+            "position": [
+                0.0989999994635582,
+                0.028578385710716249,
+                0.19099999964237214
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.2880001068115236,
+                1.056270956993103,
+                0.023000000044703485
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint17-Target",
+            "position": [
+                3.068000078201294,
+                0.028578385710716249,
+                -2.6389999389648439
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.9169999957084656,
+                0.42100000381469729,
+                -5.88100004196167
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                1.2920000553131104,
+                0.42100000381469729,
+                -5.484000205993652
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111064202-apartamento-Go_to_the_kitchen_to_find_two_artificial_potted_plants,_and_put_them_on_the_coffee_table_in_the_living_room__When_taking_th.json",
+    "message": ""
+}

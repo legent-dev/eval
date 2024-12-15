@@ -1,0 +1,529 @@
+{
+    "scene_name": "103997424_171030444",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997424_171030444.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        14.279999732971192,
+        0.0,
+        -10.920000076293946
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -60868856
+        }
+    ],
+    "floor_objects": [
+        "103997424_171030444/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -60866232
+        },
+        {
+            "instanceID": -60865984
+        },
+        {
+            "instanceID": -60865136
+        }
+    ],
+    "removed_objects": [
+        "103997424_171030444/openings/openings_wall_12/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "103997424_171030444/openings/openings_wall_9/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "103997424_171030444/openings/openings_wall_5/202/202 > SketchUp/202 > SketchUp > instance_8/202 > SketchUp > instance_8 > C"
+    ],
+    "humans": [],
+    "task_template": "Find all the red furniture in the open kitchen and describe their respective uses.",
+    "task_text": "Share some information about the numerous red furniture items in the open kitchen.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Only sofa, high stools and pendant lamps are red.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the refrigerator, high stools and pendant lamps are red.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are no red objects in the paintings on the wall. ",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "One piece of red furniture is used to store food.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "All pendant lamps are red.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only sitting furniture is red. ",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no red furniture.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "All the furniture in the room is red.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "One piece of red furniture is used to store food.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                5.933333396911621,
+                0.6961137056350708,
+                -10.600001335144043
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                5.866666793823242,
+                0.5961136817932129,
+                -9.000001907348633
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                5.904545307159424,
+                0.02944699302315712,
+                -6.598369121551514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                7.199999809265137,
+                0.02944699302315712,
+                -8.466668128967286
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                7.9070000648498539,
+                0.02944699302315712,
+                -8.824999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                6.824999809265137,
+                0.02944699302315712,
+                -6.182000160217285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                8.102999687194825,
+                0.02944699302315712,
+                -6.263000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                9.387039184570313,
+                0.02944699302315712,
+                -8.795841217041016
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                10.88599967956543,
+                0.02944699302315712,
+                -9.072999954223633
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                11.043999671936036,
+                0.02944699302315712,
+                -7.929999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                11.090999603271485,
+                0.02944699302315712,
+                -6.361999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                9.853660583496094,
+                0.02944699302315712,
+                -6.366667747497559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                12.255999565124512,
+                0.02944699302315712,
+                -5.701000213623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                14.017000198364258,
+                0.02944699302315712,
+                -5.611000061035156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                13.095943450927735,
+                0.02944699302315712,
+                -14.750229835510254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                12.933333396911621,
+                0.02944699302315712,
+                -11.266668319702149
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                14.161999702453614,
+                0.02944699302315712,
+                -13.095999717712403
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                12.169845581054688,
+                0.1024695336818695,
+                -9.011900901794434
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                12.315999984741211,
+                0.02944699302315712,
+                -6.85699987411499
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                13.866000175476075,
+                0.02944699302315712,
+                -10.336000442504883
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                14.593901634216309,
+                0.02944699302315712,
+                -15.684322357177735
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                13.733333587646485,
+                0.02944699302315712,
+                -7.9978179931640629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                13.868000030517579,
+                0.02944699302315712,
+                -6.757999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                14.800000190734864,
+                0.02944699302315712,
+                -13.933334350585938
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                14.545000076293946,
+                0.02944699302315712,
+                -11.458999633789063
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                15.717000007629395,
+                0.02944699302315712,
+                -10.192000389099121
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23 (1)",
+            "position": [
+                16.591999053955079,
+                0.02944699302315712,
+                -9.331000328063965
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                15.75100040435791,
+                0.02944699302315712,
+                -6.867000102996826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                15.692999839782715,
+                0.02944699302315712,
+                -5.525000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                17.23015022277832,
+                0.02944699302315712,
+                -15.478443145751954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                16.353660583496095,
+                0.02944699302315712,
+                -13.600001335144043
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                16.353660583496095,
+                0.02944699302315712,
+                -11.833334922790528
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                18.791000366210939,
+                0.02944699302315712,
+                -13.663999557495118
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                16.659000396728517,
+                0.02944699302315712,
+                -8.184000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                18.47100067138672,
+                0.02944699302315712,
+                -11.854000091552735
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                18.459999084472658,
+                0.02944699302315712,
+                -9.39799976348877
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                18.979999542236329,
+                0.1599999964237213,
+                -7.504000186920166
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                18.853660583496095,
+                0.02944699302315712,
+                -15.30000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                18.422000885009767,
+                0.02944699302315712,
+                -8.251999855041504
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105061151-103997424_171030444-Share_some_information_about_the_numerous_red_furniture_items_in_the_open_kitchen_.json",
+    "message": ""
+}

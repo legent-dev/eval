@@ -1,0 +1,233 @@
+{
+    "scene_name": "two_rooms_10_scene_8",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_8.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.4429999887943268,
+        0.0,
+        1.715000033378601
+    ],
+    "agent_rotation": [
+        0.0,
+        255.52365112304688,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2411082
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_8/CreatedWalls/identifier8_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2411106
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_8/CreatedWalls/identifier10_Floor"
+    ],
+    "humans": [],
+    "task_template": "Are there any plastic items in the bathroom that should be kept away from water?",
+    "task_text": "Are there any ceramic products in the bathroom that should be filled with garbage?",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is a small ceramic trash can in the corner.",
+            "option_text_cn": "是，角落里有一个小陶瓷垃圾桶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there are no products meant for garbage in the bathroom.",
+            "option_text_cn": "不，浴室里没有用于装垃圾的物品。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there is a trash can in the room, but it is made of metal, not ceramic.",
+            "option_text_cn": "不，有个垃圾桶是金属的，不是陶瓷的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is a ceramic container labeled for recycling.",
+            "option_text_cn": "是，有一个标有可回收的陶瓷容器。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is a ceramic bin, but it is used for laundry, not garbage.",
+            "option_text_cn": "有一个陶瓷箱，但它用于洗衣服，而不是装垃圾。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, a bag is hanging on the door handle for trash.",
+            "option_text_cn": "是，门把手上挂着一个袋用于装垃圾。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is a ceramic bottle.",
+            "option_text_cn": "是，有一个陶瓷瓶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is a ceramic bathtub.",
+            "option_text_cn": "是，有一个陶瓷植物。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "No, there is a trash can in the room, but it is made of metal, not ceramic.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.6260000467300416,
+                0.0416666716337204,
+                1.621999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -0.3400000035762787,
+                0.0416666716337204,
+                0.5580000281333923
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -0.3970000147819519,
+                0.0416666716337204,
+                1.8020000457763672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.43144869804382326,
+                0.0416666716337204,
+                3.21998929977417
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.5146355628967285,
+                0.0416666716337204,
+                1.6062284708023072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.427661657333374,
+                0.0416666716337204,
+                1.633333444595337
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.8359999656677248,
+                0.0416666716337204,
+                2.7850000858306886
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111065211-two_rooms_10_scene_8-Are_there_any_ceramic_products_in_the_bathroom_that_should_be_filled_with_garbage_.json",
+    "message": ""
+}

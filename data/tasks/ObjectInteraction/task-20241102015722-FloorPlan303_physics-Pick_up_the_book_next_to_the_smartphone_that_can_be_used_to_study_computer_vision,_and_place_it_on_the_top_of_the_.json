@@ -1,0 +1,189 @@
+{
+    "scene_name": "FloorPlan303_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan303_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.0360000133514405,
+        0.0,
+        -1.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -47131816
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan303_physics/Objects/Floor_ed78888e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -47126010
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan303_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Pick up a book and place it on the nearest shelf.",
+    "task_text": "Pick up the book next to the smartphone that can be used to study computer vision, and place it on the top of the nearest bookshelf on the floor.",
+    "task_text_cn": "拿起智能手机旁边那本可以用于学习计算机视觉的书，把它放在地上最近的储物架顶部。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the book",
+            "option_text_cn": "拿起书。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -47126910
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Objects/Book_7aad5d08/book_front_3"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the bookshelf",
+            "option_text_cn": "放在架子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -47133470
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -47126910
+            },
+            "predicate_object": "FloorPlan303_physics/Objects/Book_7aad5d08/book_front_3",
+            "targetPlace": {
+                "instanceID": -47133470
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -47126910
+            },
+            "predicate_object": "FloorPlan303_physics/Objects/Book_7aad5d08/book_front_3",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.3790000081062317,
+                0.033333227038383487,
+                -2.0840001106262209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.00600004196167,
+                0.033333227038383487,
+                -0.875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.41100001335144045,
+                0.033333227038383487,
+                -0.4790000021457672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.5379999876022339,
+                0.06300000101327896,
+                -0.35199999809265139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.527999997138977,
+                0.06300000101327896,
+                -1.5360000133514405
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.339179664850235,
+                0.7401413321495056,
+                -2.6499509811401369
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                1.656999945640564,
+                0.06300000101327896,
+                -2.1670000553131105
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.6150000095367432,
+                0.6520000100135803,
+                -2.260999917984009
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241102015722-FloorPlan303_physics-Pick_up_the_book_next_to_the_smartphone_that_can_be_used_to_study_computer_vision,_and_place_it_on_the_top_of_the_.json",
+    "message": ""
+}

@@ -14,7 +14,7 @@
     "agent_position": [
         -0.492000013589859,
         0.0,
-        2.0999999046325685
+        2.0999999046325684
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "In the bedroom, which of the following objects are all white?",
     "task_text": "What color is the trash can placed in the corner of the room? ",
+    "task_text_cn": "放在房间角落里的垃圾桶是什么颜色？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "green and white",
+            "option_text_cn": "绿白相间",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "yellow and blue",
+            "option_text_cn": "黄蓝相间",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "blue body and white marker",
+            "option_text_cn": "蓝色主体和白色标记",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "red",
+            "option_text_cn": "红色",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "gray",
+            "option_text_cn": "灰色",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "yellow, and white",
+            "option_text_cn": "黄白相间",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "blue body with yellow icon",
+            "option_text_cn": "蓝色主体带黄色图标",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "white",
+            "option_text_cn": "白色",
             "gameObjects": {
                 "list": []
             },
@@ -149,8 +158,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -4.2400007247924809,
-                0.029868125915527345,
+                -4.2400007247924805,
+                0.029868125915527344,
                 0.6347336769104004
             ],
             "type": "navigation"
@@ -158,9 +167,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -4.2400007247924809,
-                0.029868125915527345,
-                2.6347336769104006
+                -4.2400007247924805,
+                0.029868125915527344,
+                2.6347336769104004
             ],
             "type": "navigation"
         },
@@ -168,7 +177,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -3.4333336353302,
-                0.029868125915527345,
+                0.029868125915527344,
                 4.6347336769104
             ],
             "type": "navigation"
@@ -176,26 +185,26 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -3.0360000133514406,
-                0.029868125915527345,
-                0.36597830057144167
+                -3.0360000133514404,
+                0.029868125915527344,
+                0.36597830057144165
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -2.2400007247924806,
-                0.029868125915527345,
-                2.6347336769104006
+                -2.2400007247924805,
+                0.029868125915527344,
+                2.6347336769104004
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                -2.2400007247924806,
-                0.029868125915527345,
+                -2.2400007247924805,
+                0.029868125915527344,
                 5.6347336769104
             ],
             "type": "navigation"
@@ -204,7 +213,7 @@
             "name": "NavigationPoint6",
             "position": [
                 -0.5389999747276306,
-                0.029868125915527345,
+                0.029868125915527344,
                 0.7450000047683716
             ],
             "type": "navigation"
@@ -213,7 +222,7 @@
             "name": "NavigationPoint6 (1)",
             "position": [
                 -0.5389999747276306,
-                0.029868125915527345,
+                0.029868125915527344,
                 2.132999897003174
             ],
             "type": "navigation"
@@ -222,7 +231,7 @@
             "name": "NavigationPoint7",
             "position": [
                 -1.0958443880081177,
-                0.029868125915527345,
+                0.029868125915527344,
                 4.246050834655762
             ],
             "type": "navigation"
@@ -231,7 +240,7 @@
             "name": "NavigationPoint7 (1)",
             "position": [
                 -0.7990000247955322,
-                0.029868125915527345,
+                0.029868125915527344,
                 5.85699987411499
             ],
             "type": "navigation"

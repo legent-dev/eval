@@ -1,0 +1,216 @@
+{
+    "scene_name": "FloorPlan206_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan206_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -6847508
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan206_physics/Objects/Floor_3053f5a6"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -6844256
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan206_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Tell me the number of white nightstands you can spot in the bedroom.",
+    "task_text": "Tell me the number of blue sofas you can spot in the living room. ",
+    "task_text_cn": "告诉我你在客厅里能看到的蓝色沙发的数量。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two, there is also a red one",
+            "option_text_cn": "两个，还有一个红色的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "option_text_cn": "零个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "one",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.034999966621399,
+                0.03333333134651184,
+                -1.746999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.027999997138977,
+                0.03333333134651184,
+                -1.7489999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.799999475479126,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.3459999561309816,
+                0.20000001788139344,
+                -0.6610000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.3459999561309816,
+                0.20000001788139344,
+                0.7279999852180481
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019031214-FloorPlan206_physics-Tell_me_the_number_of_blue_sofas_you_can_spot_in_the_living_room__.json",
+    "message": ""
+}

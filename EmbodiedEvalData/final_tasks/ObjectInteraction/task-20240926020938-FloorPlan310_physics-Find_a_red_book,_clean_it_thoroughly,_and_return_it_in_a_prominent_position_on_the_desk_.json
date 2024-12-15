@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Find a dust-covered book, clean it thoroughly, and place it in a prominent position on the bookshelf.",
     "task_text": "Find a red book, clean it thoroughly, and return it in a prominent position on the desk.",
+    "task_text_cn": "找到一本红色的书，彻底清洁它，然后把它放在书桌上的显眼位置。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the book",
+            "option_text_cn": "拿起书。",
             "gameObjects": {
                 "list": [
                     {
@@ -71,6 +73,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "clean",
+            "option_text_cn": "清洁。",
             "gameObjects": {
                 "list": [
                     {
@@ -100,6 +103,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the desk",
+            "option_text_cn": "放在书桌上。",
             "gameObjects": {
                 "list": [
                     {
@@ -158,7 +162,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.6769999861717224,
-                0.016666412353515626,
+                0.016666412353515625,
                 -1.24399995803833
             ],
             "type": "navigation"
@@ -166,8 +170,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.5619999766349793,
-                0.016666412353515626,
+                -0.5619999766349792,
+                0.016666412353515625,
                 -0.7860000133514404
             ],
             "type": "navigation"
@@ -175,8 +179,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.5989999771118165,
-                0.016666412353515626,
+                -1.5989999771118164,
+                0.016666412353515625,
                 -0.8880000114440918
             ],
             "type": "navigation"
@@ -185,7 +189,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -1.2400000095367432,
-                0.025562379509210588,
+                0.025562379509210587,
                 0.0989999994635582
             ],
             "type": "navigation"
@@ -193,8 +197,8 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                -0.47600001096725466,
-                0.043452125042676929,
+                -0.47600001096725464,
+                0.043452125042676926,
                 0.699999988079071
             ],
             "type": "navigation"
@@ -220,7 +224,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.2063300609588624,
+                1.2063300609588623,
                 0.6294535398483276,
                 -0.25
             ],
@@ -230,8 +234,8 @@
             "name": "NavigationPoint8",
             "position": [
                 1.6022911071777344,
-                0.016666412353515626,
-                -1.9439769983291627
+                0.016666412353515625,
+                -1.9439769983291626
             ],
             "type": "navigation"
         },
@@ -240,7 +244,7 @@
             "position": [
                 -0.560875415802002,
                 0.8442895412445068,
-                -2.1397907733917238
+                -2.1397907733917236
             ],
             "type": "navigation-target"
         },
@@ -266,7 +270,7 @@
             "name": "SpecialPoints (1)",
             "position": [
                 -3.316999912261963,
-                0.12999999523162843,
+                0.12999999523162842,
                 -0.9269999861717224
             ],
             "type": "special"
@@ -274,9 +278,9 @@
         {
             "name": "SpecialPoints (2)",
             "position": [
-                2.7899999618530275,
+                2.7899999618530273,
                 0.2160000056028366,
-                -1.6089999675750733
+                -1.6089999675750732
             ],
             "type": "special"
         }

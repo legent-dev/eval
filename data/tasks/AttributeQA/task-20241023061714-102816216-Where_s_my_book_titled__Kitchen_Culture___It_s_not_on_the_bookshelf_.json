@@ -1,0 +1,516 @@
+{
+    "scene_name": "102816216",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102816216.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        11.850000381469727,
+        0.0,
+        2.240000009536743
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -39589748
+        }
+    ],
+    "floor_objects": [
+        "102816216/walls/geometry_rs-13837"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -39587144
+        },
+        {
+            "instanceID": -39587376
+        },
+        {
+            "instanceID": -39576656
+        },
+        {
+            "instanceID": -39576708
+        }
+    ],
+    "removed_objects": [
+        "102816216/openings/openings_wall_37/200/200 > SketchUp/200 > SketchUp > instance_8/200 > SketchUp > instance_8 > C/ID110",
+        "102816216/openings/openings_wall_42/200/200 > SketchUp/200 > SketchUp > instance_8/200 > SketchUp > instance_8 > C/ID110",
+        "102816216/furniture/c1d4a6d6e808196f862b115b538d47379badcef5",
+        "102816216/furniture/c1d4a6d6e808196f862b115b538d47379badcef5_0"
+    ],
+    "humans": [],
+    "task_template": "Where's my book?",
+    "task_text": "Where's my book titled 'Kitchen Culture'? It's not on the bookshelf.",
+    "task_text_cn": "我的书《厨房文化》在哪里？它不在书架上。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "on the table, near the sofa",
+            "option_text_cn": "在桌子上，靠近沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the floor, near the chair",
+            "option_text_cn": "在地板上，椅子附近",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the floor, near the sofa",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the sofa",
+            "option_text_cn": "在沙发上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the kitchen chair",
+            "option_text_cn": "在餐椅上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the TV stand",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "in the sink",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "on the countertop, near the sink",
+            "option_text_cn": "在水槽附近的桌子上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "on the countertop, near the sink",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                6.869999885559082,
+                0.02678726613521576,
+                6.6666669845581059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                6.859000205993652,
+                0.02678726613521576,
+                8.538440704345704
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                7.078000068664551,
+                0.02678726613521576,
+                9.48799991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                8.942999839782715,
+                0.02678726613521576,
+                6.550000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                8.968000411987305,
+                0.02678726613521576,
+                8.538440704345704
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                9.369999885559082,
+                0.02678726613521576,
+                9.748000144958496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                10.771430969238282,
+                0.02678726613521576,
+                12.35902214050293
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                11.649999618530274,
+                0.02678726613521576,
+                6.46999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                11.829999923706055,
+                0.02678726613521576,
+                4.360000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                11.239999771118164,
+                0.02678726613521576,
+                10.220000267028809
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                13.460000038146973,
+                0.02678726613521576,
+                13.5600004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                11.720000267028809,
+                0.02678726613521576,
+                8.619999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                13.066666603088379,
+                0.02678726613521576,
+                11.538440704345704
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                13.119000434875489,
+                0.02678726613521576,
+                10.373000144958496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                15.890000343322754,
+                0.02678726613521576,
+                16.684999465942384
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                14.276000022888184,
+                0.02678726613521576,
+                12.524999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (2)",
+            "position": [
+                13.192000389099121,
+                0.02678726613521576,
+                12.454999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                14.627260208129883,
+                0.02678726613521576,
+                13.880000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                16.559999465942384,
+                0.02678726613521576,
+                13.800000190734864
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (1)",
+            "position": [
+                15.520000457763672,
+                0.02678726613521576,
+                9.164999961853028
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (2)",
+            "position": [
+                13.260000228881836,
+                0.02678726613521576,
+                9.12399959564209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                17.139999389648439,
+                0.02678726613521576,
+                11.529999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                16.540000915527345,
+                0.02678726613521576,
+                12.15999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                15.899999618530274,
+                0.02678726613521576,
+                15.30000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                17.100000381469728,
+                0.16012060642242433,
+                8.710000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                18.366666793823243,
+                0.02678726613521576,
+                11.359999656677246
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                17.600000381469728,
+                0.5934540033340454,
+                16.538440704345704
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                18.50394058227539,
+                0.02678726613521576,
+                9.632469177246094
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                20.389999389648439,
+                0.02678726613521576,
+                13.850000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26 (1)",
+            "position": [
+                19.152999877929689,
+                0.02678726613521576,
+                13.850000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                18.627260208129884,
+                0.02678726613521576,
+                15.399999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                20.219999313354493,
+                0.02678726613521576,
+                16.610713958740236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                20.706708908081056,
+                0.02678726613521576,
+                8.928215026855469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                20.627260208129884,
+                0.02678726613521576,
+                11.3100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                21.21299934387207,
+                0.02678726613521576,
+                13.067000389099121
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31 (1)",
+            "position": [
+                21.21299934387207,
+                0.02678726613521576,
+                13.848999977111817
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                20.336000442504884,
+                0.02678726613521576,
+                15.095999717712403
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                7.589000225067139,
+                0.050199318677186969,
+                6.59499979019165
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023061714-102816216-Where_s_my_book_titled__Kitchen_Culture___It_s_not_on_the_bookshelf_.json",
+    "message": ""
+}

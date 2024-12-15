@@ -1,0 +1,241 @@
+{
+    "scene_name": "FloorPlan307_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan307_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.9449999928474426,
+        0.0,
+        -0.2029999941587448
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -15964034
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan307_physics/Objects/Floor_b08a85bc"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -15958052
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan307_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Place all shoes from the entryway onto the shoe rack.",
+    "task_text": "Place all clothes from the floor into the trash can. ",
+    "task_text_cn": "把地板上的所有衣服放进垃圾桶里。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the green cloth",
+            "option_text_cn": "拿起绿色的布。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15961562
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Cloth_6ca4770e"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "Pick up the white cloth",
+            "option_text_cn": "拿起白色的布。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15961470
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan307_physics/Objects/Cloth_8fca360e"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put the green cloth in the trash can",
+            "option_text_cn": "把绿色的布放进垃圾桶里。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15965880
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "Put the white cloth in the trash can",
+            "option_text_cn": "把白色的布放进垃圾桶里。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -15965890
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -15961562
+            },
+            "predicate_object": "FloorPlan307_physics/Objects/Cloth_6ca4770e",
+            "targetPlace": {
+                "instanceID": -15965880
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -15961470
+            },
+            "predicate_object": "FloorPlan307_physics/Objects/Cloth_8fca360e",
+            "targetPlace": {
+                "instanceID": -15965890
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.8519999980926514,
+                0.02633318305015564,
+                -0.843999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.7940000295639038,
+                0.02633318305015564,
+                0.1289999932050705
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.8906837701797485,
+                0.02633318305015564,
+                -1.9517189264297485
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.9369709491729736,
+                0.02633318305015564,
+                -1.5110000371932983
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.9369709491729736,
+                0.02633318305015564,
+                -0.2280000001192093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.06302905082702637,
+                0.7929998636245728,
+                1.200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.3105461597442627,
+                0.009615985676646233,
+                -0.6947261691093445
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.3362832069396973,
+                0.1873065084218979,
+                -2.3973186016082764
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.3362832069396973,
+                0.1873065084218979,
+                -2.3973186016082764
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                1.2477110624313354,
+                0.18752968311309814,
+                -2.4873416423797607
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241009161639-FloorPlan307_physics-Place_all_clothes_from_the_floor_into_the_trash_can__.json",
+    "message": ""
+}

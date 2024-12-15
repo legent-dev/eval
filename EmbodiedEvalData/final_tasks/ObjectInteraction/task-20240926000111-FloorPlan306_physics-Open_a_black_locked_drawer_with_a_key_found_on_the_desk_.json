@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Open a locked drawer with a key found in the office.",
     "task_text": "Open a black locked drawer with a key found on the desk.",
+    "task_text_cn": "用在桌子上找到的钥匙打开一个黑色的锁着的抽屉。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the key",
+            "option_text_cn": "拿起钥匙。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "unlock",
+            "option_text_cn": "解锁。",
             "gameObjects": {
                 "list": [
                     {
@@ -116,7 +119,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -0.8769999742507935,
-                0.033333197236061099,
+                0.033333197236061096,
                 -0.4000000059604645
             ],
             "type": "navigation"
@@ -125,7 +128,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -0.6202049255371094,
-                0.033333197236061099,
+                0.033333197236061096,
                 0.9082289934158325
             ],
             "type": "navigation"
@@ -134,7 +137,7 @@
             "name": "NavigationPoint2",
             "position": [
                 0.5350000262260437,
-                0.033333197236061099,
+                0.033333197236061096,
                 -0.6060000061988831
             ],
             "type": "navigation"
@@ -142,18 +145,18 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                1.0036072731018067,
-                0.033333197236061099,
-                0.34999990463256838
+                1.0036072731018066,
+                0.033333197236061096,
+                0.34999990463256836
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                2.4200000762939455,
-                0.033333197236061099,
-                0.41999998688697817
+                2.4200000762939453,
+                0.033333197236061096,
+                0.41999998688697815
             ],
             "type": "navigation"
         },
@@ -171,7 +174,7 @@
             "position": [
                 -0.9340000152587891,
                 0.7110000252723694,
-                -1.0260000228881837
+                -1.0260000228881836
             ],
             "type": "special"
         }

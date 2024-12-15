@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Swap the position of the flashlight on the bed and the candle on the white highchair.",
     "task_text": "Swap the position of the bowl on the computer desk and the phone on the bedside table. ",
+    "task_text_cn": "交换电脑桌上的碗和床头柜上的手机的位置。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the bowl",
+            "option_text_cn": "拿起碗。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place it on the bedside table",
+            "option_text_cn": "放在床头柜上。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up your phone",
+            "option_text_cn": "拿起手机。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it on the computer desk",
+            "option_text_cn": "放在电脑桌上。",
             "gameObjects": {
                 "list": [
                     {
@@ -142,8 +147,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                0.46666669845581057,
-                0.033333197236061099,
+                0.46666669845581055,
+                0.033333197236061096,
                 0.8921725749969482
             ],
             "type": "navigation"
@@ -152,7 +157,7 @@
             "name": "NavigationPoint1",
             "position": [
                 0.05999999865889549,
-                0.033333197236061099,
+                0.033333197236061096,
                 -0.9390000104904175
             ],
             "type": "navigation"
@@ -161,7 +166,7 @@
             "name": "NavigationPoint1 (1)",
             "position": [
                 -1.3569999933242798,
-                0.033333197236061099,
+                0.033333197236061096,
                 -0.9490000009536743
             ],
             "type": "navigation"
@@ -169,8 +174,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.3940000534057618,
-                0.033333197236061099,
+                -1.3940000534057617,
+                0.033333197236061096,
                 0.9509999752044678
             ],
             "type": "navigation"
@@ -178,8 +183,8 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                -0.36800000071525576,
-                0.033333197236061099,
+                -0.36800000071525574,
+                0.033333197236061096,
                 -0.12399999797344208
             ],
             "type": "navigation"
@@ -187,9 +192,9 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                1.2000000476837159,
+                1.2000000476837158,
                 0.7999998331069946,
-                -1.3333332538604737
+                -1.3333332538604736
             ],
             "type": "navigation"
         },
@@ -205,27 +210,27 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                0.22866983711719514,
+                0.22866983711719513,
                 0.7201604247093201,
-                -1.6445362567901612
+                -1.6445362567901611
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                0.22866983711719514,
+                0.22866983711719513,
                 0.7201604247093201,
-                -1.6445362567901612
+                -1.6445362567901611
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoint (1)",
             "position": [
-                1.3087983131408692,
+                1.3087983131408691,
                 0.7882757782936096,
-                1.0579557418823243
+                1.0579557418823242
             ],
             "type": "special"
         }

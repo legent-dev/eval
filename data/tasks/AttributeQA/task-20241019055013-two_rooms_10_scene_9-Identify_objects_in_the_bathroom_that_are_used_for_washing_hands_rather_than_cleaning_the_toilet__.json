@@ -1,0 +1,259 @@
+{
+    "scene_name": "two_rooms_10_scene_9",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_9.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        367.0,
+        -867.0,
+        73.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -10793528
+        },
+        {
+            "instanceID": -10793540
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_9/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_9/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Identify the object in the living room that is used for relaxation but not for sleeping.",
+    "task_text": "Identify objects in the bathroom that are used for washing hands rather than cleaning the toilet. ",
+    "task_text_cn": "识别浴室里用于洗手而不是清洁厕所的物品。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "liquid soap",
+            "option_text_cn": "洗手液。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "toilet cleaner",
+            "option_text_cn": "厕所清洁剂",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "towel",
+            "option_text_cn": "毛巾",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "toilet brush",
+            "option_text_cn": "马桶刷",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "toilet paper",
+            "option_text_cn": "卫生纸",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "showerhead",
+            "option_text_cn": "淋浴喷头",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bar soap",
+            "option_text_cn": "固体肥皂",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yakult",
+            "option_text_cn": "养乐多",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "liquid soap",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.928999900817871,
+                0.05484937131404877,
+                1.284000039100647
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.9110000133514406,
+                0.05484937131404877,
+                4.005000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.5579999685287476,
+                0.05484937131404877,
+                1.3980000019073487
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.909830093383789,
+                0.05484937131404877,
+                2.959374189376831
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.27004963159561159,
+                0.05484937131404877,
+                0.5996147394180298
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.8840000033378601,
+                0.05484937131404877,
+                3.9509999752044679
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.090169906616211,
+                0.05484937131404877,
+                1.959374189376831
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                1.3680000305175782,
+                0.05484937131404877,
+                0.8230000138282776
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.700000047683716,
+                0.05484937131404877,
+                0.9890000224113464
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.7360000610351564,
+                0.05484937131404877,
+                1.7450000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                2.9630000591278078,
+                0.05484937131404877,
+                2.3499999046325685
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019055013-two_rooms_10_scene_9-Identify_objects_in_the_bathroom_that_are_used_for_washing_hands_rather_than_cleaning_the_toilet__.json",
+    "message": ""
+}

@@ -1,0 +1,363 @@
+{
+    "scene_name": "apartamento",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/apartamento.glb",
+    "scene_scale": [
+        1.1111111640930176,
+        1.1111111640930176,
+        1.1111111640930176
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.3610000014305115,
+        0.0,
+        0.25200000405311587
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -25416666
+        }
+    ],
+    "floor_objects": [
+        "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/1_Structure"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Calculate the distance from the armchair to the window.",
+    "task_text": "Estimate the straight-line distance from the front door to the TV. Note that each step you take forward is approximately two meters.",
+    "task_text_cn": "估计从前门到电视的直线距离。注意你每向前走一步的距离大概是两米。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "0m",
+            "option_text_cn": "0m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "2m",
+            "option_text_cn": "2m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "4m",
+            "option_text_cn": "4m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "6m",
+            "option_text_cn": "6m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "8m",
+            "option_text_cn": "8m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "10m",
+            "option_text_cn": "10m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "12m",
+            "option_text_cn": "12m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "14m",
+            "option_text_cn": "14m",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "6m",
+            "right_special_action": "wipe off the table",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.469660997390747,
+                0.028578385710716249,
+                -7.196460723876953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.2410409450531008,
+                0.028578385710716249,
+                -3.9852705001831056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.258394956588745,
+                0.028578385710716249,
+                -2.2485880851745607
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.3666670322418215,
+                0.028578385710716249,
+                -0.5949039459228516
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.3333334922790529,
+                0.8139218688011169,
+                -5.420492172241211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.885410785675049,
+                0.028578385710716249,
+                0.9050960540771484
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.4568542242050171,
+                -0.00475495308637619,
+                -9.2468843460083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.8854107856750489,
+                0.028578385710716249,
+                -7.166667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.7999999523162842,
+                0.028578385710716249,
+                -5.650000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.3529999852180481,
+                0.028578385710716249,
+                0.30000001192092898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.3854107856750489,
+                0.028578385710716249,
+                -4.094903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                -0.25999999046325686,
+                0.028578385710716249,
+                -1.7999999523162842
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.49000000953674319,
+                0.028578385710716249,
+                -7.210000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.2590000033378601,
+                0.028578385710716249,
+                -5.730000019073486
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.0199999809265138,
+                0.028578385710716249,
+                -0.949999988079071
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.079967975616455,
+                -0.00475495308637619,
+                -9.140812873840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.88100004196167,
+                0.028578385710716249,
+                -5.27400016784668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                1.8799999952316285,
+                0.028578385710716249,
+                -7.139999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.05999999865889549,
+                0.028578385710716249,
+                -3.9200000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.013000011444092,
+                0.028578385710716249,
+                -3.007999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.586259126663208,
+                -0.00475495308637619,
+                -9.405033111572266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                2.742000102996826,
+                0.028578385710716249,
+                -4.136000156402588
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.9900000095367432,
+                0.3944430351257324,
+                -5.914999961853027
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020080749-apartamento-Estimate_the_straight-line_distance_from_the_front_door_to_the_TV__Note_that_each_step_you_take_forward_is_approximately_two_meters_.json",
+    "message": ""
+}

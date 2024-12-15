@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Tell me the number of white nightstands you can spot in the bedroom.",
     "task_text": "Tell me the number of blue sofas you can spot in the living room. ",
+    "task_text_cn": "告诉我你在客厅里能看到的蓝色沙发的数量。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "one",
+            "option_text_cn": "一个。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "两个。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "two, there is also a red one",
+            "option_text_cn": "两个，还有一个红色的。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三个。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四个。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五个。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六个。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "eight",
+            "option_text_cn": "八个。",
             "gameObjects": {
                 "list": []
             },
@@ -169,7 +178,7 @@
             "position": [
                 1.027999997138977,
                 0.03333333134651184,
-                -1.7489999532699586
+                -1.7489999532699585
             ],
             "type": "navigation"
         },
@@ -185,8 +194,8 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                2.3459999561309816,
-                0.20000001788139344,
+                2.3459999561309814,
+                0.20000001788139343,
                 -0.6610000133514404
             ],
             "type": "navigation"
@@ -194,8 +203,8 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                2.3459999561309816,
-                0.20000001788139344,
+                2.3459999561309814,
+                0.20000001788139343,
                 0.7279999852180481
             ],
             "type": "navigation"

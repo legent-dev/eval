@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Compare the number of blue items to red items throughout the house. Which color is more prevalent and by how much?",
     "task_text": "Compare the number of red stools to orange stools in the living room. Which color is more prevalent and by how much?",
+    "task_text_cn": "在客厅里比较红色凳子和橙色凳子的数量。哪种颜色更普遍，多多少？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "More red stools, two more",
+            "option_text_cn": "红色凳子更多，多两个。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "There are more orange stools, two more",
+            "option_text_cn": "橙色凳子更多，多两个。",
             "gameObjects": {
                 "list": []
             },
@@ -59,7 +62,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "as many",
+            "option_text": "There are as many red stools as orange stools",
+            "option_text_cn": "红色凳子和橙色凳子数量一样。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "There are more orange stools, three more",
+            "option_text_cn": "橙色凳子更多，多三个。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "There are more orange stools, one more",
+            "option_text_cn": "橙色凳子更多，多一个。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "More red stools, one more",
+            "option_text_cn": "红色凳子更多，多一个。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "More red stools, three more",
+            "option_text_cn": "红色凳子更多，多三个。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "More red stools, four more",
+            "option_text_cn": "红色凳子更多，多四个。",
             "gameObjects": {
                 "list": []
             },
@@ -170,7 +179,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                2.5797765254974367,
+                2.5797765254974365,
                 0.011751685291528702,
                 0.5584744811058044
             ],
@@ -181,7 +190,7 @@
             "position": [
                 2.633333444595337,
                 0.011751685291528702,
-                2.2142410278320314
+                2.2142410278320312
             ],
             "type": "navigation"
         },
@@ -208,7 +217,7 @@
             "position": [
                 3.89717960357666,
                 0.011751685291528702,
-                3.2142410278320314
+                3.2142410278320312
             ],
             "type": "navigation"
         },
@@ -217,7 +226,7 @@
             "position": [
                 5.187260627746582,
                 0.011751685291528702,
-                8.029943466186524
+                8.029943466186523
             ],
             "type": "navigation"
         },
@@ -242,7 +251,7 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                3.0179998874664308,
+                3.0179998874664307,
                 0.011751685291528702,
                 -5.410999774932861
             ],
@@ -271,7 +280,7 @@
             "position": [
                 6.766082763671875,
                 0.011751685291528702,
-                2.7171220779418947
+                2.7171220779418945
             ],
             "type": "navigation"
         },
@@ -316,16 +325,16 @@
             "position": [
                 5.098999977111816,
                 0.011751685291528702,
-                -3.5880000591278078
+                -3.5880000591278076
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint24 (3)",
             "position": [
-                3.6710000038146974,
+                3.6710000038146973,
                 0.011751685291528702,
-                -3.2139999866485597
+                -3.2139999866485596
             ],
             "type": "navigation"
         },
@@ -334,7 +343,7 @@
             "position": [
                 0.9480000138282776,
                 0.011751685291528702,
-                -3.2139999866485597
+                -3.2139999866485596
             ],
             "type": "navigation"
         },
@@ -352,7 +361,7 @@
             "position": [
                 5.794000148773193,
                 0.011751685291528702,
-                -2.9333341121673586
+                -2.9333341121673584
             ],
             "type": "navigation"
         },
@@ -370,7 +379,7 @@
             "position": [
                 7.000000476837158,
                 0.011751685291528702,
-                8.133334159851075
+                8.133334159851074
             ],
             "type": "navigation"
         },
@@ -413,7 +422,7 @@
         {
             "name": "NavigationPoint33",
             "position": [
-                8.545000076293946,
+                8.545000076293945,
                 0.011751685291528702,
                 -4.785758972167969
             ],
@@ -424,7 +433,7 @@
             "position": [
                 9.028855323791504,
                 0.011751685291528702,
-                -3.1092095375061037
+                -3.1092095375061035
             ],
             "type": "navigation"
         },
@@ -433,16 +442,16 @@
             "position": [
                 8.89717960357666,
                 0.011751685291528702,
-                1.2142410278320313
+                1.2142410278320312
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint36",
             "position": [
-                10.444486618041993,
+                10.444486618041992,
                 0.011751685291528702,
-                1.0329350233078004
+                1.0329350233078003
             ],
             "type": "navigation"
         },
@@ -451,7 +460,7 @@
             "position": [
                 9.581774711608887,
                 0.011751685291528702,
-                2.5834295749664308
+                2.5834295749664307
             ],
             "type": "navigation"
         }

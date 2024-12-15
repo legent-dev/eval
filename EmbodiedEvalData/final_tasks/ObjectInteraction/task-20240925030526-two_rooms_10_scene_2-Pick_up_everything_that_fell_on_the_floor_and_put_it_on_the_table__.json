@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Pick up everything that fell on the floor and put it on the table.",
     "task_text": "Pick up everything that fell on the floor and put it on the table. ",
+    "task_text_cn": "捡起所有掉在地上的东西并把它们放在桌子上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the plate",
+            "option_text_cn": "拿起盘子。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place it on the table",
+            "option_text_cn": "放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -82,6 +85,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the stool",
+            "option_text_cn": "拿起凳子。",
             "gameObjects": {
                 "list": [
                     {
@@ -109,6 +113,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the dishes",
+            "option_text_cn": "拿起餐具。",
             "gameObjects": {
                 "list": [
                     {
@@ -153,9 +158,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.5268352031707765,
+                -2.5268352031707764,
                 0.0416666716337204,
-                2.5190000534057619
+                2.5190000534057617
             ],
             "type": "navigation"
         },
@@ -180,7 +185,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                0.25562262535095217,
+                0.25562262535095215,
                 0.0416666716337204,
                 0.9593744277954102
             ],
@@ -191,16 +196,16 @@
             "position": [
                 1.2288247346878052,
                 0.0416666716337204,
-                2.2626242637634279
+                2.2626242637634277
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -2.5268352031707765,
+                -2.5268352031707764,
                 0.03623020648956299,
-                1.1728614568710328
+                1.1728614568710327
             ],
             "type": "navigation-target"
         },

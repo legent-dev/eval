@@ -1,0 +1,252 @@
+{
+    "scene_name": "livingroom_15_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        4.447000026702881,
+        0.0,
+        2.444000005722046
+    ],
+    "agent_rotation": [
+        0.0,
+        192.3197784423828,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -25238376
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_5/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -25238120
+        }
+    ],
+    "removed_objects": [
+        "livingroom_15_scene_5/CreatedObjects/identifier48_76276af669454d3585072a41056f1bcd.glb"
+    ],
+    "humans": [],
+    "task_template": "Identify an object that is both red and small.",
+    "task_text": "Identify an object on the table that is both green and can be eaten or used for cooking.",
+    "task_text_cn": "识别桌子上既绿色又可食用或做饭的物品。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "lettuce",
+            "option_text_cn": "生菜",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "broccoli",
+            "option_text_cn": "西兰花",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "sandwich",
+            "option_text_cn": "三明治",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "cabbage",
+            "option_text_cn": "卷心菜",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "spinach",
+            "option_text_cn": "菠菜",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "green cup",
+            "option_text_cn": "绿色杯子",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "ginger",
+            "option_text_cn": "姜",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "ice cream",
+            "option_text_cn": "冰淇淋",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "broccoli",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.27742964029312136,
+                0.0260009765625,
+                1.0663769245147706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.9333333373069763,
+                0.0260009765625,
+                2.5935215950012209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                1.1360000371932984,
+                0.0260009765625,
+                1.0479999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.0750000476837159,
+                0.0260009765625,
+                3.76200008392334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.6050000190734865,
+                0.0260009765625,
+                0.9539999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.7279999256134035,
+                0.0260009765625,
+                2.5190000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.007999897003174,
+                0.0260009765625,
+                0.9039999842643738
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                5.065999984741211,
+                0.0260009765625,
+                0.8040000200271606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                4.5370001792907719,
+                0.0260009765625,
+                3.631999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                4.355000019073486,
+                0.0260009765625,
+                2.4549999237060549
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020080529-livingroom_15_scene_5-Identify_an_object_on_the_table_that_is_both_green_and_can_be_eaten_or_used_for_cooking_.json",
+    "message": ""
+}

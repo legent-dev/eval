@@ -14,7 +14,7 @@
     "agent_position": [
         -0.2669999897480011,
         0.0,
-        3.0329999923706056
+        3.0329999923706055
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Tell me which objects have a handle in the room",
     "task_text": "Tell me which objects have a handle in the kitchen. ",
+    "task_text_cn": "告诉我厨房里哪些物品有把手。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Cabinets, refrigerators, and doors",
+            "option_text_cn": "橱柜、冰箱和门",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Cabinets, refrigerators, and ovens",
+            "option_text_cn": "橱柜、冰箱和烤箱",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Cabinets, refrigerators, and stoves",
+            "option_text_cn": "橱柜、冰箱和炉灶",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "doors, wardrobe, stoves",
+            "option_text_cn": "门、衣柜、炉灶",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "Cabinets, table, and stoves",
+            "option_text_cn": "橱柜、桌子和炉灶",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "pot, window, and spoon",
+            "option_text_cn": "锅、窗户和勺子",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "spoon, dustbin, and chairs",
+            "option_text_cn": "勺子、垃圾桶和椅子",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "pot, window, and chairs",
+            "option_text_cn": "锅、窗户和椅子",
             "gameObjects": {
                 "list": []
             },
@@ -144,7 +153,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -2.700000047683716,
-                0.030222415924072267,
+                0.030222415924072266,
                 -1.0
             ],
             "type": "navigation"
@@ -153,7 +162,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -2.700000047683716,
-                0.030222415924072267,
+                0.030222415924072266,
                 1.0
             ],
             "type": "navigation"
@@ -162,7 +171,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -2.299999952316284,
-                0.030222415924072267,
+                0.030222415924072266,
                 3.0
             ],
             "type": "navigation"
@@ -171,7 +180,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.9771597981452942,
-                0.030222415924072267,
+                0.030222415924072266,
                 -0.7417274117469788
             ],
             "type": "navigation"
@@ -180,7 +189,7 @@
             "name": "NavigationPoint4",
             "position": [
                 -0.8840001225471497,
-                0.030222415924072267,
+                0.030222415924072266,
                 1.5546667575836182
             ],
             "type": "navigation"
@@ -189,8 +198,8 @@
             "name": "NavigationPoint4 (1)",
             "position": [
                 -0.5580000281333923,
-                0.030222415924072267,
-                2.2929999828338625
+                0.030222415924072266,
+                2.2929999828338623
             ],
             "type": "navigation"
         },
@@ -198,7 +207,7 @@
             "name": "NavigationPoint5",
             "position": [
                 -0.2999999523162842,
-                0.030222415924072267,
+                0.030222415924072266,
                 3.0
             ],
             "type": "navigation"
@@ -207,7 +216,7 @@
             "name": "NavigationPoint6",
             "position": [
                 0.8209999799728394,
-                0.030222415924072267,
+                0.030222415924072266,
                 -0.666666567325592
             ],
             "type": "navigation"
@@ -216,7 +225,7 @@
             "name": "NavigationPoint7",
             "position": [
                 0.7000000476837158,
-                0.030222415924072267,
+                0.030222415924072266,
                 1.8009999990463257
             ],
             "type": "navigation"

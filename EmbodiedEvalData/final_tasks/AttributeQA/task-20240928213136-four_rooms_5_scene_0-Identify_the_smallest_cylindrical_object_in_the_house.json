@@ -14,7 +14,7 @@
     "agent_position": [
         11.574999809265137,
         0.0,
-        3.2799999713897707
+        3.2799999713897705
     ],
     "agent_rotation": [
         0.0,
@@ -38,10 +38,12 @@
     "humans": [],
     "task_template": "Identify the largest round object in the room.",
     "task_text": "Identify the smallest cylindrical object in the house",
+    "task_text_cn": "找出房子里最小的圆柱形物体。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "cake on dining table",
+            "option_text_cn": "餐桌上的蛋糕",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "laundry basket",
+            "option_text_cn": "洗衣篮",
             "gameObjects": {
                 "list": []
             },
@@ -64,6 +67,7 @@
         {
             "option_type": "Answer",
             "option_text": "can near the clock",
+            "option_text_cn": "时钟旁边的罐子",
             "gameObjects": {
                 "list": []
             },
@@ -75,6 +79,7 @@
         {
             "option_type": "Answer",
             "option_text": "teapot on the blue chair",
+            "option_text_cn": "蓝色椅子上的茶壶",
             "gameObjects": {
                 "list": []
             },
@@ -86,6 +91,7 @@
         {
             "option_type": "Answer",
             "option_text": "pizza",
+            "option_text_cn": "披萨",
             "gameObjects": {
                 "list": []
             },
@@ -97,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "trash can",
+            "option_text_cn": "垃圾桶",
             "gameObjects": {
                 "list": []
             },
@@ -108,6 +115,7 @@
         {
             "option_type": "Answer",
             "option_text": "closestool",
+            "option_text_cn": "马桶",
             "gameObjects": {
                 "list": []
             },
@@ -119,6 +127,7 @@
         {
             "option_type": "Answer",
             "option_text": "clock",
+            "option_text_cn": "时钟",
             "gameObjects": {
                 "list": []
             },
@@ -149,7 +158,7 @@
             "position": [
                 5.225990295410156,
                 0.03638102114200592,
-                2.1380996704101564
+                2.1380996704101562
             ],
             "type": "navigation"
         },
@@ -228,7 +237,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                10.000000953674317,
+                10.000000953674316,
                 0.03638102114200592,
                 3.346531867980957
             ],
@@ -247,7 +256,7 @@
             "name": "NavigationPoint10",
             "position": [
                 9.140999794006348,
-                0.16520598530769349,
+                0.16520598530769348,
                 7.263000011444092
             ],
             "type": "navigation"
@@ -257,14 +266,14 @@
             "position": [
                 11.0649995803833,
                 0.03638102114200592,
-                9.866666793823243
+                9.866666793823242
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12",
             "position": [
-                9.932000160217286,
+                9.932000160217285,
                 0.03638102114200592,
                 5.346531867980957
             ],
@@ -282,7 +291,7 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                11.109000205993653,
+                11.109000205993652,
                 0.03638102114200592,
                 7.346531867980957
             ],
@@ -301,7 +310,7 @@
             "name": "SpecialPoints",
             "position": [
                 7.589000225067139,
-                0.050199318677186969,
+                0.050199318677186966,
                 6.59499979019165
             ],
             "type": "special"

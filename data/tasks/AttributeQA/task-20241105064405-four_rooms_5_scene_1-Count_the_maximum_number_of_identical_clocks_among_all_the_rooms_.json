@@ -1,0 +1,344 @@
+{
+    "scene_name": "four_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        7.595517158508301,
+        0.0,
+        -9.870811462402344
+    ],
+    "agent_position": [
+        9.536999702453614,
+        0.0,
+        -8.972000122070313
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -62125274
+        },
+        {
+            "instanceID": -62125262
+        },
+        {
+            "instanceID": -62125250
+        },
+        {
+            "instanceID": -62125238
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_1/CreatedWalls/identifier19_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_1/CreatedWalls/identifier16_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -62110074
+        }
+    ],
+    "removed_objects": [
+        "four_rooms_5_scene_1/CreatedObjects/identifier15_Doorway_6.glb/Doorway_6(Clone)/Doorway_Door_6"
+    ],
+    "humans": [],
+    "task_template": "How many identical objects can you find in the room?",
+    "task_text": "Count the maximum number of identical clocks among all the rooms.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "eight",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "three",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                4.200000286102295,
+                0.03958180546760559,
+                -13.13333511352539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                5.182368278503418,
+                0.03958180546760559,
+                -7.917892932891846
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                5.546000003814697,
+                0.03958180546760559,
+                -9.446999549865723
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                6.419000148773193,
+                0.27291515469551089,
+                -12.142000198364258
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                6.658999919891357,
+                0.03958180546760559,
+                -8.04699993133545
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                9.890999794006348,
+                0.03958180546760559,
+                -10.564000129699707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                8.937000274658204,
+                0.03958180546760559,
+                -12.63599967956543
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                6.534999847412109,
+                0.03958180546760559,
+                -9.503000259399414
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                9.914999961853028,
+                0.03958180546760559,
+                -8.199000358581543
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                10.147926330566407,
+                0.5494768619537354,
+                -13.639581680297852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (2)",
+            "position": [
+                11.182000160217286,
+                0.03958180546760559,
+                -10.972000122070313
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                9.958999633789063,
+                0.03958180546760559,
+                -6.28000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                11.200000762939454,
+                0.539581835269928,
+                -12.261190414428711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                11.930275917053223,
+                0.03958180546760559,
+                -5.683970928192139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                12.255000114440918,
+                0.03958180546760559,
+                -8.222999572753907
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22-Target",
+            "position": [
+                8.88599967956543,
+                0.03958180546760559,
+                -13.583999633789063
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint4-Target",
+            "position": [
+                5.776000022888184,
+                0.27291515469551089,
+                -12.13599967956543
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                5.916999816894531,
+                0.7120000123977661,
+                -6.9710001945495609
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105064405-four_rooms_5_scene_1-Count_the_maximum_number_of_identical_clocks_among_all_the_rooms_.json",
+    "message": ""
+}

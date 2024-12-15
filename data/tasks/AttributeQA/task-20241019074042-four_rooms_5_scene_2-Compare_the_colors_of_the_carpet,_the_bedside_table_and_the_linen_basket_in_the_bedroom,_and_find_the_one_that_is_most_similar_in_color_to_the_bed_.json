@@ -1,0 +1,366 @@
+{
+    "scene_name": "four_rooms_5_scene_2",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.9070000052452087,
+        0.0,
+        0.4309999942779541
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -14332290
+        },
+        {
+            "instanceID": -14332302
+        },
+        {
+            "instanceID": -14332314
+        },
+        {
+            "instanceID": -14332326
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_2/CreatedWalls/identifier16_Floor",
+        "four_rooms_5_scene_2/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_2/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_2/CreatedWalls/identifier19_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Compare the colors of three different objects in the room and identify the one most similar to the wall color.",
+    "task_text": "Compare the colors of the carpet, the bedside table and the linen basket in the bedroom, and find the one that is most similar in color to the bed.",
+    "task_text_cn": "比较卧室里两个不同物品的颜色，并找出与床颜色最相似的那个。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The basket and the carpet are vibrant. The bedside table's color is muted and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The basket and the carpet are muted. The bedside table's color is vibrant and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The basket and the bedside table are vibrant. The carpet's color is muted and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The basket and the bedside table are muted. The carpet's color is vibrant and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bedside table and the carpet are vibrant. The basket's color is muted and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The bedside table and the carpet are muted. The basket's color is vibrant and most similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are all muted and very similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are all vibrant and very similar to the bed.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The basket and the carpet are vibrant. The bedside table's color is muted and most similar to the bed.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.0737531185150148,
+                0.0416666716337204,
+                -2.8877696990966799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.9000000953674317,
+                0.0416666716337204,
+                -1.318192720413208
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.305410385131836,
+                0.0416666716337204,
+                0.7666666507720947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -3.812999963760376,
+                0.0416666716337204,
+                1.2009999752044678
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.866666793823242,
+                0.0416666716337204,
+                2.681807518005371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.305410385131836,
+                0.6344524621963501,
+                2.681807518005371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.246000051498413,
+                0.0416666716337204,
+                0.9259999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                -2.3469998836517336,
+                0.0416666716337204,
+                1.0989999771118165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                -0.41100001335144045,
+                0.0416666716337204,
+                0.7229999899864197
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (3)",
+            "position": [
+                -0.414000004529953,
+                0.0416666716337204,
+                1.659000039100647
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.39127641916275027,
+                0.0416666716337204,
+                -3.443563222885132
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.30541038513183596,
+                0.0416666716337204,
+                -1.318192481994629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.30541038513183596,
+                0.0416666716337204,
+                2.681807518005371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                -1.031999945640564,
+                0.0416666716337204,
+                3.1019999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (2)",
+            "position": [
+                -1.1699999570846558,
+                0.0416666716337204,
+                1.6729999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                0.6945896148681641,
+                0.0416666716337204,
+                0.6818075180053711
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.694589614868164,
+                0.0416666716337204,
+                -4.318192481994629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.433333396911621,
+                0.0416666716337204,
+                -2.318192481994629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.694589614868164,
+                0.0416666716337204,
+                2.6666667461395265
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.694589614868164,
+                0.0416666716337204,
+                -0.3181924819946289
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                3.694589614868164,
+                0.0416666716337204,
+                -4.318192481994629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                5.916999816894531,
+                0.7120000123977661,
+                -6.9710001945495609
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019074042-four_rooms_5_scene_2-Compare_the_colors_of_the_carpet,_the_bedside_table_and_the_linen_basket_in_the_bedroom,_and_find_the_one_that_is_most_similar_in_color_to_the_bed_.json",
+    "message": ""
+}

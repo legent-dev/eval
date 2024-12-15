@@ -1,0 +1,180 @@
+{
+    "scene_name": "bedroom_15_scene_3",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.0219999551773072,
+        0.0,
+        0.6380000114440918
+    ],
+    "agent_rotation": [
+        0.0,
+        275.1292724609375,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -14567242
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_3/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -14567644
+            },
+            "human_position": [
+                3.9159998893737795,
+                0.0,
+                2.2269999980926515
+            ],
+            "human_rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "asset": "Ch13_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Ask someone if they need help carrying a box.",
+    "task_text": "Get close to the lady in white and ask if she needs help.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "ask",
+            "option_text_cn": "问。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -14567644
+                    }
+                ]
+            },
+            "objects": [
+                "Ch13_nonPBR"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -14567644
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch13_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "ask",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "No",
+            "targetObject": {
+                "instanceID": -14568462
+            },
+            "predicate_object": "NavPoints/NavigationPoint5",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.1239999532699586,
+                0.033333420753479007,
+                0.5879999995231628
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.0140000581741334,
+                0.033333420753479007,
+                2.063999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                3.024425983428955,
+                0.033333420753479007,
+                3.7727081775665285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.003000020980835,
+                0.033333420753479007,
+                0.7440000176429749
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                1.909999966621399,
+                0.033333420753479007,
+                1.6469999551773072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.2709999084472658,
+                0.033333420753479007,
+                2.2179999351501467
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029214809-bedroom_15_scene_3-Get_close_to_the_lady_in_white_and_ask_if_she_needs_help_.json",
+    "message": ""
+}

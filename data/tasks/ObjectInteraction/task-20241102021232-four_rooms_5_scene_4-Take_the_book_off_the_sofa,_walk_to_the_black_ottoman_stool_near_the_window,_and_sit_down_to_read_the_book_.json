@@ -1,0 +1,377 @@
+{
+    "scene_name": "four_rooms_5_scene_4",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_4.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.002000093460083,
+        0.0,
+        -0.8519999980926514
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -47446640
+        },
+        {
+            "instanceID": -47446628
+        },
+        {
+            "instanceID": -47446616
+        },
+        {
+            "instanceID": -47446604
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_4/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier16_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier15_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Take the book from the shelf, go to the couch, and open it.",
+    "task_text": "Take the book off the sofa, walk to the black ottoman stool near the window, and sit down to read the book.",
+    "task_text_cn": "从沙发上拿起书，走到靠窗的黑色矮凳那里，坐下看书。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the book",
+            "option_text_cn": "拿起书。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -47442924
+                    }
+                ]
+            },
+            "objects": [
+                "four_rooms_5_scene_4/CreatedObjects/identifier89_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "sit down",
+            "option_text_cn": "坐下。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -47459074
+                    },
+                    {
+                        "instanceID": -47442924
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "four_rooms_5_scene_4/CreatedObjects/identifier89_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -47459074
+                            },
+                            {
+                                "instanceID": -47442924
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint",
+                            "four_rooms_5_scene_4/CreatedObjects/identifier89_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "sit down",
+            "targetObject": {
+                "instanceID": -47444784
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier105_658cc8d88a314ac188e42df7a6f68731.glb/Sketchfab_model/7c9592c206d84ca2b681b9af9a8d6b2b.fbx/RootNode/books_geo/books_geo/books_geo_Books_Lower_Shader_0",
+            "targetPlace": {
+                "instanceID": -95197982
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "sit down and open the book",
+            "targetObject": {
+                "instanceID": -47442924
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier89_efbf5b3579994a3aaf0fea15706afaa3.glb/Sketchfab_model/Collada visual scene group/Furniture/mesh_node",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.4589052200317385,
+                0.02783203125,
+                -2.90924072265625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.4589052200317385,
+                0.02783203125,
+                -0.90924072265625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.4679999351501467,
+                0.02783203125,
+                1.0299999713897706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.4666666984558107,
+                0.02783203125,
+                3.09075927734375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.3999998569488526,
+                0.02783203125,
+                4.5329999923706059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.3999998569488526,
+                0.02783203125,
+                3.000999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.6999997496604919,
+                0.02783203125,
+                -2.90924072265625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.4551008939743043,
+                0.02783203125,
+                -0.9701104164123535
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.3760000467300416,
+                0.02783203125,
+                1.7940000295639039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                -0.4269999861717224,
+                0.02783203125,
+                3.4070000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                -0.28200000524520876,
+                0.02783203125,
+                1.871999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.48399999737739565,
+                0.02783203125,
+                0.8920000195503235
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.899922490119934,
+                0.02783203125,
+                -0.9401570558547974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.1120545864105225,
+                0.02783203125,
+                3.66171932220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.3980000019073488,
+                0.02783203125,
+                0.43700000643730166
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                1.649999976158142,
+                0.02783203125,
+                1.8359999656677247
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                2.6949243545532228,
+                0.02783203125,
+                -2.623961925506592
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                2.5789999961853029,
+                0.02783203125,
+                -2.0739998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (2)",
+            "position": [
+                2.0859999656677248,
+                0.02783203125,
+                -1.8760000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (1)",
+            "position": [
+                3.4860000610351564,
+                0.02783203125,
+                3.5810000896453859
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (2)",
+            "position": [
+                3.677000045776367,
+                0.02783203125,
+                4.830999851226807
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.634999990463257,
+                0.02783203125,
+                4.9679999351501469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                3.125999927520752,
+                0.12600000202655793,
+                1.847000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.541094779968262,
+                0.02783203125,
+                4.933333396911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14-Target",
+            "position": [
+                2.746000051498413,
+                0.02783203125,
+                5.511000156402588
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.7369115352630617,
+                0.6103047132492065,
+                5.354342460632324
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241102021232-four_rooms_5_scene_4-Take_the_book_off_the_sofa,_walk_to_the_black_ottoman_stool_near_the_window,_and_sit_down_to_read_the_book_.json",
+    "message": ""
+}

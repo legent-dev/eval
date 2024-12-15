@@ -1,0 +1,470 @@
+{
+    "scene_name": "shapespark-example-room",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/shapespark-example-room.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -64041930
+        }
+    ],
+    "floor_objects": [
+        "shapespark-example-room/Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "If you were to draw a straight line from the front door to the back door, which pieces of furniture would it intersect?",
+    "task_text": "If you were to draw a straight line from the desk with a turned-on laptop to the bookshelf, which pieces of furniture would it intersect?",
+    "task_text_cn": "如果你从放着开着的电脑的书桌向书架画一条直线，它会与哪些家具相交？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "yellow chair, green armchair, floor lamp",
+            "option_text_cn": "黄色椅子、绿色扶手椅、落地灯",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "orange chair, yellow armchair, grey coffee table",
+            "option_text_cn": "橙色椅子、黄色扶手椅、灰色茶几",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "red chair, yellow armchair, grey sofa",
+            "option_text_cn": "红色椅子、黄色扶手椅、灰色沙发",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "green plant, yellow chair, green armchair",
+            "option_text_cn": "植物、黄色椅子、绿色扶手椅",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "floor lamp, orange chair, green armchair",
+            "option_text_cn": "落地灯、橙色椅子、绿色扶手椅",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black desk, brown cabin, floor lamp",
+            "option_text_cn": "黑色书桌、棕色小木屋、落地灯",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "wooden cabin, orange chair, green armchair",
+            "option_text_cn": "木质小木屋、橙色椅子、绿色扶手椅",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "floor lamp, yellow sofa, orange armchair",
+            "option_text_cn": "没有正确答案",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "floor lamp, orange chair, green armchair",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -5.248785018920898,
+                0.022310912609100343,
+                2.9594664573669435
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.833333492279053,
+                0.022310912609100343,
+                5.235712051391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.833333492279053,
+                0.022310912609100343,
+                7.235713481903076
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.808894157409668,
+                0.7223109006881714,
+                -0.17986220121383668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.1399999856948853,
+                0.022310912609100343,
+                -3.700000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.066666603088379,
+                0.022310912609100343,
+                -5.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.7769999504089357,
+                0.022310912609100343,
+                5.013999938964844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.2669999599456788,
+                0.022310912609100343,
+                4.960999965667725
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                -0.8320000171661377,
+                0.022310912609100343,
+                6.480000019073486
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.03494393825531006,
+                0.022310912609100343,
+                -5.820041656494141
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.1303095817565919,
+                0.022310912609100343,
+                0.7357120513916016
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.1303095817565919,
+                0.022310912609100343,
+                3.433333396911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -1.1460000276565552,
+                0.022310912609100343,
+                -1.6979999542236329
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.05400000140070915,
+                0.022310912609100343,
+                -3.7139999866485597
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (4)",
+            "position": [
+                0.026000000536441804,
+                0.022310912609100343,
+                -1.6419999599456788
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                1.3700000047683716,
+                0.022310912609100343,
+                -3.740000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (3)",
+            "position": [
+                1.4079999923706055,
+                0.022310912609100343,
+                -5.916999816894531
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (2)",
+            "position": [
+                2.5799999237060549,
+                0.022310912609100343,
+                -3.809999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.1420000046491623,
+                0.022310912609100343,
+                0.9539999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (1)",
+            "position": [
+                1.4609999656677247,
+                0.022310912609100343,
+                0.972000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.3720000088214874,
+                0.022310912609100343,
+                3.068000078201294
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                1.8170000314712525,
+                0.022310912609100343,
+                2.996999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                0.8696904182434082,
+                0.022310912609100343,
+                6.500000476837158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                3.066999912261963,
+                0.022310912609100343,
+                3.9049999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.2400000095367432,
+                0.022310912609100343,
+                -1.5889999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (1)",
+            "position": [
+                3.188999891281128,
+                0.022310912609100343,
+                -1.5099999904632569
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.6710000038146974,
+                0.022310912609100343,
+                -6.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                3.2839999198913576,
+                0.022310912609100343,
+                0.9259999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                2.9549999237060549,
+                0.022310912609100343,
+                6.248000144958496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                4.440999984741211,
+                0.022310912609100343,
+                -3.674999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                5.447083473205566,
+                0.022310912609100343,
+                -5.745448589324951
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                4.869690418243408,
+                0.022310912609100343,
+                -0.3666667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                5.285999774932861,
+                0.022310912609100343,
+                1.0679999589920045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                5.466000080108643,
+                0.022310912609100343,
+                -3.671999931335449
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105071401-shapespark-example-room-If_you_were_to_draw_a_straight_line_from_the_desk_with_a_turned-on_laptop_to_the_bookshelf,_which_pieces_of_fur.json",
+    "message": ""
+}

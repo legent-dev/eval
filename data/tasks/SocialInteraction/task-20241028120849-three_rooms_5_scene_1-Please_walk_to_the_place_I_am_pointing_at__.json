@@ -1,0 +1,257 @@
+{
+    "scene_name": "three_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.2639999985694885,
+        0.0,
+        1.1319999694824219
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -12637866
+        },
+        {
+            "instanceID": -12637854
+        },
+        {
+            "instanceID": -12637842
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_1/CreatedWalls/identifier14_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier12_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -12629066
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_1/CreatedObjects/identifier6_Doorway_8.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -12639174
+            },
+            "human_position": [
+                2.13700008392334,
+                0.02500009536743164,
+                2.259999990463257
+            ],
+            "human_rotation": [
+                0.0,
+                175.9270477294922,
+                0.0
+            ],
+            "asset": "Ch41_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -12644710
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "Please walk to the place I am pointing to.",
+    "task_text": "Please walk to the place I am pointing at. ",
+    "task_text_cn": "请走到我指着的地方。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -12642248
+            },
+            "predicate_object": "NavPoints/NavigationPoint10",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.7009999752044678,
+                0.02500009536743164,
+                0.6470000147819519
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.406000018119812,
+                0.02500009536743164,
+                2.114000082015991
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.5160000324249269,
+                0.02500009536743164,
+                -1.777999997138977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.4240000247955323,
+                0.02500009536743164,
+                -1.8009999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.9994240403175354,
+                0.02500009536743164,
+                3.9670355319976808
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.5270000100135803,
+                0.02500009536743164,
+                1.0140000581741334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.4819999933242798,
+                0.02500009536743164,
+                -0.9959999918937683
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.949999988079071,
+                0.02500009536743164,
+                2.1594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                0.3610000014305115,
+                0.02500009536743164,
+                2.2320001125335695
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.41499999165534975,
+                0.02883358672261238,
+                1.1089999675750733
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                1.0440000295639039,
+                0.02883358672261238,
+                1.0240000486373902
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.2219998836517336,
+                0.058333516120910647,
+                1.7869999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                3.6000003814697267,
+                0.02500009536743164,
+                3.1594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                2.4779999256134035,
+                0.02500009536743164,
+                -1.1950000524520875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.447999954223633,
+                0.02500009536743164,
+                0.28197112679481509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                3.559999942779541,
+                0.027591189369559289,
+                1.6594347953796387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                3.5889999866485597,
+                0.027591189369559289,
+                0.5180000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.4590001106262209,
+                0.09200000017881394,
+                -1.3890000581741334
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028120849-three_rooms_5_scene_1-Please_walk_to_the_place_I_am_pointing_at__.json",
+    "message": ""
+}

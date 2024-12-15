@@ -1,0 +1,302 @@
+{
+    "scene_name": "apartamento",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/apartamento.glb",
+    "scene_scale": [
+        1.1111111640930176,
+        1.1111111640930176,
+        1.1111111640930176
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.25999999046325686,
+        0.0,
+        -2.6600000858306886
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -42036464
+        }
+    ],
+    "floor_objects": [
+        "apartamento/aa352256b85141dabdbcb6f31c5ac9e6.fbx/RootNode/1_Structure"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Wipe off the dining table.",
+    "task_text": "Wipe off the coffee table in front of the sofa while standing between the coffee table and the television.",
+    "task_text_cn": "站在茶几和电视之间时，擦干净沙发前面的咖啡桌。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wipe off the table",
+            "option_text_cn": "擦桌子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -42045366
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -42045366
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "wipe off the table",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "wipe off the table",
+            "targetObject": {
+                "instanceID": -42040704
+            },
+            "predicate_object": "NavPoints/NavigationPoint13",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.469660997390747,
+                0.028578385710716249,
+                -7.196460723876953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.2410409450531008,
+                0.028578385710716249,
+                -3.9852705001831056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.258394956588745,
+                0.028578385710716249,
+                -2.2485880851745607
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.3666670322418215,
+                0.028578385710716249,
+                -0.5949039459228516
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.3333334922790529,
+                0.8139218688011169,
+                -5.420492172241211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.885410785675049,
+                0.028578385710716249,
+                0.9050960540771484
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.6159999966621399,
+                -0.00475495308637619,
+                -8.564000129699707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.7000000476837159,
+                0.028578385710716249,
+                -7.21999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.8666667938232422,
+                0.028578385710716249,
+                -5.594903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.4000000059604645,
+                0.028578385710716249,
+                -0.47999998927116396
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.3854107856750489,
+                0.028578385710716249,
+                -4.094903945922852
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.14260247349739076,
+                0.028578385710716249,
+                -2.6570444107055666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.27000001072883608,
+                -0.05000000074505806,
+                -7.005365371704102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.33899998664855959,
+                0.028578385710716249,
+                -5.729000091552734
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.965000033378601,
+                0.028578385710716249,
+                -0.5400000214576721
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                0.6650000214576721,
+                -0.00475495308637619,
+                -9.045000076293946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.8609999418258668,
+                0.028578385710716249,
+                -5.040999889373779
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                1.6799999475479127,
+                0.028578385710716249,
+                -7.050000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.19900000095367433,
+                0.028578385710716249,
+                -4.565000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.586259126663208,
+                -0.00475495308637619,
+                -9.405033111572266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                2.071000099182129,
+                0.028578385710716249,
+                -3.1029999256134035
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.9900000095367432,
+                0.3944430351257324,
+                -5.914999961853027
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241101070150-apartamento-Wipe_off_the_coffee_table_in_front_of_the_sofa_while_standing_between_the_coffee_table_and_the_television_.json",
+    "message": ""
+}

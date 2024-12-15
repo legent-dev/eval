@@ -56,10 +56,12 @@
     "humans": [],
     "task_template": "Identify the room with the highest ceiling.",
     "task_text": "Identify the room with the lowest ceiling. ",
+    "task_text_cn": "确定哪个房间的天花板最低。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "bedroom",
+            "option_text_cn": "卧室。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +73,7 @@
         {
             "option_type": "Answer",
             "option_text": "on a level with",
+            "option_text_cn": "与……在同一水平面上。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +85,7 @@
         {
             "option_type": "Answer",
             "option_text": "kitchen",
+            "option_text_cn": "厨房。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +97,7 @@
         {
             "option_type": "Answer",
             "option_text": "Shower Room",
+            "option_text_cn": "淋浴间。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +109,7 @@
         {
             "option_type": "Answer",
             "option_text": "i can not tell",
+            "option_text_cn": "我不知道。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +121,7 @@
         {
             "option_type": "Answer",
             "option_text": "bathroom",
+            "option_text_cn": "浴室。",
             "gameObjects": {
                 "list": []
             },
@@ -126,6 +133,7 @@
         {
             "option_type": "Answer",
             "option_text": "balcony",
+            "option_text_cn": "阳台。",
             "gameObjects": {
                 "list": []
             },
@@ -137,6 +145,7 @@
         {
             "option_type": "Answer",
             "option_text": "restroom",
+            "option_text_cn": "洗手间。",
             "gameObjects": {
                 "list": []
             },
@@ -165,9 +174,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.8000000715255738,
+                1.8000000715255737,
                 0.02678866684436798,
-                -3.7300000190734865
+                -3.7300000190734863
             ],
             "type": "navigation"
         },
@@ -176,16 +185,16 @@
             "position": [
                 0.9290895462036133,
                 0.0681237280368805,
-                -2.7948904037475588
+                -2.7948904037475586
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                1.9800000190734864,
+                1.9800000190734863,
                 0.0681237280368805,
-                -2.7948904037475588
+                -2.7948904037475586
             ],
             "type": "navigation"
         },
@@ -201,7 +210,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                3.4168386459350588,
+                3.4168386459350586,
                 0.02678866684436798,
                 -3.690000057220459
             ],
@@ -210,9 +219,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                3.6700000762939455,
+                3.6700000762939453,
                 0.0447610467672348,
-                -2.5299999713897707
+                -2.5299999713897705
             ],
             "type": "navigation"
         },
@@ -228,7 +237,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                3.5399999618530275,
+                3.5399999618530273,
                 0.02678866684436798,
                 -0.7948904037475586
             ],
@@ -239,7 +248,7 @@
             "position": [
                 5.559709548950195,
                 0.02678866684436798,
-                -4.1860456466674809
+                -4.1860456466674805
             ],
             "type": "navigation"
         },
@@ -248,7 +257,7 @@
             "position": [
                 4.929089546203613,
                 0.02678866684436798,
-                -2.7948904037475588
+                -2.7948904037475586
             ],
             "type": "navigation"
         },
@@ -265,7 +274,7 @@
             "name": "NavigationPoint10",
             "position": [
                 6.929089546203613,
-                0.13713377714157105,
+                0.13713377714157104,
                 -5.794890403747559
             ],
             "type": "navigation"
@@ -282,7 +291,7 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                8.343999862670899,
+                8.343999862670898,
                 0.02678866684436798,
                 -6.394999980926514
             ],
@@ -293,7 +302,7 @@
             "position": [
                 10.066666603088379,
                 0.02678866684436798,
-                -2.1570000648498537
+                -2.1570000648498535
             ],
             "type": "navigation"
         },
@@ -338,7 +347,7 @@
             "position": [
                 11.884410858154297,
                 0.02678866684436798,
-                -3.7170000076293947
+                -3.7170000076293945
             ],
             "type": "navigation"
         },
@@ -347,16 +356,16 @@
             "position": [
                 10.22700023651123,
                 0.02678866684436798,
-                -3.7170000076293947
+                -3.7170000076293945
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint20",
             "position": [
-                11.929089546203614,
+                11.929089546203613,
                 0.02678866684436798,
-                -2.2333343029022219
+                -2.2333343029022217
             ],
             "type": "navigation"
         },
@@ -372,7 +381,7 @@
         {
             "name": "NavigationPoint22",
             "position": [
-                13.929089546203614,
+                13.929089546203613,
                 0.02678866684436798,
                 -6.794890403747559
             ],
@@ -381,7 +390,7 @@
         {
             "name": "NavigationPoint23",
             "position": [
-                13.980631828308106,
+                13.980631828308105,
                 0.02678866684436798,
                 -2.802253484725952
             ],
@@ -390,7 +399,7 @@
         {
             "name": "NavigationPoint23 (1)",
             "position": [
-                13.980631828308106,
+                13.980631828308105,
                 0.02678866684436798,
                 -3.809999942779541
             ],
@@ -419,7 +428,7 @@
             "position": [
                 15.491961479187012,
                 0.02678866684436798,
-                -2.8623416423797609
+                -2.8623416423797607
             ],
             "type": "navigation"
         }

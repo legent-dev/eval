@@ -1,0 +1,299 @@
+{
+    "scene_name": "studio_office_interior",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/studio_office_interior.glb",
+    "scene_scale": [
+        0.008000479079782963,
+        0.008000479079782963,
+        0.008000479079782963
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.009999990463257,
+        0.0,
+        0.12999999523162843
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -596412
+        }
+    ],
+    "floor_objects": [
+        "studio_office_interior/58a457770f8b42cb9b82c102bd90dd74.fbx/RootNode/Plane.013"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many electronic screens are there in the office?",
+    "task_text": "How many electronic screens are there in the office?",
+    "task_text_cn": "办公室里有多少个电子屏幕？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "十个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "eight",
+            "option_text_cn": "八个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "five",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.5799999237060549,
+                0.042224377393722537,
+                -5.340000152587891
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.5199999809265138,
+                0.042224377393722537,
+                -3.369999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.8299999237060549,
+                0.042224377393722537,
+                -1.0099999904632569
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.069999933242798,
+                0.042224377393722537,
+                1.1100000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.119999885559082,
+                0.07555770874023438,
+                3.7799999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -0.16666674613952638,
+                0.042224377393722537,
+                3.0364789962768556
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.20000000298023225,
+                0.042224377393722537,
+                -5.309999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.27000001072883608,
+                0.042224377393722537,
+                -3.5899999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.7103791236877441,
+                0.8485604524612427,
+                -1.4635210037231446
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.9609999656677248,
+                0.042224377393722537,
+                1.319000005722046
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.7103791236877442,
+                0.042224377393722537,
+                4.0364789962768559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                2.710379123687744,
+                0.042224377393722537,
+                -5.100000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.710379123687744,
+                0.042224377393722537,
+                -2.9635210037231447
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.710379123687744,
+                0.042224377393722537,
+                -0.9635210037231445
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                3.2300000190734865,
+                0.042224377393722537,
+                3.880000114440918
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107061728-studio_office_interior-How_many_electronic_screens_are_there_in_the_office_.json",
+    "message": ""
+}

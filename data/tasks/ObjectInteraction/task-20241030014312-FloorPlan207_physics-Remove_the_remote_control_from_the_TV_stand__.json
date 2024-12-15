@@ -1,0 +1,221 @@
+{
+    "scene_name": "FloorPlan207_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan207_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.1459999978542328,
+        0.0,
+        3.2950000762939455
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2033206
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan207_physics/Objects/Floor_0d809d9e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2027540
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan207_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Remove the laptop computer from the sofa.",
+    "task_text": "Remove the remote control from the TV stand. ",
+    "task_text_cn": "从电视柜上取下遥控器。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the remote control",
+            "option_text_cn": "拿起遥控器",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2030620
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan207_physics/Objects/RemoteControl_4801d4ad"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put on the table",
+            "option_text_cn": "把它放在桌子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2036272
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -2030620
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/RemoteControl_4801d4ad",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.9629999995231628,
+                0.03333333134651184,
+                -0.14900000393390656
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.6299999952316285,
+                0.03333333134651184,
+                1.4299999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                0.6600000262260437,
+                0.03333333134651184,
+                1.2289999723434449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.17467083036899568,
+                0.5127136707305908,
+                0.6883885264396668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -0.7419999837875366,
+                0.03333333134651184,
+                -0.8149999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (3)",
+            "position": [
+                -0.7680000066757202,
+                0.03333333134651184,
+                1.5549999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.5987101793289185,
+                0.03333333134651184,
+                2.881535768508911
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.04999947547912598,
+                0.03333333134651184,
+                3.200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.6460000276565552,
+                0.03333333134651184,
+                -1.184000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.549999475479126,
+                0.03333333134651184,
+                3.125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.496999979019165,
+                0.7559407949447632,
+                -0.20499999821186067
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030014312-FloorPlan207_physics-Remove_the_remote_control_from_the_TV_stand__.json",
+    "message": ""
+}

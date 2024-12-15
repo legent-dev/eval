@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Find my sunglasses in the bedroom for going outside, and then place the red shoes where the sunglasses were.",
     "task_text": "Find the book titled \"Probabilistic Robotics\" and place it on the side table for bedtime reading, and then place your mobile phone where the book was.",
+    "task_text_cn": "找到名为《概率机器人学》的书，把它放在床头柜上供睡前阅读，然后把你的手机放在书原来的位置。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the book",
+            "option_text_cn": "拿起书。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the side table ",
+            "option_text_cn": "放在床头柜上。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the bed",
+            "option_text_cn": "放在床上。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the desk",
+            "option_text_cn": "放在书桌上。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +117,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the garbage can",
+            "option_text_cn": "放在垃圾桶里。",
             "gameObjects": {
                 "list": [
                     {
@@ -129,6 +135,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the phone",
+            "option_text_cn": "拿起手机。",
             "gameObjects": {
                 "list": [
                     {
@@ -177,7 +184,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.4880000054836273,
-                0.033333197236061099,
+                0.033333197236061096,
                 1.465999960899353
             ],
             "type": "navigation"
@@ -186,16 +193,16 @@
             "name": "NavigationPoint0 (1)",
             "position": [
                 -0.5559999942779541,
-                0.033333197236061099,
-                1.6360000371932984
+                0.033333197236061096,
+                1.6360000371932983
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.06656386703252793,
-                0.033333197236061099,
+                -0.06656386703252792,
+                0.033333197236061096,
                 -0.974144458770752
             ],
             "type": "navigation"
@@ -203,8 +210,8 @@
         {
             "name": "NavigationPoint1 (2)",
             "position": [
-                -0.12800000607967378,
-                0.033333197236061099,
+                -0.12800000607967377,
+                0.033333197236061096,
                 0.10899999737739563
             ],
             "type": "navigation"
@@ -213,7 +220,7 @@
             "name": "NavigationPoint1 (1)",
             "position": [
                 -1.3580000400543213,
-                0.033333197236061099,
+                0.033333197236061096,
                 -0.9129999876022339
             ],
             "type": "navigation"
@@ -221,8 +228,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                0.23899999260902406,
-                0.033333197236061099,
+                0.23899999260902405,
+                0.033333197236061096,
                 0.7730000019073486
             ],
             "type": "navigation"
@@ -231,7 +238,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -1.0999999046325684,
-                0.033333197236061099,
+                0.033333197236061096,
                 0.549999475479126
             ],
             "type": "navigation"
@@ -239,9 +246,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                1.2000000476837159,
+                1.2000000476837158,
                 0.7999998331069946,
-                -1.3333332538604737
+                -1.3333332538604736
             ],
             "type": "navigation"
         },
@@ -250,7 +257,7 @@
             "position": [
                 1.1444969177246094,
                 0.7475433349609375,
-                1.7984068393707276
+                1.7984068393707275
             ],
             "type": "navigation-target"
         },
@@ -259,14 +266,14 @@
             "position": [
                 0.09614774584770203,
                 0.6667822003364563,
-                -1.6891958713531495
+                -1.6891958713531494
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint2-Target",
             "position": [
-                1.1369999647140504,
+                1.1369999647140503,
                 0.2870755195617676,
                 0.5879999995231628
             ],
@@ -275,9 +282,9 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -0.07599999755620957,
+                -0.07599999755620956,
                 0.6621019840240479,
-                -1.7039999961853028
+                -1.7039999961853027
             ],
             "type": "special"
         },
@@ -293,16 +300,16 @@
         {
             "name": "SpecialPoint (2)",
             "position": [
-                1.1690876483917237,
+                1.1690876483917236,
                 0.7829999923706055,
-                1.7992398738861085
+                1.7992398738861084
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoint (3)",
             "position": [
-                1.1369999647140504,
+                1.1369999647140503,
                 0.2870755195617676,
                 0.5879999995231628
             ],

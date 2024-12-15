@@ -1,0 +1,207 @@
+{
+    "scene_name": "bedroom_15_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.05000000074505806,
+        -3.4200000762939455,
+        -2.369999885559082
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -25568678
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_5/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -25565402
+        }
+    ],
+    "removed_objects": [
+        "bedroom_15_scene_5/CreatedObjects/identifier20_9afc457980534df1b37251f0aa89ef81.glb"
+    ],
+    "humans": [],
+    "task_template": "Compare the sizes of the three largest objects in the room,and tell me which one is the biggest.",
+    "task_text": "Compare the sizes of the two largest wooden objects in the room, and conclude which one is the larger.",
+    "task_text_cn": "比较房间里两个最大的木制物品的大小，并得出哪个更大。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "wardrobe > bed",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bed > table",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bed > sofa",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "wardrobe > table",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "giant bookcase > table",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bed > wardrobe",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "sofa > cabinet",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "no correct option",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "bed > wardrobe",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.7730000019073486,
+                0.06280517578125,
+                2.046999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.1989998817443849,
+                0.06280517578125,
+                0.9359999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                3.318000078201294,
+                0.06280517578125,
+                2.4179999828338625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                2.121999979019165,
+                0.06280517578125,
+                1.934999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.1649999618530275,
+                0.06280517578125,
+                0.8500000238418579
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020083457-bedroom_15_scene_5-Compare_the_sizes_of_the_two_largest_wooden_objects_in_the_room,_and_conclude_which_one_is_the_larger_.json",
+    "message": ""
+}

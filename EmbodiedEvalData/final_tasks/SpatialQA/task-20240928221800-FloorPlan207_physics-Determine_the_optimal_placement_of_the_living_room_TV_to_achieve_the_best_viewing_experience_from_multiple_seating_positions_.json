@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        -0.16599999368190766,
+        -0.16599999368190765,
         0.0,
-        -1.2079999446868897
+        -1.2079999446868896
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Determine the optimal placement of surround sound speakers in the living room for the best audio experience from multiple seating positions.",
     "task_text": "Determine the optimal placement of the living room TV to achieve the best viewing experience from multiple seating positions.",
+    "task_text_cn": "确定客厅电视的最佳位置，以便从多个座位位置获得最佳观看体验。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "In the corner",
+            "option_text_cn": "在角落。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "Across from the sofa",
+            "option_text_cn": "在沙发对面。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "At the center",
+            "option_text_cn": "在中心。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "near the door",
+            "option_text_cn": "在门附近。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "near the window",
+            "option_text_cn": "在窗户附近。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "near the sofa",
+            "option_text_cn": "在沙发附近。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "more than one option is correct",
+            "option_text_cn": "不止一个选项正确。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -203,16 +212,16 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.5789999961853028,
+                1.5789999961853027,
                 0.03333333134651184,
-                3.1589999198913576
+                3.1589999198913574
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                1.5789999961853028,
+                1.5789999961853027,
                 0.03333333134651184,
                 1.319000005722046
             ],

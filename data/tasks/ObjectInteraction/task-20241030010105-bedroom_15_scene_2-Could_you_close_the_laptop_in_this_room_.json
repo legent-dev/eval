@@ -1,0 +1,181 @@
+{
+    "scene_name": "bedroom_15_scene_2",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.4149999618530275,
+        0.0,
+        2.5299999713897707
+    ],
+    "agent_rotation": [
+        0.0,
+        195.45327758789063,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -91778
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_2/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Could you close the blinds in this room?",
+    "task_text": "Could you close the laptop in this room?",
+    "task_text_cn": "你能关上这个房间里的笔记本电脑吗？",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "close the laptop",
+            "option_text_cn": "关上笔记本电脑。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -82418
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_2/CreatedObjects/identifier21_5d2c9be39d294d4a8fc702ac04cf3444.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -82418
+                            }
+                        ],
+                        "required_objects": [
+                            "bedroom_15_scene_2/CreatedObjects/identifier21_5d2c9be39d294d4a8fc702ac04cf3444.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "close the laptop",
+            "targetObject": {
+                "instanceID": -94606
+            },
+            "predicate_object": "SpecialPoints",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.4300000071525574,
+                0.03631339222192764,
+                1.3600000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.4859999418258668,
+                0.03631339222192764,
+                0.8970000147819519
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.6209999918937683,
+                0.03631339222192764,
+                3.055999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                1.659000039100647,
+                0.03631339222192764,
+                2.5450000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                2.489000082015991,
+                0.03631339222192764,
+                2.6500000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.5,
+                0.03631339222192764,
+                3.9089772701263429
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.327432870864868,
+                0.03631339222192764,
+                2.4728708267211916
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                0.4740000069141388,
+                0.5759999752044678,
+                3.447000026702881
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (1)",
+            "position": [
+                0.9739999771118164,
+                0.531000018119812,
+                3.7950000762939455
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (2)",
+            "position": [
+                2.7899999618530275,
+                0.2160000056028366,
+                -1.6089999675750733
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030010105-bedroom_15_scene_2-Could_you_close_the_laptop_in_this_room_.json",
+    "message": ""
+}

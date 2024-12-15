@@ -1,0 +1,530 @@
+{
+    "scene_name": "103997541_171030615",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997541_171030615.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        14.567000389099121,
+        0.0,
+        -2.4079999923706056
+    ],
+    "agent_rotation": [
+        0.0,
+        95.865966796875,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -36512004
+        },
+        {
+            "instanceID": -36512076
+        }
+    ],
+    "floor_objects": [
+        "103997541_171030615/walls/geometry_rs-13507",
+        "103997541_171030615/walls/geometry_rs-3750"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -36503600
+        }
+    ],
+    "removed_objects": [
+        "103997541_171030615/openings/openings_wall_8/208/208 > SketchUp/208 > SketchUp > instance_8"
+    ],
+    "humans": [],
+    "task_template": "Find two books from the shelf in the living room, and stack them neatly on the coffee table.",
+    "task_text": "Find two pairs of shoes from the living room, and arrange them neatly by the door leading to the yard, leaning against the brick wall.",
+    "task_text_cn": "从客厅找到两双鞋，把它们整齐地放在通往院子的门旁边。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the high-heeled shoes",
+            "option_text_cn": "拿起高跟鞋。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -36496200
+                    }
+                ]
+            },
+            "objects": [
+                "103997541_171030615/furniture/05424dff4ffe89ee53ea1a6c74d6ed24da66433a"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the canvas shoes",
+            "option_text_cn": "拿起帆布鞋。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -36498708
+                    }
+                ]
+            },
+            "objects": [
+                "103997541_171030615/furniture/ae0781cd26c84564875fe4a045ececf2420df52c"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "放下。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -37326854
+                    },
+                    {
+                        "instanceID": -37326864
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36496200
+            },
+            "predicate_object": "103997541_171030615/furniture/05424dff4ffe89ee53ea1a6c74d6ed24da66433a",
+            "targetPlace": {
+                "instanceID": -37326854
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36498708
+            },
+            "predicate_object": "103997541_171030615/furniture/ae0781cd26c84564875fe4a045ececf2420df52c",
+            "targetPlace": {
+                "instanceID": -37326864
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36496200
+            },
+            "predicate_object": "103997541_171030615/furniture/05424dff4ffe89ee53ea1a6c74d6ed24da66433a",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36498708
+            },
+            "predicate_object": "103997541_171030615/furniture/ae0781cd26c84564875fe4a045ececf2420df52c",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                18.80299949645996,
+                0.016267061233520509,
+                -2.5820000171661379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                14.937999725341797,
+                0.016267061233520509,
+                -4.4079999923706059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                1.5123100280761719,
+                0.07405520230531693,
+                10.702720642089844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint58",
+            "position": [
+                6.012310028076172,
+                0.016267061233520509,
+                -6.800000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint59",
+            "position": [
+                6.333333969116211,
+                0.016267061233520509,
+                -4.797279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint60",
+            "position": [
+                6.566667556762695,
+                0.016267061233520509,
+                -1.2972793579101563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint61",
+            "position": [
+                6.012310028076172,
+                0.016267061233520509,
+                3.7027206420898439
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint66",
+            "position": [
+                7.366666793823242,
+                0.016267061233520509,
+                0.20272064208984376
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint67",
+            "position": [
+                7.366666793823242,
+                0.016267061233520509,
+                1.7027206420898438
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint69",
+            "position": [
+                6.512310028076172,
+                0.028528358787298204,
+                10.702720642089844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint74",
+            "position": [
+                7.012310028076172,
+                0.03512749820947647,
+                -3.2972793579101564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint76",
+            "position": [
+                7.512310028076172,
+                0.016267061233520509,
+                -7.297279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint81",
+            "position": [
+                8.012310028076172,
+                0.016267061233520509,
+                -5.6666669845581059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint82",
+            "position": [
+                8.012310028076172,
+                0.018398530781269075,
+                -1.7972793579101563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint88",
+            "position": [
+                9.364344596862793,
+                0.016267061233520509,
+                9.096075057983399
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint89",
+            "position": [
+                9.140151977539063,
+                0.22573935985565186,
+                10.6962308883667
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint92",
+            "position": [
+                9.012310028076172,
+                0.016267061233520509,
+                0.3666667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint93",
+            "position": [
+                9.012310028076172,
+                0.016267061233520509,
+                2.133333444595337
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint97",
+            "position": [
+                9.512310028076172,
+                0.016267061233520509,
+                -5.6666669845581059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint98",
+            "position": [
+                9.620196342468262,
+                0.04960036277770996,
+                -2.7343556880950929
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint103",
+            "position": [
+                10.90000057220459,
+                0.016267061233520509,
+                -0.7972793579101563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint104",
+            "position": [
+                10.700000762939454,
+                0.016267061233520509,
+                2.7027206420898439
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint105",
+            "position": [
+                10.700000762939454,
+                0.016267061233520509,
+                4.202720642089844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint106",
+            "position": [
+                10.7272310256958,
+                0.016267061233520509,
+                7.6934356689453129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint107",
+            "position": [
+                10.75320053100586,
+                0.016267061233520509,
+                9.693099021911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint110",
+            "position": [
+                11.000000953674317,
+                0.04960036277770996,
+                -4.297279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint111",
+            "position": [
+                10.512310028076172,
+                0.016267061233520509,
+                0.7027206420898438
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint115",
+            "position": [
+                11.012310028076172,
+                0.016267061233520509,
+                -6.800000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint116",
+            "position": [
+                11.012310028076172,
+                0.016267061233520509,
+                5.702720642089844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint122",
+            "position": [
+                12.012310028076172,
+                0.016267061233520509,
+                -5.6666669845581059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint136",
+            "position": [
+                12.637999534606934,
+                0.016267061233520509,
+                -2.2990000247955324
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint162",
+            "position": [
+                14.567999839782715,
+                0.016267061233520509,
+                -2.3440001010894777
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint168",
+            "position": [
+                16.57900047302246,
+                0.016267061233520509,
+                -2.4679999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint171",
+            "position": [
+                16.512310028076173,
+                0.016267061233520509,
+                -4.297279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint176",
+            "position": [
+                17.012310028076173,
+                0.8496004343032837,
+                -6.297279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint202",
+            "position": [
+                19.512310028076173,
+                0.8496004343032837,
+                -6.297279357910156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                19.219999313354493,
+                0.4099999964237213,
+                -2.9130001068115236
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                15.397000312805176,
+                0.057999998331069949,
+                -4.915999889373779
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                15.607000350952149,
+                0.04399999976158142,
+                -4.670000076293945
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                15.621999740600586,
+                0.057999998331069949,
+                -5.077000141143799
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031083542-103997541_171030615-Find_two_pairs_of_shoes_from_the_living_room,_and_arrange_them_neatly_by_the_door_leading_to_the_yard,_leaning_agai.json",
+    "message": ""
+}

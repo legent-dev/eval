@@ -1,0 +1,442 @@
+{
+    "scene_name": "dining_room__kichen_baked",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/dining_room__kichen_baked.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.0499999523162842,
+        0.0,
+        1.6399999856948853
+    ],
+    "agent_rotation": [
+        0.0,
+        279.2245178222656,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -93211786
+        }
+    ],
+    "floor_objects": [
+        "dining_room__kichen_baked/3ea9d54983ef41049c8c29b9d6d4440a.fbx/RootNode/floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Go and sit at the place with the most abundant sunshine.",
+    "task_text": "The weather is very sunny today. Go and sit at the place with the most abundant sunshine, with your back facing the sunlight.",
+    "task_text_cn": "今天天气非常晴朗。去阳光最充足的地方坐下，背对着阳光。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "sit down",
+            "option_text_cn": "坐下",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -93225306
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -93225306
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "sit down",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.6649999618530275,
+                0.04642680659890175,
+                -3.2900002002716066
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.6600000858306886,
+                0.04642680659890175,
+                0.2409999966621399
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.38100004196167,
+                0.04642680659890175,
+                -1.149999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (3)",
+            "position": [
+                -1.3539999723434449,
+                0.04642680659890175,
+                -1.9520000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (6)",
+            "position": [
+                -2.496999979019165,
+                0.04642680659890175,
+                -2.1710000038146974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (5)",
+            "position": [
+                -1.5859999656677247,
+                0.04642680659890175,
+                -3.378000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (4)",
+            "position": [
+                -0.34299999475479128,
+                0.04642680659890175,
+                -1.9850000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (7)",
+            "position": [
+                1.1139999628067017,
+                0.04642680659890175,
+                -2.2790000438690187
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (8)",
+            "position": [
+                2.4489998817443849,
+                0.04642680659890175,
+                -2.2070000171661379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (9)",
+            "position": [
+                3.822999954223633,
+                0.04642680659890175,
+                -2.184999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (9)",
+            "position": [
+                3.7200000286102297,
+                0.04642680659890175,
+                0.23999999463558198
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (10)",
+            "position": [
+                5.291999816894531,
+                0.04642680659890175,
+                -2.1689999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (11)",
+            "position": [
+                5.189000129699707,
+                0.04642680659890175,
+                0.2560000419616699
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (12)",
+            "position": [
+                5.107999801635742,
+                0.04642680659890175,
+                1.3370000123977662
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                5.263000011444092,
+                0.04642680659890175,
+                -3.3519999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                5.218999862670898,
+                0.04642680659890175,
+                -1.0099999904632569
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (2)",
+            "position": [
+                5.232999801635742,
+                0.04642680659890175,
+                2.5480000972747804
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (10)",
+            "position": [
+                3.639000177383423,
+                0.04642680659890175,
+                1.3209999799728394
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                3.7940001487731935,
+                0.04642680659890175,
+                -3.368000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                3.75,
+                0.04642680659890175,
+                -1.0260000228881837
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                3.764000177383423,
+                0.04642680659890175,
+                2.5320000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -2.4779999256134035,
+                0.04642680659890175,
+                -1.25600004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.9359999895095826,
+                0.04642680659890175,
+                1.4550000429153443
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -2.6059999465942385,
+                0.04642680659890175,
+                2.431999921798706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.26899999380111697,
+                0.04642680659890175,
+                -3.3540000915527345
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -0.2549999952316284,
+                0.04642680659890175,
+                -1.190000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                1.0729999542236329,
+                0.04642680659890175,
+                -1.0010000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (6)",
+            "position": [
+                1.1369999647140504,
+                0.04642680659890175,
+                -3.372999906539917
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                0.8579999804496765,
+                0.04642680659890175,
+                0.3190000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (8)",
+            "position": [
+                2.3459999561309816,
+                0.04642680659890175,
+                0.21799999475479127
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (4)",
+            "position": [
+                0.9570000171661377,
+                0.04642680659890175,
+                1.4220000505447388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (7)",
+            "position": [
+                2.265000104904175,
+                0.04642680659890175,
+                1.2990000247955323
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (5)",
+            "position": [
+                -0.07999999821186066,
+                0.04642680659890175,
+                1.7680000066757203
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.8119999766349793,
+                0.04642680659890175,
+                2.6449999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.3589999675750733,
+                0.04642680659890175,
+                2.546999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.4200000762939455,
+                0.04642680659890175,
+                -3.390000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.375999927520752,
+                0.04642680659890175,
+                -1.0479999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.390000104904175,
+                0.04642680659890175,
+                2.509999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.8220000267028809,
+                0.6745955348014832,
+                -1.5360000133514405
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 3.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241106060624-dining_room__kichen_baked-The_weather_is_very_sunny_today__Go_and_sit_at_the_place_with_the_most_abundant_sunshine,_with_your_back_faci.json",
+    "message": ""
+}

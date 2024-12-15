@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Is the desk oriented towards the wall or away from it?",
     "task_text": "Is the laptop on the desk oriented towards the sofa or away from it? ",
+    "task_text_cn": "桌子上的笔记本电脑是朝向沙发还是背向沙发？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Facing the sofa, with screen opened",
+            "option_text_cn": "面向沙发，屏幕打开。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "The desk is oriented away from the sofa, but facing a wall instead.",
+            "option_text_cn": "桌子背向沙发，而是面向一堵墙。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Stay away from the sofa",
+            "option_text_cn": "远离沙发。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "The laptop is facing the sofa, but turned slightly towards a corner of the room.",
+            "option_text_cn": "笔记本电脑面向沙发，但稍微转向房间的一个角落。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "The laptop is not on the desk anymore; it has been moved.",
+            "option_text_cn": "笔记本电脑不在桌子上了；它被移走了。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "The laptop is facing away from the sofa and towards a window.",
+            "option_text_cn": "笔记本电脑背向沙发，面向窗户。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "The laptop is facing away from the sofa and towards the door.",
+            "option_text_cn": "笔记本电脑背向沙发，面向门。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "The laptop is oriented towards the sofa, but there’s another chair in between.",
+            "option_text_cn": "笔记本电脑朝向沙发，但中间有另一把椅子。",
             "gameObjects": {
                 "list": []
             },
@@ -154,7 +163,7 @@
             "position": [
                 -7.572289943695068,
                 0.003911375999450684,
-                -1.5246998071670533
+                -1.5246998071670532
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 -7.675503730773926,
                 0.003911375999450684,
-                1.4901161193847657e-8
+                1.4901161193847656e-08
             ],
             "type": "navigation"
         },
@@ -172,7 +181,7 @@
             "position": [
                 -5.675503730773926,
                 0.003911375999450684,
-                -4.4770002365112309
+                -4.4770002365112305
             ],
             "type": "navigation"
         },
@@ -199,14 +208,14 @@
             "position": [
                 -3.553999900817871,
                 0.03724473714828491,
-                -4.4679999351501469
+                -4.4679999351501465
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                -3.6666674613952638,
+                -3.6666674613952637,
                 0.03724473714828491,
                 -2.660048484802246
             ],

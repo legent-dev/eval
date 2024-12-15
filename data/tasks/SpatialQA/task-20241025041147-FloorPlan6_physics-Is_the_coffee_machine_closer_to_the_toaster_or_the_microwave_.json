@@ -1,0 +1,225 @@
+{
+    "scene_name": "FloorPlan6_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan6_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -54028236
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan6_physics/Objects/Floor_9ad2d7ca"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -54019552
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan6_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Is the refrigerator closer to the sink or the stove?",
+    "task_text": "Is the coffee machine closer to the toaster or the microwave?",
+    "task_text_cn": "咖啡机离烤面包机更近还是离微波炉更近？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "It is closer to the toaster, by more than one meter.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It is closer to the toaster, but not by more than one meter.",
+            "option_text_cn": "离烤面包机更近，但近不超过一米。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It is closer to the microwave, by more than one meter.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It is closer to the microwave, but not by more than one meter.",
+            "option_text_cn": "离微波炉更近，但近不超过一米。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It's equally close to both.",
+            "option_text_cn": "一样近。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no toaster.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no microwave.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no coffee machine.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "It is closer to the toaster, but not by more than one meter.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.3170000314712525,
+                0.03333333134651184,
+                -1.4129999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.4666666984558106,
+                0.03333333134651184,
+                0.04999971389770508
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.3359999656677247,
+                0.03333333134651184,
+                1.6779999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -0.878000020980835,
+                0.03333333134651184,
+                2.4719998836517336
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.23100000619888307,
+                0.03333333134651184,
+                -0.503000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.972000002861023,
+                0.03333333134651184,
+                0.8410000205039978
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.8360000252723694,
+                0.03333333134651184,
+                2.561000108718872
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241025041147-FloorPlan6_physics-Is_the_coffee_machine_closer_to_the_toaster_or_the_microwave_.json",
+    "message": ""
+}

@@ -56,10 +56,12 @@
     "humans": [],
     "task_template": "If you were sitting on the couch facing the TV, what objects would be in your peripheral vision on both sides?",
     "task_text": "If you were sitting at the desk studying, what objects would be on your right side? ",
+    "task_text_cn": "如果你坐在书桌前学习，你右边会有什么物品？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Shoes and Basketball",
+            "option_text_cn": "鞋子和篮球。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +73,7 @@
         {
             "option_type": "Answer",
             "option_text": "Books and pillows",
+            "option_text_cn": "书和枕头。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +85,7 @@
         {
             "option_type": "Answer",
             "option_text": "Baseball bats and trash cans",
+            "option_text_cn": "棒球棒和垃圾桶。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +97,7 @@
         {
             "option_type": "Answer",
             "option_text": "Laptop and trash can",
+            "option_text_cn": "笔记本电脑和垃圾桶。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +109,7 @@
         {
             "option_type": "Answer",
             "option_text": "Laptop and paper box",
+            "option_text_cn": "笔记本电脑和纸盒。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +121,7 @@
         {
             "option_type": "Answer",
             "option_text": "card and pillow",
+            "option_text_cn": "卡片和枕头。",
             "gameObjects": {
                 "list": []
             },
@@ -126,6 +133,7 @@
         {
             "option_type": "Answer",
             "option_text": "Shoes and tennis ball",
+            "option_text_cn": "鞋子和网球。",
             "gameObjects": {
                 "list": []
             },
@@ -137,6 +145,7 @@
         {
             "option_type": "Answer",
             "option_text": "tennis ball and pillows",
+            "option_text_cn": "网球和枕头。",
             "gameObjects": {
                 "list": []
             },
@@ -176,7 +185,7 @@
             "position": [
                 0.8333333730697632,
                 0.03333333134651184,
-                1.2000000476837159
+                1.2000000476837158
             ],
             "type": "navigation"
         },
@@ -185,7 +194,7 @@
             "position": [
                 2.658578872680664,
                 0.03333333134651184,
-                -0.34142112731933596
+                -0.34142112731933594
             ],
             "type": "navigation"
         },

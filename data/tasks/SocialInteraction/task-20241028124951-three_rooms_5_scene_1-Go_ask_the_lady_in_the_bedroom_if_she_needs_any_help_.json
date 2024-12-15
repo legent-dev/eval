@@ -1,0 +1,239 @@
+{
+    "scene_name": "three_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.9359999895095826,
+        0.0,
+        0.6809999942779541
+    ],
+    "agent_rotation": [
+        0.0,
+        75.95904541015625,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -848406
+        },
+        {
+            "instanceID": -848382
+        },
+        {
+            "instanceID": -848394
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_1/CreatedWalls/identifier14_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier13_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -839614
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_1/CreatedObjects/identifier6_Doorway_8.glb/Doorway_8(Clone)/Doorway_Door_8"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -849714
+            },
+            "human_position": [
+                3.7829999923706056,
+                0.02500009536743164,
+                3.38700008392334
+            ],
+            "human_rotation": [
+                0.0,
+                208.73590087890626,
+                0.0
+            ],
+            "asset": "Ch21_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Go ask the girl in the living room if she needs any help.",
+    "task_text": "Go ask the lady in the bedroom if she needs any help.",
+    "task_text_cn": "去问卧室里的女士是否需要帮助。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "ask the lady",
+            "option_text_cn": "问女士。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -850984
+                    }
+                ]
+            },
+            "objects": [
+                "NavPoints/NavigationPoint8"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -850984
+                            }
+                        ],
+                        "required_objects": [
+                            "NavPoints/NavigationPoint8"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "ask the lady",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "ask the lady",
+            "targetObject": {
+                "instanceID": -850524
+            },
+            "predicate_object": "NavPoints/NavigationPoint6",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.9754961729049683,
+                0.0416666716337204,
+                0.741100549697876
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.2333333492279053,
+                0.0416666716337204,
+                2.1594347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.5980000495910645,
+                0.0416666716337204,
+                -1.5290000438690186
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.9994240403175354,
+                0.0416666716337204,
+                3.9670355319976808
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.3449999988079071,
+                0.0416666716337204,
+                1.0169999599456788
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.240999937057495,
+                0.0416666716337204,
+                -0.23499999940395356
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.5519999861717224,
+                0.0416666716337204,
+                1.187000036239624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.7139999866485596,
+                0.0416666716337204,
+                1.152999997138977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.561000108718872,
+                0.0416666716337204,
+                2.7109999656677248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.8570001125335695,
+                0.0416666716337204,
+                -1.4859999418258668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.075000047683716,
+                0.0416666716337204,
+                1.0679999589920045
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028124951-three_rooms_5_scene_1-Go_ask_the_lady_in_the_bedroom_if_she_needs_any_help_.json",
+    "message": ""
+}

@@ -1,0 +1,220 @@
+{
+    "scene_name": "bedroom_15_scene_4",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_4.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.9210000038146973,
+        0.0,
+        4.230999946594238
+    ],
+    "agent_rotation": [
+        0.0,
+        266.87786865234377,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2648160
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_4/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -2649050
+            },
+            "human_position": [
+                1.590000033378601,
+                0.0,
+                0.39500001072883608
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch37_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "My glasses are missing. Can you help me look for them? I last remember using them in the study.",
+    "task_text": "My red glasses are missing. Please help me look for them in the room. Once you find them, bring them to me.",
+    "task_text_cn": "我的眼镜不见了。请在房间里帮我找一下。找到后拿给我。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the glasses",
+            "option_text_cn": "拿起眼镜。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2646832
+                    },
+                    {
+                        "instanceID": -2647576
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_4/CreatedObjects/identifier26_1ae19fc3b20c44bd8b4b0d371f26d7a9.glb",
+                "bedroom_15_scene_4/CreatedObjects/identifier38_733e168917144333b65dea5b78c0a64f.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2649050
+                    },
+                    {
+                        "instanceID": -2646832
+                    }
+                ]
+            },
+            "objects": [
+                "Ch37_nonPBR",
+                "bedroom_15_scene_4/CreatedObjects/identifier26_1ae19fc3b20c44bd8b4b0d371f26d7a9.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -2649050
+                            },
+                            {
+                                "instanceID": -2646832
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch37_nonPBR",
+                            "bedroom_15_scene_4/CreatedObjects/identifier26_1ae19fc3b20c44bd8b4b0d371f26d7a9.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -2646832
+            },
+            "predicate_object": "bedroom_15_scene_4/CreatedObjects/identifier26_1ae19fc3b20c44bd8b4b0d371f26d7a9.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -2646832
+            },
+            "predicate_object": "bedroom_15_scene_4/CreatedObjects/identifier26_1ae19fc3b20c44bd8b4b0d371f26d7a9.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.6579999923706055,
+                0.04901123046875,
+                0.8640000224113464
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.9810000061988831,
+                0.04901123046875,
+                4.158999919891357
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                1.3040000200271607,
+                0.04901123046875,
+                2.309000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                1.2619999647140504,
+                0.04901123046875,
+                3.489000082015991
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.8529999256134035,
+                0.04901123046875,
+                0.9700000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.805000066757202,
+                0.04901123046875,
+                2.193000078201294
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.26600000262260439,
+                0.04901123046875,
+                4.035999774932861
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029061439-bedroom_15_scene_4-My_red_glasses_are_missing__Please_help_me_look_for_them_in_the_room__Once_you_find_them,_bring_them_to_me_.json",
+    "message": ""
+}

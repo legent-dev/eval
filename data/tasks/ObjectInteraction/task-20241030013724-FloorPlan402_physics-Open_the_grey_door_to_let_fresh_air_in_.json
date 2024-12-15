@@ -1,0 +1,209 @@
+{
+    "scene_name": "FloorPlan402_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan402_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.0169999599456788,
+        0.0,
+        3.74399995803833
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -1822478
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan402_physics/Objects/Floor_778474a8"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -1817822
+        },
+        {
+            "instanceID": -1823482
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan402_physics/FPSController",
+        "FloorPlan402_physics/Lighting"
+    ],
+    "humans": [],
+    "task_template": "Open the black appliance used for heating food.",
+    "task_text": "Open the grey door to let fresh air in.",
+    "task_text_cn": "把灰色的门打开，让新鲜空气进来。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "open the door",
+            "option_text_cn": "打开门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -1825172
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -1825172
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "open the door",
+            "targetObject": {
+                "instanceID": -1825172
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.1630001068115236,
+                -0.0003969818353652954,
+                4.7729997634887699
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -3.1579999923706056,
+                -0.0003969818353652954,
+                4.281000137329102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.766666889190674,
+                -0.0003969818353652954,
+                1.0474128723144532
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.253999948501587,
+                -0.0003969818353652954,
+                4.27400016784668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -2.2360000610351564,
+                -0.0003969818353652954,
+                2.3459999561309816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -0.6029999852180481,
+                -0.0003969818353652954,
+                2.3459999561309816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.6026082038879395,
+                -0.0003969818353652954,
+                1.0474128723144532
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.4569999873638153,
+                -0.0003969818353652954,
+                4.047412872314453
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.378999948501587,
+                -0.0003969818353652954,
+                4.184000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (2)",
+            "position": [
+                -1.3799999952316285,
+                -0.0003969818353652954,
+                2.3429999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -3.148005962371826,
+                1.046269178390503,
+                5.128758907318115
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -3.2190001010894777,
+                0.2549999952316284,
+                5.052000045776367
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030013724-FloorPlan402_physics-Open_the_grey_door_to_let_fresh_air_in_.json",
+    "message": ""
+}

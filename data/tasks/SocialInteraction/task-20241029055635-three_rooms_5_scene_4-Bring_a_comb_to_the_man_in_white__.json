@@ -1,0 +1,225 @@
+{
+    "scene_name": "three_rooms_5_scene_4",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_4.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.8690000176429749,
+        0.0,
+        1.2489999532699586
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2588874
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_4/CreatedWalls"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -2589938
+            },
+            "human_position": [
+                2.463549852371216,
+                0.02500009536743164,
+                0.9012855291366577
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Bring the book to the lady in red.",
+    "task_text": "Bring a comb to the man in white. ",
+    "task_text_cn": "把梳子带给穿白色衣服的人。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the comb",
+            "option_text_cn": "拿起梳子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2586094
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_4/CreatedObjects/identifier61_0bde272bb07b4e1a99fd2f981926e187.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2589938
+                    },
+                    {
+                        "instanceID": -2586094
+                    }
+                ]
+            },
+            "objects": [
+                "Ch01_nonPBR",
+                "three_rooms_5_scene_4/CreatedObjects/identifier61_0bde272bb07b4e1a99fd2f981926e187.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -2589938
+                            },
+                            {
+                                "instanceID": -2586094
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch01_nonPBR",
+                            "three_rooms_5_scene_4/CreatedObjects/identifier61_0bde272bb07b4e1a99fd2f981926e187.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -2586094
+            },
+            "predicate_object": "three_rooms_5_scene_4/CreatedObjects/identifier61_0bde272bb07b4e1a99fd2f981926e187.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.4801173210144045,
+                0.02500009536743164,
+                2.700000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (5)",
+            "position": [
+                0.8740000128746033,
+                0.02500009536743164,
+                2.6389999389648439
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                2.0329999923706056,
+                0.02500009536743164,
+                1.4279999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (6)",
+            "position": [
+                0.8510000109672546,
+                0.02500009536743164,
+                1.309000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -0.3569999933242798,
+                0.02500009536743164,
+                1.2979999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -2.5920000076293947,
+                0.02500009536743164,
+                0.7459999918937683
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (4)",
+            "position": [
+                -1.3229999542236329,
+                0.02500009536743164,
+                2.3940000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.467128276824951,
+                0.47819775342941286,
+                3.3837597370147707
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029055635-three_rooms_5_scene_4-Bring_a_comb_to_the_man_in_white__.json",
+    "message": ""
+}

@@ -1,0 +1,364 @@
+{
+    "scene_name": "three_rooms_5_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.3389999866485596,
+        2.2351741790771486e-8,
+        3.4690001010894777
+    ],
+    "agent_rotation": [
+        0.0,
+        75.36619567871094,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -42507996
+        },
+        {
+            "instanceID": -42508008
+        },
+        {
+            "instanceID": -42508020
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_0/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier14_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -42501344
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_0/CreatedObjects/identifier1_Doorway_4.glb/Doorway_4(Clone)/Doorway_Door_4"
+    ],
+    "humans": [],
+    "task_template": "Organize the desk by arranging the laptop computer, magazine, and coffee cup neatly.",
+    "task_text": "Organize the bed by arranging all the newspaper, notebooks, and other paper items that are on the bed under the recliner in the corner.",
+    "task_text_cn": "整理床铺，把床上的报纸，笔记本和其他纸质物品整齐地放在角落里的躺椅下。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -42506052
+                    },
+                    {
+                        "instanceID": -42506316
+                    },
+                    {
+                        "instanceID": -42506384
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_0/CreatedObjects/identifier59_9ebe03b486334d2696b974f9e58afd40.glb",
+                "three_rooms_5_scene_0/CreatedObjects/identifier62_Newspaper_5.glb",
+                "three_rooms_5_scene_0/CreatedObjects/identifier63_73154336fbee4190ad45b3352f86a8fe.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -42746212
+                    },
+                    {
+                        "instanceID": -42754498
+                    },
+                    {
+                        "instanceID": -42770382
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)",
+                "SpecialPoint (2)",
+                "SpecialPoint (3)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506052
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier59_9ebe03b486334d2696b974f9e58afd40.glb",
+            "targetPlace": {
+                "instanceID": -42746212
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506316
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier62_Newspaper_5.glb",
+            "targetPlace": {
+                "instanceID": -42754498
+            },
+            "predicate_place": "SpecialPoint (2)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506384
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier63_73154336fbee4190ad45b3352f86a8fe.glb",
+            "targetPlace": {
+                "instanceID": -42770382
+            },
+            "predicate_place": "SpecialPoint (3)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506052
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier59_9ebe03b486334d2696b974f9e58afd40.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (3)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506316
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier62_Newspaper_5.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (3)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -42506384
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier63_73154336fbee4190ad45b3352f86a8fe.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (3)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.1760425567626955,
+                0.584265410900116,
+                3.103132963180542
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.0642764568328859,
+                0.5783830285072327,
+                2.3955013751983644
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                3.630593776702881,
+                0.7241913080215454,
+                3.2298264503479006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.013000011444092,
+                0.0416666716337204,
+                1.3899999856948853
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.4067835807800295,
+                0.0416666716337204,
+                1.3310117721557618
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.439159870147705,
+                0.0416666716337204,
+                0.604371964931488
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.4968600273132326,
+                0.0416666716337204,
+                2.669175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.7534328699111939,
+                0.0416666716337204,
+                3.284567356109619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.9629999995231628,
+                0.0416666716337204,
+                -1.1239999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.0269999504089356,
+                0.0416666716337204,
+                1.5509999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.399999976158142,
+                0.0416666716337204,
+                3.4070000648498537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.498736619949341,
+                0.0416666716337204,
+                -3.2391626834869386
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                2.5031399726867677,
+                0.0416666716337204,
+                -1.330824851989746
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.1760425567626955,
+                0.5872418284416199,
+                3.103132963180542
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                2.9700000286102297,
+                0.45211416482925417,
+                1.715000033378601
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.854383945465088,
+                0.45211416482925417,
+                0.39303040504455569
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.6112765073776245,
+                0.02500021457672119,
+                3.8127541542053224
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                0.8299999833106995,
+                0.02499997615814209,
+                3.859999895095825
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (3)",
+            "position": [
+                1.061476707458496,
+                0.02499997615814209,
+                3.8186020851135256
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241101073250-three_rooms_5_scene_0-Organize_the_bed_by_arranging_all_the_newspaper,_notebooks,_and_other_paper_items_that_are_on_the_bed_under_the_r.json",
+    "message": ""
+}

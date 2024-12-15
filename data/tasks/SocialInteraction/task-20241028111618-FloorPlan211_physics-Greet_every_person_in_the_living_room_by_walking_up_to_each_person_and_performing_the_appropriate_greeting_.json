@@ -1,0 +1,301 @@
+{
+    "scene_name": "FloorPlan211_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan211_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.555999994277954,
+        0.0,
+        -1.4049999713897706
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -11130094
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan211_physics/Objects/Floor_75ae3473"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -11124372
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan211_physics/FPSController"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -11131414
+            },
+            "human_position": [
+                -1.3229999542236329,
+                0.0,
+                -1.159000039100647
+            ],
+            "human_rotation": [
+                0.0,
+                44.999996185302737,
+                0.0
+            ],
+            "asset": "Ch02_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        },
+        {
+            "human": {
+                "instanceID": -11131714
+            },
+            "human_position": [
+                1.034999966621399,
+                1.1920928955078126e-7,
+                1.7669999599456788
+            ],
+            "human_rotation": [
+                0.0,
+                208.85659790039063,
+                0.0
+            ],
+            "asset": "Ch38_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Greet every person in the office.",
+    "task_text": "Greet every person in the living room by walking up to each person and performing the appropriate greeting.",
+    "task_text_cn": "向客厅里的每个人打招呼，通过走向每个人并执行正确的打招呼动作。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "greet the man",
+            "option_text_cn": "和男人打招呼",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11131714
+                    }
+                ]
+            },
+            "objects": [
+                "Ch38_nonPBR"
+            ],
+            "interaction_distance": 2.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -11131714
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch38_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "greet the woman",
+            "option_text_cn": "和女人打招呼",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -11131414
+                    }
+                ]
+            },
+            "objects": [
+                "Ch02_nonPBR"
+            ],
+            "interaction_distance": 2.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -11131414
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch02_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "greet the man",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "greet the woman",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.6819999814033508,
+                0.0560000017285347,
+                -0.6010000109672546
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.2630000114440919,
+                0.03333331644535065,
+                0.15000009536743165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.4040000438690186,
+                0.03333331644535065,
+                1.7237764596939088
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.4980000257492066,
+                0.13333331048488618,
+                -1.4500000476837159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.035999998450279239,
+                0.03333331644535065,
+                1.1050000190734864
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                0.7360000014305115,
+                0.03333331644535065,
+                1.0709999799728394
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (2)",
+            "position": [
+                0.8180000185966492,
+                0.03333331644535065,
+                -0.07699999958276749
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.5600000023841858,
+                0.03333331644535065,
+                -1.215999960899353
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.5333335399627687,
+                0.03333331644535065,
+                -1.406999945640564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                2.630000114440918,
+                0.03333331644535065,
+                -0.22699999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (2)",
+            "position": [
+                3.502000093460083,
+                0.03333331644535065,
+                0.03799999877810478
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.60495924949646,
+                0.03333331644535065,
+                1.3531184196472169
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                4.150000095367432,
+                0.03333331644535065,
+                1.433333396911621
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028111618-FloorPlan211_physics-Greet_every_person_in_the_living_room_by_walking_up_to_each_person_and_performing_the_appropriate_greeting_.json",
+    "message": ""
+}

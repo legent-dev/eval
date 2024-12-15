@@ -1,0 +1,218 @@
+{
+    "scene_name": "bedroom_15_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.8310000896453859,
+        0.0,
+        2.063999891281128
+    ],
+    "agent_rotation": [
+        0.0,
+        192.22174072265626,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -28632918
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_0/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Take a plate from the kitchen cabinet and put it on the dining table.",
+    "task_text": "Take the black-screened computer from the white velvet bed and put it on the empty stool.",
+    "task_text_cn": "从白色天鹅绒床上拿起黑屏的电脑，并把它放在空凳子上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the laptop",
+            "option_text_cn": "拿起笔记本电脑。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -28629614
+                    },
+                    {
+                        "instanceID": -28629170
+                    },
+                    {
+                        "instanceID": -28628170
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_0/CreatedObjects/identifier30_391952ba56ee4a4f8effdaf78afc67cb.glb",
+                "bedroom_15_scene_0/CreatedObjects/identifier24_781860fde457453b9eb1afb9c02ebd05.glb",
+                "bedroom_15_scene_0/CreatedObjects/identifier13_3ad34e05831e4826b2cee9d4bdb6082f.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the stool",
+            "option_text_cn": "放在凳子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -28634728
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -28629614
+            },
+            "predicate_object": "bedroom_15_scene_0/CreatedObjects/identifier30_391952ba56ee4a4f8effdaf78afc67cb.glb",
+            "targetPlace": {
+                "instanceID": -28634728
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -28629614
+            },
+            "predicate_object": "bedroom_15_scene_0/CreatedObjects/identifier30_391952ba56ee4a4f8effdaf78afc67cb.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.1679999828338624,
+                0.0416666716337204,
+                2.4539999961853029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.0820000171661378,
+                0.0416666716337204,
+                0.621999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.4830000400543213,
+                0.0416666716337204,
+                3.4679999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.5420000553131105,
+                0.0416666716337204,
+                1.8940000534057618
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.569999933242798,
+                0.0416666716337204,
+                3.7950000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.7219998836517336,
+                0.0416666716337204,
+                4.120999813079834
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                3.8499999046325685,
+                0.0416666716337204,
+                1.6890000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7-Target",
+            "position": [
+                3.7320001125335695,
+                0.04166668653488159,
+                1.1419999599456788
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.4000000059604645,
+                0.5542122721672058,
+                2.6429998874664308
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                0.7910000085830689,
+                0.0416666716337204,
+                3.4179999828338625
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.3440000116825104,
+                0.8399999737739563,
+                2.6440000534057619
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031050645-bedroom_15_scene_0-Take_the_black-screened_computer_from_the_white_velvet_bed_and_put_it_on_the_empty_stool_.json",
+    "message": ""
+}

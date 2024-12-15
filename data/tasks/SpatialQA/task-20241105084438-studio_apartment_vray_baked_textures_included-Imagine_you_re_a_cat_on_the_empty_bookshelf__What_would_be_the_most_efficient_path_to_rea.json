@@ -1,0 +1,286 @@
+{
+    "scene_name": "studio_apartment_vray_baked_textures_included",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/studio_apartment_vray_baked_textures_included.glb",
+    "scene_scale": [
+        0.0010280344868078828,
+        0.0010280344868078828,
+        0.0010280344868078828
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.0230000019073487,
+        0.0,
+        -1.5440000295639039
+    ],
+    "agent_rotation": [
+        0.0,
+        308.57489013671877,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -70151264
+        },
+        {
+            "instanceID": -70150992
+        },
+        {
+            "instanceID": -70151152
+        }
+    ],
+    "floor_objects": [
+        "studio_apartment_vray_baked_textures_included/42952a9e192143b68c3310c2439c957d.fbx/RootNode/floor",
+        "studio_apartment_vray_baked_textures_included/42952a9e192143b68c3310c2439c957d.fbx/RootNode/bath_walls",
+        "studio_apartment_vray_baked_textures_included/42952a9e192143b68c3310c2439c957d.fbx/RootNode/outdoor_walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -70151864
+        }
+    ],
+    "removed_objects": [
+        "studio_apartment_vray_baked_textures_included/42952a9e192143b68c3310c2439c957d.fbx/RootNode/Box8424"
+    ],
+    "humans": [],
+    "task_template": "Imagine you're a cat. What would be the most efficient path to traverse every room in the house without touching the floor?",
+    "task_text": "Imagine you're a cat on the empty bookshelf. What would be the most efficient path to reach the balcony while minimizing contact with the floor?",
+    "task_text_cn": "想象一下你是在空书架上的一只猫。在尽量减少与地面接触的情况下，到达阳台的最有效路径是什么",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Jump onto the sofa, then onto the sofa table, onto the armchair, and finally onto the windowsill to enter the balcony.",
+            "option_text_cn": "爬上书架，跳到沙发上，接着跳到沙发桌，再跳到扶手椅上，最后跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Jump onto the kitchen counter, then onto the dining table, then onto the sofa table, then onto the sofa. Jump from the edge of the sofa armrest to the ground and finally enter through the balcony door.",
+            "option_text_cn": "爬上厨房柜台，跳到餐桌上，接着跳到沙发桌，再跳到沙发上。从沙发扶手边缘跳到地上，最后从阳台门进入。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Jump onto the sofa. Walk on the top of the sofa back to the end. Jump onto the floor lamp and then onto the windowsill to enter the balcony.",
+            "option_text_cn": "爬上书架，跳到沙发上。在沙发靠背顶部走到尽头。跳到落地灯上，然后跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Jump onto kitchen counter, then onto the dining table, then onto the television, then onto the armchair, and finally onto the windowsill to enter the balcony.",
+            "option_text_cn": "爬上厨房柜台，跳到餐桌上，接着跳到电视上，再跳到扶手椅上，最后跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Turn around and run to the left room at the end. Climb up the toilet and jump into the bathtub.",
+            "option_text_cn": "转身跑到尽头左侧的房间。爬上马桶，跳进浴池。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pass through the small path between the sofa and the sofa table. Jump onto the armchair and then onto the windowsill to enter the balcony.",
+            "option_text_cn": "穿过沙发和沙发桌之间的小路。跳到扶手椅上，然后跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pass through the small path between the television and the sofa table. Jump onto the armchair and then onto the windowsill to enter the balcony.",
+            "option_text_cn": "穿过电视和沙发桌之间的小路。跳到扶手椅上，然后跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Jump onto the dining table. Jump from the dining chair to the carpet. Climb onto the sofa. Jump from the edge of the sofa armrest to the windowsill and enter the balcony.",
+            "option_text_cn": "爬上餐桌。从餐椅跳到地毯上。爬上沙发。从沙发扶手边缘跳到窗台上进入阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Jump onto the sofa. Walk on the top of the sofa back to the end. Jump onto the floor lamp and then onto the windowsill to enter the balcony.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.7545928955078125,
+                0.013309478759765625,
+                3.0230653285980226
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.2675365209579468,
+                0.013309478759765625,
+                4.616511344909668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.1759999990463257,
+                0.013309478759765625,
+                -4.14300012588501
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.0520000457763672,
+                0.013309478759765625,
+                -1.5119999647140504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.3449999988079071,
+                0.013309478759765625,
+                -4.251999855041504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.32532572746276858,
+                0.013309478759765625,
+                4.985532283782959
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.22699999809265138,
+                0.013309478759765625,
+                -1.6759999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -0.6480000019073486,
+                0.013309478759765625,
+                0.11400000005960465
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                0.12300000339746475,
+                0.013309478759765625,
+                3.1740000247955324
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.5680000185966492,
+                0.013309478759765625,
+                0.13600000739097596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                1.022301435470581,
+                0.013309478759765625,
+                1.5202949047088624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                0.7392744421958923,
+                0.013309478759765625,
+                4.6638312339782719
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105084438-studio_apartment_vray_baked_textures_included-Imagine_you_re_a_cat_on_the_empty_bookshelf__What_would_be_the_most_efficient_path_to_rea.json",
+    "message": ""
+}

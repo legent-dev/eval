@@ -1,0 +1,226 @@
+{
+    "scene_name": "three_rooms_5_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.5299999713897706,
+        2.2351741790771486e-8,
+        -2.2100000381469728
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -72502722
+        },
+        {
+            "instanceID": -72502734
+        },
+        {
+            "instanceID": -72502746
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_1/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_1/CreatedWalls/identifier14_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -72493946
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_1/CreatedObjects/identifier6_Doorway_8.glb"
+    ],
+    "humans": [],
+    "task_template": "Locate the smallest potted plant in the house and navigate to it without bumping into any furniture.",
+    "task_text": "Locate the table with at least one drawer and the fewest drawers in the house, and navigate to it without bumping into any furniture.",
+    "task_text_cn": "找到并走向房子里至少有一个抽屉且抽屉最少的桌子，并在不撞到任何家具的情况下走到它那里。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_near",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -72507482
+            },
+            "predicate_object": "SpecialPoint (1)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.9180352687835694,
+                0.0416666716337204,
+                0.4269999861717224
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.659999966621399,
+                0.0416666716337204,
+                1.871000051498413
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -0.460999995470047,
+                0.0416666716337204,
+                2.052000045776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -0.46700000762939455,
+                0.0416666716337204,
+                0.9139999747276306
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.0190000534057618,
+                0.0416666716337204,
+                4.193999767303467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.5700000524520875,
+                0.0416666716337204,
+                -2.1710000038146974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.27000001072883608,
+                0.0416666716337204,
+                0.9039999842643738
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.9449999928474426,
+                0.0416666716337204,
+                2.8959999084472658
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                0.7960000038146973,
+                0.0416666716337204,
+                2.055000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                2.4830000400543215,
+                0.0416666716337204,
+                -0.7689999938011169
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.1689999103546144,
+                0.0416666716337204,
+                1.8619999885559083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                3.434999942779541,
+                0.0416666716337204,
+                1.6990000009536744
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (3)",
+            "position": [
+                3.569000005722046,
+                0.0416666716337204,
+                0.5260000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                2.200000047683716,
+                0.0416666716337204,
+                0.7039999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.3480000495910646,
+                0.0416666716337204,
+                3.4094347953796388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.8799999952316285,
+                0.33799999952316286,
+                0.43299999833106997
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.38999998569488528,
+                0.5490000247955322,
+                2.7960000038146974
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241026194324-three_rooms_5_scene_1-Locate_the_table_with_at_least_one_drawer_and_the_fewest_drawers_in_the_house,_and_navigate_to_it_without_bumping_into_any_furniture_.json",
+    "message": ""
+}

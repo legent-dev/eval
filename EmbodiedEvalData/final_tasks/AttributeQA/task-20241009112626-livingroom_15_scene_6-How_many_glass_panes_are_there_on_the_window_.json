@@ -1,0 +1,246 @@
+{
+    "scene_name": "livingroom_15_scene_6",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/livingroom_15_scene_6.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -13551606
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_6/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many shelves are in the main bookcase?",
+    "task_text": "How many glass panes are there on the window?",
+    "task_text_cn": "窗户上有多少块玻璃？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "18",
+            "option_text_cn": "十八",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "4",
+            "option_text_cn": "四",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "6",
+            "option_text_cn": "六",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "8",
+            "option_text_cn": "八",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "10",
+            "option_text_cn": "十",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "12",
+            "option_text_cn": "十二",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "14",
+            "option_text_cn": "十四",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "16",
+            "option_text_cn": "十六",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "16",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.4390000104904175,
+                0.0416666716337204,
+                0.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.47999998927116394,
+                0.0416666716337204,
+                2.134999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.3940000534057617,
+                0.061710551381111145,
+                3.3310000896453857
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.2839999198913574,
+                0.0416666716337204,
+                5.317999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.9104371070861816,
+                0.0416666716337204,
+                0.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.546999931335449,
+                0.0416666716337204,
+                2.9104371070861816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (3)",
+            "position": [
+                4.276000022888184,
+                0.0416666716337204,
+                3.0179998874664307
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                3.4170000553131104,
+                0.0416666716337204,
+                4.3460001945495605
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (2)",
+            "position": [
+                3.4170000553131104,
+                0.0416666716337204,
+                5.382999897003174
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.5222296714782715,
+                0.0416666716337204,
+                1.203726053237915
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241009112626-livingroom_15_scene_6-How_many_glass_panes_are_there_on_the_window_.json",
+    "message": ""
+}

@@ -1,0 +1,272 @@
+{
+    "scene_name": "3d_premium_floorplan_c10",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/3d_premium_floorplan_c10.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        41.25,
+        0.01297111064195633,
+        34.880001068115237
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -71994230
+        }
+    ],
+    "floor_objects": [
+        "3d_premium_floorplan_c10/C10.obj.cleaner.materialmerger.gles/Object_14"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -71994238
+        }
+    ],
+    "removed_objects": [
+        "3d_premium_floorplan_c10/C10.obj.cleaner.materialmerger.gles/Object_15"
+    ],
+    "humans": [],
+    "task_template": "Navigate to the cat in the large pet store.",
+    "task_text": "Navigate to the bedroom closest to the entrance.",
+    "task_text_cn": "导航去离门口最近的卧室",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -72003032
+            },
+            "predicate_object": "NavPoints/NavigationPoint21",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                41.290000915527347,
+                0.01297111064195633,
+                34.90999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                40.053001403808597,
+                0.01297111064195633,
+                36.83100128173828
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                40.000003814697269,
+                0.4129711389541626,
+                38.0421142578125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                39.86000061035156,
+                0.01297111064195633,
+                40.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                40.16999816894531,
+                0.01297111064195633,
+                42.349998474121097
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                40.50899887084961,
+                0.01297111064195633,
+                43.82600021362305
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                39.91299819946289,
+                0.01297111064195633,
+                46.354000091552737
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                41.367000579833987,
+                0.01297111064195633,
+                46.38100051879883
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                41.880001068115237,
+                0.01297111064195633,
+                38.310001373291019
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                41.33000183105469,
+                0.01297111064195633,
+                36.93000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (2)",
+            "position": [
+                42.72999954223633,
+                0.01297111064195633,
+                37.060001373291019
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                42.20000076293945,
+                0.01297111064195633,
+                42.61000061035156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                41.83000183105469,
+                0.01297111064195633,
+                40.33000183105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                41.97200012207031,
+                0.01297111064195633,
+                44.11399841308594
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                44.210350036621097,
+                0.01297111064195633,
+                45.669551849365237
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                44.869998931884769,
+                0.01297111064195633,
+                36.43000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (1)",
+            "position": [
+                44.810001373291019,
+                0.01297111064195633,
+                37.380001068115237
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (2)",
+            "position": [
+                44.040000915527347,
+                0.01297111064195633,
+                38.13999938964844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                43.22999954223633,
+                0.01297111064195633,
+                40.2599983215332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                43.880001068115237,
+                0.01297111064195633,
+                42.68000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                44.16999816894531,
+                0.01297111064195633,
+                43.93000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21 (1)",
+            "position": [
+                45.2400016784668,
+                0.01297111064195633,
+                43.880001068115237
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                45.65679931640625,
+                0.01297111064195633,
+                42.5421142578125
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105094829-3d_premium_floorplan_c10-Navigate_to_the_bedroom_closest_to_the_entrance_.json",
+    "message": ""
+}

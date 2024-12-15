@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Considering the current furniture arrangement, where would be the optimal place to add a new bookshelf that doesn't disrupt the flow of movement in the room?",
     "task_text": "Considering the current furniture arrangement, where would be the optimal place to add a new bookshelf without disrupting the flow of movement in the room? ",
+    "task_text_cn": "考虑当前的家具布置，在哪里添加一个新书架而不会扰乱房间的流动？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "In front of the wall near the door",
+            "option_text_cn": "在门附近的墙前面。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Between the sofa and coffee table",
+            "option_text_cn": "在沙发和咖啡桌之间。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "In front of the mural",
+            "option_text_cn": "在壁画前面。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "In front of the sofa",
+            "option_text_cn": "在沙发前面。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "In front of the laptop",
+            "option_text_cn": "在笔记本电脑前面。",
             "gameObjects": {
                 "list": []
             },
@@ -92,7 +98,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "in a coner far from door",
+            "option_text": "in a corner far from door",
+            "option_text_cn": "在远离门的角落。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "Behind the sofa",
+            "option_text_cn": "在沙发后面。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "It's hard to deal with",
+            "option_text_cn": "这很难处理。",
             "gameObjects": {
                 "list": []
             },
@@ -143,8 +152,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -3.2104146480560304,
-                -0.00002345442771911621,
+                -3.2104146480560303,
+                -2.345442771911621e-05,
                 1.809959888458252
             ],
             "type": "navigation"
@@ -153,7 +162,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -3.269500732421875,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 3.005000114440918
             ],
             "type": "navigation"
@@ -162,7 +171,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.237877368927002,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.312999963760376
             ],
             "type": "navigation"
@@ -171,8 +180,8 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.2642706632614136,
-                -0.00002345442771911621,
-                3.0339999198913576
+                -2.345442771911621e-05,
+                3.0339999198913574
             ],
             "type": "navigation"
         },
@@ -180,7 +189,7 @@
             "name": "NavigationPoint4",
             "position": [
                 0.4333333969116211,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.2660000324249268
             ],
             "type": "navigation"

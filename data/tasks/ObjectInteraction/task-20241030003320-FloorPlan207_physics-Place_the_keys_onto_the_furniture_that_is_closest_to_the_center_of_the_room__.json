@@ -1,0 +1,301 @@
+{
+    "scene_name": "FloorPlan207_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan207_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.8180000185966492,
+        0.0,
+        -0.5600000023841858
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -20368172
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan207_physics/Objects/Floor_0d809d9e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -20362506
+        },
+        {
+            "instanceID": -20363938
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan207_physics/FPSController",
+        "FloorPlan207_physics/Objects/Box_046f9ebd"
+    ],
+    "humans": [],
+    "task_template": "Place the water bottle on the furniture that is closest to the center of the room.",
+    "task_text": "Place the keys onto the furniture that is closest to the center of the room. ",
+    "task_text_cn": "把钥匙放在离房间中心最近的家具上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the keys",
+            "option_text_cn": "拿起钥匙。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -20366972
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan207_physics/Objects/KeyChain_277c5072"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put on the table",
+            "option_text_cn": "把它放在桌子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -20370786
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put on the sofa",
+            "option_text_cn": "把它放在沙发上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -20370796
+                    },
+                    {
+                        "instanceID": -20370806
+                    },
+                    {
+                        "instanceID": -20370816
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)",
+                "SpecialPoint (2)",
+                "SpecialPoint (3)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -20366972
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/KeyChain_277c5072",
+            "targetPlace": {
+                "instanceID": -20370786
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -20366972
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/KeyChain_277c5072",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.7122149467468262,
+                0.03333333134651184,
+                1.3666667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.0839999914169312,
+                0.03333333134651184,
+                2.9059998989105226
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -0.7900000214576721,
+                0.03333333134651184,
+                1.4609999656677247
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (5)",
+            "position": [
+                -0.7559999823570252,
+                0.03333333134651184,
+                0.5120000243186951
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (4)",
+            "position": [
+                -0.7839999794960022,
+                0.03333333134651184,
+                -1.4539999961853028
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                0.6309999823570252,
+                0.03333333134651184,
+                -0.27399998903274538
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.17467083036899568,
+                0.5127136707305908,
+                0.6883885264396668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                2.875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.3140000104904175,
+                0.03333333134651184,
+                -1.6139999628067017
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.4490000009536743,
+                0.03333333134651184,
+                1.3580000400543213
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.7122149467468262,
+                0.7559407949447632,
+                0.7825742959976196
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint5-Target",
+            "position": [
+                -0.0020000000949949028,
+                0.03333333134651184,
+                0.8799999952316284
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.17467083036899568,
+                0.5263590812683106,
+                0.6883885264396668
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.43852129578590395,
+                0.2697310447692871,
+                2.0640106201171877
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                -0.628510594367981,
+                0.2688877582550049,
+                2.0706233978271486
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (3)",
+            "position": [
+                -1.2346382141113282,
+                0.30650901794433596,
+                1.0431766510009766
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030003320-FloorPlan207_physics-Place_the_keys_onto_the_furniture_that_is_closest_to_the_center_of_the_room__.json",
+    "message": ""
+}

@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        2.8350000381469728,
+        2.8350000381469727,
         0.0,
-        -0.49900001287460329
+        -0.49900001287460327
     ],
     "agent_rotation": [
         0.0,
@@ -56,10 +56,12 @@
     ],
     "task_template": "Please fetch me a pair of comfortable shoes before we go for a walk.",
     "task_text": "Please fetch me a pair of comfortable shoes before I go for a walk. ",
+    "task_text_cn": "请在我去散步之前给我拿一双舒适的鞋子。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the shoes",
+            "option_text_cn": "拿起鞋子。",
             "gameObjects": {
                 "list": [
                     {
@@ -77,6 +79,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place to the floor",
+            "option_text_cn": "放在地板上。",
             "gameObjects": {
                 "list": [
                     {
@@ -113,7 +116,7 @@
             "position": [
                 -0.7239999771118164,
                 0.03333333134651184,
-                -1.0010000467300416
+                -1.0010000467300415
             ],
             "type": "navigation"
         },
@@ -140,7 +143,7 @@
             "position": [
                 0.4480000138282776,
                 0.03333333134651184,
-                -0.5059999823570252
+                -0.5059999823570251
             ],
             "type": "navigation"
         },
@@ -149,14 +152,14 @@
             "position": [
                 0.656000018119812,
                 0.03333333134651184,
-                0.16300000250339509
+                0.16300000250339508
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                1.4179999828338624,
+                1.4179999828338623,
                 0.1589999943971634,
                 -0.5649999976158142
             ],
@@ -167,7 +170,7 @@
             "position": [
                 1.6080000400543213,
                 0.03333333134651184,
-                0.29100000858306887
+                0.29100000858306885
             ],
             "type": "navigation"
         },
@@ -176,34 +179,34 @@
             "position": [
                 2.490000009536743,
                 0.03333333134651184,
-                -0.37700000405311587
+                -0.37700000405311584
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -1.2483201026916505,
+                -1.2483201026916504,
                 0.2656444311141968,
-                -1.2809056043624879
+                -1.2809056043624878
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                1.6390000581741334,
+                1.6390000581741333,
                 0.05806012079119682,
-                1.3980000019073487
+                1.3980000019073486
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                1.6369999647140504,
+                1.6369999647140503,
                 0.05806012079119682,
-                1.4049999713897706
+                1.4049999713897705
             ],
             "type": "special"
         }

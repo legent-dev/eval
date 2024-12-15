@@ -62,10 +62,12 @@
     ],
     "task_template": "Would you get the umbrella from the stand by the door?",
     "task_text": "Would you get the green coat in the wardrobe for me?",
+    "task_text_cn": "你能把衣柜里的绿色外套拿给我吗？",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +85,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "hand over",
+            "option_text_cn": "递过去。",
             "gameObjects": {
                 "list": [
                     {
@@ -185,7 +188,7 @@
             "position": [
                 0.6661746501922607,
                 0.0,
-                2.3274993896484377
+                2.3274993896484375
             ],
             "type": "navigation"
         }

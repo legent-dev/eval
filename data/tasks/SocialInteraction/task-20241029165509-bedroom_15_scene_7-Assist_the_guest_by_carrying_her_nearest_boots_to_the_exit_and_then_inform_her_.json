@@ -1,0 +1,306 @@
+{
+    "scene_name": "bedroom_15_scene_7",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_7.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.6570000052452087,
+        2.2351741790771486e-8,
+        0.5120000243186951
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -7148
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_7/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -7668
+            },
+            "human_position": [
+                3.430000066757202,
+                0.0,
+                0.9570000171661377
+            ],
+            "human_rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "asset": "Ch21_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Assist a visitor in finding the correct exit while carrying their luggage.",
+    "task_text": "Assist the guest by carrying her nearest boots to the exit and then inform her.",
+    "task_text_cn": "帮助客人携带她最近的靴子到门口，然后通知她。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -6328
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "speak \"I am next to the door.\"",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -8654
+                    }
+                ]
+            },
+            "objects": [
+                "NavPoints/NavigationPoint3 (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -8654
+                            }
+                        ],
+                        "required_objects": [
+                            "NavPoints/NavigationPoint3 (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "speak \"I am next to the lamp.\"",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -132526
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -132526
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "speak \"I am next to the door.\"",
+            "targetObject": {
+                "instanceID": -8008
+            },
+            "predicate_object": "NavPoints/NavigationPoint0 (1)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -6328
+            },
+            "predicate_object": "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "speak \"I am next to the door.\"",
+            "targetObject": {
+                "instanceID": -6328
+            },
+            "predicate_object": "bedroom_15_scene_7/CreatedObjects/identifier33_af3743bdb36c433ebf71a2135d3fcf60.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                4.0229997634887699,
+                0.056915283203125,
+                1.024999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                3.556999921798706,
+                0.056915283203125,
+                2.302000045776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.7009999752044678,
+                0.056915283203125,
+                0.36666667461395266
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9789999723434448,
+                0.06167558953166008,
+                2.9649999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.0700000524520875,
+                0.056915283203125,
+                4.3979997634887699
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.9240000247955323,
+                0.056915283203125,
+                4.298999786376953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                1.9789999723434449,
+                0.056915283203125,
+                3.0409998893737795
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.7333335876464845,
+                0.823577880859375,
+                0.40000003576278689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.2809998989105226,
+                0.056915283203125,
+                3.375999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.8493540287017824,
+                0.8735537528991699,
+                0.3967892527580261
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint5-Target",
+            "position": [
+                3.8310000896453859,
+                0.056915283203125,
+                3.3610000610351564
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.9609999656677247,
+                0.33799999952316286,
+                4.449999809265137
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.6079999804496765,
+                0.33799999952316286,
+                1.940000057220459
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029165509-bedroom_15_scene_7-Assist_the_guest_by_carrying_her_nearest_boots_to_the_exit_and_then_inform_her_.json",
+    "message": ""
+}

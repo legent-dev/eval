@@ -14,7 +14,7 @@
     "agent_position": [
         -0.08699999749660492,
         0.0,
-        2.3929998874664308
+        2.3929998874664307
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "How many glasses are there in the cabinet",
     "task_text": "How many glasses are there in the cabinet",
+    "task_text_cn": "橱柜里有多少个玻璃杯？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "30",
+            "option_text_cn": "三十",
             "gameObjects": {
                 "list": [
                     {
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "33",
+            "option_text_cn": "三十三",
             "gameObjects": {
                 "list": [
                     {
@@ -68,6 +71,7 @@
         {
             "option_type": "Answer",
             "option_text": "36",
+            "option_text_cn": "三十六",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "39",
+            "option_text_cn": "三十九",
             "gameObjects": {
                 "list": [
                     {
@@ -98,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "42",
+            "option_text_cn": "四十二",
             "gameObjects": {
                 "list": [
                     {
@@ -113,6 +119,7 @@
         {
             "option_type": "Answer",
             "option_text": "45",
+            "option_text_cn": "四十五",
             "gameObjects": {
                 "list": [
                     {
@@ -128,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "48",
+            "option_text_cn": "四十八",
             "gameObjects": {
                 "list": [
                     {
@@ -142,7 +150,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "",
+            "option_text": "52",
+            "option_text_cn": "五十二",
             "gameObjects": {
                 "list": [
                     {
@@ -176,7 +185,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -0.9729169607162476,
-                0.028193507343530656,
+                0.028193507343530655,
                 -5.520112037658691
             ],
             "type": "navigation"
@@ -184,18 +193,18 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.6130000352859498,
-                0.028193507343530656,
-                -2.0889999866485597
+                -1.6130000352859497,
+                0.028193507343530655,
+                -2.0889999866485596
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.7736403942108155,
-                0.028193507343530656,
-                -0.21421439945697785
+                -1.7736403942108154,
+                0.028193507343530655,
+                -0.21421439945697784
             ],
             "type": "navigation"
         },
@@ -203,7 +212,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -1.4932997226715088,
-                0.028193507343530656,
+                0.028193507343530655,
                 1.3455913066864014
             ],
             "type": "navigation"
@@ -213,7 +222,7 @@
             "position": [
                 -1.433990716934204,
                 0.4948601722717285,
-                3.8232102394104006
+                3.8232102394104004
             ],
             "type": "navigation"
         },
@@ -229,36 +238,36 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                0.20000019669532777,
-                0.028193507343530656,
-                -3.2000021934509279
+                0.20000019669532776,
+                0.028193507343530655,
+                -3.2000021934509277
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                -0.20000100135803224,
+                -0.20000100135803223,
                 0.761526882648468,
-                -1.2000021934509278
+                -1.2000021934509277
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint8",
             "position": [
-                -0.20000100135803224,
+                -0.20000100135803223,
                 0.761526882648468,
-                0.29999780654907229
+                0.29999780654907227
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint9",
             "position": [
-                -0.20000100135803224,
-                0.028193507343530656,
-                2.2999978065490724
+                -0.20000100135803223,
+                0.028193507343530655,
+                2.2999978065490723
             ],
             "type": "navigation"
         },
@@ -275,7 +284,7 @@
             "name": "NavigationPoint11",
             "position": [
                 0.2999989986419678,
-                0.028193507343530656,
+                0.028193507343530655,
                 -4.700002193450928
             ],
             "type": "navigation"
@@ -283,8 +292,8 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                1.0884965658187867,
-                0.028193507343530656,
+                1.0884965658187866,
+                0.028193507343530655,
                 0.8017723560333252
             ],
             "type": "navigation"
@@ -293,8 +302,8 @@
             "name": "NavigationPoint13",
             "position": [
                 -0.6759999990463257,
-                0.028193507343530656,
-                3.5260000228881838
+                0.028193507343530655,
+                3.5260000228881836
             ],
             "type": "navigation"
         },
@@ -302,8 +311,8 @@
             "name": "NavigationPoint14",
             "position": [
                 1.533333420753479,
-                0.028193507343530656,
-                -1.2000021934509278
+                0.028193507343530655,
+                -1.2000021934509277
             ],
             "type": "navigation"
         },
@@ -320,8 +329,8 @@
             "name": "NavigationPoint16",
             "position": [
                 1.2999989986419678,
-                0.028193507343530656,
-                2.2999978065490724
+                0.028193507343530655,
+                2.2999978065490723
             ],
             "type": "navigation"
         },
@@ -329,7 +338,7 @@
             "name": "NavigationPoint17",
             "position": [
                 1.7999989986419678,
-                0.028193507343530656,
+                0.028193507343530655,
                 -2.700000286102295
             ],
             "type": "navigation"
@@ -337,18 +346,18 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                2.7999989986419679,
-                0.028193507343530656,
-                -0.20000219345092774
+                2.7999989986419678,
+                0.028193507343530655,
+                -0.20000219345092773
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint19",
             "position": [
-                1.5549999475479127,
-                0.028193507343530656,
-                3.7179999351501467
+                1.5549999475479126,
+                0.028193507343530655,
+                3.7179999351501465
             ],
             "type": "navigation"
         },
@@ -356,7 +365,7 @@
             "name": "NavigationPoint20",
             "position": [
                 3.267948627471924,
-                0.028193507343530656,
+                0.028193507343530655,
                 -3.193592071533203
             ],
             "type": "navigation"

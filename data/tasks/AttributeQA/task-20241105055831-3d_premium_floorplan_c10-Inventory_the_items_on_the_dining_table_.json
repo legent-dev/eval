@@ -1,0 +1,353 @@
+{
+    "scene_name": "3d_premium_floorplan_c10",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/3d_premium_floorplan_c10.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        41.38999938964844,
+        0.01297111064195633,
+        40.060001373291019
+    ],
+    "agent_rotation": [
+        0.0,
+        81.725830078125,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -60626714
+        }
+    ],
+    "floor_objects": [
+        "3d_premium_floorplan_c10/C10.obj.cleaner.materialmerger.gles/Object_14"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Inventory the items in the brown cabinets.",
+    "task_text": "Inventory the items on the dining table.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Four kinds of fruit and a potted plant with purple flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Six kinds of fruit and a potted plant with yellow flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Five kinds of fruit and a potted plant with no flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Three kinds of fruit and a potted plant with pink flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Five kinds of fruit including bananas and a potted plant with pink flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Four kinds of fruit including a pineapple and a potted plant with flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Five kinds of fruit including strawberries and a potted plant with white flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Four kinds of fruit including kiwifruit and a potted plant with flowers.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Five kinds of fruit including bananas and a potted plant with pink flowers.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                41.59000015258789,
+                0.01297111064195633,
+                37.09000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                40.000003814697269,
+                0.4129711389541626,
+                38.0421142578125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                39.9900016784668,
+                0.01297111064195633,
+                40.33000183105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                41.59000015258789,
+                0.01297111064195633,
+                40.119998931884769
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                40.6845703125,
+                0.01297111064195633,
+                43.86421203613281
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                39.90156173706055,
+                0.01297111064195633,
+                46.30563735961914
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                42.13999938964844,
+                0.01297111064195633,
+                41.27000045776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                42.7599983215332,
+                0.01297111064195633,
+                42.619998931884769
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                41.931148529052737,
+                0.01297111064195633,
+                44.99660110473633
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                41.58000183105469,
+                0.01297111064195633,
+                38.58000183105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                42.630001068115237,
+                0.01297111064195633,
+                36.63999938964844
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                43.06999969482422,
+                0.01297111064195633,
+                39.97999954223633
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                44.150001525878909,
+                0.01297111064195633,
+                40.150001525878909
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                43.9379997253418,
+                0.01297111064195633,
+                38.172000885009769
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (2)",
+            "position": [
+                44.7400016784668,
+                0.01297111064195633,
+                37.31999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                42.66999816894531,
+                0.01297111064195633,
+                38.209999084472659
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                43.459999084472659,
+                0.01297111064195633,
+                41.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                44.709999084472659,
+                0.01297111064195633,
+                42.56999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13 (1)",
+            "position": [
+                44.619998931884769,
+                0.01297111064195633,
+                41.95000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                44.84000015258789,
+                0.01297111064195633,
+                36.43000030517578
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11-Target",
+            "position": [
+                43.7400016784668,
+                0.01297111064195633,
+                36.79899978637695
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105055831-3d_premium_floorplan_c10-Inventory_the_items_on_the_dining_table_.json",
+    "message": ""
+}

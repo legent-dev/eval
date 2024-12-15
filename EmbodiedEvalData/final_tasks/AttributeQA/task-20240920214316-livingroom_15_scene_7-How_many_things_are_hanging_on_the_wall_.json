@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "How many chairs are around the dining table?",
     "task_text": "How many things are hanging on the wall?",
+    "task_text_cn": "墙上挂着多少东西？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "one",
+            "option_text_cn": "一个",
             "gameObjects": {
                 "list": []
             },
@@ -45,6 +47,7 @@
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "两个",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +56,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三个",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四个",
             "gameObjects": {
                 "list": []
             },
@@ -69,6 +74,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五个",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六个",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +92,7 @@
         {
             "option_type": "Answer",
             "option_text": "seven",
+            "option_text_cn": "七个",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "eight",
+            "option_text_cn": "八个",
             "gameObjects": {
                 "list": []
             },
@@ -117,8 +126,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.3739999532699586,
-                0.09200000017881394,
+                1.3739999532699585,
+                0.09200000017881393,
                 3.812000036239624
             ],
             "type": "navigation"
@@ -128,7 +137,7 @@
             "position": [
                 1.4520000219345093,
                 0.06178709864616394,
-                2.0250000953674318
+                2.0250000953674316
             ],
             "type": "navigation"
         },
@@ -136,7 +145,7 @@
             "name": "NavigationPoint2",
             "position": [
                 2.621000051498413,
-                0.06700000166893006,
+                0.06700000166893005,
                 3.999000072479248
             ],
             "type": "navigation"
@@ -145,7 +154,7 @@
             "name": "NavigationPoint3",
             "position": [
                 3.0,
-                -0.028999999165534974,
+                -0.028999999165534973,
                 0.8389999866485596
             ],
             "type": "navigation"
@@ -164,7 +173,7 @@
             "position": [
                 4.314000129699707,
                 0.11900000274181366,
-                1.5260000228881837
+                1.5260000228881836
             ],
             "type": "navigation"
         },
@@ -173,14 +182,14 @@
             "position": [
                 3.683000087738037,
                 0.0989999994635582,
-                2.7066667079925539
+                2.7066667079925537
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                3.5769999027252199,
+                3.5769999027252197,
                 0.06178709864616394,
                 3.859999895095825
             ],

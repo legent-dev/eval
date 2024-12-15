@@ -1,0 +1,230 @@
+{
+    "scene_name": "FloorPlan8_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan8_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -31813628
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan8_physics/Objects/Floor_4dc721cd"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -31805488
+        },
+        {
+            "instanceID": -31816636
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan8_physics/FPSController",
+        "FloorPlan8_physics/Lighting"
+    ],
+    "humans": [],
+    "task_template": "Open the refrigerator door and take out the apple.",
+    "task_text": "Open the microwave door and put the bowl next to the bread inside.",
+    "task_text_cn": "打开微波炉门，把面包旁边的碗放进去。",
+    "options": [
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open",
+            "option_text_cn": "打开。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31808272
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan8_physics/Objects/Microwave_55dfa0d6/Door"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31806008
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan8_physics/Objects/Bowl_c3b3a78a"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place in",
+            "option_text_cn": "放在。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31818036
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -31806008
+            },
+            "predicate_object": "FloorPlan8_physics/Objects/Bowl_c3b3a78a",
+            "targetPlace": {
+                "instanceID": -31818036
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -31806008
+            },
+            "predicate_object": "FloorPlan8_physics/Objects/Bowl_c3b3a78a",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.5849999785423279,
+                2.2351741790771486e-8,
+                0.15299999713897706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.5299999713897705,
+                2.2351741790771486e-8,
+                -0.7039999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.7690000534057619,
+                2.2351741790771486e-8,
+                -1.0880000591278077
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.1890000104904175,
+                2.2351741790771486e-8,
+                1.0529999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.0820000171661378,
+                2.2351741790771486e-8,
+                2.9230000972747804
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.3289999961853028,
+                2.2351741790771486e-8,
+                -0.625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.4440000057220459,
+                2.2351741790771486e-8,
+                2.140000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.0759999752044678,
+                1.3232914209365845,
+                0.1120000034570694
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.00600004196167,
+                0.9346581101417542,
+                -0.6190000176429749
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.465999960899353,
+                1.2231999635696412,
+                0.06400000303983689
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031054639-FloorPlan8_physics-Open_the_microwave_door_and_put_the_bowl_next_to_the_bread_inside_.json",
+    "message": ""
+}

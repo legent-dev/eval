@@ -14,7 +14,7 @@
     "agent_position": [
         3.240000009536743,
         0.0,
-        -3.9739999771118166
+        -3.9739999771118164
     ],
     "agent_rotation": [
         0.0,
@@ -46,10 +46,12 @@
     "humans": [],
     "task_template": "Find two objects of the same shape but with different sizes in different rooms.",
     "task_text": "Find two objects with the same function but different sizes in the living room and kitchen. ",
+    "task_text_cn": "在客厅和厨房找到两个功能相同但大小不同的物品。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "sofa, fridge",
+            "option_text_cn": "沙发、冰箱。",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "dining table,  bookshelf",
+            "option_text_cn": "餐桌、书架。",
             "gameObjects": {
                 "list": []
             },
@@ -72,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "tea cup on the sofa, tea pot",
+            "option_text_cn": "沙发上的茶杯、茶壶。",
             "gameObjects": {
                 "list": []
             },
@@ -82,7 +86,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "icecream,  cake on the dinning table",
+            "option_text": "icecream, cake on the dining table",
+            "option_text_cn": "餐桌上的冰淇淋、蛋糕。",
             "gameObjects": {
                 "list": []
             },
@@ -93,7 +98,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "apple on the table,  bread on the fridge",
+            "option_text": "apple on the table, bread on the fridge",
+            "option_text_cn": "桌子上的苹果、冰箱上的面包。",
             "gameObjects": {
                 "list": []
             },
@@ -105,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "sofa, yellow stool in front of the fridge",
+            "option_text_cn": "沙发、冰箱前的黄色凳子。",
             "gameObjects": {
                 "list": []
             },
@@ -116,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "I do not know",
+            "option_text_cn": "我不知道。",
             "gameObjects": {
                 "list": []
             },
@@ -127,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "sofa, white stool in front of the fridge",
+            "option_text_cn": "沙发、冰箱前的白色凳子。",
             "gameObjects": {
                 "list": []
             },
@@ -155,16 +164,16 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.0737528800964357,
+                -2.0737528800964355,
                 0.0416666716337204,
-                -2.8877696990966799
+                -2.8877696990966797
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.9000000953674317,
+                -1.9000000953674316,
                 0.0416666716337204,
                 -1.318192720413208
             ],
@@ -175,7 +184,7 @@
             "position": [
                 -2.26200008392334,
                 0.0416666716337204,
-                -0.8679999709129334
+                -0.8679999709129333
             ],
             "type": "navigation"
         },
@@ -209,7 +218,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -1.2827305793762208,
+                -1.2827305793762207,
                 0.0416666716337204,
                 0.7120479345321655
             ],
@@ -227,7 +236,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                -0.30541086196899416,
+                -0.30541086196899414,
                 0.0416666716337204,
                 -1.318192481994629
             ],
@@ -245,16 +254,16 @@
         {
             "name": "NavigationPoint7 (4)",
             "position": [
-                -1.3300000429153443,
+                -1.3300000429153442,
                 0.0416666716337204,
-                -2.4760000705718996
+                -2.4760000705718994
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7 (1)",
             "position": [
-                -0.38499999046325686,
+                -0.38499999046325684,
                 0.0416666716337204,
                 -0.3330000042915344
             ],
@@ -272,7 +281,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                -0.30541086196899416,
+                -0.30541086196899414,
                 0.0416666716337204,
                 2.681807518005371
             ],
@@ -290,7 +299,7 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                1.1050000190734864,
+                1.1050000190734863,
                 0.0416666716337204,
                 -4.263000011444092
             ],
@@ -299,7 +308,7 @@
         {
             "name": "NavigationPoint10 (2)",
             "position": [
-                2.4509999752044679,
+                2.4509999752044678,
                 0.0416666716337204,
                 -4.281000137329102
             ],
@@ -308,7 +317,7 @@
         {
             "name": "NavigationPoint10 (1)",
             "position": [
-                1.9290000200271607,
+                1.9290000200271606,
                 0.0416666716337204,
                 -3.38700008392334
             ],
@@ -319,7 +328,7 @@
             "position": [
                 3.075000047683716,
                 0.0416666716337204,
-                -3.1470000743865969
+                -3.1470000743865967
             ],
             "type": "navigation"
         },
@@ -328,7 +337,7 @@
             "position": [
                 3.000999927520752,
                 0.0416666716337204,
-                -2.3510000705718996
+                -2.3510000705718994
             ],
             "type": "navigation"
         },
@@ -344,9 +353,9 @@
         {
             "name": "NavigationPoint11 (2)",
             "position": [
-                2.0280001163482668,
+                2.0280001163482666,
                 0.0416666716337204,
-                -1.7029999494552613
+                -1.7029999494552612
             ],
             "type": "navigation"
         },
@@ -355,7 +364,7 @@
             "position": [
                 1.6945891380310059,
                 0.0416666716337204,
-                2.6666667461395265
+                2.6666667461395264
             ],
             "type": "navigation"
         },
@@ -371,7 +380,7 @@
         {
             "name": "NavigationPoint13 (3)",
             "position": [
-                0.37700000405311587,
+                0.37700000405311584,
                 0.0416666716337204,
                 -0.9729999899864197
             ],
@@ -382,14 +391,14 @@
             "position": [
                 3.694999933242798,
                 0.0416666716337204,
-                -0.47600001096725466
+                -0.47600001096725464
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint13 (2)",
             "position": [
-                3.8010001182556154,
+                3.8010001182556152,
                 0.0416666716337204,
                 -1.4470000267028809
             ],
@@ -409,7 +418,7 @@
             "position": [
                 5.916999816894531,
                 0.7120000123977661,
-                -6.9710001945495609
+                -6.9710001945495605
             ],
             "type": "special"
         }

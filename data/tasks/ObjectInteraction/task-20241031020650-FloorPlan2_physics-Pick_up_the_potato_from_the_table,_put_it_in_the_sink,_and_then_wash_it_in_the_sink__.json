@@ -1,0 +1,304 @@
+{
+    "scene_name": "FloorPlan2_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan2_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -19344804
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan2_physics/Objects/Floor_bbd4574e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -19335732
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan2_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Pick up the spoon from the bowl, place it on the countertop, and then wash it in the sink",
+    "task_text": "Pick up the potato from the table, put it in the sink, and then wash it in the sink. ",
+    "task_text_cn": "从桌子上拿起土豆，把它放在水槽里，然后在水槽里洗它。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19343844
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan2_physics/Objects/Potato_582b16c0"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place down",
+            "option_text_cn": "放在。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19349392
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wash",
+            "option_text_cn": "洗。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19343844
+                    },
+                    {
+                        "instanceID": -19349392
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan2_physics/Objects/Potato_582b16c0",
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -19343844
+                            },
+                            {
+                                "instanceID": -19349392
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan2_physics/Objects/Potato_582b16c0",
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "wash",
+            "targetObject": {
+                "instanceID": -19342248
+            },
+            "predicate_object": "FloorPlan2_physics/Objects/Tomato_5fb6a620",
+            "targetPlace": {
+                "instanceID": -19349392
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "wash",
+            "targetObject": {
+                "instanceID": -19343844
+            },
+            "predicate_object": "FloorPlan2_physics/Objects/Potato_582b16c0",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "wash",
+            "targetObject": {
+                "instanceID": -19343844
+            },
+            "predicate_object": "FloorPlan2_physics/Objects/Potato_582b16c0",
+            "targetPlace": {
+                "instanceID": -19349392
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.017000000923871995,
+                0.030222415924072267,
+                -0.7940000295639038
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.090000033378601,
+                0.030222415924072267,
+                -0.7919999957084656
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                -1.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.049999952316284,
+                0.030222415924072267,
+                0.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.433333396911621,
+                0.030222415924072267,
+                2.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -2.4260001182556154,
+                0.030222415924072267,
+                3.240000009536743
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                -0.9589999914169312,
+                0.030222415924072267,
+                3.2330000400543215
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.8809999823570252,
+                0.030222415924072267,
+                0.4009999930858612
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.9279999732971191,
+                0.030222415924072267,
+                1.9789999723434449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.1619999408721924,
+                0.030222415924072267,
+                -0.8050000071525574
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.6140000224113464,
+                0.030222415924072267,
+                1.746000051498413
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                0.7760000228881836,
+                0.030222415924072267,
+                3.0829999446868898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                1.0360000133514405,
+                0.030222415924072267,
+                0.7870000004768372
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7-Target",
+            "position": [
+                0.32600000500679018,
+                1.0119999647140504,
+                1.3650000095367432
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.0,
+                0.7520946860313416,
+                -1.3600000143051148
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031020650-FloorPlan2_physics-Pick_up_the_potato_from_the_table,_put_it_in_the_sink,_and_then_wash_it_in_the_sink__.json",
+    "message": ""
+}

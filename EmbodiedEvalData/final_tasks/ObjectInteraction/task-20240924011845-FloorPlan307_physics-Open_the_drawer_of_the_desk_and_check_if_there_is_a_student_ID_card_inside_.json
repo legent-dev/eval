@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Open the top drawer of the dresser in the bedroom.",
     "task_text": "Open the drawer of the desk and check if there is a student ID card inside.",
+    "task_text_cn": "打开书桌的抽屉，检查里面是否有学生证。",
     "options": [
         {
             "option_type": "OpenDrawer",
             "option_text": "open the drawer of the desk",
+            "option_text_cn": "打开书桌抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -60,7 +62,8 @@
         },
         {
             "option_type": "CloseDrawer",
-            "option_text": "close the drawer of the drawer",
+            "option_text": "close the drawer of the desk",
+            "option_text_cn": "关上书桌抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "check",
+            "option_text_cn": "检查。",
             "gameObjects": {
                 "list": [
                     {
@@ -126,23 +130,23 @@
             "position": [
                 -0.9449999928474426,
                 0.02633318305015564,
-                -1.3450000286102296
+                -1.3450000286102295
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.014999999664723874,
+                -0.014999999664723873,
                 0.02633318305015564,
-                -1.3459999561309815
+                -1.3459999561309814
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (2)",
             "position": [
-                -0.054999999701976779,
+                -0.054999999701976776,
                 0.02633318305015564,
                 0.03200000151991844
             ],
@@ -180,7 +184,7 @@
             "position": [
                 1.0630290508270264,
                 0.02633318305015564,
-                0.20000028610229493
+                0.20000028610229492
             ],
             "type": "navigation"
         },

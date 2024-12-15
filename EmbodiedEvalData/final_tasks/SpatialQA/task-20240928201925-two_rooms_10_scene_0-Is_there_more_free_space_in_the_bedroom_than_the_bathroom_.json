@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "Is there more free space in the bedroom than the living room?",
     "task_text": "Is there more free space in the bedroom than the bathroom?",
+    "task_text_cn": "卧室比浴室有更多的空闲空间吗？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "bedroom, a little more",
+            "option_text_cn": "卧室，稍微多一点。",
             "gameObjects": {
                 "list": []
             },
@@ -63,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "toilet, a little more",
+            "option_text_cn": "厕所，稍微多一点。",
             "gameObjects": {
                 "list": []
             },
@@ -74,6 +77,7 @@
         {
             "option_type": "Answer",
             "option_text": "bedroom, much more",
+            "option_text_cn": "卧室，多很多。",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +89,7 @@
         {
             "option_type": "Answer",
             "option_text": "toilet, much more",
+            "option_text_cn": "厕所，多很多。",
             "gameObjects": {
                 "list": []
             },
@@ -96,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "living room, much more",
+            "option_text_cn": "客厅，多很多。",
             "gameObjects": {
                 "list": []
             },
@@ -107,6 +113,7 @@
         {
             "option_type": "Answer",
             "option_text": "garden, much more",
+            "option_text_cn": "花园，多很多。",
             "gameObjects": {
                 "list": []
             },
@@ -118,6 +125,7 @@
         {
             "option_type": "Answer",
             "option_text": "living room, a little more",
+            "option_text_cn": "客厅，稍微多一点。",
             "gameObjects": {
                 "list": []
             },
@@ -129,6 +137,7 @@
         {
             "option_type": "Answer",
             "option_text": "garden, a little more",
+            "option_text_cn": "花园，稍微多一点。",
             "gameObjects": {
                 "list": []
             },
@@ -159,7 +168,7 @@
             "position": [
                 -3.963772773742676,
                 0.0416666716337204,
-                2.5747077465057375
+                2.5747077465057373
             ],
             "type": "navigation"
         },
@@ -168,14 +177,14 @@
             "position": [
                 3.071597099304199,
                 0.0416666716337204,
-                2.2153878211975099
+                2.2153878211975098
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                -3.5808796882629396,
+                -3.5808796882629395,
                 0.0416666716337204,
                 0.9593744277954102
             ],
@@ -186,7 +195,7 @@
             "position": [
                 -2.636793613433838,
                 0.0416666716337204,
-                3.9034602642059328
+                3.9034602642059326
             ],
             "type": "navigation"
         },
@@ -195,25 +204,25 @@
             "position": [
                 -1.5808796882629395,
                 0.0416666716337204,
-                2.0320000648498537
+                2.0320000648498535
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                -0.33333349227905276,
+                -0.33333349227905273,
                 0.0416666716337204,
-                1.8329999446868897
+                1.8329999446868896
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                0.41912031173706057,
+                0.41912031173706055,
                 0.0416666716337204,
-                1.7610000371932984
+                1.7610000371932983
             ],
             "type": "navigation"
         },
@@ -249,7 +258,7 @@
             "position": [
                 -4.208606719970703,
                 0.526729166507721,
-                2.9419589042663576
+                2.9419589042663574
             ],
             "type": "navigation-target"
         },
@@ -258,7 +267,7 @@
             "position": [
                 3.071597099304199,
                 0.08305992186069489,
-                2.2153878211975099
+                2.2153878211975098
             ],
             "type": "navigation-target"
         },
@@ -267,7 +276,7 @@
             "position": [
                 3.071597099304199,
                 0.08305992186069489,
-                2.2153878211975099
+                2.2153878211975098
             ],
             "type": "special"
         }

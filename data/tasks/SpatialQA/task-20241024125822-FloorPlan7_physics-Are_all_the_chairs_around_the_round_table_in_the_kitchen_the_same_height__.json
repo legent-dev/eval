@@ -1,0 +1,270 @@
+{
+    "scene_name": "FloorPlan7_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan7_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.7369999885559083,
+        0.0,
+        0.7120000123977661
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -49150246
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan7_physics/Objects/Floor_e1b28141"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -49138950
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan7_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "If all the chairs in a meeting room are the same height?",
+    "task_text": "Are all the chairs around the round table in the kitchen the same height? ",
+    "task_text_cn": "厨房里圆桌周围的所有椅子都一样高吗？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is only one chair.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, the two chairs are of the same height.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, the three chairs are of the same height.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, the four chairs are of the same height.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, only two of them are of the same height.",
+            "option_text_cn": "不，其中两把是一样高的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, only three of them are of the same height.",
+            "option_text_cn": "不，其中三把是一样高的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no chair.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no round table.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Yes, the three chairs are of the same height.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.1999998092651369,
+                0.0315263569355011,
+                -1.0999999046325684
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.1999998092651369,
+                0.0315263569355011,
+                0.9000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.5493290424346926,
+                0.0315263569355011,
+                2.4633383750915529
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.5859999656677247,
+                0.0315263569355011,
+                2.5829999446868898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.9359999895095825,
+                0.0315263569355011,
+                -0.46000000834465029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.23333334922790528,
+                0.0315263569355011,
+                3.9000000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.0670000314712525,
+                0.0315263569355011,
+                1.0130000114440919
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.2549999952316285,
+                0.0315263569355011,
+                -0.46000000834465029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.8000001907348633,
+                0.0315263569355011,
+                0.9000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.8000001907348633,
+                0.0315263569355011,
+                2.9000000953674318
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.6809911727905275,
+                0.0315263569355011,
+                0.030586034059524537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                3.8000001907348635,
+                0.0315263569355011,
+                2.9000000953674318
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241024125822-FloorPlan7_physics-Are_all_the_chairs_around_the_round_table_in_the_kitchen_the_same_height__.json",
+    "message": ""
+}

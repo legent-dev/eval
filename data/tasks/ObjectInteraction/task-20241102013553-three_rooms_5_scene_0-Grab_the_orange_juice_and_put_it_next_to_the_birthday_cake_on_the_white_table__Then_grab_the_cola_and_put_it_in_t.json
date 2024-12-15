@@ -1,0 +1,381 @@
+{
+    "scene_name": "three_rooms_5_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.996999979019165,
+        2.2351741790771486e-8,
+        2.691999912261963
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -45530952
+        },
+        {
+            "instanceID": -45530964
+        },
+        {
+            "instanceID": -45530976
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_0/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier13_Floor",
+        "three_rooms_5_scene_0/CreatedWalls/identifier14_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -45524300
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_0/CreatedObjects/identifier1_Doorway_4.glb/Doorway_4(Clone)/Doorway_Door_4"
+    ],
+    "humans": [],
+    "task_template": "Grab a mystery book and put it on the middle shelf, then grab a history book and put it in the rightmost position on the top shelf. Close the bookcase doors once finished.",
+    "task_text": "Grab the orange juice and put it next to the birthday cake on the white table. Then grab the cola and put it in the rightmost position on the white table. Make sure the birthday cake is positioned between the two drinks.",
+    "task_text_cn": "把橙汁拿过来放在白色桌子上的生日蛋糕旁边。然后把可乐放在白色桌子的最右边。确保生日蛋糕位于两杯饮料之间。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45526888
+                    },
+                    {
+                        "instanceID": -45527184
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_0/CreatedObjects/identifier24_3a80e07ff6364b4bbe5252d9b532a87a.glb/Sketchfab_model/Easy Mouzooo TPK 1L_Orange.FBX/RootNode/Cube",
+                "three_rooms_5_scene_0/CreatedObjects/identifier32_ffdbc5a9ae654f49977a1ca2fc626c24.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the left of the cake",
+            "option_text_cn": "放在。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45535888
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the right of the cake",
+            "option_text_cn": "放在。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45535898
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -45526888
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier24_3a80e07ff6364b4bbe5252d9b532a87a.glb/Sketchfab_model/Easy Mouzooo TPK 1L_Orange.FBX/RootNode/Cube",
+            "targetPlace": {
+                "instanceID": -45535888
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -45527184
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier32_ffdbc5a9ae654f49977a1ca2fc626c24.glb",
+            "targetPlace": {
+                "instanceID": -45535898
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -45526888
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier24_3a80e07ff6364b4bbe5252d9b532a87a.glb/Sketchfab_model/Easy Mouzooo TPK 1L_Orange.FBX/RootNode/Cube",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -45527184
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier32_ffdbc5a9ae654f49977a1ca2fc626c24.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.4779999256134035,
+                0.0416666716337204,
+                1.1349999904632569
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.757999897003174,
+                0.0416666716337204,
+                2.5390000343322756
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.88100004196167,
+                0.0416666716337204,
+                2.680000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -0.9039999842643738,
+                0.0416666716337204,
+                2.5920000076293947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.7250000238418579,
+                0.0416666716337204,
+                3.4779999256134035
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.2669999599456788,
+                0.0416666716337204,
+                1.0429999828338624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.8759999871253967,
+                0.0416666716337204,
+                -1.031000018119812
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.8849999904632568,
+                0.0416666716337204,
+                0.460999995470047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.0759999752044678,
+                0.0416666716337204,
+                2.109999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.2651766538619996,
+                0.0416666716337204,
+                3.575632333755493
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.441999912261963,
+                0.0416666716337204,
+                -2.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                2.0031399726867677,
+                0.5805691480636597,
+                2.169175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.5031399726867677,
+                0.0416666716337204,
+                -1.330824851989746
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                2.6389999389648439,
+                0.0416666716337204,
+                0.597000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.960230588912964,
+                0.600730836391449,
+                3.3333334922790529
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                4.0,
+                0.0416666716337204,
+                0.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -2.770000457763672,
+                0.6621578335762024,
+                0.4059314727783203
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -3.2679998874664308,
+                0.7802194356918335,
+                3.1070001125335695
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                -1.7589999437332154,
+                0.6809999942779541,
+                3.2730000019073488
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint4-Target",
+            "position": [
+                -1.399999976158142,
+                0.0416666716337204,
+                4.232999801635742
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.9980000257492066,
+                0.6809999942779541,
+                3.2720000743865969
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -1.4320000410079957,
+                0.6869999766349793,
+                3.256999969482422
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                0.20000000298023225,
+                0.1809999942779541,
+                2.3510000705718996
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241102013553-three_rooms_5_scene_0-Grab_the_orange_juice_and_put_it_next_to_the_birthday_cake_on_the_white_table__Then_grab_the_cola_and_put_it_in_t.json",
+    "message": ""
+}

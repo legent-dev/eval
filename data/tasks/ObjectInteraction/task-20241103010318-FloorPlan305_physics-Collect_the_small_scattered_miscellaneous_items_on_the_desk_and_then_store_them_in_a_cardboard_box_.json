@@ -1,0 +1,219 @@
+{
+    "scene_name": "FloorPlan305_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan305_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -49974714
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan305_physics/Objects/Floor_ac9ce665"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -49969562
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan305_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Collect the scattered toys in the children's room and store them in the toy box.",
+    "task_text": "Collect the small scattered miscellaneous items on the desk and then store them in a cardboard box.",
+    "task_text_cn": "收集桌子上散落的小杂物，然后把它们存放在一个纸板箱里。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -49970866
+                    },
+                    {
+                        "instanceID": -49970978
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan305_physics/Objects/KeyChain_8a49df77",
+                "FloorPlan305_physics/Objects/CreditCard_1b848d2e"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the box",
+            "option_text_cn": "放在盒子里。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -49976088
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49970866
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/KeyChain_8a49df77",
+            "targetPlace": {
+                "instanceID": -49976088
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49970978
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/CreditCard_1b848d2e",
+            "targetPlace": {
+                "instanceID": -49976088
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49970866
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/KeyChain_8a49df77",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49970978
+            },
+            "predicate_object": "FloorPlan305_physics/Objects/CreditCard_1b848d2e",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.46666669845581057,
+                0.033333197236061099,
+                1.0217585563659669
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.9980000257492065,
+                0.033333197236061099,
+                -0.8709999918937683
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.4519999921321869,
+                0.033333197236061099,
+                0.05299999937415123
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.8500000238418579,
+                0.033333197236061099,
+                1.375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.7253632545471191,
+                0.7897163033485413,
+                -0.950000524520874
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.1319994926452637,
+                0.7322106957435608,
+                1.0217585563659669
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.1460000276565552,
+                0.11400000005960465,
+                -1.5540000200271607
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.1460000276565552,
+                0.11400000005960465,
+                -1.5540000200271607
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241103010318-FloorPlan305_physics-Collect_the_small_scattered_miscellaneous_items_on_the_desk_and_then_store_them_in_a_cardboard_box_.json",
+    "message": ""
+}

@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Determine which window provides the widest view of the outside.",
     "task_text": "Determine which window in the living room provides the widest view of the outside. ",
+    "task_text_cn": "确定客厅的哪个窗户能看到最广阔的外面景色。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Window near the sofa",
+            "option_text_cn": "沙发旁边的窗户。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Window near the stool",
+            "option_text_cn": "凳子旁边的窗户。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Same size as the window, they are far apart",
+            "option_text_cn": "窗户大小相同，它们相距很远。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Same size as the window, they are very close to each other",
+            "option_text_cn": "窗户大小相同，它们彼此非常接近。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "Window near the stool, much wider",
+            "option_text_cn": "凳子旁边的窗户，更宽。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "Window near the sofa, much wider",
+            "option_text_cn": "沙发旁边的窗户，更宽。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "I am thinking",
+            "option_text_cn": "我在思考。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "Today is sunny",
+            "option_text_cn": "今天阳光明媚。",
             "gameObjects": {
                 "list": []
             },
@@ -145,7 +154,7 @@
             "position": [
                 -5.926003456115723,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 -5.426384925842285,
                 0.007039710879325867,
-                2.1331751346588136
+                2.1331751346588135
             ],
             "type": "navigation"
         },
@@ -172,14 +181,14 @@
             "position": [
                 -3.190999984741211,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                -3.9260034561157228,
+                -3.9260034561157227,
                 0.007039710879325867,
                 0.6327953338623047
             ],
@@ -188,16 +197,16 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                -3.6730000972747804,
+                -3.6730000972747803,
                 0.007039710879325867,
-                2.6327953338623049
+                2.6327953338623047
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint10",
             "position": [
-                -3.9260034561157228,
+                -3.9260034561157227,
                 0.007039710879325867,
                 6.632795333862305
             ],
@@ -208,7 +217,7 @@
             "position": [
                 -1.1666665077209473,
                 0.007039710879325867,
-                -1.3672046661376954
+                -1.3672046661376953
             ],
             "type": "navigation"
         },
@@ -224,7 +233,7 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                -3.2339999675750734,
+                -3.2339999675750732,
                 0.007039710879325867,
                 4.633333683013916
             ],
@@ -242,7 +251,7 @@
         {
             "name": "NavigationPoint16",
             "position": [
-                0.07399654388427735,
+                0.07399654388427734,
                 0.007039710879325867,
                 -0.3672046661376953
             ],
@@ -251,7 +260,7 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                0.07399654388427735,
+                0.07399654388427734,
                 0.007039710879325867,
                 6.333333969116211
             ],

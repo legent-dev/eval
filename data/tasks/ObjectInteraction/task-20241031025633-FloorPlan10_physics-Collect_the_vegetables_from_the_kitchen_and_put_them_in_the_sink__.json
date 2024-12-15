@@ -1,0 +1,363 @@
+{
+    "scene_name": "FloorPlan10_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/FloorPlan10_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.8959999084472658,
+        0.0,
+        -0.6029999852180481
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -22295636
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan10_physics/Objects/Floor_a224bc46"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -22286584
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan10_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Collect the dirty laundry from the bedroom and put it in the hamper.",
+    "task_text": "Collect the vegetables from the kitchen and put them in the sink. ",
+    "task_text_cn": "从厨房收集蔬菜并把它们放在水槽里。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the tomato",
+            "option_text_cn": "拿起西红柿。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22288100
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan10_physics/Objects/Tomato_9c51c4ef"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the apple",
+            "option_text_cn": "拿起苹果。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22288740
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan10_physics/Objects/Apple_f33eaaa0"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the potato",
+            "option_text_cn": "拿起土豆。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22293300
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan10_physics/Objects/Potato_e4559da4"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the tomato",
+            "option_text_cn": "放下西红柿。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22299214
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (2)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the apple",
+            "option_text_cn": "放下苹果。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22299204
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place the potato",
+            "option_text_cn": "放下土豆。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -22299194
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -22288100
+            },
+            "predicate_object": "FloorPlan10_physics/Objects/Tomato_9c51c4ef",
+            "targetPlace": {
+                "instanceID": -22299214
+            },
+            "predicate_place": "SpecialPoint (2)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -22288740
+            },
+            "predicate_object": "FloorPlan10_physics/Objects/Apple_f33eaaa0",
+            "targetPlace": {
+                "instanceID": -22299204
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -22293300
+            },
+            "predicate_object": "FloorPlan10_physics/Objects/Potato_e4559da4",
+            "targetPlace": {
+                "instanceID": -22299194
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -22297706
+            },
+            "predicate_object": "NavPoints/NavigationPoint1",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.8699944019317627,
+                0.9754734635353088,
+                -0.0960032194852829
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.11400000005960465,
+                0.027471795678138734,
+                -0.19200000166893006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.8299999237060549,
+                0.027471795678138734,
+                -2.1710000038146974
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.8429999351501467,
+                0.027471795678138734,
+                -0.40799999237060549
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.2659997940063478,
+                0.027471795678138734,
+                1.3179999589920045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.433333396911621,
+                0.027471795678138734,
+                2.450000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.159999966621399,
+                0.027471795678138734,
+                -2.171999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.8880000114440919,
+                0.027471795678138734,
+                1.3940000534057618
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.5070000290870667,
+                0.027471795678138734,
+                2.680999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.03400000184774399,
+                0.027471795678138734,
+                1.347000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.03400000184774399,
+                0.027471795678138734,
+                -2.2720000743865969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.8699944019317627,
+                0.9612909555435181,
+                -0.0960032194852829
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.6759999990463257,
+                0.8299864530563355,
+                -0.23600000143051148
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.8199999928474426,
+                0.8302794694900513,
+                -0.6840000152587891
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -0.8160000443458557,
+                0.8354900479316711,
+                -0.5273308753967285
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                -0.6460000276565552,
+                0.8299864530563355,
+                -0.6010000109672546
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031025633-FloorPlan10_physics-Collect_the_vegetables_from_the_kitchen_and_put_them_in_the_sink__.json",
+    "message": ""
+}

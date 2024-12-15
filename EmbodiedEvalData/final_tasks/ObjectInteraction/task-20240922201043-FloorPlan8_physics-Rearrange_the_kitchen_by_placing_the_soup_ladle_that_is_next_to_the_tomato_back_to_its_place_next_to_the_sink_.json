@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Rearrange the kitchen by placing the books back on the shelves.",
     "task_text": "Rearrange the kitchen by placing the soup ladle that is next to the tomato back to its place next to the sink.",
+    "task_text_cn": "通过把放在西红柿旁边的汤勺放回水槽旁边的原位来重新整理厨房。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the soup ladle",
+            "option_text_cn": "拿起汤勺。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the sink",
+            "option_text_cn": "放在水槽边。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,8 +98,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.1050000190734865,
-                2.2351741790771486e-8,
+                -2.1050000190734863,
+                2.2351741790771484e-08,
                 -0.8379999995231628
             ],
             "type": "navigation"
@@ -105,8 +108,8 @@
             "name": "NavigationPoint0 (1)",
             "position": [
                 -1.850000023841858,
-                2.2351741790771486e-8,
-                -0.27799999713897707
+                2.2351741790771484e-08,
+                -0.27799999713897705
             ],
             "type": "navigation"
         },
@@ -114,7 +117,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -0.3204882740974426,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -0.8055860996246338
             ],
             "type": "navigation"
@@ -122,17 +125,17 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.6490000486373902,
-                2.2351741790771486e-8,
-                1.2610000371932984
+                -1.6490000486373901,
+                2.2351741790771484e-08,
+                1.2610000371932983
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -1.8333330154418946,
-                2.2351741790771486e-8,
+                -1.8333330154418945,
+                2.2351741790771484e-08,
                 2.93999981880188
             ],
             "type": "navigation"
@@ -141,7 +144,7 @@
             "name": "NavigationPoint4",
             "position": [
                 -0.8400006294250488,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.9399998188018799
             ],
             "type": "navigation"
@@ -149,17 +152,17 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                -1.0570000410079957,
-                2.2351741790771486e-8,
-                0.15000000596046449
+                -1.0570000410079956,
+                2.2351741790771484e-08,
+                0.15000000596046448
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                -0.34000062942504885,
-                2.2351741790771486e-8,
+                -0.34000062942504883,
+                2.2351741790771484e-08,
                 2.43999981880188
             ],
             "type": "navigation"
@@ -168,7 +171,7 @@
             "name": "NavigationPoint6",
             "position": [
                 0.6000000238418579,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.4399998188018799
             ],
             "type": "navigation"
@@ -177,15 +180,15 @@
             "name": "NavigationPoint7",
             "position": [
                 0.5149999856948853,
-                2.2351741790771486e-8,
-                1.7799999713897706
+                2.2351741790771484e-08,
+                1.7799999713897705
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -1.8438359498977662,
+                -1.8438359498977661,
                 0.9106653928756714,
                 0.10143236815929413
             ],

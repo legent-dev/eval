@@ -14,7 +14,7 @@
     "agent_position": [
         8.15999984741211,
         0.0,
-        -1.3600000143051148
+        -1.3600000143051147
     ],
     "agent_rotation": [
         0.0,
@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "Identify the area of the house that feels the most spacious relative to its actual size.",
     "task_text": "Which room is the most spacious? ",
+    "task_text_cn": "哪个房间最宽敞？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "bedroom ",
+            "option_text_cn": "卧室。",
             "gameObjects": {
                 "list": []
             },
@@ -63,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "bathroom",
+            "option_text_cn": "浴室。",
             "gameObjects": {
                 "list": []
             },
@@ -74,6 +77,7 @@
         {
             "option_type": "Answer",
             "option_text": "living room, a little bigger",
+            "option_text_cn": "客厅，稍微大一点。",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +89,7 @@
         {
             "option_type": "Answer",
             "option_text": "living room, much bigger",
+            "option_text_cn": "客厅，大很多。",
             "gameObjects": {
                 "list": []
             },
@@ -96,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "bathroom, much bigger",
+            "option_text_cn": "浴室，大很多。",
             "gameObjects": {
                 "list": []
             },
@@ -107,6 +113,7 @@
         {
             "option_type": "Answer",
             "option_text": "bedroom, a little bigger",
+            "option_text_cn": "卧室，稍微大一点。",
             "gameObjects": {
                 "list": []
             },
@@ -118,6 +125,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -129,6 +137,7 @@
         {
             "option_type": "Answer",
             "option_text": "more than one option is correct",
+            "option_text_cn": "不止一个选项正确。",
             "gameObjects": {
                 "list": []
             },
@@ -158,7 +167,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -1.909999966621399,
-                0.009479034692049027,
+                0.009479034692049026,
                 -2.859999895095825
             ],
             "type": "navigation"
@@ -166,9 +175,9 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -2.1027543544769289,
-                0.042812373489141467,
-                -1.9190748929977418
+                -2.1027543544769287,
+                0.042812373489141464,
+                -1.9190748929977417
             ],
             "type": "navigation"
         },
@@ -176,7 +185,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.7099999785423279,
-                0.042812373489141467,
+                0.042812373489141464,
                 -5.656031131744385
             ],
             "type": "navigation"
@@ -185,8 +194,8 @@
             "name": "NavigationPoint5",
             "position": [
                 -0.8399999737739563,
-                0.023952551186084749,
-                -3.7017581462860109
+                0.023952551186084747,
+                -3.7017581462860107
             ],
             "type": "navigation"
         },
@@ -194,8 +203,8 @@
             "name": "NavigationPoint7",
             "position": [
                 1.5475965738296509,
-                0.009479034692049027,
-                -8.428080558776856
+                0.009479034692049026,
+                -8.428080558776855
             ],
             "type": "navigation"
         },
@@ -212,7 +221,7 @@
             "name": "NavigationPoint9",
             "position": [
                 0.8118143677711487,
-                0.055892542004585269,
+                0.055892542004585266,
                 -5.5
             ],
             "type": "navigation"
@@ -221,7 +230,7 @@
             "name": "NavigationPoint11",
             "position": [
                 1.6699999570846558,
-                0.009479034692049027,
+                0.009479034692049026,
                 -4.699999809265137
             ],
             "type": "navigation"
@@ -230,7 +239,7 @@
             "name": "NavigationPoint13",
             "position": [
                 3.82112979888916,
-                0.009479034692049027,
+                0.009479034692049026,
                 -8.700261116027832
             ],
             "type": "navigation"
@@ -239,7 +248,7 @@
             "name": "NavigationPoint16",
             "position": [
                 5.059999942779541,
-                0.009479034692049027,
+                0.009479034692049026,
                 -4.380000114440918
             ],
             "type": "navigation"
@@ -248,7 +257,7 @@
             "name": "NavigationPoint17",
             "position": [
                 5.500000476837158,
-                0.009479034692049027,
+                0.009479034692049026,
                 -1.700261116027832
             ],
             "type": "navigation"
@@ -257,7 +266,7 @@
             "name": "NavigationPoint20",
             "position": [
                 7.82112979888916,
-                0.042812373489141467,
+                0.042812373489141464,
                 -4.700261116027832
             ],
             "type": "navigation"
@@ -266,7 +275,7 @@
             "name": "NavigationPoint22",
             "position": [
                 8.109999656677246,
-                0.009479034692049027,
+                0.009479034692049026,
                 -1.740006446838379
             ],
             "type": "navigation"
@@ -274,7 +283,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -2.4800000190734865,
+                -2.4800000190734863,
                 0.005054473876953125,
                 -8.470000267028809
             ],

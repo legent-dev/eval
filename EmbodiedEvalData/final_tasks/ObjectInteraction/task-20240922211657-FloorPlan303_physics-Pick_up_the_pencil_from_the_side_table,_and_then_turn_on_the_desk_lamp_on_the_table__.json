@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Pick up the pen from the side table and Switch on the desk lamp. ",
     "task_text": "Pick up the pencil from the side table, and then turn on the desk lamp on the table. ",
+    "task_text_cn": "从边桌上拿起铅笔，然后打开桌子上的台灯。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "turn on the light",
+            "option_text_cn": "打开灯。",
             "gameObjects": {
                 "list": [
                     {
@@ -121,7 +124,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -0.8309999704360962,
-                0.033333227038383487,
+                0.033333227038383484,
                 -0.8069999814033508
             ],
             "type": "navigation"
@@ -130,7 +133,7 @@
             "name": "NavigationPoint0 (1)",
             "position": [
                 -0.7829999923706055,
-                0.033333227038383487,
+                0.033333227038383484,
                 0.02199999988079071
             ],
             "type": "navigation"
@@ -138,8 +141,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                1.4479999542236329,
-                0.033333227038383487,
+                1.4479999542236328,
+                0.033333227038383484,
                 -1.784999966621399
             ],
             "type": "navigation"
@@ -148,7 +151,7 @@
             "name": "NavigationPoint1 (1)",
             "position": [
                 0.3930000066757202,
-                0.033333227038383487,
+                0.033333227038383484,
                 -0.9359999895095825
             ],
             "type": "navigation"
@@ -157,7 +160,7 @@
             "name": "NavigationPoint2",
             "position": [
                 0.4500002861022949,
-                0.033333227038383487,
+                0.033333227038383484,
                 0.04999947547912598
             ],
             "type": "navigation"
@@ -166,15 +169,15 @@
             "name": "NavigationPoint3",
             "position": [
                 1.402999997138977,
-                0.033333227038383487,
-                -0.36899998784065249
+                0.033333227038383484,
+                -0.36899998784065247
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -1.5007165670394898,
+                -1.5007165670394897,
                 0.5960983037948608,
                 -0.802793025970459
             ],
@@ -185,7 +188,7 @@
             "position": [
                 0.3406243324279785,
                 0.7979999780654907,
-                -2.6548993587493898
+                -2.6548993587493896
             ],
             "type": "special"
         }

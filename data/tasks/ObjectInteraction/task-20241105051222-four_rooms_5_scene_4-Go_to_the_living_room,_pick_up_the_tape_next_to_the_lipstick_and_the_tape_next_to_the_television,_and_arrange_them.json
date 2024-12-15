@@ -1,0 +1,352 @@
+{
+    "scene_name": "four_rooms_5_scene_4",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/four_rooms_5_scene_4.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.049999952316284,
+        0.0,
+        -1.5399999618530274
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -59402232
+        },
+        {
+            "instanceID": -59402220
+        },
+        {
+            "instanceID": -59402208
+        },
+        {
+            "instanceID": -59402196
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_4/CreatedWalls/identifier18_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier17_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier16_Floor",
+        "four_rooms_5_scene_4/CreatedWalls/identifier15_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -59399628
+        }
+    ],
+    "removed_objects": [
+        "four_rooms_5_scene_4/CreatedObjects/identifier96_11c329b74f8c4b1a95e44d8c475dd452.glb"
+    ],
+    "humans": [],
+    "task_template": "Go to the hallway, pick up a pair of shoes, place them on the shoe rack, and straighten the mat.",
+    "task_text": "Go to the living room, pick up the tape next to the lipstick and the tape next to the television, and arrange them neatly on the black shelf.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick ",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -59399592
+                    },
+                    {
+                        "instanceID": -59401384
+                    }
+                ]
+            },
+            "objects": [
+                "four_rooms_5_scene_4/CreatedObjects/identifier95_11c329b74f8c4b1a95e44d8c475dd452.glb",
+                "four_rooms_5_scene_4/CreatedObjects/identifier121_11c329b74f8c4b1a95e44d8c475dd452.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -59408878
+                    },
+                    {
+                        "instanceID": -59408888
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59399592
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier95_11c329b74f8c4b1a95e44d8c475dd452.glb",
+            "targetPlace": {
+                "instanceID": -59408888
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59401384
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier121_11c329b74f8c4b1a95e44d8c475dd452.glb",
+            "targetPlace": {
+                "instanceID": -59408878
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59399592
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier95_11c329b74f8c4b1a95e44d8c475dd452.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59401384
+            },
+            "predicate_object": "four_rooms_5_scene_4/CreatedObjects/identifier121_11c329b74f8c4b1a95e44d8c475dd452.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                4.335000038146973,
+                0.04974633455276489,
+                1.1360000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                3.380000114440918,
+                0.02783203125,
+                4.736000061035156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9210000038146973,
+                0.02783203125,
+                4.4770002365112309
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.3829779624938967,
+                0.02783203125,
+                -2.9347832202911379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.0333333015441896,
+                0.02783203125,
+                -1.15924072265625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -3.453718900680542,
+                0.02783203125,
+                0.6273459196090698
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.5320000648498537,
+                0.02783203125,
+                2.2660000324249269
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.5,
+                0.02783203125,
+                3.84075927734375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -2.2089052200317385,
+                0.02783203125,
+                1.84075927734375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.1999999284744263,
+                0.02783203125,
+                3.34075927734375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.6930990219116211,
+                0.02783203125,
+                -2.8101282119750978
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.2089052200317383,
+                0.02783203125,
+                -1.15924072265625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -0.7789999842643738,
+                0.02783203125,
+                1.8320000171661378
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.9889999628067017,
+                0.02783203125,
+                -1.649999976158142
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.8659999966621399,
+                0.02783203125,
+                1.8009999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.5439999103546144,
+                0.02783203125,
+                1.6260000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                4.613855838775635,
+                0.9982564449310303,
+                0.6160441040992737
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                3.6937923431396486,
+                0.915751039981842,
+                5.423472881317139
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                0.3610000014305115,
+                0.9760000109672546,
+                4.807000160217285
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.25699999928474429,
+                0.9760000109672546,
+                4.665999889373779
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.27399998903274538,
+                0.9649999737739563,
+                4.771999835968018
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105051222-four_rooms_5_scene_4-Go_to_the_living_room,_pick_up_the_tape_next_to_the_lipstick_and_the_tape_next_to_the_television,_and_arrange_them.json",
+    "message": ""
+}

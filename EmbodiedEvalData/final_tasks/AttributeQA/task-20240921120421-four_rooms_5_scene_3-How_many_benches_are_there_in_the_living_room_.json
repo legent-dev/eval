@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        1.6299999952316285,
-        -0.27000001072883608,
-        1.4989999532699586
+        1.6299999952316284,
+        -0.27000001072883606,
+        1.4989999532699585
     ],
     "agent_rotation": [
         0.0,
@@ -46,10 +46,12 @@
     "humans": [],
     "task_template": "How many light switches are in the kitchen?",
     "task_text": "How many benches are there in the living room?",
+    "task_text_cn": "客厅里有多少个长椅？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "1",
+            "option_text_cn": "一个。",
             "gameObjects": {
                 "list": [
                     {
@@ -65,6 +67,7 @@
         {
             "option_type": "Answer",
             "option_text": "2",
+            "option_text_cn": "两个。",
             "gameObjects": {
                 "list": [
                     {
@@ -80,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "3",
+            "option_text_cn": "三个。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "4",
+            "option_text_cn": "四个。",
             "gameObjects": {
                 "list": [
                     {
@@ -110,6 +115,7 @@
         {
             "option_type": "Answer",
             "option_text": "5",
+            "option_text_cn": "五个。",
             "gameObjects": {
                 "list": [
                     {
@@ -125,6 +131,7 @@
         {
             "option_type": "Answer",
             "option_text": "6",
+            "option_text_cn": "六个。",
             "gameObjects": {
                 "list": [
                     {
@@ -140,6 +147,7 @@
         {
             "option_type": "Answer",
             "option_text": "7",
+            "option_text_cn": "七个。",
             "gameObjects": {
                 "list": [
                     {
@@ -155,6 +163,7 @@
         {
             "option_type": "Answer",
             "option_text": "8",
+            "option_text_cn": "八个。",
             "gameObjects": {
                 "list": [
                     {
@@ -196,9 +205,9 @@
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                -1.1979999542236329,
+                -1.1979999542236328,
                 0.045013427734375,
-                -1.0410000085830689
+                -1.0410000085830688
             ],
             "type": "navigation"
         },
@@ -216,16 +225,16 @@
             "position": [
                 -3.707068681716919,
                 0.045013427734375,
-                2.9316015243530275
+                2.9316015243530273
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -2.0869998931884767,
+                -2.0869998931884766,
                 0.045013427734375,
-                3.8570001125335695
+                3.8570001125335693
             ],
             "type": "navigation"
         },
@@ -241,16 +250,16 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -1.5540000200271607,
+                -1.5540000200271606,
                 0.045013427734375,
-                3.0380001068115236
+                3.0380001068115234
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                -0.41230010986328127,
+                -0.41230010986328125,
                 0.045013427734375,
                 -1.0333337783813477
             ],
@@ -259,9 +268,9 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.3369197845458985,
+                1.3369197845458984,
                 0.045013427734375,
-                -3.7875492572784426
+                -3.7875492572784424
             ],
             "type": "navigation"
         },
@@ -279,7 +288,7 @@
             "position": [
                 -0.5,
                 0.045013427734375,
-                2.8359999656677248
+                2.8359999656677246
             ],
             "type": "navigation"
         },
@@ -297,14 +306,14 @@
             "position": [
                 2.871999979019165,
                 0.045013427734375,
-                2.0950000286102297
+                2.0950000286102295
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint14",
             "position": [
-                2.0876998901367189,
+                2.0876998901367188,
                 0.045013427734375,
                 3.382354736328125
             ],
@@ -313,7 +322,7 @@
         {
             "name": "NavigationPoint15",
             "position": [
-                2.5876998901367189,
+                2.5876998901367188,
                 0.6215619444847107,
                 -3.117645263671875
             ],
@@ -322,7 +331,7 @@
         {
             "name": "NavigationPoint16",
             "position": [
-                3.0876998901367189,
+                3.0876998901367188,
                 0.045013427734375,
                 -1.117645263671875
             ],
@@ -340,7 +349,7 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                2.6700000762939455,
+                2.6700000762939453,
                 0.045013427734375,
                 0.9340000152587891
             ],

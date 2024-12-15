@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Are there any plastic items in the bathroom that should be kept away from water?",
     "task_text": "Are there any plastic products in the bathroom that should be filled with garbage?",
+    "task_text_cn": "浴室里有应该装垃圾的塑料制品吗？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Yes, there is a small plastic trash can in the corner.",
+            "option_text_cn": "是，角落里有一个小塑料垃圾桶。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, there are no plastic products meant for garbage in the bathroom.",
+            "option_text_cn": "不，浴室里没有用于装垃圾的塑料制品。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the trash can is metal, not plastic.",
+            "option_text_cn": "不，垃圾桶是金属的，不是塑料的。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, there is a plastic container labeled for recycling.",
+            "option_text_cn": "是，有一个标有可回收的塑料容器。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is a plastic bin, but it is used for laundry, not garbage.",
+            "option_text_cn": "有一个塑料箱，但它用于洗衣服，而不是装垃圾。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, a plastic bag is hanging on the door handle for trash.",
+            "option_text_cn": "是，门把手上挂着一个塑料袋用于装垃圾。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, there is a plastic bottle.",
+            "option_text_cn": "是，有一个塑料瓶。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, there is a plastic plant.",
+            "option_text_cn": "是，有一个塑料植物。",
             "gameObjects": {
                 "list": []
             },
@@ -143,7 +152,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -1.6260000467300416,
+                -1.6260000467300415,
                 0.0416666716337204,
                 1.621999979019165
             ],
@@ -161,7 +170,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                0.43144869804382326,
+                0.43144869804382324,
                 0.0416666716337204,
                 3.21998929977417
             ],
@@ -172,7 +181,7 @@
             "position": [
                 0.5146355628967285,
                 0.0416666716337204,
-                1.6062284708023072
+                1.6062284708023071
             ],
             "type": "navigation"
         },
@@ -188,9 +197,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                3.8359999656677248,
+                3.8359999656677246,
                 0.0416666716337204,
-                2.7850000858306886
+                2.7850000858306885
             ],
             "type": "navigation"
         }

@@ -1,0 +1,297 @@
+{
+    "scene_name": "FloorPlan9_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan9_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.6979999542236329,
+        0.0,
+        0.09200000017881394
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2837422
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan9_physics/Objects/Floor_4313fd87"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2826806
+        },
+        {
+            "instanceID": -2827066
+        },
+        {
+            "instanceID": -2826962
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan9_physics/FPSController/TallVisibilityCapsule",
+        "FloorPlan9_physics/FPSController/VisibilityCapsule",
+        "FloorPlan9_physics/FPSController/StretchVisibilityCapsule"
+    ],
+    "humans": [],
+    "task_template": "Please heat up the leftover pizza from last night for breakfast.",
+    "task_text": "Please heat up the leftover bread from last night for breakfast. ",
+    "task_text_cn": "请加热昨晚剩下的面包作为早餐。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the bread",
+            "option_text_cn": "拿起面包。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2834310
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan9_physics/Objects/Bread_14b6d0db"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the oven door",
+            "option_text_cn": "打开烤箱门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2833786
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan9_physics/Objects/Microwave_31846ab3/Door"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put it in the oven",
+            "option_text_cn": "把它放进烤箱。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2839806
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "CloseDoor",
+            "option_text": "close the oven door",
+            "option_text_cn": "关上烤箱门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2833786
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan9_physics/Objects/Microwave_31846ab3/Door"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "heat",
+            "option_text_cn": "加热。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2839816
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -2839816
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -2834310
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Bread_14b6d0db",
+            "targetPlace": {
+                "instanceID": -2839806
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "heat",
+            "targetObject": {
+                "instanceID": -2834310
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Bread_14b6d0db",
+            "targetPlace": {
+                "instanceID": -2839806
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "heat",
+            "targetObject": {
+                "instanceID": -2834310
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Bread_14b6d0db",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.2920000553131104,
+                2.2351741790771486e-8,
+                0.09000000357627869
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.4580000042915344,
+                2.2351741790771486e-8,
+                0.6029999852180481
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.430999994277954,
+                2.2351741790771486e-8,
+                0.4099999964237213
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.5865826606750488,
+                2.2351741790771486e-8,
+                -1.4830378293991089
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.6000003814697267,
+                2.2351741790771486e-8,
+                -1.5333333015441895
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.007999897003174,
+                2.2351741790771486e-8,
+                0.32100000977516177
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.030264139175415,
+                0.9533151388168335,
+                -0.5189998745918274
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.4714793264865875,
+                1.8489184379577637,
+                1.3554956912994385
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.49540001153945925,
+                1.823046326637268,
+                1.4386999607086182
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.4857584536075592,
+                0.0,
+                0.8433083295822144
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111072550-FloorPlan9_physics-Please_heat_up_the_leftover_bread_from_last_night_for_breakfast__.json",
+    "message": ""
+}

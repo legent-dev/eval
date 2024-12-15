@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Stack all dishes from the cafeteria tables.",
     "task_text": "Stack the phone and the alarm clock on the book.",
+    "task_text_cn": "把手机和闹钟堆放在书上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the cellphone",
+            "option_text_cn": "拿起手机。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the book",
+            "option_text_cn": "放在书上。",
             "gameObjects": {
                 "list": [
                     {
@@ -77,7 +80,8 @@
         },
         {
             "option_type": "PickUp",
-            "option_text": "pick up the alarmclock",
+            "option_text": "pick up the alarm clock",
+            "option_text_cn": "拿起闹钟。",
             "gameObjects": {
                 "list": [
                     {
@@ -125,7 +129,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                0.13600000739097596,
+                0.13600000739097595,
                 0.03333309292793274,
                 -0.972000002861023
             ],
@@ -143,17 +147,17 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.8932424783706666,
+                -1.8932424783706665,
                 0.03333309292793274,
-                1.2534544467926026
+                1.2534544467926025
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -0.22300000488758088,
-                0.023209761828184129,
+                -0.22300000488758087,
+                0.023209761828184128,
                 1.9982118606567383
             ],
             "type": "navigation"
@@ -170,7 +174,7 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                -0.40858638286590578,
+                -0.40858638286590576,
                 0.8698469996452332,
                 -0.966292142868042
             ],
@@ -179,7 +183,7 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -0.47775644063949587,
+                -0.47775644063949585,
                 0.8425217270851135,
                 -0.6090957522392273
             ],
@@ -188,9 +192,9 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -0.6309999823570252,
+                -0.6309999823570251,
                 0.9229999780654907,
-                -1.3376483917236329
+                -1.3376483917236328
             ],
             "type": "special"
         }

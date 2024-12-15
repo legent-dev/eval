@@ -76,10 +76,12 @@
     "humans": [],
     "task_template": "If you were to flood the ground floor with 6 inches of water, which items would remain completely dry?",
     "task_text": "If you were to flood the living room floor with 4 inches of water, which items would remain completely dry? ",
+    "task_text_cn": "如果客厅地面被四英寸的水淹了，哪些物品会完全保持干燥？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Laptops, flower pots, and watches",
+            "option_text_cn": "笔记本电脑、花盆和手表。",
             "gameObjects": {
                 "list": []
             },
@@ -91,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "Laptops, flower pots, and trash cans",
+            "option_text_cn": "笔记本电脑、花盆和垃圾桶。",
             "gameObjects": {
                 "list": []
             },
@@ -102,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "Laptop, flowerpot, and sofa",
+            "option_text_cn": "笔记本电脑、花盆和沙发。",
             "gameObjects": {
                 "list": []
             },
@@ -112,7 +116,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Laptop, figurine , and sofa",
+            "option_text": "Laptop, figurine, and sofa",
+            "option_text_cn": "笔记本电脑、小雕像和沙发。",
             "gameObjects": {
                 "list": []
             },
@@ -123,7 +128,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Laptop, figurine , and watering kettle",
+            "option_text": "Laptop, figurine, and watering kettle",
+            "option_text_cn": "笔记本电脑、小雕像和浇水壶。",
             "gameObjects": {
                 "list": []
             },
@@ -135,6 +141,7 @@
         {
             "option_type": "Answer",
             "option_text": "watering kettle, doors",
+            "option_text_cn": "浇水壶、门。",
             "gameObjects": {
                 "list": []
             },
@@ -146,6 +153,7 @@
         {
             "option_type": "Answer",
             "option_text": "watering kettle, drawings, laptop",
+            "option_text_cn": "浇水壶、画、笔记本电脑。",
             "gameObjects": {
                 "list": []
             },
@@ -157,6 +165,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -196,7 +205,7 @@
             "position": [
                 -7.572289943695068,
                 0.003911375999450684,
-                -1.5246998071670533
+                -1.5246998071670532
             ],
             "type": "navigation"
         },
@@ -205,7 +214,7 @@
             "position": [
                 -7.675503730773926,
                 0.003911375999450684,
-                1.4901161193847657e-8
+                1.4901161193847656e-08
             ],
             "type": "navigation"
         },
@@ -248,7 +257,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                -3.6666674613952638,
+                -3.6666674613952637,
                 0.03724473714828491,
                 -2.660048484802246
             ],

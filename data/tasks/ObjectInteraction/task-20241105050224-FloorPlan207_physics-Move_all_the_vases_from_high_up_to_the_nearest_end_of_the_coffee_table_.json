@@ -1,0 +1,287 @@
+{
+    "scene_name": "FloorPlan207_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan207_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.156000018119812,
+        0.0,
+        -0.41100001335144045
+    ],
+    "agent_rotation": [
+        0.0,
+        240.1029815673828,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -58798162
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan207_physics/Objects/Floor_0d809d9e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -58792496
+        },
+        {
+            "instanceID": -58795000
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan207_physics/FPSController",
+        "FloorPlan207_physics/Objects/Vase_5af273ef"
+    ],
+    "humans": [],
+    "task_template": "Close all open cabinet doors in the kitchen.",
+    "task_text": "Move all the vases from high up to the nearest end of the coffee table.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the blue vase",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58794204
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan207_physics/Objects/Vase_cc1947d6"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the gold vase",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58794456
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan207_physics/Objects/Vase_0cc41aeb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58800862
+                    },
+                    {
+                        "instanceID": -58800872
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)",
+                "SpecialPoint (2)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "Across from the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58794204
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/Vase_cc1947d6",
+            "targetPlace": {
+                "instanceID": -58800862
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "Across from the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58794456
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/Vase_0cc41aeb",
+            "targetPlace": {
+                "instanceID": -58800872
+            },
+            "predicate_place": "SpecialPoint (2)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "Across from the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58794204
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/Vase_cc1947d6",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (2)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "Across from the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58794456
+            },
+            "predicate_object": "FloorPlan207_physics/Objects/Vase_0cc41aeb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (2)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2400000095367432,
+                0.03333333134651184,
+                -1.5010000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.24199999868869782,
+                0.03333333134651184,
+                -0.6050000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.0640000104904175,
+                0.03333333134651184,
+                -0.5189999938011169
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.7850000262260437,
+                0.03333333134651184,
+                1.434999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.6460000276565552,
+                0.03333333134651184,
+                3.1459999084472658
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -0.7630000114440918,
+                0.03333333134651184,
+                3.13700008392334
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.968999981880188,
+                0.03333333134651184,
+                1.3960000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.5789999961853028,
+                0.03333333134651184,
+                3.1589999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                0.18000000715255738,
+                0.03333333134651184,
+                3.1589999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6-Target",
+            "position": [
+                -0.13300000131130219,
+                0.03333333134651184,
+                -0.2160000056028366
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.6380000114440919,
+                0.03333333134651184,
+                -1.5180000066757203
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -0.07100000232458115,
+                0.5130000114440918,
+                -0.16300000250339509
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                -0.3610000014305115,
+                0.5040000081062317,
+                -0.12200000137090683
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105050224-FloorPlan207_physics-Move_all_the_vases_from_high_up_to_the_nearest_end_of_the_coffee_table_.json",
+    "message": ""
+}

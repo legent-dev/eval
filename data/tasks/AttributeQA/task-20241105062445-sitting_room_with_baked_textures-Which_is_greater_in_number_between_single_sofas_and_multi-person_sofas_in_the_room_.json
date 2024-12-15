@@ -1,0 +1,407 @@
+{
+    "scene_name": "sitting_room_with_baked_textures",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/sitting_room_with_baked_textures.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.5099999904632569,
+        0.0,
+        -2.700000047683716
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -61439522
+        }
+    ],
+    "floor_objects": [
+        "sitting_room_with_baked_textures/hall01.obj.cleaner.materialmerger.gles/Object_3"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many sofas are there in the room?",
+    "task_text": "Which is greater in number between single sofas and multi-person sofas in the room?",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "More single sofas (3 single, 2 multi-person).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More single sofas (4 single, 3 multi-person).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More single sofas (4 single, 2 multi-person).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Equal numbers (2 each).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Equal numbers (3 each).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More multi-person sofas (4 multi-person, 3 single).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More multi-person sofas (3 multi-person, 2 single).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More multi-person sofas (4 multi-person, 2 single).",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "More multi-person sofas (4 multi-person, 2 single).",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "NavPoints/NavigationPoint17",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.433495044708252,
+                0.033332619816064838,
+                -4.990140914916992
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.61299991607666,
+                0.033332619816064838,
+                -2.640000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.869999885559082,
+                0.033332619816064838,
+                0.8399999737739563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.199999809265137,
+                0.033332619816064838,
+                2.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.0333333015441896,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.133333206176758,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.6859999895095826,
+                0.033332619816064838,
+                -2.5910000801086427
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.18299999833106996,
+                0.033332619816064838,
+                -0.9739999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -1.9140000343322755,
+                0.033332619816064838,
+                2.627000093460083
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.6920000314712525,
+                0.033332619816064838,
+                -0.9789999723434448
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.15000000596046449,
+                0.033332619816064838,
+                -4.789999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -1.7009999752044678,
+                0.033332619816064838,
+                0.7760000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.14499999582767487,
+                0.033332619816064838,
+                2.7190001010894777
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -0.2070000022649765,
+                0.033332619816064838,
+                -2.565000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -0.10400000214576721,
+                0.033332619816064838,
+                4.366000175476074
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.15000000596046449,
+                0.033332619816064838,
+                0.777999997138977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                1.5299999713897706,
+                0.033332619816064838,
+                -4.710000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                1.409999966621399,
+                0.033332619816064838,
+                2.690000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                1.5700000524520875,
+                0.033332619816064838,
+                -2.5799999237060549
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                1.5390000343322755,
+                0.033332619816064838,
+                -1.184999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                1.4900000095367432,
+                0.033332619816064838,
+                4.429999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                1.5390000343322755,
+                0.033332619816064838,
+                0.6660000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                3.066666841506958,
+                0.033332619816064838,
+                -4.199999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                3.359999895095825,
+                0.033332619816064838,
+                -1.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                2.9800000190734865,
+                0.033332619816064838,
+                4.590000152587891
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                3.32863712310791,
+                0.033332619816064838,
+                0.4527158737182617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                3.1600000858306886,
+                0.033332619816064838,
+                2.680000066757202
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105062445-sitting_room_with_baked_textures-Which_is_greater_in_number_between_single_sofas_and_multi-person_sofas_in_the_room_.json",
+    "message": ""
+}

@@ -1,0 +1,260 @@
+{
+    "scene_name": "two_rooms_10_scene_2",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.2840000092983246,
+        0.0,
+        0.9110000133514404
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -31946930
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_2/CreatedWalls"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Pick up everything that fell on the floor and put it on the table.",
+    "task_text": "Pick up everything that fell on the floor and put it on the table. ",
+    "task_text_cn": "捡起所有掉在地上的东西并把它们放在桌子上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the dishes",
+            "option_text_cn": "拿起餐具。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31945986
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_2/CreatedObjects/identifier20_fcd40d60d1384da196fbf105499ae54a.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the plate",
+            "option_text_cn": "拿起盘子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31945822
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_2/CreatedObjects/identifier19_RoboTHOR_plate_ai2_v.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the stool",
+            "option_text_cn": "拿起凳子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31946814
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_2/CreatedObjects/identifier36_16bbaf5e867c4b2d90d160844d28c5bb.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place it on the table",
+            "option_text_cn": "放在桌子上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -31947864
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -31945822
+            },
+            "predicate_object": "two_rooms_10_scene_2/CreatedObjects/identifier19_RoboTHOR_plate_ai2_v.glb",
+            "targetPlace": {
+                "instanceID": -31947864
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -31945822
+            },
+            "predicate_object": "two_rooms_10_scene_2/CreatedObjects/identifier19_RoboTHOR_plate_ai2_v.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.4839999675750734,
+                0.0416666716337204,
+                2.115999937057495
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.74399995803833,
+                0.0416666716337204,
+                2.617000102996826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.2719999551773072,
+                0.0416666716337204,
+                0.8370000123977661
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.8450000286102295,
+                0.0416666716337204,
+                2.5739998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.25562262535095217,
+                0.0416666716337204,
+                0.9593744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.2288247346878052,
+                0.0416666716337204,
+                2.2626242637634279
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -2.5268352031707765,
+                0.03623020648956299,
+                1.1728614568710328
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -2.191999912261963,
+                0.8193101286888123,
+                1.1779999732971192
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.2039999961853029,
+                0.8193101286888123,
+                1.1770000457763672
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031055951-two_rooms_10_scene_2-Pick_up_everything_that_fell_on_the_floor_and_put_it_on_the_table__.json",
+    "message": ""
+}

@@ -1,0 +1,579 @@
+{
+    "scene_name": "office_interior__ceo",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/office_interior__ceo.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.9300000071525574,
+        0.0,
+        -1.2699999809265137
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -25731246
+        }
+    ],
+    "floor_objects": [
+        "office_interior__ceo/13db1c728d794487a2fe98782a966cdc.fbx/RootNode/Group1871020188"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Confirm if a clock is mounted on the wall in the living room.Compare the sizes of the coffee table and the sofa in the livingroom, which one is bigger?",
+    "task_text": "Carefully compare the height of the lamp on the office desk and the lamp next to the reception sofa, and confirm which statement in the options is correct.",
+    "task_text_cn": "仔细比较桌上的灯和椅子上的灯，证实选项中的哪种说法是正确的。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp on the office desk is taller and there are more of them.",
+            "option_text_cn": "办公桌上的灯更高，而且数量更多。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp on the office desk is taller and its color is black.",
+            "option_text_cn": "办公桌上的灯更高，它的颜色是黑色。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp on the office desk is shorter and there is only one.",
+            "option_text_cn": "办公桌上的灯更矮，而且只有一个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp next to the reception sofa is taller and there are more of them.",
+            "option_text_cn": "接待沙发旁边的灯更高，而且数量更多。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp next to the reception sofa is shorter and there is only one.",
+            "option_text_cn": "接待沙发旁边的灯更矮，而且只有一个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The lamp next to the reception sofa is taller and its main color is white.",
+            "option_text_cn": "接待沙发旁边的灯更高，它的主要颜色是白色。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No correct option.",
+            "option_text_cn": "没有正确选项。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Multiple correct options.",
+            "option_text_cn": "多个正确选项。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "No correct option.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -6.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -4.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -2.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -8.96935749053955,
+                0.03965110704302788,
+                -0.014871973544359208
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -8.933639526367188,
+                0.03965110704302788,
+                2.34913969039917
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -8.90000057220459,
+                0.03965110704302788,
+                4.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -7.923169136047363,
+                0.03965110704302788,
+                -5.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -7.923169136047363,
+                0.03965110704302788,
+                -3.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -5.5,
+                0.03965110704302788,
+                -0.07000000029802323
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -6.923169136047363,
+                0.03965110704302788,
+                0.8857889175415039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -6.327000141143799,
+                0.03965110704302788,
+                2.753999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -6.899870872497559,
+                0.03965110704302788,
+                5.247817516326904
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -5.585000038146973,
+                0.03965110704302788,
+                -2.6489999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -4.5929999351501469,
+                0.14300000667572022,
+                -5.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -5.081313133239746,
+                0.03965110704302788,
+                4.043932914733887
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -3.9231691360473635,
+                0.03965110704302788,
+                5.800000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -3.309999942779541,
+                0.03965110704302788,
+                -0.5600000023841858
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (1)",
+            "position": [
+                -3.2109999656677248,
+                0.03965110704302788,
+                -2.4010000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18 (2)",
+            "position": [
+                -1.24399995803833,
+                0.03965110704302788,
+                -2.3259999752044679
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                -3.6589999198913576,
+                0.03965110704302788,
+                2.0309998989105226
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (1)",
+            "position": [
+                -3.819999933242798,
+                0.03965110704302788,
+                3.6600000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                -2.4070000648498537,
+                0.03965110704302788,
+                -5.692999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                -2.4231691360473635,
+                0.5729844570159912,
+                4.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22 (2)",
+            "position": [
+                0.9269999861717224,
+                0.03965110704302788,
+                -2.4809999465942385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                -0.9599999785423279,
+                0.03965110704302788,
+                1.809999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                -1.3799999952316285,
+                0.03965110704302788,
+                -0.3700000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                -0.6129999756813049,
+                0.03965110704302788,
+                -5.564000129699707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                0.9670000076293945,
+                0.03965110704302788,
+                -4.046999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                -1.1299999952316285,
+                0.03965110704302788,
+                3.619999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                0.5299999713897705,
+                0.05999999865889549,
+                -0.05000000074505806
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                2.5,
+                0.03965110704302788,
+                1.6299999952316285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30 (1)",
+            "position": [
+                1.0499999523162842,
+                0.03965110704302788,
+                3.109999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                2.1333930492401125,
+                0.03965110704302788,
+                -6.131252288818359
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                1.5315849781036378,
+                0.03965110704302788,
+                5.200211524963379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                2.0768308639526369,
+                0.03965110704302788,
+                -4.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                2.5768308639526369,
+                0.03965110704302788,
+                -2.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                3.8333334922790529,
+                0.03965110704302788,
+                3.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                -5.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint38",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                -3.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint39",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                1.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                4.576830863952637,
+                0.03965110704302788,
+                -1.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint41",
+            "position": [
+                6.233333587646484,
+                0.00631776824593544,
+                -0.1142110824584961
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint42",
+            "position": [
+                6.233333587646484,
+                0.00631776824593544,
+                3.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint43",
+            "position": [
+                7.576830863952637,
+                0.00631776824593544,
+                -1.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint44",
+            "position": [
+                7.576830863952637,
+                0.00631776824593544,
+                1.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                8.576830863952637,
+                0.00631776824593544,
+                3.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint46",
+            "position": [
+                9.076830863952637,
+                0.00631776824593544,
+                -0.1142110824584961
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020090546-office_interior__ceo-Carefully_compare_the_height_of_the_lamp_on_the_office_desk_and_the_lamp_next_to_the_reception_sofa,_and_confirm_which_statement_in_the_options_is_correct_.json",
+    "message": ""
+}

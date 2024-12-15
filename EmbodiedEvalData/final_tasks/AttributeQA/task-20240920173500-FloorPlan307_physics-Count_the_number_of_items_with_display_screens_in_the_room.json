@@ -44,10 +44,12 @@
     "humans": [],
     "task_template": "Count the number of plants, both indoor and outdoor, on the property.",
     "task_text": "Count the number of items with display screens in the room",
+    "task_text_cn": "数一数房间里有显示屏的物品数量。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "one",
+            "option_text_cn": "一个",
             "gameObjects": {
                 "list": []
             },
@@ -59,6 +61,7 @@
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "两个",
             "gameObjects": {
                 "list": []
             },
@@ -70,6 +73,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三个",
             "gameObjects": {
                 "list": []
             },
@@ -81,6 +85,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四个",
             "gameObjects": {
                 "list": []
             },
@@ -92,6 +97,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五个",
             "gameObjects": {
                 "list": []
             },
@@ -103,6 +109,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六个",
             "gameObjects": {
                 "list": []
             },
@@ -114,6 +121,7 @@
         {
             "option_type": "Answer",
             "option_text": "seven",
+            "option_text_cn": "七个",
             "gameObjects": {
                 "list": []
             },
@@ -125,6 +133,7 @@
         {
             "option_type": "Answer",
             "option_text": "eight",
+            "option_text_cn": "八个",
             "gameObjects": {
                 "list": []
             },
@@ -164,7 +173,7 @@
             "position": [
                 0.8906837701797485,
                 0.02633318305015564,
-                -1.9517189264297486
+                -1.9517189264297485
             ],
             "type": "navigation"
         },
@@ -173,7 +182,7 @@
             "position": [
                 -0.9369709491729736,
                 0.02633318305015564,
-                -1.5110000371932984
+                -1.5110000371932983
             ],
             "type": "navigation"
         },
@@ -198,7 +207,7 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                1.3105461597442628,
+                1.3105461597442627,
                 0.009615985676646233,
                 -0.6947261691093445
             ],
@@ -209,7 +218,7 @@
             "position": [
                 1.3362832069396973,
                 0.1873065084218979,
-                -2.3973186016082765
+                -2.3973186016082764
             ],
             "type": "navigation-target"
         },
@@ -218,16 +227,16 @@
             "position": [
                 1.3362832069396973,
                 0.1873065084218979,
-                -2.3973186016082765
+                -2.3973186016082764
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoint (1)",
             "position": [
-                1.2477110624313355,
-                0.18752968311309815,
-                -2.4873416423797609
+                1.2477110624313354,
+                0.18752968311309814,
+                -2.4873416423797607
             ],
             "type": "special"
         }

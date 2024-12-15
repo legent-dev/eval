@@ -1,0 +1,290 @@
+{
+    "scene_name": "stylish_apartment",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/stylish_apartment.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.490000009536743,
+        0.0,
+        7.199999809265137
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -41825068
+        }
+    ],
+    "floor_objects": [
+        "stylish_apartment/1d4e1cfcb59844beaa65dd23456ac3bd.fbx/RootNode/i13 On My Own Apartment/i13AP Floor And Ceiling/i13AP Floor/i13AP Floor.Shape"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Pick up the red notebook on the side table.",
+    "task_text": "Pick up the red notebook on the side table in the living room.",
+    "task_text_cn": "在客厅的边桌上拿起红色笔记本。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -41825088
+                    }
+                ]
+            },
+            "objects": [
+                "stylish_apartment/1d4e1cfcb59844beaa65dd23456ac3bd.fbx/RootNode/i13 On My Own Apartment/i13AP Living Room/i13AP Side Table/i13AP Book 4"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "Oil Painting",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -41825088
+            },
+            "predicate_object": "stylish_apartment/1d4e1cfcb59844beaa65dd23456ac3bd.fbx/RootNode/i13 On My Own Apartment/i13AP Living Room/i13AP Side Table/i13AP Book 4",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "Oil Painting",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -41830702
+            },
+            "predicate_object": "NavPoints/NavigationPoint19",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.6740000247955324,
+                0.02333332970738411,
+                4.561999797821045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.4678852558135988,
+                0.02333332970738411,
+                -6.511292457580566
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.2250216007232668,
+                0.02333332970738411,
+                -3.5652008056640627
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.440999984741211,
+                0.02333332970738411,
+                -1.559999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.7710000276565552,
+                0.02333332970738411,
+                1.0989999771118165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.8509999513626099,
+                0.02333332970738411,
+                6.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.7685832381248474,
+                0.02333332970738411,
+                9.156266212463379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.8169999718666077,
+                0.02333332970738411,
+                -4.291999816894531
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.23100000619888307,
+                0.02333332970738411,
+                4.550000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.9959999918937683,
+                0.02333332970738411,
+                -2.063999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.32600000500679018,
+                0.02333332970738411,
+                0.23899999260902406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.8000000715255737,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.3440000116825104,
+                0.02333332970738411,
+                2.630000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                -0.6819999814033508,
+                0.02333332970738411,
+                1.5089999437332154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.703000068664551,
+                0.02333332970738411,
+                4.793000221252441
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (2)",
+            "position": [
+                4.704999923706055,
+                0.02333332970738411,
+                4.315999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14 (1)",
+            "position": [
+                2.813999891281128,
+                0.02333332970738411,
+                6.514999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.7260398864746095,
+                0.02333332970738411,
+                8.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.226039886474609,
+                0.02333332970738411,
+                6.788446426391602
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                6.535286903381348,
+                0.02333332970738411,
+                3.21396803855896
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                7.014256477355957,
+                0.02333332970738411,
+                8.262157440185547
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19-Target",
+            "position": [
+                -1.1019999980926514,
+                0.02333332970738411,
+                1.753999948501587
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241101065258-stylish_apartment-Pick_up_the_red_notebook_on_the_side_table_in_the_living_room_.json",
+    "message": ""
+}

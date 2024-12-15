@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        -2.4830000400543215,
+        -2.4830000400543213,
         0.0,
-        0.15700000524520875
+        0.15700000524520874
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Create a rainbow display with objects from around the house, using at least one item for each color of the rainbow.",
     "task_text": "Create an art display using two items of the same category on each shelf level, with one level featuring two items of the same shape.",
+    "task_text_cn": "创建一个艺术展示，在每个架子层上放置两个相同类别的物品，其中一层有两个相同形状的物品。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the white vase",
+            "option_text_cn": "拿起白色花瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the first shelf",
+            "option_text_cn": "放在第一层架子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the second shelf",
+            "option_text_cn": "放在第二层架子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the third shelf",
+            "option_text_cn": "放在第三层架子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +117,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the top shelf",
+            "option_text_cn": "放在最上面的架子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -129,6 +135,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the Klein blue narrow-neck vase",
+            "option_text_cn": "拿起克莱因蓝窄颈花瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -146,6 +153,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the wide-mouth vase",
+            "option_text_cn": "拿起宽口花瓶。",
             "gameObjects": {
                 "list": [
                     {
@@ -206,17 +214,17 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.4149999618530275,
-                0.017319679260253907,
-                0.12800000607967378
+                -2.4149999618530273,
+                0.017319679260253906,
+                0.12800000607967377
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -3.2019999027252199,
-                0.017319679260253907,
+                -3.2019999027252197,
+                0.017319679260253906,
                 0.5230000019073486
             ],
             "type": "navigation"
@@ -225,7 +233,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -3.570646286010742,
-                0.017319679260253907,
+                0.017319679260253906,
                 -6.203708171844482
             ],
             "type": "navigation"
@@ -234,7 +242,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -3.566666603088379,
-                0.017319679260253907,
+                0.017319679260253906,
                 -4.494655609130859
             ],
             "type": "navigation"
@@ -243,16 +251,16 @@
             "name": "NavigationPoint4",
             "position": [
                 -3.866666555404663,
-                0.017319679260253907,
-                -2.9946558475494386
+                0.017319679260253906,
+                -2.9946558475494385
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                -5.6666669845581059,
-                -0.016013681888580323,
+                -5.6666669845581055,
+                -0.016013681888580322,
                 -0.866666316986084
             ],
             "type": "navigation"
@@ -260,8 +268,8 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                -5.6666669845581059,
-                -0.016013681888580323,
+                -5.6666669845581055,
+                -0.016013681888580322,
                 1.005344271659851
             ],
             "type": "navigation"
@@ -269,17 +277,17 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                -5.6666669845581059,
-                -0.016013681888580323,
-                2.5053446292877199
+                -5.6666669845581055,
+                -0.016013681888580322,
+                2.5053446292877197
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint8",
             "position": [
-                -5.6666669845581059,
-                -0.016013681888580323,
+                -5.6666669845581055,
+                -0.016013681888580322,
                 4.505343914031982
             ],
             "type": "navigation"
@@ -287,8 +295,8 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                -5.6666669845581059,
-                -0.016013681888580323,
+                -5.6666669845581055,
+                -0.016013681888580322,
                 6.005344390869141
             ],
             "type": "navigation"
@@ -297,7 +305,7 @@
             "name": "NavigationPoint10",
             "position": [
                 -4.862869739532471,
-                -0.016013681888580323,
+                -0.016013681888580322,
                 7.40000057220459
             ],
             "type": "navigation"
@@ -306,7 +314,7 @@
             "name": "NavigationPoint11",
             "position": [
                 -3.866666555404663,
-                0.017319679260253907,
+                0.017319679260253906,
                 -1.4946556091308594
             ],
             "type": "navigation"
@@ -315,7 +323,7 @@
             "name": "NavigationPoint12",
             "position": [
                 -2.501258134841919,
-                0.017319679260253907,
+                0.017319679260253906,
                 3.102111577987671
             ],
             "type": "navigation"
@@ -323,8 +331,8 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                -3.3628697395324709,
-                0.017319679260253907,
+                -3.3628697395324707,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -333,8 +341,8 @@
             "name": "NavigationPoint14",
             "position": [
                 -3.000000238418579,
-                0.017319679260253907,
-                4.6666669845581059
+                0.017319679260253906,
+                4.6666669845581055
             ],
             "type": "navigation"
         },
@@ -342,7 +350,7 @@
             "name": "NavigationPoint15",
             "position": [
                 -2.927000045776367,
-                0.017319679260253907,
+                0.017319679260253906,
                 -0.8579999804496765
             ],
             "type": "navigation"
@@ -350,8 +358,8 @@
         {
             "name": "NavigationPoint15 (1)",
             "position": [
-                -2.9579999446868898,
-                0.017319679260253907,
+                -2.9579999446868896,
+                0.017319679260253906,
                 -3.01200008392334
             ],
             "type": "navigation"
@@ -360,7 +368,7 @@
             "name": "NavigationPoint16",
             "position": [
                 -1.6330000162124634,
-                0.017319679260253907,
+                0.017319679260253906,
                 -0.6769999861717224
             ],
             "type": "navigation"
@@ -368,8 +376,8 @@
         {
             "name": "NavigationPoint17",
             "position": [
-                -1.8628697395324708,
-                0.017319679260253907,
+                -1.8628697395324707,
+                0.017319679260253906,
                 -6.494655609130859
             ],
             "type": "navigation"
@@ -377,8 +385,8 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                -1.8628697395324708,
-                0.017319679260253907,
+                -1.8628697395324707,
+                0.017319679260253906,
                 -4.994655609130859
             ],
             "type": "navigation"
@@ -395,8 +403,8 @@
         {
             "name": "NavigationPoint20",
             "position": [
-                -1.8628697395324708,
-                0.017319679260253907,
+                -1.8628697395324707,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -405,7 +413,7 @@
             "name": "NavigationPoint21",
             "position": [
                 -0.6158702373504639,
-                0.017319679260253907,
+                0.017319679260253906,
                 -2.811410903930664
             ],
             "type": "navigation"
@@ -414,7 +422,7 @@
             "name": "NavigationPoint22",
             "position": [
                 -0.597000002861023,
-                0.017319679260253907,
+                0.017319679260253906,
                 -0.9819999933242798
             ],
             "type": "navigation"
@@ -423,17 +431,17 @@
             "name": "NavigationPoint23",
             "position": [
                 -1.284999966621399,
-                0.34100741147994997,
-                0.32600000500679018
+                0.34100741147994995,
+                0.32600000500679016
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint24",
             "position": [
-                -1.3628697395324708,
-                0.017319679260253907,
-                2.0053443908691408
+                -1.3628697395324707,
+                0.017319679260253906,
+                2.0053443908691406
             ],
             "type": "navigation"
         },
@@ -441,7 +449,7 @@
             "name": "NavigationPoint25",
             "position": [
                 -0.3628697395324707,
-                0.017319679260253907,
+                0.017319679260253906,
                 -6.494655609130859
             ],
             "type": "navigation"
@@ -450,7 +458,7 @@
             "name": "NavigationPoint26",
             "position": [
                 -0.3628697395324707,
-                0.017319679260253907,
+                0.017319679260253906,
                 -4.994655609130859
             ],
             "type": "navigation"
@@ -458,8 +466,8 @@
         {
             "name": "NavigationPoint27",
             "position": [
-                0.26510685682296755,
-                0.017319679260253907,
+                0.26510685682296753,
+                0.017319679260253906,
                 4.059950828552246
             ],
             "type": "navigation"
@@ -468,7 +476,7 @@
             "name": "NavigationPoint28",
             "position": [
                 -0.3628697693347931,
-                0.017319679260253907,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -476,9 +484,9 @@
         {
             "name": "NavigationPoint29",
             "position": [
-                0.34493517875671389,
-                0.017319679260253907,
-                0.5256036520004273
+                0.34493517875671387,
+                0.017319679260253906,
+                0.5256036520004272
             ],
             "type": "navigation"
         },
@@ -486,8 +494,8 @@
             "name": "NavigationPoint0-Target",
             "position": [
                 -4.209414005279541,
-                1.7965034246444703,
-                1.1562596559524537
+                1.7965034246444702,
+                1.1562596559524536
             ],
             "type": "navigation-target"
         },
@@ -512,8 +520,8 @@
         {
             "name": "SpecialPoint (1)",
             "position": [
-                -4.2950921058654789,
-                1.2799999713897706,
+                -4.2950921058654785,
+                1.2799999713897705,
                 0.7360479831695557
             ],
             "type": "special"

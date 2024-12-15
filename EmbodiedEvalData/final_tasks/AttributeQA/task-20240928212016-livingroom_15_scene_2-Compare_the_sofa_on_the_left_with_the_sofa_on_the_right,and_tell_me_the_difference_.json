@@ -14,7 +14,7 @@
     "agent_position": [
         2.546999931335449,
         0.07400000095367432,
-        1.2640000581741334
+        1.2640000581741333
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Compare the number of books on the top shelf to those on the bottom shelf of the bookcase. What's the difference?",
     "task_text": "Compare the sofa on the left with the sofa on the right,and tell me the difference.",
+    "task_text_cn": "比较左边的沙发和右边的沙发，告诉我它们的区别。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "The sofa on the right is purple.",
+            "option_text_cn": "右边的沙发是紫色的。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is nothing on the sofa on the left.",
+            "option_text_cn": "左边的沙发上什么都没有。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is nothing on the sofa on the right.",
+            "option_text_cn": "右边的沙发上什么都没有。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "The sofa on the right is solid-colored.",
+            "option_text_cn": "右边的沙发是纯色的。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "There are computers on both sofas.",
+            "option_text_cn": "两个沙发上都有电脑。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is a computer on only one sofa.",
+            "option_text_cn": "只有一个沙发上有电脑。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is a cell phone on the sofa on the right.",
+            "option_text_cn": "右边的沙发上有一部手机。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is a cell phone on the sofa on the left.",
+            "option_text_cn": "左边的沙发上有一部手机。",
             "gameObjects": {
                 "list": []
             },
@@ -143,7 +152,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.3589999675750733,
+                1.3589999675750732,
                 0.0601164847612381,
                 1.7790000438690186
             ],
@@ -154,7 +163,7 @@
             "position": [
                 0.9390000104904175,
                 0.0601164847612381,
-                2.6649999618530275
+                2.6649999618530273
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 0.828000009059906,
                 0.0601164847612381,
-                3.3429999351501467
+                3.3429999351501465
             ],
             "type": "navigation"
         },
@@ -179,7 +188,7 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                1.6380000114440919,
+                1.6380000114440918,
                 0.0601164847612381,
                 4.690000057220459
             ],
@@ -188,9 +197,9 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.4719998836517336,
+                2.4719998836517334,
                 0.0601164847612381,
-                1.3109999895095826
+                1.3109999895095825
             ],
             "type": "navigation"
         },
@@ -206,9 +215,9 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                2.6480000019073488,
+                2.6480000019073486,
                 0.0601164847612381,
-                3.8489999771118166
+                3.8489999771118164
             ],
             "type": "navigation"
         },

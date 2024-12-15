@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        -0.16599999368190766,
+        -0.16599999368190765,
         0.0,
-        -1.2079999446868897
+        -1.2079999446868896
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Describe the layout of paintings in an art exhibit.",
     "task_text": "Describe the layout of the sofa in the living room. ",
+    "task_text_cn": "描述客厅沙发的布局。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "In the corner",
+            "option_text_cn": "在角落。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "Across from the TV, away from wall",
+            "option_text_cn": "电视对面，离墙有一段距离。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "At the center",
+            "option_text_cn": "在中心。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "Across from the TV, stick to wall",
+            "option_text_cn": "电视对面，靠墙。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "faced by laptop",
+            "option_text_cn": "面向笔记本电脑。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "more than one option is correct",
+            "option_text_cn": "不止一个选项正确。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "on the ceiling",
+            "option_text_cn": "在天花板上。",
             "gameObjects": {
                 "list": []
             },
@@ -203,16 +212,16 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.5789999961853028,
+                1.5789999961853027,
                 0.03333333134651184,
-                3.1589999198913576
+                3.1589999198913574
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                1.5789999961853028,
+                1.5789999961853027,
                 0.03333333134651184,
                 1.319000005722046
             ],

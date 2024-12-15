@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Find a painting in the living room, carefully remove it from the wall, and lean it against the opposite wall.",
     "task_text": "Find a painting of blue irises in the hallway, carefully remove it from the wall, and lean it against the opposite wall.",
+    "task_text_cn": "在走廊找到一幅蓝色鸢尾花的画，小心地从墙上取下，靠在对面墙上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to",
+            "option_text_cn": "放在。",
             "gameObjects": {
                 "list": [
                     {
@@ -106,7 +109,7 @@
             "position": [
                 -1.0333333015441895,
                 0.02725418657064438,
-                1.7832982540130616
+                1.7832982540130615
             ],
             "type": "navigation"
         },
@@ -124,16 +127,16 @@
             "position": [
                 -0.9779999852180481,
                 0.02725418657064438,
-                -1.5750000476837159
+                -1.5750000476837158
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -0.32940763235092165,
+                -0.32940763235092163,
                 0.02725418657064438,
-                3.2921576499938967
+                3.2921576499938965
             ],
             "type": "navigation"
         },
@@ -160,7 +163,7 @@
             "position": [
                 -1.0379999876022339,
                 0.02725418657064438,
-                0.39800000190734866
+                0.39800000190734863
             ],
             "type": "navigation"
         },
@@ -168,26 +171,26 @@
             "name": "NavigationPoint0-Target",
             "position": [
                 1.940659523010254,
-                1.2819981575012208,
-                1.7759997844696046
+                1.2819981575012207,
+                1.7759997844696045
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -1.9487957954406739,
+                -1.9487957954406738,
                 1.3173480033874512,
-                1.7832982540130616
+                1.7832982540130615
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -1.9487957954406739,
+                -1.9487957954406738,
                 1.3173480033874512,
-                1.7832982540130616
+                1.7832982540130615
             ],
             "type": "special"
         }

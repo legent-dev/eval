@@ -14,7 +14,7 @@
     "agent_position": [
         0.8690000176429749,
         0.0,
-        1.2489999532699586
+        1.2489999532699585
     ],
     "agent_rotation": [
         0.0,
@@ -56,10 +56,12 @@
     ],
     "task_template": "Bring the book to the lady in red.",
     "task_text": "Bring the comb to the man in white. ",
+    "task_text_cn": "把梳子带给穿白色衣服的人。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the comb",
+            "option_text_cn": "拿起梳子。",
             "gameObjects": {
                 "list": [
                     {
@@ -77,6 +79,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "hand over",
+            "option_text_cn": "递过去。",
             "gameObjects": {
                 "list": [
                     {
@@ -131,7 +134,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                2.4801173210144045,
+                2.4801173210144043,
                 0.02500009536743164,
                 2.700000286102295
             ],
@@ -160,14 +163,14 @@
             "position": [
                 -0.3569999933242798,
                 0.02500009536743164,
-                1.2979999780654908
+                1.2979999780654907
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0 (3)",
             "position": [
-                -2.5920000076293947,
+                -2.5920000076293945,
                 0.02500009536743164,
                 0.7459999918937683
             ],
@@ -176,18 +179,18 @@
         {
             "name": "NavigationPoint0 (4)",
             "position": [
-                -1.3229999542236329,
+                -1.3229999542236328,
                 0.02500009536743164,
-                2.3940000534057619
+                2.3940000534057617
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                2.4801173210144045,
-                0.43991756439208987,
-                3.5507259368896486
+                2.4801173210144043,
+                0.43991756439208984,
+                3.5507259368896484
             ],
             "type": "navigation-target"
         },
@@ -195,8 +198,8 @@
             "name": "SpecialPoint",
             "position": [
                 2.467128276824951,
-                0.47819775342941286,
-                3.3837597370147707
+                0.47819775342941284,
+                3.3837597370147705
             ],
             "type": "special"
         }

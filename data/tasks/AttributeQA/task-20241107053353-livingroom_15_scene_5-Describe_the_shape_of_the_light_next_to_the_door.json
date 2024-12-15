@@ -1,0 +1,263 @@
+{
+    "scene_name": "livingroom_15_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.437999963760376,
+        0.0,
+        3.385999917984009
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -198288
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_5/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Describe the shape of the lamp on the desk",
+    "task_text": "Describe the shape of the light next to the door",
+    "task_text_cn": "描述门旁边的灯的形状。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Circular",
+            "option_text_cn": "圆形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Conical",
+            "option_text_cn": "圆锥形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Square",
+            "option_text_cn": "方形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Elliptical",
+            "option_text_cn": "椭圆形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Wavy",
+            "option_text_cn": "波浪形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Polygonal",
+            "option_text_cn": "多边形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Triangular",
+            "option_text_cn": "三角形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Truncated conical",
+            "option_text_cn": "截锥形",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Truncated conical",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.406036913394928,
+                0.02783203125,
+                1.0000001192092896
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.1120545864105225,
+                0.02783203125,
+                3.66171932220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.6019999980926515,
+                0.02783203125,
+                0.8569999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.9200000166893005,
+                0.02783203125,
+                2.2950000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                1.190999984741211,
+                0.02783203125,
+                1.0470000505447388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                2.6110000610351564,
+                0.02783203125,
+                2.7850000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (3)",
+            "position": [
+                3.871000051498413,
+                0.02783203125,
+                0.8420000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                4.111000061035156,
+                0.02783203125,
+                2.753999948501587
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (2)",
+            "position": [
+                4.953000068664551,
+                0.02783203125,
+                0.968999981880188
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.40603700280189516,
+                0.7961363196372986,
+                0.37710896134376528
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.3440000116825104,
+                0.8399999737739563,
+                2.6440000534057619
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107053353-livingroom_15_scene_5-Describe_the_shape_of_the_light_next_to_the_door.json",
+    "message": ""
+}

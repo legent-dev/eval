@@ -1,0 +1,301 @@
+{
+    "scene_name": "FloorPlan211_physics",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/AI2THOR/FloorPlan211_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.996999979019165,
+        0.0,
+        -1.2400000095367432
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -16550374
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan211_physics/Objects/Floor_75ae3473"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -16544652
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan211_physics/FPSController"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -16551694
+            },
+            "human_position": [
+                0.9729999899864197,
+                0.0,
+                -0.5180000066757202
+            ],
+            "human_rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "asset": "Ch02_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -16555246
+            },
+            "pointing_to": "SpecialPoint"
+        }
+    ],
+    "task_template": "Offer a seated person a glass of water.",
+    "task_text": "Offer the standing person a newspaper that is in the study room",
+    "task_text_cn": "把书房里的报纸递给站着的人。",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -16548406
+                    },
+                    {
+                        "instanceID": -16553256
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan211_physics/Objects/Newspaper_4b7df6f2",
+                "NavPoints/NavigationPoint5"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -16548406
+                            },
+                            {
+                                "instanceID": -16553256
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan211_physics/Objects/Newspaper_4b7df6f2",
+                            "NavPoints/NavigationPoint5"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the newspaper",
+            "option_text_cn": "拿起报纸。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -16548406
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan211_physics/Objects/Newspaper_4b7df6f2"
+            ],
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -4953622
+                            },
+                            {
+                                "instanceID": 29602
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.633333444595337,
+                0.0,
+                -0.8351095914840698
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                2.760999917984009,
+                0.0,
+                -0.13300000131130219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                3.61899995803833,
+                0.0,
+                -0.0949999988079071
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.5139999985694885,
+                0.0,
+                -1.5010000467300415
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.0820000171661377,
+                0.0,
+                -0.2240000069141388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.1030000448226929,
+                0.0,
+                1.2869999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.013000000268220901,
+                0.0,
+                1.2790000438690186
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                0.7400000095367432,
+                0.0,
+                1.2289999723434448
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.1899999976158142,
+                0.033333420753479004,
+                -0.8610000014305115
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.2799999713897705,
+                0.0016501587815582752,
+                -1.4759999513626099
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                2.7939999103546143,
+                0.0016501587815582752,
+                -1.5190000534057617
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.5019608736038208,
+                0.5313726663589478,
+                0.24705904722213745
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.60495924949646,
+                0.0,
+                1.3531184196472168
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                4.150000095367432,
+                0.0,
+                1.433333396911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.3297746181488037,
+                0.6428853273391724,
+                -0.8351095914840698
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.8970000147819519,
+                1.1610000133514404,
+                -0.5389999747276306
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241009184927-FloorPlan211_physics-Offer_the_standing_person_a_newspaper_that_is_in_the_study_room.json",
+    "message": ""
+}

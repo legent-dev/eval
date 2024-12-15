@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Is the refrigerator stainless steel or white?",
     "task_text": "Is the lounge chair made of wood or dark blue?",
+    "task_text_cn": "躺椅是由木头还是深蓝色制成的？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "wood",
+            "option_text_cn": "木头。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "dark blue",
+            "option_text_cn": "深蓝色。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "white",
+            "option_text_cn": "白色。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "purple",
+            "option_text_cn": "紫色。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "colorful",
+            "option_text_cn": "彩色的。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "metal",
+            "option_text_cn": "金属。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "plastic",
+            "option_text_cn": "塑料。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "yellow",
+            "option_text_cn": "黄色。",
             "gameObjects": {
                 "list": []
             },
@@ -144,7 +153,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.9749996662139893,
-                0.036280348896980289,
+                0.036280348896980286,
                 1.633333444595337
             ],
             "type": "navigation"
@@ -153,25 +162,25 @@
             "name": "NavigationPoint1",
             "position": [
                 0.9079999923706055,
-                0.036280348896980289,
-                3.8239998817443849
+                0.036280348896980286,
+                3.8239998817443848
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                1.7719999551773072,
-                0.036280348896980289,
-                3.7149999141693117
+                1.7719999551773071,
+                0.036280348896980286,
+                3.7149999141693115
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                2.4230000972747804,
-                0.036280348896980289,
+                2.4230000972747803,
+                0.036280348896980286,
                 4.243000030517578
             ],
             "type": "navigation"
@@ -180,7 +189,7 @@
             "name": "NavigationPoint2 (1)",
             "position": [
                 2.361999988555908,
-                0.036280348896980289,
+                0.036280348896980286,
                 5.025000095367432
             ],
             "type": "navigation"
@@ -188,18 +197,18 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.9749996662139894,
-                0.036280348896980289,
-                1.8790178298950196
+                2.9749996662139893,
+                0.036280348896980286,
+                1.8790178298950195
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                3.9813241958618166,
-                0.036280348896980289,
-                3.9830000400543215
+                3.9813241958618164,
+                0.036280348896980286,
+                3.9830000400543213
             ],
             "type": "navigation"
         },
@@ -207,7 +216,7 @@
             "name": "NavigationPoint4 (1)",
             "position": [
                 5.293000221252441,
-                0.036280348896980289,
+                0.036280348896980286,
                 4.427999973297119
             ],
             "type": "navigation"
@@ -216,8 +225,8 @@
             "name": "NavigationPoint4 (2)",
             "position": [
                 5.204999923706055,
-                0.036280348896980289,
-                2.6600000858306886
+                0.036280348896980286,
+                2.6600000858306885
             ],
             "type": "navigation"
         },
@@ -225,7 +234,7 @@
             "name": "NavigationPoint5",
             "position": [
                 4.97499942779541,
-                0.036280348896980289,
+                0.036280348896980286,
                 1.3666667938232422
             ],
             "type": "navigation"

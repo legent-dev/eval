@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Explain the arrangement of books on a shelf.",
     "task_text": "How are the books on the bookshelves arranged? ",
+    "task_text_cn": "书架上的书是如何排列的？",
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "arranged vertically, varing in colors",
+            "option_text": "arranged vertically, varying in colors",
+            "option_text_cn": "垂直排列，颜色各异。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "arranged horizontally, most are white",
+            "option_text_cn": "水平排列，大多数是白色的。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "arranged both horizontally and vertically, most are white",
+            "option_text_cn": "水平和垂直排列都有，大多数是白色的。",
             "gameObjects": {
                 "list": []
             },
@@ -76,7 +80,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "arranged horizontally, varing in colors",
+            "option_text": "arranged horizontally, varying in colors",
+            "option_text_cn": "水平排列，颜色各异。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "arranged both horizontally and vertically, most are red",
+            "option_text_cn": "水平和垂直排列都有，大多数是红色的。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "arranged horizontally, most are yellow",
+            "option_text_cn": "水平排列，大多数是黄色的。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "no books on the shelves",
+            "option_text_cn": "书架上没有书。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "black book",
+            "option_text_cn": "黑色的书。",
             "gameObjects": {
                 "list": []
             },
@@ -149,18 +158,18 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -0.38199999928474429,
+                -0.38199999928474426,
                 0.03333309292793274,
-                1.3600000143051148
+                1.3600000143051147
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.7120000123977662,
+                -1.7120000123977661,
                 0.03333309292793274,
-                1.4010000228881837
+                1.4010000228881836
             ],
             "type": "navigation"
         },

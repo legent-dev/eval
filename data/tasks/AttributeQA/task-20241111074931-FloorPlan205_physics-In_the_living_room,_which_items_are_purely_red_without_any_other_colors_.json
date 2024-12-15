@@ -1,0 +1,254 @@
+{
+    "scene_name": "FloorPlan205_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan205_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -4.269999980926514,
+        0.0,
+        0.6890000104904175
+    ],
+    "agent_rotation": [
+        0.0,
+        341.7973937988281,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3119460
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan205_physics/Objects/Floor_df06283f"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -3113156
+        },
+        {
+            "instanceID": -3117000
+        },
+        {
+            "instanceID": -3118796
+        },
+        {
+            "instanceID": -3116156
+        },
+        {
+            "instanceID": -3114912
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan205_physics/FPSController",
+        "FloorPlan205_physics/Objects/Laptop_8371cbce",
+        "FloorPlan205_physics/Objects/Statue_703be644",
+        "FloorPlan205_physics/Objects/DiningTable_54845b2b",
+        "FloorPlan205_physics/Objects/ArmChair_180022c1"
+    ],
+    "humans": [],
+    "task_template": "In the bedroom, which of the following objects are all white?",
+    "task_text": "In the living room, which items are purely red without any other colors?",
+    "task_text_cn": "在客厅里，哪些物品是纯红色的，没有其他别的颜色？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Only the trash can.",
+            "option_text_cn": "垃圾桶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the watch on the round table.",
+            "option_text_cn": "手表。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the sofas.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the sofas and the ottoman.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the sofas, the ottoman and the card on the round table.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the sofas, the chairs and the cabinet.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Only the sofas and the watch on the round table.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Only the sofas and the ottoman.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -4.2400007247924809,
+                0.029868125915527345,
+                0.6347336769104004
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.2400007247924809,
+                0.029868125915527345,
+                2.6347336769104006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.2929999828338625,
+                0.029868125915527345,
+                4.336999893188477
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.0360000133514406,
+                0.029868125915527345,
+                0.36597830057144167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.2400007247924806,
+                0.029868125915527345,
+                2.6347336769104006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.3329999446868898,
+                0.029868125915527345,
+                6.089000225067139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.5389999747276306,
+                0.029868125915527345,
+                0.7450000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                -0.6639999747276306,
+                0.029868125915527345,
+                2.5239999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.0958443880081177,
+                0.029868125915527345,
+                4.246050834655762
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111074931-FloorPlan205_physics-In_the_living_room,_which_items_are_purely_red_without_any_other_colors_.json",
+    "message": ""
+}

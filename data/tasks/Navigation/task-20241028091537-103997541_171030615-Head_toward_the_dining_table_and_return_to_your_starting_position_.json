@@ -1,0 +1,294 @@
+{
+    "scene_name": "103997541_171030615",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997541_171030615.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        10.960000038146973,
+        0.0,
+        8.65999984741211
+    ],
+    "agent_rotation": [
+        0.0,
+        175.4584197998047,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -7176612
+        }
+    ],
+    "floor_objects": [
+        "103997541_171030615/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -7172132
+        }
+    ],
+    "removed_objects": [
+        "103997541_171030615/openings/openings_wall_23/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C"
+    ],
+    "humans": [],
+    "task_template": "Head toward the bathroom and return to your starting position.",
+    "task_text": "Head toward the dining table and return to your starting position.",
+    "task_text_cn": "朝着餐桌走去，然后回到你的起始位置。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -7358946
+            },
+            "predicate_object": "NavPoints/NavigationPoint115",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -7325528
+            },
+            "predicate_object": "NavPoints/NavigationPoint103",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint55",
+            "position": [
+                7.210000038146973,
+                0.016267061233520509,
+                -5.050000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint56",
+            "position": [
+                7.369999885559082,
+                0.016267061233520509,
+                -2.359999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint62",
+            "position": [
+                7.366666793823242,
+                0.016267061233520509,
+                0.20272064208984376
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint63",
+            "position": [
+                7.366666793823242,
+                0.016267061233520509,
+                1.7027206420898438
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint88",
+            "position": [
+                9.012310028076172,
+                0.016267061233520509,
+                0.3666667938232422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint89",
+            "position": [
+                9.050000190734864,
+                0.016267061233520509,
+                1.7300000190734864
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint99",
+            "position": [
+                10.739999771118164,
+                0.016267061233520509,
+                -0.17000000178813935
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint100",
+            "position": [
+                10.75,
+                0.01626705937087536,
+                2.2799999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint103",
+            "position": [
+                10.770000457763672,
+                0.016267061233520509,
+                8.760000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint112",
+            "position": [
+                10.720000267028809,
+                0.016267061233520509,
+                5.429999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint115",
+            "position": [
+                10.380000114440918,
+                0.040637820959091189,
+                -2.430000066757202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint118",
+            "position": [
+                10.75,
+                0.016267061233520509,
+                -5.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint119",
+            "position": [
+                12.565999984741211,
+                0.016267061233520509,
+                1.4429999589920045
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint120",
+            "position": [
+                15.449999809265137,
+                0.016267061233520509,
+                2.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint134",
+            "position": [
+                12.420000076293946,
+                0.026818741112947465,
+                -3.509999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint141",
+            "position": [
+                13.218999862670899,
+                0.018398569896817209,
+                -1.3849999904632569
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint148",
+            "position": [
+                14.512310028076172,
+                0.016267061233520509,
+                -3.4000003337860109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint153",
+            "position": [
+                15.500850677490235,
+                0.016267061233520509,
+                1.0393785238265992
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint160",
+            "position": [
+                15.512310028076172,
+                0.016267061233520509,
+                -1.7972793579101563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint166",
+            "position": [
+                16.012310028076173,
+                0.016267061233520509,
+                -3.2972793579101564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint174",
+            "position": [
+                17.012310028076173,
+                0.016267061233520509,
+                -1.7972793579101563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint180",
+            "position": [
+                17.80000114440918,
+                0.016267061233520509,
+                -4.600000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint194",
+            "position": [
+                18.512310028076173,
+                0.016267061233520509,
+                -2.7972793579101564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                18.455419540405275,
+                0.0731106549501419,
+                -4.468061923980713
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028091537-103997541_171030615-Head_toward_the_dining_table_and_return_to_your_starting_position_.json",
+    "message": ""
+}

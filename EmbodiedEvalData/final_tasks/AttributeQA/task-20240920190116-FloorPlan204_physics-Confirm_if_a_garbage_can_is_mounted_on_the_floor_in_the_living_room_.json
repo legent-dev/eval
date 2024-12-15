@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Confirm if a clock is mounted on the wall in the living room.",
     "task_text": "Confirm if a garbage can is mounted on the floor in the living room.",
+    "task_text_cn": "确认客厅的地板上是否安装了一个垃圾桶。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "yes, next to the work table",
+            "option_text_cn": "是，在工作台旁边。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "no",
+            "option_text_cn": "否。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, but it is mounted on the wall, not the floor.",
+            "option_text_cn": "是，但它安装在墙上，而不是地板上。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is no garbage can in the living room.",
+            "option_text_cn": "客厅里没有垃圾桶。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the garbage can is mounted on the kitchen floor, not the living room.",
+            "option_text_cn": "否，垃圾桶安装在厨房地板上，而不是客厅。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, but it is hidden behind a piece of furniture.",
+            "option_text_cn": "是，但它藏在一件家具后面。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, but the mounting seems loose and unstable.",
+            "option_text_cn": "是，但安装似乎松动且不稳定。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the garbage can is placed under a table and not attached to the floor.",
+            "option_text_cn": "否，垃圾桶放在桌子下面，没有固定在地板上。",
             "gameObjects": {
                 "list": []
             },
@@ -150,7 +159,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -3.566666603088379,
-                0.017319679260253907,
+                0.017319679260253906,
                 -5.744655609130859
             ],
             "type": "navigation"
@@ -159,8 +168,8 @@
             "name": "NavigationPoint1",
             "position": [
                 -3.866666555404663,
-                0.017319679260253907,
-                -3.7446556091308595
+                0.017319679260253906,
+                -3.7446556091308594
             ],
             "type": "navigation"
         },
@@ -177,8 +186,8 @@
             "name": "NavigationPoint3",
             "position": [
                 -5.112869739532471,
-                0.0037649432197213175,
-                1.2553443908691407
+                0.0037649432197213173,
+                1.2553443908691406
             ],
             "type": "navigation"
         },
@@ -187,7 +196,7 @@
             "position": [
                 -5.112869739532471,
                 0.003764835186302662,
-                3.2553443908691408
+                3.2553443908691406
             ],
             "type": "navigation"
         },
@@ -195,7 +204,7 @@
             "name": "NavigationPoint5",
             "position": [
                 -5.112869739532471,
-                0.0037648119032382967,
+                0.0037648119032382965,
                 5.255344390869141
             ],
             "type": "navigation"
@@ -213,7 +222,7 @@
             "name": "NavigationPoint7",
             "position": [
                 -3.366666793823242,
-                0.017319679260253907,
+                0.017319679260253906,
                 0.2553443908691406
             ],
             "type": "navigation"
@@ -222,17 +231,17 @@
             "name": "NavigationPoint8",
             "position": [
                 -3.066666841506958,
-                0.017319679260253907,
-                -1.7446554899215699
+                0.017319679260253906,
+                -1.7446554899215698
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint9",
             "position": [
-                -2.9311046600341799,
-                0.017319679260253907,
-                3.1610000133514406
+                -2.9311046600341797,
+                0.017319679260253906,
+                3.1610000133514404
             ],
             "type": "navigation"
         },
@@ -240,8 +249,8 @@
             "name": "NavigationPoint9 (1)",
             "position": [
                 -1.88100004196167,
-                0.017319679260253907,
-                3.1610000133514406
+                0.017319679260253906,
+                3.1610000133514404
             ],
             "type": "navigation"
         },
@@ -249,7 +258,7 @@
             "name": "NavigationPoint9 (2)",
             "position": [
                 -1.88100004196167,
-                0.017319679260253907,
+                0.017319679260253906,
                 2.302000045776367
             ],
             "type": "navigation"
@@ -258,8 +267,8 @@
             "name": "NavigationPoint9 (3)",
             "position": [
                 -0.2409999966621399,
-                0.017319679260253907,
-                2.2249999046325685
+                0.017319679260253906,
+                2.2249999046325684
             ],
             "type": "navigation"
         },
@@ -267,7 +276,7 @@
             "name": "NavigationPoint9 (4)",
             "position": [
                 -0.2409999966621399,
-                0.017319679260253907,
+                0.017319679260253906,
                 2.700000047683716
             ],
             "type": "navigation"
@@ -275,8 +284,8 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                -3.1128697395324709,
-                0.017319679260253907,
+                -3.1128697395324707,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -284,8 +293,8 @@
         {
             "name": "NavigationPoint11",
             "position": [
-                -2.1128697395324709,
-                0.017319679260253907,
+                -2.1128697395324707,
+                0.017319679260253906,
                 -4.744655609130859
             ],
             "type": "navigation"
@@ -293,9 +302,9 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                -1.5158461332321168,
-                0.017319679260253907,
-                2.5986459255218508
+                -1.5158461332321167,
+                0.017319679260253906,
+                2.5986459255218506
             ],
             "type": "navigation"
         },
@@ -303,7 +312,7 @@
             "name": "NavigationPoint13",
             "position": [
                 -0.6130133867263794,
-                0.017319679260253907,
+                0.017319679260253906,
                 -2.827965021133423
             ],
             "type": "navigation"
@@ -312,7 +321,7 @@
             "name": "NavigationPoint14",
             "position": [
                 -0.8440484404563904,
-                0.017319679260253907,
+                0.017319679260253906,
                 -1.072603702545166
             ],
             "type": "navigation"
@@ -320,7 +329,7 @@
         {
             "name": "NavigationPoint15",
             "position": [
-                -2.8949999809265138,
+                -2.8949999809265137,
                 0.251699298620224,
                 4.267000198364258
             ],
@@ -330,7 +339,7 @@
             "name": "NavigationPoint16",
             "position": [
                 -1.1128698587417603,
-                0.017319679260253907,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -338,8 +347,8 @@
         {
             "name": "NavigationPoint17",
             "position": [
-                -0.19999980926513673,
-                0.017319679260253907,
+                -0.19999980926513672,
+                0.017319679260253906,
                 -5.744655609130859
             ],
             "type": "navigation"
@@ -347,9 +356,9 @@
         {
             "name": "NavigationPoint18",
             "position": [
-                -0.11413546651601792,
-                0.017319679260253907,
-                0.25724297761917117
+                -0.11413546651601791,
+                0.017319679260253906,
+                0.25724297761917114
             ],
             "type": "navigation"
         },
@@ -357,7 +366,7 @@
             "name": "NavigationPoint19",
             "position": [
                 0.257999986410141,
-                0.017319679260253907,
+                0.017319679260253906,
                 2.742000102996826
             ],
             "type": "navigation"
@@ -366,16 +375,16 @@
             "name": "NavigationPoint19 (1)",
             "position": [
                 0.257999986410141,
-                0.017319679260253907,
-                4.5980000495910648
+                0.017319679260253906,
+                4.5980000495910645
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint20",
             "position": [
-                0.46666669845581057,
-                0.017319679260253907,
+                0.46666669845581055,
+                0.017319679260253906,
                 7.000000476837158
             ],
             "type": "navigation"
@@ -384,7 +393,7 @@
             "name": "SpecialPoint",
             "position": [
                 -2.510999917984009,
-                0.20200000703334809,
+                0.20200000703334808,
                 1.2230000495910645
             ],
             "type": "special"

@@ -1,0 +1,310 @@
+{
+    "scene_name": "two_rooms_10_scene_8",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/two_rooms_10_scene_8.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.5019999742507935,
+        0.0,
+        1.7719999551773071
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -13927148
+        },
+        {
+            "instanceID": -13927160
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_8/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_8/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -13923000
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_8/CreatedObjects/identifier1_Doorway_4.glb/Doorway_4(Clone)"
+    ],
+    "humans": [],
+    "task_template": "What objects in the living room have a shiny surface?",
+    "task_text": "What objects in the bedroom do not have a shiny surface?",
+    "task_text_cn": "卧室里什么物品没有闪亮的表面？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Window",
+            "option_text_cn": "窗户",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pillow",
+            "option_text_cn": "枕头",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Mattress",
+            "option_text_cn": "床垫",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Loofah",
+            "option_text_cn": "丝瓜络",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Toilet brush",
+            "option_text_cn": "马桶刷",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Glossy photo frame",
+            "option_text_cn": "有光泽的相框",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Toilet paper roll",
+            "option_text_cn": "卫生纸卷",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Pumice stone",
+            "option_text_cn": "浮石",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Mattress",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.572338342666626,
+                0.0416666716337204,
+                2.1540000438690186
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.572338342666626,
+                0.0416666716337204,
+                1.2269999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -0.34700000286102295,
+                0.0416666716337204,
+                1.2269999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -0.34700000286102295,
+                0.0416666716337204,
+                0.4650000035762787
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.43144869804382324,
+                0.0416666716337204,
+                2.5250000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                0.43144869804382324,
+                0.0416666716337204,
+                3.256999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.5146355628967285,
+                0.0416666716337204,
+                1.1790000200271606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (3)",
+            "position": [
+                0.5146355628967285,
+                0.0416666716337204,
+                1.8639999628067017
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.7680000066757202,
+                0.0416666716337204,
+                1.1790000200271606
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                1.7680000066757202,
+                0.0416666716337204,
+                0.335999995470047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                3.2980000972747803,
+                0.0416666716337204,
+                1.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                3.2239999771118164,
+                0.0416666716337204,
+                2.5220000743865967
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                1.8070000410079956,
+                0.0416666716337204,
+                2.5220000743865967
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                3.8299999237060547,
+                0.0416666716337204,
+                2.5360000133514404
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.866666793823242,
+                0.0416666716337204,
+                3.2850000858306885
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.2710000276565552,
+                1.1490000486373901,
+                2.125999927520752
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241009131507-two_rooms_10_scene_8-What_objects_in_the_bedroom_do_not_have_a_shiny_surface_.json",
+    "message": ""
+}

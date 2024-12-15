@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        -0.20399999618530274,
+        -0.20399999618530273,
         0.0,
-        2.2820000648498537
+        2.2820000648498535
     ],
     "agent_rotation": [
         0.0,
@@ -39,10 +39,12 @@
     ],
     "task_template": "Check what is on the other side of the soda can",
     "task_text": "Check what is on the other side of the trash can",
+    "task_text_cn": "检查垃圾桶另一边有什么。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Chair",
+            "option_text_cn": "椅子",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "Apple",
+            "option_text_cn": "苹果",
             "gameObjects": {
                 "list": [
                     {
@@ -67,6 +70,7 @@
         {
             "option_type": "Answer",
             "option_text": "Bed",
+            "option_text_cn": "床",
             "gameObjects": {
                 "list": [
                     {
@@ -79,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "Sofa",
+            "option_text_cn": "沙发",
             "gameObjects": {
                 "list": [
                     {
@@ -91,6 +96,7 @@
         {
             "option_type": "Answer",
             "option_text": "Table",
+            "option_text_cn": "桌子",
             "gameObjects": {
                 "list": [
                     {
@@ -103,6 +109,7 @@
         {
             "option_type": "Answer",
             "option_text": "Refrigerator",
+            "option_text_cn": "冰箱",
             "gameObjects": {
                 "list": [
                     {
@@ -115,6 +122,7 @@
         {
             "option_type": "Answer",
             "option_text": "Computer",
+            "option_text_cn": "电脑",
             "gameObjects": {
                 "list": [
                     {
@@ -127,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "Banana",
+            "option_text_cn": "香蕉",
             "gameObjects": {
                 "list": [
                     {
@@ -155,7 +164,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -1.8869999647140504,
+                -1.8869999647140503,
                 0.04000002145767212,
                 -0.466666579246521
             ],
@@ -164,7 +173,7 @@
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                -1.7419999837875367,
+                -1.7419999837875366,
                 0.04000002145767212,
                 0.9399999976158142
             ],
@@ -173,9 +182,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -2.3269999027252199,
+                -2.3269999027252197,
                 -0.00800000037997961,
-                2.2690000534057619
+                2.2690000534057617
             ],
             "type": "navigation"
         },
@@ -200,7 +209,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -0.20499999821186067,
+                -0.20499999821186066,
                 0.04000002145767212,
                 2.321000099182129
             ],
@@ -211,7 +220,7 @@
             "position": [
                 1.25600004196167,
                 0.04000002145767212,
-                2.5980000495910646
+                2.5980000495910645
             ],
             "type": "navigation"
         }

@@ -1,0 +1,234 @@
+{
+    "scene_name": "livingroom_15_scene_2",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.3480000495910645,
+        0.07400000095367432,
+        1.7369999885559083
+    ],
+    "agent_rotation": [
+        0.0,
+        232.21588134765626,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -22998850
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_2/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -22997170
+        }
+    ],
+    "removed_objects": [
+        "livingroom_15_scene_2/CreatedObjects/identifier26_acde12c15de34befbe4dc0fd32489ab8.glb"
+    ],
+    "humans": [],
+    "task_template": "Compare the number of books on the top shelf to those on the bottom shelf of the bookcase. What's the difference?",
+    "task_text": "Turn around and compare the sofa on the left with the sofa on the right. What's the difference between them?",
+    "task_text_cn": "向后转身比较左边的沙发和右边的沙发。它们的区别是什么？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa on the right is purple.",
+            "option_text_cn": "右边的沙发是紫色的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is nothing on the sofa on the left.",
+            "option_text_cn": "左边的沙发上什么都没有。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is nothing on the sofa on the right.",
+            "option_text_cn": "右边的沙发上什么都没有。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa on the right is solid-colored.",
+            "option_text_cn": "右边的沙发是纯色的。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are computers on both sofas.",
+            "option_text_cn": "两个沙发上都有电脑。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is a computer on only one sofa.",
+            "option_text_cn": "只有一个沙发上有电脑。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is a cell phone on the sofa on the right.",
+            "option_text_cn": "右边的沙发上有一部手机。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are cell phones on both sofas.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "There is a computer on only one sofa.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.3589999675750733,
+                0.0601164847612381,
+                1.7790000438690186
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.9800000190734863,
+                0.5440000295639038,
+                2.6649999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9079999923706055,
+                0.0601164847612381,
+                4.682000160217285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.809999942779541,
+                0.0601164847612381,
+                4.559999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.4719998836517336,
+                0.0601164847612381,
+                1.3109999895095826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.5799999237060549,
+                0.0601164847612381,
+                4.960000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.6480000019073488,
+                0.0601164847612381,
+                3.8489999771118166
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.562999963760376,
+                0.0601164847612381,
+                2.746999979019165
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241020060926-livingroom_15_scene_2-Turn_around_and_compare_the_sofa_on_the_left_with_the_sofa_on_the_right__What_s_the_difference_between_them_.json",
+    "message": ""
+}

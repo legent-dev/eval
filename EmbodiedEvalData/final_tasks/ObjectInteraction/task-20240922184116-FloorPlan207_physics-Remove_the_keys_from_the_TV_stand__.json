@@ -14,7 +14,7 @@
     "agent_position": [
         0.1459999978542328,
         0.0,
-        3.2950000762939455
+        3.2950000762939453
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Remove the laptop computer from the sofa.",
     "task_text": "Remove the keys from the TV stand. ",
+    "task_text_cn": "从电视柜上取下钥匙。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up this key",
+            "option_text_cn": "拿起这把钥匙。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it on the table",
+            "option_text_cn": "把它放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -113,9 +116,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.17467083036899568,
+                -0.17467083036899567,
                 0.5127136707305908,
-                0.6883885264396668
+                0.6883885264396667
             ],
             "type": "navigation"
         },
@@ -124,14 +127,14 @@
             "position": [
                 -0.9158039689064026,
                 0.03333333134651184,
-                -1.6086163520812989
+                -1.6086163520812988
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                -1.3739999532699586,
+                -1.3739999532699585,
                 0.03333333134651184,
                 -0.9459999799728394
             ],
@@ -151,7 +154,7 @@
             "position": [
                 -0.7680000066757202,
                 0.03333333134651184,
-                1.5549999475479127
+                1.5549999475479126
             ],
             "type": "navigation"
         },
@@ -203,18 +206,18 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -0.17467083036899568,
-                0.5263590812683106,
-                0.6883885264396668
+                -0.17467083036899567,
+                0.5263590812683105,
+                0.6883885264396667
             ],
             "type": "special"
         }

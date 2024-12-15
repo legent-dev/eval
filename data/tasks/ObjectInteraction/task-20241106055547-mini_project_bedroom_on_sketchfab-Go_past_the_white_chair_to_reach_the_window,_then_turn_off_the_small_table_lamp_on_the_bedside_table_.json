@@ -1,0 +1,248 @@
+{
+    "scene_name": "mini_project_bedroom_on_sketchfab",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/mini_project_bedroom_on_sketchfab.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.6009999513626099,
+        0.0,
+        -0.503000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        76.77565002441406,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -92835440
+        }
+    ],
+    "floor_objects": [
+        "mini_project_bedroom_on_sketchfab/Sketchfab_model/Root/Cube.002"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Open the window, move the curtains aside, and close the door.",
+    "task_text": "Go past the white chair to reach the window, then turn off the small table lamp on the bedside table.",
+    "task_text_cn": "经过椅子和窗户，然后去把桌上的小台灯关了",
+    "options": [
+        {
+            "option_type": "SpecialAction",
+            "option_text": "turn off the light",
+            "option_text_cn": "关灯",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -92835316
+                    }
+                ]
+            },
+            "objects": [
+                "mini_project_bedroom_on_sketchfab/Sketchfab_model/Root/Cylinder"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -92835316
+                            }
+                        ],
+                        "required_objects": [
+                            "mini_project_bedroom_on_sketchfab/Sketchfab_model/Root/Cylinder"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "sit down",
+            "targetObject": {
+                "instanceID": -92835572
+            },
+            "predicate_object": "NavPoints/NavigationPoint1",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "turn off the light",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.4663971662521363,
+                0.003440558910369873,
+                -0.45903974771499636
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.6239999532699586,
+                0.003440558910369873,
+                2.552000045776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.0700000524520875,
+                0.003440558910369873,
+                1.2309999465942383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -1.378999948501587,
+                0.003440558910369873,
+                0.3330000042915344
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.533333420753479,
+                0.4701072573661804,
+                -0.8000000715255737
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.5619999766349793,
+                0.01299853902310133,
+                3.4049999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.08195710182189942,
+                0.5700680017471314,
+                0.3577401638031006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.5045996904373169,
+                0.5193406939506531,
+                -0.5333333611488342
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.38499999046325686,
+                0.036773860454559329,
+                2.059999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.777999997138977,
+                0.01399669423699379,
+                3.239000082015991
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.7079999446868897,
+                0.003440558910369873,
+                -0.289000004529953
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.8279999494552613,
+                0.036773860454559329,
+                0.8500000238418579
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.7099999785423279,
+                0.021809186786413194,
+                2.003000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.9299999475479127,
+                0.003440558910369873,
+                1.9450000524520875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.8849999904632569,
+                0.003440558910369873,
+                3.190999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -1.6384515762329102,
+                0.3834384083747864,
+                1.0535141229629517
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241106055547-mini_project_bedroom_on_sketchfab-Go_past_the_white_chair_to_reach_the_window,_then_turn_off_the_small_table_lamp_on_the_bedside_table_.json",
+    "message": ""
+}

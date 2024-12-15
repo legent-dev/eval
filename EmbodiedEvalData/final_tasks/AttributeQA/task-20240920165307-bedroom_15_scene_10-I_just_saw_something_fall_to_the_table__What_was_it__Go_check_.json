@@ -13,7 +13,7 @@
     ],
     "agent_position": [
         4.441999912261963,
-        2.2351741790771486e-8,
+        2.2351741790771484e-08,
         2.878000020980835
     ],
     "agent_rotation": [
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "I just heard something fall to the ground. What was it? Go check.",
     "task_text": "I just saw something fall to the table. What was it? Go check.",
+    "task_text_cn": "我刚看到有东西掉到桌子上了。是什么？去检查一下。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "glasses",
+            "option_text_cn": "眼镜",
             "gameObjects": {
                 "list": [
                     {
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "laptop",
+            "option_text_cn": "笔记本电脑",
             "gameObjects": {
                 "list": [
                     {
@@ -68,6 +71,7 @@
         {
             "option_type": "Answer",
             "option_text": "clock",
+            "option_text_cn": "时钟",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "book",
+            "option_text_cn": "书",
             "gameObjects": {
                 "list": [
                     {
@@ -98,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "pot",
+            "option_text_cn": "壶",
             "gameObjects": {
                 "list": [
                     {
@@ -113,6 +119,7 @@
         {
             "option_type": "Answer",
             "option_text": "cup",
+            "option_text_cn": "杯子",
             "gameObjects": {
                 "list": [
                     {
@@ -128,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "LEGO",
+            "option_text_cn": "乐高积木",
             "gameObjects": {
                 "list": [
                     {
@@ -143,6 +151,7 @@
         {
             "option_type": "Answer",
             "option_text": "draw",
+            "option_text_cn": "画画",
             "gameObjects": {
                 "list": [
                     {
@@ -186,7 +195,7 @@
             "position": [
                 0.6819999814033508,
                 0.0416666716337204,
-                2.4189999103546144
+                2.4189999103546143
             ],
             "type": "navigation"
         },
@@ -202,7 +211,7 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                1.5349602699279786,
+                1.5349602699279785,
                 0.0416666716337204,
                 4.21999979019165
             ],
@@ -211,7 +220,7 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                1.5349602699279786,
+                1.5349602699279785,
                 0.0416666716337204,
                 2.38100004196167
             ],
@@ -220,7 +229,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.8810157775878908,
+                2.8810157775878906,
                 0.0416666716337204,
                 0.8629999756813049
             ],
@@ -229,25 +238,25 @@
         {
             "name": "NavigationPoint3 (1)",
             "position": [
-                2.8810157775878908,
+                2.8810157775878906,
                 0.0416666716337204,
-                1.8969999551773072
+                1.8969999551773071
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3 (2)",
             "position": [
-                2.3989999294281008,
+                2.3989999294281006,
                 0.0416666716337204,
-                1.8969999551773072
+                1.8969999551773071
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                2.8810157775878908,
+                2.8810157775878906,
                 0.5416667461395264,
                 2.941541910171509
             ],
@@ -276,7 +285,7 @@
             "position": [
                 4.400000095367432,
                 0.0416666716337204,
-                1.1130000352859498
+                1.1130000352859497
             ],
             "type": "navigation"
         },

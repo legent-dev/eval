@@ -12,13 +12,13 @@
         0.0
     ],
     "agent_position": [
-        -0.33500000834465029,
+        -0.33500000834465027,
         0.0,
-        1.7929999828338624
+        1.7929999828338623
     ],
     "agent_rotation": [
         0.0,
-        184.95770263671876,
+        184.95770263671875,
         0.0
     ],
     "floorObjects": [
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Clear the bedside table of all things.",
     "task_text": "Clear the counter to the left of the gas stove of all things and put them into the drawer.",
+    "task_text_cn": "清理煤气灶左边的柜台，把所有东西放进抽屉里。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the green cup",
+            "option_text_cn": "拿起绿色杯子。",
             "gameObjects": {
                 "list": [
                     {
@@ -60,7 +62,8 @@
         },
         {
             "option_type": "PickUp",
-            "option_text": "pick up the saptula",
+            "option_text": "pick up the spatula",
+            "option_text_cn": "拿起铲子。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the paper towel roll",
+            "option_text_cn": "拿起纸巾卷。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the bowl",
+            "option_text_cn": "拿起碗。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +117,7 @@
         {
             "option_type": "OpenDrawer",
             "option_text": "open the drawer",
+            "option_text_cn": "打开抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -129,6 +135,7 @@
         {
             "option_type": "CloseDrawer",
             "option_text": "close the drawer",
+            "option_text_cn": "关上抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -146,6 +153,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the green cup",
+            "option_text_cn": "放下绿色杯子。",
             "gameObjects": {
                 "list": [
                     {
@@ -162,7 +170,8 @@
         },
         {
             "option_type": "PlaceTo",
-            "option_text": "place the saptula",
+            "option_text": "place the spatula",
+            "option_text_cn": "放下铲子。",
             "gameObjects": {
                 "list": [
                     {
@@ -180,6 +189,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the paper towel roll",
+            "option_text_cn": "放下纸巾卷。",
             "gameObjects": {
                 "list": [
                     {
@@ -197,6 +207,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the bowl",
+            "option_text_cn": "放下碗。",
             "gameObjects": {
                 "list": [
                     {
@@ -270,8 +281,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                0.13333334028720857,
-                0.027471795678138734,
+                0.13333334028720856,
+                0.027471795678138733,
                 -0.7678616046905518
             ],
             "type": "navigation"
@@ -279,8 +290,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                0.13333334028720857,
-                0.027471795678138734,
+                0.13333334028720856,
+                0.027471795678138733,
                 -0.11811691522598267
             ],
             "type": "navigation"
@@ -288,8 +299,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -3.5222363471984865,
-                0.027471795678138734,
+                -3.5222363471984863,
+                0.027471795678138733,
                 -2.115396499633789
             ],
             "type": "navigation"
@@ -298,7 +309,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -3.433333396911621,
-                0.027471795678138734,
+                0.027471795678138733,
                 -0.5499997138977051
             ],
             "type": "navigation"
@@ -307,7 +318,7 @@
             "name": "NavigationPoint4",
             "position": [
                 -3.433333396911621,
-                0.027471795678138734,
+                0.027471795678138733,
                 0.9500002861022949
             ],
             "type": "navigation"
@@ -316,8 +327,8 @@
             "name": "NavigationPoint5",
             "position": [
                 -3.066999912261963,
-                0.027471795678138734,
-                2.2149999141693117
+                0.027471795678138733,
+                2.2149999141693115
             ],
             "type": "navigation"
         },
@@ -325,7 +336,7 @@
             "name": "NavigationPoint6",
             "position": [
                 -1.650001049041748,
-                0.027471795678138734,
+                0.027471795678138733,
                 -2.133333444595337
             ],
             "type": "navigation"
@@ -334,7 +345,7 @@
             "name": "NavigationPoint7",
             "position": [
                 -1.812948226928711,
-                0.027471795678138734,
+                0.027471795678138733,
                 0.9602874517440796
             ],
             "type": "navigation"
@@ -352,7 +363,7 @@
             "name": "NavigationPoint9",
             "position": [
                 -0.3580000102519989,
-                0.027471795678138734,
+                0.027471795678138733,
                 1.878000020980835
             ],
             "type": "navigation"
@@ -361,15 +372,15 @@
             "name": "NavigationPoint10",
             "position": [
                 0.3333333432674408,
-                0.027471795678138734,
-                -2.4666669368743898
+                0.027471795678138733,
+                -2.4666669368743896
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                1.0785754919052125,
+                1.0785754919052124,
                 0.9737594127655029,
                 -0.7678616046905518
             ],
@@ -379,7 +390,7 @@
             "name": "NavigationPoint1-Target",
             "position": [
                 0.7942608594894409,
-                0.9397271871566773,
+                0.9397271871566772,
                 -0.11811691522598267
             ],
             "type": "navigation-target"
@@ -388,7 +399,7 @@
             "name": "SpecialPoint",
             "position": [
                 0.6085600852966309,
-                0.17499999701976777,
+                0.17499999701976776,
                 -0.5713131427764893
             ],
             "type": "special"
@@ -397,7 +408,7 @@
             "name": "SpecialPoint (1)",
             "position": [
                 0.602142870426178,
-                0.18400000035762788,
+                0.18400000035762787,
                 -0.7289999723434448
             ],
             "type": "special"
@@ -405,8 +416,8 @@
         {
             "name": "SpecialPoint (2)",
             "position": [
-                0.48410406708717348,
-                0.18299999833106996,
+                0.48410406708717346,
+                0.18299999833106995,
                 -0.5697392821311951
             ],
             "type": "special"
@@ -415,7 +426,7 @@
             "name": "SpecialPoint (3)",
             "position": [
                 0.4875626266002655,
-                0.15600000321865083,
+                0.15600000321865082,
                 -0.7316668033599854
             ],
             "type": "special"

@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "If the red thing on the table and the blue thing on the desk serve the same function?",
     "task_text": "Do the yellow thing on the table and the blue thing on the table serve the same function? ",
+    "task_text_cn": "桌子上的黄色物品和蓝色物品有相同的功能吗？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Yes, they both serve the same function as containers.",
+            "option_text_cn": "是的，它们都作为容器有相同的功能。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, they both serve the same function as writing tools.",
+            "option_text_cn": "是的，它们都作为书写工具有相同的功能。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the yellow one is used for writing, while the blue one is for cutting.",
+            "option_text_cn": "不，黄色的用于书写，而蓝色的用于切割。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, the yellow one is used for writing, while the blue one is for cutting.",
+            "option_text_cn": "不，黄色的用于书写，而蓝色的用于切割。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "They are equally numerous",
+            "option_text_cn": "它们数量相同。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, they serve different functions",
+            "option_text_cn": "不，它们有不同的功能。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, they both are near on the edge of the table",
+            "option_text_cn": "是的，它们都在桌子边缘附近。",
             "gameObjects": {
                 "list": []
             },
@@ -114,7 +122,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Yes, they both are next to an turned on computer",
+            "option_text": "Yes, they both are next to a turned-on computer",
+            "option_text_cn": "是的，它们都在一台打开的电脑旁边。",
             "gameObjects": {
                 "list": []
             },
@@ -144,8 +153,8 @@
             "name": "NavigationPoint0",
             "position": [
                 0.10000000149011612,
-                2.9802322387695315e-8,
-                -1.0729999542236329
+                2.9802322387695312e-08,
+                -1.0729999542236328
             ],
             "type": "navigation"
         },
@@ -153,7 +162,7 @@
             "name": "NavigationPoint0 (1)",
             "position": [
                 -0.5239999890327454,
-                2.9802322387695315e-8,
+                2.9802322387695312e-08,
                 -0.4359999895095825
             ],
             "type": "navigation"
@@ -161,8 +170,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.6808083057403565,
-                2.9802322387695315e-8,
+                -0.6808083057403564,
+                2.9802322387695312e-08,
                 0.9865120649337769
             ],
             "type": "navigation"
@@ -170,8 +179,8 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -0.28700000047683718,
-                2.9802322387695315e-8,
+                -0.28700000047683716,
+                2.9802322387695312e-08,
                 0.6690000295639038
             ],
             "type": "navigation"
@@ -180,16 +189,16 @@
             "name": "NavigationPoint3 (3)",
             "position": [
                 -0.6549999713897705,
-                2.9802322387695315e-8,
-                0.017999999225139619
+                2.9802322387695312e-08,
+                0.017999999225139618
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3 (1)",
             "position": [
-                1.0240000486373902,
-                2.9802322387695315e-8,
+                1.0240000486373901,
+                2.9802322387695312e-08,
                 0.6819999814033508
             ],
             "type": "navigation"
@@ -198,8 +207,8 @@
             "name": "NavigationPoint3 (2)",
             "position": [
                 1.465000033378601,
-                2.9802322387695315e-8,
-                1.2039999961853028
+                2.9802322387695312e-08,
+                1.2039999961853027
             ],
             "type": "navigation"
         }

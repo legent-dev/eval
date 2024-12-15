@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "What items are out of place or don't belong in their current room?",
     "task_text": "What items are out of place? ",
+    "task_text_cn": "什么物品放错了位置？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Notebook computer",
+            "option_text_cn": "笔记本电脑。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Paper box",
+            "option_text_cn": "纸盒子。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "television",
+            "option_text_cn": "电视。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "sofa",
+            "option_text_cn": "沙发。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "table",
+            "option_text_cn": "桌子。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "mural",
+            "option_text_cn": "壁画。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "book",
+            "option_text_cn": "书。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "watch",
+            "option_text_cn": "手表。",
             "gameObjects": {
                 "list": []
             },
@@ -143,8 +152,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -3.2104146480560304,
-                -0.00002345442771911621,
+                -3.2104146480560303,
+                -2.345442771911621e-05,
                 1.809959888458252
             ],
             "type": "navigation"
@@ -153,7 +162,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -3.269500732421875,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 3.005000114440918
             ],
             "type": "navigation"
@@ -162,7 +171,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.237877368927002,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.312999963760376
             ],
             "type": "navigation"
@@ -171,8 +180,8 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.2642706632614136,
-                -0.00002345442771911621,
-                3.0339999198913576
+                -2.345442771911621e-05,
+                3.0339999198913574
             ],
             "type": "navigation"
         },
@@ -180,7 +189,7 @@
             "name": "NavigationPoint4",
             "position": [
                 0.4333333969116211,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.2660000324249268
             ],
             "type": "navigation"

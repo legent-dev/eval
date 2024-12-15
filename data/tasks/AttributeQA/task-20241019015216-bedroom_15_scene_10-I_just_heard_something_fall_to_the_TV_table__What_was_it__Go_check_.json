@@ -1,0 +1,288 @@
+{
+    "scene_name": "bedroom_15_scene_10",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_10.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        4.441999912261963,
+        2.2351741790771486e-8,
+        2.878000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -4291604
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_10/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -4289376
+        }
+    ],
+    "removed_objects": [
+        "bedroom_15_scene_10/CreatedObjects/identifier14_a3a8b29703ad4127a55dddc1c1684c2b.glb"
+    ],
+    "humans": [],
+    "task_template": "I just heard something fall to the ground. What was it? Go check.",
+    "task_text": "I just heard something fall to the TV table. What was it? Go check.",
+    "task_text_cn": "我刚听到有东西掉到电视桌上了。是什么？去检查一下。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "glasses",
+            "option_text_cn": "眼镜",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "laptop",
+            "option_text_cn": "笔记本电脑",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "clock",
+            "option_text_cn": "时钟",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "book",
+            "option_text_cn": "书",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "pot",
+            "option_text_cn": "壶",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "cup",
+            "option_text_cn": "杯子",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "LEGO",
+            "option_text_cn": "乐高积木",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "draw",
+            "option_text_cn": "画画",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "clock",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.218000054359436,
+                0.0416666716337204,
+                0.9649999737739563
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.3569999933242798,
+                0.0416666716337204,
+                0.9559999704360962
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.4359999895095825,
+                0.0416666716337204,
+                2.2279999256134035
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                0.5519999861717224,
+                0.0416666716337204,
+                4.239999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.5349602699279786,
+                0.0416666716337204,
+                4.21999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.2979999780654908,
+                0.0416666716337204,
+                2.196000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.8810157775878908,
+                0.0416666716337204,
+                0.8629999756813049
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                2.8810157775878908,
+                0.0416666716337204,
+                1.8969999551773072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.8810157775878908,
+                0.5416667461395264,
+                2.941541910171509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                2.941541910171509
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                1.88100004196167
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                4.400000095367432,
+                0.0416666716337204,
+                1.1130000352859498
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                4.367480278015137,
+                0.0416666716337204,
+                4.624015808105469
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.614000082015991,
+                0.6710000038146973,
+                1.4470000267028809
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019015216-bedroom_15_scene_10-I_just_heard_something_fall_to_the_TV_table__What_was_it__Go_check_.json",
+    "message": ""
+}

@@ -1,0 +1,239 @@
+{
+    "scene_name": "FloorPlan308_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan308_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -23343446
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan308_physics/Objects/Floor_83109f1a"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -23337464
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan308_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Stack all dishes from the cafeteria tables.",
+    "task_text": "Stack the cellphone and the alarm clock on the book.",
+    "task_text_cn": "把手机和闹钟堆放在书上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the phone",
+            "option_text_cn": "拿起手机。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23337984
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan308_physics/Objects/CellPhone_3b618976"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to the book",
+            "option_text_cn": "放在书上。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23345358
+                    },
+                    {
+                        "instanceID": -23363558
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the alarm clock",
+            "option_text_cn": "拿起闹钟。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -23339354
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan308_physics/Objects/AlarmClock_118d42f1/alarm_clock_8"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -23337984
+            },
+            "predicate_object": "FloorPlan308_physics/Objects/CellPhone_3b618976",
+            "targetPlace": {
+                "instanceID": -23345358
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -23339354
+            },
+            "predicate_object": "FloorPlan308_physics/Objects/AlarmClock_118d42f1/alarm_clock_8",
+            "targetPlace": {
+                "instanceID": -23363558
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.023000000044703485,
+                0.03333309292793274,
+                -1.0110000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.7519999742507935,
+                0.03333309292793274,
+                -1.0609999895095826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                1.7489999532699586,
+                0.03333309292793274,
+                -0.06199999898672104
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.10199999809265137,
+                0.03333309292793274,
+                -0.010999999940395356
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.8932424783706666,
+                0.03333309292793274,
+                1.2534544467926026
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.22300000488758088,
+                0.023209761828184129,
+                1.9982118606567383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.446545124053955,
+                0.7666664123535156,
+                0.9982118606567383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.4300000071525574,
+                0.8698469996452332,
+                -0.9649999737739563
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.41999998688697817,
+                0.8425217270851135,
+                -0.33399999141693118
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.6309999823570252,
+                0.843999981880188,
+                -1.3376483917236329
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -0.6309999823570252,
+                0.8550000190734863,
+                -1.3376483917236329
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031033058-FloorPlan308_physics-Stack_the_cellphone_and_the_alarm_clock_on_the_book_.json",
+    "message": ""
+}

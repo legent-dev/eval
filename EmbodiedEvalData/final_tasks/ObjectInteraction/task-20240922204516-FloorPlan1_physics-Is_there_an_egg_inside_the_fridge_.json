@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Is there a bottle inside the fridge?",
     "task_text": "Is there an egg inside the fridge?",
+    "task_text_cn": "冰箱里有鸡蛋吗？",
     "options": [
         {
             "option_type": "OpenDoor",
             "option_text": "open the upper fridge door",
+            "option_text_cn": "打开冰箱上层门。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "OpenDoor",
             "option_text": "open the lower fridge door",
+            "option_text_cn": "打开冰箱下层门。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "yes, in the lower fridge door",
+            "option_text_cn": "有，在冰箱下层门里。",
             "gameObjects": {
                 "list": []
             },
@@ -89,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "no, in the table",
+            "option_text_cn": "没有，在桌子上。",
             "gameObjects": {
                 "list": []
             },
@@ -100,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "yes, in the upper fridge door",
+            "option_text_cn": "有，在冰箱上层门里。",
             "gameObjects": {
                 "list": []
             },
@@ -111,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "yes , in  the table",
+            "option_text_cn": "有，在桌子上。",
             "gameObjects": {
                 "list": []
             },
@@ -122,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "yes, there's an apple in the fridge",
+            "option_text_cn": "有，冰箱里有一个苹果。",
             "gameObjects": {
                 "list": []
             },
@@ -133,6 +141,7 @@
         {
             "option_type": "Answer",
             "option_text": "no, there's no egg in the fridge",
+            "option_text_cn": "没有，冰箱里没有鸡蛋。",
             "gameObjects": {
                 "list": []
             },
@@ -144,6 +153,7 @@
         {
             "option_type": "Answer",
             "option_text": "I find an egg",
+            "option_text_cn": "我找到一个鸡蛋。",
             "gameObjects": {
                 "list": []
             },
@@ -154,7 +164,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "no tamato in the fridge",
+            "option_text": "no tomato in the fridge",
+            "option_text_cn": "冰箱里没有西红柿。",
             "gameObjects": {
                 "list": []
             },
@@ -184,7 +195,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -1.2710000276565552,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 1.0528579950332642
             ],
             "type": "navigation"
@@ -193,7 +204,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -1.11899995803833,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -1.7400000095367432
             ],
             "type": "navigation"
@@ -201,8 +212,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                1.1519999504089356,
-                2.2351741790771486e-8,
+                1.1519999504089355,
+                2.2351741790771484e-08,
                 -1.784999966621399
             ],
             "type": "navigation"
@@ -211,7 +222,7 @@
             "name": "NavigationPoint3",
             "position": [
                 1.4274070262908936,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -0.07675471901893616
             ],
             "type": "navigation"
@@ -219,8 +230,8 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                1.4359999895095826,
-                2.2351741790771486e-8,
+                1.4359999895095825,
+                2.2351741790771484e-08,
                 1.6666667461395264
             ],
             "type": "navigation"
@@ -228,8 +239,8 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                -1.0089999437332154,
-                2.2351741790771486e-8,
+                -1.0089999437332153,
+                2.2351741790771484e-08,
                 1.6666667461395264
             ],
             "type": "navigation"

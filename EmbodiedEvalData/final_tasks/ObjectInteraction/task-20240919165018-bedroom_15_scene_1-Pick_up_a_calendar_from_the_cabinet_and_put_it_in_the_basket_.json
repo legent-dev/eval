@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        3.4149999618530275,
+        3.4149999618530273,
         0.0,
         3.753000020980835
     ],
@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "Pick up a pen from the desk and place it inside the drawer.",
     "task_text": "Pick up a calendar from the cabinet and put it in the basket.",
+    "task_text_cn": "从柜子里拿起一本日历，并把它放在篮子里。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the calendar",
+            "option_text_cn": "拿起日历。",
             "gameObjects": {
                 "list": [
                     {
@@ -53,7 +55,8 @@
         },
         {
             "option_type": "PlaceTo",
-            "option_text": "place to the baket",
+            "option_text": "place to the basket",
+            "option_text_cn": "放在篮子里。",
             "gameObjects": {
                 "list": [
                     {
@@ -88,7 +91,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.6196329593658448,
+                1.6196329593658447,
                 0.0416666716337204,
                 0.5339999794960022
             ],
@@ -106,7 +109,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                2.2131645679473879,
+                2.2131645679473877,
                 0.0416666716337204,
                 4.053724765777588
             ],
@@ -115,9 +118,9 @@
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                2.2131645679473879,
+                2.2131645679473877,
                 0.0416666716337204,
-                2.1760001182556154
+                2.1760001182556152
             ],
             "type": "navigation"
         },
@@ -126,23 +129,23 @@
             "position": [
                 1.315999984741211,
                 0.0416666716337204,
-                2.1089999675750734
+                2.1089999675750732
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (3)",
             "position": [
-                3.1740000247955324,
+                3.1740000247955322,
                 0.0416666716337204,
-                2.2200000286102297
+                2.2200000286102295
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1 (4)",
             "position": [
-                3.4170000553131105,
+                3.4170000553131104,
                 0.0416666716337204,
                 3.322000026702881
             ],
@@ -151,7 +154,7 @@
         {
             "name": "NavigationPoint1 (2)",
             "position": [
-                0.42100000381469729,
+                0.42100000381469727,
                 0.0416666716337204,
                 2.121999979019165
             ],
@@ -169,7 +172,7 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                3.2070000171661379,
+                3.2070000171661377,
                 0.0416666716337204,
                 1.277999997138977
             ],
@@ -189,16 +192,16 @@
             "position": [
                 0.9739999771118164,
                 0.531000018119812,
-                3.7950000762939455
+                3.7950000762939453
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoints (2)",
             "position": [
-                2.7899999618530275,
+                2.7899999618530273,
                 0.2160000056028366,
-                -1.6089999675750733
+                -1.6089999675750732
             ],
             "type": "special"
         }

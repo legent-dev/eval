@@ -14,7 +14,7 @@
     "agent_position": [
         2.009999990463257,
         0.0,
-        0.12999999523162843
+        0.12999999523162842
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "How many electronic screens are there in the office?",
     "task_text": "How many electronic screens are there in the office?",
+    "task_text_cn": "办公室里有多少个电子屏幕？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "两个。",
             "gameObjects": {
                 "list": [
                     {
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三个。",
             "gameObjects": {
                 "list": [
                     {
@@ -68,6 +71,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四个。",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五个。",
             "gameObjects": {
                 "list": [
                     {
@@ -98,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六个。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,7 +118,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "sevent",
+            "option_text": "seven",
+            "option_text_cn": "七个。",
             "gameObjects": {
                 "list": [
                     {
@@ -128,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "eight",
+            "option_text_cn": "八个。",
             "gameObjects": {
                 "list": [
                     {
@@ -143,6 +151,7 @@
         {
             "option_type": "Answer",
             "option_text": "ten",
+            "option_text_cn": "十个。",
             "gameObjects": {
                 "list": [
                     {
@@ -175,8 +184,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -3.4874770641326906,
-                0.042224377393722537,
+                -3.4874770641326904,
+                0.042224377393722534,
                 -5.274094104766846
             ],
             "type": "navigation"
@@ -184,17 +193,17 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -3.3666670322418215,
-                0.042224377393722537,
-                -2.9635214805603029
+                -3.3666670322418213,
+                0.042224377393722534,
+                -2.9635214805603027
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                -3.3666670322418215,
-                0.042224377393722537,
+                -3.3666670322418213,
+                0.042224377393722534,
                 -0.9635210037231445
             ],
             "type": "navigation"
@@ -202,8 +211,8 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -3.3666670322418215,
-                0.042224377393722537,
+                -3.3666670322418213,
+                0.042224377393722534,
                 1.0364789962768555
             ],
             "type": "navigation"
@@ -221,8 +230,8 @@
             "name": "NavigationPoint5",
             "position": [
                 -2.289620876312256,
-                0.042224377393722537,
-                4.0364789962768559
+                0.042224377393722534,
+                4.0364789962768555
             ],
             "type": "navigation"
         },
@@ -230,7 +239,7 @@
             "name": "NavigationPoint6",
             "position": [
                 -1.2896206378936768,
-                0.042224377393722537,
+                0.042224377393722534,
                 -5.100000381469727
             ],
             "type": "navigation"
@@ -239,16 +248,16 @@
             "name": "NavigationPoint7",
             "position": [
                 -1.5199999809265137,
-                0.042224377393722537,
-                -3.0999999046325685
+                0.042224377393722534,
+                -3.0999999046325684
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint8",
             "position": [
-                -2.0399999618530275,
-                0.042224377393722537,
+                -2.0399999618530273,
+                0.042224377393722534,
                 -1.059999942779541
             ],
             "type": "navigation"
@@ -256,8 +265,8 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                -2.2799999713897707,
-                0.042224377393722537,
+                -2.2799999713897705,
+                0.042224377393722534,
                 1.1399999856948853
             ],
             "type": "navigation"
@@ -265,9 +274,9 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                -0.16666674613952638,
-                0.042224377393722537,
-                3.0364789962768556
+                -0.16666674613952637,
+                0.042224377393722534,
+                3.0364789962768555
             ],
             "type": "navigation"
         },
@@ -275,8 +284,8 @@
             "name": "NavigationPoint11",
             "position": [
                 0.7103791236877441,
-                0.042224377393722537,
-                -5.4635210037231449
+                0.042224377393722534,
+                -5.4635210037231445
             ],
             "type": "navigation"
         },
@@ -284,8 +293,8 @@
             "name": "NavigationPoint12",
             "position": [
                 0.7103791236877441,
-                0.042224377393722537,
-                -3.4635210037231447
+                0.042224377393722534,
+                -3.4635210037231445
             ],
             "type": "navigation"
         },
@@ -294,15 +303,15 @@
             "position": [
                 0.7103791236877441,
                 0.8485604524612427,
-                -1.4635210037231446
+                -1.4635210037231445
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint14",
             "position": [
-                2.9609999656677248,
-                0.042224377393722537,
+                2.9609999656677246,
+                0.042224377393722534,
                 1.319000005722046
             ],
             "type": "navigation"
@@ -310,9 +319,9 @@
         {
             "name": "NavigationPoint15",
             "position": [
-                1.7103791236877442,
-                0.042224377393722537,
-                4.0364789962768559
+                1.7103791236877441,
+                0.042224377393722534,
+                4.0364789962768555
             ],
             "type": "navigation"
         },
@@ -320,7 +329,7 @@
             "name": "NavigationPoint16",
             "position": [
                 2.710379123687744,
-                0.042224377393722537,
+                0.042224377393722534,
                 -5.100000381469727
             ],
             "type": "navigation"
@@ -329,8 +338,8 @@
             "name": "NavigationPoint17",
             "position": [
                 2.710379123687744,
-                0.042224377393722537,
-                -2.9635210037231447
+                0.042224377393722534,
+                -2.9635210037231445
             ],
             "type": "navigation"
         },
@@ -338,7 +347,7 @@
             "name": "NavigationPoint18",
             "position": [
                 2.710379123687744,
-                0.042224377393722537,
+                0.042224377393722534,
                 -0.9635210037231445
             ],
             "type": "navigation"
@@ -346,8 +355,8 @@
         {
             "name": "NavigationPoint19",
             "position": [
-                3.2300000190734865,
-                0.042224377393722537,
+                3.2300000190734863,
+                0.042224377393722534,
                 3.880000114440918
             ],
             "type": "navigation"

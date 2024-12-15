@@ -1,0 +1,227 @@
+{
+    "scene_name": "FloorPlan208_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan208_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.3840000033378601,
+        0.0,
+        -2.2290000915527345
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -56661980
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan208_physics/Objects/Floor_86d9f20f"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -56657332
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan208_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Walk to the shorter one of two desks.",
+    "task_text": "Walk to the smaller one of the two sofas. ",
+    "task_text_cn": "走向两个沙发中较小的那个。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -56665744
+            },
+            "predicate_object": "NavPoints/NavigationPoint6",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -2.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -3.687000036239624,
+                0.03333333134651184,
+                -2.3239998817443849
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                -0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.5,
+                0.03333333134651184,
+                1.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.062000036239624,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.056999921798706,
+                0.03333333134651184,
+                -2.052999973297119
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.371000051498413,
+                0.03333333134651184,
+                0.2919999957084656
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.3279999494552613,
+                0.03333333134651184,
+                2.0899999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.9399995803833008,
+                0.03333333134651184,
+                -1.9133330583572388
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                0.07900000363588333,
+                0.03333333134651184,
+                0.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.37700000405311587,
+                0.03333333134651184,
+                -2.183000087738037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                0.43299999833106997,
+                0.03333333134651184,
+                -3.989000082015991
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.5,
+                0.03333333134651184,
+                -4.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.621999979019165,
+                0.03333333134651184,
+                -1.7799999713897706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.2424324750900269,
+                0.03333333134651184,
+                1.1009914875030518
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.326061725616455,
+                0.05806012079119682,
+                2.0888736248016359
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241025050737-FloorPlan208_physics-Walk_to_the_smaller_one_of_the_two_sofas__.json",
+    "message": ""
+}

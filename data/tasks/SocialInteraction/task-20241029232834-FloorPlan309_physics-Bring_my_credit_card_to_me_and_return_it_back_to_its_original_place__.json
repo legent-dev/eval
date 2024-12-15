@@ -1,0 +1,463 @@
+{
+    "scene_name": "FloorPlan309_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan309_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -3.010999917984009,
+        0.0,
+        -0.4729999899864197
+    ],
+    "agent_rotation": [
+        0.0,
+        200.62049865722657,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -19987136
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan309_physics/Objects/Floor_a7b8cd68"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -19980514
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan309_physics/FPSController"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -19989022
+            },
+            "human_position": [
+                -0.6230000257492065,
+                0.043962836265563968,
+                0.6179999709129334
+            ],
+            "human_rotation": [
+                0.0,
+                290.2326354980469,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Bring a lipstick to me and return it to its original place.",
+    "task_text": "Bring my credit card to me and return it back to its original place. ",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the card",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19982138
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan309_physics/Objects/CreditCard_5f73ed7d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19982138
+                    },
+                    {
+                        "instanceID": -19995076
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan309_physics/Objects/CreditCard_5f73ed7d",
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -19982138
+                            },
+                            {
+                                "instanceID": -19995076
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan309_physics/Objects/CreditCard_5f73ed7d",
+                            "SpecialPoint"
+                        ],
+                        "feedback": "I'm done with it; you can put it back."
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19984380
+                    },
+                    {
+                        "instanceID": -19995076
+                    },
+                    {
+                        "instanceID": -19995086
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan309_physics/Objects/GarbageCan_2723ded2",
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -3112930
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place into trash can",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -19984380
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan309_physics/Objects/GarbageCan_2723ded2"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -3112930
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -19984380
+            },
+            "predicate_object": "FloorPlan309_physics/Objects/GarbageCan_2723ded2",
+            "targetPlace": {
+                "instanceID": -19995076
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -19982138
+            },
+            "predicate_object": "FloorPlan309_physics/Objects/CreditCard_5f73ed7d",
+            "targetPlace": {
+                "instanceID": -19995086
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -19982138
+            },
+            "predicate_object": "FloorPlan309_physics/Objects/CreditCard_5f73ed7d",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.3990000486373902,
+                0.0468900203704834,
+                0.6919999718666077
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.75,
+                0.0468900203704834,
+                2.7699999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.609999895095825,
+                0.0468900203704834,
+                -2.249000072479248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.0999999046325685,
+                0.0468900203704834,
+                0.7275266647338867
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -1.3669999837875367,
+                0.0468900203704834,
+                -0.7210000157356262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.0999999046325685,
+                0.0468900203704834,
+                2.2275266647338869
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -2.299999952316284,
+                0.0468900203704834,
+                -3.7724733352661135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.489000082015991,
+                0.0468900203704834,
+                -2.193000078201294
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                -3.1740000247955324,
+                0.0468900203704834,
+                -0.6000000238418579
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.6962676048278809,
+                0.0468900203704834,
+                -3.7724733352661135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.5679999589920045,
+                0.0468900203704834,
+                2.0439999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.17100000381469727,
+                0.0468900203704834,
+                -2.1649999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.30373239517211916,
+                0.8433440327644348,
+                0.7275266647338867
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                0.8037323951721191,
+                0.0468900203704834,
+                -3.7724733352661135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                0.8037323951721191,
+                0.0468900203704834,
+                3.7275266647338869
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.3037323951721192,
+                0.0468900203704834,
+                -0.7724733352661133
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.3037323951721192,
+                0.0468900203704834,
+                1.933333396911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.8037323951721192,
+                0.0468900203704834,
+                -2.2724733352661135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.303732395172119,
+                0.0468900203704834,
+                -3.7724733352661135
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -1.1169999837875367,
+                0.7950000166893005,
+                0.6769999861717224
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                -0.9486287832260132,
+                0.40494704246520998,
+                3.583143711090088
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint7-Target",
+            "position": [
+                -2.244999885559082,
+                0.0468900203704834,
+                -2.930000066757202
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                -3.430999994277954,
+                0.0468900203704834,
+                -2.8429999351501467
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.1200000047683716,
+                0.796999990940094,
+                0.6769999861717224
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -2.3252313137054445,
+                1.107621192932129,
+                -2.8376517295837404
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029232834-FloorPlan309_physics-Bring_my_credit_card_to_me_and_return_it_back_to_its_original_place__.json",
+    "message": ""
+}

@@ -13,7 +13,7 @@
     ],
     "agent_position": [
         -2.072000026702881,
-        2.2351741790771486e-8,
+        2.2351741790771484e-08,
         0.3630000054836273
     ],
     "agent_rotation": [
@@ -38,10 +38,12 @@
     "humans": [],
     "task_template": "Go to the kitchen, pick up the broom, sweep the floor, and place the broom back in the corner.",
     "task_text": "Go to the bathroom, pick up the hand sanitizer, spray it, and put it back on the sink.",
+    "task_text_cn": "去浴室，拿起洗手液，喷一下，然后把它放回水槽上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -59,6 +61,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "spray it",
+            "option_text_cn": "喷一下。",
             "gameObjects": {
                 "list": [
                     {
@@ -96,6 +99,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to",
+            "option_text_cn": "放在。",
             "gameObjects": {
                 "list": [
                     {
@@ -156,7 +160,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                2.9019999504089357,
+                2.9019999504089355,
                 0.05484937131404877,
                 1.3530000448226929
             ],
@@ -165,7 +169,7 @@
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                1.9550000429153443,
+                1.9550000429153442,
                 0.05484937131404877,
                 0.5659999847412109
             ],
@@ -176,7 +180,7 @@
             "position": [
                 2.990000009536743,
                 0.05484937131404877,
-                2.4100000858306886
+                2.4100000858306885
             ],
             "type": "navigation"
         },
@@ -185,7 +189,7 @@
             "position": [
                 -4.46999979019165,
                 0.05484937131404877,
-                2.0880000591278078
+                2.0880000591278076
             ],
             "type": "navigation"
         },
@@ -228,7 +232,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -1.2680000066757203,
+                -1.2680000066757202,
                 0.05484937131404877,
                 3.688999891281128
             ],
@@ -237,25 +241,25 @@
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                -1.3170000314712525,
+                -1.3170000314712524,
                 0.05484937131404877,
-                2.1610000133514406
+                2.1610000133514404
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5 (2)",
             "position": [
-                -2.8459999561309816,
+                -2.8459999561309814,
                 0.05484937131404877,
-                2.1610000133514406
+                2.1610000133514404
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                0.27004963159561159,
+                0.2700496315956116,
                 0.05484937131404877,
                 0.5996147394180298
             ],
@@ -284,14 +288,14 @@
             "position": [
                 3.653517246246338,
                 0.6521437168121338,
-                1.4226689338684083
+                1.4226689338684082
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                3.6710000038146974,
+                3.6710000038146973,
                 0.6060000061988831,
                 1.8910000324249268
             ],
@@ -300,7 +304,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                3.6710000038146974,
+                3.6710000038146973,
                 0.6060000061988831,
                 1.8910000324249268
             ],

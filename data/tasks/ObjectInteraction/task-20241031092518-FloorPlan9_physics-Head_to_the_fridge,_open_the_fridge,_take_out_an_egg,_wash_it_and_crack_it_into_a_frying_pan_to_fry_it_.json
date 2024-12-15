@@ -1,0 +1,307 @@
+{
+    "scene_name": "FloorPlan9_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan9_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.06199999898672104,
+        0.0,
+        0.7300000190734863
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -40072362
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan9_physics/Objects/Floor_4313fd87"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -40061722
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan9_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Head to the kitchen, open the fridge, take out a bottle of water, and place it on the living room table.",
+    "task_text": "Head to the fridge, open the fridge, take out an egg, wash it and crack it into a frying pan to fry it.",
+    "task_text_cn": "走向冰箱，打开冰箱，拿出一个鸡蛋，清洗它，把它打进煎锅里准备煎鸡蛋。",
+    "options": [
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the door of the fridge",
+            "option_text_cn": "打开冰箱门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40063262
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan9_physics/Objects/Fridge_a7c76ea1/FridgeBodyMesh/RightDoor"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the egg",
+            "option_text_cn": "拿起鸡蛋。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40069854
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan9_physics/Objects/Egg_ef1031e8"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wash the egg",
+            "option_text_cn": "清洗。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40075136
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -40075136
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "crack the egg",
+            "option_text_cn": "打鸡蛋。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40075146
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -26019298
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -40069854
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Egg_ef1031e8",
+            "targetPlace": {
+                "instanceID": -40075146
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "wash the egg",
+            "targetObject": {
+                "instanceID": -40069854
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Egg_ef1031e8",
+            "targetPlace": {
+                "instanceID": -40075146
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "wash",
+            "targetObject": {
+                "instanceID": -40069854
+            },
+            "predicate_object": "FloorPlan9_physics/Objects/Egg_ef1031e8",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.007000000216066837,
+                2.2351741790771486e-8,
+                0.02500000037252903
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.7290000915527345,
+                2.2351741790771486e-8,
+                0.2290000021457672
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.8759999871253967,
+                2.2351741790771486e-8,
+                0.5139999985694885
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.6679999828338624,
+                2.2351741790771486e-8,
+                0.06800000369548798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.1499996185302735,
+                2.2351741790771486e-8,
+                1.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.499835729598999,
+                2.2351741790771486e-8,
+                -1.7205170392990113
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.3500003814697267,
+                2.2351741790771486e-8,
+                -1.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                3.8000001907348635,
+                2.2351741790771486e-8,
+                -1.3333332538604737
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                0.041999999433755878,
+                0.0,
+                -1.375
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                2.7669999599456789,
+                1.0651962757110596,
+                -0.4359999895095825
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                0.640413761138916,
+                0.9675745964050293,
+                1.1024028062820435
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.04899999871850014,
+                0.7554107308387756,
+                -0.5630000233650208
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.640413761138916,
+                0.9675745964050293,
+                1.1024028062820435
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031092518-FloorPlan9_physics-Head_to_the_fridge,_open_the_fridge,_take_out_an_egg,_wash_it_and_crack_it_into_a_frying_pan_to_fry_it_.json",
+    "message": ""
+}

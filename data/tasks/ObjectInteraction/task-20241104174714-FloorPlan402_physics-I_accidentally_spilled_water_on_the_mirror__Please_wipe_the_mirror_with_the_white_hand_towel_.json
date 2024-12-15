@@ -1,0 +1,254 @@
+{
+    "scene_name": "FloorPlan402_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan402_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.0280001163482668,
+        0.0,
+        2.303999900817871
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -51875600
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan402_physics/Objects/Floor_778474a8"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -51870944
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan402_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "I accidentally spilled some juice on the floor. Please mop up the floor.",
+    "task_text": "I accidentally spilled water on the mirror. Please wipe the mirror with the white hand towel.",
+    "task_text_cn": "我不小心把水洒在了镜子上。请用白毛巾擦镜子。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the towel",
+            "option_text_cn": "拿起毛巾。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -51874308
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wipe",
+            "option_text_cn": "擦。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -51878794
+                    },
+                    {
+                        "instanceID": -51874308
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -51878794
+                            },
+                            {
+                                "instanceID": -51874308
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint",
+                            "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "wipe",
+            "targetObject": {
+                "instanceID": -51871996
+            },
+            "predicate_object": "FloorPlan402_physics/Objects/ToiletPaper_b19504c2/ToiletPaper",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "wipe",
+            "targetObject": {
+                "instanceID": -51874308
+            },
+            "predicate_object": "FloorPlan402_physics/Objects/HandTowelHolder_a309e830/AttachPoint/HandTowel_001a809d",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.4480000138282776,
+                -0.0003969818353652954,
+                4.1529998779296879
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.768883228302002,
+                -0.0003969818353652954,
+                0.4470248818397522
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.555999994277954,
+                -0.0003969818353652954,
+                4.322999954223633
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -3.5989999771118166,
+                -0.0003969818353652954,
+                4.65500020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.5959999561309815,
+                -0.0003969818353652954,
+                4.318999767303467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.5322952270507814,
+                -0.0003969818353652954,
+                3.0614755153656008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -2.0510001182556154,
+                -0.0003969818353652954,
+                2.361999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                -0.7639999985694885,
+                -0.0003969818353652954,
+                2.246000051498413
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (3)",
+            "position": [
+                -1.4889999628067017,
+                -0.0003969818353652954,
+                3.3940000534057619
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.3526082038879395,
+                -0.0003969818353652954,
+                1.2974128723144532
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5-Target",
+            "position": [
+                -1.3320000171661378,
+                -0.0003969818353652954,
+                5.0960001945495609
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.257999986410141,
+                1.2730326652526856,
+                4.688000202178955
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -1.1109999418258668,
+                0.019999999552965165,
+                4.438000202178955
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241104174714-FloorPlan402_physics-I_accidentally_spilled_water_on_the_mirror__Please_wipe_the_mirror_with_the_white_hand_towel_.json",
+    "message": ""
+}

@@ -1,0 +1,238 @@
+{
+    "scene_name": "two_rooms_10_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.5339999794960022,
+        0.0,
+        2.2690000534057619
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -36397054
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_5/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -36396474
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_5/CreatedObjects/identifier50_cad1f142f68c43a4b8c4713dce62eccf.glb"
+    ],
+    "humans": [],
+    "task_template": "Retrieve the keys from the living room table and place them on the counter.",
+    "task_text": "Retrieve the tied reading materials from the sofa in the living room and place it on the lounge chair. ",
+    "task_text_cn": "从客厅的沙发上拿起绑起来的阅读材料，把它放在躺椅上。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起书。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -36392622
+                    },
+                    {
+                        "instanceID": -36393674
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_5/CreatedObjects/identifier33_9ebe03b486334d2696b974f9e58afd40.glb",
+                "two_rooms_10_scene_5/CreatedObjects/identifier46_1e14919815ef4d8191886df06fa3cbc5.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -36399442
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36392622
+            },
+            "predicate_object": "two_rooms_10_scene_5/CreatedObjects/identifier33_9ebe03b486334d2696b974f9e58afd40.glb",
+            "targetPlace": {
+                "instanceID": -36399442
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -36392622
+            },
+            "predicate_object": "two_rooms_10_scene_5/CreatedObjects/identifier33_9ebe03b486334d2696b974f9e58afd40.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.700000286102295,
+                0.03490585833787918,
+                3.359890937805176
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                2.24399995803833,
+                0.03490585833787918,
+                1.6629999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                0.7229999899864197,
+                0.03490585833787918,
+                1.9229999780654908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                1.4290000200271607,
+                0.03490585833787918,
+                3.6510000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.2300000190734864,
+                0.03490585833787918,
+                4.5879998207092289
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.130918502807617,
+                0.03490585833787918,
+                1.2000000476837159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.2849999964237213,
+                0.03490585833787918,
+                1.593000054359436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.937000036239624,
+                0.03490585833787918,
+                0.75
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.869081497192383,
+                0.03490585833787918,
+                0.6333333253860474
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.558932304382324,
+                0.457362562417984,
+                3.359890937805176
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.6389999985694885,
+                0.7689999938011169,
+                3.8350000381469728
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.6389999985694885,
+                0.7689999938011169,
+                3.8350000381469728
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                3.4373116493225099,
+                0.40854573249816897,
+                3.593230962753296
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241031082046-two_rooms_10_scene_5-Retrieve_the_tied_reading_materials_from_the_sofa_in_the_living_room_and_place_it_on_the_lounge_chair__.json",
+    "message": ""
+}

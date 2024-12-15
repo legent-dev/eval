@@ -1,0 +1,327 @@
+{
+    "scene_name": "FloorPlan310_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan310_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.187000036239624,
+        0.0,
+        -1.187999963760376
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -58372220
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan310_physics/Objects/Floor_6fa7ca5a"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -58368142
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan310_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Find a dust-covered book, clean it thoroughly, and place it in a prominent position on the bookshelf.",
+    "task_text": "Find the tennis racket next to the baseball bat, wipe the dust off it, and place it in the open cabinet above the desk.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the baseball bat",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58370808
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan310_physics/Objects/BaseballBat_c413cfc8"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -7092034
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the tennis racket",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58370856
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan310_physics/Objects/TennisRacket_314e1f4a"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "wipe",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58370856
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan310_physics/Objects/TennisRacket_314e1f4a"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -58370856
+                            }
+                        ],
+                        "required_objects": [
+                            "FloorPlan310_physics/Objects/TennisRacket_314e1f4a"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place in",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -58374548
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -7092034
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "1",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58370856
+            },
+            "predicate_object": "FloorPlan310_physics/Objects/TennisRacket_314e1f4a",
+            "targetPlace": {
+                "instanceID": -58374548
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "1",
+            "right_special_action": "wipe",
+            "targetObject": {
+                "instanceID": -58368714
+            },
+            "predicate_object": "FloorPlan310_physics/Objects/Book_8efaed15",
+            "targetPlace": {
+                "instanceID": -7302022
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "1",
+            "right_special_action": "wiple off",
+            "targetObject": {
+                "instanceID": -58370856
+            },
+            "predicate_object": "FloorPlan310_physics/Objects/TennisRacket_314e1f4a",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.1269999742507935,
+                0.016666412353515626,
+                -1.2050000429153443
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.6309999823570252,
+                0.016666412353515626,
+                -1.1779999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.4019999504089356,
+                0.016666412353515626,
+                -0.5680000185966492
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.2480000257492066,
+                0.025562379509210588,
+                0.45500001311302187
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -0.5019999742507935,
+                0.043452125042676929,
+                0.5419999957084656
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.2063300609588623,
+                0.6494998335838318,
+                -0.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.7208336591720581,
+                0.6381626129150391,
+                0.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.2063300609588624,
+                0.6294535398483276,
+                -0.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.0670000314712525,
+                0.016666412353515626,
+                -2.009000062942505
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                1.4290000200271607,
+                0.8442895412445068,
+                -0.9789999723434448
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                -0.8360000252723694,
+                0.878000020980835,
+                -1.9190000295639039
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint3-Target",
+            "position": [
+                -1.6369999647140504,
+                0.025562379509210588,
+                0.7429999709129334
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.9677000045776367,
+                1.3765000104904175,
+                -2.0429999828338625
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105044328-FloorPlan310_physics-Find_the_tennis_racket_next_to_the_baseball_bat,_wipe_the_dust_off_it,_and_place_it_in_the_open_cabinet_above_the_.json",
+    "message": ""
+}

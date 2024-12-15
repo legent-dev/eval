@@ -14,7 +14,7 @@
     "agent_position": [
         3.359999895095825,
         0.0,
-        -2.5399999618530275
+        -2.5399999618530273
     ],
     "agent_rotation": [
         0.0,
@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "Locate the bathroom and report whether there are any towels hanging.",
     "task_text": "Locate the living room and report whether there is a Christmas tree.",
+    "task_text_cn": "找到客厅并报告是否有圣诞树。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Yes, it is on the left side of the fireplace and the television.",
+            "option_text_cn": "是，它在壁炉和电视的左边。",
             "gameObjects": {
                 "list": []
             },
@@ -45,6 +47,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, it is not positioned near the fireplace and the television.",
+            "option_text_cn": "不，它不在壁炉和电视附近。",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +56,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, it is located to the right of the fireplace and the television.",
+            "option_text_cn": "是，它在壁炉和电视的右边。",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, it is not found in the living room.",
+            "option_text_cn": "不，在客厅里没有找到。",
             "gameObjects": {
                 "list": []
             },
@@ -69,6 +74,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, it is placed in the center of the room, equidistant from the fireplace and the television.",
+            "option_text_cn": "是，它放在房间的中心，与壁炉和电视等距。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, it is situated in the corner of the room, away from the fireplace and the television.",
+            "option_text_cn": "不，它在房间的角落里，远离壁炉和电视。",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +92,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, it is on the right side of the fireplace and the television.",
+            "option_text_cn": "是，它在壁炉和电视的右边。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, it is on the opposite side of the room from the fireplace and the television.",
+            "option_text_cn": "不，它在房间里与壁炉和电视相对的一侧。",
             "gameObjects": {
                 "list": []
             },
@@ -144,7 +153,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                0.037841230630874637,
+                0.037841230630874634,
                 0.006245441734790802,
                 -6.09188985824585
             ],
@@ -173,7 +182,7 @@
             "position": [
                 -0.574999988079071,
                 0.2022605836391449,
-                -3.9210000038146974
+                -3.9210000038146973
             ],
             "type": "navigation"
         },
@@ -191,7 +200,7 @@
             "position": [
                 -0.846804678440094,
                 0.0348982997238636,
-                -2.4292232990264894
+                -2.4292232990264893
             ],
             "type": "navigation"
         },
@@ -209,7 +218,7 @@
             "position": [
                 -1.055999755859375,
                 0.03957878053188324,
-                1.4000000953674317
+                1.4000000953674316
             ],
             "type": "navigation"
         },
@@ -261,9 +270,9 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                1.2000000476837159,
+                1.2000000476837158,
                 0.03957878053188324,
-                1.4000000953674317
+                1.4000000953674316
             ],
             "type": "navigation"
         },
@@ -281,7 +290,7 @@
             "position": [
                 1.2100000381469727,
                 0.006245441734790802,
-                -10.300000190734864
+                -10.300000190734863
             ],
             "type": "navigation"
         },
@@ -297,7 +306,7 @@
         {
             "name": "NavigationPoint15",
             "position": [
-                2.5230000019073488,
+                2.5230000019073486,
                 0.006245441734790802,
                 -7.921999931335449
             ],
@@ -315,7 +324,7 @@
         {
             "name": "NavigationPoint17",
             "position": [
-                2.9000000953674318,
+                2.9000000953674316,
                 0.006245441734790802,
                 -10.079999923706055
             ],
@@ -344,7 +353,7 @@
             "position": [
                 2.957793712615967,
                 0.006245441734790802,
-                -0.7088733315467835
+                -0.7088733315467834
             ],
             "type": "navigation"
         },
@@ -353,7 +362,7 @@
             "position": [
                 2.944000244140625,
                 0.006245441734790802,
-                1.3049201965332032
+                1.3049201965332031
             ],
             "type": "navigation"
         },
@@ -416,7 +425,7 @@
             "position": [
                 4.688284873962402,
                 0.006245441734790802,
-                0.18408212065696717
+                0.18408212065696716
             ],
             "type": "navigation"
         },
@@ -468,7 +477,7 @@
         {
             "name": "NavigationPoint34",
             "position": [
-                6.9531025886535648,
+                6.9531025886535645,
                 0.006245441734790802,
                 -7.849818706512451
             ],
@@ -569,7 +578,7 @@
             "position": [
                 8.086999893188477,
                 0.10624544322490692,
-                -0.32499998807907107
+                -0.32499998807907104
             ],
             "type": "navigation"
         },
@@ -668,7 +677,7 @@
             "position": [
                 13.333333969116211,
                 0.006245441734790802,
-                3.6666667461395265
+                3.6666667461395264
             ],
             "type": "navigation"
         },
@@ -729,7 +738,7 @@
         {
             "name": "NavigationPoint61",
             "position": [
-                12.666666984558106,
+                12.666666984558105,
                 0.006245441734790802,
                 0.2666666805744171
             ],
@@ -740,7 +749,7 @@
             "position": [
                 13.766667366027832,
                 0.006245441734790802,
-                1.3049201965332032
+                1.3049201965332031
             ],
             "type": "navigation"
         },
@@ -749,7 +758,7 @@
             "position": [
                 14.46332836151123,
                 0.006245441734790802,
-                -0.38348308205604555
+                -0.38348308205604553
             ],
             "type": "navigation"
         },
@@ -803,7 +812,7 @@
             "position": [
                 14.689048767089844,
                 0.006245441734790802,
-                2.9453952312469484
+                2.9453952312469482
             ],
             "type": "navigation"
         },
@@ -830,14 +839,14 @@
             "position": [
                 16.43106460571289,
                 0.006245441734790802,
-                2.9931771755218508
+                2.9931771755218506
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint73",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
                 -11.695079803466797
             ],
@@ -846,7 +855,7 @@
         {
             "name": "NavigationPoint74",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
                 -9.695079803466797
             ],
@@ -855,7 +864,7 @@
         {
             "name": "NavigationPoint75",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
                 -7.695079803466797
             ],
@@ -864,7 +873,7 @@
         {
             "name": "NavigationPoint76",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
                 -5.695079803466797
             ],
@@ -873,7 +882,7 @@
         {
             "name": "NavigationPoint77",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
                 -3.695079803466797
             ],
@@ -882,16 +891,16 @@
         {
             "name": "NavigationPoint78",
             "position": [
-                16.944000244140626,
+                16.944000244140625,
                 0.006245441734790802,
-                1.3049201965332032
+                1.3049201965332031
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint79",
             "position": [
-                17.944000244140626,
+                17.944000244140625,
                 0.006245441734790802,
                 -1.6950798034667969
             ],
@@ -900,7 +909,7 @@
         {
             "name": "NavigationPoint80",
             "position": [
-                17.944000244140626,
+                17.944000244140625,
                 0.006245441734790802,
                 3.304920196533203
             ],
@@ -909,7 +918,7 @@
         {
             "name": "NavigationPoint81",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
                 -11.695079803466797
             ],
@@ -918,7 +927,7 @@
         {
             "name": "NavigationPoint82",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
                 -9.695079803466797
             ],
@@ -927,7 +936,7 @@
         {
             "name": "NavigationPoint83",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
                 -7.695079803466797
             ],
@@ -936,7 +945,7 @@
         {
             "name": "NavigationPoint84",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
                 -5.695079803466797
             ],
@@ -945,7 +954,7 @@
         {
             "name": "NavigationPoint85",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
                 -3.695079803466797
             ],
@@ -954,25 +963,25 @@
         {
             "name": "NavigationPoint86",
             "position": [
-                19.303781509399415,
+                19.303781509399414,
                 0.006245441734790802,
-                -0.41621407866477969
+                -0.41621407866477966
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint87",
             "position": [
-                18.944000244140626,
+                18.944000244140625,
                 0.006245441734790802,
-                1.3049201965332032
+                1.3049201965332031
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint88",
             "position": [
-                19.944000244140626,
+                19.944000244140625,
                 0.8482383489608765,
                 2.304920196533203
             ],
@@ -981,7 +990,7 @@
         {
             "name": "NavigationPoint89",
             "position": [
-                19.666667938232423,
+                19.666667938232422,
                 0.7729121446609497,
                 3.9333336353302
             ],

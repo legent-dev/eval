@@ -1,0 +1,216 @@
+{
+    "scene_name": "FloorPlan206_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan206_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.065000057220459,
+        0.0,
+        -1.8919999599456788
+    ],
+    "agent_rotation": [
+        0.0,
+        352.0048522949219,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -33468638
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan206_physics/Objects/Floor_3053f5a6"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -33465386
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan206_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Find the red box on the coffee table, what does it do?",
+    "task_text": "Find the white box next to the TV stand; what does it do? ",
+    "task_text_cn": "找到电视机柜旁边的白色盒子；它有什么作用？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "For playing games.",
+            "option_text_cn": "玩游戏",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For study.",
+            "option_text_cn": "学习",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For holding fruits.",
+            "option_text_cn": "装水果",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For sitting.",
+            "option_text_cn": "用来坐",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For holding garbage.",
+            "option_text_cn": "装垃圾",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For decoration.",
+            "option_text_cn": "用于装饰",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For moving things.",
+            "option_text_cn": "用来搬东西",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "For holding books.",
+            "option_text_cn": "装书",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "For holding garbage.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.034999966621399,
+                0.03333333134651184,
+                -1.746999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.200000524520874,
+                0.03333333134651184,
+                0.07636451721191406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9869999885559082,
+                0.03333333134651184,
+                -1.6230000257492066
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.9869999885559082,
+                0.03333333134651184,
+                -0.027000000700354577
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.3529999256134035,
+                0.20000001788139344,
+                -0.7089999914169312
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                2.2769999504089357,
+                0.20000001788139344,
+                1.0499999523162842
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023035532-FloorPlan206_physics-Find_the_white_box_next_to_the_TV_stand__what_does_it_do__.json",
+    "message": ""
+}

@@ -14,7 +14,7 @@
     "agent_position": [
         0.7770000100135803,
         0.0,
-        2.2950000762939455
+        2.2950000762939453
     ],
     "agent_rotation": [
         0.0,
@@ -38,10 +38,12 @@
     "humans": [],
     "task_template": "Pick up a glass of water from the counter, place it on the table, and then retrieve a spoon from the drawer.",
     "task_text": "Pick up the blue notebook from the sofa, place it on the table, and then retrieve and pick up a watch from a small stand in another room.",
+    "task_text_cn": "从沙发上拿起蓝色笔记本，把它放在桌子上，然后从另一个房间的小架子上拿起一块手表。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the notebook",
+            "option_text_cn": "拿起笔记本。",
             "gameObjects": {
                 "list": [
                     {
@@ -59,6 +61,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the table",
+            "option_text_cn": "放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -76,6 +79,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the watch",
+            "option_text_cn": "拿起手表。",
             "gameObjects": {
                 "list": [
                     {
@@ -123,7 +127,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                2.6448895931243898,
+                2.6448895931243896,
                 0.05328369140625,
                 4.200000286102295
             ],
@@ -132,7 +136,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                2.4974145889282228,
+                2.4974145889282227,
                 0.05328369140625,
                 3.883166551589966
             ],
@@ -159,7 +163,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -2.3002142906188967,
+                -2.3002142906188965,
                 0.05328369140625,
                 0.2732134759426117
             ],
@@ -168,7 +172,7 @@
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                -2.3570001125335695,
+                -2.3570001125335693,
                 0.05328369140625,
                 1.2269999980926514
             ],
@@ -188,7 +192,7 @@
             "position": [
                 -0.9100000262260437,
                 0.05328369140625,
-                1.1360000371932984
+                1.1360000371932983
             ],
             "type": "navigation"
         },
@@ -197,16 +201,16 @@
             "position": [
                 -1.059999942779541,
                 0.05328369140625,
-                2.1679999828338625
+                2.1679999828338623
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12",
             "position": [
-                -0.40040087699890139,
+                -0.40040087699890137,
                 0.05328369140625,
-                3.6540050506591799
+                3.6540050506591797
             ],
             "type": "navigation"
         },
@@ -224,7 +228,7 @@
             "position": [
                 0.6899999976158142,
                 0.05328369140625,
-                1.1299999952316285
+                1.1299999952316284
             ],
             "type": "navigation"
         },
@@ -267,7 +271,7 @@
         {
             "name": "NavigationPoint20",
             "position": [
-                2.4730000495910646,
+                2.4730000495910645,
                 0.05328369140625,
                 2.859999895095825
             ],
@@ -276,7 +280,7 @@
         {
             "name": "NavigationPoint21",
             "position": [
-                3.2559430599212648,
+                3.2559430599212646,
                 0.05328369140625,
                 0.8913424611091614
             ],
@@ -285,16 +289,16 @@
         {
             "name": "NavigationPoint22",
             "position": [
-                2.5299999713897707,
+                2.5299999713897705,
                 0.05328369140625,
-                1.2899999618530274
+                1.2899999618530273
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint23",
             "position": [
-                3.8666670322418215,
+                3.8666670322418213,
                 0.05328369140625,
                 1.7093744277954102
             ],
@@ -303,8 +307,8 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                2.6448895931243898,
-                0.45702293515205386,
+                2.6448895931243896,
+                0.45702293515205383,
                 5.044091701507568
             ],
             "type": "navigation-target"
@@ -312,9 +316,9 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                2.0369999408721926,
+                2.0369999408721924,
                 0.6296786069869995,
-                3.8560831546783449
+                3.8560831546783447
             ],
             "type": "navigation-target"
         },
@@ -323,16 +327,16 @@
             "position": [
                 -4.172191143035889,
                 0.6410980820655823,
-                3.4005095958709719
+                3.4005095958709717
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoints (1)",
             "position": [
-                2.0369999408721926,
+                2.0369999408721924,
                 0.6296786069869995,
-                3.8560831546783449
+                3.8560831546783447
             ],
             "type": "special"
         }

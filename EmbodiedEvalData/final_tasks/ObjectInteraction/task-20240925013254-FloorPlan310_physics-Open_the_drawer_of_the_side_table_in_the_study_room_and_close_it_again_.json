@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Open the medicine cabinet in the bathroom and close it again.",
     "task_text": "Open the drawer of the side table in the study room and close it again.",
+    "task_text_cn": "打开书房边桌的抽屉，然后再关上。",
     "options": [
         {
             "option_type": "OpenDrawer",
             "option_text": "open the drawer",
+            "option_text_cn": "打开抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -71,6 +73,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "close the drawer",
+            "option_text_cn": "关上抽屉。",
             "gameObjects": {
                 "list": [
                     {
@@ -117,8 +120,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -0.47099998593330386,
-                0.016666412353515626,
+                -0.47099998593330383,
+                0.016666412353515625,
                 -0.9639999866485596
             ],
             "type": "navigation"
@@ -126,9 +129,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.6410480737686158,
-                0.016666412353515626,
-                -1.0683140754699708
+                -1.6410480737686157,
+                0.016666412353515625,
+                -1.0683140754699707
             ],
             "type": "navigation"
         },
@@ -136,8 +139,8 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.6666665077209473,
-                0.025562379509210588,
-                0.24908708035945893
+                0.025562379509210587,
+                0.24908708035945892
             ],
             "type": "navigation"
         },
@@ -145,7 +148,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.7936699390411377,
-                0.043452125042676929,
+                0.043452125042676926,
                 0.75
             ],
             "type": "navigation"
@@ -154,8 +157,8 @@
             "name": "NavigationPoint4",
             "position": [
                 0.6399999856948853,
-                0.016666412353515626,
-                -1.1779999732971192
+                0.016666412353515625,
+                -1.1779999732971191
             ],
             "type": "navigation"
         },
@@ -180,7 +183,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                1.2063300609588624,
+                1.2063300609588623,
                 0.6294535398483276,
                 -0.25
             ],
@@ -190,8 +193,8 @@
             "name": "NavigationPoint8",
             "position": [
                 1.6022911071777344,
-                0.016666412353515626,
-                -1.9439769983291627
+                0.016666412353515625,
+                -1.9439769983291626
             ],
             "type": "navigation"
         },
@@ -199,8 +202,8 @@
             "name": "NavigationPoint0-Target",
             "position": [
                 -0.6231738924980164,
-                1.5345572233200074,
-                -2.0928640365600588
+                1.5345572233200073,
+                -2.0928640365600586
             ],
             "type": "navigation-target"
         },
@@ -209,7 +212,7 @@
             "position": [
                 0.9309999942779541,
                 0.09399999678134918,
-                -1.4049999713897706
+                -1.4049999713897705
             ],
             "type": "special"
         },
@@ -217,7 +220,7 @@
             "name": "SpecialPoints (1)",
             "position": [
                 -3.316999912261963,
-                0.12999999523162843,
+                0.12999999523162842,
                 -0.9269999861717224
             ],
             "type": "special"
@@ -225,9 +228,9 @@
         {
             "name": "SpecialPoints (2)",
             "position": [
-                2.7899999618530275,
+                2.7899999618530273,
                 0.2160000056028366,
-                -1.6089999675750733
+                -1.6089999675750732
             ],
             "type": "special"
         }

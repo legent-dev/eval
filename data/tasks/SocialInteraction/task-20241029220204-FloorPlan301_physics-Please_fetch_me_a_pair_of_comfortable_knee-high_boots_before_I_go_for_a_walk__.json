@@ -1,0 +1,258 @@
+{
+    "scene_name": "FloorPlan301_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan301_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.5290000438690187,
+        0.0,
+        -0.2709999978542328
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -14906148
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan301_physics/Objects/Floor_a4e03a2b"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -14898714
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan301_physics/FPSController"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -14907074
+            },
+            "human_position": [
+                1.9809999465942383,
+                0.009390115737915039,
+                1.6820000410079957
+            ],
+            "human_rotation": [
+                0.0,
+                207.65737915039063,
+                0.0
+            ],
+            "asset": "Ch02_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Please fetch me a pair of comfortable shoes before we go for a walk.",
+    "task_text": "Please fetch me a pair of comfortable knee-high boots before I go for a walk. ",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the boots",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -14901660
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan301_physics/Objects/Boots_afbbc20d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -14907074
+                    },
+                    {
+                        "instanceID": -14901660
+                    }
+                ]
+            },
+            "objects": [
+                "Ch02_nonPBR",
+                "FloorPlan301_physics/Objects/Boots_afbbc20d"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -14907074
+                            },
+                            {
+                                "instanceID": -14901660
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch02_nonPBR",
+                            "FloorPlan301_physics/Objects/Boots_afbbc20d"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -14901660
+            },
+            "predicate_object": "FloorPlan301_physics/Objects/Boots_afbbc20d",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -14901660
+            },
+            "predicate_object": "FloorPlan301_physics/Objects/Boots_afbbc20d",
+            "targetPlace": {
+                "instanceID": -14908552
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.7239999771118164,
+                0.03333333134651184,
+                -1.0010000467300416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.6759999990463257,
+                0.03333333134651184,
+                1.2319999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.5559999942779541,
+                0.03333333134651184,
+                1.4119999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.41600000858306887,
+                0.03333333134651184,
+                -0.5210000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.4860000014305115,
+                0.03333333134651184,
+                0.35199999809265139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.437000036239624,
+                0.1589999943971634,
+                -0.4480000138282776
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.5959999561309815,
+                0.03333333134651184,
+                0.3009999990463257
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.503999948501587,
+                0.03333333134651184,
+                -0.2619999945163727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.2483201026916505,
+                0.2656444311141968,
+                -1.2809056043624879
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.7760000228881837,
+                0.05806012079119682,
+                1.3660000562667847
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.6369999647140504,
+                0.05806012079119682,
+                1.4049999713897706
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029220204-FloorPlan301_physics-Please_fetch_me_a_pair_of_comfortable_knee-high_boots_before_I_go_for_a_walk__.json",
+    "message": ""
+}

@@ -1,0 +1,1014 @@
+{
+    "scene_name": "richards_art_gallery_-_audio_tour",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/richards_art_gallery_-_audio_tour.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        6.099999904632568,
+        0.0,
+        -0.47600001096725466
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -66645068
+        },
+        {
+            "instanceID": -66647462
+        }
+    ],
+    "floor_objects": [
+        "richards_art_gallery_-_audio_tour/Sketchfab_model/d8faef188c324d84b81c319025728041.fbx/Object_2/RootNode/Floor",
+        "richards_art_gallery_-_audio_tour/Sketchfab_model/d8faef188c324d84b81c319025728041.fbx/Object_2/RootNode/Circle001"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Assess whether a new 6-foot couch could fit along the wall between the two windows in the living room without blocking either.",
+    "task_text": "Assess whether a new two-foot-long painting can be hung on the wall of the current exhibition hall, which has only one window, without blocking other paintings and maintaining an aesthetic arrangement.",
+    "task_text_cn": "评估一幅新的两英尺长的画能否挂在当前仅有一个窗户的展厅墙上，且在不遮挡其他画作的同时保持美观的排列。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed on the wall between the greenery at the entrance and the window.",
+            "option_text_cn": "它可以放在入口绿植和窗户之间的墙上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed near the entrance and be arranged symmetrically with the painting next to the greenery.",
+            "option_text_cn": "它可以放在靠近入口处，与绿植旁边的画对称排列。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed on the side of the wall with the window and be arranged symmetrically with the painting with a car.",
+            "option_text_cn": "它可以放在有窗户那侧墙的位置，与画有轿车的画对称排列",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed on the round table in the center of the exhibition hall.",
+            "option_text_cn": "它可以放在展厅中央的圆桌上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed on the wall currently illuminated by sunlight and be arranged symmetrically with the painting with a car.",
+            "option_text_cn": "它可以放在当前阳光照射的那面墙，与画有轿车的画对称排列。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed on the wall without a window and be arranged symmetrically with the painting with a seal.",
+            "option_text_cn": "它可以放在没有窗户一侧的墙上，与画有海豹的画对称排列。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed at the position on the central axis connecting the entrance and the round table.",
+            "option_text_cn": "它可以放在入口与圆桌连成的中轴线的位置。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "It can be placed in the exhibition hall on the other side.",
+            "option_text_cn": "它可以放在另一侧展厅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "It can be placed on the wall currently illuminated by sunlight and be arranged symmetrically with the painting with a car.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -35.49996566772461,
+                -0.001462489366531372,
+                -3.893653392791748
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -36.38852310180664,
+                -0.001462489366531372,
+                -1.7644679546356202
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -37.59303665161133,
+                -0.001462489366531372,
+                0.17644073069095612
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -36.24304962158203,
+                -0.001462489366531372,
+                2.1130599975585939
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -34.46308135986328,
+                -0.001462489366531372,
+                -6.378261089324951
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -35.1606330871582,
+                -0.001462489366531372,
+                0.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -34.1606330871582,
+                -0.001462489366531372,
+                -2.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint56",
+            "position": [
+                -27.660633087158204,
+                -0.001462489366531372,
+                -16.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint124",
+            "position": [
+                -19.998287200927736,
+                -0.001462489366531372,
+                21.59017562866211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint138",
+            "position": [
+                -19.160633087158204,
+                -0.001462489366531372,
+                -2.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint139",
+            "position": [
+                -19.160633087158204,
+                -0.001462489366531372,
+                1.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint148",
+            "position": [
+                -18.160633087158204,
+                -0.001462489366531372,
+                -5.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint149",
+            "position": [
+                -18.160633087158204,
+                -0.001462489366531372,
+                -0.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint150",
+            "position": [
+                -18.160633087158204,
+                -0.001462489366531372,
+                3.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint158",
+            "position": [
+                -17.160633087158204,
+                -0.001462489366531372,
+                -8.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint159",
+            "position": [
+                -17.160633087158204,
+                -0.001462489366531372,
+                -3.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint160",
+            "position": [
+                -17.160633087158204,
+                -0.001462489366531372,
+                1.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint161",
+            "position": [
+                -17.160633087158204,
+                -0.001462489366531372,
+                5.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint169",
+            "position": [
+                -16.160633087158204,
+                -0.001462489366531372,
+                -6.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint170",
+            "position": [
+                -16.192338943481447,
+                -0.001462489366531372,
+                -1.8096171617507935
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint171",
+            "position": [
+                -15.079999923706055,
+                -0.001462489366531372,
+                -0.11400000005960465
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint172",
+            "position": [
+                -16.160633087158204,
+                -0.001462489366531372,
+                3.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint181",
+            "position": [
+                -15.160633087158204,
+                -0.001462489366531372,
+                -4.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint182",
+            "position": [
+                -15.160633087158204,
+                -0.001462489366531372,
+                5.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint184",
+            "position": [
+                -14.301881790161133,
+                -0.001462489366531372,
+                -2.68546986579895
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint185",
+            "position": [
+                -14.660633087158204,
+                -0.001462489366531372,
+                7.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint191",
+            "position": [
+                -14.160633087158204,
+                -0.001462489366531372,
+                -7.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint192",
+            "position": [
+                -14.4399995803833,
+                -0.001462489366531372,
+                1.9730000495910645
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint192 (1)",
+            "position": [
+                -12.690999984741211,
+                -0.001462489366531372,
+                2.938999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint195",
+            "position": [
+                -13.660633087158204,
+                -0.001462489366531372,
+                9.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint202",
+            "position": [
+                -12.684000015258789,
+                -0.001462489366531372,
+                -0.1679999977350235
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint202 (2)",
+            "position": [
+                -10.517999649047852,
+                -0.001462489366531372,
+                -0.18299999833106996
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint202 (1)",
+            "position": [
+                -12.744000434875489,
+                -0.001462489366531372,
+                0.9100000262260437
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint203",
+            "position": [
+                -13.160633087158204,
+                -0.001462489366531372,
+                4.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint205",
+            "position": [
+                -12.660633087158204,
+                -0.001462489366531372,
+                -5.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint207",
+            "position": [
+                -12.660633087158204,
+                -0.001462489366531372,
+                6.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint213",
+            "position": [
+                -11.7333345413208,
+                -0.001462489366531372,
+                1.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint218",
+            "position": [
+                -11.660633087158204,
+                -0.001462489366531372,
+                8.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint224",
+            "position": [
+                -10.233333587646485,
+                -0.001462489366531372,
+                -4.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint226",
+            "position": [
+                -10.887849807739258,
+                -0.001462489366531372,
+                4.659393787384033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint228",
+            "position": [
+                -10.660633087158204,
+                -0.001462489366531372,
+                -6.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint235",
+            "position": [
+                -10.160633087158204,
+                -0.001462489366531372,
+                6.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240",
+            "position": [
+                -9.906999588012696,
+                -0.001462489366531372,
+                -1.906999945640564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint241",
+            "position": [
+                -10.104000091552735,
+                -0.001462489366531372,
+                1.5269999504089356
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint249",
+            "position": [
+                -7.951480388641357,
+                -0.001462489366531372,
+                -1.561280608177185
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint250",
+            "position": [
+                -8.660633087158204,
+                -0.001462489366531372,
+                3.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint256",
+            "position": [
+                -8.160633087158204,
+                -0.001462489366531372,
+                -5.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint262",
+            "position": [
+                -7.660633087158203,
+                -0.001462489366531372,
+                1.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint270",
+            "position": [
+                -6.660633087158203,
+                -0.001462489366531372,
+                -3.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint271",
+            "position": [
+                -6.660633087158203,
+                -0.001462489366531372,
+                3.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint276",
+            "position": [
+                -6.160633087158203,
+                -0.001462489366531372,
+                -6.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint277",
+            "position": [
+                -9.116999626159668,
+                -0.001462489366531372,
+                -0.03999999910593033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint277 (1)",
+            "position": [
+                -6.855999946594238,
+                -0.001462489366531372,
+                -0.07900000363588333
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint284",
+            "position": [
+                -5.160633087158203,
+                -0.001462489366531372,
+                -2.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint285",
+            "position": [
+                -5.160633087158203,
+                -0.001462489366531372,
+                1.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint292",
+            "position": [
+                -4.660633087158203,
+                -0.001462489366531372,
+                -4.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint293",
+            "position": [
+                -4.660633087158203,
+                -0.001462489366531372,
+                3.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint297",
+            "position": [
+                -3.7679998874664308,
+                -0.001462489366531372,
+                -0.15199999511241914
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint305",
+            "position": [
+                -3.160633087158203,
+                -0.001462489366531372,
+                -3.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint306",
+            "position": [
+                -3.160633087158203,
+                -0.001462489366531372,
+                1.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint315",
+            "position": [
+                -2.160633087158203,
+                -0.001462489366531372,
+                -1.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint319",
+            "position": [
+                -1.6606330871582032,
+                -0.001462489366531372,
+                3.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint325",
+            "position": [
+                -1.1606330871582032,
+                -0.001462489366531372,
+                -4.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint326",
+            "position": [
+                -1.1606330871582032,
+                -0.001462489366531372,
+                1.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint333",
+            "position": [
+                -0.16063308715820313,
+                -0.001462489366531372,
+                -2.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint338",
+            "position": [
+                -0.40700000524520876,
+                -0.001462489366531372,
+                -0.07800000160932541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint339",
+            "position": [
+                0.3393669128417969,
+                -0.001462489366531372,
+                2.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint351",
+            "position": [
+                1.3393669128417969,
+                -0.001462489366531372,
+                -3.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint352",
+            "position": [
+                1.8393669128417969,
+                -0.001462489366531372,
+                -1.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint353",
+            "position": [
+                1.8393669128417969,
+                -0.001462489366531372,
+                1.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint358",
+            "position": [
+                2.339366912841797,
+                -0.001462489366531372,
+                -6.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint359",
+            "position": [
+                2.339366912841797,
+                -0.001462489366531372,
+                3.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint367",
+            "position": [
+                3.339366912841797,
+                -0.001462489366531372,
+                -4.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint368",
+            "position": [
+                2.928999900817871,
+                -0.001462489366531372,
+                -0.03799999877810478
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint371",
+            "position": [
+                3.839366912841797,
+                -0.001462489366531372,
+                -2.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint372",
+            "position": [
+                3.839366912841797,
+                -0.001462489366531372,
+                1.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint384",
+            "position": [
+                5.339366912841797,
+                -0.001462489366531372,
+                -5.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint385",
+            "position": [
+                6.447999954223633,
+                -0.001462489366531372,
+                -2.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint386",
+            "position": [
+                5.339366912841797,
+                -0.001462489366531372,
+                3.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint390",
+            "position": [
+                6.2270002365112309,
+                -0.001462489366531372,
+                -0.46399998664855959
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint390 (1)",
+            "position": [
+                6.501999855041504,
+                -0.001462489366531372,
+                1.7380000352859498
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint395",
+            "position": [
+                6.839366912841797,
+                -0.001462489366531372,
+                -3.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint400",
+            "position": [
+                7.839366912841797,
+                -0.001462489366531372,
+                -6.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint401",
+            "position": [
+                7.5970001220703129,
+                -0.001462489366531372,
+                -0.0949999988079071
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint402",
+            "position": [
+                9.760000228881836,
+                0.009895427152514458,
+                1.6299999952316285
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint405",
+            "position": [
+                8.733333587646485,
+                -0.001462489366531372,
+                -4.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint406",
+            "position": [
+                9.266667366027832,
+                -0.001462489366531372,
+                -2.79534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint408",
+            "position": [
+                8.839366912841797,
+                -0.001462489366531372,
+                6.70465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint409",
+            "position": [
+                10.829999923706055,
+                -0.001462489366531372,
+                0.9990000128746033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint410",
+            "position": [
+                9.839366912841797,
+                -0.001462489366531372,
+                -7.29534912109375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint411",
+            "position": [
+                9.839366912841797,
+                -0.001462489366531372,
+                4.20465087890625
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint413",
+            "position": [
+                10.748290061950684,
+                -0.001462489366531372,
+                -5.259470462799072
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint414",
+            "position": [
+                10.39900016784668,
+                -0.001462489366531372,
+                -3.1470000743865969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint415",
+            "position": [
+                11.449000358581543,
+                -0.001462489366531372,
+                -1.0800000429153443
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105080414-richards_art_gallery_-_audio_tour-Assess_whether_a_new_two-foot-long_painting_can_be_hung_on_the_wall_of_the_current_exhibition_hall,_w.json",
+    "message": ""
+}

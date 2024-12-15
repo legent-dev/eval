@@ -12,9 +12,9 @@
         0.0
     ],
     "agent_position": [
-        -0.5059999823570252,
-        -0.0010000000474974514,
-        2.6389999389648439
+        -0.5059999823570251,
+        -0.0010000000474974513,
+        2.6389999389648438
     ],
     "agent_rotation": [
         0.0,
@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "Head to the garden, pick up the watering can, water the plants, and return the can to the shed.",
     "task_text": " Head to the restroom, pick up the watering can, water the plants in the kitchen, and return the can to the shed.",
+    "task_text_cn": "去洗手间，拿起喷壶，给厨房里的植物浇水，然后把喷壶放回工具棚。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the kettle",
+            "option_text_cn": "拿起水壶。",
             "gameObjects": {
                 "list": [
                     {
@@ -69,6 +71,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "Water the plants. ",
+            "option_text_cn": "给植物浇水。",
             "gameObjects": {
                 "list": [
                     {
@@ -106,6 +109,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it in its original place",
+            "option_text_cn": "把它放回原来的位置。",
             "gameObjects": {
                 "list": [
                     {
@@ -172,18 +176,18 @@
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                -2.0969998836517336,
+                -2.0969998836517334,
                 0.0416666716337204,
-                2.8949999809265138
+                2.8949999809265137
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                0.46666669845581057,
+                0.46666669845581055,
                 0.0416666716337204,
-                -3.3026490211486818
+                -3.3026490211486816
             ],
             "type": "navigation"
         },
@@ -208,9 +212,9 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                -0.5619999766349793,
+                -0.5619999766349792,
                 0.0416666716337204,
-                2.6973509788513185
+                2.6973509788513184
             ],
             "type": "navigation"
         },
@@ -228,7 +232,7 @@
             "position": [
                 1.637791633605957,
                 0.0416666716337204,
-                -2.3026490211486818
+                -2.3026490211486816
             ],
             "type": "navigation"
         },
@@ -244,7 +248,7 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                2.9579999446868898,
+                2.9579999446868896,
                 0.0416666716337204,
                 -1.1030000448226929
             ],
@@ -253,7 +257,7 @@
         {
             "name": "NavigationPoint10 (1)",
             "position": [
-                2.6050000190734865,
+                2.6050000190734863,
                 0.0416666716337204,
                 0.9179999828338623
             ],
@@ -264,7 +268,7 @@
             "position": [
                 2.637791633605957,
                 0.0416666716337204,
-                3.7333335876464845
+                3.7333335876464844
             ],
             "type": "navigation"
         },
@@ -280,7 +284,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -0.47099998593330386,
+                -0.47099998593330383,
                 0.8409385681152344,
                 3.696000099182129
             ],

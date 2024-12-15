@@ -1,0 +1,269 @@
+{
+    "scene_name": "FloorPlan7_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan7_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -3048452
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan7_physics/Objects/Floor_e1b28141"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -3037156
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan7_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Assess if there are fewer than five apples in a bowl.",
+    "task_text": "Assess if there are fewer than two frying pans on the stove. ",
+    "task_text_cn": "评估炉子上是否有少于两个煎锅。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there is only one frying pan on the stove.",
+            "option_text_cn": "是的，炉子上只有一个煎锅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there are exactly two frying pans on the stove.",
+            "option_text_cn": "不，炉子上正好有两个煎锅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there are no frying pans on the stove.",
+            "option_text_cn": "是的，炉子上没有煎锅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are frying pans, but they are on the counter, not the stove.",
+            "option_text_cn": "有煎锅，但它们在柜台上，不在炉子上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are two frying pans, but one is hidden under a lid.",
+            "option_text_cn": "有两个煎锅，但一个藏在盖子下面。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, and there is something in the frying pan.",
+            "option_text_cn": "是的，煎锅里有东西。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are exactly two, but they are stacked together.",
+            "option_text_cn": "有两个煎锅，但它们叠在一起。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there are more than two frying pans on the stove.",
+            "option_text_cn": "不，炉子上有两个以上的煎锅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Yes, there is only one frying pan on the stove.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.1999998092651369,
+                0.0315263569355011,
+                -1.0999999046325684
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.1999998092651369,
+                0.0315263569355011,
+                0.9000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.5493290424346926,
+                0.0315263569355011,
+                2.4633383750915529
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.651500940322876,
+                0.0315263569355011,
+                2.442917823791504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.1999998092651368,
+                0.0315263569355011,
+                -0.4333333969116211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.0010000467300416,
+                0.0315263569355011,
+                0.9000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.41600000858306887,
+                0.0315263569355011,
+                -0.6190000176429749
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                0.9660000205039978,
+                0.0315263569355011,
+                0.37299999594688418
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.649999976158142,
+                0.0315263569355011,
+                1.6050000190734864
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8 (1)",
+            "position": [
+                2.874000072479248,
+                0.0315263569355011,
+                1.6180000305175782
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.6809911727905275,
+                0.0315263569355011,
+                0.030586034059524537
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107080404-FloorPlan7_physics-Assess_if_there_are_fewer_than_two_frying_pans_on_the_stove__.json",
+    "message": ""
+}

@@ -1,0 +1,225 @@
+{
+    "scene_name": "FloorPlan8_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan8_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -31823446
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan8_physics/Objects/Floor_4dc721cd"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -31815306
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan8_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "What tool can I use to cut an orange?",
+    "task_text": "What tool can I use to cut vegetables in this room?",
+    "task_text_cn": "在这个房间里我可以用什么工具切蔬菜？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "kettle",
+            "option_text_cn": "水壶。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "cleaver",
+            "option_text_cn": "切肉刀。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "fork",
+            "option_text_cn": "叉子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "spatula",
+            "option_text_cn": "抹刀。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "knife",
+            "option_text_cn": "刀。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "juicer",
+            "option_text_cn": "榨汁机。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "spike",
+            "option_text_cn": "尖刺。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "scissors",
+            "option_text_cn": "剪刀。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "knife",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.8469998836517336,
+                2.2351741790771486e-8,
+                -1.5670000314712525
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -2.0828142166137697,
+                2.2351741790771486e-8,
+                -0.6259999871253967
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.029999999329447748,
+                2.2351741790771486e-8,
+                -0.5874512195587158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.7649999856948853,
+                2.2351741790771486e-8,
+                2.736999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -2.0280001163482668,
+                2.2351741790771486e-8,
+                1.468000054359436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.27799999713897707,
+                2.2351741790771486e-8,
+                0.8029999732971191
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.4830000102519989,
+                2.2351741790771486e-8,
+                2.7170000076293947
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241021065514-FloorPlan8_physics-What_tool_can_I_use_to_cut_vegetables_in_this_room_.json",
+    "message": ""
+}

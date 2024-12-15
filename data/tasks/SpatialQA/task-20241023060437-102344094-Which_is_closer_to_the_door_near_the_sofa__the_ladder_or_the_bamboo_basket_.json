@@ -1,0 +1,291 @@
+{
+    "scene_name": "102344094",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102344094.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.743000030517578,
+        0.0,
+        -0.8299999833106995
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -38737970
+        }
+    ],
+    "floor_objects": [
+        "102344094/walls"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Which is closer to the front door: the shoe rack or the umbrella stand?",
+    "task_text": "Which is closer to the door near the sofa: the ladder or the bamboo basket?",
+    "task_text_cn": "靠近沙发的前门附近，梯子还是竹篮更近？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "white bamboo basket",
+            "option_text_cn": "白色竹篮。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "white ladder",
+            "option_text_cn": "白色梯子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black bamboo basket",
+            "option_text_cn": "黑色竹篮。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black ladder",
+            "option_text_cn": "黑色梯子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "brown ladder",
+            "option_text_cn": "棕色梯子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "brown bamboo basket",
+            "option_text_cn": "棕色竹篮。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "grey sofa",
+            "option_text_cn": "灰色沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "black sofa",
+            "option_text_cn": "黑色沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "brown bamboo basket",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.7730000019073488,
+                0.03087746910750866,
+                -4.678999900817871
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                3.671999931335449,
+                0.03087746910750866,
+                -0.8539999723434448
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                4.764999866485596,
+                0.03087746910750866,
+                -0.8870000243186951
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                4.550000190734863,
+                0.03087746910750866,
+                1.3600000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                5.355000019073486,
+                0.03087746910750866,
+                -2.1670000553131105
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                5.4629998207092289,
+                0.046864934265613559,
+                -4.486000061035156
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                6.591000080108643,
+                0.03087746910750866,
+                -0.8393259048461914
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                7.872823715209961,
+                0.03087746910750866,
+                -4.547062873840332
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                6.803999900817871,
+                0.03087746910750866,
+                -2.0280001163482668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                6.829999923706055,
+                0.04092366248369217,
+                1.2400000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                8.733333587646485,
+                0.03087746910750866,
+                -2.8393259048461916
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                8.64023208618164,
+                0.03087746910750866,
+                -0.717227041721344
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                -4.533333778381348
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                -1.7333332300186158
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                10.367610931396485,
+                0.03087746910750866,
+                0.1606740951538086
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023060437-102344094-Which_is_closer_to_the_door_near_the_sofa__the_ladder_or_the_bamboo_basket_.json",
+    "message": ""
+}

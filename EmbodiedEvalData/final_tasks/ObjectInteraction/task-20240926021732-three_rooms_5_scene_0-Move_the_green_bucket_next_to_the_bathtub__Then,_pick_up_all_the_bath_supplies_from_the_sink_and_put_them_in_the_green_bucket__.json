@@ -14,11 +14,11 @@
     "agent_position": [
         0.9480000138282776,
         0.0,
-        0.38499999046325686
+        0.38499999046325684
     ],
     "agent_rotation": [
         0.0,
-        158.80426025390626,
+        158.80426025390625,
         0.0
     ],
     "floorObjects": [
@@ -64,10 +64,12 @@
     "humans": [],
     "task_template": "Move the hamper next to the washing machine. Then, pick up all the dirty laundry from the floor and put it in the hamper.",
     "task_text": "Move the green bucket next to the bathtub. Then, pick up all the bath supplies from the sink and put them in the green bucket. ",
+    "task_text_cn": "把绿色水桶移到浴缸旁边。然后，拿起水槽里所有的沐浴用品，把它们放进绿色水桶里。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the green bucket",
+            "option_text_cn": "拿起绿色水桶。",
             "gameObjects": {
                 "list": [
                     {
@@ -85,6 +87,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place it next to the bathtub",
+            "option_text_cn": "把它放在浴缸旁边。",
             "gameObjects": {
                 "list": [
                     {
@@ -102,6 +105,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up the shower gel",
+            "option_text_cn": "拿起沐浴露。",
             "gameObjects": {
                 "list": [
                     {
@@ -119,6 +123,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put it in the green bucket",
+            "option_text_cn": "把它放进绿色水桶。",
             "gameObjects": {
                 "list": [
                     {
@@ -175,7 +180,7 @@
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                2.7060000896453859,
+                2.7060000896453857,
                 0.0416666716337204,
                 -2.128999948501587
             ],
@@ -184,9 +189,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                1.2940669059753419,
+                1.2940669059753418,
                 0.0416666716337204,
-                -1.7640000581741334
+                -1.7640000581741333
             ],
             "type": "navigation"
         },
@@ -222,7 +227,7 @@
             "position": [
                 -2.697587013244629,
                 0.0416666716337204,
-                2.4089999198913576
+                2.4089999198913574
             ],
             "type": "navigation"
         },
@@ -231,7 +236,7 @@
             "position": [
                 -1.381641149520874,
                 0.0416666716337204,
-                2.3235180377960207
+                2.3235180377960205
             ],
             "type": "navigation"
         },
@@ -256,16 +261,16 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                1.4666666984558106,
+                1.4666666984558105,
                 0.0416666716337204,
-                3.7333335876464845
+                3.7333335876464844
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint9",
             "position": [
-                2.2531399726867677,
+                2.2531399726867676,
                 0.0416666716337204,
                 0.4191751480102539
             ],
@@ -274,7 +279,7 @@
         {
             "name": "NavigationPoint10",
             "position": [
-                2.2531399726867677,
+                2.2531399726867676,
                 0.6075774431228638,
                 2.419175148010254
             ],
@@ -301,7 +306,7 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                3.4947822093963625,
+                3.4947822093963623,
                 0.2881477475166321,
                 -0.2180195301771164
             ],
@@ -310,16 +315,16 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                1.2940669059753419,
+                1.2940669059753418,
                 0.08306008577346802,
-                -2.3577499389648439
+                -2.3577499389648438
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint2-Target",
             "position": [
-                0.34376147389411929,
+                0.34376147389411926,
                 0.8100574612617493,
                 -1.948972463607788
             ],
@@ -328,17 +333,17 @@
         {
             "name": "SpecialPoint",
             "position": [
-                1.2940669059753419,
+                1.2940669059753418,
                 0.08306008577346802,
-                -2.3577499389648439
+                -2.3577499389648438
             ],
             "type": "special"
         },
         {
             "name": "SpecialPoint (1)",
             "position": [
-                1.2990000247955323,
-                0.33899998664855959,
+                1.2990000247955322,
+                0.33899998664855957,
                 -2.368000030517578
             ],
             "type": "special"

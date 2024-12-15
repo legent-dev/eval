@@ -1,0 +1,241 @@
+{
+    "scene_name": "vintage_office_-_interior_scene",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/_Annotated/SketchfabScenes 1/要标的/vintage_office_-_interior_scene.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.4230000078678131,
+        0.0,
+        0.5109999775886536
+    ],
+    "agent_rotation": [
+        0.0,
+        273.21075439453127,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2249202
+        }
+    ],
+    "floor_objects": [
+        "vintage_office_-_interior_scene/Root/plancher"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "What do you think the owner of this room probably studies?",
+    "task_text": "What do you think the owner of this room probably studies?",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "computer science",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "industrial design",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "molecular biology",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "comparative literature",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "theoretical physics",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "interior design",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "music composition",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "digital marketing",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "interaction_distance": 0.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "interior design",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.29499998688697817,
+                0.033333465456962588,
+                -0.31299999356269839
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.3970000147819519,
+                0.033333465456962588,
+                0.609000027179718
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -0.3779999911785126,
+                0.033333465456962588,
+                0.609000027179718
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (2)",
+            "position": [
+                -0.527999997138977,
+                0.033333465456962588,
+                -0.3019999861717224
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.24500000476837159,
+                0.033333465456962588,
+                -0.9079999923706055
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107035558-vintage_office_-_interior_scene-What_do_you_think_the_owner_of_this_room_probably_studies_.json",
+    "message": ""
+}

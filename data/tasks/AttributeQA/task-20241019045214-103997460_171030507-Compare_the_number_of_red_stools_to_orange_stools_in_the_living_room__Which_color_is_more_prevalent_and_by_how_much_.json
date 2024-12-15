@@ -1,0 +1,471 @@
+{
+    "scene_name": "103997460_171030507",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997460_171030507.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        8.194000244140625,
+        0.0,
+        -7.578999996185303
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -9944454
+        }
+    ],
+    "floor_objects": [
+        "103997460_171030507/walls"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Compare the number of blue items to red items throughout the house. Which color is more prevalent and by how much?",
+    "task_text": "Compare the number of red stools to orange stools in the living room. Which color is more prevalent and by how much?",
+    "task_text_cn": "在客厅里比较红色凳子和橙色凳子的数量。哪种颜色更普遍，多多少？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "More red stools, two more",
+            "option_text_cn": "红色凳子更多，多两个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More orange stools, two more",
+            "option_text_cn": "橙色凳子更多，多两个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are as many red stools as orange stools",
+            "option_text_cn": "红色凳子和橙色凳子数量一样。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More orange stools, three more",
+            "option_text_cn": "橙色凳子更多，多三个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More orange stools, one more",
+            "option_text_cn": "橙色凳子更多，多一个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More red stools, one more",
+            "option_text_cn": "红色凳子更多，多一个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More red stools, three more",
+            "option_text_cn": "红色凳子更多，多三个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "More red stools, four more",
+            "option_text_cn": "红色凳子更多，多四个。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "More red stools, two more",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.8971796035766602,
+                0.011751685291528702,
+                -0.7857589721679688
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.8971796035766602,
+                0.011751685291528702,
+                4.900000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.8971796035766602,
+                0.011751685291528702,
+                7.133333683013916
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.5797765254974367,
+                0.011751685291528702,
+                0.5584744811058044
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.633333444595337,
+                0.011751685291528702,
+                2.2142410278320314
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.89717960357666,
+                0.011751685291528702,
+                5.214241027832031
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                5.471960067749023,
+                0.011751685291528702,
+                -1.234912633895874
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                3.89717960357666,
+                0.011751685291528702,
+                3.2142410278320314
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                5.187260627746582,
+                0.011751685291528702,
+                8.029943466186524
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                7.100000381469727,
+                0.011751685291528702,
+                -11.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                7.100000381469727,
+                0.011751685291528702,
+                -9.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                3.0179998874664308,
+                0.011751685291528702,
+                -5.410999774932861
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                5.225879669189453,
+                0.011751685291528702,
+                4.843966960906982
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                7.097686290740967,
+                0.011751685291528702,
+                0.9200876951217651
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                6.766082763671875,
+                0.011751685291528702,
+                2.7171220779418947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                5.89717960357666,
+                0.011751685291528702,
+                6.214241027832031
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                8.1850004196167,
+                0.04508502036333084,
+                -7.565000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                6.89717960357666,
+                0.011751685291528702,
+                -4.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24 (1)",
+            "position": [
+                5.098999977111816,
+                0.011751685291528702,
+                -5.284999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24 (2)",
+            "position": [
+                5.098999977111816,
+                0.011751685291528702,
+                -3.5880000591278078
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24 (3)",
+            "position": [
+                3.6710000038146974,
+                0.011751685291528702,
+                -3.2139999866485597
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24 (4)",
+            "position": [
+                0.9480000138282776,
+                0.011751685291528702,
+                -3.2139999866485597
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24 (5)",
+            "position": [
+                0.9480000138282776,
+                0.011751685291528702,
+                -5.383999824523926
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                5.794000148773193,
+                0.011751685291528702,
+                -2.9333341121673586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                6.880011081695557,
+                0.011751685291528702,
+                4.523272514343262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                7.000000476837158,
+                0.011751685291528702,
+                8.133334159851075
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                7.89717960357666,
+                0.011751685291528702,
+                -1.5000003576278687
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                7.89717960357666,
+                0.04508502036333084,
+                6.214241027832031
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                8.89717960357666,
+                0.011751685291528702,
+                -11.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                8.89717960357666,
+                0.011751685291528702,
+                -9.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                8.545000076293946,
+                0.011751685291528702,
+                -4.785758972167969
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                9.028855323791504,
+                0.011751685291528702,
+                -3.1092095375061037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                8.89717960357666,
+                0.011751685291528702,
+                1.2142410278320313
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                10.444486618041993,
+                0.011751685291528702,
+                1.0329350233078004
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                9.581774711608887,
+                0.011751685291528702,
+                2.5834295749664308
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019045214-103997460_171030507-Compare_the_number_of_red_stools_to_orange_stools_in_the_living_room__Which_color_is_more_prevalent_and_by_how_much_.json",
+    "message": ""
+}

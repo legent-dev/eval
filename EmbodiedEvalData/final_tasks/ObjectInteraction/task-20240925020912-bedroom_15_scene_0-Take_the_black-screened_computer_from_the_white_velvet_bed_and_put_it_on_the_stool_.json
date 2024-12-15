@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Take a plate from the kitchen cabinet and put it on the dining table.",
     "task_text": "Take the black-screened computer from the white velvet bed and put it on the stool.",
+    "task_text_cn": "从白色天鹅绒床上拿起黑屏的电脑，并把它放在凳子上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the laptop near the notebook",
+            "option_text_cn": "拿起笔记本旁边的笔记本电脑。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up the laptop on the sofa",
+            "option_text_cn": "拿起沙发上的笔记本电脑。",
             "gameObjects": {
                 "list": [
                     {
@@ -72,6 +75,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the stool",
+            "option_text_cn": "放在凳子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -108,14 +112,14 @@
             "position": [
                 1.4210000038146973,
                 0.0416666716337204,
-                2.4189999103546144
+                2.4189999103546143
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                1.4859999418258668,
+                1.4859999418258667,
                 0.0416666716337204,
                 0.6690000295639038
             ],
@@ -126,14 +130,14 @@
             "position": [
                 2.049999952316284,
                 0.0416666716337204,
-                3.5510001182556154
+                3.5510001182556152
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                2.5739998817443849,
+                2.5739998817443848,
                 0.0416666716337204,
                 2.068000078201294
             ],
@@ -142,7 +146,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                2.8580000400543215,
+                2.8580000400543213,
                 0.0416666716337204,
                 3.813999891281128
             ],
@@ -151,7 +155,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                3.7219998836517336,
+                3.7219998836517334,
                 0.0416666716337204,
                 4.120999813079834
             ],
@@ -162,7 +166,7 @@
             "position": [
                 3.859999895095825,
                 0.0416666716337204,
-                2.2850000858306886
+                2.2850000858306885
             ],
             "type": "navigation"
         },
@@ -180,7 +184,7 @@
             "position": [
                 0.3440000116825104,
                 0.8399999737739563,
-                2.6440000534057619
+                2.6440000534057617
             ],
             "type": "special"
         }

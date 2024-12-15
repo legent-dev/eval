@@ -1,0 +1,224 @@
+{
+    "scene_name": "FloorPlan9_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan9_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.8349999785423279,
+        0.0,
+        -0.652999997138977
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2290052
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan9_physics/Objects/Floor_4313fd87"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2279412
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan9_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "What is inside the cabinet next to the stove?",
+    "task_text": "What is inside the sink near the dining table? ",
+    "task_text_cn": "餐桌附近的水槽里有什么？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "water",
+            "option_text_cn": "水。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "steel wool",
+            "option_text_cn": "钢丝球。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "soap",
+            "option_text_cn": "肥皂。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bowl",
+            "option_text_cn": "碗。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "apple",
+            "option_text_cn": "苹果。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "potato",
+            "option_text_cn": "土豆。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "tomato",
+            "option_text_cn": "西红柿。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "cup",
+            "option_text_cn": "杯子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "tomato",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.7799999713897705,
+                2.2351741790771486e-8,
+                -0.515999972820282
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.7109999656677247,
+                2.2351741790771486e-8,
+                -0.4339999854564667
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -1.621000051498413,
+                2.2351741790771486e-8,
+                0.5839999914169312
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.8069999814033508,
+                2.2351741790771486e-8,
+                0.5260000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                2.680000066757202,
+                2.2351741790771486e-8,
+                0.27000001072883608
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                0.8759999871253967,
+                2.2351741790771486e-8,
+                0.4059999883174896
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107071724-FloorPlan9_physics-What_is_inside_the_sink_near_the_dining_table__.json",
+    "message": ""
+}

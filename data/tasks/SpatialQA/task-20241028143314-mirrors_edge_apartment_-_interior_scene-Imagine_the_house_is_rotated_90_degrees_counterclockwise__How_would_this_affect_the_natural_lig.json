@@ -1,0 +1,484 @@
+{
+    "scene_name": "mirrors_edge_apartment_-_interior_scene",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/mirrors_edge_apartment_-_interior_scene.glb",
+    "scene_scale": [
+        0.4166666567325592,
+        0.4166666567325592,
+        0.4166666567325592
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -24172922
+        },
+        {
+            "instanceID": -24172718
+        }
+    ],
+    "floor_objects": [
+        "mirrors_edge_apartment_-_interior_scene/Root/Cube.000",
+        "mirrors_edge_apartment_-_interior_scene/Root/Cube.007"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Imagine the house is rotated 90 degrees clockwise. How would this affect the natural light distribution throughout the day?",
+    "task_text": "Imagine the house is rotated 90 degrees counterclockwise. How would this affect the natural light distribution in the room?",
+    "task_text_cn": "想象一下房子逆时针旋转90度。这会对房间内的自然光分布产生怎样的影响",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The side with curtains will receive more direct sunlight.",
+            "option_text_cn": "有窗帘的一侧会接受更多的直射光。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The sofa that was previously in the shade may be illuminated.",
+            "option_text_cn": "之前处于避光下的沙发可能会被照亮",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The side without curtains and with windows will have an increased intensity of natural light.",
+            "option_text_cn": "没有窗帘且有窗户的一侧的自然光强度会增加",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There will be no direct sunlight in the room.",
+            "option_text_cn": "房间里不会有直射阳光。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The two other walls without windows will receive higher intensity natural light.",
+            "option_text_cn": "没窗的两外两个墙面会接受更高强度的自然光。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The light distribution in the room will become very even.",
+            "option_text_cn": "房间内的光线分布会变得很均匀。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The light balance between different parts of the room will not change",
+            "option_text_cn": "房间不同部分之间的光线平衡不会发生变化。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The direct sunlight is not blocked by the windowless wall after rotation. ",
+            "option_text_cn": "直射光没有被旋转后的无窗墙面挡住",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "There will be no direct sunlight in the room.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.25,
+                0.012059006839990616,
+                -4.809999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -3.2009999752044679,
+                0.012059006839990616,
+                -2.1700000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.138000011444092,
+                0.012059006839990616,
+                1.1360000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -3.11899995803833,
+                0.012059006839990616,
+                2.9049999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -3.7666664123535158,
+                0.012059006839990616,
+                5.259002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.9666666984558107,
+                0.012059006839990616,
+                7.759002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.1925374269485474,
+                0.012059006839990616,
+                -4.720232963562012
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -2.4030001163482668,
+                0.012059006839990616,
+                7.98799991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -1.0199999809265137,
+                0.012059006839990616,
+                -2.549999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.25600001215934756,
+                0.012059006839990616,
+                1.1380000114440919
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (1)",
+            "position": [
+                -0.5120000243186951,
+                0.012059006839990616,
+                -0.7699999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9 (2)",
+            "position": [
+                -3.003000020980835,
+                0.012059006839990616,
+                -0.4819999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.1388306617736817,
+                0.012059006839990616,
+                4.259002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.0430000014603138,
+                0.012059006839990616,
+                7.763000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                0.8611693382263184,
+                0.012059006839990616,
+                5.759002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.3611693382263184,
+                0.012059006839990616,
+                -4.90000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.3611693382263184,
+                0.012059006839990616,
+                -2.240997314453125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.440000057220459,
+                0.01807267777621746,
+                0.6399999856948853
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.0299999713897706,
+                0.03158454969525337,
+                3.049999952316284
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (2)",
+            "position": [
+                2.7200000286102297,
+                0.03158454969525337,
+                2.6600000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (3)",
+            "position": [
+                2.5969998836517336,
+                0.03158454969525337,
+                1.194000005722046
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                0.9599999785423279,
+                0.03158454969525337,
+                1.2760000228881837
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                3.2200000286102297,
+                0.012059006839990616,
+                7.670000076293945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                3.9572651386260988,
+                0.012059006839990616,
+                -4.868226051330566
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                3.4000000953674318,
+                0.012059006839990616,
+                4.759002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                3.8611693382263185,
+                0.012059006839990616,
+                -2.240997314453125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20 (1)",
+            "position": [
+                3.640000104904175,
+                0.012059006839990616,
+                -0.9700000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20 (2)",
+            "position": [
+                1.4600000381469727,
+                0.012059006839990616,
+                -0.75
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                4.233333587646484,
+                0.012059006839990616,
+                1.259002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                5.833333492279053,
+                0.012059006839990616,
+                3.259003162384033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                5.361169338226318,
+                0.012059006839990616,
+                6.759002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                5.861169338226318,
+                0.012059006839990616,
+                -0.740997314453125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                6.361169338226318,
+                0.012059006839990616,
+                -3.740997314453125
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                6.861169338226318,
+                0.012059006839990616,
+                8.759002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                7.361169338226318,
+                0.012059006839990616,
+                1.259002685546875
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                7.361169338226318,
+                0.012059006839990616,
+                5.259002685546875
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241028143314-mirrors_edge_apartment_-_interior_scene-Imagine_the_house_is_rotated_90_degrees_counterclockwise__How_would_this_affect_the_natural_lig.json",
+    "message": ""
+}

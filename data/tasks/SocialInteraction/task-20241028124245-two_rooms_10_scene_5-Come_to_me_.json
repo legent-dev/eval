@@ -1,0 +1,211 @@
+{
+    "scene_name": "two_rooms_10_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -2.5950000286102297,
+        0.0,
+        1.3320000171661378
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -163612
+        },
+        {
+            "instanceID": -163600
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_5/CreatedWalls/identifier9_Floor",
+        "two_rooms_10_scene_5/CreatedWalls/identifier8_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -164630
+            },
+            "human_position": [
+                1.3240000009536744,
+                0.0,
+                3.7179999351501467
+            ],
+            "human_rotation": [
+                0.0,
+                180.0,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": -169288
+            },
+            "pointing_to": "SpecialPoints (1)"
+        }
+    ],
+    "task_template": "Come here.",
+    "task_text": "Come to me.",
+    "task_text_cn": "到我这来。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "1",
+            "right_special_action": "handover",
+            "targetObject": {
+                "instanceID": -166698
+            },
+            "predicate_object": "NavPoints/NavigationPoint5 (3)",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.617000102996826,
+                0.033333420753479007,
+                1.3539999723434449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.4800000190734864,
+                0.033333420753479007,
+                2.313999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -1.2120000123977662,
+                0.033333420753479007,
+                1.4160000085830689
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.0016028881072999,
+                0.033333420753479007,
+                0.29193687438964846
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.43799999356269839,
+                0.033333420753479007,
+                2.815000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.34200000762939455,
+                0.033333420753479007,
+                1.472000002861023
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                2.802999973297119,
+                0.033333420753479007,
+                3.763000011444092
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (4)",
+            "position": [
+                2.865000009536743,
+                0.033333420753479007,
+                2.2090001106262209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (3)",
+            "position": [
+                1.496000051498413,
+                0.033333420753479007,
+                2.9260001182556154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                1.4129999876022339,
+                0.033333420753479007,
+                1.590999960899353
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                1.9110000133514405,
+                0.033333420753479007,
+                0.7179999947547913
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                3.61299991607666,
+                0.033333420753479007,
+                0.6489999890327454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                3.7109999656677248,
+                0.3330000042915344,
+                3.447000026702881
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoints (1)",
+            "position": [
+                1.4509999752044678,
+                0.11699999868869782,
+                3.0460000038146974
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028124245-two_rooms_10_scene_5-Come_to_me_.json",
+    "message": ""
+}

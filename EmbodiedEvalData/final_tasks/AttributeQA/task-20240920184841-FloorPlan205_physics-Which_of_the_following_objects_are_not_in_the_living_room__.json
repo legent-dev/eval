@@ -14,7 +14,7 @@
     "agent_position": [
         -0.492000013589859,
         0.0,
-        2.0999999046325685
+        2.0999999046325684
     ],
     "agent_rotation": [
         0.0,
@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Which of the following objects are not in the room?",
     "task_text": "Which of the following objects are not in the living room? ",
+    "task_text_cn": "下列哪些物品不在客厅里？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Notebook computer",
+            "option_text_cn": "笔记本电脑",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "television",
+            "option_text_cn": "电视",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "trash can",
+            "option_text_cn": "垃圾桶",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "watch",
+            "option_text_cn": "手表",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "basketball",
+            "option_text_cn": "篮球",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "sofa",
+            "option_text_cn": "沙发",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "laptop",
+            "option_text_cn": "笔记本",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "plant",
+            "option_text_cn": "植物",
             "gameObjects": {
                 "list": []
             },
@@ -149,8 +158,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -4.2400007247924809,
-                0.029868125915527345,
+                -4.2400007247924805,
+                0.029868125915527344,
                 0.6347336769104004
             ],
             "type": "navigation"
@@ -158,9 +167,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -4.2400007247924809,
-                0.029868125915527345,
-                2.6347336769104006
+                -4.2400007247924805,
+                0.029868125915527344,
+                2.6347336769104004
             ],
             "type": "navigation"
         },
@@ -168,7 +177,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -3.4333336353302,
-                0.029868125915527345,
+                0.029868125915527344,
                 4.6347336769104
             ],
             "type": "navigation"
@@ -176,8 +185,8 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                -3.4539999961853029,
-                0.029868125915527345,
+                -3.4539999961853027,
+                0.029868125915527344,
                 5.938000202178955
             ],
             "type": "navigation"
@@ -185,18 +194,18 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -3.0360000133514406,
-                0.029868125915527345,
-                0.36597830057144167
+                -3.0360000133514404,
+                0.029868125915527344,
+                0.36597830057144165
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -2.2400007247924806,
-                0.029868125915527345,
-                2.6347336769104006
+                -2.2400007247924805,
+                0.029868125915527344,
+                2.6347336769104004
             ],
             "type": "navigation"
         },
@@ -204,7 +213,7 @@
             "name": "NavigationPoint5",
             "position": [
                 -2.190000057220459,
-                0.029868125915527345,
+                0.029868125915527344,
                 5.546999931335449
             ],
             "type": "navigation"
@@ -213,7 +222,7 @@
             "name": "NavigationPoint6",
             "position": [
                 -0.5389999747276306,
-                0.029868125915527345,
+                0.029868125915527344,
                 0.7450000047683716
             ],
             "type": "navigation"
@@ -222,7 +231,7 @@
             "name": "NavigationPoint6 (1)",
             "position": [
                 -0.5389999747276306,
-                0.029868125915527345,
+                0.029868125915527344,
                 2.132999897003174
             ],
             "type": "navigation"
@@ -231,7 +240,7 @@
             "name": "NavigationPoint7",
             "position": [
                 -1.0958443880081177,
-                0.029868125915527345,
+                0.029868125915527344,
                 4.246050834655762
             ],
             "type": "navigation"
@@ -240,17 +249,17 @@
             "name": "NavigationPoint7 (2)",
             "position": [
                 -0.828000009059906,
-                0.029868125915527345,
-                5.8520002365112309
+                0.029868125915527344,
+                5.8520002365112305
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7 (1)",
             "position": [
-                -1.1820000410079957,
-                0.029868125915527345,
-                2.9519999027252199
+                -1.1820000410079956,
+                0.029868125915527344,
+                2.9519999027252197
             ],
             "type": "navigation"
         }

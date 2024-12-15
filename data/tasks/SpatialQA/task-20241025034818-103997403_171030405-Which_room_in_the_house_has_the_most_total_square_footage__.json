@@ -1,0 +1,415 @@
+{
+    "scene_name": "103997403_171030405",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997403_171030405.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        5.769999980926514,
+        0.0,
+        -1.659999966621399
+    ],
+    "agent_rotation": [
+        0.0,
+        169.7196807861328,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -53519824
+        }
+    ],
+    "floor_objects": [
+        "103997403_171030405/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -53519148
+        },
+        {
+            "instanceID": -53518108
+        },
+        {
+            "instanceID": -53517856
+        },
+        {
+            "instanceID": -53515856
+        },
+        {
+            "instanceID": -53516112
+        },
+        {
+            "instanceID": -53518352
+        },
+        {
+            "instanceID": -53519224
+        },
+        {
+            "instanceID": -53516260
+        }
+    ],
+    "removed_objects": [
+        "103997403_171030405/openings/openings_wall_16/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C",
+        "103997403_171030405/openings/openings_wall_9/201/201 > SketchUp/201 > SketchUp > instance_8/201 > SketchUp > instance_8 > C",
+        "103997403_171030405/openings/openings_wall_6/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "103997403_171030405/furniture/xxxxe0773d9ex3a59x44cexaae2x7a9b5fc0d0d7/xxxxe0773d9ex3a59x44cexaae2x7a9b5fc0d0d7 > /xxxxe0773d9ex3a59x44cexaae2x7a9b5fc0d0d7 >  > RootNode",
+        "103997403_171030405/furniture/734da957ee78f96540c6532441e8c4f2add8c702/734da957ee78f96540c6532441e8c4f2add8c702 > /734da957ee78f96540c6532441e8c4f2add8c702 >  > root",
+        "103997403_171030405/openings/openings_wall_10/209/209 > SketchUp/209 > SketchUp > instance_8",
+        "103997403_171030405/openings/openings_wall_19",
+        "103997403_171030405/furniture/98ac2600c6a19a9adc54fc95dee4653fb0ea7e12"
+    ],
+    "humans": [],
+    "task_template": "Which floor of the house has the most total square footage?",
+    "task_text": "Which room in the house has the most total square footage? ",
+    "task_text_cn": "房子里哪个房间的总面积最大？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "kids' room",
+            "option_text_cn": "儿童房。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "shower room",
+            "option_text_cn": "淋浴间。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "balcony",
+            "option_text_cn": "阳台。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "master bedroom",
+            "option_text_cn": "主卧室。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "room with TV",
+            "option_text_cn": "有电视的房间。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "entryway",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "open-concept kitchen and hallway",
+            "option_text_cn": "开放式厨房和走廊。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "open-concept living room and bedroom",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "open-concept kitchen and hallway",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.131999969482422,
+                0.02678866684436798,
+                -4.021999835968018
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.7630000114440918,
+                0.02678866684436798,
+                -2.5179998874664308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.694999933242798,
+                0.02678866684436798,
+                -1.5850000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.325000047683716,
+                0.0867784172296524,
+                -2.6619999408721926
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                5.739999771118164,
+                0.0867784172296524,
+                -2.890000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                5.10099983215332,
+                0.02678866684436798,
+                -7.796999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                5.0,
+                0.02678866684436798,
+                -6.044890403747559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                5.630000114440918,
+                0.02678866684436798,
+                -1.7699999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                7.135000228881836,
+                0.11255712807178498,
+                -7.815999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                7.179089546203613,
+                0.13439704477787019,
+                -6.044890403747559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                7.091000080108643,
+                0.02678866684436798,
+                -4.073999881744385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                8.619999885559082,
+                0.02678866684436798,
+                -4.269999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                10.317999839782715,
+                0.02678866684436798,
+                -4.23199987411499
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                12.112000465393067,
+                0.02678866684436798,
+                -3.6410000324249269
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                10.266667366027832,
+                0.7601220607757568,
+                -8.133334159851075
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                8.210000038146973,
+                0.02678866684436798,
+                -6.159999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                10.456999778747559,
+                0.02678866684436798,
+                -5.7210001945495609
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                12.621999740600586,
+                0.02678866684436798,
+                -5.935999870300293
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                12.711999893188477,
+                0.02678866684436798,
+                -7.11899995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                11.679089546203614,
+                0.02678866684436798,
+                -2.0448904037475588
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                10.0600004196167,
+                0.02678866684436798,
+                -2.194999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                14.57800006866455,
+                0.02678866684436798,
+                -6.063000202178955
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                14.338000297546387,
+                0.02678866684436798,
+                -3.7100000381469728
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                14.679089546203614,
+                0.02678866684436798,
+                -7.900001525878906
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                15.662372589111329,
+                0.02678866684436798,
+                -5.266713619232178
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241025034818-103997403_171030405-Which_room_in_the_house_has_the_most_total_square_footage__.json",
+    "message": ""
+}

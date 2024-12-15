@@ -37,7 +37,7 @@
                 "instanceID": -5814140
             },
             "human_position": [
-                2.7909998893737795,
+                2.7909998893737793,
                 -0.0729999989271164,
                 3.249000072479248
             ],
@@ -56,10 +56,12 @@
     ],
     "task_template": "Can you find me?",
     "task_text": "Can you find me?",
+    "task_text_cn": "你能找到我吗？",
     "options": [
         {
             "option_type": "SpecialAction",
             "option_text": "You are sitting  on the chair.",
+            "option_text_cn": "你坐在椅子上。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +79,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "You are not exist in this room.",
+            "option_text_cn": "你不在这个房间里。",
             "gameObjects": {
                 "list": []
             },
@@ -94,6 +97,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "You are hiding under the bed.",
+            "option_text_cn": "你藏在床底下。",
             "gameObjects": {
                 "list": [
                     {
@@ -151,14 +155,14 @@
             "position": [
                 0.6499999761581421,
                 0.043212890625,
-                2.0429999828338625
+                2.0429999828338623
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                1.2799999713897706,
+                1.2799999713897705,
                 0.043212890625,
                 4.11899995803833
             ],
@@ -167,9 +171,9 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                1.3240000009536744,
+                1.3240000009536743,
                 0.043212890625,
-                2.4749999046325685
+                2.4749999046325684
             ],
             "type": "navigation"
         },
@@ -185,7 +189,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.1989998817443849,
+                2.1989998817443848,
                 0.043212890625,
                 1.246000051498413
             ],
@@ -194,9 +198,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                3.1440000534057619,
+                3.1440000534057617,
                 0.043212890625,
-                1.9190000295639039
+                1.9190000295639038
             ],
             "type": "navigation"
         }

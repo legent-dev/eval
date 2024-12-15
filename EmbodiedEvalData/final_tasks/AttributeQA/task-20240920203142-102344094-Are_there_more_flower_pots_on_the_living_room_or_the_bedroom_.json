@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Are there more books on the living room shelf or the office desk?",
     "task_text": "Are there more flower pots on the living room or the bedroom?",
+    "task_text_cn": "客厅和卧室哪个房间里的花盆更多？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "There are more flower pots in the living room, while no one in bedroom",
+            "option_text_cn": "客厅里有更多花盆，而卧室里没有。",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "Both the living room and bedroom have the same number of flower pots.",
+            "option_text_cn": "客厅和卧室花盆数量相同。",
             "gameObjects": {
                 "list": []
             },
@@ -66,6 +69,7 @@
         {
             "option_type": "Answer",
             "option_text": "The bedroom has only one flower pot, while the living room has several.",
+            "option_text_cn": "卧室只有一个花盆，而客厅有几个。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "There are no flower pots in the bedroom, only in the living room.",
+            "option_text_cn": "卧室里没有花盆，只有客厅有。",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "The living room has more flower pots, placed near the trash can.",
+            "option_text_cn": "客厅里有更多花盆，放在垃圾桶附近。",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "Both rooms have flower pots, but the bedroom's pots are larger in size.",
+            "option_text_cn": "两个房间都有花盆，但卧室的花盆更大。",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "There is only one flower pot in each room.",
+            "option_text_cn": "每个房间只有一个花盆。",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "The bedroom has a few flower pots, but the living room has none.",
+            "option_text_cn": "卧室有几个花盆，但客厅没有。",
             "gameObjects": {
                 "list": []
             },
@@ -149,7 +158,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                3.6927692890167238,
+                3.6927692890167236,
                 0.03087746910750866,
                 -4.636800289154053
             ],
@@ -160,14 +169,14 @@
             "position": [
                 3.8681640625,
                 0.03087746910750866,
-                -1.0518555641174317
+                -1.0518555641174316
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint2",
             "position": [
-                3.9299299716949465,
+                3.9299299716949463,
                 0.03087746910750866,
                 1.818713665008545
             ],
@@ -186,7 +195,7 @@
             "name": "NavigationPoint4",
             "position": [
                 5.538000106811523,
-                0.046864934265613559,
+                0.046864934265613556,
                 -4.49399995803833
             ],
             "type": "navigation"
@@ -196,7 +205,7 @@
             "position": [
                 5.367610454559326,
                 0.03087746910750866,
-                -1.0410000085830689
+                -1.0410000085830688
             ],
             "type": "navigation"
         },
@@ -205,7 +214,7 @@
             "position": [
                 5.367610454559326,
                 0.03087746910750866,
-                1.1606740951538087
+                1.1606740951538086
             ],
             "type": "navigation"
         },
@@ -232,7 +241,7 @@
             "position": [
                 7.367610454559326,
                 0.04092366248369217,
-                1.1606740951538087
+                1.1606740951538086
             ],
             "type": "navigation"
         },
@@ -266,7 +275,7 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                10.367610931396485,
+                10.367610931396484,
                 0.03087746910750866,
                 -4.533333778381348
             ],
@@ -275,7 +284,7 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                10.367610931396485,
+                10.367610931396484,
                 0.03087746910750866,
                 -1.753999948501587
             ],
@@ -284,7 +293,7 @@
         {
             "name": "NavigationPoint14",
             "position": [
-                10.367610931396485,
+                10.367610931396484,
                 0.03087746910750866,
                 0.1606740951538086
             ],

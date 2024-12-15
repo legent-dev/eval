@@ -14,7 +14,7 @@
     "agent_position": [
         -0.925000011920929,
         0.0,
-        -0.7910000085830689
+        -0.7910000085830688
     ],
     "agent_rotation": [
         0.0,
@@ -44,10 +44,12 @@
     "humans": [],
     "task_template": "Open the window, move the curtains aside, and close the door.",
     "task_text": "Close the window, pull up the blinds, and close the door. ",
+    "task_text_cn": "关上窗户，拉起百叶窗，关上门。",
     "options": [
         {
             "option_type": "SpecialAction",
             "option_text": "close the window",
+            "option_text_cn": "关上窗户。",
             "gameObjects": {
                 "list": [
                     {
@@ -77,6 +79,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "pull up the roller blind",
+            "option_text_cn": "拉起百叶窗。",
             "gameObjects": {
                 "list": [
                     {
@@ -106,6 +109,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "shut the door",
+            "option_text_cn": "关上门。",
             "gameObjects": {
                 "list": [
                     {
@@ -178,17 +182,17 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -1.2000000476837159,
-                0.033333227038383487,
-                -1.1333332061767579
+                -1.2000000476837158,
+                0.033333227038383484,
+                -1.1333332061767578
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                0.36399999260902407,
-                0.033333227038383487,
+                0.36399999260902405,
+                0.033333227038383484,
                 -0.828000009059906
             ],
             "type": "navigation"
@@ -197,7 +201,7 @@
             "name": "NavigationPoint1",
             "position": [
                 0.5690000057220459,
-                0.033333227038383487,
+                0.033333227038383484,
                 -1.847000002861023
             ],
             "type": "navigation"
@@ -205,8 +209,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -0.18446758389472962,
-                0.033333227038383487,
+                -0.18446758389472961,
+                0.033333227038383484,
                 -0.12399999797344208
             ],
             "type": "navigation"
@@ -215,8 +219,8 @@
             "name": "NavigationPoint3",
             "position": [
                 1.700000286102295,
-                0.033333227038383487,
-                -1.7333332300186158
+                0.033333227038383484,
+                -1.7333332300186157
             ],
             "type": "navigation"
         },
@@ -224,7 +228,7 @@
             "name": "NavigationPoint3 (1)",
             "position": [
                 1.36899995803833,
-                0.033333227038383487,
+                0.033333227038383484,
                 -0.6460000276565552
             ],
             "type": "navigation"

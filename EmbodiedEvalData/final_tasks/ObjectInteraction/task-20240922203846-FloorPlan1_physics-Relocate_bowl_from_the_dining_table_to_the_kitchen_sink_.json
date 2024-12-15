@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Relocate dishes from the dining table to the kitchen sink.",
     "task_text": "Relocate bowl from the dining table to the kitchen sink.",
+    "task_text_cn": "把碗从餐桌上移到厨房水槽里。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the bowl",
+            "option_text_cn": "拿起碗。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the sink",
+            "option_text_cn": "放在水槽里。",
             "gameObjects": {
                 "list": [
                     {
@@ -96,7 +99,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.2731871008872986,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -1.566666603088379
             ],
             "type": "navigation"
@@ -105,7 +108,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -0.9666665196418762,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -1.314056396484375
             ],
             "type": "navigation"
@@ -114,16 +117,16 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.184475302696228,
-                2.2351741790771486e-8,
-                0.7018237709999085
+                2.2351741790771484e-08,
+                0.7018237709999084
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -0.25005674362182619,
-                2.2351741790771486e-8,
+                -0.25005674362182617,
+                2.2351741790771484e-08,
                 2.266666889190674
             ],
             "type": "navigation"
@@ -132,7 +135,7 @@
             "name": "NavigationPoint4",
             "position": [
                 1.4163742065429688,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.1291184425354004
             ],
             "type": "navigation"
@@ -140,17 +143,17 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.2499432563781739,
-                2.2351741790771486e-8,
-                1.8173274993896485
+                1.2499432563781738,
+                2.2351741790771484e-08,
+                1.8173274993896484
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                1.5219999551773072,
-                2.2351741790771486e-8,
+                1.5219999551773071,
+                2.2351741790771484e-08,
                 -1.7450000047683716
             ],
             "type": "navigation"
@@ -159,7 +162,7 @@
             "name": "NavigationPoint0-Target",
             "position": [
                 0.2731871008872986,
-                1.1446740627288819,
+                1.1446740627288818,
                 -0.7532854080200195
             ],
             "type": "navigation-target"
@@ -167,18 +170,18 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -1.9104840755462647,
+                -1.9104840755462646,
                 0.8101570010185242,
-                -1.3140562772750855
+                -1.3140562772750854
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -1.9104840755462647,
+                -1.9104840755462646,
                 0.8101570010185242,
-                -1.3140562772750855
+                -1.3140562772750854
             ],
             "type": "special"
         }

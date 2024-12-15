@@ -14,7 +14,7 @@
     "agent_position": [
         10.925999641418457,
         0.0,
-        -10.987000465393067
+        -10.987000465393066
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Pick up plates from the kitchen and place them on the dining table.",
     "task_text": "Pick up the fruit bowl and the kettle from the kitchen and place them on the table with the flower pot. ",
+    "task_text_cn": "从厨房拿起水果盘和水壶，并把它们放在有花盆的桌子上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "Pick up the fruit platter",
+            "option_text_cn": "拿起水果盘。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up the kettle",
+            "option_text_cn": "拿起水壶。",
             "gameObjects": {
                 "list": [
                     {
@@ -72,6 +75,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the fruit platter to the table",
+            "option_text_cn": "把水果盘放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -89,6 +93,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the kettle to the table",
+            "option_text_cn": "把水壶放在桌子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -154,7 +159,7 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                9.847000122070313,
+                9.847000122070312,
                 0.02908763661980629,
                 -9.520999908447266
             ],
@@ -163,7 +168,7 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                9.229999542236329,
+                9.229999542236328,
                 0.02908763661980629,
                 -11.489999771118164
             ],
@@ -190,9 +195,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                1.0822176933288575,
+                1.0822176933288574,
                 0.02908763661980629,
-                -10.067273139953614
+                -10.067273139953613
             ],
             "type": "navigation"
         },
@@ -208,7 +213,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                1.1133970022201539,
+                1.1133970022201538,
                 0.02908763661980629,
                 -5.246362209320068
             ],
@@ -217,9 +222,9 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                0.46666669845581057,
+                0.46666669845581055,
                 0.02908763661980629,
-                -3.7333335876464845
+                -3.7333335876464844
             ],
             "type": "navigation"
         },
@@ -253,7 +258,7 @@
         {
             "name": "NavigationPoint11",
             "position": [
-                3.1950976848602297,
+                3.1950976848602295,
                 0.02908763661980629,
                 -9.773094177246094
             ],
@@ -262,7 +267,7 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                2.9282493591308595,
+                2.9282493591308594,
                 0.02908763661980629,
                 -8.041459083557129
             ],
@@ -280,9 +285,9 @@
         {
             "name": "NavigationPoint14",
             "position": [
-                3.6318764686584474,
+                3.6318764686584473,
                 0.02908763661980629,
-                -1.4519582986831666
+                -1.4519582986831665
             ],
             "type": "navigation"
         },
@@ -327,7 +332,7 @@
             "position": [
                 5.888999938964844,
                 0.02908763661980629,
-                -11.675000190734864
+                -11.675000190734863
             ],
             "type": "navigation"
         },
@@ -372,7 +377,7 @@
             "position": [
                 6.928249359130859,
                 0.06242097169160843,
-                -3.8333334922790529
+                -3.8333334922790527
             ],
             "type": "navigation"
         },
@@ -498,7 +503,7 @@
             "position": [
                 13.568175315856934,
                 0.02908763661980629,
-                -2.9238054752349855
+                -2.9238054752349854
             ],
             "type": "navigation"
         },
@@ -507,7 +512,7 @@
             "position": [
                 14.877034187316895,
                 0.02908763661980629,
-                -12.381012916564942
+                -12.381012916564941
             ],
             "type": "navigation"
         },
@@ -523,9 +528,9 @@
         {
             "name": "NavigationPoint41",
             "position": [
-                14.871716499328614,
+                14.871716499328613,
                 0.02908763661980629,
-                -8.051288604736329
+                -8.051288604736328
             ],
             "type": "navigation"
         },
@@ -559,7 +564,7 @@
         {
             "name": "NavigationPoint45",
             "position": [
-                16.742624282836915,
+                16.742624282836914,
                 0.02908763661980629,
                 -6.298956871032715
             ],
@@ -570,14 +575,14 @@
             "position": [
                 19.13475227355957,
                 0.02908763661980629,
-                -10.002538681030274
+                -10.002538681030273
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint47",
             "position": [
-                19.100000381469728,
+                19.100000381469727,
                 0.02908763661980629,
                 -8.041459083557129
             ],
@@ -604,8 +609,8 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                12.392017364501954,
-                1.0428485870361329,
+                12.392017364501953,
+                1.0428485870361328,
                 -7.988673686981201
             ],
             "type": "navigation-target"
@@ -613,8 +618,8 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                13.724279403686524,
-                1.0498111248016358,
+                13.724279403686523,
+                1.0498111248016357,
                 -9.06640911102295
             ],
             "type": "navigation-target"

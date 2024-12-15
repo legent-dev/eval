@@ -45,10 +45,12 @@
     "removed_objects": [],
     "task_template": "Compare the colors of three different objects in the room and identify the one most similar to the wall color.",
     "task_text": "Compare the colors of two different objects in the bedroom and find the one that is most similar in color to the bed.",
+    "task_text_cn": "比较卧室里两个不同物品的颜色，并找出与床颜色最相似的那个。",
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "The bed table's color is closer to the bed.",
+            "option_text": "The bedside table's color is closer to the bed.",
+            "option_text_cn": "床头柜的颜色更接近床。",
             "gameObjects": {
                 "list": []
             },
@@ -57,6 +59,7 @@
         {
             "option_type": "Answer",
             "option_text": "The linen basket's color is closer to the bed.",
+            "option_text_cn": "亚麻篮子的颜色更接近床。",
             "gameObjects": {
                 "list": []
             },
@@ -64,7 +67,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Both the bed table and linen basket have colors very similar to the wall.",
+            "option_text": "Both the bedside table and linen basket have colors very similar to the wall.",
+            "option_text_cn": "床头柜和亚麻篮子的颜色都与墙非常相似。",
             "gameObjects": {
                 "list": []
             },
@@ -72,7 +76,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Neither the bed table nor the linen basket has a color close to the wall.",
+            "option_text": "Neither the bedside table nor the linen basket has a color close to the wall.",
+            "option_text_cn": "床头柜和亚麻篮子的颜色都与墙不接近。",
             "gameObjects": {
                 "list": []
             },
@@ -80,7 +85,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "The bed table and linen basket are the same size.",
+            "option_text": "The bedside table and linen basket are the same size.",
+            "option_text_cn": "床头柜和亚麻篮子大小相同。",
             "gameObjects": {
                 "list": []
             },
@@ -88,7 +94,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "The wall is made of a different material than both the bed table and linen basket.",
+            "option_text": "The wall is made of a different material than both the bedside table and linen basket.",
+            "option_text_cn": "墙的材质与床头柜和亚麻篮子都不同。",
             "gameObjects": {
                 "list": []
             },
@@ -97,6 +104,7 @@
         {
             "option_type": "Answer",
             "option_text": "The linen basket’s color is very close to the wall color but slightly different.",
+            "option_text_cn": "亚麻篮子的颜色非常接近墙的颜色，但略有不同。",
             "gameObjects": {
                 "list": []
             },
@@ -104,7 +112,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "The linen basket’s color is closer to the wall color than the bed table, with only a small difference.",
+            "option_text": "The linen basket’s color is closer to the wall color than the bedside table, with only a small difference.",
+            "option_text_cn": "亚麻篮子的颜色比床头柜更接近墙的颜色，只有一点差异。",
             "gameObjects": {
                 "list": []
             },
@@ -114,7 +123,7 @@
     "predicates": [
         {
             "predicate_type": "choose",
-            "right_answer_content": "The bed table's color is closer to the bed.",
+            "right_answer_content": "The bedside table's color is closer to the bed.",
             "targetObject": {
                 "instanceID": 0
             },
@@ -129,16 +138,16 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.0737531185150148,
+                -2.0737531185150146,
                 0.0416666716337204,
-                -2.8877696990966799
+                -2.8877696990966797
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.9000000953674317,
+                -1.9000000953674316,
                 0.0416666716337204,
                 -1.318192720413208
             ],
@@ -192,16 +201,16 @@
         {
             "name": "NavigationPoint5 (2)",
             "position": [
-                -2.3469998836517336,
+                -2.3469998836517334,
                 0.0416666716337204,
-                1.0989999771118165
+                1.0989999771118164
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5 (1)",
             "position": [
-                -0.41100001335144045,
+                -0.41100001335144043,
                 0.0416666716337204,
                 0.7229999899864197
             ],
@@ -210,7 +219,7 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                0.39127641916275027,
+                0.39127641916275024,
                 0.0416666716337204,
                 -3.443563222885132
             ],
@@ -219,7 +228,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                -0.30541038513183596,
+                -0.30541038513183594,
                 0.0416666716337204,
                 -1.318192481994629
             ],
@@ -228,7 +237,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                -0.30541038513183596,
+                -0.30541038513183594,
                 0.0416666716337204,
                 2.681807518005371
             ],
@@ -239,7 +248,7 @@
             "position": [
                 -1.031999945640564,
                 0.0416666716337204,
-                3.1019999980926515
+                3.1019999980926514
             ],
             "type": "navigation"
         },
@@ -248,7 +257,7 @@
             "position": [
                 -1.1699999570846558,
                 0.0416666716337204,
-                1.6729999780654908
+                1.6729999780654907
             ],
             "type": "navigation"
         },
@@ -284,7 +293,7 @@
             "position": [
                 1.694589614868164,
                 0.0416666716337204,
-                2.6666667461395265
+                2.6666667461395264
             ],
             "type": "navigation"
         },
@@ -311,7 +320,7 @@
             "position": [
                 5.916999816894531,
                 0.7120000123977661,
-                -6.9710001945495609
+                -6.9710001945495605
             ],
             "type": "special"
         }

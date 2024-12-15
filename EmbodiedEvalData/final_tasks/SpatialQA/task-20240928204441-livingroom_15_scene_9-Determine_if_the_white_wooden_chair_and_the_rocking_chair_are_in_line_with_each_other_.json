@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        3.3239998817443849,
+        3.3239998817443848,
         0.0,
         4.738999843597412
     ],
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Determine if two objects placed at opposite ends of the room are in line with each other.",
     "task_text": "Determine if the white wooden chair and the rocking chair are in line with each other.",
+    "task_text_cn": "确定白色木椅和摇椅是否在一条直线上。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Maybe yes",
+            "option_text_cn": "可能是。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, they are presented at a 45 degree angle",
+            "option_text_cn": "不，它们呈 45 度角。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, they are presented at a 90 degree angle",
+            "option_text_cn": "不，它们呈 90 度角。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Yes, nearly aligned",
+            "option_text_cn": "是，几乎在一条直线上。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "No, they are presented at a 30 degree angle",
+            "option_text_cn": "不，它们呈 30 度角。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "The rocking chair is much bigger.",
+            "option_text_cn": "摇椅更大。",
             "gameObjects": {
                 "list": []
             },
@@ -103,7 +110,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "The wooden chair is mush bigger.",
+            "option_text": "The wooden chair is much bigger.",
+            "option_text_cn": "木椅更大。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "Both are aligned with the leather chair.",
+            "option_text_cn": "两者都与皮椅在一条直线上。",
             "gameObjects": {
                 "list": []
             },
@@ -170,7 +179,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                3.2980000972747804,
+                3.2980000972747803,
                 0.06559523940086365,
                 4.767000198364258
             ],
@@ -181,7 +190,7 @@
             "position": [
                 4.15500020980835,
                 0.06559523940086365,
-                2.0269999504089357
+                2.0269999504089355
             ],
             "type": "navigation"
         },
@@ -197,9 +206,9 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                4.2294158935546879,
+                4.2294158935546875,
                 0.06559523940086365,
-                3.9200000762939455
+                3.9200000762939453
             ],
             "type": "navigation"
         }

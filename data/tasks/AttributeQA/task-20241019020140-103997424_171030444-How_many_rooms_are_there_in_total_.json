@@ -1,0 +1,305 @@
+{
+    "scene_name": "103997424_171030444",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/103997424_171030444.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        18.790000915527345,
+        0.0,
+        -15.75
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -4786924
+        }
+    ],
+    "floor_objects": [
+        "103997424_171030444/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -4784300
+        },
+        {
+            "instanceID": -4784052
+        },
+        {
+            "instanceID": -4783204
+        }
+    ],
+    "removed_objects": [
+        "103997424_171030444/openings/openings_wall_12/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "103997424_171030444/openings/openings_wall_9/201/201 > SketchUp/201 > SketchUp > instance_8",
+        "103997424_171030444/openings/openings_wall_5/202/202 > SketchUp/202 > SketchUp > instance_8/202 > SketchUp > instance_8 > C"
+    ],
+    "humans": [],
+    "task_template": "How many rooms are there in total?",
+    "task_text": "How many rooms are there in total?",
+    "task_text_cn": "总共有多少个房间？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "eight",
+            "option_text_cn": "八个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "five",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                6.349999904632568,
+                0.02944699302315712,
+                -6.210000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                7.889999866485596,
+                0.02944699302315712,
+                -9.720000267028809
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                9.249011993408204,
+                0.02944699302315712,
+                -8.672765731811524
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                8.039999961853028,
+                0.02944699302315712,
+                -6.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                11.149999618530274,
+                0.02944699302315712,
+                -9.569999694824219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                11.180000305175782,
+                0.02944699302315712,
+                -8.260000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                11.103660583496094,
+                0.02944699302315712,
+                -6.349999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                13.770000457763672,
+                0.02944699302315712,
+                -9.819999694824219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                13.829999923706055,
+                0.02944699302315712,
+                -6.389999866485596
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                15.079999923706055,
+                0.02944699302315712,
+                -11.649999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                15.640000343322754,
+                0.02944699302315712,
+                -6.429999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                16.510000228881837,
+                0.02944699302315712,
+                -8.399999618530274
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                18.170000076293947,
+                0.02944699302315712,
+                -11.819999694824219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                18.270000457763673,
+                0.02944699302315712,
+                -8.460000038146973
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                18.440000534057618,
+                0.02944699302315712,
+                -15.247817993164063
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019020140-103997424_171030444-How_many_rooms_are_there_in_total_.json",
+    "message": ""
+}

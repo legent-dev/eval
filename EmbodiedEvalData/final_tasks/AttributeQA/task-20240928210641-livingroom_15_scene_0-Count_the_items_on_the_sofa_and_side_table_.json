@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Count the number of items in the refrigerator and pantry.",
     "task_text": "Count the items on the sofa and side table.",
+    "task_text_cn": "数一数沙发和边桌上的物品。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "7",
+            "option_text_cn": "七个",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "8",
+            "option_text_cn": "八个",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "9",
+            "option_text_cn": "九个",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "6",
+            "option_text_cn": "六个",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "5",
+            "option_text_cn": "五个",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "10",
+            "option_text_cn": "十个",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "4",
+            "option_text_cn": "四个",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "3",
+            "option_text_cn": "三个",
             "gameObjects": {
                 "list": []
             },
@@ -145,7 +154,7 @@
             "position": [
                 0.2937173843383789,
                 0.0416666716337204,
-                1.7324177026748658
+                1.7324177026748657
             ],
             "type": "navigation"
         },
@@ -163,7 +172,7 @@
             "position": [
                 0.8659999966621399,
                 0.0416666716337204,
-                1.7890000343322755
+                1.7890000343322754
             ],
             "type": "navigation"
         },
@@ -179,27 +188,27 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                2.1915416717529299,
+                2.1915416717529297,
                 0.0416666716337204,
-                1.8333334922790528
+                1.8333334922790527
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                2.6915416717529299,
+                2.6915416717529297,
                 0.0416666716337204,
-                3.7249999046325685
+                3.7249999046325684
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint5",
             "position": [
-                3.6915416717529299,
+                3.6915416717529297,
                 0.0416666716337204,
-                2.2249999046325685
+                2.2249999046325684
             ],
             "type": "navigation"
         },
@@ -208,7 +217,7 @@
             "position": [
                 0.3440000116825104,
                 0.8399999737739563,
-                2.6440000534057619
+                2.6440000534057617
             ],
             "type": "special"
         }

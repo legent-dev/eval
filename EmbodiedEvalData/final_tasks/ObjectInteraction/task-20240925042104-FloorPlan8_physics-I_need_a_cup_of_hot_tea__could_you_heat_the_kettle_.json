@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "I need a cup of hot tea; could you heat the kettle?",
     "task_text": "I need a cup of hot tea; could you heat the kettle?",
+    "task_text_cn": "我需要一杯热茶，你能加热水壶吗？",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the kettle",
+            "option_text_cn": "拿起水壶。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Place it on the gas stove",
+            "option_text_cn": "把它放在煤气灶上。",
             "gameObjects": {
                 "list": [
                     {
@@ -90,7 +93,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.529059112071991,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -0.8418418169021606
             ],
             "type": "navigation"
@@ -99,7 +102,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -1.432357907295227,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 -0.7666667103767395
             ],
             "type": "navigation"
@@ -107,18 +110,18 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -2.0828142166137697,
-                2.2351741790771486e-8,
-                1.5660462379455567
+                -2.0828142166137695,
+                2.2351741790771484e-08,
+                1.5660462379455566
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                0.39500001072883608,
-                2.2351741790771486e-8,
-                1.2669999599456788
+                0.39500001072883606,
+                2.2351741790771484e-08,
+                1.2669999599456787
             ],
             "type": "navigation"
         },
@@ -126,7 +129,7 @@
             "name": "NavigationPoint4",
             "position": [
                 -0.5900006294250488,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 2.68999981880188
             ],
             "type": "navigation"
@@ -135,8 +138,8 @@
             "name": "NavigationPoint6",
             "position": [
                 1.4099993705749512,
-                2.2351741790771486e-8,
-                2.9666666984558107
+                2.2351741790771484e-08,
+                2.9666666984558105
             ],
             "type": "navigation"
         },
@@ -145,7 +148,7 @@
             "position": [
                 0.7707880735397339,
                 0.9947251081466675,
-                -1.8350905179977418
+                -1.8350905179977417
             ],
             "type": "navigation-target"
         },

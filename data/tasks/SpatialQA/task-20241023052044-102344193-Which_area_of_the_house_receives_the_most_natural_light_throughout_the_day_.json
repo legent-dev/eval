@@ -1,0 +1,309 @@
+{
+    "scene_name": "102344193",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102344193.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        8.15999984741211,
+        0.0,
+        -1.3600000143051148
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -37647148
+        }
+    ],
+    "floor_objects": [
+        "102344193/walls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -37645588
+        },
+        {
+            "instanceID": -37645340
+        },
+        {
+            "instanceID": -37644808
+        },
+        {
+            "instanceID": -37640552
+        }
+    ],
+    "removed_objects": [
+        "102344193/openings/openings_wall_24",
+        "102344193/openings/openings_wall_21",
+        "102344193/openings/openings_wall_14/201/201 > SketchUp",
+        "102344193/openings/openings_wall_0/210/210 > SketchUp/210 > SketchUp > instance_8"
+    ],
+    "humans": [],
+    "task_template": "Determine which area of the house receives the most natural light throughout the day.",
+    "task_text": "Which area of the house receives the most natural light throughout the day?",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "the living room with two windows",
+            "option_text_cn": "有两扇窗户的客厅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the bedroom with two windows",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the bathroom",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the living room with a large window",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the kitchen with a large window",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the living room with a balcony",
+            "option_text_cn": "有阳台的客厅。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the glass-enclosed outdoor swimming pool.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the dining hall",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "the living room with a balcony",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "SpecialPoint",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.9900000095367432,
+                0.042812373489141467,
+                -2.4600000381469728
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -0.7099999785423279,
+                0.042812373489141467,
+                -5.656031131744385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -0.8399999737739563,
+                0.023952551186084749,
+                -3.7017581462860109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.309999942779541,
+                0.009479034692049027,
+                -8.40999984741211
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.7799999713897705,
+                -0.009999999776482582,
+                -7.769999980926514
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.5700000524520875,
+                0.009479034692049027,
+                -5.46999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                1.5399999618530274,
+                0.009479034692049027,
+                -2.069999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                3.119999885559082,
+                0.009479034692049027,
+                -9.130000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.730000019073486,
+                0.009479034692049027,
+                -5.46999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                4.590000152587891,
+                0.009479034692049027,
+                -8.25
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                4.940000057220459,
+                0.009479034692049027,
+                -2.2100000381469728
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                7.82112979888916,
+                0.042812373489141467,
+                -4.700261116027832
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20 (1)",
+            "position": [
+                7.656000137329102,
+                0.042812373489141467,
+                -6.093999862670898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                8.109999656677246,
+                0.009479034692049027,
+                -1.740006446838379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -2.4800000190734865,
+                0.005054473876953125,
+                -8.470000267028809
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023052044-102344193-Which_area_of_the_house_receives_the_most_natural_light_throughout_the_day_.json",
+    "message": ""
+}

@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Wash the lettuce in the sink and place the lettuce in the fridge. ",
     "task_text": "Wash the apple near the sink and place the apple in the fridge. ",
+    "task_text_cn": "在水槽附近洗苹果，然后把苹果放在冰箱里。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "OpenDoor",
             "option_text": "open the door of the fridge",
+            "option_text_cn": "打开冰箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the fridge",
+            "option_text_cn": "放在冰箱里。",
             "gameObjects": {
                 "list": [
                     {
@@ -95,6 +99,7 @@
         {
             "option_type": "CloseDoor",
             "option_text": "close the door of the fridge",
+            "option_text_cn": "关上冰箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +117,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "wash the apple",
+            "option_text_cn": "洗苹果。",
             "gameObjects": {
                 "list": [
                     {
@@ -184,9 +190,9 @@
         {
             "name": "NavigationPoint1 (1)",
             "position": [
-                -1.0880000591278077,
+                -1.0880000591278076,
                 0.0315263569355011,
-                1.0549999475479127
+                1.0549999475479126
             ],
             "type": "navigation"
         },
@@ -195,16 +201,16 @@
             "position": [
                 -0.10008729994297028,
                 0.0315263569355011,
-                3.0333335399627687
+                3.0333335399627686
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -2.8889999389648439,
+                -2.8889999389648438,
                 0.0315263569355011,
-                -1.4869999885559083
+                -1.4869999885559082
             ],
             "type": "navigation"
         },
@@ -213,16 +219,16 @@
             "position": [
                 -3.615999937057495,
                 0.0315263569355011,
-                0.11100000143051148
+                0.11100000143051147
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -2.4170000553131105,
+                -2.4170000553131104,
                 0.0315263569355011,
-                1.2610000371932984
+                1.2610000371932983
             ],
             "type": "navigation"
         },
@@ -238,16 +244,16 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -3.5333335399627687,
+                -3.5333335399627686,
                 0.0315263569355011,
-                2.1500000953674318
+                2.1500000953674316
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                -1.7039999961853028,
+                -1.7039999961853027,
                 0.0315263569355011,
                 2.569999933242798
             ],
@@ -256,7 +262,7 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                -1.9499998092651368,
+                -1.9499998092651367,
                 0.9704154133796692,
                 -0.8499999046325684
             ],
@@ -265,7 +271,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                1.2029999494552613,
+                1.2029999494552612,
                 0.0315263569355011,
                 1.5149999856948853
             ],
@@ -276,7 +282,7 @@
             "position": [
                 1.0500001907348633,
                 0.0315263569355011,
-                -0.36666667461395266
+                -0.36666667461395264
             ],
             "type": "navigation"
         },
@@ -285,16 +291,16 @@
             "position": [
                 1.5500001907348633,
                 0.0315263569355011,
-                3.6500000953674318
+                3.6500000953674316
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint11",
             "position": [
-                2.5500001907348635,
+                2.5500001907348633,
                 0.0315263569355011,
-                -0.34999990463256838
+                -0.34999990463256836
             ],
             "type": "navigation"
         },
@@ -310,9 +316,9 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                3.0500001907348635,
+                3.0500001907348633,
                 0.0315263569355011,
-                2.7333335876464845
+                2.7333335876464844
             ],
             "type": "navigation"
         },
@@ -321,14 +327,14 @@
             "position": [
                 -0.6292709112167358,
                 0.9617499113082886,
-                -1.4413679838180543
+                -1.4413679838180542
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -0.028104662895202638,
+                -0.028104662895202637,
                 0.7245513200759888,
                 1.8910150527954102
             ],

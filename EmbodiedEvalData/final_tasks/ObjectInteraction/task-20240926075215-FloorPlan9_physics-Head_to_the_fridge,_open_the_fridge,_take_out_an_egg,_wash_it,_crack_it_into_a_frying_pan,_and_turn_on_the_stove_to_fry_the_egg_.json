@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "Head to the kitchen, open the fridge, take out a bottle of water, and place it on the living room table.",
     "task_text": "Head to the fridge, open the fridge, take out an egg, wash it, crack it into a frying pan, and turn on the stove to fry the egg.",
+    "task_text_cn": "走向冰箱，打开冰箱，拿出一个鸡蛋，清洗它，把它打进煎锅里，然后打开炉灶煎鸡蛋。",
     "options": [
         {
             "option_type": "OpenDoor",
             "option_text": "open the door of the fridge",
+            "option_text_cn": "打开冰箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -61,6 +63,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up an egg",
+            "option_text_cn": "拿起鸡蛋。",
             "gameObjects": {
                 "list": [
                     {
@@ -78,6 +81,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "wash",
+            "option_text_cn": "清洗。",
             "gameObjects": {
                 "list": [
                     {
@@ -107,6 +111,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "crack the egg",
+            "option_text_cn": "打鸡蛋。",
             "gameObjects": {
                 "list": [
                     {
@@ -134,6 +139,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "turn on the stove",
+            "option_text_cn": "打开炉灶。",
             "gameObjects": {
                 "list": [
                     {
@@ -207,7 +213,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.0,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.0
             ],
             "type": "navigation"
@@ -215,9 +221,9 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                2.6262335777282717,
-                2.2351741790771486e-8,
-                0.16551759839057923
+                2.6262335777282715,
+                2.2351741790771484e-08,
+                0.16551759839057922
             ],
             "type": "navigation"
         },
@@ -225,8 +231,8 @@
             "name": "NavigationPoint2",
             "position": [
                 0.6557723879814148,
-                2.2351741790771486e-8,
-                0.38055139780044558
+                2.2351741790771484e-08,
+                0.38055139780044556
             ],
             "type": "navigation"
         },
@@ -234,16 +240,16 @@
             "name": "NavigationPoint3",
             "position": [
                 -1.7401530742645264,
-                2.2351741790771486e-8,
-                -0.18293705582618714
+                2.2351741790771484e-08,
+                -0.18293705582618713
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -1.1499996185302735,
-                2.2351741790771486e-8,
+                -1.1499996185302734,
+                2.2351741790771484e-08,
                 1.25
             ],
             "type": "navigation"
@@ -252,16 +258,16 @@
             "name": "NavigationPoint5",
             "position": [
                 0.499835729598999,
-                2.2351741790771486e-8,
-                -1.7205170392990113
+                2.2351741790771484e-08,
+                -1.7205170392990112
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                2.3500003814697267,
-                2.2351741790771486e-8,
+                2.3500003814697266,
+                2.2351741790771484e-08,
                 -1.7333333492279053
             ],
             "type": "navigation"
@@ -269,9 +275,9 @@
         {
             "name": "NavigationPoint7",
             "position": [
-                3.8000001907348635,
-                2.2351741790771486e-8,
-                -1.3333332538604737
+                3.8000001907348633,
+                2.2351741790771484e-08,
+                -1.3333332538604736
             ],
             "type": "navigation"
         },
@@ -305,7 +311,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                0.042679883539676669,
+                0.042679883539676666,
                 0.7554107308387756,
                 -0.6585637331008911
             ],

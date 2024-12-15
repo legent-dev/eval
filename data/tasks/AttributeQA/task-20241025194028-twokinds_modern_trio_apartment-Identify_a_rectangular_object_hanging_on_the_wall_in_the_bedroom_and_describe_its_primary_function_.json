@@ -1,0 +1,638 @@
+{
+    "scene_name": "twokinds_modern_trio_apartment",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/Sketchfab/twokinds_modern_trio_apartment.glb",
+    "scene_scale": [
+        0.791228175163269,
+        0.791228175163269,
+        0.791228175163269
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -3.5,
+        0.0,
+        5.519999980926514
+    ],
+    "agent_rotation": [
+        0.0,
+        269.3642578125,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -145594
+        }
+    ],
+    "floor_objects": [
+        "twokinds_modern_trio_apartment/root/GLTF_SceneRootNode/Room_172/Floor_130"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Identify a rectangular object in the kitchen and describe its primary function.",
+    "task_text": "Identify a rectangular object hanging on the wall in the bedroom and describe its primary function.",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "A mirror for appearance check.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A painting for decoration.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A clock for telling time.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A shelf for holding small items.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A soft board photo wall for displaying photos.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A whiteboard for notes.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A photo wall and whiteboard combination for notes and display.",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "A wall calendar for checking dates. ",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": 0
+                    }
+                ]
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "A photo wall and whiteboard combination for notes and display.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -8.46712875366211,
+                0.04169151186943054,
+                -1.3179782629013062
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -7.766667366027832,
+                0.04169151186943054,
+                0.5070967674255371
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -8.600000381469727,
+                0.941691517829895,
+                3.6000001430511476
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -7.488999843597412,
+                0.008358165621757508,
+                5.451000213623047
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -6.058000087738037,
+                0.008358165621757508,
+                2.2760000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -7.056155681610107,
+                0.856074869632721,
+                3.636758327484131
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -5.733333587646484,
+                0.04169151186943054,
+                -1.4666666984558106
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -6.066657066345215,
+                0.04169151186943054,
+                0.007096767425537109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -6.040399074554443,
+                0.008358165621757508,
+                5.466607570648193
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -4.750999927520752,
+                0.008358165621757508,
+                4.666999816894531
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -4.875,
+                0.008358165621757508,
+                5.498000144958496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -4.526588439941406,
+                0.04169151186943054,
+                0.09977225214242935
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -3.871999979019165,
+                0.04169151186943054,
+                2.2660000324249269
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -1.6299999952316285,
+                0.008358165621757508,
+                -0.04800000041723251
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -3.930999994277954,
+                0.023740125820040704,
+                3.2230000495910646
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -2.266666889190674,
+                0.008358165621757508,
+                1.2666667699813843
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -3.1559998989105226,
+                0.019334208220243455,
+                5.823999881744385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16 (1)",
+            "position": [
+                -3.188999891281128,
+                0.019334208220243455,
+                4.848999977111816
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                0.2332804799079895,
+                0.008358165621757508,
+                -3.4593799114227297
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -1.5119999647140504,
+                0.04169151186943054,
+                2.36299991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                -1.8550000190734864,
+                0.008358165621757508,
+                5.942999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (1)",
+            "position": [
+                -1.9129999876022339,
+                0.008358165621757508,
+                5.046999931335449
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19 (2)",
+            "position": [
+                -1.0329999923706055,
+                0.008358165621757508,
+                5.419000148773193
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                -0.06957279145717621,
+                0.008358165621757508,
+                -0.9150460362434387
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                0.5379999876022339,
+                0.008358165621757508,
+                2.438999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                0.6600000262260437,
+                0.008358165621757508,
+                3.9200000762939455
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                -0.06665705889463425,
+                0.008358165621757508,
+                6.066667079925537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                1.6399999856948853,
+                0.01755373552441597,
+                0.7200000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                1.4333429336547852,
+                0.008358165621757508,
+                -2.492903232574463
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                1.4333429336547852,
+                0.023949721828103067,
+                -0.9929032325744629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                1.4333429336547852,
+                0.008358165621757508,
+                6.007096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                2.933342933654785,
+                0.008358165621757508,
+                -3.4666669368743898
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                2.9204347133636476,
+                0.008358165621757508,
+                -1.412039875984192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                2.190000057220459,
+                0.04169151186943054,
+                3.0199999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                2.933342933654785,
+                0.008358165621757508,
+                5.007096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                3.765463352203369,
+                0.04169151186943054,
+                -0.10361012816429138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                3.933342933654785,
+                0.017163110896945,
+                3.507096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                4.403553485870361,
+                0.5416915416717529,
+                -1.46311354637146
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint38",
+            "position": [
+                4.400000095367432,
+                0.008358165621757508,
+                1.507096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint39",
+            "position": [
+                4.433342933654785,
+                0.008358165621757508,
+                5.700000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                6.282506942749023,
+                0.04169151186943054,
+                -1.6178117990493775
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint41",
+            "position": [
+                5.433342933654785,
+                0.7522320747375488,
+                0.007096767425537109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint42",
+            "position": [
+                5.433342933654785,
+                0.014386402443051339,
+                3.007096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint43",
+            "position": [
+                5.433342933654785,
+                0.008358165621757508,
+                4.507096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint44",
+            "position": [
+                6.700000286102295,
+                0.04169151186943054,
+                1.007096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                5.902052402496338,
+                0.008358165621757508,
+                6.012311935424805
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint46",
+            "position": [
+                6.933342933654785,
+                0.008358165621757508,
+                2.507096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint47",
+            "position": [
+                7.433342933654785,
+                0.04169151186943054,
+                -0.4929032325744629
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint48",
+            "position": [
+                8.441800117492676,
+                0.008358165621757508,
+                4.563250541687012
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint49",
+            "position": [
+                8.433342933654786,
+                0.04169151186943054,
+                1.007096767425537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint50",
+            "position": [
+                8.433342933654786,
+                0.008358165621757508,
+                2.507096767425537
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241025194028-twokinds_modern_trio_apartment-Identify_a_rectangular_object_hanging_on_the_wall_in_the_bedroom_and_describe_its_primary_function_.json",
+    "message": ""
+}

@@ -1,0 +1,171 @@
+{
+    "scene_name": "FloorPlan303_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan303_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.9049999713897705,
+        0.0,
+        -0.878000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -49845426
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan303_physics/Objects/Floor_ed78888e"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -49839620
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan303_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Locate all food items in the pantry that have expired and dispose of them in the trash can.",
+    "task_text": "Locate the smallest soft object on the bedroom floor and dispose of it in the opened cardboard box.",
+    "task_text_cn": "在卧室的地板上找到最小的柔软的物体，把它扔进打开的纸箱里。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起布。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -49843242
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan303_physics/Objects/Cloth_f148b5b6"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put in",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -49847002
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49843242
+            },
+            "predicate_object": "FloorPlan303_physics/Objects/Cloth_f148b5b6",
+            "targetPlace": {
+                "instanceID": -49847002
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -49843242
+            },
+            "predicate_object": "FloorPlan303_physics/Objects/Cloth_f148b5b6",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.8910000324249268,
+                0.033333227038383487,
+                -0.32600000500679018
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                0.6340000033378601,
+                0.033333227038383487,
+                -0.6380000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.0160000324249268,
+                0.033333227038383487,
+                -0.9409999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.8650000095367432,
+                0.033333227038383487,
+                -1.8880000114440919
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                2.0980000495910646,
+                0.00934266671538353,
+                -0.6690000295639038
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.13100004196167,
+                0.08336985111236572,
+                -0.9279999732971191
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241102031922-FloorPlan303_physics-Locate_the_smallest_soft_object_on_the_bedroom_floor_and_dispose_of_it_in_the_opened_cardboard_box_.json",
+    "message": ""
+}

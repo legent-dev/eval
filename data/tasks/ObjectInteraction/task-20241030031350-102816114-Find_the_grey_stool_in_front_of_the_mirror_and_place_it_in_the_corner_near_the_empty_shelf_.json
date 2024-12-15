@@ -1,0 +1,336 @@
+{
+    "scene_name": "102816114",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/HSSD/102816114.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.11900000274181366,
+        0.0,
+        -0.7900000214576721
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -7590734
+        }
+    ],
+    "floor_objects": [
+        "102816114/walls"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Find the remote control and place it on the coffee table.",
+    "task_text": "Find the grey stool in front of the mirror and place it in the corner near the empty shelf.",
+    "task_text_cn": "找到镜子前面的灰色凳子，把它放在空架子附近的角落。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up ",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -7579458
+                    }
+                ]
+            },
+            "objects": [
+                "102816114/furniture/3e716af6b1a9af150bff60af9daf6a63cc80b792/3e716af6b1a9af150bff60af9daf6a63cc80b792 > /3e716af6b1a9af150bff60af9daf6a63cc80b792 >  > root"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "放在。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -7773940
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -7579458
+            },
+            "predicate_object": "102816114/furniture/3e716af6b1a9af150bff60af9daf6a63cc80b792/3e716af6b1a9af150bff60af9daf6a63cc80b792 > /3e716af6b1a9af150bff60af9daf6a63cc80b792 >  > root",
+            "targetPlace": {
+                "instanceID": -7773940
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -7579458
+            },
+            "predicate_object": "102816114/furniture/3e716af6b1a9af150bff60af9daf6a63cc80b792/3e716af6b1a9af150bff60af9daf6a63cc80b792 > /3e716af6b1a9af150bff60af9daf6a63cc80b792 >  > root",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.2619999647140504,
+                0.03666695952415466,
+                -0.17100000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (3)",
+            "position": [
+                -0.1679999977350235,
+                0.03666695952415466,
+                -0.6629999876022339
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (4)",
+            "position": [
+                -0.26600000262260439,
+                0.03666695952415466,
+                -2.260999917984009
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                -1.2990000247955323,
+                0.03666695952415466,
+                1.0080000162124634
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (2)",
+            "position": [
+                -2.132999897003174,
+                0.03666695952415466,
+                0.6460000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.7979999780654907,
+                0.0033336281776428224,
+                -0.375
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                0.9459999799728394,
+                0.0033336281776428224,
+                1.062000036239624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -3.4000000953674318,
+                0.0033336281776428224,
+                -2.3254804611206056
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -3.4000000953674318,
+                0.0033336281776428224,
+                -0.8254804611206055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -3.4000000953674318,
+                0.0033336281776428224,
+                0.6745195984840393
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                -0.3696480095386505,
+                0.0033336281776428224,
+                -4.500923156738281
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                -0.41979455947875979,
+                0.5715216398239136,
+                0.6745195388793945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                1.080073356628418,
+                0.013718947768211365,
+                -5.000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                1.0520000457763672,
+                0.0033336281776428224,
+                -2.3289999961853029
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint44",
+            "position": [
+                2.3333334922790529,
+                0.0033336281776428224,
+                -3.8000011444091799
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                3.196794033050537,
+                0.0033336281776428224,
+                -1.1393816471099854
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint46",
+            "position": [
+                2.6000001430511476,
+                0.0033336281776428224,
+                0.6745195388793945
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint54",
+            "position": [
+                3.4666669368743898,
+                0.03666695952415466,
+                -5.000000953674316
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint57",
+            "position": [
+                4.08020544052124,
+                0.0033336281776428224,
+                1.0666667222976685
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint59",
+            "position": [
+                4.866666793823242,
+                0.0033336281776428224,
+                -0.32548046112060549
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint64",
+            "position": [
+                6.000000476837158,
+                0.0033336281776428224,
+                -1.9333343505859376
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint65",
+            "position": [
+                5.533333778381348,
+                0.0033336281776428224,
+                1.6666667461395264
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.6778900623321534,
+                0.23500002920627595,
+                -0.6319399476051331
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.2799999713897706,
+                0.07100000232458115,
+                -0.9229999780654907
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                1.2519999742507935,
+                0.27300000190734866,
+                -0.9430000185966492
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030031350-102816114-Find_the_grey_stool_in_front_of_the_mirror_and_place_it_in_the_corner_near_the_empty_shelf_.json",
+    "message": ""
+}

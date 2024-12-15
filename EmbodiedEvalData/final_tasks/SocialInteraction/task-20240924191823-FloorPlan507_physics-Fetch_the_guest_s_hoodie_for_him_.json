@@ -43,13 +43,13 @@
                 "instanceID": -3155542
             },
             "human_position": [
-                -0.09799999743700028,
+                -0.09799999743700027,
                 0.0,
-                2.0739998817443849
+                2.0739998817443848
             ],
             "human_rotation": [
                 0.0,
-                174.62783813476563,
+                174.62783813476562,
                 0.0
             ],
             "asset": "Ch42_nonPBR",
@@ -62,10 +62,12 @@
     ],
     "task_template": "Help a friend open a locked door.",
     "task_text": "Fetch the guest's hoodie for him.",
+    "task_text_cn": "为客人拿他的连帽衫。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +85,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "hand over",
+            "option_text_cn": "递过去。",
             "gameObjects": {
                 "list": [
                     {
@@ -138,7 +141,7 @@
             "name": "NavigationPoint0",
             "position": [
                 -0.7179999947547913,
-                0.027254179120063783,
+                0.027254179120063782,
                 -2.003000020980835
             ],
             "type": "navigation"
@@ -146,8 +149,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -0.23333334922790528,
-                0.027254179120063783,
+                -0.23333334922790527,
+                0.027254179120063782,
                 -0.9662429094314575
             ],
             "type": "navigation"
@@ -156,7 +159,7 @@
             "name": "NavigationPoint2",
             "position": [
                 0.09000000357627869,
-                0.027254179120063783,
+                0.027254179120063782,
                 0.5820000171661377
             ],
             "type": "navigation"
@@ -164,9 +167,9 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                0.41200000047683718,
-                0.027254179120063783,
-                -1.9880000352859498
+                0.41200000047683716,
+                0.027254179120063782,
+                -1.9880000352859497
             ],
             "type": "navigation"
         },
@@ -174,7 +177,7 @@
             "name": "NavigationPoint4",
             "position": [
                 0.8349999785423279,
-                0.027254179120063783,
+                0.027254179120063782,
                 -0.9819999933242798
             ],
             "type": "navigation"
@@ -183,8 +186,8 @@
             "name": "NavigationPoint5",
             "position": [
                 0.5149999856948853,
-                0.027254179120063783,
-                2.4149999618530275
+                0.027254179120063782,
+                2.4149999618530273
             ],
             "type": "navigation"
         },
@@ -192,8 +195,8 @@
             "name": "SpecialPoint",
             "position": [
                 0.08018606901168823,
-                1.2465046644210816,
-                -2.3605031967163088
+                1.2465046644210815,
+                -2.3605031967163086
             ],
             "type": "special"
         }

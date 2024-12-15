@@ -1,0 +1,353 @@
+{
+    "scene_name": "neusa_frois",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/neusa_frois.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.08699999749660492,
+        0.0,
+        2.3929998874664308
+    ],
+    "agent_rotation": [
+        0.0,
+        99.39543151855469,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -651338
+        }
+    ],
+    "floor_objects": [
+        "neusa_frois/ef23de18cc1c48d38b32b6f10d2cc53a.fbx/RootNode/Line001"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many glasses are there in the cabinet",
+    "task_text": "How many glasses are there in the cabinet",
+    "task_text_cn": "橱柜里有多少个玻璃杯？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "thirty",
+            "option_text_cn": "三十",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "thirty-three",
+            "option_text_cn": "三十三",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "thirty-six",
+            "option_text_cn": "三十六",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "thirty-nine",
+            "option_text_cn": "三十九",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "forty-two",
+            "option_text_cn": "四十二",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "forty-five",
+            "option_text_cn": "四十五",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "forty-eight",
+            "option_text_cn": "四十八",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "fifty-two",
+            "option_text_cn": "五十二",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "thirty-six",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.9729169607162476,
+                0.028193507343530656,
+                -5.520112037658691
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.6130000352859498,
+                0.028193507343530656,
+                -2.0889999866485597
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.7736403942108155,
+                0.028193507343530656,
+                -0.21421439945697785
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.4932997226715088,
+                0.028193507343530656,
+                1.3455913066864014
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.433990716934204,
+                0.4948601722717285,
+                3.8232102394104006
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.3945870399475098,
+                0.4948601722717285,
+                5.824404239654541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.20000019669532777,
+                0.028193507343530656,
+                -3.2000021934509279
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.20000100135803224,
+                0.761526882648468,
+                -1.2000021934509278
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.20000100135803224,
+                0.761526882648468,
+                0.29999780654907229
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.20000100135803224,
+                0.028193507343530656,
+                2.2999978065490724
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.159999966621399,
+                0.04830055311322212,
+                6.130000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                0.2999989986419678,
+                0.028193507343530656,
+                -4.700002193450928
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.0884965658187867,
+                0.028193507343530656,
+                0.8017723560333252
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.6759999990463257,
+                0.028193507343530656,
+                3.5260000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.533333420753479,
+                0.028193507343530656,
+                -1.2000021934509278
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.133333444595337,
+                0.9281935691833496,
+                -6.600000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.2999989986419678,
+                0.028193507343530656,
+                2.2999978065490724
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                1.7999989986419678,
+                0.028193507343530656,
+                -2.700000286102295
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.7999989986419679,
+                0.028193507343530656,
+                -0.20000219345092774
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                1.5549999475479127,
+                0.028193507343530656,
+                3.7179999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                3.267948627471924,
+                0.028193507343530656,
+                -3.193592071533203
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107062441-neusa_frois-How_many_glasses_are_there_in_the_cabinet.json",
+    "message": ""
+}

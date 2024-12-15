@@ -1,0 +1,376 @@
+{
+    "scene_name": "three_rooms_5_scene_13",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_13.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        2.759000062942505,
+        0.6840000152587891,
+        1.215000033378601
+    ],
+    "agent_rotation": [
+        0.0,
+        88.53736877441406,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -435756
+        },
+        {
+            "instanceID": -435732
+        },
+        {
+            "instanceID": -435744
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_13/CreatedWalls/identifier14_Floor",
+        "three_rooms_5_scene_13/CreatedWalls/identifier12_Floor",
+        "three_rooms_5_scene_13/CreatedWalls/identifier13_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -428228
+        },
+        {
+            "instanceID": -434976
+        },
+        {
+            "instanceID": -430884
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_13/CreatedObjects/identifier7_Doorway_2.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier76_6268cfff1a3d47bfb1bc42385c350677.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier40_0af9185b24f142fc9453d2cc42b1cb4b.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -436754
+            },
+            "human_position": [
+                3.6559998989105226,
+                0.2930000126361847,
+                3.2339999675750734
+            ],
+            "human_rotation": [
+                0.0,
+                3.91739559173584,
+                0.0
+            ],
+            "asset": "Ch26_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "I need you to go to the kitchen, get a cup, fill it with coffee, and bring it to me in the office.",
+    "task_text": "I need you to go to the kitchen, get a coconut, open it, and give it to me in the bedroom.",
+    "task_text_cn": "我需要你去厨房，拿一个椰子，打开它，然后把它带到卧室给我。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the coconut",
+            "option_text_cn": "拿起椰子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -430948
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "open the coconut",
+            "option_text_cn": "打开椰子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -430948
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -430948
+                            }
+                        ],
+                        "required_objects": [
+                            "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -430948
+                    },
+                    {
+                        "instanceID": -436754
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb",
+                "Ch26_nonPBR"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -430948
+                            },
+                            {
+                                "instanceID": -436754
+                            }
+                        ],
+                        "required_objects": [
+                            "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb",
+                            "Ch26_nonPBR"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -438926
+            },
+            "predicate_object": "NavPoints/NavigationPoint13",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -430948
+            },
+            "predicate_object": "three_rooms_5_scene_13/CreatedObjects/identifier42_8ad95c0125aa424c919323930dd84908.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "open the coconut",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.2149999141693117,
+                0.05600005388259888,
+                -2.5929999351501467
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -2.8010001182556154,
+                0.24440383911132813,
+                3.056999921798706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.46658819913864138,
+                0.05600005388259888,
+                -3.9943978786468508
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.6699999570846558,
+                0.05600005388259888,
+                -2.7149999141693117
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -2.313999891281128,
+                0.05600005388259888,
+                1.305999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -1.6399999856948853,
+                0.1464276909828186,
+                2.6019999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                0.47999998927116396,
+                0.05600005388259888,
+                0.8550000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.3709999918937683,
+                0.05600005388259888,
+                2.8369998931884767
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                1.433333396911621,
+                0.05600005388259888,
+                3.94735050201416
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                1.4869999885559083,
+                0.05600005388259888,
+                -1.0180000066757203
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                1.031999945640564,
+                0.05600005388259888,
+                2.447000026702881
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                2.8970000743865969,
+                0.05600005388259888,
+                -0.8539999723434448
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                2.934999942779541,
+                0.05600005388259888,
+                1.2489999532699586
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                3.387791633605957,
+                0.05600005388259888,
+                3.9333336353302
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                4.374000072479248,
+                0.05600005388259888,
+                1.128000020980835
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.742279052734375,
+                0.8962249159812927,
+                -2.8703746795654299
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029172220-three_rooms_5_scene_13-I_need_you_to_go_to_the_kitchen,_get_a_coconut,_open_it,_and_give_it_to_me_in_the_bedroom_.json",
+    "message": ""
+}

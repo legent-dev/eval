@@ -1,0 +1,246 @@
+{
+    "scene_name": "livingroom_15_scene_9",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_9.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.2330000400543215,
+        0.0,
+        2.553999900817871
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -50904568
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_9/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": " If you were to draw an imaginary line from the front door to the back door, which pieces of furniture would this line intersect?",
+    "task_text": "If you draw an imaginary vertical plane from the left window to the right window, which piece of furniture would this plane intersect?",
+    "task_text_cn": "如果你从左边的窗户画一个想象的竖直面到右边的窗户，这个面会与哪个家具相交？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "the black chair",
+            "option_text_cn": "椅子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the sofa",
+            "option_text_cn": "沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the round table",
+            "option_text_cn": "桌子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the bookcase",
+            "option_text_cn": "书架。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the small table",
+            "option_text_cn": "小桌子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the five-layer case",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the five-layer cabinet",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "the lamp",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "the sofa",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.44606250524520876,
+                0.0645565614104271,
+                1.0820775032043458
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.809999942779541,
+                0.038928575813770297,
+                2.8299999237060549
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.559999942779541,
+                0.038928575813770297,
+                4.349999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.0823616981506349,
+                0.038928575813770297,
+                1.4106075763702393
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.5299999713897707,
+                0.038928575813770297,
+                4.4029998779296879
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.4600000381469728,
+                0.038928575813770297,
+                1.1619999408721924
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.1915416717529299,
+                0.038928575813770297,
+                2.6589770317077638
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                4.921000003814697,
+                0.038928575813770297,
+                4.24399995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                4.885000228881836,
+                0.038928575813770297,
+                2.7939999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                5.01800012588501,
+                0.038928575813770297,
+                1.3029999732971192
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241024235948-livingroom_15_scene_9-If_you_draw_an_imaginary_vertical_plane_from_the_left_window_to_the_right_window,_which_piece_of_furniture_would_this_plane_intersect_.json",
+    "message": ""
+}

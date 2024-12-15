@@ -1,0 +1,569 @@
+{
+    "scene_name": "office_interior__ceo",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/office_interior__ceo.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        359.66888427734377,
+        214.85458374023438,
+        0.32224351167678835
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -73418708
+        }
+    ],
+    "floor_objects": [
+        "office_interior__ceo/13db1c728d794487a2fe98782a966cdc.fbx/RootNode/Group1871020188"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -73425008
+            },
+            "human_position": [
+                -2.5940001010894777,
+                -0.28200000524520876,
+                -4.6570000648498539
+            ],
+            "human_rotation": [
+                0.0,
+                338.45849609375,
+                0.0
+            ],
+            "asset": "Ch31_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Walk around the table in a circle.",
+    "task_text": "Walk around the office desk in a circle.",
+    "task_text_cn": "绕着办公桌走一圈。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73434936
+            },
+            "predicate_object": "NavPoints/NavigationPoint26",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73434266
+            },
+            "predicate_object": "NavPoints/NavigationPoint25",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73428058
+            },
+            "predicate_object": "NavPoints/NavigationPoint13",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73427700
+            },
+            "predicate_object": "NavPoints/NavigationPoint12",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73429236
+            },
+            "predicate_object": "NavPoints/NavigationPoint16",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -73432392
+            },
+            "predicate_object": "NavPoints/NavigationPoint22",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -6.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -4.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -9.866667747497559,
+                0.03965110704302788,
+                -2.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -8.96935749053955,
+                0.03965110704302788,
+                -0.014871973544359208
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -8.933639526367188,
+                0.03965110704302788,
+                2.34913969039917
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -8.90000057220459,
+                0.03965110704302788,
+                4.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -7.923169136047363,
+                0.03965110704302788,
+                -5.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -7.923169136047363,
+                0.03965110704302788,
+                -3.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -5.8104634284973148,
+                0.03965110704302788,
+                -1.0804927349090577
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -6.923169136047363,
+                0.03965110704302788,
+                0.8857889175415039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -6.923169136047363,
+                0.03965110704302788,
+                2.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -6.899870872497559,
+                0.03965110704302788,
+                5.247817516326904
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                -5.766667366027832,
+                0.03965110704302788,
+                -4.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -4.139999866485596,
+                0.03965110704302788,
+                -5.739999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -5.081313133239746,
+                0.03965110704302788,
+                4.043932914733887
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -4.923169136047363,
+                0.03965110704302788,
+                0.8857889175415039
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -4.079999923706055,
+                0.03965110704302788,
+                -2.200000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -3.9231691360473635,
+                0.03965110704302788,
+                5.800000190734863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                -3.4231691360473635,
+                0.03965110704302788,
+                -0.6142110824584961
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                -3.7009999752044679,
+                0.03965110704302788,
+                1.7359999418258668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                -2.9231691360473635,
+                0.03965110704302788,
+                -4.366666316986084
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                -2.4231691360473635,
+                0.5729844570159912,
+                4.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                -1.690000057220459,
+                0.03965110704302788,
+                -1.9459999799728394
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                -2.0799999237060549,
+                0.03965110704302788,
+                5.289999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                -1.4231691360473633,
+                0.03965110704302788,
+                -0.1142110824584961
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                -0.9231693744659424,
+                0.03965110704302788,
+                -5.433333396911621
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                0.09999942779541016,
+                0.03965110704302788,
+                -3.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                -0.4991264045238495,
+                0.03965110704302788,
+                4.938794136047363
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                0.3610000014305115,
+                0.03965110704302788,
+                -1.562000036239624
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint29",
+            "position": [
+                0.5889999866485596,
+                0.03965110704302788,
+                0.5350000262260437
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint30",
+            "position": [
+                1.3000000715255738,
+                0.03965110704302788,
+                2.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint31",
+            "position": [
+                2.1333930492401125,
+                0.03965110704302788,
+                -6.131252288818359
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint32",
+            "position": [
+                1.5315849781036378,
+                0.03965110704302788,
+                5.200211524963379
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint33",
+            "position": [
+                2.0768308639526369,
+                0.03965110704302788,
+                -4.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint34",
+            "position": [
+                2.5768308639526369,
+                0.03965110704302788,
+                -2.114211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint35",
+            "position": [
+                3.117000102996826,
+                0.03965110704302788,
+                0.3140000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint36",
+            "position": [
+                3.8333334922790529,
+                0.03965110704302788,
+                3.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint37",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                -5.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint38",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                -3.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint39",
+            "position": [
+                4.076830863952637,
+                0.03965110704302788,
+                1.885788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint40",
+            "position": [
+                4.11899995803833,
+                0.03965110704302788,
+                -0.8960000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint41",
+            "position": [
+                6.233333587646484,
+                0.00631776824593544,
+                -0.1142110824584961
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint42",
+            "position": [
+                6.197999954223633,
+                0.00631776824593544,
+                3.0269999504089357
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint43",
+            "position": [
+                7.576830863952637,
+                0.00631776824593544,
+                -1.614211082458496
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint44",
+            "position": [
+                7.576830863952637,
+                0.00631776824593544,
+                1.385788917541504
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint45",
+            "position": [
+                8.34000015258789,
+                0.00631776824593544,
+                3.309999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint46",
+            "position": [
+                9.076830863952637,
+                0.00631776824593544,
+                -0.1142110824584961
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 2.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241026201047-office_interior__ceo-Walk_around_the_office_desk_in_a_circle_.json",
+    "message": ""
+}

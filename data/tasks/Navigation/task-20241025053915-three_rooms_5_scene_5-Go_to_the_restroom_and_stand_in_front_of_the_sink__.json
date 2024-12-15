@@ -1,0 +1,298 @@
+{
+    "scene_name": "three_rooms_5_scene_5",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_5.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.3630000054836273,
+        0.0,
+        0.4429999887943268
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -58017146
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_5/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -58007850
+        },
+        {
+            "instanceID": -58009046
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_5/CreatedObjects/identifier0_Doorway_8.glb/Doorway_8(Clone)",
+        "three_rooms_5_scene_5/CreatedObjects/identifier8_Doorway_1.glb"
+    ],
+    "humans": [],
+    "task_template": "Go to the kitchen and stand in front of the refrigerator.",
+    "task_text": "Go to the restroom and stand in front of the sink. ",
+    "task_text_cn": "去洗手间，站在水槽前面。",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58024052
+            },
+            "predicate_object": "NavPoints/NavigationPoint17",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -58023470
+            },
+            "predicate_object": "NavPoints/NavigationPoint16",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.4410000145435333,
+                0.0416666716337204,
+                0.5090000033378601
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.2666666805744171,
+                0.0416666716337204,
+                2.3333334922790529
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9080879092216492,
+                0.0416666716337204,
+                3.7100000381469728
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.111999988555908,
+                0.0416666716337204,
+                6.0329999923706059
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.062999963760376,
+                0.0416666716337204,
+                7.066667079925537
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.209373950958252,
+                0.0416666716337204,
+                1.2093744277954102
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.4030001163482668,
+                0.0416666716337204,
+                3.6530001163482668
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                2.5840001106262209,
+                0.0416666716337204,
+                4.20937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.209373950958252,
+                0.0416666716337204,
+                8.133334159851075
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                3.26930832862854,
+                0.0416666716337204,
+                0.8133323192596436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.209373950958252,
+                0.0416666716337204,
+                2.20937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                1.6859999895095826,
+                0.0416666716337204,
+                2.20937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.9119999408721926,
+                0.0416666716337204,
+                6.20937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11 (1)",
+            "position": [
+                4.263000011444092,
+                0.0416666716337204,
+                6.198999881744385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                3.625999927520752,
+                0.0416666716337204,
+                3.70937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                4.366666793823242,
+                0.0416666716337204,
+                7.70937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                4.576489448547363,
+                0.0416666716337204,
+                1.3319467306137086
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                4.709373950958252,
+                0.0416666716337204,
+                2.70937442779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                7.735000133514404,
+                0.0416666716337204,
+                0.9990000128746033
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                5.709373950958252,
+                0.0416666716337204,
+                3.1019999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17 (1)",
+            "position": [
+                7.085999965667725,
+                0.0416666716337204,
+                3.5360000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                7.508999824523926,
+                0.0416666716337204,
+                1.936234712600708
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                6.995999813079834,
+                0.0416666716337204,
+                2.6059999465942385
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                6.989999771118164,
+                0.08305996656417847,
+                2.5940732955932619
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.2999999523162842,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241025053915-three_rooms_5_scene_5-Go_to_the_restroom_and_stand_in_front_of_the_sink__.json",
+    "message": ""
+}

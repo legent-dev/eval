@@ -47,10 +47,12 @@
     ],
     "task_template": "Inventory the items in the brown cabinets.",
     "task_text": "Inventory the item in the black refrigerator and place it in the sink.",
+    "task_text_cn": "清查黑色冰箱里的物品并把它放在水槽里。",
     "options": [
         {
             "option_type": "OpenDoor",
             "option_text": "Open the refrigerator door",
+            "option_text_cn": "打开冰箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -65,6 +67,7 @@
         {
             "option_type": "PickUp",
             "option_text": "Pick up the apple",
+            "option_text_cn": "拿起苹果。",
             "gameObjects": {
                 "list": [
                     {
@@ -79,6 +82,7 @@
         {
             "option_type": "CloseDoor",
             "option_text": "Close the refrigerator door",
+            "option_text_cn": "关上冰箱门。",
             "gameObjects": {
                 "list": [
                     {
@@ -93,6 +97,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "Put the apple in the sink",
+            "option_text_cn": "把苹果放在水槽里。",
             "gameObjects": {
                 "list": [
                     {
@@ -124,7 +129,7 @@
             "name": "NavigationPoint0",
             "position": [
                 0.7749999761581421,
-                0.022335126996040345,
+                0.022335126996040344,
                 -0.5420916676521301
             ],
             "type": "navigation"
@@ -132,8 +137,8 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                0.021803053095936776,
-                0.022335126996040345,
+                0.021803053095936775,
+                0.022335126996040344,
                 -1.1674599647521973
             ],
             "type": "navigation"
@@ -141,8 +146,8 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -0.46224644780158999,
-                0.022335126996040345,
+                -0.46224644780158997,
+                0.022335126996040344,
                 1.424789547920227
             ],
             "type": "navigation"
@@ -151,16 +156,16 @@
             "name": "NavigationPoint3",
             "position": [
                 1.2999999523162842,
-                0.022335126996040345,
-                1.4499998092651368
+                0.022335126996040344,
+                1.4499998092651367
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                2.9672436714172365,
-                0.022335126996040345,
+                2.9672436714172363,
+                0.022335126996040344,
                 1.0900152921676636
             ],
             "type": "navigation"
@@ -168,7 +173,7 @@
         {
             "name": "NavigationPoint0-Target",
             "position": [
-                1.7455332279205323,
+                1.7455332279205322,
                 0.8382384777069092,
                 -0.5420916676521301
             ],

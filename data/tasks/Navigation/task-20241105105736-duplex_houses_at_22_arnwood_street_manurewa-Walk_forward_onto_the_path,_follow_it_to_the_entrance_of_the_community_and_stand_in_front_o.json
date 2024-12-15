@@ -1,0 +1,541 @@
+{
+    "scene_name": "duplex_houses_at_22_arnwood_street_manurewa",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/duplex_houses_at_22_arnwood_street_manurewa.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        -0.699999988079071,
+        0.0
+    ],
+    "agent_position": [
+        27.451000213623048,
+        -0.16666626930236817,
+        22.81800079345703
+    ],
+    "agent_rotation": [
+        0.0,
+        113.68196105957031,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -78585218
+        },
+        {
+            "instanceID": -78589390
+        },
+        {
+            "instanceID": -78567406
+        },
+        {
+            "instanceID": -78590070
+        },
+        {
+            "instanceID": -78586250
+        },
+        {
+            "instanceID": -78567350
+        },
+        {
+            "instanceID": -78586250
+        },
+        {
+            "instanceID": -78592394
+        },
+        {
+            "instanceID": -78589390
+        },
+        {
+            "instanceID": -78585182
+        }
+    ],
+    "floor_objects": [
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/Group/TR - 020_2",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 019_3",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/ARCHICAD/Ground FLoor/Group_3/SLA - 011_0",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 020_0",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 020",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/ARCHICAD/Ground FLoor/Group_3/SLA - 011",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 020",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 020_1",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/TR - 019_3",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/0 SITE/Ground FLoor/Group/TR - 020"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -78577630
+        },
+        {
+            "instanceID": -78577194
+        }
+    ],
+    "removed_objects": [
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/1 GROUND FLOOR/Ground FLoor/DOO - 019_23",
+        "duplex_houses_at_22_arnwood_street_manurewa/596fa1744e404dbcac29a6798b02de1a.fbx/RootNode/22 ARNWOOD.pln/1 GROUND FLOOR/Ground FLoor/DOO - 019_12"
+    ],
+    "humans": [],
+    "task_template": "Navigate to the guest bedroom and stand in the center of the room.",
+    "task_text": "Walk forward onto the path, follow it to the entrance of the community and stand in front of the mailbox.",
+    "task_text_cn": "",
+    "options": [],
+    "predicates": [
+        {
+            "predicate_type": "agent_at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -79477028
+            },
+            "predicate_object": "NavPoints/NavigationPoint298",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -78693614
+            },
+            "predicate_object": "NavPoints/NavigationPoint308",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint122",
+            "position": [
+                6.282144546508789,
+                -0.7666662931442261,
+                -15.667363166809082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint199",
+            "position": [
+                16.050029754638673,
+                -0.19987037777900697,
+                46.87546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint207",
+            "position": [
+                17.550029754638673,
+                -0.5999996662139893,
+                -1.6245307922363282
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint211",
+            "position": [
+                17.31999969482422,
+                -0.6333329677581787,
+                1.7400000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint221",
+            "position": [
+                19.050029754638673,
+                -0.19988608360290528,
+                46.37546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint229",
+            "position": [
+                20.550029754638673,
+                -0.6622177958488464,
+                -2.124530792236328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240",
+            "position": [
+                20.950000762939454,
+                -0.33333301544189455,
+                24.325000762939454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240 (2)",
+            "position": [
+                20.628999710083009,
+                -0.33333301544189455,
+                21.55900001525879
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint240 (1)",
+            "position": [
+                22.75,
+                -0.08100000023841858,
+                23.82200050354004
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243",
+            "position": [
+                21.14900016784668,
+                -0.33333301544189455,
+                26.586999893188478
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint243 (1)",
+            "position": [
+                23.6200008392334,
+                -0.33333301544189455,
+                26.808000564575197
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint244",
+            "position": [
+                22.050029754638673,
+                -0.19985878467559815,
+                45.87546920776367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint250",
+            "position": [
+                23.533000946044923,
+                -0.5986644625663757,
+                -2.440000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint255",
+            "position": [
+                24.050029754638673,
+                -0.36597034335136416,
+                20.875469207763673
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint255 (1)",
+            "position": [
+                27.059999465942384,
+                -0.36597034335136416,
+                20.299999237060548
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint256",
+            "position": [
+                24.94600486755371,
+                -0.16666626930236817,
+                24.72614097595215
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint256 (1)",
+            "position": [
+                24.51300048828125,
+                -0.16666626930236817,
+                23.424999237060548
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint264",
+            "position": [
+                25.583999633789064,
+                -0.20026056468486787,
+                26.517000198364259
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint269",
+            "position": [
+                26.90999984741211,
+                -0.5490736961364746,
+                -3.380000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint275",
+            "position": [
+                27.225000381469728,
+                -0.16666626930236817,
+                22.700000762939454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint275 (2)",
+            "position": [
+                25.28700065612793,
+                -0.16666626930236817,
+                23.29199981689453
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint281",
+            "position": [
+                28.760000228881837,
+                -0.33333301544189455,
+                25.8799991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint284",
+            "position": [
+                29.969999313354493,
+                -0.4598466753959656,
+                7.989999771118164
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint287",
+            "position": [
+                30.040000915527345,
+                -0.20999999344348908,
+                -2.0299999713897707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint293",
+            "position": [
+                29.590024948120118,
+                -0.48880550265312197,
+                1.2654691934585572
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint294",
+            "position": [
+                29.492000579833986,
+                -0.16666626930236817,
+                22.295000076293947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint296",
+            "position": [
+                29.75,
+                -0.48450377583503725,
+                4.619999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint297",
+            "position": [
+                30.749998092651368,
+                -0.2701689302921295,
+                11.329999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint299 (1)",
+            "position": [
+                30.618999481201173,
+                -0.4938645660877228,
+                -4.11299991607666
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint298",
+            "position": [
+                31.45800018310547,
+                -0.4938645660877228,
+                -5.010000228881836
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint301",
+            "position": [
+                30.97800064086914,
+                -0.19999957084655763,
+                26.833999633789064
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint306",
+            "position": [
+                32.41999816894531,
+                -0.4653106927871704,
+                0.47999998927116396
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint308",
+            "position": [
+                33.61000061035156,
+                -0.3199999928474426,
+                20.920000076293947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint310",
+            "position": [
+                33.560001373291019,
+                -0.2808922529220581,
+                7.159999847412109
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint313",
+            "position": [
+                32.87000274658203,
+                -0.3323294520378113,
+                3.820000648498535
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint315",
+            "position": [
+                33.970001220703128,
+                -0.21353234350681306,
+                10.579999923706055
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint315 (2)",
+            "position": [
+                34.849998474121097,
+                -0.21353234350681306,
+                13.9399995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint315 (3)",
+            "position": [
+                35.11000061035156,
+                -0.21353234350681306,
+                17.17999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint315 (4)",
+            "position": [
+                35.849998474121097,
+                -0.21353234350681306,
+                20.489999771118165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint316",
+            "position": [
+                31.149999618530275,
+                -0.22303271293640138,
+                21.420000076293947
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint320",
+            "position": [
+                34.05002975463867,
+                -0.5411186814308167,
+                -4.624530792236328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint321",
+            "position": [
+                32.86399841308594,
+                -0.1333329677581787,
+                23.70199966430664
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint325",
+            "position": [
+                31.56999969482422,
+                -0.15000000596046449,
+                14.5
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint334",
+            "position": [
+                33.11000061035156,
+                -0.16666626930236817,
+                17.619998931884767
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint338",
+            "position": [
+                36.90788650512695,
+                -0.16666626930236817,
+                22.351612091064454
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint342",
+            "position": [
+                37.420127868652347,
+                -0.19999957084655763,
+                25.745559692382814
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint298-Target",
+            "position": [
+                32.415000915527347,
+                -0.4938645660877228,
+                -5.50600004196167
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 3.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105105736-duplex_houses_at_22_arnwood_street_manurewa-Walk_forward_onto_the_path,_follow_it_to_the_entrance_of_the_community_and_stand_in_front_o.json",
+    "message": ""
+}

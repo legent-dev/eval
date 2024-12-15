@@ -1,0 +1,235 @@
+{
+    "scene_name": "bedroom_15_scene_3",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_3.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.7829999923706055,
+        0.0,
+        0.9020000100135803
+    ],
+    "agent_rotation": [
+        0.0,
+        90.23516845703125,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -14486746
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_3/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -14484850
+        }
+    ],
+    "removed_objects": [
+        "bedroom_15_scene_3/CreatedObjects/identifier13_efbf5b3579994a3aaf0fea15706afaa3.glb"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -14487148
+            },
+            "human_position": [
+                3.927000045776367,
+                0.0,
+                2.2070000171661379
+            ],
+            "human_rotation": [
+                0.0,
+                270.0,
+                0.0
+            ],
+            "asset": "Ch26_nonPBR",
+            "pose": "sit",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Retrieve the TV remote for the person in the chair.",
+    "task_text": "Retrieve the magazine for the madam sitting on the chair.",
+    "task_text_cn": "为坐在椅子上的女士拿杂志。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -14484526
+                    },
+                    {
+                        "instanceID": -14484782
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb",
+                "bedroom_15_scene_3/CreatedObjects/identifier12_9ebe03b486334d2696b974f9e58afd40.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -14487148
+                    },
+                    {
+                        "instanceID": -14484526
+                    }
+                ]
+            },
+            "objects": [
+                "Ch26_nonPBR",
+                "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -14487148
+                            },
+                            {
+                                "instanceID": -14484526
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch26_nonPBR",
+                            "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -14484502
+            },
+            "predicate_object": "bedroom_15_scene_3/CreatedObjects/identifier9_2ef84b073b224aefa682b55dab151ec6.glb",
+            "targetPlace": {
+                "instanceID": -14487148
+            },
+            "predicate_place": "Ch26_nonPBR"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -14484526
+            },
+            "predicate_object": "bedroom_15_scene_3/CreatedObjects/identifier10_efbf5b3579994a3aaf0fea15706afaa3.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "Ch26_nonPBR"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                1.2970000505447388,
+                0.033333420753479007,
+                1.059000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.656999945640564,
+                0.033333420753479007,
+                1.9880000352859498
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.6459999084472658,
+                0.033333420753479007,
+                3.381999969482422
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.2260000705718996,
+                0.033333420753479007,
+                1.184000015258789
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                3.249000072479248,
+                0.033333420753479007,
+                2.122999906539917
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                3.2300000190734865,
+                0.033333420753479007,
+                1.0770000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                1.4609999656677247,
+                0.14000000059604646,
+                3.48799991607666
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.7860000133514406,
+                0.7929999828338623,
+                2.2019999027252199
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241029214116-bedroom_15_scene_3-Retrieve_the_magazine_for_the_madam_sitting_on_the_chair_.json",
+    "message": ""
+}

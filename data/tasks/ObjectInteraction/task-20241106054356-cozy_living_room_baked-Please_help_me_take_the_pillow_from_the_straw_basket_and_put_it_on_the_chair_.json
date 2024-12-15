@@ -1,0 +1,323 @@
+{
+    "scene_name": "cozy_living_room_baked",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/cozy_living_room_baked.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -1.7910000085830689,
+        0.0,
+        1.4179999828338624
+    ],
+    "agent_rotation": [
+        0.0,
+        109.26525115966797,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -92600704
+        }
+    ],
+    "floor_objects": [
+        "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Cube.019"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -92601124
+        }
+    ],
+    "removed_objects": [
+        "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Pillow migramah"
+    ],
+    "humans": [],
+    "task_template": "Please help me move my laptop off the the cabinet next to the lounge chair.",
+    "task_text": "Please help me take the pillow from the straw basket and put it on the chair.",
+    "task_text_cn": "请帮我从草篮里拿出枕头，并把它放在椅子上",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -92601176
+                    },
+                    {
+                        "instanceID": -92601536
+                    },
+                    {
+                        "instanceID": -92601328
+                    }
+                ]
+            },
+            "objects": [
+                "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Pillow migramah.001",
+                "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Plane.002",
+                "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Coffee Cup"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "option_text_cn": "放到",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -92609370
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -92601176
+            },
+            "predicate_object": "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Pillow migramah.001",
+            "targetPlace": {
+                "instanceID": -92609370
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -92601176
+            },
+            "predicate_object": "cozy_living_room_baked/e8588fe81c1e412e80b3e5fbfe44d3ec.fbx/RootNode/Pillow migramah.001",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.7333333492279053,
+                0.11569619178771973,
+                -4.599999904632568
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.9539999961853028,
+                0.08236277103424072,
+                -3.0840001106262209
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.8333334922790528,
+                0.08236277103424072,
+                -1.157820224761963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.8329999446868897,
+                0.08236277103424072,
+                0.16699999570846559
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.7039999961853028,
+                0.08236277103424072,
+                1.4700000286102296
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.7029999494552613,
+                0.08236277103424072,
+                3.486999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.5405025482177734,
+                0.08236277103424072,
+                -3.657820224761963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.3160000145435333,
+                0.08236277103424072,
+                -2.5380001068115236
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                -0.07100000232458115,
+                0.08236277103424072,
+                -1.371000051498413
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -0.05400000140070915,
+                0.08236277103424072,
+                0.11800000071525574
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                0.14499999582767487,
+                0.08236277103424072,
+                1.2000000476837159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.09600000083446503,
+                0.08236277103424072,
+                3.499000072479248
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                1.371999979019165,
+                0.08236277103424072,
+                -3.6110000610351564
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                1.4429999589920045,
+                0.10380656272172928,
+                -2.6659998893737795
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                1.3818318843841553,
+                0.08236277103424072,
+                1.4052927494049073
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                1.4900000095367432,
+                0.11475513130426407,
+                0.052000001072883609
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15 (1)",
+            "position": [
+                1.5779999494552613,
+                0.11475513130426407,
+                -1.5069999694824219
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                1.3140000104904175,
+                0.08236277103424072,
+                3.369999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                2.700000047683716,
+                0.08236277103424072,
+                -3.5980000495910646
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                2.6459999084472658,
+                0.08236277103424072,
+                1.2710000276565552
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                2.6549999713897707,
+                0.08236277103424072,
+                3.438999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.4390000104904175,
+                0.6970000267028809,
+                -2.0160000324249269
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241106054356-cozy_living_room_baked-Please_help_me_take_the_pillow_from_the_straw_basket_and_put_it_on_the_chair_.json",
+    "message": ""
+}

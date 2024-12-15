@@ -1,0 +1,258 @@
+{
+    "scene_name": "two_rooms_10_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.503000020980835,
+        0.0,
+        1.7929999828338624
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -48438
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_0/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -44598
+        },
+        {
+            "instanceID": -47050
+        },
+        {
+            "instanceID": -47078
+        },
+        {
+            "instanceID": -47006
+        },
+        {
+            "instanceID": -47046
+        }
+    ],
+    "removed_objects": [
+        "two_rooms_10_scene_0/CreatedObjects/identifier3_Doorway_5.glb/Doorway_5(Clone)",
+        "two_rooms_10_scene_0/CreatedObjects/identifier37_2f0743a1d27345269d1444a8becfce59.glb/Sketchfab_model",
+        "two_rooms_10_scene_0/CreatedObjects/identifier38_a330158bc982400cae1749bb67ff5182.glb",
+        "two_rooms_10_scene_0/CreatedObjects/identifier36_dc3e0eeca1484dc683d4e28101edb762.glb",
+        "two_rooms_10_scene_0/CreatedObjects/identifier37_2f0743a1d27345269d1444a8becfce59.glb"
+    ],
+    "humans": [],
+    "task_template": "Move the chair from the bedroom to the living room and arrange it next to the sofa.",
+    "task_text": "Move the chair from the bedroom to the bathroom and arrange it next to the sink, while also being next to the toilet.",
+    "task_text_cn": "把椅子从卧室移到浴室，放在水槽旁边，同时又在马桶旁边。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the chair",
+            "option_text_cn": "拿起椅子。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -46958
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_0/CreatedObjects/identifier35_72772460843d443bbe16f9ede0572c6b.glb/Sketchfab_model/CounterStool_01.fbx/RootNode/CounterStool_01"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -49944
+                    },
+                    {
+                        "instanceID": -49954
+                    },
+                    {
+                        "instanceID": -49964
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)",
+                "SpecialPoint (2)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -46958
+            },
+            "predicate_object": "two_rooms_10_scene_0/CreatedObjects/identifier35_72772460843d443bbe16f9ede0572c6b.glb/Sketchfab_model/CounterStool_01.fbx/RootNode/CounterStool_01",
+            "targetPlace": {
+                "instanceID": -49944
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -46958
+            },
+            "predicate_object": "two_rooms_10_scene_0/CreatedObjects/identifier35_72772460843d443bbe16f9ede0572c6b.glb/Sketchfab_model/CounterStool_01.fbx/RootNode/CounterStool_01",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -3.450000047683716,
+                0.0416666716337204,
+                2.821000099182129
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.371999979019165,
+                0.0416666716337204,
+                2.125999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -3.6710000038146974,
+                0.0416666716337204,
+                0.8299999833106995
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.636793613433838,
+                0.0416666716337204,
+                3.9034602642059328
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.4900000095367432,
+                0.0416666716337204,
+                1.430999994277954
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.41912031173706057,
+                0.0416666716337204,
+                1.7610000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.3209999799728394,
+                0.0416666716337204,
+                2.515000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.4760000705718996,
+                0.0416666716337204,
+                0.7609999775886536
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                2.9070000648498537,
+                0.0416666716337204,
+                2.4690001010894777
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -4.208606719970703,
+                0.526729166507721,
+                2.9419589042663576
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.0260000228881838,
+                0.6639999747276306,
+                2.680000066757202
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                2.9520702362060549,
+                0.6639999747276306,
+                0.4850442111492157
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (2)",
+            "position": [
+                1.312000036239624,
+                0.6639999747276306,
+                3.125
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241030005644-two_rooms_10_scene_0-Move_the_chair_from_the_bedroom_to_the_bathroom_and_arrange_it_next_to_the_sink,_while_also_being_next_to_the_toil.json",
+    "message": ""
+}

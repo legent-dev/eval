@@ -1,0 +1,263 @@
+{
+    "scene_name": "bedroom_15_scene_1",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/bedroom_15_scene_1.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        3.4149999618530275,
+        0.0,
+        3.753000020980835
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -59859800
+        }
+    ],
+    "floor_objects": [
+        "bedroom_15_scene_1/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Pick up a pen from the desk and place it inside the drawer.",
+    "task_text": "Pick up the ring notebook from the cabinet and put it in the basket behind the door.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up ",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -59859336
+                    }
+                ]
+            },
+            "objects": [
+                "bedroom_15_scene_1/CreatedObjects/identifier18_b7d498a138f343c7910ea169ed1c2a3f.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place to",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -59862798
+                    },
+                    {
+                        "instanceID": -59954168
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59859336
+            },
+            "predicate_object": "bedroom_15_scene_1/CreatedObjects/identifier18_b7d498a138f343c7910ea169ed1c2a3f.glb",
+            "targetPlace": {
+                "instanceID": -59862798
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59859336
+            },
+            "predicate_object": "bedroom_15_scene_1/CreatedObjects/identifier18_b7d498a138f343c7910ea169ed1c2a3f.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -59860066
+            },
+            "predicate_object": "NavPoints/NavigationPoint1",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.063999891281128,
+                0.0416666716337204,
+                2.3929998874664308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.3330000042915344,
+                0.0416666716337204,
+                0.7850000262260437
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.4169999957084656,
+                0.0416666716337204,
+                1.8839999437332154
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                2.1661617755889894,
+                0.0416666716337204,
+                4.456629276275635
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.6160000562667847,
+                0.0416666716337204,
+                0.48100000619888308
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                1.5759999752044678,
+                0.0416666716337204,
+                2.181999921798706
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.3289999961853029,
+                0.0416666716337204,
+                3.36899995803833
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                3.111999988555908,
+                0.0416666716337204,
+                0.4390000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (1)",
+            "position": [
+                3.114000082015991,
+                0.0416666716337204,
+                1.3669999837875367
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7 (2)",
+            "position": [
+                1.5399999618530274,
+                0.0416666716337204,
+                1.2730000019073487
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                3.618000030517578,
+                0.0416666716337204,
+                3.183000087738037
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.5546436309814455,
+                0.6317716836929321,
+                2.2925033569335939
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.9459999799728394,
+                0.2939999997615814,
+                -0.4830000102519989
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.3869999945163727,
+                0.2939999997615814,
+                0.1770000010728836
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                3.6868982315063478,
+                0.0935060977935791,
+                1.4844268560409547
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.0,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241105052440-bedroom_15_scene_1-Pick_up_the_ring_notebook_from_the_cabinet_and_put_it_in_the_basket_behind_the_door_.json",
+    "message": ""
+}

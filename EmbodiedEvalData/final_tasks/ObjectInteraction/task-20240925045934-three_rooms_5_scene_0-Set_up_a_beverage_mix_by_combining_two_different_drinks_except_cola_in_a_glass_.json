@@ -13,7 +13,7 @@
     ],
     "agent_position": [
         -1.7920000553131104,
-        2.2351741790771486e-8,
+        2.2351741790771484e-08,
         2.125999927520752
     ],
     "agent_rotation": [
@@ -42,10 +42,12 @@
     "humans": [],
     "task_template": "Set up a cheese platter by putting different cheeses on a serving board.",
     "task_text": "Set up a beverage mix by combining two different drinks except cola in a glass.",
+    "task_text_cn": "通过在一个杯子里混合两种不同的饮料（除了可乐）来制作一种饮料混合物。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up one drink",
+            "option_text_cn": "拿起一种饮料。",
             "gameObjects": {
                 "list": [
                     {
@@ -67,6 +69,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "mix",
+            "option_text_cn": "混合。",
             "gameObjects": {
                 "list": [
                     {
@@ -112,6 +115,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place the drink next to the glass",
+            "option_text_cn": "把饮料放在杯子旁边。",
             "gameObjects": {
                 "list": [
                     {
@@ -160,7 +164,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.7219998836517336,
+                -2.7219998836517334,
                 0.0416666716337204,
                 1.1460000276565552
             ],
@@ -178,7 +182,7 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -1.9930000305175782,
+                -1.9930000305175781,
                 0.0416666716337204,
                 2.4333336353302
             ],
@@ -187,7 +191,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -1.2740000486373902,
+                -1.2740000486373901,
                 0.0416666716337204,
                 1.0709999799728394
             ],
@@ -223,7 +227,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                1.2651766538619996,
+                1.2651766538619995,
                 0.0416666716337204,
                 3.575632333755493
             ],
@@ -234,14 +238,14 @@
             "position": [
                 2.498736619949341,
                 0.0416666716337204,
-                -3.2391626834869386
+                -3.2391626834869385
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint10",
             "position": [
-                2.0031399726867677,
+                2.0031399726867676,
                 0.5805691480636597,
                 2.169175148010254
             ],
@@ -250,7 +254,7 @@
         {
             "name": "NavigationPoint11",
             "position": [
-                2.5031399726867677,
+                2.5031399726867676,
                 0.0416666716337204,
                 -1.330824851989746
             ],
@@ -259,7 +263,7 @@
         {
             "name": "NavigationPoint12",
             "position": [
-                2.5031399726867677,
+                2.5031399726867676,
                 0.0416666716337204,
                 0.2666666805744171
             ],
@@ -270,7 +274,7 @@
             "position": [
                 2.960230588912964,
                 0.600730836391449,
-                3.3333334922790529
+                3.3333334922790527
             ],
             "type": "navigation"
         },
@@ -295,16 +299,16 @@
         {
             "name": "NavigationPoint1-Target",
             "position": [
-                -3.1581788063049318,
+                -3.1581788063049316,
                 0.7802194356918335,
-                3.2144525051116945
+                3.2144525051116943
             ],
             "type": "navigation-target"
         },
         {
             "name": "NavigationPoint2-Target",
             "position": [
-                -1.9930000305175782,
+                -1.9930000305175781,
                 0.6809999942779541,
                 3.325000047683716
             ],
@@ -313,7 +317,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -1.9930000305175782,
+                -1.9930000305175781,
                 0.6809999942779541,
                 3.325000047683716
             ],
@@ -322,8 +326,8 @@
         {
             "name": "SpecialPoint (1)",
             "position": [
-                -2.0199999809265138,
-                0.6869999766349793,
+                -2.0199999809265137,
+                0.6869999766349792,
                 3.552000045776367
             ],
             "type": "special"
@@ -331,9 +335,9 @@
         {
             "name": "SpecialPoint (2)",
             "position": [
-                0.20000000298023225,
+                0.20000000298023224,
                 0.1809999942779541,
-                2.3510000705718996
+                2.3510000705718994
             ],
             "type": "special"
         }

@@ -13,7 +13,7 @@
     ],
     "agent_position": [
         -0.6610000133514404,
-        2.2351741790771486e-8,
+        2.2351741790771484e-08,
         1.062999963760376
     ],
     "agent_rotation": [
@@ -38,10 +38,12 @@
     "humans": [],
     "task_template": "Determine which chair is closest to the window.",
     "task_text": "Determine which object is closest to the red refrigerator.",
+    "task_text_cn": "确定哪个物品离红色冰箱最近。",
     "options": [
         {
             "option_type": "Answer",
-            "option_text": "The sancks on the round table.",
+            "option_text": "The snacks on the round table.",
+            "option_text_cn": "圆桌上的零食。",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "The drinks on the chair.",
+            "option_text_cn": "椅子上的饮料。",
             "gameObjects": {
                 "list": []
             },
@@ -64,6 +67,7 @@
         {
             "option_type": "Answer",
             "option_text": "The stool with nothing on it.",
+            "option_text_cn": "上面什么都没有的凳子。",
             "gameObjects": {
                 "list": []
             },
@@ -75,6 +79,7 @@
         {
             "option_type": "Answer",
             "option_text": "The round table.",
+            "option_text_cn": "圆桌。",
             "gameObjects": {
                 "list": []
             },
@@ -86,6 +91,7 @@
         {
             "option_type": "Answer",
             "option_text": "The square table.",
+            "option_text_cn": "方桌。",
             "gameObjects": {
                 "list": []
             },
@@ -97,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "The brown cabinet.",
+            "option_text_cn": "棕色橱柜。",
             "gameObjects": {
                 "list": []
             },
@@ -108,6 +115,7 @@
         {
             "option_type": "Answer",
             "option_text": "The black toilet.",
+            "option_text_cn": "黑色马桶。",
             "gameObjects": {
                 "list": []
             },
@@ -119,6 +127,7 @@
         {
             "option_type": "Answer",
             "option_text": "The wooden sink.",
+            "option_text_cn": "木质水槽。",
             "gameObjects": {
                 "list": []
             },
@@ -149,7 +158,7 @@
             "position": [
                 -2.560070514678955,
                 0.028961181640625,
-                1.1100000143051148
+                1.1100000143051147
             ],
             "type": "navigation"
         },
@@ -158,7 +167,7 @@
             "position": [
                 -2.560070514678955,
                 0.028961181640625,
-                2.9749999046325685
+                2.9749999046325684
             ],
             "type": "navigation"
         },
@@ -176,16 +185,16 @@
             "position": [
                 -0.7520030736923218,
                 0.028961181640625,
-                2.6797988414764406
+                2.6797988414764404
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                1.3179999589920045,
+                1.3179999589920044,
                 0.028961181640625,
-                1.1790000200271607
+                1.1790000200271606
             ],
             "type": "navigation"
         },
@@ -201,7 +210,7 @@
         {
             "name": "NavigationPoint4 (3)",
             "position": [
-                3.0739998817443849,
+                3.0739998817443848,
                 0.028961181640625,
                 1.687000036239624
             ],
@@ -210,7 +219,7 @@
         {
             "name": "NavigationPoint4 (4)",
             "position": [
-                2.4100000858306886,
+                2.4100000858306885,
                 0.028961181640625,
                 2.046999931335449
             ],
@@ -219,7 +228,7 @@
         {
             "name": "NavigationPoint4 (2)",
             "position": [
-                2.5420000553131105,
+                2.5420000553131104,
                 0.028961181640625,
                 2.555999994277954
             ],
@@ -228,7 +237,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.3359999656677247,
+                1.3359999656677246,
                 0.028961181640625,
                 2.450000047683716
             ],
@@ -237,9 +246,9 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                2.6670000553131105,
+                2.6670000553131104,
                 0.028961181640625,
-                3.1659998893737795
+                3.1659998893737793
             ],
             "type": "navigation"
         },
@@ -248,14 +257,14 @@
             "position": [
                 3.296999931335449,
                 0.028961181640625,
-                3.0280001163482668
+                3.0280001163482666
             ],
             "type": "navigation"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -1.8359999656677247,
+                -1.8359999656677246,
                 0.8960000276565552,
                 -1.4270000457763672
             ],

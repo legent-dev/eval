@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Which direction does the front door face?",
     "task_text": "Which direction does the bedroom door face?",
+    "task_text_cn": "卧室门朝向哪个方向？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Consistent with the orientation of the bed",
+            "option_text_cn": "与床的朝向一致。",
             "gameObjects": {
                 "list": []
             },
@@ -49,6 +51,7 @@
         {
             "option_type": "Answer",
             "option_text": "Opposite to the orientation of the bed",
+            "option_text_cn": "与床的朝向相反。",
             "gameObjects": {
                 "list": []
             },
@@ -60,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "Opposite to the orientation of the table",
+            "option_text_cn": "与桌子的朝向相反。",
             "gameObjects": {
                 "list": []
             },
@@ -71,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "Same orientation as the table",
+            "option_text_cn": "与桌子的朝向相同。",
             "gameObjects": {
                 "list": []
             },
@@ -82,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "more than one option is correct",
+            "option_text_cn": "不止一个选项正确。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -104,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "Same orientation as the toilet",
+            "option_text_cn": "与厕所的朝向相同。",
             "gameObjects": {
                 "list": []
             },
@@ -115,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "Same orientation as the fridge",
+            "option_text_cn": "与冰箱的朝向相同。",
             "gameObjects": {
                 "list": []
             },
@@ -143,9 +152,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                1.2031912803649903,
+                1.2031912803649902,
                 0.04901123046875,
-                1.5031323432922364
+                1.5031323432922363
             ],
             "type": "navigation"
         },
@@ -161,9 +170,9 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                3.2024786472320558,
+                3.2024786472320557,
                 0.04901123046875,
-                0.45433372259140017
+                0.45433372259140015
             ],
             "type": "navigation"
         },
@@ -172,7 +181,7 @@
             "position": [
                 2.721677541732788,
                 0.04901123046875,
-                2.1162052154541017
+                2.1162052154541016
             ],
             "type": "navigation"
         }

@@ -1,0 +1,331 @@
+{
+    "scene_name": "four_rooms_5_scene_0",
+    "scene_path": "/Users/tuyuge/Desktop/emabench/Assets/Scenes/ObjaverseSynthetic/four_rooms_5_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        8.471999168395996,
+        0.00020003318786621094,
+        6.623141765594482
+    ],
+    "agent_position": [
+        11.574999809265137,
+        0.0,
+        3.2799999713897705
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -379438
+        },
+        {
+            "instanceID": -379450
+        }
+    ],
+    "floor_objects": [
+        "four_rooms_5_scene_0/CreatedWalls/identifier16_Floor",
+        "four_rooms_5_scene_0/CreatedWalls/identifier17_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "What material is the kitchen countertop made of?",
+    "task_text": "What material is the dining table with a birthday cake made of?",
+    "task_text_cn": "放着生日蛋糕的餐桌是由什么材料制成的？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the trash bin.",
+            "option_text_cn": "和垃圾桶一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the window.",
+            "option_text_cn": "和窗户一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the door.",
+            "option_text_cn": "和门一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "ceramic",
+            "option_text_cn": "陶瓷",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "plastics",
+            "option_text_cn": "塑料",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the fridge.",
+            "option_text_cn": "和冰箱一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the toilet in the bathroom.",
+            "option_text_cn": "和浴室里的马桶一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "The same material as the tub in the bathroom.",
+            "option_text_cn": "和浴室里的浴缸一样的材料。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "The same material as the door.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                5.225990295410156,
+                0.03638102114200592,
+                2.1380996704101562
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                4.809125900268555,
+                0.03638102114200592,
+                5.033333778381348
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                4.809125900268555,
+                0.03638102114200592,
+                7.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                6.966667175292969,
+                0.03638102114200592,
+                10.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                6.809125900268555,
+                0.03638102114200592,
+                2.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                6.809125900268555,
+                0.03638102114200592,
+                4.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                6.808010101318359,
+                0.03638102114200592,
+                6.3130669593811035
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                6.809125900268555,
+                0.03638102114200592,
+                8.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                10.000000953674316,
+                0.03638102114200592,
+                3.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                9.885000228881836,
+                0.03638102114200592,
+                6.078000068664551
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                8.809125900268555,
+                0.16520598530769348,
+                7.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                11.0649995803833,
+                0.03638102114200592,
+                9.866666793823242
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                9.932000160217285,
+                0.03638102114200592,
+                5.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (1)",
+            "position": [
+                11.571999549865723,
+                0.03638102114200592,
+                5.986999988555908
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (3)",
+            "position": [
+                11.618000030517578,
+                0.03638102114200592,
+                5.192999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12 (2)",
+            "position": [
+                11.517000198364258,
+                0.03638102114200592,
+                4.192999839782715
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                11.109000205993652,
+                0.03638102114200592,
+                7.346531867980957
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                11.659000396728516,
+                0.03638102114200592,
+                3.200000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoints",
+            "position": [
+                7.589000225067139,
+                0.050199318677186966,
+                6.59499979019165
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "/Users/tuyuge/Desktop/emabench/Assets/Tasks/task-20241007202806-four_rooms_5_scene_0-What_material_is_the_dining_table_with_a_birthday_cake_made_of_.json",
+    "message": ""
+}

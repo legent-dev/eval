@@ -13,7 +13,7 @@
     ],
     "agent_position": [
         -1.593999981880188,
-        2.2351741790771486e-8,
+        2.2351741790771484e-08,
         2.946000099182129
     ],
     "agent_rotation": [
@@ -38,10 +38,12 @@
     "humans": [],
     "task_template": "If you stand in the center of the living room, which direction would you face to go to the bathroom?",
     "task_text": "If you were standing in the center of the bathroom, which direction would you head towards the living room?",
+    "task_text_cn": "如果你站在浴室的中心，你会朝着哪个方向走向客厅？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "forward",
+            "option_text_cn": "向前。",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "backward",
+            "option_text_cn": "向后。",
             "gameObjects": {
                 "list": []
             },
@@ -64,6 +67,7 @@
         {
             "option_type": "Answer",
             "option_text": "left",
+            "option_text_cn": "左。",
             "gameObjects": {
                 "list": []
             },
@@ -75,6 +79,7 @@
         {
             "option_type": "Answer",
             "option_text": "right",
+            "option_text_cn": "右。",
             "gameObjects": {
                 "list": []
             },
@@ -86,6 +91,7 @@
         {
             "option_type": "Answer",
             "option_text": "front left",
+            "option_text_cn": "左前方。",
             "gameObjects": {
                 "list": []
             },
@@ -97,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "back left",
+            "option_text_cn": "左后方。",
             "gameObjects": {
                 "list": []
             },
@@ -108,6 +115,7 @@
         {
             "option_type": "Answer",
             "option_text": "front right",
+            "option_text_cn": "右前方。",
             "gameObjects": {
                 "list": []
             },
@@ -119,6 +127,7 @@
         {
             "option_type": "Answer",
             "option_text": "back right",
+            "option_text_cn": "右后方。",
             "gameObjects": {
                 "list": []
             },
@@ -149,24 +158,24 @@
             "position": [
                 -2.560070514678955,
                 0.028961181640625,
-                1.1100000143051148
+                1.1100000143051147
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                -1.8359999656677247,
+                -1.8359999656677246,
                 0.028961181640625,
-                1.9980000257492066
+                1.9980000257492065
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0 (4)",
             "position": [
-                -1.4240000247955323,
-                0.057999998331069949,
+                -1.4240000247955322,
+                0.057999998331069946,
                 1.2790000438690186
             ],
             "type": "navigation"
@@ -184,7 +193,7 @@
             "name": "NavigationPoint0 (2)",
             "position": [
                 -2.441999912261963,
-                0.019999999552965165,
+                0.019999999552965164,
                 2.118000030517578
             ],
             "type": "navigation"
@@ -194,7 +203,7 @@
             "position": [
                 -2.560070514678955,
                 0.028961181640625,
-                2.9749999046325685
+                2.9749999046325684
             ],
             "type": "navigation"
         },
@@ -210,7 +219,7 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -0.8679999709129334,
+                -0.8679999709129333,
                 0.028961181640625,
                 2.441999912261963
             ],
@@ -228,9 +237,9 @@
         {
             "name": "NavigationPoint4",
             "position": [
-                1.3179999589920045,
+                1.3179999589920044,
                 0.028961181640625,
-                1.1790000200271607
+                1.1790000200271606
             ],
             "type": "navigation"
         },
@@ -239,14 +248,14 @@
             "position": [
                 2.428999900817871,
                 0.028961181640625,
-                1.1790000200271607
+                1.1790000200271606
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4 (2)",
             "position": [
-                2.5420000553131105,
+                2.5420000553131104,
                 0.028961181640625,
                 2.555999994277954
             ],
@@ -255,7 +264,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                1.3359999656677247,
+                1.3359999656677246,
                 0.028961181640625,
                 2.450000047683716
             ],
@@ -264,9 +273,9 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                2.6670000553131105,
+                2.6670000553131104,
                 0.028961181640625,
-                3.1659998893737795
+                3.1659998893737793
             ],
             "type": "navigation"
         },
@@ -275,14 +284,14 @@
             "position": [
                 3.296999931335449,
                 0.028961181640625,
-                3.0280001163482668
+                3.0280001163482666
             ],
             "type": "navigation"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -1.8359999656677247,
+                -1.8359999656677246,
                 0.8960000276565552,
                 -1.4270000457763672
             ],

@@ -1,0 +1,245 @@
+{
+    "scene_name": "livingroom_15_scene_2",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/livingroom_15_scene_2.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.9340000152587891,
+        0.0,
+        3.878999948501587
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2320502
+        }
+    ],
+    "floor_objects": [
+        "livingroom_15_scene_2/CreatedWalls/identifier4_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Find three objects in the house that share the same texture but serve entirely different purposes.",
+    "task_text": "Find two objects in the house that are made of the same material but have completely different shapes and functions.",
+    "task_text_cn": "在房子里找到两个由相同材料制成但形状和功能完全不同的物品。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "large cabinets and small cabinets",
+            "option_text_cn": "大柜子和小柜子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "ladder and stool",
+            "option_text_cn": "梯子和凳子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "ladder and sofa",
+            "option_text_cn": "梯子和沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bookcase and sofa",
+            "option_text_cn": "书柜和门。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "door and sofa",
+            "option_text_cn": "门和窗框。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "clock and ladder",
+            "option_text_cn": "钟和梯子。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "teapoy and sofa",
+            "option_text_cn": "茶几和沙发。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "bookcase and window frame",
+            "option_text_cn": "书柜和窗框。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "bookcase and window frame",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                0.8989999890327454,
+                0.033449821174144748,
+                1.0770000219345093
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                0.9333333373069763,
+                0.033449821174144748,
+                2.6589772701263429
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                2.015000104904175,
+                0.033449821174144748,
+                4.314000129699707
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                0.8040000200271606,
+                0.033449821174144748,
+                4.005000114440918
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.9628045558929444,
+                0.033449821174144748,
+                0.3317587375640869
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.933333396911621,
+                0.033449821174144748,
+                5.600000381469727
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.6000001430511476,
+                0.033449821174144748,
+                3.1589772701263429
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                2.615999937057495,
+                0.033449821174144748,
+                1.3420000076293946
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                0.3440000116825104,
+                0.8399999737739563,
+                2.6440000534057619
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241107072138-livingroom_15_scene_2-Find_two_objects_in_the_house_that_are_made_of_the_same_material_but_have_completely_different_shapes_and_functio.json",
+    "message": ""
+}

@@ -14,7 +14,7 @@
     "agent_position": [
         0.5339999794960022,
         0.0,
-        2.2690000534057619
+        2.2690000534057617
     ],
     "agent_rotation": [
         0.0,
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Retrieve the keys from the living room table and place them on the counter.",
     "task_text": "Retrieve the book from the sofa in the living room and place it on the lounge chair. ",
+    "task_text_cn": "从客厅的沙发上拿起书，把它放在躺椅上。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up the book",
+            "option_text_cn": "拿起书。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the chair",
+            "option_text_cn": "放在椅子上。",
             "gameObjects": {
                 "list": [
                     {
@@ -72,6 +75,7 @@
         {
             "option_type": "PickUp",
             "option_text": "pick up chair",
+            "option_text_cn": "拿起椅子。",
             "gameObjects": {
                 "list": [
                     {
@@ -93,6 +97,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to the sofa",
+            "option_text_cn": "放在沙发上。",
             "gameObjects": {
                 "list": [
                     {
@@ -147,25 +152,25 @@
             "position": [
                 0.7229999899864197,
                 0.03490585833787918,
-                1.9229999780654908
+                1.9229999780654907
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint0 (1)",
             "position": [
-                1.4290000200271607,
+                1.4290000200271606,
                 0.03490585833787918,
-                3.6510000228881838
+                3.6510000228881836
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                1.2300000190734864,
+                1.2300000190734863,
                 0.03490585833787918,
-                4.5879998207092289
+                4.5879998207092285
             ],
             "type": "navigation"
         },
@@ -174,7 +179,7 @@
             "position": [
                 -2.130918502807617,
                 0.03490585833787918,
-                1.2000000476837159
+                1.2000000476837158
             ],
             "type": "navigation"
         },
@@ -219,7 +224,7 @@
             "position": [
                 0.6389999985694885,
                 0.7689999938011169,
-                3.8350000381469728
+                3.8350000381469727
             ],
             "type": "navigation-target"
         },
@@ -228,7 +233,7 @@
             "position": [
                 0.6389999985694885,
                 0.7689999938011169,
-                3.8350000381469728
+                3.8350000381469727
             ],
             "type": "special"
         }

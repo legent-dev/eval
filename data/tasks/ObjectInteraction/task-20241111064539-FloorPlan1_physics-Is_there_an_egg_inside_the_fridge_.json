@@ -1,0 +1,271 @@
+{
+    "scene_name": "FloorPlan1_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan1_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -2363022
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan1_physics/Objects/Floor_86781be7"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -2352346
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan1_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Is there a bottle inside the fridge?",
+    "task_text": "Is there an egg inside the fridge?",
+    "task_text_cn": "冰箱里有鸡蛋吗？",
+    "options": [
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the upper fridge door",
+            "option_text_cn": "打开冰箱上层门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2359994
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan1_physics/Objects/Fridge_e92350c6/FridgeBodyMesh/FreezerDoor"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "OpenDoor",
+            "option_text": "open the lower fridge door",
+            "option_text_cn": "打开冰箱下层门。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -2360050
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan1_physics/Objects/Fridge_e92350c6/FridgeBodyMesh/FridgeDoor"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "No, there are no eggs in the fridge.",
+            "option_text_cn": "没有，在桌子上。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, in the upper part of the fridge.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, in the lower part of the fridge.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, and there are two eggs, one in the upper part and one in the lower part.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there are two eggs in the upper  part of the fridge.",
+            "option_text_cn": "没有，冰箱里没有鸡蛋。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "Yes, there are two eggs in the lower part of the fridge.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no fridge.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "Yes, in the lower part of the fridge.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "Yes, in the lower part of the fridge.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -2364600
+            },
+            "predicate_object": "NavPoints/NavigationPoint0",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -1.0839999914169312,
+                2.2351740014414646e-8,
+                1.0529999732971192
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.11899995803833,
+                2.2351741790771486e-8,
+                -1.7400000095367432
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                1.1519999504089356,
+                2.2351741790771486e-8,
+                -1.784999966621399
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.2869999408721924,
+                2.2351741790771486e-8,
+                -0.10700000077486038
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.4270000457763672,
+                2.2351741790771486e-8,
+                1.531000018119812
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                0.0010000000474974514,
+                2.2351741790771486e-8,
+                1.9500000476837159
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -1.8908929824829102,
+                0.9730814695358276,
+                1.080528736114502
+            ],
+            "type": "navigation-target"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241111064539-FloorPlan1_physics-Is_there_an_egg_inside_the_fridge_.json",
+    "message": ""
+}

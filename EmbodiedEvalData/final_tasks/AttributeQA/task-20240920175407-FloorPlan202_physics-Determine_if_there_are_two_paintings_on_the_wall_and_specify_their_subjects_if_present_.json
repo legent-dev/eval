@@ -14,7 +14,7 @@
     "agent_position": [
         0.8370000123977661,
         0.0,
-        1.2599999904632569
+        1.2599999904632568
     ],
     "agent_rotation": [
         0.0,
@@ -33,10 +33,12 @@
     "removed_objects": [],
     "task_template": "Determine if there is a plant in the living room and specify its type if present.",
     "task_text": "Determine if there are two paintings on the wall and specify their subjects if present.",
+    "task_text_cn": "确定墙上是否有两幅画，如果有，说明它们的主题。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Both paintings are abstract art, without any specific themes.",
+            "option_text_cn": "两幅画都是抽象艺术，没有任何特定主题。",
             "gameObjects": {
                 "list": []
             },
@@ -45,6 +47,7 @@
         {
             "option_type": "Answer",
             "option_text": "One painting depicts an ocean landscape, while the other shows a cityscape at night.",
+            "option_text_cn": "一幅画描绘了海洋景观，另一幅画展示了夜晚的城市景观。",
             "gameObjects": {
                 "list": []
             },
@@ -53,6 +56,7 @@
         {
             "option_type": "Answer",
             "option_text": "Both paintings are still lifes, with themes of fruit and a vase, respectively.",
+            "option_text_cn": "两幅画都是静物画，主题分别是水果和花瓶。",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "One painting has a floral theme, and the other depicts a countryside scene.",
+            "option_text_cn": "一幅画有花卉主题，另一幅画描绘了乡村景色。",
             "gameObjects": {
                 "list": []
             },
@@ -69,6 +74,7 @@
         {
             "option_type": "Answer",
             "option_text": "One painting is a portrait of a person, and the other is a representation of a historical event.",
+            "option_text_cn": "一幅画是人物肖像，另一幅画是历史事件的描绘。",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +83,7 @@
         {
             "option_type": "Answer",
             "option_text": "One painting showcases modern architecture, and the other displays ancient ruins.",
+            "option_text_cn": "一幅画展示了现代建筑，另一幅画展示了古代遗迹。",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +92,7 @@
         {
             "option_type": "Answer",
             "option_text": "Both paintings feature animal themes, with a lion and a horse, respectively.",
+            "option_text_cn": "两幅画都以动物为主题，分别是狮子和马。",
             "gameObjects": {
                 "list": []
             },
@@ -93,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "One painting is a natural landscape, and the other is a depiction of the cosmos.",
+            "option_text_cn": "一幅画是自然景观，另一幅画是宇宙的描绘。",
             "gameObjects": {
                 "list": []
             },
@@ -117,8 +126,8 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -3.2104146480560304,
-                -0.00002345442771911621,
+                -3.2104146480560303,
+                -2.345442771911621e-05,
                 1.809959888458252
             ],
             "type": "navigation"
@@ -127,8 +136,8 @@
             "name": "NavigationPoint1",
             "position": [
                 -3.078000068664551,
-                -0.00002345442771911621,
-                3.1029999256134035
+                -2.345442771911621e-05,
+                3.1029999256134033
             ],
             "type": "navigation"
         },
@@ -136,7 +145,7 @@
             "name": "NavigationPoint2",
             "position": [
                 -1.237877368927002,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.3009999990463257
             ],
             "type": "navigation"
@@ -145,7 +154,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.2642706632614136,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 3.009000062942505
             ],
             "type": "navigation"
@@ -154,7 +163,7 @@
             "name": "NavigationPoint4",
             "position": [
                 0.4333333969116211,
-                -0.00002345442771911621,
+                -2.345442771911621e-05,
                 1.2020000219345093
             ],
             "type": "navigation"

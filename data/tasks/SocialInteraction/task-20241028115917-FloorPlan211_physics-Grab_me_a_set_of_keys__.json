@@ -1,0 +1,262 @@
+{
+    "scene_name": "FloorPlan211_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan211_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.8989999890327454,
+        0.0,
+        0.8830000162124634
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -12505408
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan211_physics/Objects/Floor_75ae3473"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -12499686
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan211_physics/FPSController"
+    ],
+    "humans": [
+        {
+            "human": {
+                "instanceID": -12506728
+            },
+            "human_position": [
+                2.9920358657836916,
+                -1.1920928955078126e-7,
+                0.015410184860229493
+            ],
+            "human_rotation": [
+                0.0,
+                210.44960021972657,
+                0.0
+            ],
+            "asset": "Ch01_nonPBR",
+            "pose": "stand",
+            "pointingTo": {
+                "instanceID": 0
+            },
+            "pointing_to": ""
+        }
+    ],
+    "task_template": "Grab me a glass of juice.",
+    "task_text": "Grab me a set of keys. ",
+    "task_text_cn": "给我拿一串钥匙。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the keys",
+            "option_text_cn": "拿起钥匙。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12502948
+                    }
+                ]
+            },
+            "objects": [
+                "FloorPlan211_physics/Objects/KeyChain_938fc186"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "hand over",
+            "option_text_cn": "递过去。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -12506728
+                    },
+                    {
+                        "instanceID": -12502948
+                    }
+                ]
+            },
+            "objects": [
+                "Ch01_nonPBR",
+                "FloorPlan211_physics/Objects/KeyChain_938fc186"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -12506728
+                            },
+                            {
+                                "instanceID": -12502948
+                            }
+                        ],
+                        "required_objects": [
+                            "Ch01_nonPBR",
+                            "FloorPlan211_physics/Objects/KeyChain_938fc186"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -12502948
+            },
+            "predicate_object": "FloorPlan211_physics/Objects/KeyChain_938fc186",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "agent_pass",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": -12507926
+            },
+            "predicate_object": "NavPoints/NavigationPoint4",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "hand over",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.024000000208616258,
+                0.0,
+                1.215000033378601
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.159999966621399,
+                0.0,
+                -0.9819999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -1.246999979019165,
+                0.0,
+                0.5289999842643738
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                0.7609999775886536,
+                0.033333417028188708,
+                -1.3860000371932984
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (2)",
+            "position": [
+                0.871999979019165,
+                0.033333417028188708,
+                0.8339999914169312
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                2.4000000953674318,
+                0.0,
+                -1.343000054359436
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                2.756999969482422,
+                0.0,
+                -0.45500001311302187
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                3.4000000953674318,
+                0.0,
+                1.7666668891906739
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                -0.01836935244500637,
+                0.18752582371234895,
+                1.849363923072815
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.026655657216906549,
+                0.38657253980636599,
+                -0.17243601381778718
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241028115917-FloorPlan211_physics-Grab_me_a_set_of_keys__.json",
+    "message": ""
+}

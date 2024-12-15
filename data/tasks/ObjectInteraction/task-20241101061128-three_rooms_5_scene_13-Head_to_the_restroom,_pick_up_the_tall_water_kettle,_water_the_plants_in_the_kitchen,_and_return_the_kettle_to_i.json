@@ -1,0 +1,331 @@
+{
+    "scene_name": "three_rooms_5_scene_13",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_13.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        1.3899999856948853,
+        -0.0010000000474974514,
+        2.556999921798706
+    ],
+    "agent_rotation": [
+        0.0,
+        294.1416931152344,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -40377234
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_13/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -40371650
+        },
+        {
+            "instanceID": -40371714
+        },
+        {
+            "instanceID": -40369878
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_13/CreatedObjects/identifier30_14a4c834f401471c8ba59685d799f24c.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier32_12b0d602619a494a8b61448194641d58.glb",
+        "three_rooms_5_scene_13/CreatedObjects/identifier7_Doorway_2.glb"
+    ],
+    "humans": [],
+    "task_template": "Head to the garden, pick up the watering can, water the plants, and return the can to the shed.",
+    "task_text": "Head to the restroom, pick up the tall water kettle, water the plants in the kitchen, and return the kettle to its original place.",
+    "task_text_cn": "去洗手间，拿起喷壶，给厨房里的植物浇水，然后把喷壶放回去。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up",
+            "option_text_cn": "拿起水壶。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40371810
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier34_638288e140534cb8ac42a05284761a55.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "water the plants",
+            "option_text_cn": "给植物浇水。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40371810
+                    },
+                    {
+                        "instanceID": -40681810
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_13/CreatedObjects/identifier34_638288e140534cb8ac42a05284761a55.glb",
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -40371810
+                            },
+                            {
+                                "instanceID": -40681810
+                            }
+                        ],
+                        "required_objects": [
+                            "three_rooms_5_scene_13/CreatedObjects/identifier34_638288e140534cb8ac42a05284761a55.glb",
+                            "SpecialPoint (1)"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "把它放回原来的位置。",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -40380842
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": 0
+                            }
+                        ],
+                        "required_objects": [],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "special_action_success",
+            "right_answer_content": "",
+            "right_special_action": "water the plants",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "Water the plants. ",
+            "targetObject": {
+                "instanceID": -40371810
+            },
+            "predicate_object": "three_rooms_5_scene_13/CreatedObjects/identifier34_638288e140534cb8ac42a05284761a55.glb",
+            "targetPlace": {
+                "instanceID": -40380842
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "Water the plants. ",
+            "targetObject": {
+                "instanceID": -40371810
+            },
+            "predicate_object": "three_rooms_5_scene_13/CreatedObjects/identifier34_638288e140534cb8ac42a05284761a55.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.3630000352859498,
+                0.0416666716337204,
+                1.5829999446868897
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1 (1)",
+            "position": [
+                -2.0969998836517336,
+                0.0416666716337204,
+                2.8949999809265138
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                0.46666669845581057,
+                0.0416666716337204,
+                -3.3026490211486818
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                0.7329999804496765,
+                0.0416666716337204,
+                -0.8289999961853027
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                0.637791633605957,
+                0.0416666716337204,
+                0.7333333492279053
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                -0.5,
+                0.0416666716337204,
+                2.9159998893737795
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6 (1)",
+            "position": [
+                1.409000039100647,
+                0.0416666716337204,
+                2.625999927520752
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.3910000324249268,
+                0.0416666716337204,
+                -2.9149999618530275
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                2.5769999027252199,
+                0.0416666716337204,
+                -2.6670000553131105
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.9579999446868898,
+                0.0416666716337204,
+                -1.1030000448226929
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10 (1)",
+            "position": [
+                2.6050000190734865,
+                0.0416666716337204,
+                0.9179999828338623
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                2.637791633605957,
+                0.0416666716337204,
+                3.7333335876464845
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                4.637791633605957,
+                0.0416666716337204,
+                1.133333444595337
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4-Target",
+            "position": [
+                0.4009999930858612,
+                0.0416666716337204,
+                -0.4690000116825104
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                -0.4740000069141388,
+                0.984499990940094,
+                3.7170000076293947
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                0.4255812466144562,
+                0.02500009536743164,
+                -0.33680033683776858
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241101061128-three_rooms_5_scene_13-Head_to_the_restroom,_pick_up_the_tall_water_kettle,_water_the_plants_in_the_kitchen,_and_return_the_kettle_to_i.json",
+    "message": ""
+}

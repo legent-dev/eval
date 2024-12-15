@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        1.0399999618530274,
+        1.0399999618530273,
         0.0,
         -4.710000038146973
     ],
@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Can you describe the style of the paintings in this house?",
     "task_text": "Can you describe the type of the paintings in this house?",
+    "task_text_cn": "你能描述一下这所房子里画的类型吗？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "Watercolor Painting",
+            "option_text_cn": "水彩画",
             "gameObjects": {
                 "list": [
                     {
@@ -53,6 +55,7 @@
         {
             "option_type": "Answer",
             "option_text": "Oil Painting",
+            "option_text_cn": "油画",
             "gameObjects": {
                 "list": [
                     {
@@ -68,6 +71,7 @@
         {
             "option_type": "Answer",
             "option_text": "Charcoal Drawing",
+            "option_text_cn": "炭笔画",
             "gameObjects": {
                 "list": [
                     {
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "Digital Painting",
+            "option_text_cn": "数字绘画",
             "gameObjects": {
                 "list": [
                     {
@@ -98,6 +103,7 @@
         {
             "option_type": "Answer",
             "option_text": "Mosaic Art",
+            "option_text_cn": "马赛克艺术",
             "gameObjects": {
                 "list": [
                     {
@@ -113,6 +119,7 @@
         {
             "option_type": "Answer",
             "option_text": "Pencil Drawing",
+            "option_text_cn": "铅笔画",
             "gameObjects": {
                 "list": [
                     {
@@ -145,7 +152,7 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -2.6740000247955324,
+                -2.6740000247955322,
                 0.02333332970738411,
                 4.561999797821045
             ],
@@ -154,7 +161,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -3.0950000286102297,
+                -3.0950000286102295,
                 0.02333332970738411,
                 5.736999988555908
             ],
@@ -163,7 +170,7 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -2.4678852558135988,
+                -2.4678852558135986,
                 0.02333332970738411,
                 -6.511292457580566
             ],
@@ -172,9 +179,9 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -2.2250216007232668,
+                -2.2250216007232666,
                 0.02333332970738411,
-                -3.5652008056640627
+                -3.5652008056640625
             ],
             "type": "navigation"
         },
@@ -192,14 +199,14 @@
             "position": [
                 -1.7710000276565552,
                 0.02333332970738411,
-                1.0989999771118165
+                1.0989999771118164
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                -2.2739601135253908,
+                -2.2739601135253906,
                 0.02333332970738411,
                 6.788446426391602
             ],
@@ -226,7 +233,7 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                -0.23100000619888307,
+                -0.23100000619888306,
                 0.02333332970738411,
                 4.550000190734863
             ],
@@ -246,7 +253,7 @@
             "position": [
                 0.22603988647460938,
                 0.02333332970738411,
-                0.28844642639160159
+                0.28844642639160156
             ],
             "type": "navigation"
         },
@@ -298,7 +305,7 @@
         {
             "name": "NavigationPoint15",
             "position": [
-                2.7260398864746095,
+                2.7260398864746094,
                 0.02333332970738411,
                 8.788446426391602
             ],

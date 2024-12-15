@@ -46,10 +46,12 @@
     "humans": [],
     "task_template": "Determine the number of glasses compared to the number of plates in the kitchen.",
     "task_text": "Compare the number of books in the bedroom with the number of chairs.",
+    "task_text_cn": "比较卧室里书的数量和椅子的数量。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "books > chairs, three books",
+            "option_text_cn": "书比椅子多，多三本。",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "books < chairs",
+            "option_text_cn": "书比椅子少。",
             "gameObjects": {
                 "list": []
             },
@@ -72,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "books = chairs",
+            "option_text_cn": "书和椅子数量相等。",
             "gameObjects": {
                 "list": []
             },
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "books > chairs, two books",
+            "option_text_cn": "书比椅子多，多两本。",
             "gameObjects": {
                 "list": []
             },
@@ -94,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "books > chairs, two chairs",
+            "option_text_cn": "书比椅子多，多两把椅子。",
             "gameObjects": {
                 "list": []
             },
@@ -104,7 +110,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "books < chairs, one chairs",
+            "option_text": "books < chairs, one chair",
+            "option_text_cn": "书比椅子少，少一把椅子。",
             "gameObjects": {
                 "list": []
             },
@@ -116,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "books < chairs, two books",
+            "option_text_cn": "书比椅子少，少两本书。",
             "gameObjects": {
                 "list": []
             },
@@ -146,7 +154,7 @@
             "position": [
                 -1.351373314857483,
                 0.045013427734375,
-                -2.9538493156433107
+                -2.9538493156433105
             ],
             "type": "navigation"
         },
@@ -162,7 +170,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.3320000171661378,
+                -1.3320000171661377,
                 0.045013427734375,
                 -0.810130774974823
             ],
@@ -189,7 +197,7 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                -1.2990000247955323,
+                -1.2990000247955322,
                 0.045013427734375,
                 1.131880283355713
             ],
@@ -198,25 +206,25 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -3.6449999809265138,
+                -3.6449999809265137,
                 0.045013427734375,
-                3.0333333015441896
+                3.0333333015441895
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3 (1)",
             "position": [
-                -2.4560000896453859,
+                -2.4560000896453857,
                 0.045013427734375,
-                3.0333333015441896
+                3.0333333015441895
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -1.5125082731246949,
+                -1.5125082731246948,
                 0.045013427734375,
                 4.372438907623291
             ],
@@ -225,7 +233,7 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                -2.4179999828338625,
+                -2.4179999828338623,
                 0.045013427734375,
                 4.080999851226807
             ],
@@ -234,7 +242,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -1.1623001098632813,
+                -1.1623001098632812,
                 0.045013427734375,
                 2.632354736328125
             ],
@@ -279,7 +287,7 @@
         {
             "name": "NavigationPoint7 (1)",
             "position": [
-                1.8309999704360963,
+                1.8309999704360962,
                 0.045013427734375,
                 0.8700000047683716
             ],
@@ -324,7 +332,7 @@
         {
             "name": "NavigationPoint9 (2)",
             "position": [
-                2.2860000133514406,
+                2.2860000133514404,
                 0.045013427734375,
                 3.371999979019165
             ],
@@ -342,7 +350,7 @@
         {
             "name": "NavigationPoint10 (1)",
             "position": [
-                0.27000001072883608,
+                0.27000001072883606,
                 0.045013427734375,
                 -0.8799999952316284
             ],
@@ -353,7 +361,7 @@
             "position": [
                 3.066666841506958,
                 0.811676025390625,
-                -3.8000001907348635
+                -3.8000001907348633
             ],
             "type": "navigation"
         },
@@ -362,32 +370,32 @@
             "position": [
                 3.055000066757202,
                 0.045013427734375,
-                1.7419999837875367
+                1.7419999837875366
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (2)",
             "position": [
-                3.1670000553131105,
+                3.1670000553131104,
                 0.045013427734375,
-                0.42800000309944155
+                0.42800000309944153
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (3)",
             "position": [
-                2.4649999141693117,
+                2.4649999141693115,
                 0.045013427734375,
-                0.42800000309944155
+                0.42800000309944153
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (1)",
             "position": [
-                3.5329999923706056,
+                3.5329999923706055,
                 0.045013427734375,
                 1.88100004196167
             ],
@@ -396,9 +404,9 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                2.9760000705718996,
+                2.9760000705718994,
                 0.045013427734375,
-                3.3389999866485597
+                3.3389999866485596
             ],
             "type": "navigation"
         },
@@ -416,23 +424,23 @@
             "position": [
                 3.953000068664551,
                 0.045013427734375,
-                -3.3380000591278078
+                -3.3380000591278076
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint14 (2)",
             "position": [
-                4.4710001945495609,
+                4.4710001945495605,
                 0.045013427734375,
-                -3.0160000324249269
+                -3.0160000324249268
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint15",
             "position": [
-                3.8376998901367189,
+                3.8376998901367188,
                 0.045013427734375,
                 -0.367645263671875
             ],
@@ -452,7 +460,7 @@
             "position": [
                 5.760000228881836,
                 0.7120000123977661,
-                -6.9710001945495609
+                -6.9710001945495605
             ],
             "type": "special"
         }

@@ -1,0 +1,376 @@
+{
+    "scene_name": "three_rooms_5_scene_0",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/three_rooms_5_scene_0.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.9480000138282776,
+        0.0,
+        0.38499999046325686
+    ],
+    "agent_rotation": [
+        0.0,
+        158.80426025390626,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -54773548
+        }
+    ],
+    "floor_objects": [
+        "three_rooms_5_scene_0/CreatedWalls"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -54767036
+        },
+        {
+            "instanceID": -54771272
+        },
+        {
+            "instanceID": -54770776
+        },
+        {
+            "instanceID": -54770444
+        },
+        {
+            "instanceID": -54770976
+        },
+        {
+            "instanceID": -54770824
+        },
+        {
+            "instanceID": -54770944
+        }
+    ],
+    "removed_objects": [
+        "three_rooms_5_scene_0/CreatedObjects/identifier1_Doorway_4.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier53_1018cd118d4f476bb8051a121485d27b.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier45_791bff1f2c72441dad8db59677f2e036.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier44_d78437ace15247c69bd0b57f2bed13bd.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier48_e2a715e676134f2fb31f005dcea5b227.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier46_6875bd180a0e4e399b8a1636c49e46d4.glb",
+        "three_rooms_5_scene_0/CreatedObjects/identifier47_0385322e71474e65a1914abda0c0c505.glb"
+    ],
+    "humans": [],
+    "task_template": "Move the hamper next to the washing machine. Then, pick up all the dirty laundry from the floor and put it in the hamper.",
+    "task_text": "Move the green bucket to the space between the toilet and the bathtub. Then, pick up all the medicine bottles on the floor and put them in the green bucket.",
+    "task_text_cn": "",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the bucket",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -54771068
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_0/CreatedObjects/identifier50_bin_25.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down the bucket",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -54778960
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the medicine bottle",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -54771332
+                    }
+                ]
+            },
+            "objects": [
+                "three_rooms_5_scene_0/CreatedObjects/identifier54_b64f71419439447e98ddade0a43cd4aa.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "place in the bucket",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -54778970
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -54771068
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier50_bin_25.glb",
+            "targetPlace": {
+                "instanceID": -54778960
+            },
+            "predicate_place": "SpecialPoint"
+        },
+        {
+            "predicate_type": "at",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -54771332
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier54_b64f71419439447e98ddade0a43cd4aa.glb",
+            "targetPlace": {
+                "instanceID": -54778970
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -54771068
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier50_bin_25.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        },
+        {
+            "predicate_type": "grab_once",
+            "right_answer_content": "",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": -54771332
+            },
+            "predicate_object": "three_rooms_5_scene_0/CreatedObjects/identifier54_b64f71419439447e98ddade0a43cd4aa.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": "SpecialPoint (1)"
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                3.178999900817871,
+                0.0416666716337204,
+                -0.8429999947547913
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0 (1)",
+            "position": [
+                2.4260001182556154,
+                0.0416666716337204,
+                -2.561000108718872
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                1.0750000476837159,
+                0.05999999865889549,
+                -2.1019999980926515
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.9819999933242798,
+                0.0416666716337204,
+                -1.0149999856948853
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -1.436305046081543,
+                0.0416666716337204,
+                0.601240336894989
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.697587013244629,
+                0.0416666716337204,
+                1.601722240447998
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4 (1)",
+            "position": [
+                -2.697587013244629,
+                0.0416666716337204,
+                2.4089999198913576
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.381641149520874,
+                0.0416666716337204,
+                2.3235180377960207
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.8149999976158142,
+                0.0416666716337204,
+                0.4191751480102539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                1.065999984741211,
+                0.0416666716337204,
+                2.419175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                1.4666666984558106,
+                0.0416666716337204,
+                3.7333335876464845
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                2.2531399726867677,
+                0.0416666716337204,
+                0.4191751480102539
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                2.2531399726867677,
+                0.6075774431228638,
+                2.419175148010254
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                3.686284065246582,
+                0.0416666716337204,
+                1.1226691007614136
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint12",
+            "position": [
+                3.789027452468872,
+                0.7456009387969971,
+                3.085508108139038
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint0-Target",
+            "position": [
+                3.4947822093963625,
+                0.2881477475166321,
+                -0.2180195301771164
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "NavigationPoint1-Target",
+            "position": [
+                0.4880000054836273,
+                0.08306008577346802,
+                -1.9589999914169312
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                2.753000020980835,
+                0.3569999933242798,
+                -3.0940001010894777
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                2.750999927520752,
+                0.17299999296665193,
+                -3.0929999351501467
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241104185007-three_rooms_5_scene_0-Move_the_green_bucket_to_the_space_between_the_toilet_and_the_bathtub__Then,_pick_up_all_the_medicine_bottles_on_.json",
+    "message": ""
+}

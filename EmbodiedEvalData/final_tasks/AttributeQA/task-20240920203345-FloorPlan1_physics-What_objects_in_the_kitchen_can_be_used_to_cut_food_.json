@@ -40,10 +40,12 @@
     "humans": [],
     "task_template": "What objects in the room can be used to cut food?",
     "task_text": "What objects in the kitchen can be used to cut food?",
+    "task_text_cn": "厨房里什么物品可以用来切食物？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "bowl",
+            "option_text_cn": "碗",
             "gameObjects": {
                 "list": []
             },
@@ -55,6 +57,7 @@
         {
             "option_type": "Answer",
             "option_text": "knife",
+            "option_text_cn": "刀",
             "gameObjects": {
                 "list": []
             },
@@ -65,7 +68,8 @@
         },
         {
             "option_type": "Answer",
-            "option_text": "Bread Maker",
+            "option_text": "bread maker",
+            "option_text_cn": "面包机",
             "gameObjects": {
                 "list": []
             },
@@ -77,6 +81,7 @@
         {
             "option_type": "Answer",
             "option_text": "pan",
+            "option_text_cn": "平底锅",
             "gameObjects": {
                 "list": []
             },
@@ -88,6 +93,7 @@
         {
             "option_type": "Answer",
             "option_text": "spoon",
+            "option_text_cn": "勺子",
             "gameObjects": {
                 "list": []
             },
@@ -99,6 +105,7 @@
         {
             "option_type": "Answer",
             "option_text": "fork",
+            "option_text_cn": "叉子",
             "gameObjects": {
                 "list": []
             },
@@ -110,6 +117,7 @@
         {
             "option_type": "Answer",
             "option_text": "food",
+            "option_text_cn": "食物",
             "gameObjects": {
                 "list": []
             },
@@ -121,6 +129,7 @@
         {
             "option_type": "Answer",
             "option_text": "apple",
+            "option_text_cn": "苹果",
             "gameObjects": {
                 "list": []
             },
@@ -149,9 +158,9 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -1.0529999732971192,
-                2.2351741790771486e-8,
-                -1.6990000009536744
+                -1.0529999732971191,
+                2.2351741790771484e-08,
+                -1.6990000009536743
             ],
             "type": "navigation"
         },
@@ -159,7 +168,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -1.0666664838790894,
-                2.2351741790771486e-8,
+                2.2351741790771484e-08,
                 0.06732749938964844
             ],
             "type": "navigation"
@@ -169,7 +178,7 @@
             "position": [
                 -1.406000018119812,
                 -0.05400000140070915,
-                2.0673274993896486
+                2.0673274993896484
             ],
             "type": "navigation"
         },
@@ -177,8 +186,8 @@
             "name": "NavigationPoint3",
             "position": [
                 1.5290000438690186,
-                2.2351741790771486e-8,
-                -1.6430000066757203
+                2.2351741790771484e-08,
+                -1.6430000066757202
             ],
             "type": "navigation"
         },
@@ -186,8 +195,8 @@
             "name": "NavigationPoint4",
             "position": [
                 1.4274070262908936,
-                2.2351741790771486e-8,
-                1.5950000286102296
+                2.2351741790771484e-08,
+                1.5950000286102295
             ],
             "type": "navigation"
         }

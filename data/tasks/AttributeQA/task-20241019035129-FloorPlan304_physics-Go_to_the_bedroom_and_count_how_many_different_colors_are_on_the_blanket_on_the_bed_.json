@@ -1,0 +1,234 @@
+{
+    "scene_name": "FloorPlan304_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan304_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        -0.3269999921321869,
+        -0.125,
+        -0.47999998927116396
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -7090642
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan304_physics/Objects/Floor_05410015"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -7085564
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan304_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Go to the bedroom and count how many pillows are on the bed.",
+    "task_text": "Go to the bedroom and count how many different colors are on the blanket on the bed.",
+    "task_text_cn": "去卧室，数一数床上的毯子有多少种颜色？",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "option_text_cn": "零",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "二",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "five",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.34299999475479128,
+                0.02500000037252903,
+                -0.36500000953674319
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -0.25088053941726687,
+                0.03333306312561035,
+                0.6539810299873352
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -0.11100000143051148,
+                0.03333306312561035,
+                1.5390000343322755
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                0.12099999934434891,
+                0.03333306312561035,
+                1.9780000448226929
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (3)",
+            "position": [
+                0.746999979019165,
+                0.03333306312561035,
+                2.117000102996826
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                1.2350000143051148,
+                0.03333306312561035,
+                1.5950000286102296
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                1.2369999885559083,
+                0.03333306312561035,
+                -0.44200000166893008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                1.246000051498413,
+                0.03333306312561035,
+                0.9129999876022339
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241019035129-FloorPlan304_physics-Go_to_the_bedroom_and_count_how_many_different_colors_are_on_the_blanket_on_the_bed_.json",
+    "message": ""
+}

@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        0.43799999356269839,
+        0.43799999356269836,
         0.0,
         -0.9330000281333923
     ],
@@ -46,10 +46,12 @@
     "humans": [],
     "task_template": "Compare the number of round objects to rectangular objects in the bedroom.",
     "task_text": "Compare the number of murals and clocks in the bedroom.",
+    "task_text_cn": "比较卧室里壁画和时钟的数量。",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "more murals than clocks,  only two murals",
+            "option_text_cn": "壁画比时钟多，只有两幅壁画。",
             "gameObjects": {
                 "list": []
             },
@@ -61,6 +63,7 @@
         {
             "option_type": "Answer",
             "option_text": "more clocks than murals, only two clocks",
+            "option_text_cn": "时钟比壁画多，只有两个时钟。",
             "gameObjects": {
                 "list": []
             },
@@ -72,6 +75,7 @@
         {
             "option_type": "Answer",
             "option_text": "the same quantity of both",
+            "option_text_cn": "两者数量相同。",
             "gameObjects": {
                 "list": []
             },
@@ -83,6 +87,7 @@
         {
             "option_type": "Answer",
             "option_text": "more murals than clocks,  only two clocks",
+            "option_text_cn": "壁画比时钟多，只有两个时钟。",
             "gameObjects": {
                 "list": []
             },
@@ -94,6 +99,7 @@
         {
             "option_type": "Answer",
             "option_text": "more clocks than murals, only two murals",
+            "option_text_cn": "时钟比壁画多，只有两幅壁画。",
             "gameObjects": {
                 "list": []
             },
@@ -105,6 +111,7 @@
         {
             "option_type": "Answer",
             "option_text": "more murals than clocks,  only one clock",
+            "option_text_cn": "壁画比时钟多，只有一个时钟。",
             "gameObjects": {
                 "list": []
             },
@@ -116,6 +123,7 @@
         {
             "option_type": "Answer",
             "option_text": "more clocks than murals, only one mural",
+            "option_text_cn": "时钟比壁画多，只有一幅壁画。",
             "gameObjects": {
                 "list": []
             },
@@ -127,6 +135,7 @@
         {
             "option_type": "Answer",
             "option_text": "one watermelon",
+            "option_text_cn": "一个西瓜。",
             "gameObjects": {
                 "list": []
             },
@@ -157,7 +166,7 @@
             "position": [
                 -1.351373314857483,
                 0.045013427734375,
-                -2.9538493156433107
+                -2.9538493156433105
             ],
             "type": "navigation"
         },
@@ -173,7 +182,7 @@
         {
             "name": "NavigationPoint1",
             "position": [
-                -1.3320000171661378,
+                -1.3320000171661377,
                 0.045013427734375,
                 -0.810130774974823
             ],
@@ -200,7 +209,7 @@
         {
             "name": "NavigationPoint2 (1)",
             "position": [
-                -1.2990000247955323,
+                -1.2990000247955322,
                 0.045013427734375,
                 1.131880283355713
             ],
@@ -209,25 +218,25 @@
         {
             "name": "NavigationPoint3",
             "position": [
-                -3.6449999809265138,
+                -3.6449999809265137,
                 0.045013427734375,
-                3.0333333015441896
+                3.0333333015441895
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3 (1)",
             "position": [
-                -2.4560000896453859,
+                -2.4560000896453857,
                 0.045013427734375,
-                3.0333333015441896
+                3.0333333015441895
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint4",
             "position": [
-                -1.5125082731246949,
+                -1.5125082731246948,
                 0.045013427734375,
                 4.372438907623291
             ],
@@ -236,7 +245,7 @@
         {
             "name": "NavigationPoint4 (1)",
             "position": [
-                -2.4179999828338625,
+                -2.4179999828338623,
                 0.045013427734375,
                 4.080999851226807
             ],
@@ -245,7 +254,7 @@
         {
             "name": "NavigationPoint5",
             "position": [
-                -1.1623001098632813,
+                -1.1623001098632812,
                 0.045013427734375,
                 2.632354736328125
             ],
@@ -290,7 +299,7 @@
         {
             "name": "NavigationPoint7 (1)",
             "position": [
-                1.8309999704360963,
+                1.8309999704360962,
                 0.045013427734375,
                 0.8700000047683716
             ],
@@ -335,7 +344,7 @@
         {
             "name": "NavigationPoint9 (2)",
             "position": [
-                2.2860000133514406,
+                2.2860000133514404,
                 0.045013427734375,
                 3.371999979019165
             ],
@@ -353,7 +362,7 @@
         {
             "name": "NavigationPoint10 (1)",
             "position": [
-                0.46000000834465029,
+                0.46000000834465027,
                 0.045013427734375,
                 -0.9629999995231628
             ],
@@ -364,7 +373,7 @@
             "position": [
                 3.066666841506958,
                 0.811676025390625,
-                -3.8000001907348635
+                -3.8000001907348633
             ],
             "type": "navigation"
         },
@@ -373,32 +382,32 @@
             "position": [
                 3.055000066757202,
                 0.045013427734375,
-                1.7419999837875367
+                1.7419999837875366
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (2)",
             "position": [
-                3.1670000553131105,
+                3.1670000553131104,
                 0.045013427734375,
-                0.42800000309944155
+                0.42800000309944153
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (3)",
             "position": [
-                2.4649999141693117,
+                2.4649999141693115,
                 0.045013427734375,
-                0.42800000309944155
+                0.42800000309944153
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint12 (1)",
             "position": [
-                3.5329999923706056,
+                3.5329999923706055,
                 0.045013427734375,
                 1.88100004196167
             ],
@@ -407,9 +416,9 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                2.9760000705718996,
+                2.9760000705718994,
                 0.045013427734375,
-                3.3389999866485597
+                3.3389999866485596
             ],
             "type": "navigation"
         },
@@ -418,23 +427,23 @@
             "position": [
                 3.953000068664551,
                 0.045013427734375,
-                -3.3380000591278078
+                -3.3380000591278076
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint14 (2)",
             "position": [
-                4.0370001792907719,
+                4.0370001792907715,
                 0.045013427734375,
-                -1.9739999771118165
+                -1.9739999771118164
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint15",
             "position": [
-                3.8376998901367189,
+                3.8376998901367188,
                 0.045013427734375,
                 -0.367645263671875
             ],
@@ -445,7 +454,7 @@
             "position": [
                 2.875,
                 0.045013427734375,
-                -0.35499998927116396
+                -0.35499998927116394
             ],
             "type": "navigation"
         },
@@ -454,7 +463,7 @@
             "position": [
                 5.760000228881836,
                 0.7120000123977661,
-                -6.9710001945495609
+                -6.9710001945495605
             ],
             "type": "special"
         }

@@ -34,10 +34,12 @@
     "humans": [],
     "task_template": "Find a vase, fill it with water from the kitchen sink, then place it on the windowsill with the most sunlight.",
     "task_text": "Find a green plant in a vase on the dining table, fill it with water from the kitchen sink, and then place it in front of the painting.",
+    "task_text_cn": "在餐桌上的花瓶里找到一株绿色植物，从厨房水槽里给它加水，然后把它放在画的前面。",
     "options": [
         {
             "option_type": "PickUp",
             "option_text": "pick up",
+            "option_text_cn": "拿起。",
             "gameObjects": {
                 "list": [
                     {
@@ -55,6 +57,7 @@
         {
             "option_type": "SpecialAction",
             "option_text": "water",
+            "option_text_cn": "加水。",
             "gameObjects": {
                 "list": [
                     {
@@ -84,6 +87,7 @@
         {
             "option_type": "PlaceTo",
             "option_text": "place to",
+            "option_text_cn": "放在。",
             "gameObjects": {
                 "list": [
                     {
@@ -141,18 +145,18 @@
         {
             "name": "NavigationPoint0",
             "position": [
-                -0.48558229207992556,
+                -0.48558229207992554,
                 0.7797601819038391,
-                0.29015347361564639
+                0.29015347361564636
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint1",
             "position": [
-                -2.7666666507720949,
+                -2.7666666507720947,
                 0.04642680659890175,
-                -2.0880000591278078
+                -2.0880000591278076
             ],
             "type": "navigation"
         },
@@ -161,16 +165,16 @@
             "position": [
                 -2.877000093460083,
                 0.04642680659890175,
-                1.2209999561309815
+                1.2209999561309814
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint3",
             "position": [
-                -1.1050000190734864,
+                -1.1050000190734863,
                 0.04642680659890175,
-                2.9769999980926515
+                2.9769999980926514
             ],
             "type": "navigation"
         },
@@ -179,7 +183,7 @@
             "position": [
                 -1.6749999523162842,
                 0.04642680659890175,
-                1.6260000467300416
+                1.6260000467300415
             ],
             "type": "navigation"
         },
@@ -197,23 +201,23 @@
             "position": [
                 0.7440000176429749,
                 0.04642680659890175,
-                -1.0399999618530274
+                -1.0399999618530273
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6",
             "position": [
-                0.057999998331069949,
+                0.057999998331069946,
                 0.04642680659890175,
-                1.7350000143051148
+                1.7350000143051147
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint6 (1)",
             "position": [
-                1.2549999952316285,
+                1.2549999952316284,
                 0.04642680659890175,
                 0.671999990940094
             ],
@@ -223,7 +227,7 @@
             "name": "NavigationPoint0-Target",
             "position": [
                 -0.8199215531349182,
-                1.0856647491455079,
+                1.0856647491455078,
                 0.6244924068450928
             ],
             "type": "navigation-target"
@@ -233,16 +237,16 @@
             "position": [
                 -3.757999897003174,
                 0.8880000114440918,
-                -2.0880000591278078
+                -2.0880000591278076
             ],
             "type": "navigation-target"
         },
         {
             "name": "SpecialPoint",
             "position": [
-                -3.7507259845733644,
+                -3.7507259845733643,
                 0.6650000214576721,
-                1.3271820545196534
+                1.3271820545196533
             ],
             "type": "special"
         },
@@ -251,7 +255,7 @@
             "position": [
                 -3.757999897003174,
                 0.8880000114440918,
-                -2.0880000591278078
+                -2.0880000591278076
             ],
             "type": "special"
         }

@@ -1,0 +1,351 @@
+{
+    "scene_name": "two_rooms_10_scene_9",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/EmaBench_EMNLP_scenes/two_rooms_10_scene_9.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.1889999955892563,
+        2.2351741790771486e-8,
+        1.1180000305175782
+    ],
+    "agent_rotation": [
+        0.0,
+        286.9977722167969,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -45403624
+        },
+        {
+            "instanceID": -45403636
+        }
+    ],
+    "floor_objects": [
+        "two_rooms_10_scene_9/CreatedWalls/identifier8_Floor",
+        "two_rooms_10_scene_9/CreatedWalls/identifier9_Floor"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "Locate the object that is both green and cylindrical on the shelf.",
+    "task_text": "Grab the object that is cylindrical and silver on the table next to the washing machine.",
+    "task_text_cn": "拿起洗衣机旁边桌子上圆柱形且银色的物品。",
+    "options": [
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the pear",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45401756
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_9/CreatedObjects/identifier32_9d123e87fc7c44439934a0b0165c680c.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the cookie",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45401868
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_9/CreatedObjects/identifier35_da0d7fa43b524cf3bf9f5416e85333e2.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the iron",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45401808
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_9/CreatedObjects/identifier33_9af26f6b260247edb1a47b6ebb94eaf2.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "PickUp",
+            "option_text": "pick up the can",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45401836
+                    }
+                ]
+            },
+            "objects": [
+                "two_rooms_10_scene_9/CreatedObjects/identifier34_0cea33fa41eb49d3a8b00d9e4d325053.glb"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "SpecialAction",
+            "option_text": "pick up the pot",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45407496
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [
+                            {
+                                "instanceID": -45407496
+                            }
+                        ],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        },
+        {
+            "option_type": "PlaceTo",
+            "option_text": "put down",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": [
+                    {
+                        "instanceID": -45407506
+                    }
+                ]
+            },
+            "objects": [
+                "SpecialPoint (1)"
+            ],
+            "interaction_distance": 1.0,
+            "specialActionFeedbacks": {
+                "list": [
+                    {
+                        "requiredObjects": [],
+                        "required_objects": [
+                            "SpecialPoint"
+                        ],
+                        "feedback": "success"
+                    }
+                ]
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "grab",
+            "right_answer_content": "",
+            "right_special_action": "spray it",
+            "targetObject": {
+                "instanceID": -45401836
+            },
+            "predicate_object": "two_rooms_10_scene_9/CreatedObjects/identifier34_0cea33fa41eb49d3a8b00d9e4d325053.glb",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                2.509999990463257,
+                0.05484937131404877,
+                0.9440000057220459
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                2.990000009536743,
+                0.05484937131404877,
+                2.4100000858306886
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.418000221252441,
+                0.05484937131404877,
+                2.1689999103546144
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (1)",
+            "position": [
+                -4.46999979019165,
+                0.05484937131404877,
+                0.996999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2 (2)",
+            "position": [
+                -3.444999933242798,
+                0.05484937131404877,
+                0.996999979019165
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -2.614000082015991,
+                0.05484937131404877,
+                3.635999917984009
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3 (1)",
+            "position": [
+                -3.755000114440918,
+                0.05484937131404877,
+                4.046000003814697
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -1.4019999504089356,
+                0.05484937131404877,
+                0.6779999732971191
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -1.2680000066757203,
+                0.05484937131404877,
+                3.688999891281128
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (1)",
+            "position": [
+                -1.3170000314712525,
+                0.05484937131404877,
+                2.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5 (2)",
+            "position": [
+                -2.8459999561309816,
+                0.05484937131404877,
+                2.1610000133514406
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint6",
+            "position": [
+                0.421999990940094,
+                0.05484937131404877,
+                0.6230000257492065
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -0.6234754323959351,
+                0.05484937131404877,
+                4.214000225067139
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                0.7850000262260437,
+                0.05484937131404877,
+                2.325000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2-Target",
+            "position": [
+                -4.394000053405762,
+                0.05484937131404877,
+                3.0759999752044679
+            ],
+            "type": "navigation-target"
+        },
+        {
+            "name": "SpecialPoint",
+            "position": [
+                3.688999891281128,
+                0.6060000061988831,
+                0.11599999666213989
+            ],
+            "type": "special"
+        },
+        {
+            "name": "SpecialPoint (1)",
+            "position": [
+                -4.184999942779541,
+                0.8619999885559082,
+                2.671999931335449
+            ],
+            "type": "special"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241101162437-two_rooms_10_scene_9-Grab_the_object_that_is_cylindrical_and_silver_on_the_table_next_to_the_washing_machine_.json",
+    "message": ""
+}

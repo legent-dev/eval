@@ -1,0 +1,198 @@
+{
+    "scene_name": "FloorPlan308_physics",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/AI2THOR/FloorPlan308_physics.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -40296714
+        }
+    ],
+    "floor_objects": [
+        "FloorPlan308_physics/Objects/Floor_83109f1a"
+    ],
+    "removedObjects": [
+        {
+            "instanceID": -40290732
+        }
+    ],
+    "removed_objects": [
+        "FloorPlan308_physics/FPSController"
+    ],
+    "humans": [],
+    "task_template": "Explain the arrangement of books on a shelf.",
+    "task_text": "Explain the arrangement of the books on the bookshelf.",
+    "task_text_cn": "解释书架上的书的排列",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged horizontally and sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged horizontally, with different colors but not sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged vertically and sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged horizontally, with different colors but not sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged both horizontally and vertically, and sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "They are arranged both horizontally and vertically, with different colors but not sorted by color.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There are no books on the bookshelf.",
+            "option_text_cn": "书架上没有书。",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "There is no bookshelf.",
+            "option_text_cn": "",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "They are arranged both horizontally and vertically, with different colors but not sorted by color.",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -0.38199999928474429,
+                0.03333309292793274,
+                1.3600000143051148
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -1.7120000123977662,
+                0.03333309292793274,
+                1.4010000228881837
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                0.4815495014190674,
+                0.03333309292793274,
+                -0.9076969623565674
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                1.446545124053955,
+                0.7666664123535156,
+                0.9982118606567383
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241023064527-FloorPlan308_physics-Explain_the_arrangement_of_the_books_on_the_bookshelf_.json",
+    "message": ""
+}

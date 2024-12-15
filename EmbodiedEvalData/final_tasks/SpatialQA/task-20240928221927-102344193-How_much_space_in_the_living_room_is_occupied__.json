@@ -14,7 +14,7 @@
     "agent_position": [
         8.15999984741211,
         0.0,
-        -1.3600000143051148
+        -1.3600000143051147
     ],
     "agent_rotation": [
         0.0,
@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "Determine the percentage of floor space occupied by furniture in the living room.",
     "task_text": "How much space in the living room is occupied? ",
+    "task_text_cn": "客厅里有多少空间被占用？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "1/2 or 3/5",
+            "option_text_cn": "二分之一或五分之三。",
             "gameObjects": {
                 "list": []
             },
@@ -63,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "1/3 or 1/4",
+            "option_text_cn": "三分之一或四分之一。",
             "gameObjects": {
                 "list": []
             },
@@ -74,6 +77,7 @@
         {
             "option_type": "Answer",
             "option_text": "2/3 or 3/4",
+            "option_text_cn": "三分之二或四分之三。",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +89,7 @@
         {
             "option_type": "Answer",
             "option_text": "100%",
+            "option_text_cn": "百分之百。",
             "gameObjects": {
                 "list": []
             },
@@ -96,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "5/6 or 6/7",
+            "option_text_cn": "六分之五或七分之六。",
             "gameObjects": {
                 "list": []
             },
@@ -107,6 +113,7 @@
         {
             "option_type": "Answer",
             "option_text": "more than one option is correct",
+            "option_text_cn": "不止一个选项正确。",
             "gameObjects": {
                 "list": []
             },
@@ -118,6 +125,7 @@
         {
             "option_type": "Answer",
             "option_text": "no correct option",
+            "option_text_cn": "没有正确选项。",
             "gameObjects": {
                 "list": []
             },
@@ -129,6 +137,7 @@
         {
             "option_type": "Answer",
             "option_text": "0%",
+            "option_text_cn": "零。",
             "gameObjects": {
                 "list": []
             },
@@ -158,7 +167,7 @@
             "name": "NavigationPoint1",
             "position": [
                 -1.909999966621399,
-                0.009479034692049027,
+                0.009479034692049026,
                 -2.859999895095825
             ],
             "type": "navigation"
@@ -166,9 +175,9 @@
         {
             "name": "NavigationPoint2",
             "position": [
-                -2.1027543544769289,
-                0.042812373489141467,
-                -1.9190748929977418
+                -2.1027543544769287,
+                0.042812373489141464,
+                -1.9190748929977417
             ],
             "type": "navigation"
         },
@@ -176,7 +185,7 @@
             "name": "NavigationPoint3",
             "position": [
                 -0.7099999785423279,
-                0.042812373489141467,
+                0.042812373489141464,
                 -5.656031131744385
             ],
             "type": "navigation"
@@ -185,8 +194,8 @@
             "name": "NavigationPoint5",
             "position": [
                 -0.8399999737739563,
-                0.023952551186084749,
-                -3.7017581462860109
+                0.023952551186084747,
+                -3.7017581462860107
             ],
             "type": "navigation"
         },
@@ -194,8 +203,8 @@
             "name": "NavigationPoint7",
             "position": [
                 1.5475965738296509,
-                0.009479034692049027,
-                -8.428080558776856
+                0.009479034692049026,
+                -8.428080558776855
             ],
             "type": "navigation"
         },
@@ -212,7 +221,7 @@
             "name": "NavigationPoint9",
             "position": [
                 0.8118143677711487,
-                0.055892542004585269,
+                0.055892542004585266,
                 -5.5
             ],
             "type": "navigation"
@@ -221,7 +230,7 @@
             "name": "NavigationPoint11",
             "position": [
                 1.6699999570846558,
-                0.009479034692049027,
+                0.009479034692049026,
                 -4.699999809265137
             ],
             "type": "navigation"
@@ -230,7 +239,7 @@
             "name": "NavigationPoint13",
             "position": [
                 3.82112979888916,
-                0.009479034692049027,
+                0.009479034692049026,
                 -8.700261116027832
             ],
             "type": "navigation"
@@ -239,7 +248,7 @@
             "name": "NavigationPoint16",
             "position": [
                 5.059999942779541,
-                0.009479034692049027,
+                0.009479034692049026,
                 -4.659999847412109
             ],
             "type": "navigation"
@@ -248,7 +257,7 @@
             "name": "NavigationPoint16 (1)",
             "position": [
                 6.110000133514404,
-                0.009479034692049027,
+                0.009479034692049026,
                 -6.059999942779541
             ],
             "type": "navigation"
@@ -257,7 +266,7 @@
             "name": "NavigationPoint17",
             "position": [
                 5.500000476837158,
-                0.009479034692049027,
+                0.009479034692049026,
                 -1.940000057220459
             ],
             "type": "navigation"
@@ -266,7 +275,7 @@
             "name": "NavigationPoint20",
             "position": [
                 7.82112979888916,
-                0.042812373489141467,
+                0.042812373489141464,
                 -4.700261116027832
             ],
             "type": "navigation"
@@ -275,7 +284,7 @@
             "name": "NavigationPoint22",
             "position": [
                 8.109999656677246,
-                0.009479034692049027,
+                0.009479034692049026,
                 -1.740006446838379
             ],
             "type": "navigation"
@@ -283,7 +292,7 @@
         {
             "name": "SpecialPoint",
             "position": [
-                -2.4800000190734865,
+                -2.4800000190734863,
                 0.005054473876953125,
                 -8.470000267028809
             ],

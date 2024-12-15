@@ -1,0 +1,399 @@
+{
+    "scene_name": "sitting_room_with_baked_textures",
+    "scene_path": "F:/UnityProjects/SceneProcessor/Assets/Scenes/sitting_room_with_baked_textures.glb",
+    "scene_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "scene_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "agent_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "floorObjects": [
+        {
+            "instanceID": -31909358
+        }
+    ],
+    "floor_objects": [
+        "sitting_room_with_baked_textures/hall01.obj.cleaner.materialmerger.gles/Object_3"
+    ],
+    "removedObjects": [],
+    "removed_objects": [],
+    "humans": [],
+    "task_template": "How many sofas are there in the room?",
+    "task_text": "Look around and see how many side tables are in the room.",
+    "task_text_cn": "四处看看，看看房间里有多少个边桌。",
+    "options": [
+        {
+            "option_type": "Answer",
+            "option_text": "three",
+            "option_text_cn": "三个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "five",
+            "option_text_cn": "五个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "six",
+            "option_text_cn": "六个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "seven",
+            "option_text_cn": "七个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "two",
+            "option_text_cn": "两个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "one",
+            "option_text_cn": "一个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "zero",
+            "option_text_cn": "零个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        },
+        {
+            "option_type": "Answer",
+            "option_text": "four",
+            "option_text_cn": "四个",
+            "gameObjects": {
+                "list": []
+            },
+            "objects": [],
+            "specialActionFeedbacks": {
+                "list": []
+            }
+        }
+    ],
+    "predicates": [
+        {
+            "predicate_type": "choose",
+            "right_answer_content": "four",
+            "right_special_action": "",
+            "targetObject": {
+                "instanceID": 0
+            },
+            "predicate_object": "NavPoints/NavigationPoint17",
+            "targetPlace": {
+                "instanceID": 0
+            },
+            "predicate_place": ""
+        }
+    ],
+    "special_points": [
+        {
+            "name": "NavigationPoint0",
+            "position": [
+                -2.433495044708252,
+                0.033332619816064838,
+                -4.990140914916992
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint1",
+            "position": [
+                -4.122046947479248,
+                0.033332619816064838,
+                -2.800159215927124
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint2",
+            "position": [
+                -4.112545967102051,
+                0.033332619816064838,
+                0.3662344813346863
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint3",
+            "position": [
+                -4.199999809265137,
+                0.033332619816064838,
+                2.0
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint4",
+            "position": [
+                -2.0333333015441896,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint5",
+            "position": [
+                -3.133333206176758,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint7",
+            "position": [
+                -1.7569999694824219,
+                0.033332619816064838,
+                -2.6510000228881838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint8",
+            "position": [
+                -0.24699999392032624,
+                0.033332619816064838,
+                -1.3700000047683716
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint9",
+            "position": [
+                -2.072999954223633,
+                0.033332619816064838,
+                2.6489999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint10",
+            "position": [
+                -1.7649999856948853,
+                0.033332619816064838,
+                0.3619999885559082
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint11",
+            "position": [
+                -0.13365061581134797,
+                0.033332619816064838,
+                -4.988733291625977
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint13",
+            "position": [
+                -0.23199999332427979,
+                0.033332619816064838,
+                2.816999912261963
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint14",
+            "position": [
+                -0.12600000202655793,
+                0.033332619816064838,
+                -2.7739999294281008
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint15",
+            "position": [
+                -1.7000000476837159,
+                0.033332619816064838,
+                -1.4110000133514405
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint16",
+            "position": [
+                -0.17136287689208985,
+                0.033332619816064838,
+                4.452715873718262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint17",
+            "position": [
+                -0.19099999964237214,
+                0.033332619816064838,
+                0.3109999895095825
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint18",
+            "position": [
+                1.6959956884384156,
+                0.033332619816064838,
+                -4.936846733093262
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint19",
+            "position": [
+                0.984000027179718,
+                0.033332619816064838,
+                2.562999963760376
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint20",
+            "position": [
+                1.6080000400543213,
+                0.033332619816064838,
+                -2.809999942779541
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint21",
+            "position": [
+                1.3286371231079102,
+                0.033332619816064838,
+                -1.5472841262817383
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint22",
+            "position": [
+                1.090999960899353,
+                0.033332619816064838,
+                4.484000205993652
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint23",
+            "position": [
+                1.4199999570846558,
+                0.033332619816064838,
+                0.4390000104904175
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint24",
+            "position": [
+                2.9200000762939455,
+                0.033332619816064838,
+                2.819999933242798
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint25",
+            "position": [
+                3.066666841506958,
+                0.033332619816064838,
+                -4.199999809265137
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint26",
+            "position": [
+                3.355609178543091,
+                0.033332619816064838,
+                -1.4854567050933838
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint27",
+            "position": [
+                2.5920000076293947,
+                0.033332619816064838,
+                4.563000202178955
+            ],
+            "type": "navigation"
+        },
+        {
+            "name": "NavigationPoint28",
+            "position": [
+                3.32863712310791,
+                0.033332619816064838,
+                0.4527158737182617
+            ],
+            "type": "navigation"
+        }
+    ],
+    "nav_min_neighbor_distance": 1.5,
+    "savePath": "F:/UnityProjects/SceneProcessor/Assets\\Tasks\\task-20241021070731-sitting_room_with_baked_textures-Look_around_and_see_how_many_side_tables_are_in_the_room_.json",
+    "message": ""
+}

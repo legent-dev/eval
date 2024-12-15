@@ -12,7 +12,7 @@
         0.0
     ],
     "agent_position": [
-        18.790000915527345,
+        18.790000915527344,
         0.0,
         -15.75
     ],
@@ -48,10 +48,12 @@
     "humans": [],
     "task_template": "How many rooms are there in total?",
     "task_text": "How many rooms are there in total?",
+    "task_text_cn": "总共有多少个房间？",
     "options": [
         {
             "option_type": "Answer",
             "option_text": "one",
+            "option_text_cn": "一个",
             "gameObjects": {
                 "list": []
             },
@@ -63,6 +65,7 @@
         {
             "option_type": "Answer",
             "option_text": "two",
+            "option_text_cn": "两个",
             "gameObjects": {
                 "list": []
             },
@@ -74,6 +77,7 @@
         {
             "option_type": "Answer",
             "option_text": "three",
+            "option_text_cn": "三个",
             "gameObjects": {
                 "list": []
             },
@@ -85,6 +89,7 @@
         {
             "option_type": "Answer",
             "option_text": "four",
+            "option_text_cn": "四个",
             "gameObjects": {
                 "list": []
             },
@@ -96,6 +101,7 @@
         {
             "option_type": "Answer",
             "option_text": "five",
+            "option_text_cn": "五个",
             "gameObjects": {
                 "list": []
             },
@@ -107,6 +113,7 @@
         {
             "option_type": "Answer",
             "option_text": "six",
+            "option_text_cn": "六个",
             "gameObjects": {
                 "list": []
             },
@@ -118,6 +125,7 @@
         {
             "option_type": "Answer",
             "option_text": "seven",
+            "option_text_cn": "七个",
             "gameObjects": {
                 "list": []
             },
@@ -129,6 +137,7 @@
         {
             "option_type": "Answer",
             "option_text": "eight",
+            "option_text_cn": "八个",
             "gameObjects": {
                 "list": []
             },
@@ -184,16 +193,16 @@
         {
             "name": "NavigationPoint6",
             "position": [
-                9.249011993408204,
+                9.249011993408203,
                 0.02944699302315712,
-                -8.672765731811524
+                -8.672765731811523
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint7",
             "position": [
-                8.029999732971192,
+                8.029999732971191,
                 0.02944699302315712,
                 -6.909999847412109
             ],
@@ -202,7 +211,7 @@
         {
             "name": "NavigationPoint8",
             "position": [
-                11.149999618530274,
+                11.149999618530273,
                 0.02944699302315712,
                 -9.569999694824219
             ],
@@ -211,7 +220,7 @@
         {
             "name": "NavigationPoint9",
             "position": [
-                11.180000305175782,
+                11.180000305175781,
                 0.02944699302315712,
                 -8.260000228881836
             ],
@@ -229,18 +238,18 @@
         {
             "name": "NavigationPoint13",
             "position": [
-                13.733333587646485,
+                13.733333587646484,
                 0.02944699302315712,
-                -10.279999732971192
+                -10.279999732971191
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint14",
             "position": [
-                13.779999732971192,
+                13.779999732971191,
                 0.02944699302315712,
-                -8.670000076293946
+                -8.670000076293945
             ],
             "type": "navigation"
         },
@@ -258,7 +267,7 @@
             "position": [
                 15.079999923706055,
                 0.02944699302315712,
-                -11.649999618530274
+                -11.649999618530273
             ],
             "type": "navigation"
         },
@@ -267,14 +276,14 @@
             "position": [
                 15.103660583496094,
                 0.02944699302315712,
-                -10.247817993164063
+                -10.247817993164062
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint20",
             "position": [
-                15.771159172058106,
+                15.771159172058105,
                 0.02944699302315712,
                 -7.286951541900635
             ],
@@ -292,7 +301,7 @@
         {
             "name": "NavigationPoint25",
             "position": [
-                17.103660583496095,
+                17.103660583496094,
                 0.02944699302315712,
                 -9.366667747497559
             ],
@@ -301,7 +310,7 @@
         {
             "name": "NavigationPoint27",
             "position": [
-                18.170000076293947,
+                18.170000076293945,
                 0.02944699302315712,
                 -11.819999694824219
             ],
@@ -310,18 +319,18 @@
         {
             "name": "NavigationPoint28",
             "position": [
-                18.103660583496095,
+                18.103660583496094,
                 0.02944699302315712,
-                -8.247817993164063
+                -8.247817993164062
             ],
             "type": "navigation"
         },
         {
             "name": "NavigationPoint29",
             "position": [
-                18.440000534057618,
+                18.440000534057617,
                 0.02944699302315712,
-                -15.247817993164063
+                -15.247817993164062
             ],
             "type": "navigation"
         }
