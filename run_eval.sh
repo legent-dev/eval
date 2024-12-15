@@ -202,6 +202,6 @@ DISPLAY=:7 python run_eval.py --agent random --max_steps 24 --max_images 24 --po
 # python run_eval.py --agent human --max_steps 30 --max_images 25 --port 50051 --sync --run_one_task_instance F:/UnityProjects/SceneProcessor/Assets/Tasks/task-20240915152356-102344280-Reach_the_front_door_after_passing_through_the_hallway_and_turning_right__.json
 
 # 运行所有测例
-# python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50051 --test_case_start=0 --test_case_end=100 --all
+# python run_eval.py --agent human --max_steps 2500 --max_images 25 --port 50051 --test_case_start=0 --test_case_end=100 --all --rerun
 
     

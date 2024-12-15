@@ -5,7 +5,7 @@ from legent.utils.io import log_green, create_video
 from legent.action.api import SetVideoRecordingPath, SaveSceneToGltf
 import argparse
 from predicate import build_predicate, get_feedback
-from task import get_task_settings
+# from task import get_task_settings
 import glob
 import json
 import sys
@@ -117,17 +117,18 @@ def run_eval(agent, max_steps, max_images, port, eval_folder, save_path, task_se
             task_ids = [0]
         task_ids = list(range(min(task_ids), len(task_settings)))
     else:
-        if not task_settings:
-            task_settings = get_task_settings(eval_folder)
-            for task_setting in task_settings:
-                for instance in task_setting["scene"]["instances"]:
-                    if instance["prefab"].endswith(".fbx"):
-                        instance["prefab"] = instance["prefab"].replace(".fbx", ".glb")
-                        instance["scale"] = [1, 1, 1]
-                        instance["rotation"][1] += 180
-                        del instance["mesh_materials"]
-        if not task_ids:
-            task_ids = list(range(len(task_settings)))
+        pass
+        # if not task_settings:
+        #     task_settings = get_task_settings(eval_folder)
+        #     for task_setting in task_settings:
+        #         for instance in task_setting["scene"]["instances"]:
+        #             if instance["prefab"].endswith(".fbx"):
+        #                 instance["prefab"] = instance["prefab"].replace(".fbx", ".glb")
+        #                 instance["scale"] = [1, 1, 1]
+        #                 instance["rotation"][1] += 180
+        #                 del instance["mesh_materials"]
+        # if not task_ids:
+        #     task_ids = list(range(len(task_settings)))
 
     print(len(task_settings), "tasks")
     store_json(task_settings, f"task_settings.json")

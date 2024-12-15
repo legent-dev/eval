@@ -177,19 +177,20 @@ new_reported_results
 task_settings.json
 eval_folder_20240614_0251
 
-<<<<<<< HEAD
 release.py
 task_texts.csv
 tasks.txt
 eval_*
 EmbodiedEvalData/scenes
 convert_lf2crlf.py
-=======
 # tasks_
 # EmbodiedEvalData/tasks/
 # tasks_0928
 EmbodiedEvalData/*
 !EmbodiedEvalData/final_tasks/
+_EmbodiedEvalData
+_trash
+_backup
 
 scenes
 *.mem.*.blob
@@ -204,4 +205,3 @@ useless
 plots
 old_data
 
->>>>>>> a7480c4d978f55d81a87dc2d3a601107be63f64a
