@@ -12,17 +12,18 @@ def process_special_scene(task_info):
 
 def get_scene_path(scene_path, scene_folder):
     """Resolves the scene path based on predefined folder locations."""
-    if not os.path.exists(scene_path):
-        scene_path = scene_path.split("/")[-1]
-        for folder in ["AI2THOR", "HSSD", "ObjaverseSynthetic", "Sketchfab"]:
-            if os.path.exists(f"{scene_folder}/{folder}/{scene_path}"):
-                scene_path = f"{scene_folder}/{folder}/{scene_path}"
-                return os.path.abspath(scene_path)
+    scene_path = scene_path.split("/")[-1]
+    print(scene_path)
+    for folder in ["AI2THOR", "HSSD", "ObjaverseSynthetic", "Sketchfab"]:
+        print(f"{scene_folder}/{folder}/{scene_path}")
+        if os.path.exists(f"{scene_folder}/{folder}/{scene_path}"):
+            scene_path = f"{scene_folder}/{folder}/{scene_path}"
+            return os.path.abspath(scene_path)
 
 def add_human_instances(task_setting, mixamo_path):
     """Adds human instances to the task setting based on human data."""
     if "humans" in task_setting["scene"]["task_instance"]:
-        character2material = {asset["asset_id"]: asset for asset in load_json("data/tasks/mixamo_assets.json")["assets"]}
+        character2material = {asset["asset_id"]: asset for asset in load_json("data/scenes/mixamo_assets.json")["assets"]}
         for human in task_setting["scene"]["task_instance"]["humans"]:
             mesh_materials = character2material[human["asset"] + ".fbx"]["mesh_materials"]
             for mesh_material in mesh_materials:
@@ -57,7 +58,7 @@ def create_task_setting(path, scene_folder):
     task_setting["scene"]["task_instance"] = line
     scene_path = task_info["scene_path"]
     
-    mixamo_path = scene_folder
+    mixamo_path = scene_folder + "/Mixamo"
     scene_path = get_scene_path(scene_path, scene_folder)
     if not scene_path:
         raise FileNotFoundError(f"Scene path not found.")
@@ -107,6 +108,5 @@ def process_task_settings(all_paths, scene_folder, index2json):
         task_settings.append(create_task_setting(path, scene_folder))
 
     task_settings = ensure_output_order(task_settings, index2json)
-    store_json(task_settings, f"data/tasks/task_settings.json")  # Assuming store_json is defined elsewhere
-    task_settings = load_json("/data41/private/legent/eval/EmbodiedEvalData/task_settings.json")
+    # store_json(task_settings, f"data/tasks/task_settings.json")
     return task_settings
