@@ -1,12 +1,14 @@
 import os
 from legent import store_json, load_json
 import re
+import json
 
 def process_special_scene(task_info):
-    """Processes special scenes by replacing 'Sketchfab_model/' with '/' in the scene path."""
+    """Fix paths of some Sketchfab scenes."""
     for scene_name in ["mini_project_bedroom_on_sketchfab", "ejemplo","richards_art_gallery_-_audio_tour"]:
         if task_info["scene_path"].endswith(scene_name+".glb"):
-            task_info["scene_path"] = re.sub("Sketchfab_model/", f'/', task_info["scene_path"])
+            replaced_text = re.sub("Sketchfab_model/", f'/', json.dumps(task_info))
+            return json.loads(replaced_text)
     return task_info
 
 
