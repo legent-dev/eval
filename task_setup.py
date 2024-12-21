@@ -60,7 +60,7 @@ def create_task_setting(path, scene_folder):
     task_setting["scene"]["task_instance"] = line
     scene_path = task_info["scene_path"]
     
-    mixamo_path = scene_folder + "/Mixamo"
+    mixamo_path = os.path.abspath(scene_folder + "/Mixamo")
     scene_path = get_scene_path(scene_path, scene_folder)
     if not scene_path:
         raise FileNotFoundError(f"Scene path not found.")
