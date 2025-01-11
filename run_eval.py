@@ -1,3 +1,7 @@
+# How to use:
+# python run_eval.py --agent random --max_steps 24 --max_images 24 --port 50051 --all
+# python run_eval.py --agent human --max_steps 24 --max_images 24 --port 50051 --all
+
 import os
 import re
 import argparse
@@ -9,14 +13,30 @@ from legent.action.api import SetVideoRecordingPath
 from predicate import build_predicate, get_feedback
 from agent import *
 from task_setup import process_task_settings
+from sys import platform
 
 MAX_STAY_COUNT = 100
 
+def get_platform():
+    if platform == "linux" or platform == "linux2":
+        platform_name = "Linux"
+    elif platform == "darwin":
+        platform_name = "MacOS"
+    elif platform == "win32":
+        platform_name = "Windows"
+    else:
+        print("Cannot decide platform. Exit.")
+        exit(0)
+    return platform_name
+
 def initialize_environment(port, use_video):
+    root_folder = "data/envs"
+    envs_path = [os.path.join(root_folder, d) for d in os.listdir(root_folder) if os.path.isdir(os.path.join(root_folder, d))]
+    path = envs_path[0]
     return Environment(
-        env_path="auto", action_mode=1, camera_resolution_width=448,
+        env_path=path, action_mode=1, camera_resolution_width=448,
         camera_resolution_height=448, camera_field_of_view=90,
-        run_options={"port": port, "width": 1024, "height": 1024},
+        run_options={"port": port, "width": 768, "height": 768},
         use_animation=use_video, rendering_options={"use_default_light": 1, "style": 0}
     )
 
@@ -34,10 +54,10 @@ def create_agent(agent_type, sync, env):
     return agents[agent_type]()
 
 def load_task_data(scene_folder, run_one_task_instance):
-    index2json = load_json("data/tasks/index2json.json")
-    task_to_type = {k: v.split("/")[0] for k, v in index2json.items()}
-    all_paths = [run_one_task_instance] if run_one_task_instance else ["data/tasks/"+path for path in index2json.values()]
-    return task_to_type, process_task_settings(all_paths, scene_folder, index2json)
+    tasks = load_json("data/tasks/tasks.json")
+    task_to_type = {i: t["task_file"].split("/")[0] for i, t in enumerate(tasks)}
+    all_paths = [run_one_task_instance] if run_one_task_instance else ["data/tasks/"+t["task_file"] for t in tasks]
+    return task_to_type, process_task_settings(all_paths, scene_folder, tasks)
 
 def initialize_episode(task_i, task_setting, agent, env, save_path, use_video):
     print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
@@ -117,11 +137,9 @@ def evaluate_tasks(agent, max_steps, max_images, port, scene_folder, save_path,
 
     try:
         for task_i in task_ids:
-            if task_i < 4:
-                continue
             task_setting = task_settings[task_i]
             obs, step, done, frames, stuck_count, stuck_pos, traj_save_dir = initialize_episode(task_i, task_setting, agent, env, save_path, use_video)
-            task_category = task_to_type[str(task_i)]
+            task_category = task_to_type[task_i]
             pred_list = process_predicates(task_setting, obs, run_one_task_instance, run_all_task_instance)
             options = obs.game_states["option_mode_info"]["options"]
             feedback, prev_obs = None, obs
@@ -200,7 +218,8 @@ def evaluate_tasks(agent, max_steps, max_images, port, scene_folder, save_path,
                 break
 
     except Exception as e:
-        print(e)
+        print("Exception:", e)
+        raise e
     finally:
         env.close()
 

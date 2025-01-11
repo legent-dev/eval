@@ -15,9 +15,7 @@ def process_special_scene(task_info):
 def get_scene_path(scene_path, scene_folder):
     """Resolves the scene path based on predefined folder locations."""
     scene_path = scene_path.split("/")[-1]
-    print(scene_path)
     for folder in ["AI2THOR", "HSSD", "ObjaverseSynthetic", "Sketchfab"]:
-        print(f"{scene_folder}/{folder}/{scene_path}")
         if os.path.exists(f"{scene_folder}/{folder}/{scene_path}"):
             scene_path = f"{scene_folder}/{folder}/{scene_path}"
             return os.path.abspath(scene_path)
@@ -25,7 +23,7 @@ def get_scene_path(scene_path, scene_folder):
 def add_human_instances(task_setting, mixamo_path):
     """Adds human instances to the task setting based on human data."""
     if "humans" in task_setting["scene"]["task_instance"]:
-        character2material = {asset["asset_id"]: asset for asset in load_json("data/scenes/mixamo_assets.json")["assets"]}
+        character2material = {asset["asset_id"]: asset for asset in load_json("data/scenes/Mixamo/mixamo_assets.json")["assets"]}
         for human in task_setting["scene"]["task_instance"]["humans"]:
             mesh_materials = character2material[human["asset"] + ".fbx"]["mesh_materials"]
             for mesh_material in mesh_materials:
@@ -93,22 +91,18 @@ def create_task_setting(path, scene_folder):
     task_setting["scene"]["interaction_distance"] = 1
     return task_setting
 
-def ensure_output_order(task_settings, index2json):
-    """Ensures the output order of task settings based on index2json."""
-    new_task_settings = []
-    for index in index2json:
-        for setting in task_settings:
-            json_name = setting["scene"]["task_instance"]["savePath"].replace("\\","/").split("/")[-1]
-            if index2json[index].split("/")[-1] == json_name:
-                new_task_settings.append(setting)
-    return new_task_settings
-
-def process_task_settings(all_paths, scene_folder, index2json):
+def process_task_settings(all_paths, scene_folder, tasks):
     """Processes task settings from a list of file paths."""
-    task_settings = []
+    file2setting = {}
     for path in all_paths:
-        task_settings.append(create_task_setting(path, scene_folder))
+        task_id = "/".join(path.split("/")[-2:])
+        file2setting[task_id] = create_task_setting(path, scene_folder)
 
-    task_settings = ensure_output_order(task_settings, index2json)
+    # Ensures the order of task settings based on tasks.json
+    task_settings = []
+    for item in tasks:
+        task_file = item["task_file"]
+        file2setting[task_file]["task_id"] = task_file
+        task_settings.append(file2setting[task_file])
     # store_json(task_settings, f"data/tasks/task_settings.json")
     return task_settings
