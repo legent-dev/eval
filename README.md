@@ -1,95 +1,112 @@
-# EmbodiedEval
+# EmbodiedEval: Evaluate Multimodal LLMs as Embodied Agents
 
-## 环境配置
+**EmbodiedEval** is a comprehensive and interactive benchmark designed to evaluate the capabilities of MLLMs in embodied tasks.
 
-#### 配环境
+## Installation
 
-```bash
-conda create -n legent python=3.10
-conda activate legent
-git clone https://github.com/thunlp/LEGENT.git
-cd LEGENT
-pip install -e .
-legent download --dev --thu
+#### Simulation Prerequisite
+
+EmbodiedEval includes a 3D simulator for realtime simulation. You have two options to run the simulator:
+
+(1) Run the simulator on your personal computer with a display (Windows/MacOS/Linux). No additional configuration is required. The subsequent installation and data download (approximately 20GB of space) will take place on your computer.
+
+(2) Run the simulator on a Linux server, which requires sudo access, up-to-date NVIDIA drivers, and running outside a Docker container. Additional configurations are required as follows:
+<details>
+  <summary>Click to expand/collapse</summary>
+Install Xorg:
+
+```
+sudo apt install -y gcc make pkg-config xorg
 ```
 
-```bash
-cd ..
-git clone git@github.com:legent-dev/eval.git
+Generate .conf file:
+
+```
+sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
+sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
 ```
 
-#### 下载场景文件
+Edit /etc/X11/xorg-0.conf:
+
+* Remove "ServerLayout" and "Screen" section.
+* Set `BoardName` and `BusID` of "Device" section to the corresponding `Name` and `PCI BusID` of a GPU displayed by the `nvidia-xconfig --query-gpu-info` command. For example:
+    ```
+    Section "Device"
+        Identifier     "Device0"
+        Driver         "nvidia"
+        VendorName     "NVIDIA Corporation"
+        BusID          "PCI:164:0:0"
+        BoardName      "NVIDIA GeForce RTX 3090"
+    EndSection
+    ```
+
+Run Xorg:
+
+```
+sudo nohup Xorg :0 -config /etc/X11/xorg-0.conf &
+```
+
+Set the display (Remember to run the following command in every new terminal session before running the evaluation code):
+
+```
+export DISPLAY=:0
+```
+</details>
+
+(3) TODO
+```
+ssh -N -L 50051:localhost:50051 host
+legent launch
+```
+
+#### Install Dependencies
+
+```bash
+conda create -n embodiedeval python=3.10
+conda activate embodiedeval
+pip install -r requirements.txt
+```
+
+#### Download Dataset
 
 ```bash
 python download.py
 ```
 
-场景文件会下载到EmbodiedEvalData/scenes文件夹，共24G。
 
-#### 服务器渲染环境（有显示器的机器不需要）
-
-以下两种方式二选一，有条件选gpu渲染
-
-CPU渲染：
-
-```bash
-sudo apt install -y xorg-dev xvfb
-```
-
-GPU渲染：
-
-```bash
-sudo apt install -y gcc make pkg-config xorg
-sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
-<<<<<<< HEAD
-sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
-=======
-export DISPLAY=:7
->>>>>>> a7480c4d978f55d81a87dc2d3a601107be63f64a
-```
-编辑/etc/X11/xorg-0.conf,删掉ServerLayout和Screen Section
-
-nvidia-xconfig --query-gpu-info查看busid和board id, 然后选一个gpu将其信息跳到Section "Device"
-```
-    BusID          "PCI:62:0:0"
-	BoardName      "NVIDIA GeForce RTX 3090"
-```
-新建一个screen，运行Xorg :7 -config /etc/X11/xorg-0.conf
-
-## 评测
+## Evaluation
 
 #### Random Baseline
 
-能运行这个就表示环境没有问题了。
+```bash
+python run_eval.py --agent random --port 50051 --test_case_start=0 --test_case_end=328 --all
+```
+
+#### Human Baseline
 
 ```bash
-python run_eval.py --agent random --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
+python run_eval.py --agent human --port 50051 --test_case_start=0 --test_case_end=328 --all
 ```
 
-#### 人类评测
+In this mode, you can manually interact with the environment.
+<details>
+ <summary> How to play</summary>
 
-```bash
-python run_eval.py --agent human --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
-```
+Use the keyboard to press the corresponding number to choose an option;
 
-#### gpt4o评测
+Pressing W/A/D will map to the forward/turn left/turn right options in the menu;
 
-```bash
-python run_eval.py --agent gpt-4o --max_steps 24 --max_images 25 --port 50051 --test_case_start=0 --all
-```
+Pressing Enter opens or closes the chat window, and you can enter option numbers greater than 9;
 
-#### 评测其他模型
+Pressing T will hide/show the options panel.
+</details>
 
-`agent.py` 里继承 `AgentBase` 实现你的Agent.
+#### Creating a New Agent
 
-`run_eval.py`改成你的Agent.
+`agent.py`  `AgentBase`.
 
-#### 并行评测(TODO)
-
-```python run_eval_multiprocess.py```
+`run_eval.py`
 
 
-```
-ssh -N -L 50051:localhost:50051 H100
-legent launch
-```
+
+## Compute Metrics
