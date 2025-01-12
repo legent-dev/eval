@@ -4,7 +4,7 @@
 
 ## Installation
 
-#### Simulation Prerequisite
+#### Setup Simulation Environment
 
 EmbodiedEval includes a 3D simulator for realtime simulation. You have two options to run the simulator:
 
@@ -53,11 +53,6 @@ export DISPLAY=:0
 ```
 </details>
 
-(3) TODO
-```
-ssh -N -L 50051:localhost:50051 host
-legent launch
-```
 
 #### Install Dependencies
 
@@ -101,12 +96,54 @@ Pressing Enter opens or closes the chat window, and you can enter option numbers
 Pressing T will hide/show the options panel.
 </details>
 
-#### Creating a New Agent
+#### GPT-4o
 
-`agent.py`  `AgentBase`.
+Edit the `api_key` and `base_url` in agent.py and run:
+```bash
+python run_eval.py --agent gpt-4o --port 50051 --test_case_start=0 --test_case_end=328 --all
+```
 
-`run_eval.py`
+#### Evaluate Your Own Model
+
+To evaluate your own model, you need to overwrite the `MyAgent` class in `agent.py`. 
+In the `__init__` method, you need to load the model or initialize the API. 
+In the `generate` method, you need to perform model inference or API calls and return the generated text. See the comments within the class for details.
+
+Run the following code to evaluate your model.
+```bash
+python run_eval.py --agent myagent --port 50051 --test_case_start=0 --test_case_end=328 --all
+```
+
+<details>
+<summary>My server cannot run the simulator(e.g. without sudo access), and my personal computer cannot run the model I want to evaluate. How can I evaluate it? </summary>
+
+Perform the `Install Dependencies` and `Download Dataset` steps on both your local computer and the server.
+
+On the server, run:
+```
+python run_eval.py --agent myagent --port 50051 --test_case_start=0 --test_case_end=328 --all --remote --scene_folder <The absolute path of the scene folder on your local computer>
+```
+This command will hang, waiting for the simulator to connect.
 
 
+On your computer, set up a SSH tunnel between your computer and the server: 
+```
+ssh -N -L 50051:localhost:50051 <username>@<host> [-p <ssh_port>]
+```
 
-## Compute Metrics
+On your computer, launch the simulator:
+```
+python launch.py
+```
+
+Once the simulator starts, the evaluation process on the server will begin.
+
+</detials>
+
+#### Compute Metrics
+
+Run metrics.py with the result folder as a parameter to compute the performance. The `total_metrics.json` (overall performance) and `type_metrics.json` (performance per task type) will be saved in the result folder.
+
+```
+python metrics.py --result_folder results/xxx-xxx-xxx
+```

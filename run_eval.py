@@ -29,10 +29,12 @@ def get_platform():
         exit(0)
     return platform_name
 
-def initialize_environment(port, use_video):
+def initialize_environment(port, use_video, remote):
     root_folder = "data/envs"
     envs_path = [os.path.join(root_folder, d) for d in os.listdir(root_folder) if os.path.isdir(os.path.join(root_folder, d))]
     path = envs_path[0]
+    if remote:
+        path = None
     return Environment(
         env_path=path, action_mode=1, camera_resolution_width=448,
         camera_resolution_height=448, camera_field_of_view=90,
@@ -45,9 +47,7 @@ def create_agent(agent_type, sync, env):
         "human": lambda: AgentHuman(env),
         "random": lambda: AgentRandom(env),
         "gpt-4o": lambda: AgentGPT4o(None if sync else env),
-        "gemini-flash": lambda: AgentGemini(None if sync else env),
-        "Llama-3-VILA1.5-8B": lambda: AgentVILA(None if sync else env),
-        "LLaVA-Video-7B-Qwen2": lambda: AgentLLaVAVideoSeries(None if sync else env, agent_type)
+        "myagent": lambda: MyAgent(None if sync else env)
     }
     if agent_type not in agents: 
         raise ValueError(f"Unsupported agent type: {agent_type}")
@@ -114,7 +114,7 @@ def step_environment(env, action, use_video, traj_save_dir, step, frames):
     return obs, frames
 
 def evaluate_tasks(agent, max_steps, max_images, port, scene_folder, save_path, 
-                   task_ids, sync, run_one_task_instance, run_all_task_instance, use_video):
+                   task_ids, sync, run_one_task_instance, run_all_task_instance, use_video, remote):
     
     MAX_IMAGE_HISTORY = max_images - 1
     failed_cases, success_cases = [], []
@@ -123,9 +123,9 @@ def evaluate_tasks(agent, max_steps, max_images, port, scene_folder, save_path,
         task_ids = list(range(len(task_settings)))
    
     
-    env = initialize_environment(port, use_video)
+    env = initialize_environment(port, use_video, remote)
     
-    save_path = save_path or f"data/results/{time_string()}-{agent}-step{max_steps}-image{max_images}-case{task_ids[0]}"
+    save_path = save_path or f"results/{time_string()}-{agent}-case{task_ids[0]}"
     os.makedirs(save_path)
     store_json(task_ids, f"{save_path}/task_ids.json")
     store_json({"agent": agent, "max_steps": max_steps, "max_images": max_images}, f"{save_path}/run_args.json")
@@ -227,7 +227,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--agent", type=str, default="gpt-4o")
     parser.add_argument("--test_case_start", type=int, default=-1)
-    parser.add_argument("--test_case_end", type=int, default=-1)
+    parser.add_argument("--test_case_end", type=int, default=328)
     parser.add_argument("--max_steps", type=int, default=24)
     parser.add_argument("--max_images", type=int, default=25)
     parser.add_argument("--port", type=int, default=50050)
@@ -237,6 +237,7 @@ if __name__ == "__main__":
     parser.add_argument("--run_one_task_instance", type=str, default=None)
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--use_video", action="store_true")
+    parser.add_argument("--remote", action="store_true")
     args = parser.parse_args()
     task_ids = list(range(args.test_case_start, args.test_case_end)) if args.test_case_start != -1 and args.test_case_end != -1 else None
-    evaluate_tasks(args.agent, args.max_steps, args.max_images, args.port, args.scene_folder, args.save_path, task_ids, args.sync, args.run_one_task_instance, args.all, args.use_video)
+    evaluate_tasks(args.agent, args.max_steps, args.max_images, args.port, args.scene_folder, args.save_path, task_ids, args.sync, args.run_one_task_instance, args.all, args.use_video, args.remote)

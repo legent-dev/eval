@@ -239,14 +239,15 @@ class AgentGPT4o(AgentBase):
         return answer
 
 
-# TODO: Write your agent class for evaluating your own model.
-class YourAgent(AgentBase):
+# TODO: Overwrite this class for evaluating your own model.
+class MyAgent(AgentBase):
     def __init__(self, env) -> None:
         super().__init__("your_model_name", env == None, env)
         # Place the initialization code for your model/API here
         # self.model = ...
 
     def generate(self):
+        return "Choice: [1]"
         # ===================== For Image Model =====================
         inputs: List[Union[str, np.ndarray]] = self.inputs
         # Prepare the input for your model. For example:

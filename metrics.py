@@ -1,9 +1,11 @@
+import argparse
 import os
 from legent import load_json, store_json
 import re
 
-index2json_path = "data/tasks/index2json.json"
+index2json_path = "data/tasks/tasks.json"
 index2json = load_json(index2json_path)
+index2json = {str(i["index"]): i["task_file"] for i in index2json}
 
 def calculate_goal_conditioned_success(goal_condition):
     """
@@ -213,8 +215,13 @@ def compute_metrics_for_all_types(total_result_folder, model_name, human_traj_fo
 
 
 if __name__ == "__main__":
-    total_result_folder = "/data41/private/tuyuge/EmbodiedEval/data/results/20241121-102539-823690-random-step24-image24-case0"
-    model_name = "random"
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--result_folder", type=str)
+    parser.add_argument("--model_name", type=str, default="")
+    args = parser.parse_args()
+    
+    model_name = args.model_name
+    total_result_folder = args.result_folder
     human_traj_folder = ""
     total_metrics, type_metrics = compute_metrics_for_all_types(total_result_folder, model_name, human_traj_folder)
     # store the result to results_folder:
