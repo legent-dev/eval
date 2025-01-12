@@ -44,7 +44,7 @@ def create_agent(agent_type, sync, env):
     agents = {
         "human": lambda: AgentHuman(env),
         "random": lambda: AgentRandom(env),
-        "gpt-4o": lambda: AgentGPT4V(None if sync else env),
+        "gpt-4o": lambda: AgentGPT4o(None if sync else env),
         "gemini-flash": lambda: AgentGemini(None if sync else env),
         "Llama-3-VILA1.5-8B": lambda: AgentVILA(None if sync else env),
         "LLaVA-Video-7B-Qwen2": lambda: AgentLLaVAVideoSeries(None if sync else env, agent_type)
@@ -61,7 +61,7 @@ def load_task_data(scene_folder, run_one_task_instance):
 
 def initialize_episode(task_i, task_setting, agent, env, save_path, use_video):
     print("\n" + "==" * 8 + f"Start episode {task_i}" + "==" * 8)
-    agent.start(task_setting["task"])
+    agent.start(task_setting["task"], use_video)
     print(task_setting["task"])
     obs = env.reset(ResetInfo(scene=task_setting["scene"], api_calls=[]))
     traj_save_dir = f"{save_path}/traj{task_i:04d}"
@@ -82,7 +82,7 @@ def process_predicates(task_setting, obs, run_one_task_instance, run_all_task_in
     return build_predicate(task_setting["predicates"], obs, not run_one_task_instance and not run_all_task_instance)
 
 def execute_action(agent, obs, feedback, options, use_video, traj_save_dir, step):
-    action = agent.act(obs.image, feedback, options, use_video, f"{traj_save_dir}/{step:04d}.mp4")
+    action = agent.act(obs.image, feedback, options, f"{traj_save_dir}/{step:04d}.mp4")
     error = ""
     response = action.text if action else ""
     thought = ""
@@ -229,7 +229,7 @@ if __name__ == "__main__":
     parser.add_argument("--test_case_start", type=int, default=-1)
     parser.add_argument("--test_case_end", type=int, default=-1)
     parser.add_argument("--max_steps", type=int, default=24)
-    parser.add_argument("--max_images", type=int, default=4)
+    parser.add_argument("--max_images", type=int, default=25)
     parser.add_argument("--port", type=int, default=50050)
     parser.add_argument("--scene_folder", type=str, default="data/scenes") # TODO make it a fixed value
     parser.add_argument("--save_path", type=str, default=None)
