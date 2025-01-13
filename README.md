@@ -1,4 +1,7 @@
 # EmbodiedEval: Evaluate Multimodal LLMs as Embodied Agents
+<p align="center">
+   <a href="https://llmbench.ai" target="_blank">🌐 Project Page</a> | <a href="https://huggingface.co/datasets/EmbodiedEval/EmbodiedEval" target="_blank">🤗 Dataset</a> | <a href="" target="_blank">📃 Paper </a>
+</p>
 
 **EmbodiedEval** is a comprehensive and interactive benchmark designed to evaluate the capabilities of MLLMs in embodied tasks.
 
@@ -74,32 +77,32 @@ python download.py
 
 ## Evaluation
 
-### Run baselines
+### Run Baselines
 
-#### Random Baseline
+#### Random baseline
 
 ```bash
 python run_eval.py --agent random
 ```
 
-#### Human Baseline
+#### Human baseline
 
 ```bash
 python run_eval.py --agent human
 ```
 
-In this mode, you can manually interact with the environment.
+In human baseline, you can manually interact with the environment.
 <details>
- <summary> How to play</summary>
+ <summary>How to play</summary>
 <br>
 
-Use the keyboard to press the corresponding number to choose an option;
+- Use the keyboard to press the corresponding number to choose an option;
 
-Pressing W/A/D will map to the forward/turn left/turn right options in the menu;
+- Pressing W/A/D will map to the forward/turn left/turn right options in the menu;
 
-Pressing Enter opens or closes the chat window, and you can enter option numbers greater than 9;
+- Pressing Enter opens or closes the chat window, and you can enter option numbers greater than 9;
 
-Pressing T will hide/show the options panel.
+- Pressing T will hide/show the options panel.
 </details>
 
 #### GPT-4o
@@ -120,32 +123,33 @@ Run the following code to evaluate your model.
 python run_eval.py --agent myagent
 ```
 
+If your server cannot run the simulator (e.g. without sudo access), and your personal computer cannot run the model. You can run simulation on your computer and the model on the server using the following steps:
 <details>
-<summary>My server cannot run the simulator(e.g. without sudo access), and my personal computer cannot run the model I want to evaluate. How can I evaluate it? </summary>
+<summary>Evaluation steps with a remote simulator</summary>
 <br>
 
-Perform the `Install Dependencies` and `Download Dataset` steps on both your local computer and the server.
+1. Perform the `Install Dependencies` and `Download Dataset` steps on both your local computer and the server.
 
-On the server, run:
-```
-python run_eval.py --agent myagent --remote --scene_folder <The absolute path of the scene folder on your local computer>
-```
-This command will hang, waiting for the simulator to connect.
+2. On the server, run:
+    ```
+    python run_eval.py --agent myagent  --remote --scene_folder <The     absolute path of the scene folder   on your local computer>
+    ```
+    This command will hang, waiting     for the simulator to connect.
 
 
-On your computer, set up a SSH tunnel between your computer and the server: 
-```
-ssh -N -L 50051:localhost:50051 <username>@<host> [-p <ssh_port>]
-```
+3. On your computer, set up a SSH tunnel between your computer and the server: 
+    ```
+    ssh -N -L 50051:localhost:50051     <username>@<host> [-p <ssh_port>]
+    ```
 
-On your computer, launch the simulator:
-```
-python launch.py
-```
+4. On your computer, launch the simulator:
+    ```
+    python launch.py
+    ```
 
-Once the simulator starts, the evaluation process on the server will begin.
+    Once the simulator starts, the  evaluation process on the server     will begin.
 
-</detials>
+</details>
 
 
 ### Compute Metrics
@@ -154,4 +158,9 @@ Run metrics.py with the result folder as a parameter to compute the performance.
 
 ```
 python metrics.py --result_folder results/xxx-xxx-xxx
+```
+
+### Citation
+
+```
 ```
