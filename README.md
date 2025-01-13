@@ -4,57 +4,60 @@
 
 ## Installation
 
-#### Setup Simulation Environment
+### Setup Simulation Environment
 
 EmbodiedEval includes a 3D simulator for realtime simulation. You have two options to run the simulator:
 
-(1) Run the simulator on your personal computer with a display (Windows/MacOS/Linux). No additional configuration is required. The subsequent installation and data download (approximately 20GB of space) will take place on your computer.
+Option 1: Run the simulator on your personal computer with a display (Windows/MacOS/Linux). No additional configuration is required. The subsequent installation and data download (approximately 20GB of space) will take place on your computer.
 
-(2) Run the simulator on a Linux server, which requires sudo access, up-to-date NVIDIA drivers, and running outside a Docker container. Additional configurations are required as follows:
+Option 2: Run the simulator on a Linux server, which requires sudo access, up-to-date NVIDIA drivers, and running outside a Docker container. Additional configurations are required as follows:
+
 <details>
-  <summary>Click to expand/collapse</summary>
-Install Xorg:
+  <summary>Additional configurations</summary>
+<br>
 
-```
-sudo apt install -y gcc make pkg-config xorg
-```
+1. Install Xorg:
 
-Generate .conf file:
-
-```
-sudo nvidia-xconfig --no-xinerama --probe-all-gpus --use-display-device=none
-sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
-```
-
-Edit /etc/X11/xorg-0.conf:
-
-* Remove "ServerLayout" and "Screen" section.
-* Set `BoardName` and `BusID` of "Device" section to the corresponding `Name` and `PCI BusID` of a GPU displayed by the `nvidia-xconfig --query-gpu-info` command. For example:
     ```
-    Section "Device"
-        Identifier     "Device0"
-        Driver         "nvidia"
-        VendorName     "NVIDIA Corporation"
-        BusID          "PCI:164:0:0"
-        BoardName      "NVIDIA GeForce RTX 3090"
-    EndSection
+    sudo apt install -y gcc make pkg-config xorg
     ```
 
-Run Xorg:
+2. Generate .conf file:
 
-```
-sudo nohup Xorg :0 -config /etc/X11/xorg-0.conf &
-```
+    ```
+    sudo nvidia-xconfig --no-xinerama --probe-all-gpus  --use-display-device=none
+    sudo cp /etc/X11/xorg.conf /etc/X11/xorg-0.conf
+    ```
 
-Set the display (Remember to run the following command in every new terminal session before running the evaluation code):
+3. Edit /etc/X11/xorg-0.conf:
 
-```
-export DISPLAY=:0
-```
+    - Remove "ServerLayout" and "Screen" section.
+    - Set `BoardName` and `BusID` of "Device" section to    the corresponding `Name` and `PCI BusID` of a GPU  displayed by the `nvidia-xconfig --query-gpu-info`   command. For example:
+        ```
+        Section "Device"
+            Identifier     "Device0"
+            Driver         "nvidia"
+            VendorName     "NVIDIA Corporation"
+            BusID          "PCI:164:0:0"
+            BoardName      "NVIDIA GeForce RTX 3090"
+        EndSection
+        ```
+
+4. Run Xorg:
+
+    ```
+    sudo nohup Xorg :0 -config /etc/X11/xorg-0.conf &
+    ```
+
+5. Set the display (Remember to run the following command in every new terminal session before running the evaluation code):
+
+    ```
+    export DISPLAY=:0
+    ```
 </details>
 
 
-#### Install Dependencies
+### Install Dependencies
 
 ```bash
 conda create -n embodiedeval python=3.10
@@ -62,7 +65,7 @@ conda activate embodiedeval
 pip install -r requirements.txt
 ```
 
-#### Download Dataset
+### Download Dataset
 
 ```bash
 python download.py
@@ -71,21 +74,24 @@ python download.py
 
 ## Evaluation
 
+### Run baselines
+
 #### Random Baseline
 
 ```bash
-python run_eval.py --agent random --port 50051 --test_case_start=0 --test_case_end=328 --all
+python run_eval.py --agent random
 ```
 
 #### Human Baseline
 
 ```bash
-python run_eval.py --agent human --port 50051 --test_case_start=0 --test_case_end=328 --all
+python run_eval.py --agent human
 ```
 
 In this mode, you can manually interact with the environment.
 <details>
  <summary> How to play</summary>
+<br>
 
 Use the keyboard to press the corresponding number to choose an option;
 
@@ -100,10 +106,10 @@ Pressing T will hide/show the options panel.
 
 Edit the `api_key` and `base_url` in agent.py and run:
 ```bash
-python run_eval.py --agent gpt-4o --port 50051 --test_case_start=0 --test_case_end=328 --all
+python run_eval.py --agent gpt-4o
 ```
 
-#### Evaluate Your Own Model
+### Evaluate Your Own Model
 
 To evaluate your own model, you need to overwrite the `MyAgent` class in `agent.py`. 
 In the `__init__` method, you need to load the model or initialize the API. 
@@ -111,17 +117,18 @@ In the `generate` method, you need to perform model inference or API calls and r
 
 Run the following code to evaluate your model.
 ```bash
-python run_eval.py --agent myagent --port 50051 --test_case_start=0 --test_case_end=328 --all
+python run_eval.py --agent myagent
 ```
 
 <details>
 <summary>My server cannot run the simulator(e.g. without sudo access), and my personal computer cannot run the model I want to evaluate. How can I evaluate it? </summary>
+<br>
 
 Perform the `Install Dependencies` and `Download Dataset` steps on both your local computer and the server.
 
 On the server, run:
 ```
-python run_eval.py --agent myagent --port 50051 --test_case_start=0 --test_case_end=328 --all --remote --scene_folder <The absolute path of the scene folder on your local computer>
+python run_eval.py --agent myagent --remote --scene_folder <The absolute path of the scene folder on your local computer>
 ```
 This command will hang, waiting for the simulator to connect.
 
@@ -140,7 +147,8 @@ Once the simulator starts, the evaluation process on the server will begin.
 
 </detials>
 
-#### Compute Metrics
+
+### Compute Metrics
 
 Run metrics.py with the result folder as a parameter to compute the performance. The `total_metrics.json` (overall performance) and `type_metrics.json` (performance per task type) will be saved in the result folder.
 
