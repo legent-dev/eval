@@ -1,6 +1,6 @@
 # EmbodiedEval: Evaluate Multimodal LLMs as Embodied Agents
 <p align="center">
-   <a href="https://llmbench.ai" target="_blank">🌐 Project Page</a> | <a href="https://huggingface.co/datasets/EmbodiedEval/EmbodiedEval" target="_blank">🤗 Dataset</a> | <a href="" target="_blank">📃 Paper </a>
+   <a href="https://embodiedeval.github.io" target="_blank">🌐 Project Page</a> | <a href="https://huggingface.co/datasets/EmbodiedEval/EmbodiedEval" target="_blank">🤗 Dataset</a> | <a href="" target="_blank">📃 Paper </a>
 </p>
 
 **EmbodiedEval** is a comprehensive and interactive benchmark designed to evaluate the capabilities of MLLMs in embodied tasks.
